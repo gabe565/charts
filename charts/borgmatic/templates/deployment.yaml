@@ -73,6 +73,17 @@ spec:
             - name: data
               mountPath: /root/.cache/borg
               subPath: cache
+            {{- range .Values.backup.claims }}
+            - name: {{ .claimName }}
+              {{- if .mountPath }}
+              mountPath: {{ .mountPath }}
+              {{- else }}
+              mountPath: /mnt/source/{{ .claimName }}
+              {{- end }}
+              {{- if .subPath }}
+              subPath: {{ .subPath }}
+              {{- end }}
+            {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
@@ -103,4 +114,9 @@ spec:
             {{- else }}
             claimName: {{ include "borgmatic.fullname" $ }}
             {{- end }}
+        {{- end }}
+        {{- range .Values.backup.claims }}
+        - name: {{ .claimName }}
+          persistentVolumeClaim:
+            claimName: {{ .claimName }}
         {{- end }}

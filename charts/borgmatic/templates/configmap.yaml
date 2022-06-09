@@ -26,7 +26,11 @@ data:
       {{- with .claims }}
       source_directories:
         {{- range . }}
+        {{- if .mountPath }}
         - {{ .mountPath }}
+        {{- else }}
+        - /mnt/source/{{ .claimName }}
+        {{- end }}
         {{- end }}
       {{- else }}
       source_directories: []

@@ -65,7 +65,11 @@ Create the name of the service account to use
 Create the name of the SSH secret
 */}}
 {{- define "borgmatic.sshSecretName" -}}
+{{- with .Values.auth.ssh.existingSecret }}
+{{- . }}
+{{- else }}
 {{- include "borgmatic.fullname" $ }}-ssh
+{{- end }}
 {{- end }}
 
 {{/*
