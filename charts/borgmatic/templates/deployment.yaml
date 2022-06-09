@@ -1,0 +1,106 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "borgmatic.fullname" . }}
+  labels:
+    {{- include "borgmatic.labels" . | nindent 4 }}
+spec:
+  selector:
+    matchLabels:
+      {{- include "borgmatic.selectorLabels" . | nindent 6 }}
+  strategy:
+    {{- toYaml .Values.strategy | nindent 4 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "borgmatic.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "borgmatic.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      enableServiceLinks: false
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          env:
+            - name: BORG_PASSPHRASE
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "borgmatic.borgSecretName" . }}
+                  key: repokey
+            - name: BORG_HOST_ID
+              value: {{ .Release.Namespace }}
+
+            {{- with .Values.backup.postgresql }}
+            {{- if .enabled }}
+            - name: PGPASSWORD
+              valueFrom: {{ toYaml .passwordFrom | nindent 20 }}
+            {{- end }}
+            {{- end }}
+
+            {{- with .Values.backup.mariadb }}
+            {{- if .enabled }}
+            - name: MYSQL_PWD
+              valueFrom: {{ toYaml .passwordFrom | nindent 20 }}
+            {{- end }}
+            {{- end }}
+          volumeMounts:
+            - name: config
+              mountPath: /etc/borgmatic.d
+            {{- if .Values.auth.ssh.enabled }}
+            - name: ssh
+              mountPath: /root/.ssh
+            {{- end }}
+            - name: data
+              mountPath: /mnt/borg-repository
+              subPath: borg-repository
+            - name: data
+              mountPath: /root/.config/borg
+              subPath: config
+            - name: data
+              mountPath: /root/.cache/borg
+              subPath: cache
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      volumes:
+        - name: config
+          configMap:
+            name: {{ include "borgmatic.fullname" $ }}
+        {{- if .Values.auth.ssh.enabled }}
+        - name: ssh
+          secret:
+            secretName: {{ include "borgmatic.sshSecretName" $ }}
+            defaultMode: 0600
+        {{- end }}
+        {{- with .Values.persistence }}
+        - name: data
+          persistentVolumeClaim:
+            {{- with .existingClaim }}
+            claimName: {{ . }}
+            {{- else }}
+            claimName: {{ include "borgmatic.fullname" $ }}
+            {{- end }}
+        {{- end }}

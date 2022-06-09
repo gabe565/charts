@@ -1,0 +1,23 @@
+{{- define "crontab-guru" -}}
+https://crontab.guru/#{{ . | replace " " "_" }}
+{{- end -}}
+
+{{- with .Values.backup.crontab }}
+Prune and backup will run at {{ .pruneCreate | quote }} (See {{ include "crontab-guru" .pruneCreate }})
+Integrity checks will run at {{ .check | quote }} (See {{ include "crontab-guru" .check }})
+{{- end }}
+
+{{- $deploymentName := printf "deployment.apps/%s" (include "borgmatic.fullname" .) }}
+{{- if .Release.IsInstall }}
+
+- Initialize the Borg repository by running the following commands:
+    kubectl rollout status {{ $deploymentName }} && kubectl exec -i {{ $deploymentName }} -- borgmatic --init --encryption repokey-blake2
+{{- end }}
+
+- To ensure config is correct, create a backup by running the following command:
+    kubectl exec -it {{ $deploymentName }} -- borgmatic create --stats
+
+{{ if .Release.IsInstall -}}
+- Get the generated passphrase and store it externally to prevent data loss:
+    kubectl get --template='{{ `{{ .data.repokey | base64decode | printf "%s\n" }}` }}' secret {{ include "borgmatic.borgSecretName" . }}
+{{- end }}
