@@ -3,6 +3,16 @@ entries:
   borgmatic:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-06-10T04:57:26.692934691Z"
+    description: A Helm chart to deploy Borgmatic to Kubernetes
+    digest: 9ef6060331c9074095a8ce1531094cdbf59467b17dd1a95f5b023ccfe36f0f2c
+    name: borgmatic
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/borgmatic-0.1.4/borgmatic-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-06-10T04:13:23.587778234Z"
     description: A Helm chart to deploy Borgmatic to Kubernetes
     digest: 066c042b747f37120ccb75aab2373c54066b43f85b94eed5649d3f45363a696e
@@ -41,4 +51,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/borgmatic-0.1.0/borgmatic-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-10T04:13:23.587843636Z"
+generated: "2022-06-10T04:57:26.692954793Z"
