@@ -128,8 +128,12 @@ backup:
   localRepo: true
   ## @param backup.repos Other repos to add to Borgmatic repositories
   repos: []
-  ## @param backup.claims Other PVC's to include in the backup
-  claims: []
+  ## @param backup.volumes Volume config
+  volumes: []
+  ## @param backup.volumeMounts Volume mount config
+  volumeMounts: []
+  ## @param backup.sourceDirectories Directories to backup
+  sourceDirectories: []
   ## @param backup.healthchecks Healthchecks.io check url
   healthchecks: ""
   ## @param backup.checkLast Limit how many backups are checked during consistency checks

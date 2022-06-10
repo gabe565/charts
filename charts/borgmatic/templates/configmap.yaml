@@ -23,18 +23,7 @@ data:
         - {{ . }}
         {{- end }}
 
-      {{- with .claims }}
-      source_directories:
-        {{- range . }}
-        {{- if .mountPath }}
-        - {{ .mountPath }}
-        {{- else }}
-        - /mnt/source/{{ .claimName }}
-        {{- end }}
-        {{- end }}
-      {{- else }}
-      source_directories: []
-      {{- end }}
+      source_directories: {{ toYaml .sourceDirectories | nindent 6 }}
     storage:
       archive_name_format: "{{ $prefix }}-{now:%Y-%m-%d-%H%M%S}"
       ssh_command: ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR

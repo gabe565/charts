@@ -102,7 +102,9 @@ kubectl delete pvc -l release=borgmatic
 | `backup.prefix`                                    | Prefix backups with this string (evaluated as a template)         | `{{ .Release.Namespace }}` |
 | `backup.localRepo`                                 | Enable local repo at /mnt/borg-repository                         | `true`                     |
 | `backup.repos`                                     | Other repos to add to Borgmatic repositories                      | `[]`                       |
-| `backup.claims`                                    | Other PVC's to include in the backup                              | `[]`                       |
+| `backup.volumes`                                   | Volume config                                                     | `[]`                       |
+| `backup.volumeMounts`                              | Volume mount config                                               | `[]`                       |
+| `backup.sourceDirectories`                         | Directories to backup                                             | `[]`                       |
 | `backup.healthchecks`                              | Healthchecks.io check url                                         | `""`                       |
 | `backup.checkLast`                                 | Limit how many backups are checked during consistency checks      | `3`                        |
 | `backup.keep.hourly`                               | Number of hourly backups to keep during prune                     | `168`                      |
