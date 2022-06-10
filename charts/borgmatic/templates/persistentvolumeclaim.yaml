@@ -12,7 +12,9 @@ metadata:
   labels:
     {{- include "borgmatic.labels" $ | nindent 4 }}
 spec:
-  storageClassName: {{ .storageClass }}
+  {{- with .storageClass }}
+  storageClassName: {{ . }}
+  {{- end }}
   accessModes:
     {{- toYaml .accessModes | nindent 4 }}
   resources:
