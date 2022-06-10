@@ -107,7 +107,7 @@ auth:
     ## @param auth.borg.existingSecret Use an existing secret for Borg repokey
     existingSecret: ""
     ## @param auth.borg.length Length of the Borg key to generate during first install
-    length: 32
+    length: 64
     ## @param auth.borg.annotations Annotations to add to the Borg repokey secret
     annotations: {}
 

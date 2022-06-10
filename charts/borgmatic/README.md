@@ -88,7 +88,7 @@ kubectl delete pvc -l release=borgmatic
 | `auth.ssh.key`             | SSH key                                                 | `""`    |
 | `auth.ssh.annotations`     | Annotations to add to the SSH key secret                | `{}`    |
 | `auth.borg.existingSecret` | Use an existing secret for Borg repokey                 | `""`    |
-| `auth.borg.length`         | Length of the Borg key to generate during first install | `32`    |
+| `auth.borg.length`         | Length of the Borg key to generate during first install | `64`    |
 | `auth.borg.annotations`    | Annotations to add to the Borg repokey secret           | `{}`    |
 
 
