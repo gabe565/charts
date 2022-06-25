@@ -1,0 +1,40 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: ghcr.io/gabe565/mnemonic-ninja
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+  # -- image tag
+  tag: latest
+
+controller:
+  # -- Set the controller upgrade strategy
+  strategy: RollingUpdate
+
+# -- environment variables.
+# @default -- See below
+env: {}
+  # MNEMONIC_NINJA_TELEMETRY_ENABLED: "true"
+  # MNEMONIC_NINJA_TELEMETRY_ENDPOINT: ""
+  # MNEMONIC_NINJA_TELEMETRY_NAME: ""
+  # MNEMONIC_NINJA_TELEMETRY_HEADERS: ""
+
+# -- Configures service settings for the chart.
+# @default -- See values.yaml
+service:
+  main:
+    ports:
+      http:
+        port: 80
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
