@@ -51,4 +51,22 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/borgmatic-0.1.0/borgmatic-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-10T04:57:26.692954793Z"
+  relax-sounds:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-06-27T02:39:48.141679687Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: Relax Sounds is a website that lets you stream relaxing sounds to
+      your browser or over Google Cast.
+    digest: ddb01f64c1ae19e5c5bab388b8709498d245911ced3dec128b138e6369ac3918
+    name: relax-sounds
+    sources:
+    - https://github.com/gabe565/relax-sounds
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.0/relax-sounds-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-06-27T02:39:48.141715588Z"
