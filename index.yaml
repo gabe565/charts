@@ -51,6 +51,24 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/borgmatic-0.1.0/borgmatic-0.1.0.tgz
     version: 0.1.0
+  mnemonic-ninja:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-06-28T06:13:12.708568646Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: Mnemonic Ninja is a website to convert between a number and its corresponding
+      word to aid in memorization.
+    digest: 10c70ae62007666538febf6071bef6b95f28f06560855943b13a81df6fa1a6c5
+    name: mnemonic-ninja
+    sources:
+    - https://github.com/gabe565/mnemonic-ninja
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.1.0/mnemonic-ninja-0.1.0.tgz
+    version: 0.1.0
   relax-sounds:
   - apiVersion: v2
     appVersion: latest
@@ -69,4 +87,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.0/relax-sounds-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-27T02:39:48.141715588Z"
+generated: "2022-06-28T06:13:12.708586046Z"
