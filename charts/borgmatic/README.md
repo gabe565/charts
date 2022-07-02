@@ -106,6 +106,7 @@ kubectl delete pvc -l release=borgmatic
 | `backup.volumes`                                   | Volume config                                                     | `[]`                       |
 | `backup.volumeMounts`                              | Volume mount config                                               | `[]`                       |
 | `backup.sourceDirectories`                         | Directories to backup                                             | `[]`                       |
+| `backup.excludePatterns`                           | Patterns to exclude from backups                                  | `[]`                       |
 | `backup.healthchecks`                              | Healthchecks.io check url                                         | `""`                       |
 | `backup.checkLast`                                 | Limit how many backups are checked during consistency checks      | `3`                        |
 | `backup.keep.hourly`                               | Number of hourly backups to keep during prune                     | `168`                      |

@@ -136,6 +136,8 @@ backup:
   volumeMounts: []
   ## @param backup.sourceDirectories Directories to backup
   sourceDirectories: []
+  ## @param backup.excludePatterns Patterns to exclude from backups
+  excludePatterns: []
   ## @param backup.healthchecks Healthchecks.io check url
   healthchecks: ""
   ## @param backup.checkLast Limit how many backups are checked during consistency checks
