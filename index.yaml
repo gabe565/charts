@@ -3,6 +3,16 @@ entries:
   borgmatic:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-07-02T21:37:23.588886774Z"
+    description: A Helm chart to deploy Borgmatic to Kubernetes
+    digest: c5607e19a3be684c977a27520512fc59a4e0dfce7c2fd92578c394ec40c4d141
+    name: borgmatic
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/borgmatic-0.2.2/borgmatic-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-07-02T21:25:06.328101731Z"
     description: A Helm chart to deploy Borgmatic to Kubernetes
     digest: 0dfaeb8f171e05fd9b4b6219f8c888104f3499fd96ed28c86170e2bb40c4b426
@@ -107,4 +117,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.0/relax-sounds-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-02T21:25:06.328290142Z"
+generated: "2022-07-02T21:37:23.589092571Z"
