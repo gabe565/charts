@@ -57,6 +57,13 @@ spec:
               valueFrom: {{ toYaml .passwordFrom | nindent 20 }}
             {{- end }}
             {{- end }}
+
+            {{- with .Values.backup.mongodb }}
+            {{- if .enabled }}
+            - name: MONGODB_PASSWORD
+              valueFrom: {{ toYaml .passwordFrom | nindent 20 }}
+            {{- end }}
+            {{- end }}
           volumeMounts:
             - name: borgmatic-config
               mountPath: /etc/borgmatic.d

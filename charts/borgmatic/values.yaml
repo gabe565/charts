@@ -186,3 +186,19 @@ backup:
         name: "mariadb"
         ## @param backup.mariadb.passwordFrom.secretKeyRef.key Key on secret to use for MariaDB password
         key: "mariadb-password"
+
+  mongodb:
+    ## @param backup.mongodb.enabled Enable MongoDB backup
+    enabled: false
+    ## @param backup.mongodb.hostname MongoDB hostname
+    hostname: "mongodb"
+    ## @param backup.mongodb.database MongoDB database
+    database: ""
+    ## @param backup.mongodb.username MongoDB username
+    username: "root"
+    passwordFrom:
+      secretKeyRef:
+        ## @param backup.mongodb.passwordFrom.secretKeyRef.name Secret name to use for MariaDB password
+        name: "mongodb"
+        ## @param backup.mongodb.passwordFrom.secretKeyRef.key Key on secret to use for MariaDB password
+        key: "mongodb-root-password"

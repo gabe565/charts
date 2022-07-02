@@ -126,6 +126,12 @@ kubectl delete pvc -l release=borgmatic
 | `backup.mariadb.username`                          | MariaDB username                                                  | `""`                       |
 | `backup.mariadb.passwordFrom.secretKeyRef.name`    | Secret name to use for MariaDB password                           | `mariadb`                  |
 | `backup.mariadb.passwordFrom.secretKeyRef.key`     | Key on secret to use for MariaDB password                         | `mariadb-password`         |
+| `backup.mongodb.enabled`                           | Enable MongoDB backup                                             | `false`                    |
+| `backup.mongodb.hostname`                          | MongoDB hostname                                                  | `mongodb`                  |
+| `backup.mongodb.database`                          | MongoDB database                                                  | `""`                       |
+| `backup.mongodb.username`                          | MongoDB username                                                  | `root`                     |
+| `backup.mongodb.passwordFrom.secretKeyRef.name`    | Secret name to use for MariaDB password                           | `mongodb`                  |
+| `backup.mongodb.passwordFrom.secretKeyRef.key`     | Key on secret to use for MariaDB password                         | `mongodb-root-password`    |
 
 
 ## License
