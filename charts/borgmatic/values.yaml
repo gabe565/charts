@@ -104,6 +104,8 @@ auth:
     ## @param auth.ssh.annotations Annotations to add to the SSH key secret
     annotations: {}
   borg:
+    ## @param auth.borg.key Borg repokey. Will be generated if not configured
+    key: ""
     ## @param auth.borg.existingSecret Use an existing secret for Borg repokey
     existingSecret: ""
     ## @param auth.borg.length Length of the Borg key to generate during first install
