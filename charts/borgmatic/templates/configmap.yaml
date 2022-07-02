@@ -23,10 +23,10 @@ data:
         - {{ . }}
         {{- end }}
 
-      source_directories: {{ toYaml .sourceDirectories | nindent 6 }}
+      source_directories: {{ toYaml .sourceDirectories | nindent 8 }}
 
       {{- with .excludePatterns }}
-      exclude_patterns: {{ toYaml . | nindent 6 }}
+      exclude_patterns: {{ toYaml . | nindent 8 }}
       {{- end }}
     storage:
       archive_name_format: "{{ $prefix }}-{now:%Y-%m-%d-%H%M%S}"
