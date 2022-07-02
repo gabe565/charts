@@ -153,9 +153,9 @@ backup:
     ## @param backup.postgresql.enabled Enable PostgreSQL backup
     enabled: false
     ## @param backup.postgresql.hostname PostgreSQL hostname
-    hostname: ""
+    hostname: "postgresql"
     ## @param backup.postgresql.database PostgreSQL database
-    database: "db"
+    database: "postgres"
     ## @param backup.postgresql.username PostgreSQL username
     username: "postgres"
     passwordFrom:
@@ -163,7 +163,7 @@ backup:
         ## @param backup.postgresql.passwordFrom.secretKeyRef.name Secret name to use for PostgreSQL password
         name: "postgresql"
         ## @param backup.postgresql.passwordFrom.secretKeyRef.key Key on secret to use for PostgreSQL password
-        key: "postgresql-password"
+        key: "postgres-password"
     ## @param backup.postgresql.format Database dump format
     format: plain
 
@@ -171,11 +171,11 @@ backup:
     ## @param backup.mariadb.enabled Enable MariaDB backup
     enabled: false
     ## @param backup.mariadb.hostname MariaDB hostname
-    hostname: ""
+    hostname: "mariadb"
     ## @param backup.mariadb.database MariaDB database
-    database: "db"
+    database: "my_database"
     ## @param backup.mariadb.username MariaDB username
-    username: "mariadb"
+    username: ""
     passwordFrom:
       secretKeyRef:
         ## @param backup.mariadb.passwordFrom.secretKeyRef.name Secret name to use for MariaDB password

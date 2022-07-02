@@ -112,16 +112,16 @@ kubectl delete pvc -l release=borgmatic
 | `backup.keep.monthly`                              | Number of monthly backups to keep during prune                    | `24`                       |
 | `backup.keep.yearly`                               | Number of yearly backups to keep during prune                     | `10`                       |
 | `backup.postgresql.enabled`                        | Enable PostgreSQL backup                                          | `false`                    |
-| `backup.postgresql.hostname`                       | PostgreSQL hostname                                               | `""`                       |
-| `backup.postgresql.database`                       | PostgreSQL database                                               | `db`                       |
+| `backup.postgresql.hostname`                       | PostgreSQL hostname                                               | `postgresql`               |
+| `backup.postgresql.database`                       | PostgreSQL database                                               | `postgres`                 |
 | `backup.postgresql.username`                       | PostgreSQL username                                               | `postgres`                 |
 | `backup.postgresql.passwordFrom.secretKeyRef.name` | Secret name to use for PostgreSQL password                        | `postgresql`               |
-| `backup.postgresql.passwordFrom.secretKeyRef.key`  | Key on secret to use for PostgreSQL password                      | `postgresql-password`      |
+| `backup.postgresql.passwordFrom.secretKeyRef.key`  | Key on secret to use for PostgreSQL password                      | `postgres-password`        |
 | `backup.postgresql.format`                         | Database dump format                                              | `plain`                    |
 | `backup.mariadb.enabled`                           | Enable MariaDB backup                                             | `false`                    |
-| `backup.mariadb.hostname`                          | MariaDB hostname                                                  | `""`                       |
-| `backup.mariadb.database`                          | MariaDB database                                                  | `db`                       |
-| `backup.mariadb.username`                          | MariaDB username                                                  | `mariadb`                  |
+| `backup.mariadb.hostname`                          | MariaDB hostname                                                  | `mariadb`                  |
+| `backup.mariadb.database`                          | MariaDB database                                                  | `my_database`              |
+| `backup.mariadb.username`                          | MariaDB username                                                  | `""`                       |
 | `backup.mariadb.passwordFrom.secretKeyRef.name`    | Secret name to use for MariaDB password                           | `mariadb`                  |
 | `backup.mariadb.passwordFrom.secretKeyRef.key`     | Key on secret to use for MariaDB password                         | `mariadb-password`         |
 
