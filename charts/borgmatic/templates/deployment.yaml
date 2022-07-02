@@ -58,19 +58,19 @@ spec:
             {{- end }}
             {{- end }}
           volumeMounts:
-            - name: config
+            - name: borgmatic-config
               mountPath: /etc/borgmatic.d
             {{- if .Values.auth.ssh.enabled }}
-            - name: ssh
+            - name: borgmatic-ssh
               mountPath: /root/.ssh
             {{- end }}
-            - name: data
+            - name: borgmatic-data
               mountPath: /mnt/borg-repository
               subPath: borg-repository
-            - name: data
+            - name: borgmatic-data
               mountPath: /root/.config/borg
               subPath: config
-            - name: data
+            - name: borgmatic-data
               mountPath: /root/.cache/borg
               subPath: cache
             {{- range .Values.backup.volumeMounts }}
@@ -89,17 +89,17 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       volumes:
-        - name: config
+        - name: borgmatic-config
           configMap:
             name: {{ include "borgmatic.fullname" $ }}
         {{- if .Values.auth.ssh.enabled }}
-        - name: ssh
+        - name: borgmatic-ssh
           secret:
             secretName: {{ include "borgmatic.sshSecretName" $ }}
             defaultMode: 0600
         {{- end }}
         {{- with .Values.persistence }}
-        - name: data
+        - name: borgmatic-data
           persistentVolumeClaim:
             {{- with .existingClaim }}
             claimName: {{ . }}
