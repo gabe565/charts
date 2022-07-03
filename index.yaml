@@ -91,6 +91,23 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/borgmatic-0.1.0/borgmatic-0.1.0.tgz
     version: 0.1.0
+  matrimony:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-07-03T03:08:55.553410927Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: Self-hosted wedding site configured via YAML
+    digest: cb2fe83ad4b8ae73fcab06128a17c0d81fe5352c4d041cc954325990db2cf27a
+    name: matrimony
+    sources:
+    - https://github.com/gabe565/matrimony
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/matrimony-0.1.0/matrimony-0.1.0.tgz
+    version: 0.1.0
   mnemonic-ninja:
   - apiVersion: v2
     appVersion: latest
@@ -127,4 +144,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.0/relax-sounds-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-02T21:52:21.751932621Z"
+generated: "2022-07-03T03:08:55.553435027Z"
