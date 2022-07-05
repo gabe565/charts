@@ -19,6 +19,10 @@ jobs:
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
+      - name: Add bitnami charts
+        run: |
+          helm repo add bitnami https://charts.bitnami.com/bitnami
+
       - name: Add k8s-at-home library chart
         run: |
           helm repo add k8s-at-home-library https://library-charts.k8s-at-home.com
