@@ -126,6 +126,27 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.1.0/mnemonic-ninja-0.1.0.tgz
     version: 0.1.0
+  portfolio:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-07-05T20:08:45.981889219Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.14
+    description: My personal portfolio website
+    digest: 633ddfe90a3a9f47d78c7b84ba89d1204bdb2f856ad76d778763d10cbe4fd268
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.1.0/portfolio-0.1.0.tgz
+    version: 0.1.0
   relax-sounds:
   - apiVersion: v2
     appVersion: latest
@@ -144,4 +165,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.0/relax-sounds-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-03T03:08:55.553435027Z"
+generated: "2022-07-05T20:08:45.98192312Z"
