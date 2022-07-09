@@ -1,5 +1,22 @@
 apiVersion: v1
 entries:
+  ascii-telnet-rust:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-07-09T21:54:20.869077086Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: Star Wars telnet server written in Rust
+    digest: 546ad38aac10d63f99f53450cf7e15e9e52d8465abbde664c98da14fda0e1ab2
+    name: ascii-telnet-rust
+    sources:
+    - https://github.com/gabe565/ascii-telnet-rust
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/ascii-telnet-rust-0.1.0/ascii-telnet-rust-0.1.0.tgz
+    version: 0.1.0
   borgmatic:
   - apiVersion: v2
     appVersion: latest
@@ -165,4 +182,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.0/relax-sounds-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-05T20:08:45.98192312Z"
+generated: "2022-07-09T21:54:20.869268994Z"
