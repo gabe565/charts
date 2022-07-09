@@ -1,0 +1,46 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: ghcr.io/gabe565/ascii-telnet-rust
+  # -- image pull policy
+  pullPolicy: Always
+  # -- image tag
+  tag: latest
+
+controller:
+  # -- Set the controller upgrade strategy
+  strategy: RollingUpdate
+
+# -- Configures service settings for the chart.
+# @default -- See values.yaml
+service:
+  main:
+    type: LoadBalancer
+    externalTrafficPolicy: Local
+    ports:
+      http:
+        enabled: false
+        primary: false
+      telnet:
+        enabled: true
+        primary: true
+        protocol: TCP
+        port: 23
+
+resources:
+  requests:
+    # -- CPU requests
+    cpu: 1m
+    # -- Memory requests
+    memory: 1Mi
+  limits:
+    # -- CPU limit
+    cpu: 50m
+    # -- Memory limit
+    memory: 50Mi
