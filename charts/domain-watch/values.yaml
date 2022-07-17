@@ -22,7 +22,7 @@ env:
   WATCH_EVERY: 6h
   # -- Sleep interval between domain checks to avoid rate limits
   WATCH_SLEEP: 3s
-  # -- Whitespace-separated list of domains to watch. See `values.yaml` for example.
+  # -- Whitespace-separated list of domains to watch. See values.yaml for example.
   WATCH_DOMAINS: >-
     example.com
     example.org
@@ -37,3 +37,9 @@ env:
   WATCH_LOG_LEVEL: info
   # -- Log format. Valid options are text, json.
   WATCH_LOG_FORMAT: text
+
+# -- Configures service settings for the chart.
+# @default -- See values.yaml
+service:
+  main:
+    enabled: false

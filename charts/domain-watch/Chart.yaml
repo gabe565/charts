@@ -2,7 +2,7 @@ apiVersion: v2
 name: domain-watch
 description: Tool to watch whois reports and notify when statuses change or expiration is incoming.
 type: application
-version: 0.1.0
+version: 0.1.1
 appVersion: latest
 dependencies:
   - name: common
