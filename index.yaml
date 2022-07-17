@@ -108,6 +108,24 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/borgmatic-0.1.0/borgmatic-0.1.0.tgz
     version: 0.1.0
+  domain-watch:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-07-17T23:34:42.119916468Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: Tool to watch whois reports and notify when statuses change or expiration
+      is incoming.
+    digest: 0464034a9bd507d4acede0a7a163d83dc4199ac842849125907ab0c4cac0d41f
+    name: domain-watch
+    sources:
+    - https://github.com/gabe565/domain-watch
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/domain-watch-0.1.0/domain-watch-0.1.0.tgz
+    version: 0.1.0
   matrimony:
   - apiVersion: v2
     appVersion: latest
@@ -182,4 +200,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.0/relax-sounds-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-09T21:54:20.869268994Z"
+generated: "2022-07-17T23:34:42.119944168Z"
