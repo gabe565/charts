@@ -111,6 +111,23 @@ entries:
   domain-watch:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-07-17T23:43:25.618616379Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: Tool to watch whois reports and notify when statuses change or expiration
+      is incoming.
+    digest: e9852df180b3f467262da7531059578022b96ef9ae689f9df1735b18f97ee8e0
+    name: domain-watch
+    sources:
+    - https://github.com/gabe565/domain-watch
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/domain-watch-0.1.1/domain-watch-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-07-17T23:34:42.119916468Z"
     dependencies:
     - name: common
@@ -200,4 +217,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.0/relax-sounds-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-17T23:34:42.119944168Z"
+generated: "2022-07-17T23:43:25.61865078Z"
