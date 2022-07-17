@@ -1,0 +1,12 @@
+apiVersion: v2
+name: domain-watch
+description: Tool to watch whois reports and notify when statuses change or expiration is incoming.
+type: application
+version: 0.1.0
+appVersion: latest
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.4.2
+sources:
+  - https://github.com/gabe565/domain-watch
