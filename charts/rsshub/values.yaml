@@ -1,0 +1,52 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: diygod/rsshub
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+  # -- image tag
+  tag: 2022-07-29
+
+controller:
+  # -- Set the controller upgrade strategy
+  strategy: RollingUpdate
+
+# -- environment variables.
+# @default -- See below
+env:
+  NODE_ENV: production
+  CACHE_TYPE: redis
+  REDIS_URL: redis://redis-master:6379/
+  PUPPETEER_WS_ENDPOINT: ws://localhost:3000
+
+# -- Configures service settings for the chart.
+# @default -- See values.yaml
+service:
+  main:
+    ports:
+      http:
+        port: 1200
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+redis:
+  enabled: true
+  replica:
+    replicaCount: 0
+
+additionalContainers:
+  browserless:
+    image: browserless/chrome
+    ports:
+      - name: http
+        containerPort: 3000

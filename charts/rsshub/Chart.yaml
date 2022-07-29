@@ -1,0 +1,16 @@
+apiVersion: v2
+name: rsshub
+description: RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.
+type: application
+version: 0.1.0
+appVersion: latest
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.0
+  - name: redis
+    repository: https://charts.bitnami.com/bitnami
+    version: 17.0.6
+    condition: redis.enabled
+sources:
+  - https://github.com/DIYgod/RSSHub
