@@ -22,7 +22,7 @@ controller:
 env:
   NODE_ENV: production
   CACHE_TYPE: redis
-  REDIS_URL: redis://redis-master:6379/
+  REDIS_URL: "redis://{{ .Release.Name }}-redis-master:6379/"
   PUPPETEER_WS_ENDPOINT: ws://localhost:3000
 
 # -- Configures service settings for the chart.
