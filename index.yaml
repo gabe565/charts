@@ -220,6 +220,27 @@ entries:
   rsshub:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-07-30T23:53:11.615487384Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.0.6
+    description: RSSHub is an open source, easy to use, and extensible RSS feed generator.
+      It's capable of generating RSS feeds from pretty much everything.
+    digest: 695ba7eb03c63e03a5dc4e9220cdedd6940d47044ac4d0ba95d8a2f56aaa7f89
+    name: rsshub
+    sources:
+    - https://github.com/DIYgod/RSSHub
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rsshub-0.1.3/rsshub-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-07-29T23:08:24.711461664Z"
     dependencies:
     - name: common
@@ -281,4 +302,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/rsshub-0.1.0/rsshub-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-29T23:08:24.711498964Z"
+generated: "2022-07-30T23:53:11.615534284Z"
