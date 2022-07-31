@@ -1,0 +1,12 @@
+apiVersion: v2
+name: limo
+description: A file upload server.
+type: application
+version: 0.1.0
+appVersion: latest
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.0
+sources:
+  - https://github.com/gabe565/limo
