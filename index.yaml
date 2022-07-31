@@ -143,6 +143,23 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/domain-watch-0.1.0/domain-watch-0.1.0.tgz
     version: 0.1.0
+  limo:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-07-31T18:31:28.095578156Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    description: A file upload server.
+    digest: 357ca9a61d6f4587f03c64dac9d231d64f44e2a966be33aa927609a32067c4f1
+    name: limo
+    sources:
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.1.0/limo-0.1.0.tgz
+    version: 0.1.0
   matrimony:
   - apiVersion: v2
     appVersion: latest
@@ -302,4 +319,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/rsshub-0.1.0/rsshub-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-30T23:53:11.615534284Z"
+generated: "2022-07-31T18:31:28.095617257Z"
