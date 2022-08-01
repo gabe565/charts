@@ -295,6 +295,24 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.1.0/mnemonic-ninja-0.1.0.tgz
     version: 0.1.0
+  pictshare:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-08-01T03:01:55.364462172Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    description: PictShare is an open source image, mp4, pastebin hosting service
+      with a simple resizing and upload API that you can host yourself.
+    digest: 5a1c1f82a19cddbb5e4b2a49c7344171f42e4b22f82120e2fafe6bc635fe6f5b
+    name: pictshare
+    sources:
+    - https://github.com/HaschekSolutions/pictshare
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/pictshare-0.1.0/pictshare-0.1.0.tgz
+    version: 0.1.0
   portfolio:
   - apiVersion: v2
     appVersion: latest
@@ -439,4 +457,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/rsshub-0.1.0/rsshub-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-01T02:52:36.166574771Z"
+generated: "2022-08-01T03:01:55.364509072Z"
