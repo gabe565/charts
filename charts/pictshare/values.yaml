@@ -41,4 +41,4 @@ persistence:
   # @default -- See values.yaml
   data:
     enabled: false
-    mountPath: /usr/share/nginx/html/data
+    mountPath: /var/www/data

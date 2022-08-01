@@ -2,7 +2,7 @@ apiVersion: v2
 name: pictshare
 description: PictShare is an open source image, mp4, pastebin hosting service with a simple resizing and upload API that you can host yourself.
 type: application
-version: 0.1.0
+version: 0.1.1
 appVersion: latest
 dependencies:
   - name: common
