@@ -2,5 +2,8 @@ dependencies:
 - name: common
   repository: https://library-charts.k8s-at-home.com
   version: 4.5.0
-digest: sha256:71e3287191a858cb35cdcde36e158c0aeee38e4b01f2f47abcfa4dad1ccd7717
-generated: "2022-07-31T13:29:35.425766-05:00"
+- name: postgresql
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.6.20
+digest: sha256:f7105bc3f654f35c5a041b1d6bdfbfdf5c2409b89e0f83436ffc9bfecd3cf569
+generated: "2022-07-31T21:07:44.523087-05:00"

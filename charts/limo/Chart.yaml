@@ -2,11 +2,15 @@ apiVersion: v2
 name: limo
 description: A file upload server.
 type: application
-version: 0.1.0
+version: 0.1.1
 appVersion: latest
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.0
+  - name: postgresql
+    version: 11.6.20
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
 sources:
   - https://github.com/gabe565/limo
