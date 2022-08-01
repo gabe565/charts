@@ -54,5 +54,6 @@ postgresql:
     username: limo
     password: limo
     database: limo
-  persistence:
-    enabled: false
+  primary:
+    persistence:
+      enabled: false

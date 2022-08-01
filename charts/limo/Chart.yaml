@@ -2,7 +2,7 @@ apiVersion: v2
 name: limo
 description: A file upload server.
 type: application
-version: 0.1.4
+version: 0.1.5
 appVersion: latest
 dependencies:
   - name: common
