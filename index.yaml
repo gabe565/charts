@@ -298,6 +298,26 @@ entries:
   portfolio:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-01T02:52:36.16653187Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.14
+    description: My personal portfolio website
+    digest: c4cbc84b587e0b852534d1a555f51dda8c6d3238f28058cc2f37436084e6479f
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.1.1/portfolio-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-07-05T20:08:45.981889219Z"
     dependencies:
     - name: common
@@ -419,4 +439,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/rsshub-0.1.0/rsshub-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-01T02:48:53.903442865Z"
+generated: "2022-08-01T02:52:36.166574771Z"
