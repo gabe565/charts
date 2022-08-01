@@ -298,6 +298,23 @@ entries:
   pictshare:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-01T03:10:11.147066487Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    description: PictShare is an open source image, mp4, pastebin hosting service
+      with a simple resizing and upload API that you can host yourself.
+    digest: ffbceaa47cd6802b4140e84aefc7a37c0865ce65cc6046511d70305cb54c6295
+    name: pictshare
+    sources:
+    - https://github.com/HaschekSolutions/pictshare
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/pictshare-0.1.1/pictshare-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-01T03:01:55.364462172Z"
     dependencies:
     - name: common
@@ -457,4 +474,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/rsshub-0.1.0/rsshub-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-01T03:01:55.364509072Z"
+generated: "2022-08-01T03:10:11.147112288Z"
