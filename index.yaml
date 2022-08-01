@@ -146,6 +146,26 @@ entries:
   limo:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-01T02:26:30.759554923Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.20
+    description: A file upload server.
+    digest: b2c58387f702434b6e96d0d15ed0a07d3db66716f7d950cae697e5b8678094a5
+    name: limo
+    sources:
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.1.3/limo-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-01T02:24:41.333692522Z"
     dependencies:
     - name: common
@@ -359,4 +379,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/rsshub-0.1.0/rsshub-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-01T02:24:41.333916423Z"
+generated: "2022-08-01T02:26:30.759595824Z"
