@@ -21,7 +21,7 @@ A file upload server.
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
 | env | object | See values.yaml | environment variables. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"ghcr.io/gabe565/limo"` | image repository |
+| image.repository | string | `"ghcr.io/gabe565/limod"` | image repository |
 | image.tag | string | `"latest"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |
