@@ -50,8 +50,9 @@ persistence:
 # @default -- See values.yaml
 postgresql:
   enabled: false
-  postgresqlUsername: limo
-  postgresqlPassword: limo
-  postgresqlDatabase: limo
+  auth:
+    username: limo
+    password: limo
+    database: limo
   persistence:
     enabled: false
