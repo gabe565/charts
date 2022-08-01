@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: ghcr.io/gabe565/limod
+  repository: ghcr.io/gabe565/limo
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
