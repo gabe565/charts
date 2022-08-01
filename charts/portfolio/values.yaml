@@ -57,8 +57,10 @@ ingress:
 # @default -- See values.yaml
 postgresql:
   enabled: false
-  postgresqlUsername: portfolio
-  postgresqlPassword: portfolio-pass
-  postgresqlDatabase: portfolio
-  persistence:
-    enabled: false
+  auth:
+    username: portfolio
+    password: portfolio-pass
+    database: portfolio
+  primary:
+    persistence:
+      enabled: false
