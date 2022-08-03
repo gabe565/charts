@@ -389,6 +389,23 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.0/relax-sounds-0.1.0.tgz
     version: 0.1.0
+  rss-bridge:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-08-03T07:13:44.645431003Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    description: The RSS feed for websites missing it.
+    digest: b24a33c868286b84c89f9d4657a10a40f4c57b4e44ab366d3161581668352a4d
+    name: rss-bridge
+    sources:
+    - https://github.com/RSS-Bridge/rss-bridge
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rss-bridge-0.1.0/rss-bridge-0.1.0.tgz
+    version: 0.1.0
   rsshub:
   - apiVersion: v2
     appVersion: latest
@@ -474,4 +491,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/rsshub-0.1.0/rsshub-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-01T03:10:11.147112288Z"
+generated: "2022-08-03T07:13:44.645485206Z"
