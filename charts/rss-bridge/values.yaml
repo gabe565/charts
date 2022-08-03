@@ -40,3 +40,7 @@ persistence:
   # @default -- See values.yaml
   config:
     enabled: false
+  cache:
+    enabled: false
+    type: emptyDir
+    mountPath: /app/cache
