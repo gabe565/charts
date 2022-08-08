@@ -1,0 +1,51 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: sbs20/scanservjs
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+  # -- image tag
+  tag: release-v2.21.0
+
+controller:
+  # -- Set the controller upgrade strategy
+  strategy: RollingUpdate
+
+# -- environment variables. [[ref]](https://github.com/sbs20/scanservjs/blob/master/docs/docker.md#environment-variables)
+# @default -- See values.yaml
+env: {}
+  # SANED_NET_HOSTS:
+  # AIRSCAN_DEVICES:
+  # DELIMITER:
+  # DEVICES:
+  # SCANIMAGE_LIST_IGNORE:
+
+# -- Configures service settings for the chart.
+# @default -- See values.yaml
+service:
+  main:
+    ports:
+      http:
+        port: 8080
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+# -- Configure persistence settings for the chart under this key.
+# @default -- See values.yaml
+persistence:
+  config:
+    enabled: false
+    mountPath: /app/config
+  data:
+    enabled: false
+    mountPath: /app/data/output

@@ -1,0 +1,12 @@
+apiVersion: v2
+name: scanservjs
+description: scanservjs is a web UI frontend for your scanner. It allows you to share one or more scanners (using SANE) on a network without the need for drivers or complicated installation.
+type: application
+version: 0.1.0
+appVersion: latest
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.0
+sources:
+  - https://github.com/sbs20/scanservjs
