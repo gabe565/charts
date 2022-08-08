@@ -507,4 +507,23 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/rsshub-0.1.0/rsshub-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-03T07:46:00.305313779Z"
+  scanservjs:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-08-08T20:36:23.987964231Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    description: scanservjs is a web UI frontend for your scanner. It allows you to
+      share one or more scanners (using SANE) on a network without the need for drivers
+      or complicated installation.
+    digest: 5aaf2a143c718a9494e8f8edb33cafc005707fee495e63e17337b2c81fa9cb59
+    name: scanservjs
+    sources:
+    - https://github.com/sbs20/scanservjs
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/scanservjs-0.1.0/scanservjs-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-08-08T20:36:23.988150932Z"
