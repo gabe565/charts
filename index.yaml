@@ -330,6 +330,24 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/pictshare-0.1.0/pictshare-0.1.0.tgz
     version: 0.1.0
+  podgrab:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-08-09T23:28:08.08265894Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    description: A self-hosted podcast manager to download episodes as soon as they
+      become live.
+    digest: 726a9ba1ab7e6ef820699284db60555e2526568136dcc7069ba7315772027267
+    name: podgrab
+    sources:
+    - https://github.com/akhilrex/podgrab
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
+    version: 0.1.0
   portfolio:
   - apiVersion: v2
     appVersion: latest
@@ -526,4 +544,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/scanservjs-0.1.0/scanservjs-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-08T20:36:23.988150932Z"
+generated: "2022-08-09T23:28:08.08271234Z"
