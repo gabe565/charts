@@ -1,8 +1,9 @@
 apiVersion: v2
 name: relax-sounds
 description: Relax Sounds is a website that lets you stream relaxing sounds to your browser or over Google Cast.
+icon: https://raw.githubusercontent.com/gabe565/relax-sounds/93681cad1585cd14203a39c6b3c5de525f30619e/frontend/public/img/icons/android-chrome-512x512.png
 type: application
-version: 0.1.0
+version: 0.1.1
 appVersion: latest
 dependencies:
   - name: common
