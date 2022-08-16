@@ -1,204 +1,112 @@
-# Default values for borgmatic.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
 
-## @section Pod parameters
 image:
-  ## @param image.repository Borgmatic image repository
-  repository: "b3vis/borgmatic"
-  ## @param image.pullPolicy Image pull policy
-  pullPolicy: "Always"
-  ## @param image.tag Image tag (immutable tags are recommended)
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  # -- image repository
+  repository: b3vis/borgmatic
+  # -- image pull policy
+  pullPolicy: Always
+  # -- image tag
+  tag: latest
 
-## @param imagePullSecrets Image pull secrets as an array
-imagePullSecrets: []
-## @param nameOverride String to fully override common.names.fullname template (will maintain the release name)
-nameOverride: ""
-## @param fullnameOverride String to fully override common.names.fullname template
-fullnameOverride: ""
+# -- environment variables. [[ref]](https://borgbackup.readthedocs.io/en/stable/usage/general.html#environment-variables)
+# @default -- See values.yaml
+env:
+  # -- Borg host ID used in archive names
+  BORG_HOST_ID: "{{ .Release.Namespace }}"
+  # BORG_PASSPHRASE:
+  # PGPASSWORD:
+  # MYSQL_PWD:
+  # MONGODB_PASSWORD:
 
-serviceAccount:
-  ## @param serviceAccount.create Specifies whether a service account should be created
-  create: false
-  ## @param serviceAccount.annotations Annotations to add to the service account
-  annotations: {}
-  ## @param serviceAccount.name The name of the service account to use.
-  # If not set and create is true, a name is generated using the fullname template
-  name: ""
+# @ignored
+service:
+  main:
+    enabled: false
 
-## @param podAnnotations Annotations to add to the pod
-podAnnotations: {}
-
-## @param podSecurityContext Pod security context parameters
-podSecurityContext: {}
-  # fsGroup: 2000
-
-## @param securityContext Security context parameters
-securityContext: {}
-  # capabilities:
-  #   drop:
-  #   - ALL
-  # readOnlyRootFilesystem: true
-  # runAsNonRoot: true
-  # runAsUser: 1000
-
-resources:
-  ## @param resources.limits Pod resource limits
-  limits: {}
-  ## @param resources.requests Pod resource requests
-  requests: {}
-  # We usually recommend not to specify default resources and to leave this as a conscious
-  # choice for the user. This also increases chances charts run on environments with little
-  # resources, such as Minikube. If you do want to specify resources, uncomment the following
-  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
-  # limits:
-  #   cpu: 100m
-  #   memory: 128Mi
-  # requests:
-  #   cpu: 100m
-  #   memory: 128Mi
-
-## @param nodeSelector Node labels for pod assignment
-nodeSelector: {}
-
-## @param tolerations Tolerations for pod assignment
-tolerations: []
-
-## @param affinity Affinity for pod assignment
-affinity: {}
-
-strategy:
-  ## @param strategy.type Deployment strategy type
-  type: Recreate
-
-## @section Persistence parameters
 persistence:
-  ## @param persistence.existingClaim Name of an existing PVC to use
-  existingClaim: ""
-  ## @param persistence.storageClass PVC Storage Class for data volume
-  storageClass: ""
-  ## @param persistence.accessModes PVC Access mode for data volume
-  accessModes: ["ReadWriteOnce"]
-  ## @param persistence.size PVS Storage Request for data volume
-  size: "8Gi"
-  ## @param persistence.annotations Annotations to add to the PVC
-  annotations: {}
-  ## @param persistence.selector Selector to match an existing Persistent Volume
-  selector: {}
-  ## @param persistence.dataSource Custom PVC data source
-  dataSource: {}
-
-## @section Auth parameters
-auth:
+  # -- Configure persistence settings for the chart under this key.
+  # @default -- See values.yaml
+  data:
+    enabled: false
+    retain: true
+    subPath:
+      - path: borg-repository
+        mountPath: /mnt/borg-repository
+      - path: config
+        mountPath: /root/.config/borg
+      - path: cache
+        mountPath: /root/.cache/borg
+  # -- Configure SSH credentials for the chart under this key.
+  # @default -- See values.yaml
   ssh:
-    ## @param auth.ssh.enabled Enable SSH key secret
     enabled: false
-    ## @param auth.ssh.existingSecret Use an existing secret for SSH key
-    existingSecret: ""
-    ## @param auth.ssh.type SSH key type. Typically "rsa" or "ed25519"
-    type: rsa
-    ## @param auth.ssh.key SSH key
-    key: ""
-    ## @param auth.ssh.annotations Annotations to add to the SSH key secret
-    annotations: {}
-  borg:
-    ## @param auth.borg.key Borg repokey. Will be generated if not configured
-    key: ""
-    ## @param auth.borg.existingSecret Use an existing secret for Borg repokey
-    existingSecret: ""
-    ## @param auth.borg.length Length of the Borg key to generate during first install
-    length: 64
-    ## @param auth.borg.annotations Annotations to add to the Borg repokey secret
-    annotations: {}
+    mountPath: /root/.ssh
+  # @ignored
+  config:
+    enabled: true
+    type: configMap
+    name: "{{ .Release.Name }}-config"
+    mountPath: /etc/borgmatic.d
 
-## @section Backup parameters
-backup:
-  ## @param backup.existingConfigMap Use an existing configmap for Borgmatic and crontab configuration
-  existingConfigMap: ""
+configmap:
+  # -- Configure Borgmatic container under this key.
+  # @default -- See values.yaml
+  config:
+    enabled: true
+    data:
+      # -- Crontab
+      crontab.txt: |
+        0 1 * * * PATH=$PATH:/usr/bin /usr/bin/borgmatic --stats -v 0 2>&1
+      # -- Borgmatic config. [[ref]](https://torsion.org/borgmatic/docs/reference/configuration)
+      # @default -- See values.yaml
+      config.yaml: |
+        location:
+          # List of source directories to backup.
+          source_directories:
+            - /home
+            - /etc
 
-  crontab:
-    ## @param backup.crontab.pruneCreate Cron expression for repo prune and backup creation
-    pruneCreate: "0 * * * *"
-    ## @param backup.crontab.check Cron expression for repo consistency checks
-    check: "30 8 * * *"
+          # Paths of local or remote repositories to backup to.
+          repositories:
+            - 1234@usw-s001.rsync.net:backups.borg
+            - k8pDxu32@k8pDxu32.repo.borgbase.com:repo
+            - /var/lib/backups/local.borg
 
-  ## @param backup.prefix Prefix backups with this string (evaluated as a template)
-  prefix: "{{ .Release.Namespace }}"
-  ## @param backup.localRepo Enable local repo at /mnt/borg-repository
-  localRepo: true
-  ## @param backup.repos Other repos to add to Borgmatic repositories
-  repos: []
-  ## @param backup.volumes Volume config
-  volumes: []
-  ## @param backup.volumeMounts Volume mount config
-  volumeMounts: []
-  ## @param backup.sourceDirectories Directories to backup
-  sourceDirectories: []
-  ## @param backup.excludePatterns Patterns to exclude from backups
-  excludePatterns: []
-  ## @param backup.healthchecks Healthchecks.io check url
-  healthchecks: ""
-  ## @param backup.checkLast Limit how many backups are checked during consistency checks
-  checkLast: 3
+        retention:
+          # Retention policy for how many backups to keep.
+          keep_daily: 7
+          keep_weekly: 4
+          keep_monthly: 6
 
-  keep:
-    ## @param backup.keep.hourly Number of hourly backups to keep during prune
-    hourly: 168
-    ## @param backup.keep.daily Number of daily backups to keep during prune
-    daily: 31
-    ## @param backup.keep.monthly Number of monthly backups to keep during prune
-    monthly: 24
-    ## @param backup.keep.yearly Number of yearly backups to keep during prune
-    yearly: 10
+        consistency:
+          # List of checks to run to validate your backups.
+          checks:
+            - name: repository
+            - name: archives
+              frequency: 2 weeks
 
-  postgresql:
-    ## @param backup.postgresql.enabled Enable PostgreSQL backup
+        hooks:
+          # Custom preparation scripts to run.
+          before_backup:
+            - prepare-for-backup.sh
+
+          # Databases to dump and include in backups.
+          postgresql_databases:
+            - name: users
+
+          # Third-party services to notify you if backups aren't happening.
+          healthchecks: https://hc-ping.com/be067061-cf96-4412-8eae-62b0c50d6a8c
+
+# @ignore
+probes:
+  liveness:
     enabled: false
-    ## @param backup.postgresql.hostname PostgreSQL hostname
-    hostname: "postgresql"
-    ## @param backup.postgresql.database PostgreSQL database
-    database: "postgres"
-    ## @param backup.postgresql.username PostgreSQL username
-    username: "postgres"
-    passwordFrom:
-      secretKeyRef:
-        ## @param backup.postgresql.passwordFrom.secretKeyRef.name Secret name to use for PostgreSQL password
-        name: "postgresql"
-        ## @param backup.postgresql.passwordFrom.secretKeyRef.key Key on secret to use for PostgreSQL password
-        key: "postgres-password"
-    ## @param backup.postgresql.format Database dump format
-    format: plain
-
-  mariadb:
-    ## @param backup.mariadb.enabled Enable MariaDB backup
+  readiness:
     enabled: false
-    ## @param backup.mariadb.hostname MariaDB hostname
-    hostname: "mariadb"
-    ## @param backup.mariadb.database MariaDB database
-    database: "my_database"
-    ## @param backup.mariadb.username MariaDB username
-    username: ""
-    passwordFrom:
-      secretKeyRef:
-        ## @param backup.mariadb.passwordFrom.secretKeyRef.name Secret name to use for MariaDB password
-        name: "mariadb"
-        ## @param backup.mariadb.passwordFrom.secretKeyRef.key Key on secret to use for MariaDB password
-        key: "mariadb-password"
-
-  mongodb:
-    ## @param backup.mongodb.enabled Enable MongoDB backup
+  startup:
     enabled: false
-    ## @param backup.mongodb.hostname MongoDB hostname
-    hostname: "mongodb"
-    ## @param backup.mongodb.database MongoDB database
-    database: ""
-    ## @param backup.mongodb.username MongoDB username
-    username: "root"
-    passwordFrom:
-      secretKeyRef:
-        ## @param backup.mongodb.passwordFrom.secretKeyRef.name Secret name to use for MariaDB password
-        name: "mongodb"
-        ## @param backup.mongodb.passwordFrom.secretKeyRef.key Key on secret to use for MariaDB password
-        key: "mongodb-root-password"
