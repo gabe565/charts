@@ -2,7 +2,7 @@ apiVersion: v2
 name: borgmatic
 description: borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services.
 type: application
-version: 0.4.1
+version: 0.4.2
 appVersion: latest
 dependencies:
   - name: common

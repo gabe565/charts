@@ -46,6 +46,7 @@ persistence:
   ssh:
     enabled: false
     mountPath: /root/.ssh
+    defaultMode: 0600
   # @ignored
   config:
     enabled: true
