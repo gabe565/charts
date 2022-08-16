@@ -20,6 +20,25 @@ entries:
   borgmatic:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-16T07:43:53.915527684Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: borgmatic is simple, configuration-driven backup software for servers
+      and workstations. Protect your files with client-side encryption. Backup your
+      databases too. Monitor it all with integrated third-party services.
+    digest: 2aed105a4f517c2000959fdb56786843083ab0b327f6882fa65af013f879a42f
+    name: borgmatic
+    sources:
+    - https://projects.torsion.org/borgmatic-collective/borgmatic
+    - https://github.com/borgmatic-collective/docker-borgmatic
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/borgmatic-0.4.2/borgmatic-0.4.2.tgz
+    version: 0.4.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-16T07:35:44.267482898Z"
     dependencies:
     - name: common
@@ -579,4 +598,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/scanservjs-0.1.0/scanservjs-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-16T07:35:44.391012414Z"
+generated: "2022-08-16T07:43:53.915625585Z"
