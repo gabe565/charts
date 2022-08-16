@@ -19,3 +19,12 @@ repos:
     rev: v1.11.0
     hooks:
       - id: helm-docs
+
+  - repo: local
+    hooks:
+      - id: gen-chart-summary
+        name: Generate Chart Summary
+        entry: hack/gen-chart-summary.sh
+        language: system
+        files: Chart\.yaml$
+        pass_filenames: false
