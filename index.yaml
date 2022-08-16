@@ -20,6 +20,25 @@ entries:
   borgmatic:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-16T07:35:44.267482898Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: borgmatic is simple, configuration-driven backup software for servers
+      and workstations. Protect your files with client-side encryption. Backup your
+      databases too. Monitor it all with integrated third-party services.
+    digest: 1165cb233e10783c805f08664892ca8737c2a3de8cc5c1a767673a9adfb570a3
+    name: borgmatic
+    sources:
+    - https://projects.torsion.org/borgmatic-collective/borgmatic
+    - https://github.com/borgmatic-collective/docker-borgmatic
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/borgmatic-0.4.1/borgmatic-0.4.1.tgz
+    version: 0.4.1
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-07-02T21:52:21.75189772Z"
     description: A Helm chart to deploy Borgmatic to Kubernetes
     digest: 9805bbfa0cf895093b0fd6673b28b5d1aef332632834f77d3adaee51ef86a6f3
@@ -410,6 +429,22 @@ entries:
   rss-bridge:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-16T07:35:44.390941212Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    description: The RSS feed for websites missing it.
+    digest: 0e8f8d3a9039430b4e7cda51bc83f9fe34cff2d747d9cc8ee401d4e96342ad1b
+    name: rss-bridge
+    sources:
+    - https://github.com/RSS-Bridge/rss-bridge
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rss-bridge-0.1.2/rss-bridge-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-03T07:46:00.305086479Z"
     dependencies:
     - name: common
@@ -544,4 +579,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/scanservjs-0.1.0/scanservjs-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-09T23:28:08.08271234Z"
+generated: "2022-08-16T07:35:44.391012414Z"
