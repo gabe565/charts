@@ -257,6 +257,26 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/domain-watch-0.1.0/domain-watch-0.1.0.tgz
     version: 0.1.0
+  hammond:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-08-17T04:21:01.084128608Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A self-hosted vehicle expense tracking system with support for multiple
+      users.
+    digest: a8f799194aadc3c32dfe3bd0c3c1db3989960ee7d9061e9464e602750dc1dc0d
+    icon: https://raw.githubusercontent.com/akhilrex/hammond/84cba2c7f26f6d3f81c49b132110b24ac97c7b49/ui/public/touch-icon.png
+    kubeVersion: '>=1.16.0-0'
+    name: hammond
+    sources:
+    - https://github.com/akhilrex/hammond
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/hammond-0.1.0/hammond-0.1.0.tgz
+    version: 0.1.0
   limo:
   - apiVersion: v2
     appVersion: latest
@@ -983,4 +1003,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/scanservjs-0.1.0/scanservjs-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-17T03:47:11.929855526Z"
+generated: "2022-08-17T04:21:01.084252515Z"
