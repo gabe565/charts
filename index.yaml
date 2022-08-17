@@ -3,6 +3,23 @@ entries:
   ascii-telnet-rust:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-17T03:47:09.654313079Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: Star Wars telnet server written in Rust
+    digest: 122f8c778cb4754279f2d4e73a28c3e3d218ae838d62c3266c822b296456fac4
+    kubeVersion: '>=1.16.0-0'
+    name: ascii-telnet-rust
+    sources:
+    - https://github.com/gabe565/ascii-telnet-rust
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/ascii-telnet-rust-0.1.1/ascii-telnet-rust-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-07-09T21:54:20.869077086Z"
     dependencies:
     - name: common
@@ -18,6 +35,27 @@ entries:
     - https://github.com/gabe565/charts/releases/download/ascii-telnet-rust-0.1.0/ascii-telnet-rust-0.1.0.tgz
     version: 0.1.0
   borgmatic:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-08-17T03:47:09.830941193Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: borgmatic is simple, configuration-driven backup software for servers
+      and workstations. Protect your files with client-side encryption. Backup your
+      databases too. Monitor it all with integrated third-party services.
+    digest: 01a8a5e0faa528f9a154f3871e3cf0868bdb60083633561c58927197dbbd18a8
+    icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
+    kubeVersion: '>=1.16.0-0'
+    name: borgmatic
+    sources:
+    - https://projects.torsion.org/borgmatic-collective/borgmatic
+    - https://github.com/borgmatic-collective/docker-borgmatic
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/borgmatic-0.4.4/borgmatic-0.4.4.tgz
+    version: 0.4.4
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-16T19:18:07.41871878Z"
@@ -169,6 +207,24 @@ entries:
   domain-watch:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-17T03:47:10.003570939Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: Tool to watch whois reports and notify when statuses change or expiration
+      is incoming.
+    digest: 7f5100389883a7c4517fed03e6f33bf566ff764f40fd050bee2330de51e6320e
+    kubeVersion: '>=1.16.0-0'
+    name: domain-watch
+    sources:
+    - https://github.com/gabe565/domain-watch
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/domain-watch-0.1.2/domain-watch-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-07-17T23:43:25.618616379Z"
     dependencies:
     - name: common
@@ -202,6 +258,27 @@ entries:
     - https://github.com/gabe565/charts/releases/download/domain-watch-0.1.0/domain-watch-0.1.0.tgz
     version: 0.1.0
   limo:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-08-17T03:47:10.185813909Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.20
+    description: A file upload server.
+    digest: 7031832f23ac0f1ee09ab4d239e226be7de1570c2934c2da3496a455fdffddec
+    kubeVersion: '>=1.16.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.1.6/limo-0.1.6.tgz
+    version: 0.1.6
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-01T02:48:53.903372364Z"
@@ -321,6 +398,23 @@ entries:
   matrimony:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-17T03:47:10.35644007Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: Self-hosted wedding site configured via YAML
+    digest: 574298e7959face94287d7e91769f5bb5cd0bfe892fa371dd8f57c0e349f7787
+    kubeVersion: '>=1.16.0-0'
+    name: matrimony
+    sources:
+    - https://github.com/gabe565/matrimony
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/matrimony-0.1.1/matrimony-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-07-03T03:08:55.553410927Z"
     dependencies:
     - name: common
@@ -336,6 +430,25 @@ entries:
     - https://github.com/gabe565/charts/releases/download/matrimony-0.1.0/matrimony-0.1.0.tgz
     version: 0.1.0
   mnemonic-ninja:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-08-17T03:47:10.679135238Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: Mnemonic Ninja is a website to convert between a number and its corresponding
+      word to aid in memorization.
+    digest: c7918cd97e3836d7e52750f46e214c69327008e3e3624cc4ae56cf0c521ab371
+    icon: https://raw.githubusercontent.com/gabe565/mnemonic-ninja/20b5c559fb0147c5f3c0c1cc5a3841d371259b78/frontend/src/assets/logo.svg
+    kubeVersion: '>=1.16.0-0'
+    name: mnemonic-ninja
+    sources:
+    - https://github.com/gabe565/mnemonic-ninja
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.1.2/mnemonic-ninja-0.1.2.tgz
+    version: 0.1.2
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-16T19:18:07.974432707Z"
@@ -372,6 +485,25 @@ entries:
     - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.1.0/mnemonic-ninja-0.1.0.tgz
     version: 0.1.0
   pictshare:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-08-17T03:47:10.851865383Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    description: PictShare is an open source image, mp4, pastebin hosting service
+      with a simple resizing and upload API that you can host yourself.
+    digest: f4a88613c43fa245aff7655609c9bc277ba668cfd6636500eb5f855fa453ada9
+    icon: https://camo.githubusercontent.com/6efdab1c63d518fafc5e735001c5ed45e7cbd4958952cdd972e2630eee881d97/68747470733a2f2f7069637473686172652e6e65742f706868796e6a2e706e67
+    kubeVersion: '>=1.16.0-0'
+    name: pictshare
+    sources:
+    - https://github.com/HaschekSolutions/pictshare
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/pictshare-0.1.3/pictshare-0.1.3.tgz
+    version: 0.1.3
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-16T19:18:08.115568474Z"
@@ -427,6 +559,24 @@ entries:
   podgrab:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-17T03:47:11.01674359Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    description: A self-hosted podcast manager to download episodes as soon as they
+      become live.
+    digest: ac800fa44269c3da68f65855861e28fd46bb0b761d3242f61ac93991f94b4703
+    kubeVersion: '>=1.16.0-0'
+    name: podgrab
+    sources:
+    - https://github.com/akhilrex/podgrab
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/podgrab-0.1.1/podgrab-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-09T23:28:08.08265894Z"
     dependencies:
     - name: common
@@ -443,6 +593,28 @@ entries:
     - https://github.com/gabe565/charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
     version: 0.1.0
   portfolio:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-08-17T03:47:11.205418009Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.14
+    description: My personal portfolio website
+    digest: 00504b1765b52018c74da04fe6cfaa11aa7dabdfcdf05e8b41aac099bf31d57d
+    icon: https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.1.3/portfolio-0.1.3.tgz
+    version: 0.1.3
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-16T19:53:19.541761444Z"
@@ -507,6 +679,25 @@ entries:
   relax-sounds:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-17T03:47:11.371294108Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: Relax Sounds is a website that lets you stream relaxing sounds to
+      your browser or over Google Cast.
+    digest: 654181f6eb9a406c803275e0e7314735b07d1aa99fba6754c4005e655e4128ae
+    icon: https://raw.githubusercontent.com/gabe565/relax-sounds/93681cad1585cd14203a39c6b3c5de525f30619e/frontend/public/img/icons/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: relax-sounds
+    sources:
+    - https://github.com/gabe565/relax-sounds
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.2/relax-sounds-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-16T19:18:08.644836477Z"
     dependencies:
     - name: common
@@ -541,6 +732,24 @@ entries:
     - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.0/relax-sounds-0.1.0.tgz
     version: 0.1.0
   rss-bridge:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-08-17T03:47:11.546988229Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    description: The RSS feed for websites missing it.
+    digest: 227dc03db35b9caa3bf34990e5532f50efb61b892454d3920c45427ac7c9a25d
+    icon: https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png
+    kubeVersion: '>=1.16.0-0'
+    name: rss-bridge
+    sources:
+    - https://github.com/RSS-Bridge/rss-bridge
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rss-bridge-0.1.4/rss-bridge-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-16T19:18:08.760729011Z"
@@ -607,6 +816,29 @@ entries:
     - https://github.com/gabe565/charts/releases/download/rss-bridge-0.1.0/rss-bridge-0.1.0.tgz
     version: 0.1.0
   rsshub:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-08-17T03:47:11.745510472Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.0.6
+    description: RSSHub is an open source, easy to use, and extensible RSS feed generator.
+      It's capable of generating RSS feeds from pretty much everything.
+    digest: a2d91e86a6952f3849fed869d8080cdc6d33af34d7463ba9018491989a7bf462
+    icon: https://camo.githubusercontent.com/79f2dcf6fb41b71619186b12eed25495fa55e20d3f21355798a2cb22703c6f8b/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30342f32332f356362656237653431343134632e706e67
+    kubeVersion: '>=1.16.0-0'
+    name: rsshub
+    sources:
+    - https://github.com/DIYgod/RSSHub
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rsshub-0.1.5/rsshub-0.1.5.tgz
+    version: 0.1.5
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-16T19:18:08.891493747Z"
@@ -716,6 +948,25 @@ entries:
   scanservjs:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-17T03:47:11.929414529Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    description: scanservjs is a web UI frontend for your scanner. It allows you to
+      share one or more scanners (using SANE) on a network without the need for drivers
+      or complicated installation.
+    digest: c1fd8ad3ecbef01cf7cca2f5cba00d3521b3520cc6f9cd9b6db9236b198baded
+    kubeVersion: '>=1.16.0-0'
+    name: scanservjs
+    sources:
+    - https://github.com/sbs20/scanservjs
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/scanservjs-0.1.1/scanservjs-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-08T20:36:23.987964231Z"
     dependencies:
     - name: common
@@ -732,4 +983,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/scanservjs-0.1.0/scanservjs-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-16T19:53:20.038329721Z"
+generated: "2022-08-17T03:47:11.929855526Z"
