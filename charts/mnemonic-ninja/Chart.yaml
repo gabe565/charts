@@ -3,8 +3,9 @@ name: mnemonic-ninja
 description: Mnemonic Ninja is a website to convert between a number and its corresponding word to aid in memorization.
 icon: https://raw.githubusercontent.com/gabe565/mnemonic-ninja/20b5c559fb0147c5f3c0c1cc5a3841d371259b78/frontend/src/assets/logo.svg
 type: application
-version: 0.1.1
+version: 0.1.2
 appVersion: latest
+kubeVersion: ">=1.16.0-0"
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com

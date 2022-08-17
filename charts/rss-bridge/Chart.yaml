@@ -3,8 +3,9 @@ name: rss-bridge
 description:  The RSS feed for websites missing it.
 icon: https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png
 type: application
-version: 0.1.3
+version: 0.1.4
 appVersion: latest
+kubeVersion: ">=1.16.0-0"
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com

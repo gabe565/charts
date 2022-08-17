@@ -1,8 +1,10 @@
 # matrimony
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 Self-hosted wedding site configured via YAML
+
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new)**
 
 ## Source Code
 
@@ -10,11 +12,66 @@ Self-hosted wedding site configured via YAML
 
 ## Requirements
 
+Kubernetes: `>=1.16.0-0`
+
+## Dependencies
+
 | Repository | Name | Version |
 |------------|------|---------|
 | https://library-charts.k8s-at-home.com | common | 4.4.2 |
 
+## TL;DR
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
+helm install matrimony gabe565/matrimony
+```
+
+## Installing the Chart
+
+To install the chart with the release name `matrimony`
+
+```console
+helm install matrimony gabe565/matrimony
+```
+
+## Uninstalling the Chart
+
+To uninstall the `matrimony` deployment
+
+```console
+helm uninstall matrimony
+```
+
+The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
+
+## Configuration
+
+Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
+Other values may be used from the [values.yaml](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml) from the [k8s-at-home common library](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common).
+
+Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
+
+```console
+helm install matrimony \
+  --set env.TZ="America/New York" \
+    gabe565/matrimony
+```
+
+Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
+
+```console
+helm install matrimony gabe565/matrimony -f values.yaml
+```
+
+## Custom configuration
+
+N/A
+
 ## Values
+
+**Important**: When deploying an application Helm chart you can add more values from the k8s-at-home common library chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|

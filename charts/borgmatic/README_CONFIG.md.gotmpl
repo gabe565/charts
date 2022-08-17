@@ -1,0 +1,24 @@
+{{- define "custom.custom.configuration.header" -}}
+## Custom configuration
+{{- end -}}
+
+{{- define "custom.custom.configuration" -}}
+{{ template "custom.custom.configuration.header" . }}
+
+### First Time Setup
+
+1. After initial chart installation, you will need to initialize the Borg repository:
+
+    ```shell
+    kubectl rollout status deployment.apps/{{ template "chart.name" . }}
+    kubectl exec -i deployment.apps/{{ template "chart.name" . }} -- borgmatic --init --encryption repokey-blake2
+    ```
+
+2. Create an initial backup to ensure Borgmatic is configured correctly:
+
+    ```shell
+    kubectl exec -it deployment.apps/{{ template "chart.name" . }} -- borgmatic create --stats
+    ```
+
+3. Ensure you have stored the passphrase externally to prevent data loss.
+{{- end -}}

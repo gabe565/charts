@@ -2,8 +2,9 @@ apiVersion: v2
 name: domain-watch
 description: Tool to watch whois reports and notify when statuses change or expiration is incoming.
 type: application
-version: 0.1.1
+version: 0.1.2
 appVersion: latest
+kubeVersion: ">=1.16.0-0"
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com

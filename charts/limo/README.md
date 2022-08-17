@@ -1,8 +1,10 @@
 # limo
 
-![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 A file upload server.
+
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new)**
 
 ## Source Code
 
@@ -10,12 +12,67 @@ A file upload server.
 
 ## Requirements
 
+Kubernetes: `>=1.16.0-0`
+
+## Dependencies
+
 | Repository | Name | Version |
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | postgresql | 11.6.20 |
 | https://library-charts.k8s-at-home.com | common | 4.5.0 |
 
+## TL;DR
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
+helm install limo gabe565/limo
+```
+
+## Installing the Chart
+
+To install the chart with the release name `limo`
+
+```console
+helm install limo gabe565/limo
+```
+
+## Uninstalling the Chart
+
+To uninstall the `limo` deployment
+
+```console
+helm uninstall limo
+```
+
+The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
+
+## Configuration
+
+Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
+Other values may be used from the [values.yaml](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml) from the [k8s-at-home common library](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common).
+
+Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
+
+```console
+helm install limo \
+  --set env.TZ="America/New York" \
+    gabe565/limo
+```
+
+Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
+
+```console
+helm install limo gabe565/limo -f values.yaml
+```
+
+## Custom configuration
+
+N/A
+
 ## Values
+
+**Important**: When deploying an application Helm chart you can add more values from the k8s-at-home common library chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|

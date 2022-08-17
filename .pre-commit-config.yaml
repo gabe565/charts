@@ -15,11 +15,6 @@ repos:
       - id: remove-crlf
       - id: remove-tabs
 
-  - repo: https://github.com/norwoodj/helm-docs
-    rev: v1.11.0
-    hooks:
-      - id: helm-docs
-
   - repo: local
     hooks:
       - id: gen-chart-summary
@@ -27,4 +22,11 @@ repos:
         entry: hack/gen-chart-summary.sh
         language: system
         files: Chart\.yaml$
+        pass_filenames: false
+
+      - id: helm-docs
+        name: Helm Docs
+        entry: hack/gen-helm-docs.sh
+        language: script
+        files: (README_CONFIG\.md\.gotmpl|(Chart|requirements|values)\.yaml)$
         pass_filenames: false

@@ -1,8 +1,10 @@
 # rsshub
 
-![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.
+
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new)**
 
 ## Source Code
 
@@ -10,12 +12,67 @@ RSSHub is an open source, easy to use, and extensible RSS feed generator. It's c
 
 ## Requirements
 
+Kubernetes: `>=1.16.0-0`
+
+## Dependencies
+
 | Repository | Name | Version |
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | redis | 17.0.6 |
 | https://library-charts.k8s-at-home.com | common | 4.5.0 |
 
+## TL;DR
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
+helm install rsshub gabe565/rsshub
+```
+
+## Installing the Chart
+
+To install the chart with the release name `rsshub`
+
+```console
+helm install rsshub gabe565/rsshub
+```
+
+## Uninstalling the Chart
+
+To uninstall the `rsshub` deployment
+
+```console
+helm uninstall rsshub
+```
+
+The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
+
+## Configuration
+
+Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
+Other values may be used from the [values.yaml](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml) from the [k8s-at-home common library](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common).
+
+Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
+
+```console
+helm install rsshub \
+  --set env.TZ="America/New York" \
+    gabe565/rsshub
+```
+
+Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
+
+```console
+helm install rsshub gabe565/rsshub -f values.yaml
+```
+
+## Custom configuration
+
+N/A
+
 ## Values
+
+**Important**: When deploying an application Helm chart you can add more values from the k8s-at-home common library chart [here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common)
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
