@@ -37,6 +37,7 @@ helm delete my-<chart-name>
 | [ascii-telnet-rust](charts/ascii-telnet-rust) | Star Wars telnet server written in Rust |
 | [borgmatic](charts/borgmatic) | borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services. |
 | [domain-watch](charts/domain-watch) | Tool to watch whois reports and notify when statuses change or expiration is incoming. |
+| [hammond](charts/hammond) | A self-hosted vehicle expense tracking system with support for multiple users. |
 | [limo](charts/limo) | A file upload server. |
 | [matrimony](charts/matrimony) | Self-hosted wedding site configured via YAML |
 | [mnemonic-ninja](charts/mnemonic-ninja) | Mnemonic Ninja is a website to convert between a number and its corresponding word to aid in memorization. |
