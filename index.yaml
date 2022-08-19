@@ -1003,4 +1003,22 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/scanservjs-0.1.0/scanservjs-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-17T04:21:01.084252515Z"
+  transsmute:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-08-19T22:51:50.880039063Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Transsmute builds RSS feeds for websites that don't provide them.
+    digest: b1e132d6ccd7af26c53da2130b5dd087cd205033ede807cd44734669fb95c619
+    kubeVersion: '>=1.16.0-0'
+    name: transsmute
+    sources:
+    - https://github.com/gabe565/transsmute
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-08-19T22:51:50.880422471Z"
