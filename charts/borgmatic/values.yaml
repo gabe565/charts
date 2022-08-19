@@ -61,8 +61,8 @@ configmap:
     enabled: true
     data:
       # -- Crontab
-      crontab.txt: |
-        0 1 * * * PATH=$PATH:/usr/bin /usr/bin/borgmatic --stats -v 0 2>&1
+      crontab.txt: |-
+        0 1 * * * PATH=$PATH:/usr/bin /usr/local/bin/borgmatic --stats -v 0 2>&1
       # -- Borgmatic config. [[ref]](https://torsion.org/borgmatic/docs/reference/configuration)
       # @default -- See values.yaml
       config.yaml: |
