@@ -1,0 +1,13 @@
+apiVersion: v2
+name: transsmute
+description: Transsmute builds RSS feeds for websites that don't provide them.
+type: application
+version: 0.1.0
+appVersion: latest
+kubeVersion: ">=1.16.0-0"
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+sources:
+  - https://github.com/gabe565/transsmute
