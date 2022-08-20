@@ -301,6 +301,27 @@ entries:
   limo:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-20T06:57:41.037994103Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.20
+    description: A file upload server.
+    digest: c63508b46bd7660dd03b3ec55e228b6bad3b03feecee70315cb56691f816f52e
+    kubeVersion: '>=1.16.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.1.7/limo-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-17T03:47:10.185813909Z"
     dependencies:
     - name: common
@@ -439,6 +460,23 @@ entries:
   matrimony:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-20T06:57:41.338601389Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: Self-hosted wedding site configured via YAML
+    digest: a496eb75dbfd6e85dfa5f5d4c2c866b143c6ae8775ca513598b873848aec58fb
+    kubeVersion: '>=1.16.0-0'
+    name: matrimony
+    sources:
+    - https://github.com/gabe565/matrimony
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/matrimony-0.1.2/matrimony-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-17T03:47:10.35644007Z"
     dependencies:
     - name: common
@@ -471,6 +509,25 @@ entries:
     - https://github.com/gabe565/charts/releases/download/matrimony-0.1.0/matrimony-0.1.0.tgz
     version: 0.1.0
   mnemonic-ninja:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-08-20T06:57:41.455608313Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: Mnemonic Ninja is a website to convert between a number and its corresponding
+      word to aid in memorization.
+    digest: 11d1d652a6457a6db176b265b9af860a345fcbad5596142046a78ccb29782faa
+    icon: https://raw.githubusercontent.com/gabe565/mnemonic-ninja/20b5c559fb0147c5f3c0c1cc5a3841d371259b78/frontend/src/assets/logo.svg
+    kubeVersion: '>=1.16.0-0'
+    name: mnemonic-ninja
+    sources:
+    - https://github.com/gabe565/mnemonic-ninja
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.1.3/mnemonic-ninja-0.1.3.tgz
+    version: 0.1.3
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-17T03:47:10.679135238Z"
@@ -718,6 +775,25 @@ entries:
     - https://github.com/gabe565/charts/releases/download/portfolio-0.1.0/portfolio-0.1.0.tgz
     version: 0.1.0
   relax-sounds:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-08-20T06:57:41.592860574Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    description: Relax Sounds is a website that lets you stream relaxing sounds to
+      your browser or over Google Cast.
+    digest: f97a59ee16fd55cf817c31980bcca9ea361205e674afd6deff281cf0a5253850
+    icon: https://raw.githubusercontent.com/gabe565/relax-sounds/93681cad1585cd14203a39c6b3c5de525f30619e/frontend/public/img/icons/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: relax-sounds
+    sources:
+    - https://github.com/gabe565/relax-sounds
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.3/relax-sounds-0.1.3.tgz
+    version: 0.1.3
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-17T03:47:11.371294108Z"
@@ -1027,6 +1103,23 @@ entries:
   transsmute:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-20T06:57:41.702230934Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Transsmute builds RSS feeds for websites that don't provide them.
+    digest: 5b472bc284e64ce5e5b06971116481aa6527cef16162e1a398626423ec4beb71
+    kubeVersion: '>=1.16.0-0'
+    name: transsmute
+    sources:
+    - https://github.com/gabe565/transsmute
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/transsmute-0.1.1/transsmute-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-19T22:51:50.880039063Z"
     dependencies:
     - name: common
@@ -1042,4 +1135,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-19T23:22:13.492844478Z"
+generated: "2022-08-20T06:57:41.702378137Z"
