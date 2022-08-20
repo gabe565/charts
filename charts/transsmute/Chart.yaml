@@ -2,7 +2,7 @@ apiVersion: v2
 name: transsmute
 description: Transsmute builds RSS feeds for websites that don't provide them.
 type: application
-version: 0.1.0
+version: 0.1.1
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:

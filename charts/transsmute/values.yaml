@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: ghcr.io/gabe565/transsmute
   # -- image pull policy
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   # -- image tag
   tag: latest
 

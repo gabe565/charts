@@ -2,7 +2,7 @@ apiVersion: v2
 name: limo
 description: A file upload server.
 type: application
-version: 0.1.6
+version: 0.1.7
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
