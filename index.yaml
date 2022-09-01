@@ -278,6 +278,29 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/domain-watch-0.1.0/domain-watch-0.1.0.tgz
     version: 0.1.0
+  flame:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial release
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-01T19:49:11.245679098Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Flame is self-hosted startpage for your server. Easily manage your
+      apps and bookmarks with built-in editors.
+    digest: 42b67540e2f0a042b23ae31508c3d7f8780f0eff04807b9c7a135b0e89743191
+    kubeVersion: '>=1.16.0-0'
+    name: flame
+    sources:
+    - https://github.com/pawelmalak/flame
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/flame-0.1.0/flame-0.1.0.tgz
+    version: 0.1.0
   hammond:
   - apiVersion: v2
     appVersion: latest
@@ -1135,4 +1158,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-20T06:57:41.702378137Z"
+generated: "2022-09-01T19:49:11.246176Z"
