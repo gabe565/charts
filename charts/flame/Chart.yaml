@@ -1,0 +1,17 @@
+apiVersion: v2
+name: flame
+description: Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors.
+type: application
+version: 0.1.0
+appVersion: latest
+kubeVersion: ">=1.16.0-0"
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+sources:
+  - https://github.com/pawelmalak/flame
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial release
