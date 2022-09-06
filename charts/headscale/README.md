@@ -1,6 +1,6 @@
 # headscale
 
-![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 An open source, self-hosted implementation of the Tailscale control server.
 
@@ -75,7 +75,9 @@ N/A
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| env | object | See values.yaml | Environment variables. To configure Headscale with envs, prefix a `config.yaml` entry with `HEADSCALE_`, capitalize the key, and replace instances of `.` with `_`. For example, `server_url` becomes `HEADSCALE_SERVER_URL`. [[ref]](https://github.com/juanfont/headscale/blob/main/config-example.yaml) |
+| env | object | See values.yaml | Environment variables. [[ref]](https://github.com/juanfont/headscale/blob/main/config-example.yaml) |
+| env.HEADSCALE_DNS_CONFIG_BASE_DOMAIN | string | `"example.com"` | Defines the base domain to create the hostnames for MagicDNS. `base_domain` must be a FQDNs, without the trailing dot. The FQDN of the hosts will be `hostname.namespace.base_domain` (e.g., _myhost.mynamespace.example.com_). |
+| env.HEADSCALE_SERVER_URL | string | Generated from ingress. | The url clients will connect to. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"headscale/headscale"` | image repository |
 | image.tag | string | `"0.16.4-alpine"` | image tag |

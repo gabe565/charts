@@ -13,11 +13,17 @@ image:
   # -- image tag
   tag: 0.16.4-alpine
 
-# -- Environment variables. To configure Headscale with envs, prefix a `config.yaml`
-# entry with `HEADSCALE_`, capitalize the key, and replace instances of `.` with `_`.
-# For example, `server_url` becomes `HEADSCALE_SERVER_URL`. [[ref]](https://github.com/juanfont/headscale/blob/main/config-example.yaml)
+# -- Environment variables. [[ref]](https://github.com/juanfont/headscale/blob/main/config-example.yaml)
 # @default -- See values.yaml
 env:
+  # -- Defines the base domain to create the hostnames for MagicDNS.
+  # `base_domain` must be a FQDNs, without the trailing dot.
+  # The FQDN of the hosts will be
+  # `hostname.namespace.base_domain` (e.g., _myhost.mynamespace.example.com_).
+  HEADSCALE_DNS_CONFIG_BASE_DOMAIN: example.com
+
+  # -- The url clients will connect to.
+  # @default -- Generated from ingress.
   HEADSCALE_SERVER_URL: |
     {{- $primaryIngress := get .Values.ingress (include "common.ingress.primary" .) -}}
     {{- if and $primaryIngress $primaryIngress.hosts -}}
@@ -28,6 +34,7 @@ env:
       {{- $host := first $primaryIngress.hosts }}
       {{- $protocol }}://{{ $host.host }}
     {{- end -}}
+
   HEADSCALE_METRICS_LISTEN_ADDR: "0.0.0.0:9090"
   HEADSCALE_PRIVATE_KEY_PATH: "/etc/headscale/private.key"
   HEADSCALE_NOISE_PRIVATE_KEY_PATH: "/etc/headscale/noise_private.key"
