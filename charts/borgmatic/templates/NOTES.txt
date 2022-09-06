@@ -5,7 +5,7 @@ First Time Setup:
 1. After initial chart installation, you will need to initialize the Borg repository:
 
     kubectl rollout status {{ $deploymentName }}
-    kubectl exec -i {{ $deploymentName }} -- borgmatic --init --encryption repokey-blake2
+    kubectl exec -i {{ $deploymentName }} -- borgmatic init --encryption repokey-blake2
 
 2. Create an initial backup to ensure Borgmatic is configured correctly:
 
