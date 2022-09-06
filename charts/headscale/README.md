@@ -1,6 +1,6 @@
 # headscale
 
-![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 An open source, self-hosted implementation of the Tailscale control server.
 
@@ -81,6 +81,7 @@ N/A
 | image.tag | string | `"0.16.4-alpine"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence.config | object | See values.yaml | Configure persistence settings for the chart under this key. |
+| secret | object | See values.yaml | Secret environment variables. |
 | service.main | object | See values.yaml | Configures service settings for the chart. |
 
 ----------------------------------------------

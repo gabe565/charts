@@ -33,6 +33,13 @@ env:
   HEADSCALE_NOISE_PRIVATE_KEY_PATH: "/etc/headscale/noise_private.key"
   HEADSCALE_DB_PATH: "/etc/headscale/db.sqlite"
 
+# -- Secret environment variables.
+# @default -- See values.yaml
+secret: {}
+  # HEADSCALE_OIDC_ISSUER: ""
+  # HEADSCALE_OIDC_CLIENT_ID: ""
+  # HEADSCALE_OIDC_CLIENT_SECRET: ""
+
 service:
   # -- Configures service settings for the chart.
   # @default -- See values.yaml
