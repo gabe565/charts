@@ -13,9 +13,25 @@ image:
   # -- image tag
   tag: 0.16.4-alpine
 
-# -- environment variables.
+# -- Environment variables. To configure Headscale with envs, prefix a `config.yaml`
+# entry with `HEADSCALE_`, capitalize the key, and replace instances of `.` with `_`.
+# For example, `server_url` becomes `HEADSCALE_SERVER_URL`. [[ref]](https://github.com/juanfont/headscale/blob/main/config-example.yaml)
 # @default -- See values.yaml
-env: {}
+env:
+  HEADSCALE_SERVER_URL: |
+    {{- $primaryIngress := get .Values.ingress (include "common.ingress.primary" .) -}}
+    {{- if and $primaryIngress $primaryIngress.hosts -}}
+      {{- $protocol := "http" -}}
+      {{- if $primaryIngress.tls -}}
+        {{- $protocol = "https" -}}
+      {{- end -}}
+      {{- $host := first $primaryIngress.hosts }}
+      {{- $protocol }}://{{ $host.host }}
+    {{- end -}}
+  HEADSCALE_METRICS_LISTEN_ADDR: "0.0.0.0:9090"
+  HEADSCALE_PRIVATE_KEY_PATH: "/etc/headscale/private.key"
+  HEADSCALE_NOISE_PRIVATE_KEY_PATH: "/etc/headscale/noise_private.key"
+  HEADSCALE_DB_PATH: "/etc/headscale/db.sqlite"
 
 service:
   # -- Configures service settings for the chart.
@@ -49,22 +65,10 @@ args: ["headscale", "serve"]
 # @ignored
 initContainers:
   config:
-    image: mikefarah/yq:4
+    image: alpine
     volumeMounts:
       - name: config
         mountPath: /etc/headscale
-    env:
-      - name: SERVER_URL
-        value: |
-          {{- $primaryIngress := get .Values.ingress (include "common.ingress.primary" .) -}}
-          {{- if and $primaryIngress $primaryIngress.hosts -}}
-            {{- $protocol := "http" -}}
-            {{- if $primaryIngress.tls -}}
-              {{- $protocol = "https" -}}
-            {{- end -}}
-            {{- $host := first $primaryIngress.hosts }}
-            {{- $protocol }}://{{ $host.host }}
-          {{- end -}}
     command:
       - sh
       - -c
@@ -72,12 +76,5 @@ initContainers:
         set -x
         if [ ! -f /etc/headscale/config.yaml ]; then
           wget -O - https://raw.githubusercontent.com/juanfont/headscale/main/config-example.yaml \
-            | yq e '(.metrics_listen_addr = "0.0.0.0:9090")' \
-            | yq e '(.private_key_path = "/etc/headscale/private.key")' \
-            | yq e '(.noise.private_key_path = "/etc/headscale/noise_private.key")' \
-            | yq e '(.db_path = "/etc/headscale/db.sqlite")' \
             > /etc/headscale/config.yaml
-        fi
-        if [ -n "$SERVER_URL" ]; then
-          yq e -i '(.server_url = env(SERVER_URL))' /etc/headscale/config.yaml
         fi
