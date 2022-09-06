@@ -39,6 +39,7 @@ helm delete my-<chart-name>
 | [domain-watch](charts/domain-watch) | Tool to watch whois reports and notify when statuses change or expiration is incoming. |
 | [flame](charts/flame) | Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors. |
 | [hammond](charts/hammond) | A self-hosted vehicle expense tracking system with support for multiple users. |
+| [headscale](charts/headscale) | An open source, self-hosted implementation of the Tailscale control server. |
 | [limo](charts/limo) | A file upload server. |
 | [matrimony](charts/matrimony) | Self-hosted wedding site configured via YAML |
 | [mnemonic-ninja](charts/mnemonic-ninja) | Mnemonic Ninja is a website to convert between a number and its corresponding word to aid in memorization. |

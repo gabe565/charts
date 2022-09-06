@@ -1,0 +1,16 @@
+{{- include "common.notes.defaultNotes" . -}}
+
+{{- $deploymentName := printf "deployments/%s" (include "common.names.fullname" .) }}
+
+2. Create a Namespace:
+
+    kubectl rollout status {{ $deploymentName }}
+    kubectl exec -i {{ $deploymentName }} -- headscale namespaces create myfirstnamespace
+
+3. Connect a Node:
+
+   When you connect a node for the first time, a webpage will open with a
+   command to add the machine to your network. Run this command in the container.
+   For example:
+
+    kubectl exec -i {{ $deploymentName }} -- headscale -n NAMESPACE nodes register --key KEY
