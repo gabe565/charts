@@ -282,6 +282,29 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: added
+          description: Add icon
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-06T02:28:40.152041975Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Flame is self-hosted startpage for your server. Easily manage your
+      apps and bookmarks with built-in editors.
+    digest: 2bcc7eb58b698a25143100d3e56bf8ebfa7db553c3770cd8acef5685a3c8188a
+    icon: https://raw.githubusercontent.com/pawelmalak/flame/4ed29fe276b4282c67415f9788660df2a3a69b5c/client/public/icons/apple-touch-icon-180x180.png
+    kubeVersion: '>=1.16.0-0'
+    name: flame
+    sources:
+    - https://github.com/pawelmalak/flame
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/flame-0.1.1/flame-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
           description: Initial release
     apiVersion: v2
     appVersion: latest
@@ -1158,4 +1181,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-01T19:49:11.246176Z"
+generated: "2022-09-06T02:28:40.153574492Z"
