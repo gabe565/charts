@@ -344,6 +344,30 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/hammond-0.1.0/hammond-0.1.0.tgz
     version: 0.1.0
+  headscale:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial release
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-06T02:35:30.3575676Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: d9a49355431c1ab883aaea9c3474aed529be483780254d7fca70719b20162744
+    icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
+    kubeVersion: '>=1.16.0-0'
+    name: headscale
+    sources:
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.1.0/headscale-0.1.0.tgz
+    version: 0.1.0
   limo:
   - apiVersion: v2
     appVersion: latest
@@ -1181,4 +1205,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-06T02:28:40.153574492Z"
+generated: "2022-09-06T02:35:30.357780501Z"
