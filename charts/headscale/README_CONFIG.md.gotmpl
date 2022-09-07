@@ -5,5 +5,38 @@
 {{- define "custom.custom.configuration" -}}
 {{ template "custom.custom.configuration.header" . }}
 
-N/A
+### Headscale UI
+
+You can deploy [gurucomputing/headscale-ui](https://github.com/gurucomputing/headscale-ui)
+as a sidecar container by adding the following values:
+
+```yaml
+additionalContainers:
+  ui:
+    image: ghcr.io/gurucomputing/headscale-ui:latest
+    ports:
+      - name: http
+        containerPort: 80
+
+service:
+  main:
+    ports:
+      ui:
+        enabled: true
+        port: 80
+
+ingress:
+  ui:
+    enabled: true
+    hosts:
+      - host: example.com
+        paths:
+          - path: /web
+            service:
+              port: 80
+    tls:
+      - ...
+```
+
+Once deployed, the UI will be available at `/web`.
 {{- end -}}

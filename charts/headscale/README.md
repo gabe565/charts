@@ -1,6 +1,6 @@
 # headscale
 
-![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 An open source, self-hosted implementation of the Tailscale control server.
 
@@ -67,7 +67,40 @@ helm install headscale gabe565/headscale -f values.yaml
 
 ## Custom configuration
 
-N/A
+### Headscale UI
+
+You can deploy [gurucomputing/headscale-ui](https://github.com/gurucomputing/headscale-ui)
+as a sidecar container by adding the following values:
+
+```yaml
+additionalContainers:
+  ui:
+    image: ghcr.io/gurucomputing/headscale-ui:latest
+    ports:
+      - name: http
+        containerPort: 80
+
+service:
+  main:
+    ports:
+      ui:
+        enabled: true
+        port: 80
+
+ingress:
+  ui:
+    enabled: true
+    hosts:
+      - host: example.com
+        paths:
+          - path: /web
+            service:
+              port: 80
+    tls:
+      - ...
+```
+
+Once deployed, the UI will be available at `/web`.
 
 ## Values
 
