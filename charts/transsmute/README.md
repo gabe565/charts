@@ -1,6 +1,6 @@
 # transsmute
 
-![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 Transsmute builds RSS feeds for websites that don't provide them.
 
@@ -76,13 +76,11 @@ N/A
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
-| env | object | See values.yaml | environment variables. |
+| env | object | See values.yaml | environment variables. [[ref]](https://github.com/gabe565/transsmute#configuration) |
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"ghcr.io/gabe565/transsmute"` | image repository |
 | image.tag | string | `"latest"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
-| secret | object | See values.yaml | secret environment variables. |
-| secret.TRANSSMUTE_YOUTUBE_KEY | string | `""` | YouTube API key. Required to enable YouTube endpoints. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ----------------------------------------------

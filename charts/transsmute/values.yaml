@@ -17,15 +17,14 @@ controller:
   # -- Set the controller upgrade strategy
   strategy: RollingUpdate
 
-# -- environment variables.
+# -- environment variables. [[ref]](https://github.com/gabe565/transsmute#configuration)
 # @default -- See values.yaml
 env: {}
-
-# -- secret environment variables.
-# @default -- See values.yaml
-secret:
-  # -- YouTube API key. Required to enable YouTube endpoints.
-  TRANSSMUTE_YOUTUBE_KEY: ""
+  # TRANSSMUTE_YOUTUBE_KEY: ""
+  # TRANSSMUTE_DOCKERHUB_USERNAME: ""
+  # TRANSSMUTE_DOCKERHUB_PASSWORD: ""
+  # TRANSSMUTE_GHCR_USERNAME: ""
+  # TRANSSMUTE_GHCR_PASSWORD: ""
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
