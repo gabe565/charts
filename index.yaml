@@ -372,6 +372,29 @@ entries:
   headscale:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: Add Headscale UI example
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-07T03:10:01.349103379Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: 2605a4b354a7223141da0a1390646ef0dfa2c6f095f0887c0cf9ee61bff3d474
+    icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
+    kubeVersion: '>=1.16.0-0'
+    name: headscale
+    sources:
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.1.5/headscale-0.1.5.tgz
+    version: 0.1.5
+  - annotations:
+      artifacthub.io/changes: |
         - kind: changed
           description: Tweak init container wget command
     apiVersion: v2
@@ -1322,4 +1345,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-07T02:20:18.826619694Z"
+generated: "2022-09-07T03:10:01.349336986Z"
