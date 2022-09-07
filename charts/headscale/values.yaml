@@ -89,6 +89,6 @@ initContainers:
       - |
         set -x
         if [ ! -f /etc/headscale/config.yaml ]; then
-          wget -O - https://raw.githubusercontent.com/juanfont/headscale/main/config-example.yaml \
-            > /etc/headscale/config.yaml
+          wget -O /etc/headscale/config.yaml \
+            https://raw.githubusercontent.com/juanfont/headscale/main/config-example.yaml
         fi
