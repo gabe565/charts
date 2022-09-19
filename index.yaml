@@ -1,6 +1,27 @@
 apiVersion: v1
 entries:
   ascii-telnet-rust:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:18.71692991Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Star Wars telnet server written in Rust
+    digest: 0bdf3f7cf1aaaac3047cb12f65ab7060d7177ed0a75cb42b5d497e9dbec1093b
+    kubeVersion: '>=1.16.0-0'
+    name: ascii-telnet-rust
+    sources:
+    - https://github.com/gabe565/ascii-telnet-rust
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/ascii-telnet-rust-0.1.2/ascii-telnet-rust-0.1.2.tgz
+    version: 0.1.2
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-17T03:47:09.654313079Z"
@@ -35,6 +56,31 @@ entries:
     - https://github.com/gabe565/charts/releases/download/ascii-telnet-rust-0.1.0/ascii-telnet-rust-0.1.0.tgz
     version: 0.1.0
   borgmatic:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:18.861305663Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: borgmatic is simple, configuration-driven backup software for servers
+      and workstations. Protect your files with client-side encryption. Backup your
+      databases too. Monitor it all with integrated third-party services.
+    digest: ca84e3a2ca285b729f8128e32736fb1eefbae7d1864e431c39c60eeeb16997ac
+    icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
+    kubeVersion: '>=1.16.0-0'
+    name: borgmatic
+    sources:
+    - https://projects.torsion.org/borgmatic-collective/borgmatic
+    - https://github.com/borgmatic-collective/docker-borgmatic
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/borgmatic-0.4.7/borgmatic-0.4.7.tgz
+    version: 0.4.7
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -251,6 +297,28 @@ entries:
     - https://github.com/gabe565/charts/releases/download/borgmatic-0.1.0/borgmatic-0.1.0.tgz
     version: 0.1.0
   domain-watch:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:18.997814621Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Tool to watch whois reports and notify when statuses change or expiration
+      is incoming.
+    digest: 93132d300b74f87a1efcd61bf1e2672eeaec2e5c6e9dfe6b7247a057328b100f
+    kubeVersion: '>=1.16.0-0'
+    name: domain-watch
+    sources:
+    - https://github.com/gabe565/domain-watch
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/domain-watch-0.1.3/domain-watch-0.1.3.tgz
+    version: 0.1.3
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-17T03:47:10.003570939Z"
@@ -306,6 +374,29 @@ entries:
   flame:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:19.126269474Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Flame is self-hosted startpage for your server. Easily manage your
+      apps and bookmarks with built-in editors.
+    digest: e8dd464c07e3859583adba54d02ed251848acd33bb495f35aeb5c484472b09b9
+    icon: https://raw.githubusercontent.com/pawelmalak/flame/4ed29fe276b4282c67415f9788660df2a3a69b5c/client/public/icons/apple-touch-icon-180x180.png
+    kubeVersion: '>=1.16.0-0'
+    name: flame
+    sources:
+    - https://github.com/pawelmalak/flame
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/flame-0.1.2/flame-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: Add icon
     apiVersion: v2
@@ -350,6 +441,29 @@ entries:
     - https://github.com/gabe565/charts/releases/download/flame-0.1.0/flame-0.1.0.tgz
     version: 0.1.0
   hammond:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:19.265514669Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: A self-hosted vehicle expense tracking system with support for multiple
+      users.
+    digest: 89b0fcb2f62530c4a313438b391804bad8c69762b52076b8fca41e07c83f4b76
+    icon: https://raw.githubusercontent.com/akhilrex/hammond/84cba2c7f26f6d3f81c49b132110b24ac97c7b49/ui/public/touch-icon.png
+    kubeVersion: '>=1.16.0-0'
+    name: hammond
+    sources:
+    - https://github.com/akhilrex/hammond
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/hammond-0.1.1/hammond-0.1.1.tgz
+    version: 0.1.1
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-17T04:21:01.084128608Z"
@@ -370,6 +484,29 @@ entries:
     - https://github.com/gabe565/charts/releases/download/hammond-0.1.0/hammond-0.1.0.tgz
     version: 0.1.0
   headscale:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:19.399354192Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: 5ae6fc4e2e8c44f176132fa50a34032d268e69d094e18da0b162f1b019ff345f
+    icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
+    kubeVersion: '>=1.16.0-0'
+    name: headscale
+    sources:
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.1.6/headscale-0.1.6.tgz
+    version: 0.1.6
   - annotations:
       artifacthub.io/changes: |
         - kind: added
@@ -509,6 +646,31 @@ entries:
     - https://github.com/gabe565/charts/releases/download/headscale-0.1.0/headscale-0.1.0.tgz
     version: 0.1.0
   limo:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:19.540735995Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.20
+    description: A file upload server.
+    digest: 2a2a935217b033d389102afcc7143e131b6eff89de63f201d8862d9b1672cdc0
+    kubeVersion: '>=1.16.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.1.8/limo-0.1.8.tgz
+    version: 0.1.8
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-20T06:57:41.037994103Z"
@@ -668,6 +830,27 @@ entries:
     - https://github.com/gabe565/charts/releases/download/limo-0.1.0/limo-0.1.0.tgz
     version: 0.1.0
   matrimony:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:19.666464711Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Self-hosted wedding site configured via YAML
+    digest: 5c709e0d2aeee5028928772fcaa91beed23e15c0734ce9a5bed9ec47c4701aeb
+    kubeVersion: '>=1.16.0-0'
+    name: matrimony
+    sources:
+    - https://github.com/gabe565/matrimony
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/matrimony-0.1.3/matrimony-0.1.3.tgz
+    version: 0.1.3
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-20T06:57:41.338601389Z"
@@ -719,6 +902,29 @@ entries:
     - https://github.com/gabe565/charts/releases/download/matrimony-0.1.0/matrimony-0.1.0.tgz
     version: 0.1.0
   mnemonic-ninja:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:19.799861712Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Mnemonic Ninja is a website to convert between a number and its corresponding
+      word to aid in memorization.
+    digest: e12589ef3a5b075c1c41ddc37712c2ddaeb2067601849b398d681f3cb46b8dcb
+    icon: https://raw.githubusercontent.com/gabe565/mnemonic-ninja/20b5c559fb0147c5f3c0c1cc5a3841d371259b78/frontend/src/assets/logo.svg
+    kubeVersion: '>=1.16.0-0'
+    name: mnemonic-ninja
+    sources:
+    - https://github.com/gabe565/mnemonic-ninja
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.1.4/mnemonic-ninja-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-20T06:57:41.455608313Z"
@@ -793,6 +999,29 @@ entries:
     - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.1.0/mnemonic-ninja-0.1.0.tgz
     version: 0.1.0
   pictshare:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:19.937539129Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: PictShare is an open source image, mp4, pastebin hosting service
+      with a simple resizing and upload API that you can host yourself.
+    digest: dfa6c74d0ff409fc8a616c04fd9c39ae87921b9c8891e028b468dac8e26e0bd8
+    icon: https://camo.githubusercontent.com/6efdab1c63d518fafc5e735001c5ed45e7cbd4958952cdd972e2630eee881d97/68747470733a2f2f7069637473686172652e6e65742f706868796e6a2e706e67
+    kubeVersion: '>=1.16.0-0'
+    name: pictshare
+    sources:
+    - https://github.com/HaschekSolutions/pictshare
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/pictshare-0.1.4/pictshare-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-17T03:47:10.851865383Z"
@@ -865,6 +1094,28 @@ entries:
     - https://github.com/gabe565/charts/releases/download/pictshare-0.1.0/pictshare-0.1.0.tgz
     version: 0.1.0
   podgrab:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:20.072944531Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: A self-hosted podcast manager to download episodes as soon as they
+      become live.
+    digest: 4960f946ca17c92567c5116ed0d69329d68eaaf931d30d626ccba321a3299e1f
+    kubeVersion: '>=1.16.0-0'
+    name: podgrab
+    sources:
+    - https://github.com/akhilrex/podgrab
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/podgrab-0.1.2/podgrab-0.1.2.tgz
+    version: 0.1.2
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-17T03:47:11.01674359Z"
@@ -901,6 +1152,32 @@ entries:
     - https://github.com/gabe565/charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
     version: 0.1.0
   portfolio:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:20.211088771Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.14
+    description: My personal portfolio website
+    digest: bae7fd686aad523a1e2076455dc2f913f964101e860806feef95d881e1466521
+    icon: https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.1.4/portfolio-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-17T03:47:11.205418009Z"
@@ -985,6 +1262,29 @@ entries:
     - https://github.com/gabe565/charts/releases/download/portfolio-0.1.0/portfolio-0.1.0.tgz
     version: 0.1.0
   relax-sounds:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:20.334358891Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Relax Sounds is a website that lets you stream relaxing sounds to
+      your browser or over Google Cast.
+    digest: f435a0673e4dada6795bd225e21c129f5a2235cc9a550dc694589b74a848e16b
+    icon: https://raw.githubusercontent.com/gabe565/relax-sounds/93681cad1585cd14203a39c6b3c5de525f30619e/frontend/public/img/icons/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: relax-sounds
+    sources:
+    - https://github.com/gabe565/relax-sounds
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.4/relax-sounds-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-20T06:57:41.592860574Z"
@@ -1059,6 +1359,28 @@ entries:
     - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.0/relax-sounds-0.1.0.tgz
     version: 0.1.0
   rss-bridge:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:20.570095355Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: The RSS feed for websites missing it.
+    digest: ccc4286613a4d1cade6789f382535c7de533ab7c5f3ad899070cb550e09361e1
+    icon: https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png
+    kubeVersion: '>=1.16.0-0'
+    name: rss-bridge
+    sources:
+    - https://github.com/RSS-Bridge/rss-bridge
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rss-bridge-0.1.5/rss-bridge-0.1.5.tgz
+    version: 0.1.5
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-17T03:47:11.546988229Z"
@@ -1143,6 +1465,33 @@ entries:
     - https://github.com/gabe565/charts/releases/download/rss-bridge-0.1.0/rss-bridge-0.1.0.tgz
     version: 0.1.0
   rsshub:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:20.715750862Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.0.6
+    description: RSSHub is an open source, easy to use, and extensible RSS feed generator.
+      It's capable of generating RSS feeds from pretty much everything.
+    digest: 09b4a453fb32cc68fbbbc7f03c6a1c883f6a2b083416ff830ff2a979e491970d
+    icon: https://camo.githubusercontent.com/79f2dcf6fb41b71619186b12eed25495fa55e20d3f21355798a2cb22703c6f8b/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30342f32332f356362656237653431343134632e706e67
+    kubeVersion: '>=1.16.0-0'
+    name: rsshub
+    sources:
+    - https://github.com/DIYgod/RSSHub
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rsshub-0.1.6/rsshub-0.1.6.tgz
+    version: 0.1.6
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-17T03:47:11.745510472Z"
@@ -1273,6 +1622,29 @@ entries:
     - https://github.com/gabe565/charts/releases/download/rsshub-0.1.0/rsshub-0.1.0.tgz
     version: 0.1.0
   scanservjs:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:20.834861855Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: scanservjs is a web UI frontend for your scanner. It allows you to
+      share one or more scanners (using SANE) on a network without the need for drivers
+      or complicated installation.
+    digest: 03192cbb7b8f8b25eab0b38cc86e074a08ec24748bdb235c6aba7679a2f4d567
+    kubeVersion: '>=1.16.0-0'
+    name: scanservjs
+    sources:
+    - https://github.com/sbs20/scanservjs
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/scanservjs-0.1.2/scanservjs-0.1.2.tgz
+    version: 0.1.2
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-17T03:47:11.929414529Z"
@@ -1311,6 +1683,27 @@ entries:
     - https://github.com/gabe565/charts/releases/download/scanservjs-0.1.0/scanservjs-0.1.0.tgz
     version: 0.1.0
   transsmute:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Replace k8s-at-home common chart with bjw-s common chart
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-19T22:23:20.974728475Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Transsmute builds RSS feeds for websites that don't provide them.
+    digest: 154c46746aafe4dc0524d20a7b139a9f043f8625e93b00f2ce140733faeca40e
+    kubeVersion: '>=1.16.0-0'
+    name: transsmute
+    sources:
+    - https://github.com/gabe565/transsmute
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/transsmute-0.1.3/transsmute-0.1.3.tgz
+    version: 0.1.3
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -1366,4 +1759,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-07T03:32:13.474925588Z"
+generated: "2022-09-19T22:23:20.975039391Z"
