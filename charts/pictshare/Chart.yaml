@@ -3,12 +3,16 @@ name: pictshare
 description: PictShare is an open source image, mp4, pastebin hosting service with a simple resizing and upload API that you can host yourself.
 icon: https://camo.githubusercontent.com/6efdab1c63d518fafc5e735001c5ed45e7cbd4958952cdd972e2630eee881d97/68747470733a2f2f7069637473686172652e6e65742f706868796e6a2e706e67
 type: application
-version: 0.1.3
+version: 0.1.4
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.0
+    repository: https://bjw-s.github.io/helm-charts
+    version: 0.2.0
 sources:
   - https://github.com/HaschekSolutions/pictshare
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: Replace k8s-at-home common chart with bjw-s common chart

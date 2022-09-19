@@ -3,16 +3,16 @@ name: flame
 description: Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors.
 icon: https://raw.githubusercontent.com/pawelmalak/flame/4ed29fe276b4282c67415f9788660df2a3a69b5c/client/public/icons/apple-touch-icon-180x180.png
 type: application
-version: 0.1.1
+version: 0.1.2
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 0.2.0
 sources:
   - https://github.com/pawelmalak/flame
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Add icon
+    - kind: changed
+      description: Replace k8s-at-home common chart with bjw-s common chart

@@ -1,14 +1,18 @@
 apiVersion: v2
 name: rss-bridge
-description:  The RSS feed for websites missing it.
+description: The RSS feed for websites missing it.
 icon: https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png
 type: application
-version: 0.1.4
+version: 0.1.5
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.0
+    repository: https://bjw-s.github.io/helm-charts
+    version: 0.2.0
 sources:
   - https://github.com/RSS-Bridge/rss-bridge
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: Replace k8s-at-home common chart with bjw-s common chart

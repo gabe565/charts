@@ -1,6 +1,6 @@
 dependencies:
 - name: common
-  repository: https://library-charts.k8s-at-home.com
-  version: 4.5.2
-digest: sha256:408d12aa9bbce6dfd4ced5c2586d92dfa518821e01823081fa9a141243b3160c
-generated: "2022-08-19T17:37:24.215674-05:00"
+  repository: https://bjw-s.github.io/helm-charts
+  version: 0.2.0
+digest: sha256:c636c440f164e9af160dc03563d722a4125585da5f29515e7f3b4862e2cc1a01
+generated: "2022-09-19T17:13:29.947086-05:00"

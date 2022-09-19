@@ -3,12 +3,16 @@ name: mnemonic-ninja
 description: Mnemonic Ninja is a website to convert between a number and its corresponding word to aid in memorization.
 icon: https://raw.githubusercontent.com/gabe565/mnemonic-ninja/20b5c559fb0147c5f3c0c1cc5a3841d371259b78/frontend/src/assets/logo.svg
 type: application
-version: 0.1.3
+version: 0.1.4
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.4.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 0.2.0
 sources:
   - https://github.com/gabe565/mnemonic-ninja
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: Replace k8s-at-home common chart with bjw-s common chart

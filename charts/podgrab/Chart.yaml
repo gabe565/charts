@@ -2,12 +2,16 @@ apiVersion: v2
 name: podgrab
 description: A self-hosted podcast manager to download episodes as soon as they become live.
 type: application
-version: 0.1.1
+version: 0.1.2
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.0
+    repository: https://bjw-s.github.io/helm-charts
+    version: 0.2.0
 sources:
   - https://github.com/akhilrex/podgrab
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: Replace k8s-at-home common chart with bjw-s common chart

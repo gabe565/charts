@@ -2,12 +2,16 @@ apiVersion: v2
 name: ascii-telnet-rust
 description: Star Wars telnet server written in Rust
 type: application
-version: 0.1.1
+version: 0.1.2
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.4.2
+    repository: https://bjw-s.github.io/helm-charts
+    version: 0.2.0
 sources:
   - https://github.com/gabe565/ascii-telnet-rust
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: Replace k8s-at-home common chart with bjw-s common chart

@@ -2,16 +2,20 @@ apiVersion: v2
 name: limo
 description: A file upload server.
 type: application
-version: 0.1.7
+version: 0.1.8
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
   - name: common
-    repository: https://library-charts.k8s-at-home.com
-    version: 4.5.0
+    repository: https://bjw-s.github.io/helm-charts
+    version: 0.2.0
   - name: postgresql
     version: 11.6.20
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 sources:
   - https://github.com/gabe565/limo
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: Replace k8s-at-home common chart with bjw-s common chart

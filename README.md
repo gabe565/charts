@@ -1,7 +1,7 @@
 # Charts
 
 A collection of Helm charts, based on the
-[k8s-at-home library chart](https://github.com/k8s-at-home/library-charts).
+[bjw-s common library chart](https://github.com/bjw-s/helm-charts/tree/main/charts/library/common).
 
 ## Usage
 
