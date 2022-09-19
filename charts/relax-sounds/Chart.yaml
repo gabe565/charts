@@ -14,5 +14,5 @@ sources:
   - https://github.com/gabe565/relax-sounds
 annotations:
   artifacthub.io/changes: |
-    - kind: changed
-      description: Replace k8s-at-home common chart with bjw-s common chart
+    - kind: fixed
+      description: Fix persistence doc

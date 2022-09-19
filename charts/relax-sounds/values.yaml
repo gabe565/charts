@@ -36,6 +36,8 @@ ingress:
     enabled: false
 
 persistence:
+  # -- Configure persistence settings for the chart under this key.
+  # @default -- See values.yaml
   data:
     enabled: false
     mountPath: /data

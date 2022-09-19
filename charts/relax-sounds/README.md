@@ -81,8 +81,7 @@ N/A
 | image.repository | string | `"ghcr.io/gabe565/relax-sounds"` | image repository |
 | image.tag | string | `"latest"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
-| persistence.data.enabled | bool | `false` |  |
-| persistence.data.mountPath | string | `"/data"` |  |
+| persistence.data | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ----------------------------------------------
