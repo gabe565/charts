@@ -3,7 +3,7 @@ name: relax-sounds
 description: Relax Sounds is a website that lets you stream relaxing sounds to your browser or over Google Cast.
 icon: https://raw.githubusercontent.com/gabe565/relax-sounds/93681cad1585cd14203a39c6b3c5de525f30619e/frontend/public/img/icons/android-chrome-512x512.png
 type: application
-version: 0.1.4
+version: 0.1.5
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
@@ -14,5 +14,7 @@ sources:
   - https://github.com/gabe565/relax-sounds
 annotations:
   artifacthub.io/changes: |
+    - kind: security
+      description: Run as non-root user
     - kind: fixed
       description: Fix persistence doc
