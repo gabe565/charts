@@ -3,6 +3,27 @@ entries:
   ascii-telnet-rust:
   - annotations:
       artifacthub.io/changes: |
+        - kind: security
+          description: Run as non-root user
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T00:35:29.437752497Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Star Wars telnet server written in Rust
+    digest: d00140de3538a20b56cde770f89cbba815eedb96e941e9d87f1d8f2299decff3
+    kubeVersion: '>=1.16.0-0'
+    name: ascii-telnet-rust
+    sources:
+    - https://github.com/gabe565/ascii-telnet-rust
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/ascii-telnet-rust-0.1.3/ascii-telnet-rust-0.1.3.tgz
+    version: 0.1.3
+  - annotations:
+      artifacthub.io/changes: |
         - kind: changed
           description: Replace k8s-at-home common chart with bjw-s common chart
     apiVersion: v2
@@ -1829,4 +1850,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-20T00:31:08.632586783Z"
+generated: "2022-09-20T00:35:29.438111844Z"
