@@ -900,6 +900,27 @@ entries:
   matrimony:
   - annotations:
       artifacthub.io/changes: |
+        - kind: security
+          description: Run as non-root user
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T04:20:20.720451615Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Self-hosted wedding site configured via YAML
+    digest: d7ac6b07ac0355a5437b2ccacd6f6d751e2abfcd28db129719949c54d5fcac4c
+    kubeVersion: '>=1.16.0-0'
+    name: matrimony
+    sources:
+    - https://github.com/gabe565/matrimony
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/matrimony-0.1.4/matrimony-0.1.4.tgz
+    version: 0.1.4
+  - annotations:
+      artifacthub.io/changes: |
         - kind: changed
           description: Replace k8s-at-home common chart with bjw-s common chart
     apiVersion: v2
@@ -1896,4 +1917,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-20T04:14:38.275151079Z"
+generated: "2022-09-20T04:20:20.720939616Z"
