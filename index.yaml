@@ -1264,6 +1264,31 @@ entries:
   relax-sounds:
   - annotations:
       artifacthub.io/changes: |
+        - kind: security
+          description: Run as non-root user
+        - kind: fixed
+          description: Fix persistence doc
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T00:18:24.610060017Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Relax Sounds is a website that lets you stream relaxing sounds to
+      your browser or over Google Cast.
+    digest: 4a61f568670b6803042120f3d4a2b7c61519f0d355bb1c5d92d3bed569946c52
+    icon: https://raw.githubusercontent.com/gabe565/relax-sounds/93681cad1585cd14203a39c6b3c5de525f30619e/frontend/public/img/icons/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: relax-sounds
+    sources:
+    - https://github.com/gabe565/relax-sounds
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.5/relax-sounds-0.1.5.tgz
+    version: 0.1.5
+  - annotations:
+      artifacthub.io/changes: |
         - kind: changed
           description: Replace k8s-at-home common chart with bjw-s common chart
     apiVersion: v2
@@ -1759,4 +1784,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-19T22:23:20.975039391Z"
+generated: "2022-09-20T00:18:24.610709123Z"
