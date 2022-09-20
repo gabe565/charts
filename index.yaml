@@ -691,6 +691,31 @@ entries:
   limo:
   - annotations:
       artifacthub.io/changes: |
+        - kind: security
+          description: Run as non-root user
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T04:14:38.274944477Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.20
+    description: A file upload server.
+    digest: 8627bc6f717baa3275a387991368b8f90742a952ab9004a6f27970d371fd2c7d
+    kubeVersion: '>=1.16.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.1.9/limo-0.1.9.tgz
+    version: 0.1.9
+  - annotations:
+      artifacthub.io/changes: |
         - kind: changed
           description: Replace k8s-at-home common chart with bjw-s common chart
     apiVersion: v2
@@ -1871,4 +1896,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-20T00:41:47.435354669Z"
+generated: "2022-09-20T04:14:38.275151079Z"
