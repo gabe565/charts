@@ -1,6 +1,6 @@
 # rsshub
 
-![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.7](https://img.shields.io/badge/Version-0.1.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2022-07-29](https://img.shields.io/badge/AppVersion-2022--07--29-informational?style=flat-square)
 
 RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.
 
@@ -83,7 +83,7 @@ N/A
 | env | object | See below | environment variables. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"diygod/rsshub"` | image repository |
-| image.tag | string | `"2022-07-29"` | image tag |
+| image.tag | string | `""` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | redis.enabled | bool | `true` |  |
 | redis.replica.replicaCount | int | `0` |  |

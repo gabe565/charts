@@ -1,6 +1,6 @@
 # borgmatic
 
-![Version: 0.4.7](https://img.shields.io/badge/Version-0.4.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.4.8](https://img.shields.io/badge/Version-0.4.8-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services.
 
@@ -98,7 +98,7 @@ helm install borgmatic gabe565/borgmatic -f values.yaml
 | env.BORG_HOST_ID | string | `"{{ .Release.Namespace }}"` | Borg host ID used in archive names |
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"b3vis/borgmatic"` | image repository |
-| image.tag | string | `"latest"` | image tag |
+| image.tag | string | `""` | image tag |
 | persistence.data | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | persistence.ssh | object | See values.yaml | Configure SSH credentials for the chart under this key. |
 

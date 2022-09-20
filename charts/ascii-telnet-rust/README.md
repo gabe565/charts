@@ -1,6 +1,6 @@
 # ascii-telnet-rust
 
-![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 Star Wars telnet server written in Rust
 
@@ -78,7 +78,7 @@ N/A
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"ghcr.io/gabe565/ascii-telnet-rust"` | image repository |
-| image.tag | string | `"latest"` | image tag |
+| image.tag | string | `""` | image tag |
 | resources.limits.cpu | string | `"50m"` | CPU limit |
 | resources.limits.memory | string | `"50Mi"` | Memory limit |
 | resources.requests.cpu | string | `"1m"` | CPU requests |

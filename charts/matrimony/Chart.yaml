@@ -2,7 +2,7 @@ apiVersion: v2
 name: matrimony
 description: Self-hosted wedding site configured via YAML
 type: application
-version: 0.1.5
+version: 0.1.6
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
@@ -14,4 +14,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Infer user from Dockerfile instead of setting explicitly
+      description: Infer image tag from appVersion

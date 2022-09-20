@@ -3,7 +3,7 @@ name: mnemonic-ninja
 description: Mnemonic Ninja is a website to convert between a number and its corresponding word to aid in memorization.
 icon: https://raw.githubusercontent.com/gabe565/mnemonic-ninja/20b5c559fb0147c5f3c0c1cc5a3841d371259b78/frontend/src/assets/logo.svg
 type: application
-version: 0.1.5
+version: 0.1.6
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
@@ -15,4 +15,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Infer user from Dockerfile instead of setting explicitly
+      description: Infer image tag from appVersion

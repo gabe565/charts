@@ -1,6 +1,6 @@
 # pictshare
 
-![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 72394f17](https://img.shields.io/badge/AppVersion-72394f17-informational?style=flat-square)
 
 PictShare is an open source image, mp4, pastebin hosting service with a simple resizing and upload API that you can host yourself.
 
@@ -79,7 +79,7 @@ N/A
 | env | string | See values.yaml. | environment variables. [[ref]](https://github.com/HaschekSolutions/pictshare/blob/master/rtfm/CONFIG.md) |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"hascheksolutions/pictshare"` | image repository |
-| image.tag | string | `"72394f17"` | image tag |
+| image.tag | string | `""` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence.data | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |

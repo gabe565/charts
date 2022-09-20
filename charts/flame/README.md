@@ -1,6 +1,6 @@
 # flame
 
-![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: multiarch2.3.0](https://img.shields.io/badge/AppVersion-multiarch2.3.0-informational?style=flat-square)
 
 Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors.
 
@@ -78,7 +78,7 @@ N/A
 | env | object | See values.yaml | environment variables. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"pawelmalak/flame"` | image repository |
-| image.tag | string | `"multiarch2.3.0"` | image tag |
+| image.tag | string | `""` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | secret | string | See values.yaml | secret environment variables. |

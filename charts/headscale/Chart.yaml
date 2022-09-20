@@ -3,8 +3,8 @@ name: headscale
 description: An open source, self-hosted implementation of the Tailscale control server.
 icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
 type: application
-version: 0.1.6
-appVersion: latest
+version: 0.1.7
+appVersion: 0.16.4-alpine
 kubeVersion: ">=1.16.0-0"
 dependencies:
   - name: common
@@ -15,4 +15,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Replace k8s-at-home common chart with bjw-s common chart
+      description: Infer image tag from appVersion

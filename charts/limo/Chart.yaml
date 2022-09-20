@@ -2,7 +2,7 @@ apiVersion: v2
 name: limo
 description: A file upload server.
 type: application
-version: 0.1.10
+version: 0.1.11
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
@@ -18,4 +18,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Infer user from Dockerfile instead of setting explicitly
+      description: Infer image tag from appVersion

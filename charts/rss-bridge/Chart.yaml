@@ -3,7 +3,7 @@ name: rss-bridge
 description: The RSS feed for websites missing it.
 icon: https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png
 type: application
-version: 0.1.5
+version: 0.1.6
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
@@ -15,4 +15,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Replace k8s-at-home common chart with bjw-s common chart
+      description: Infer image tag from appVersion

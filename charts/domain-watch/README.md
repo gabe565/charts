@@ -1,6 +1,6 @@
 # domain-watch
 
-![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 Tool to watch whois reports and notify when statuses change or expiration is incoming.
 
@@ -85,7 +85,7 @@ N/A
 | env.WATCH_TELEGRAM_TOKEN | string | `""` | Telegram token [[ref]](https://core.telegram.org/bots#6-botfather) |
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"ghcr.io/gabe565/domain-watch"` | image repository |
-| image.tag | string | `"latest"` | image tag |
+| image.tag | string | `""` | image tag |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ----------------------------------------------
