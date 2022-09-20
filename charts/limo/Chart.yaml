@@ -2,7 +2,7 @@ apiVersion: v2
 name: limo
 description: A file upload server.
 type: application
-version: 0.1.8
+version: 0.1.9
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
@@ -17,5 +17,5 @@ sources:
   - https://github.com/gabe565/limo
 annotations:
   artifacthub.io/changes: |
-    - kind: changed
-      description: Replace k8s-at-home common chart with bjw-s common chart
+    - kind: security
+      description: Run as non-root user
