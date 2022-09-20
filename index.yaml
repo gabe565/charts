@@ -3,6 +3,27 @@ entries:
   ascii-telnet-rust:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Infer user from Dockerfile instead of setting explicitly
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T04:56:39.502675552Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Star Wars telnet server written in Rust
+    digest: 33a8b98bc5f745738af32fd12fcd42605463802af4c4f8415c402daef45b5502
+    kubeVersion: '>=1.16.0-0'
+    name: ascii-telnet-rust
+    sources:
+    - https://github.com/gabe565/ascii-telnet-rust
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/ascii-telnet-rust-0.1.4/ascii-telnet-rust-0.1.4.tgz
+    version: 0.1.4
+  - annotations:
+      artifacthub.io/changes: |
         - kind: security
           description: Run as non-root user
     apiVersion: v2
@@ -318,6 +339,28 @@ entries:
     - https://github.com/gabe565/charts/releases/download/borgmatic-0.1.0/borgmatic-0.1.0.tgz
     version: 0.1.0
   domain-watch:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Infer user from Dockerfile instead of setting explicitly
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T04:56:39.75558058Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Tool to watch whois reports and notify when statuses change or expiration
+      is incoming.
+    digest: 4f2103ef4e2d47ea575aaf0fcd56fd8e14a1fece741bb6eda11e8d109610ae7e
+    kubeVersion: '>=1.16.0-0'
+    name: domain-watch
+    sources:
+    - https://github.com/gabe565/domain-watch
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/domain-watch-0.1.5/domain-watch-0.1.5.tgz
+    version: 0.1.5
   - annotations:
       artifacthub.io/changes: |
         - kind: security
@@ -691,6 +734,31 @@ entries:
   limo:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Infer user from Dockerfile instead of setting explicitly
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T04:56:40.05500951Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.20
+    description: A file upload server.
+    digest: 964467542220303070931676ca71193f30a164c19d129c578cd06b3511d64afd
+    kubeVersion: '>=1.16.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.1.10/limo-0.1.10.tgz
+    version: 0.1.10
+  - annotations:
+      artifacthub.io/changes: |
         - kind: security
           description: Run as non-root user
     apiVersion: v2
@@ -898,6 +966,27 @@ entries:
     - https://github.com/gabe565/charts/releases/download/limo-0.1.0/limo-0.1.0.tgz
     version: 0.1.0
   matrimony:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Infer user from Dockerfile instead of setting explicitly
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T04:56:40.332772307Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Self-hosted wedding site configured via YAML
+    digest: ac85a19946687006698d9467baa57b0c1c87621464552851aad928509b67c77f
+    kubeVersion: '>=1.16.0-0'
+    name: matrimony
+    sources:
+    - https://github.com/gabe565/matrimony
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/matrimony-0.1.5/matrimony-0.1.5.tgz
+    version: 0.1.5
   - annotations:
       artifacthub.io/changes: |
         - kind: security
@@ -1376,6 +1465,29 @@ entries:
   relax-sounds:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Infer user from Dockerfile instead of setting explicitly
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T04:56:40.857642669Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Relax Sounds is a website that lets you stream relaxing sounds to
+      your browser or over Google Cast.
+    digest: 042f7667f8fc6883696e38c87aaad58f9a6fba813e72e686a5c49dbc9ccf1865
+    icon: https://raw.githubusercontent.com/gabe565/relax-sounds/93681cad1585cd14203a39c6b3c5de525f30619e/frontend/public/img/icons/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: relax-sounds
+    sources:
+    - https://github.com/gabe565/relax-sounds
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.6/relax-sounds-0.1.6.tgz
+    version: 0.1.6
+  - annotations:
+      artifacthub.io/changes: |
         - kind: security
           description: Run as non-root user
         - kind: fixed
@@ -1822,6 +1934,27 @@ entries:
   transsmute:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Infer user from Dockerfile instead of setting explicitly
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T04:56:41.118880387Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Transsmute builds RSS feeds for websites that don't provide them.
+    digest: f0decaccb326cf06eca71314931b7db761077a1e16eb30f4de7f07953dbbf538
+    kubeVersion: '>=1.16.0-0'
+    name: transsmute
+    sources:
+    - https://github.com/gabe565/transsmute
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/transsmute-0.1.5/transsmute-0.1.5.tgz
+    version: 0.1.5
+  - annotations:
+      artifacthub.io/changes: |
         - kind: security
           description: Run as non-root user
     apiVersion: v2
@@ -1917,4 +2050,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-20T04:20:20.720939616Z"
+generated: "2022-09-20T04:56:41.11918839Z"
