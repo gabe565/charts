@@ -1,6 +1,6 @@
 # domain-watch
 
-![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 Tool to watch whois reports and notify when statuses change or expiration is incoming.
 
@@ -86,6 +86,8 @@ N/A
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"ghcr.io/gabe565/domain-watch"` | image repository |
 | image.tag | string | `"latest"` | image tag |
+| securityContext.runAsGroup | int | `1000` | Group used to run the container process. |
+| securityContext.runAsUser | int | `1000` | User used to run the container process. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ----------------------------------------------
