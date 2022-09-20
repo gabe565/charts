@@ -299,6 +299,28 @@ entries:
   domain-watch:
   - annotations:
       artifacthub.io/changes: |
+        - kind: security
+          description: Run as non-root user
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T00:31:08.632176178Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Tool to watch whois reports and notify when statuses change or expiration
+      is incoming.
+    digest: 77d8aa8cec1a8e929ff1f7993c197d0c0a02ffb2ebeedde4845cf1db0ba476dd
+    kubeVersion: '>=1.16.0-0'
+    name: domain-watch
+    sources:
+    - https://github.com/gabe565/domain-watch
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/domain-watch-0.1.4/domain-watch-0.1.4.tgz
+    version: 0.1.4
+  - annotations:
+      artifacthub.io/changes: |
         - kind: changed
           description: Replace k8s-at-home common chart with bjw-s common chart
     apiVersion: v2
@@ -1807,4 +1829,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-20T00:28:22.150600762Z"
+generated: "2022-09-20T00:31:08.632586783Z"
