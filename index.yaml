@@ -904,6 +904,29 @@ entries:
   mnemonic-ninja:
   - annotations:
       artifacthub.io/changes: |
+        - kind: security
+          description: Run as non-root user
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T00:28:22.150006313Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Mnemonic Ninja is a website to convert between a number and its corresponding
+      word to aid in memorization.
+    digest: f92f0d266d7b73657af02a8e2997d54106f7925a40f5e2b17e4ee26b14c082c1
+    icon: https://raw.githubusercontent.com/gabe565/mnemonic-ninja/20b5c559fb0147c5f3c0c1cc5a3841d371259b78/frontend/src/assets/logo.svg
+    kubeVersion: '>=1.16.0-0'
+    name: mnemonic-ninja
+    sources:
+    - https://github.com/gabe565/mnemonic-ninja
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.1.5/mnemonic-ninja-0.1.5.tgz
+    version: 0.1.5
+  - annotations:
+      artifacthub.io/changes: |
         - kind: changed
           description: Replace k8s-at-home common chart with bjw-s common chart
     apiVersion: v2
@@ -1784,4 +1807,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-20T00:18:24.610709123Z"
+generated: "2022-09-20T00:28:22.150600762Z"
