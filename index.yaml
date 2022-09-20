@@ -4,6 +4,27 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T19:48:53.340184003Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Star Wars telnet server written in Rust
+    digest: 311751a9e7d181ca7362d43f8ec2bea1fcab5d747ad33e406b4046fecb651430
+    kubeVersion: '>=1.16.0-0'
+    name: ascii-telnet-rust
+    sources:
+    - https://github.com/gabe565/ascii-telnet-rust
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/ascii-telnet-rust-0.1.5/ascii-telnet-rust-0.1.5.tgz
+    version: 0.1.5
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Infer user from Dockerfile instead of setting explicitly
     apiVersion: v2
     appVersion: latest
@@ -98,6 +119,31 @@ entries:
     - https://github.com/gabe565/charts/releases/download/ascii-telnet-rust-0.1.0/ascii-telnet-rust-0.1.0.tgz
     version: 0.1.0
   borgmatic:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T19:48:53.554073585Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: borgmatic is simple, configuration-driven backup software for servers
+      and workstations. Protect your files with client-side encryption. Backup your
+      databases too. Monitor it all with integrated third-party services.
+    digest: 8a860ac0cf14255c593fde01bdca1777243af4db0362f4757ca1963fe4b4468c
+    icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
+    kubeVersion: '>=1.16.0-0'
+    name: borgmatic
+    sources:
+    - https://projects.torsion.org/borgmatic-collective/borgmatic
+    - https://github.com/borgmatic-collective/docker-borgmatic
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/borgmatic-0.4.8/borgmatic-0.4.8.tgz
+    version: 0.4.8
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -342,6 +388,28 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T19:48:53.706620021Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Tool to watch whois reports and notify when statuses change or expiration
+      is incoming.
+    digest: 817229c76a96e83b2ade8bd5eb4b5b6d3bb781427649d93405a4c1e9fa69f001
+    kubeVersion: '>=1.16.0-0'
+    name: domain-watch
+    sources:
+    - https://github.com/gabe565/domain-watch
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/domain-watch-0.1.6/domain-watch-0.1.6.tgz
+    version: 0.1.6
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Infer user from Dockerfile instead of setting explicitly
     apiVersion: v2
     appVersion: latest
@@ -461,6 +529,29 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: multiarch2.3.0
+    created: "2022-09-20T19:48:53.882662955Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Flame is self-hosted startpage for your server. Easily manage your
+      apps and bookmarks with built-in editors.
+    digest: 7f82fb98186500f64f5dc4d700c8fd0b2bd59795ac3e5b416daa282dbeac2120
+    icon: https://raw.githubusercontent.com/pawelmalak/flame/4ed29fe276b4282c67415f9788660df2a3a69b5c/client/public/icons/apple-touch-icon-180x180.png
+    kubeVersion: '>=1.16.0-0'
+    name: flame
+    sources:
+    - https://github.com/pawelmalak/flame
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/flame-0.1.3/flame-0.1.3.tgz
+    version: 0.1.3
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Replace k8s-at-home common chart with bjw-s common chart
     apiVersion: v2
     appVersion: latest
@@ -530,6 +621,29 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-09-20T19:48:54.031402444Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: A self-hosted vehicle expense tracking system with support for multiple
+      users.
+    digest: 10af63c6832040a3b30b3cfee27e3bd9dedc3e3471252c0fbfeb9fa243b75ee4
+    icon: https://raw.githubusercontent.com/akhilrex/hammond/84cba2c7f26f6d3f81c49b132110b24ac97c7b49/ui/public/touch-icon.png
+    kubeVersion: '>=1.16.0-0'
+    name: hammond
+    sources:
+    - https://github.com/akhilrex/hammond
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/hammond-0.1.2/hammond-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Replace k8s-at-home common chart with bjw-s common chart
     apiVersion: v2
     appVersion: latest
@@ -570,6 +684,29 @@ entries:
     - https://github.com/gabe565/charts/releases/download/hammond-0.1.0/hammond-0.1.0.tgz
     version: 0.1.0
   headscale:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: 0.16.4-alpine
+    created: "2022-09-20T19:48:54.204556568Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: b706f9c1db8761bf28939864d52d38d490bc4cd88830c1078e77d73825d94373
+    icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
+    kubeVersion: '>=1.16.0-0'
+    name: headscale
+    sources:
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.1.7/headscale-0.1.7.tgz
+    version: 0.1.7
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -732,6 +869,31 @@ entries:
     - https://github.com/gabe565/charts/releases/download/headscale-0.1.0/headscale-0.1.0.tgz
     version: 0.1.0
   limo:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T19:48:54.384598355Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.20
+    description: A file upload server.
+    digest: 2345924effe55b82726489df1371713f3a9da56943e7f80024975c4d19cf8b67
+    kubeVersion: '>=1.16.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.1.11/limo-0.1.11.tgz
+    version: 0.1.11
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -969,6 +1131,27 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T19:48:54.536241256Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Self-hosted wedding site configured via YAML
+    digest: 803d67cf7c2a3c82828ac85cb93eabdb8ae1f5ad002858170d7480aec00ec222
+    kubeVersion: '>=1.16.0-0'
+    name: matrimony
+    sources:
+    - https://github.com/gabe565/matrimony
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/matrimony-0.1.6/matrimony-0.1.6.tgz
+    version: 0.1.6
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Infer user from Dockerfile instead of setting explicitly
     apiVersion: v2
     appVersion: latest
@@ -1080,6 +1263,29 @@ entries:
     - https://github.com/gabe565/charts/releases/download/matrimony-0.1.0/matrimony-0.1.0.tgz
     version: 0.1.0
   mnemonic-ninja:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T19:48:54.695168935Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Mnemonic Ninja is a website to convert between a number and its corresponding
+      word to aid in memorization.
+    digest: 2fdc025e74e12736038e9af7cc519a5e45825b373c1e0e17d88da5879d961b44
+    icon: https://raw.githubusercontent.com/gabe565/mnemonic-ninja/20b5c559fb0147c5f3c0c1cc5a3841d371259b78/frontend/src/assets/logo.svg
+    kubeVersion: '>=1.16.0-0'
+    name: mnemonic-ninja
+    sources:
+    - https://github.com/gabe565/mnemonic-ninja
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.1.6/mnemonic-ninja-0.1.6.tgz
+    version: 0.1.6
   - annotations:
       artifacthub.io/changes: |
         - kind: security
@@ -1203,6 +1409,29 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: 72394f17
+    created: "2022-09-20T19:48:54.996376457Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: PictShare is an open source image, mp4, pastebin hosting service
+      with a simple resizing and upload API that you can host yourself.
+    digest: a7d5b7b65c1997da2101bd5952da9f74d3efde57f1c19c0a07a2a2ff9b1ae275
+    icon: https://camo.githubusercontent.com/6efdab1c63d518fafc5e735001c5ed45e7cbd4958952cdd972e2630eee881d97/68747470733a2f2f7069637473686172652e6e65742f706868796e6a2e706e67
+    kubeVersion: '>=1.16.0-0'
+    name: pictshare
+    sources:
+    - https://github.com/HaschekSolutions/pictshare
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/pictshare-0.1.5/pictshare-0.1.5.tgz
+    version: 0.1.5
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Replace k8s-at-home common chart with bjw-s common chart
     apiVersion: v2
     appVersion: latest
@@ -1298,6 +1527,28 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-09-20T19:48:55.16766601Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: A self-hosted podcast manager to download episodes as soon as they
+      become live.
+    digest: 9ee9b0e38e93eb1c801d350989da0d694ddd9e746fbd7514af573f1f9431cb56
+    kubeVersion: '>=1.16.0-0'
+    name: podgrab
+    sources:
+    - https://github.com/akhilrex/podgrab
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/podgrab-0.1.3/podgrab-0.1.3.tgz
+    version: 0.1.3
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Replace k8s-at-home common chart with bjw-s common chart
     apiVersion: v2
     appVersion: latest
@@ -1353,6 +1604,32 @@ entries:
     - https://github.com/gabe565/charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
     version: 0.1.0
   portfolio:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T19:48:55.334436889Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.14
+    description: My personal portfolio website
+    digest: 303b1547ae0c4c68353fc20b1ca11e9ad7da266d4fa2216b946e8fad0b5f9877
+    icon: https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.1.5/portfolio-0.1.5.tgz
+    version: 0.1.5
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -1463,6 +1740,29 @@ entries:
     - https://github.com/gabe565/charts/releases/download/portfolio-0.1.0/portfolio-0.1.0.tgz
     version: 0.1.0
   relax-sounds:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T19:48:55.525092382Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Relax Sounds is a website that lets you stream relaxing sounds to
+      your browser or over Google Cast.
+    digest: 3ae705a87f4449ecba995477ac978859bf50889a4ed8b9ba73127d3c72dc7fac
+    icon: https://raw.githubusercontent.com/gabe565/relax-sounds/93681cad1585cd14203a39c6b3c5de525f30619e/frontend/public/img/icons/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: relax-sounds
+    sources:
+    - https://github.com/gabe565/relax-sounds
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.7/relax-sounds-0.1.7.tgz
+    version: 0.1.7
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -1611,6 +1911,28 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T19:48:55.685342812Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: The RSS feed for websites missing it.
+    digest: 1bb59cd0255258d8730a51c7df419d874fa8c0320e650e441338ac2199c04a87
+    icon: https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png
+    kubeVersion: '>=1.16.0-0'
+    name: rss-bridge
+    sources:
+    - https://github.com/RSS-Bridge/rss-bridge
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rss-bridge-0.1.6/rss-bridge-0.1.6.tgz
+    version: 0.1.6
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Replace k8s-at-home common chart with bjw-s common chart
     apiVersion: v2
     appVersion: latest
@@ -1714,6 +2036,33 @@ entries:
     - https://github.com/gabe565/charts/releases/download/rss-bridge-0.1.0/rss-bridge-0.1.0.tgz
     version: 0.1.0
   rsshub:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: "2022-07-29"
+    created: "2022-09-20T19:48:55.866783953Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.0.6
+    description: RSSHub is an open source, easy to use, and extensible RSS feed generator.
+      It's capable of generating RSS feeds from pretty much everything.
+    digest: dcc1c9dfa255fb65372af6b58fd3ed57afe440a5db9f28e0ca97703c2378f618
+    icon: https://camo.githubusercontent.com/79f2dcf6fb41b71619186b12eed25495fa55e20d3f21355798a2cb22703c6f8b/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30342f32332f356362656237653431343134632e706e67
+    kubeVersion: '>=1.16.0-0'
+    name: rsshub
+    sources:
+    - https://github.com/DIYgod/RSSHub
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rsshub-0.1.7/rsshub-0.1.7.tgz
+    version: 0.1.7
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -1874,6 +2223,29 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: release-v2.21.0
+    created: "2022-09-20T19:48:56.019998614Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: scanservjs is a web UI frontend for your scanner. It allows you to
+      share one or more scanners (using SANE) on a network without the need for drivers
+      or complicated installation.
+    digest: be99f3e3c0419f161ae03d2be6a998d7281f4d6ad9cd67c8c60efd09fb955599
+    kubeVersion: '>=1.16.0-0'
+    name: scanservjs
+    sources:
+    - https://github.com/sbs20/scanservjs
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/scanservjs-0.1.3/scanservjs-0.1.3.tgz
+    version: 0.1.3
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Replace k8s-at-home common chart with bjw-s common chart
     apiVersion: v2
     appVersion: latest
@@ -1932,6 +2304,27 @@ entries:
     - https://github.com/gabe565/charts/releases/download/scanservjs-0.1.0/scanservjs-0.1.0.tgz
     version: 0.1.0
   transsmute:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Infer image tag from appVersion
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T19:48:56.195158614Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Transsmute builds RSS feeds for websites that don't provide them.
+    digest: 6f1cdaacc5ecc80b8ba649846d399baec563f10d8de39e1cdf6bf42123a7aa42
+    kubeVersion: '>=1.16.0-0'
+    name: transsmute
+    sources:
+    - https://github.com/gabe565/transsmute
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/transsmute-0.1.6/transsmute-0.1.6.tgz
+    version: 0.1.6
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -2050,4 +2443,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-20T04:56:41.11918839Z"
+generated: "2022-09-20T19:48:56.195653133Z"
