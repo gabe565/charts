@@ -1,6 +1,6 @@
 # ascii-telnet-rust
 
-![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 Star Wars telnet server written in Rust
 
@@ -83,6 +83,8 @@ N/A
 | resources.limits.memory | string | `"50Mi"` | Memory limit |
 | resources.requests.cpu | string | `"1m"` | CPU requests |
 | resources.requests.memory | string | `"1Mi"` | Memory requests |
+| securityContext.runAsGroup | int | `1000` | Group used to run the container process. |
+| securityContext.runAsUser | int | `1000` | User used to run the container process. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ----------------------------------------------
