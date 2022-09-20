@@ -1776,6 +1776,27 @@ entries:
   transsmute:
   - annotations:
       artifacthub.io/changes: |
+        - kind: security
+          description: Run as non-root user
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-20T00:41:47.4308233Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Transsmute builds RSS feeds for websites that don't provide them.
+    digest: 7e8e87158780d1b3e0857e1e78ddc64257b106e3de7154cbabeceee5506edf32
+    kubeVersion: '>=1.16.0-0'
+    name: transsmute
+    sources:
+    - https://github.com/gabe565/transsmute
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/transsmute-0.1.4/transsmute-0.1.4.tgz
+    version: 0.1.4
+  - annotations:
+      artifacthub.io/changes: |
         - kind: changed
           description: Replace k8s-at-home common chart with bjw-s common chart
     apiVersion: v2
@@ -1850,4 +1871,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-20T00:35:29.438111844Z"
+generated: "2022-09-20T00:41:47.435354669Z"
