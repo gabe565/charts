@@ -1,6 +1,6 @@
 # transsmute
 
-![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 Transsmute builds RSS feeds for websites that don't provide them.
 
@@ -81,8 +81,6 @@ N/A
 | image.repository | string | `"ghcr.io/gabe565/transsmute"` | image repository |
 | image.tag | string | `"latest"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
-| securityContext.runAsGroup | int | `1000` | Group used to run the container process. |
-| securityContext.runAsUser | int | `1000` | User used to run the container process. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ----------------------------------------------

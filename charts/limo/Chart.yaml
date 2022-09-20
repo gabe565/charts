@@ -2,7 +2,7 @@ apiVersion: v2
 name: limo
 description: A file upload server.
 type: application
-version: 0.1.9
+version: 0.1.10
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
@@ -17,5 +17,5 @@ sources:
   - https://github.com/gabe565/limo
 annotations:
   artifacthub.io/changes: |
-    - kind: security
-      description: Run as non-root user
+    - kind: changed
+      description: Infer user from Dockerfile instead of setting explicitly

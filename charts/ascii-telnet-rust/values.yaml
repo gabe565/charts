@@ -44,9 +44,3 @@ resources:
     cpu: 50m
     # -- Memory limit
     memory: 50Mi
-
-securityContext:
-  # -- User used to run the container process.
-  runAsUser: 1000
-  # -- Group used to run the container process.
-  runAsGroup: 1000

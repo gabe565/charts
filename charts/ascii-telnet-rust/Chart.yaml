@@ -2,7 +2,7 @@ apiVersion: v2
 name: ascii-telnet-rust
 description: Star Wars telnet server written in Rust
 type: application
-version: 0.1.3
+version: 0.1.4
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
@@ -13,5 +13,5 @@ sources:
   - https://github.com/gabe565/ascii-telnet-rust
 annotations:
   artifacthub.io/changes: |
-    - kind: security
-      description: Run as non-root user
+    - kind: changed
+      description: Infer user from Dockerfile instead of setting explicitly

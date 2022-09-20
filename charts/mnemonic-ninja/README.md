@@ -81,8 +81,6 @@ N/A
 | image.repository | string | `"ghcr.io/gabe565/mnemonic-ninja"` | image repository |
 | image.tag | string | `"latest"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
-| securityContext.runAsGroup | int | `1000` | Group used to run the container process. |
-| securityContext.runAsUser | int | `1000` | User used to run the container process. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ----------------------------------------------
