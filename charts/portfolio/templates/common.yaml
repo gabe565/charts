@@ -1,5 +1,5 @@
 {{/* Append the hardcoded settings */}}
-{{- define "borgmatic.harcodedValues" -}}
+{{- define "portfolio.harcodedValues" -}}
 env:
   {{- with .Values.ingress.main }}
   {{- if .enabled }}
@@ -21,7 +21,7 @@ env:
   {{- end }}
   {{- end }}
 {{- end -}}
-{{- $_ := merge .Values (include "borgmatic.harcodedValues" . | fromYaml) -}}
+{{- $_ := merge .Values (include "portfolio.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
 {{ include "common.all" . }}
