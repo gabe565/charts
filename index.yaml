@@ -976,6 +976,31 @@ entries:
   limo:
   - annotations:
       artifacthub.io/changes: |
+        - kind: fixed
+          description: Fix helper name
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-21T23:22:27.315832013Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.20
+    description: A file upload server.
+    digest: d68f68df3e839aec832df9dd97acbeb87e561000b92a78f68adf31bd920a1bd7
+    kubeVersion: '>=1.16.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.1.14/limo-0.1.14.tgz
+    version: 0.1.14
+  - annotations:
+      artifacthub.io/changes: |
         - kind: changed
           description: Enable Postgresql persistence by default
     apiVersion: v2
@@ -1784,6 +1809,32 @@ entries:
     - https://github.com/gabe565/charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
     version: 0.1.0
   portfolio:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
+          description: Fix helper name
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-21T23:22:27.447089123Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.14
+    description: My personal portfolio website
+    digest: adb87b6ef2419a4d2327d692be1415bc2198c9a9aaecbe42edffe7491a77aaff
+    icon: https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.1.8/portfolio-0.1.8.tgz
+    version: 0.1.8
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -2706,4 +2757,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-21T22:59:19.186773671Z"
+generated: "2022-09-21T23:22:27.447539626Z"
