@@ -122,6 +122,33 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Move some defaults from values.yaml to template
+        - kind: fixed
+          description: Fix slow termination
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-21T22:32:46.815324743Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: borgmatic is simple, configuration-driven backup software for servers
+      and workstations. Protect your files with client-side encryption. Backup your
+      databases too. Monitor it all with integrated third-party services.
+    digest: bb9b3ff81206bbf0f0c06c28177c6f340e23260f5903d4606b7ec999373d8e73
+    icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
+    kubeVersion: '>=1.16.0-0'
+    name: borgmatic
+    sources:
+    - https://projects.torsion.org/borgmatic-collective/borgmatic
+    - https://github.com/borgmatic-collective/docker-borgmatic
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/borgmatic-0.4.9/borgmatic-0.4.9.tgz
+    version: 0.4.9
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Infer image tag from appVersion
     apiVersion: v2
     appVersion: latest
@@ -385,6 +412,28 @@ entries:
     - https://github.com/gabe565/charts/releases/download/borgmatic-0.1.0/borgmatic-0.1.0.tgz
     version: 0.1.0
   domain-watch:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Move some defaults from values.yaml to template
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-21T22:32:46.92431873Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Tool to watch whois reports and notify when statuses change or expiration
+      is incoming.
+    digest: 5aed6ce03938c14016c999802adb8209dae3d7b3233df232e27c307ff0544bb9
+    kubeVersion: '>=1.16.0-0'
+    name: domain-watch
+    sources:
+    - https://github.com/gabe565/domain-watch
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/domain-watch-0.1.7/domain-watch-0.1.7.tgz
+    version: 0.1.7
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -686,6 +735,35 @@ entries:
   headscale:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: Add optional Postgres subchart
+        - kind: changed
+          description: Move some defaults from values.yaml to template
+    apiVersion: v2
+    appVersion: 0.16.4-alpine
+    created: "2022-09-21T22:32:47.053166396Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.1
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: bc1541f81da4c68c1a88f0317902dc6487b7d055ece1d3efc97831c4e5d4358e
+    icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
+    kubeVersion: '>=1.16.0-0'
+    name: headscale
+    sources:
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.1.8/headscale-0.1.8.tgz
+    version: 0.1.8
+  - annotations:
+      artifacthub.io/changes: |
         - kind: changed
           description: Infer image tag from appVersion
     apiVersion: v2
@@ -869,6 +947,33 @@ entries:
     - https://github.com/gabe565/charts/releases/download/headscale-0.1.0/headscale-0.1.0.tgz
     version: 0.1.0
   limo:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Move some defaults from values.yaml to template
+        - kind: fixed
+          description: Fix database envs when Postgresql subchart enabled
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-21T22:32:47.177359374Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.20
+    description: A file upload server.
+    digest: 56ad48049398b3981a1813fafffd98e1179fc0dce0f3a8cab9bc4b41f4198e90
+    kubeVersion: '>=1.16.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.1.12/limo-0.1.12.tgz
+    version: 0.1.12
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -1409,6 +1514,29 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Move some defaults from values.yaml to template
+    apiVersion: v2
+    appVersion: 72394f17
+    created: "2022-09-21T22:32:47.297517174Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: PictShare is an open source image, mp4, pastebin hosting service
+      with a simple resizing and upload API that you can host yourself.
+    digest: f2f982157ca3b6959cef665f5857de059ad3ebfd2549c5d28271da1973b9b617
+    icon: https://camo.githubusercontent.com/6efdab1c63d518fafc5e735001c5ed45e7cbd4958952cdd972e2630eee881d97/68747470733a2f2f7069637473686172652e6e65742f706868796e6a2e706e67
+    kubeVersion: '>=1.16.0-0'
+    name: pictshare
+    sources:
+    - https://github.com/HaschekSolutions/pictshare
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/pictshare-0.1.6/pictshare-0.1.6.tgz
+    version: 0.1.6
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Infer image tag from appVersion
     apiVersion: v2
     appVersion: 72394f17
@@ -1604,6 +1732,34 @@ entries:
     - https://github.com/gabe565/charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
     version: 0.1.0
   portfolio:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Move some defaults from values.yaml to template
+        - kind: fixed
+          description: Fix database envs when Postgresql subchart enabled
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-21T22:32:47.436113827Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.14
+    description: My personal portfolio website
+    digest: e208227c6a59207a082cf22500eb25c7c86e6658f7903ddb83dca6932ff91dbc
+    icon: https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.1.6/portfolio-0.1.6.tgz
+    version: 0.1.6
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -2039,6 +2195,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Move some defaults from values.yaml to template
+        - kind: added
+          description: Add Redis doc
+    apiVersion: v2
+    appVersion: "2022-07-29"
+    created: "2022-09-21T22:32:47.565573006Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.0.6
+    description: RSSHub is an open source, easy to use, and extensible RSS feed generator.
+      It's capable of generating RSS feeds from pretty much everything.
+    digest: cc9c25732fa5b52846a0fd8ea2361976441e6ef6966cdc78bb0de5106e7ae843
+    icon: https://camo.githubusercontent.com/79f2dcf6fb41b71619186b12eed25495fa55e20d3f21355798a2cb22703c6f8b/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30342f32332f356362656237653431343134632e706e67
+    kubeVersion: '>=1.16.0-0'
+    name: rsshub
+    sources:
+    - https://github.com/DIYgod/RSSHub
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rsshub-0.1.8/rsshub-0.1.8.tgz
+    version: 0.1.8
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Infer image tag from appVersion
     apiVersion: v2
     appVersion: "2022-07-29"
@@ -2443,4 +2628,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-20T19:48:56.195653133Z"
+generated: "2022-09-21T22:32:47.565946113Z"
