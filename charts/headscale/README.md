@@ -1,6 +1,6 @@
 # headscale
 
-![Version: 0.1.7](https://img.shields.io/badge/Version-0.1.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.16.4-alpine](https://img.shields.io/badge/AppVersion-0.16.4--alpine-informational?style=flat-square)
+![Version: 0.1.8](https://img.shields.io/badge/Version-0.1.8-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.16.4-alpine](https://img.shields.io/badge/AppVersion-0.16.4--alpine-informational?style=flat-square)
 
 An open source, self-hosted implementation of the Tailscale control server.
 
@@ -19,6 +19,7 @@ Kubernetes: `>=1.16.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | https://bjw-s.github.io/helm-charts | common | 0.2.0 |
+| https://charts.bitnami.com/bitnami | postgresql | 11.9.1 |
 
 ## TL;DR
 
@@ -110,12 +111,12 @@ Once deployed, the UI will be available at `/web`.
 |-----|------|---------|-------------|
 | env | object | See values.yaml | Environment variables. [[ref]](https://github.com/juanfont/headscale/blob/main/config-example.yaml) |
 | env.HEADSCALE_DNS_CONFIG_BASE_DOMAIN | string | `"example.com"` | Defines the base domain to create the hostnames for MagicDNS. `base_domain` must be a FQDNs, without the trailing dot. The FQDN of the hosts will be `hostname.namespace.base_domain` (e.g., _myhost.mynamespace.example.com_). |
-| env.HEADSCALE_SERVER_URL | string | Generated from ingress. | The url clients will connect to. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"headscale/headscale"` | image repository |
 | image.tag | string | `""` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence.config | object | See values.yaml | Configure persistence settings for the chart under this key. |
+| postgresql | object | See values.yaml | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
 | secret | object | See values.yaml | Secret environment variables. |
 | service.main | object | See values.yaml | Configures service settings for the chart. |
 

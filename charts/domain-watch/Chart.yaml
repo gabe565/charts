@@ -2,7 +2,7 @@ apiVersion: v2
 name: domain-watch
 description: Tool to watch whois reports and notify when statuses change or expiration is incoming.
 type: application
-version: 0.1.6
+version: 0.1.7
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
@@ -14,4 +14,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Infer image tag from appVersion
+      description: Move some defaults from values.yaml to template

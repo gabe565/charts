@@ -19,8 +19,7 @@ controller:
 
 # -- environment variables. [[ref]](https://github.com/HaschekSolutions/pictshare/blob/master/rtfm/CONFIG.md)
 # @default -- See values.yaml.
-env:
-  # URL: ""
+env: {}
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml

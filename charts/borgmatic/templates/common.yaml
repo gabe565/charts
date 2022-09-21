@@ -1,1 +1,34 @@
+{{/* Append the hardcoded settings */}}
+{{- define "borgmatic.harcodedValues" -}}
+env:
+  BORG_HOST_ID: "{{ .Release.Namespace }}"
+
+{{- if .Values.configmap.config.enabled }}
+{{/* Append the configMap volume to the volumes */}}
+persistence:
+  config:
+    enabled: true
+    type: configMap
+    name: "{{ include "common.names.fullname" . }}-config"
+    mountPath: /etc/borgmatic.d
+{{- end }}
+
+service:
+  main:
+    enabled: false
+
+probes:
+  liveness:
+    enabled: false
+  readiness:
+    enabled: false
+  startup:
+    enabled: false
+
+termination:
+  gracePeriodSeconds: "0"
+{{- end -}}
+{{- $_ := merge .Values (include "borgmatic.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
 {{ include "common.all" . }}

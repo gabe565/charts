@@ -17,16 +17,12 @@ image:
 # @default -- See values.yaml
 env:
   # -- Borg host ID used in archive names
-  BORG_HOST_ID: "{{ .Release.Namespace }}"
+  # @default -- Deployment namespace
+  BORG_HOST_ID: ""
   # BORG_PASSPHRASE:
   # PGPASSWORD:
   # MYSQL_PWD:
   # MONGODB_PASSWORD:
-
-# @ignored
-service:
-  main:
-    enabled: false
 
 persistence:
   # -- Configure persistence settings for the chart under this key.
@@ -47,12 +43,6 @@ persistence:
     enabled: false
     mountPath: /root/.ssh
     defaultMode: 0600
-  # @ignored
-  config:
-    enabled: true
-    type: configMap
-    name: "{{ .Release.Name }}-config"
-    mountPath: /etc/borgmatic.d
 
 configmap:
   # -- Configure Borgmatic container under this key.
@@ -102,12 +92,3 @@ configmap:
 
           # Third-party services to notify you if backups aren't happening.
           healthchecks: https://hc-ping.com/be067061-cf96-4412-8eae-62b0c50d6a8c
-
-# @ignore
-probes:
-  liveness:
-    enabled: false
-  readiness:
-    enabled: false
-  startup:
-    enabled: false

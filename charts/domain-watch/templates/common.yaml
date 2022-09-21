@@ -1,1 +1,10 @@
+{{/* Append the hardcoded settings */}}
+{{- define "domain-watch.harcodedValues" -}}
+service:
+  main:
+    enabled: false
+{{- end -}}
+{{- $_ := merge .Values (include "domain-watch.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
 {{ include "common.all" . }}

@@ -22,24 +22,6 @@ env:
   # `hostname.namespace.base_domain` (e.g., _myhost.mynamespace.example.com_).
   HEADSCALE_DNS_CONFIG_BASE_DOMAIN: example.com
 
-  # -- The url clients will connect to.
-  # @default -- Generated from ingress.
-  HEADSCALE_SERVER_URL: |
-    {{- $primaryIngress := get .Values.ingress (include "common.ingress.primary" .) -}}
-    {{- if and $primaryIngress $primaryIngress.hosts -}}
-      {{- $protocol := "http" -}}
-      {{- if $primaryIngress.tls -}}
-        {{- $protocol = "https" -}}
-      {{- end -}}
-      {{- $host := first $primaryIngress.hosts }}
-      {{- $protocol }}://{{ $host.host }}
-    {{- end -}}
-
-  HEADSCALE_METRICS_LISTEN_ADDR: "0.0.0.0:9090"
-  HEADSCALE_PRIVATE_KEY_PATH: "/etc/headscale/private.key"
-  HEADSCALE_NOISE_PRIVATE_KEY_PATH: "/etc/headscale/noise_private.key"
-  HEADSCALE_DB_PATH: "/etc/headscale/db.sqlite"
-
 # -- Secret environment variables.
 # @default -- See values.yaml
 secret: {}
@@ -73,22 +55,15 @@ persistence:
     enabled: false
     mountPath: /etc/headscale
 
-# @ignored
-args: ["headscale", "serve"]
-
-# @ignored
-initContainers:
-  config:
-    image: alpine
-    volumeMounts:
-      - name: config
-        mountPath: /etc/headscale
-    command:
-      - sh
-      - -c
-      - |
-        set -x
-        if [ ! -f /etc/headscale/config.yaml ]; then
-          wget -O /etc/headscale/config.yaml \
-            https://raw.githubusercontent.com/juanfont/headscale/main/config-example.yaml
-        fi
+# -- Enable and configure postgresql database subchart under this key.
+#    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql)
+# @default -- See values.yaml
+postgresql:
+  enabled: false
+  auth:
+    database: headscale
+    username: headscale
+    password: headscale-pass
+  primary:
+    persistence:
+      enabled: false

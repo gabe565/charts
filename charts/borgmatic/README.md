@@ -1,6 +1,6 @@
 # borgmatic
 
-![Version: 0.4.8](https://img.shields.io/badge/Version-0.4.8-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.4.9](https://img.shields.io/badge/Version-0.4.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services.
 
@@ -95,7 +95,7 @@ helm install borgmatic gabe565/borgmatic -f values.yaml
 | configmap.config.data."config.yaml" | string | See values.yaml | Borgmatic config. [[ref]](https://torsion.org/borgmatic/docs/reference/configuration) |
 | configmap.config.data."crontab.txt" | string | `"0 1 * * * PATH=$PATH:/usr/bin /usr/local/bin/borgmatic --stats -v 0 2>&1"` | Crontab |
 | env | object | See values.yaml | environment variables. [[ref]](https://borgbackup.readthedocs.io/en/stable/usage/general.html#environment-variables) |
-| env.BORG_HOST_ID | string | `"{{ .Release.Namespace }}"` | Borg host ID used in archive names |
+| env.BORG_HOST_ID | string | Deployment namespace | Borg host ID used in archive names |
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"b3vis/borgmatic"` | image repository |
 | image.tag | string | `""` | image tag |

@@ -3,16 +3,22 @@ name: headscale
 description: An open source, self-hosted implementation of the Tailscale control server.
 icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
 type: application
-version: 0.1.7
+version: 0.1.8
 appVersion: 0.16.4-alpine
 kubeVersion: ">=1.16.0-0"
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
     version: 0.2.0
+  - name: postgresql
+    version: 11.9.1
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
 sources:
   - https://github.com/juanfont/headscale
 annotations:
   artifacthub.io/changes: |
+    - kind: added
+      description: Add optional Postgres subchart
     - kind: changed
-      description: Infer image tag from appVersion
+      description: Move some defaults from values.yaml to template

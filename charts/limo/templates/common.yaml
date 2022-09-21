@@ -1,1 +1,20 @@
+{{/* Append the hardcoded settings */}}
+{{- define "borgmatic.harcodedValues" -}}
+env:
+  {{- with .Values.postgresql }}
+  {{- if .enabled }}
+  LIMOD_DB_HOST: {{ $.Release.Name }}-postgresql
+  LIMOD_DB_PORT: "5432"
+  LIMOD_DB_DATABASE: {{ .auth.database }}
+  LIMOD_DB_USERNAME: {{ .auth.username }}
+  LIMOD_DB_PASSWORD:
+    secretKeyRef:
+      name: {{ $.Release.Name }}-postgresql
+      key: password
+  {{- end }}
+  {{- end }}
+{{- end -}}
+{{- $_ := merge .Values (include "borgmatic.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
 {{ include "common.all" . }}

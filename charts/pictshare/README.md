@@ -1,6 +1,6 @@
 # pictshare
 
-![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 72394f17](https://img.shields.io/badge/AppVersion-72394f17-informational?style=flat-square)
+![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 72394f17](https://img.shields.io/badge/AppVersion-72394f17-informational?style=flat-square)
 
 PictShare is an open source image, mp4, pastebin hosting service with a simple resizing and upload API that you can host yourself.
 
@@ -76,7 +76,7 @@ N/A
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
-| env | string | See values.yaml. | environment variables. [[ref]](https://github.com/HaschekSolutions/pictshare/blob/master/rtfm/CONFIG.md) |
+| env | object | See values.yaml. | environment variables. [[ref]](https://github.com/HaschekSolutions/pictshare/blob/master/rtfm/CONFIG.md) |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"hascheksolutions/pictshare"` | image repository |
 | image.tag | string | `""` | image tag |

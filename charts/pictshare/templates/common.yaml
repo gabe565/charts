@@ -1,1 +1,13 @@
+{{/* Append the hardcoded settings */}}
+{{- define "pictshare.harcodedValues" -}}
+env:
+  {{- with .Values.ingress.main }}
+  {{- if .enabled }}
+  URL: http{{if ne ( len .tls ) 0 }}s{{ end }}://{{- (first .hosts).host }}/
+  {{- end -}}
+  {{- end }}
+{{- end -}}
+{{- $_ := merge .Values (include "pictshare.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
 {{ include "common.all" . }}

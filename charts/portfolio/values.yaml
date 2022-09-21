@@ -19,17 +19,16 @@ controller:
 
 # -- environment variables.
 # @default -- See below
-env:
+env: {}
   # APP_KEY: ""
-  # APP_URL: ""
-  DB_HOST: portfolio-postgresql
-  DB_PORT: "5432"
-  DB_DATABASE: portfolio
-  DB_USERNAME: portfolio
-  DB_PASSWORD:
-    secretKeyRef:
-      name: portfolio-postgresql
-      key: postgres-password
+  # DB_HOST: postgresql
+  # DB_PORT: "5432"
+  # DB_DATABASE: portfolio
+  # DB_USERNAME: portfolio
+  # DB_PASSWORD:
+  #   secretKeyRef:
+  #     name: postgresql
+  #     key: postgres-password
   # MAIL_HOST: ""
   # MAIL_PORT: ""
   # MAIL_USERNAME: ""
@@ -58,9 +57,9 @@ ingress:
 postgresql:
   enabled: false
   auth:
+    database: portfolio
     username: portfolio
     password: portfolio-pass
-    database: portfolio
   primary:
     persistence:
       enabled: false

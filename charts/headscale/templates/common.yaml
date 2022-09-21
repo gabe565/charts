@@ -1,1 +1,49 @@
+{{/* Append the hardcoded settings */}}
+{{- define "headscale.harcodedValues" -}}
+args: ["headscale", "serve"]
+
+initContainers:
+  config:
+    image: alpine
+    volumeMounts:
+      - name: config
+        mountPath: /etc/headscale
+    command:
+      - sh
+      - -c
+      - |
+        set -x
+        if [ ! -f /etc/headscale/config.yaml ]; then
+          wget -O /etc/headscale/config.yaml \
+            https://raw.githubusercontent.com/juanfont/headscale/main/config-example.yaml
+        fi
+
+env:
+  {{- with .Values.ingress.main }}
+  {{- if .enabled }}
+  HEADSCALE_SERVER_URL: http{{if ne ( len .tls ) 0 }}s{{ end }}://{{- (first .hosts).host }}
+  {{- end -}}
+  {{- end }}
+  HEADSCALE_METRICS_LISTEN_ADDR: "0.0.0.0:9090"
+  HEADSCALE_PRIVATE_KEY_PATH: "/etc/headscale/private.key"
+  HEADSCALE_NOISE_PRIVATE_KEY_PATH: "/etc/headscale/noise_private.key"
+  HEADSCALE_DB_PATH: "/etc/headscale/db.sqlite"
+
+  {{- with .Values.postgresql }}
+  {{- if .enabled }}
+  HEADSCALE_DB_TYPE: postgres
+  HEADSCALE_DB_HOST: {{ $.Release.Name }}-postgresql
+  HEADSCALE_DB_PORT: "5432"
+  HEADSCALE_DB_NAME: {{ .auth.database }}
+  HEADSCALE_DB_USER: {{ .auth.username }}
+  HEADSCALE_DB_PASS:
+    secretKeyRef:
+      name: {{ $.Release.Name }}-postgresql
+      key: password
+  {{- end }}
+  {{- end }}
+{{- end -}}
+{{- $_ := merge .Values (include "headscale.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
 {{ include "common.all" . }}

@@ -3,7 +3,7 @@ name: borgmatic
 description: borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services.
 icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
 type: application
-version: 0.4.8
+version: 0.4.9
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
@@ -16,4 +16,6 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Infer image tag from appVersion
+      description: Move some defaults from values.yaml to template
+    - kind: fixed
+      description: Fix slow termination

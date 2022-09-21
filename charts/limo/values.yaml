@@ -19,11 +19,11 @@ controller:
 
 # -- environment variables.
 # @default -- See values.yaml
-env:
-  LIMOD_DB_HOST: "{{ .Release.Name }}-postgresql"
-  LIMOD_DB_USERNAME: limo
-  LIMOD_DB_PASSWORD: limo
-  LIMOD_DB_DATABASE: limo
+env: {}
+  # LIMOD_DB_HOST: postgresql
+  # LIMOD_DB_USERNAME: limo
+  # LIMOD_DB_PASSWORD: limo
+  # LIMOD_DB_DATABASE: limo
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
@@ -51,9 +51,9 @@ persistence:
 postgresql:
   enabled: false
   auth:
-    username: limo
-    password: limo
     database: limo
+    username: limo
+    password: limo-pass
   primary:
     persistence:
       enabled: false

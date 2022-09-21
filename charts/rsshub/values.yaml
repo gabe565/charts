@@ -21,13 +21,6 @@ controller:
 # @default -- See below
 env:
   NODE_ENV: production
-  CACHE_TYPE: redis
-  REDIS_PASSWORD:
-    secretKeyRef:
-      name: rsshub-redis
-      key: redis-password
-  REDIS_URL: "redis://:$(REDIS_PASSWORD)@{{ .Release.Name }}-redis-master:6379/"
-  PUPPETEER_WS_ENDPOINT: ws://localhost:3000
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
@@ -43,14 +36,10 @@ ingress:
   main:
     enabled: false
 
+# -- Enable and configure redis subchart under this key.
+#    For more options see [redis chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/redis)
+# @default -- See values.yaml
 redis:
   enabled: true
   replica:
     replicaCount: 0
-
-additionalContainers:
-  browserless:
-    image: browserless/chrome
-    ports:
-      - name: http
-        containerPort: 3000

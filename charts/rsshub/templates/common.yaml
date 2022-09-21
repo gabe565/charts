@@ -1,1 +1,24 @@
+{{/* Append the hardcoded settings */}}
+{{- define "rsshub.harcodedValues" -}}
+env:
+  PUPPETEER_WS_ENDPOINT: ws://localhost:3000
+  {{- if .Values.redis.enabled }}
+  CACHE_TYPE: redis
+  REDIS_PASSWORD:
+    secretKeyRef:
+      name: {{ .Release.Name }}-redis
+      key: redis-password
+  REDIS_URL: "redis://:$(REDIS_PASSWORD)@{{ .Release.Name }}-redis-master:6379/"
+  {{- end }}
+
+additionalContainers:
+  browserless:
+    image: browserless/chrome
+    ports:
+      - name: http
+        containerPort: 3000
+{{- end -}}
+{{- $_ := merge .Values (include "rsshub.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
 {{ include "common.all" . }}
