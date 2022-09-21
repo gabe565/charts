@@ -2,7 +2,7 @@ apiVersion: v2
 name: limo
 description: A file upload server.
 type: application
-version: 0.1.12
+version: 0.1.13
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
@@ -18,6 +18,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Move some defaults from values.yaml to template
-    - kind: fixed
-      description: Fix database envs when Postgresql subchart enabled
+      description: Enable Postgresql persistence by default

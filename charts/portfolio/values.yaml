@@ -62,4 +62,4 @@ postgresql:
     password: portfolio-pass
   primary:
     persistence:
-      enabled: false
+      enabled: true

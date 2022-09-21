@@ -56,4 +56,4 @@ postgresql:
     password: limo-pass
   primary:
     persistence:
-      enabled: false
+      enabled: true

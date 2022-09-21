@@ -66,4 +66,4 @@ postgresql:
     password: headscale-pass
   primary:
     persistence:
-      enabled: false
+      enabled: true
