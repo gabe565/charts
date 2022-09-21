@@ -735,6 +735,33 @@ entries:
   headscale:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Enable Postgresql persistence by default
+    apiVersion: v2
+    appVersion: 0.16.4-alpine
+    created: "2022-09-21T22:59:18.917201938Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.1
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: 7987066e84eae9be3112059c6bf52d15aa07414ae409d4b3119fe594170a01c7
+    icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
+    kubeVersion: '>=1.16.0-0'
+    name: headscale
+    sources:
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.1.9/headscale-0.1.9.tgz
+    version: 0.1.9
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: Add optional Postgres subchart
         - kind: changed
@@ -947,6 +974,31 @@ entries:
     - https://github.com/gabe565/charts/releases/download/headscale-0.1.0/headscale-0.1.0.tgz
     version: 0.1.0
   limo:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Enable Postgresql persistence by default
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-21T22:59:19.051962404Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.20
+    description: A file upload server.
+    digest: 41b3c3216ec7693fd36cda4f28a5e546c801ab0875a34fbca748532c5e756549
+    kubeVersion: '>=1.16.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.1.13/limo-0.1.13.tgz
+    version: 0.1.13
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -1732,6 +1784,32 @@ entries:
     - https://github.com/gabe565/charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
     version: 0.1.0
   portfolio:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Enable Postgresql persistence by default
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-21T22:59:19.186269165Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.14
+    description: My personal portfolio website
+    digest: c6f83818a6528882de1627709600af9c58ec76d1310acd17755aa4021d7e9a1e
+    icon: https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.1.7/portfolio-0.1.7.tgz
+    version: 0.1.7
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -2628,4 +2706,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-21T22:32:47.565946113Z"
+generated: "2022-09-21T22:59:19.186773671Z"
