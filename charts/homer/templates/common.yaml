@@ -1,0 +1,17 @@
+{{/* Append the hardcoded settings */}}
+{{- define "homer.harcodedValues" -}}
+  {{- if .Values.configmap.config.enabled }}
+  {{/* Append the configMap volume to the volumes */}}
+  persistence:
+    config:
+      enabled: true
+      type: configMap
+      name: {{ include "common.names.fullname" . }}-config
+      mountPath: /www/assets/config.yml
+      subPath: config.yml
+  {{- end }}
+{{- end -}}
+{{- $_ := merge .Values (include "homer.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "common.all" . }}

@@ -1,0 +1,18 @@
+apiVersion: v2
+name: homer
+description: A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.
+icon: https://raw.githubusercontent.com/bastienwirtz/homer/5418c6291a39d27aeee471673adba742080e1ccb/public/logo.png
+type: application
+version: 0.1.0
+appVersion: v22.08.1
+kubeVersion: ">=1.16.0-0"
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    version: 0.2.0
+sources:
+  - https://github.com/bastienwirtz/homer
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial release

@@ -40,6 +40,7 @@ helm delete my-<chart-name>
 | [flame](charts/flame) | Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors. |
 | [hammond](charts/hammond) | A self-hosted vehicle expense tracking system with support for multiple users. |
 | [headscale](charts/headscale) | An open source, self-hosted implementation of the Tailscale control server. |
+| [homer](charts/homer) | A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file. |
 | [limo](charts/limo) | A file upload server. |
 | [matrimony](charts/matrimony) | Self-hosted wedding site configured via YAML |
 | [mnemonic-ninja](charts/mnemonic-ninja) | Mnemonic Ninja is a website to convert between a number and its corresponding word to aid in memorization. |

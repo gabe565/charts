@@ -1,0 +1,55 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: b4bz/homer
+  # -- image tag
+  # @default -- chart.appVersion
+  tag: ""
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+
+controller:
+  # -- Set the controller upgrade strategy
+  strategy: RollingUpdate
+
+# -- environment variables.
+# @default -- See values.yaml
+env: {}
+  # INIT_ASSETS: "0"
+
+service:
+  # -- Configures service settings for the chart.
+  # @default -- See values.yaml
+  main:
+    ports:
+      http:
+        port: 8080
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+persistence:
+  # -- Configure persistence settings for the chart under this key.
+  # @default -- See values.yaml
+  config:
+    enabled: false
+    mountPath: /www/assets
+
+configmap:
+  config:
+    # -- Store homer configuration as a ConfigMap
+    enabled: false
+    # -- Homer configuration. [[ref]](https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md)
+    # @default -- See values.yaml
+    data:
+      config.yml: |
+        externalConfig: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/assets/config.yml.dist
