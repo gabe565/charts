@@ -871,6 +871,38 @@ entries:
   headscale:
   - annotations:
       artifacthub.io/changes: |
+        - kind: fixed
+          description: Fix postgresql subchart default values
+    apiVersion: v2
+    appVersion: 0.16.4-alpine
+    created: "2022-09-22T21:52:51.34433976Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.1
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: 3753108049c847001543d53c9ed5f02dd883909aba38f44c1b7a29bf104c0428
+    icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
+    keywords:
+    - headscale
+    - tailscale
+    - wireguard
+    - vpn
+    kubeVersion: '>=1.16.0-0'
+    name: headscale
+    sources:
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.1.11/headscale-0.1.11.tgz
+    version: 0.1.11
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: Add keywords
     apiVersion: v2
@@ -1194,6 +1226,31 @@ entries:
     - https://github.com/gabe565/charts/releases/download/homer-0.1.0/homer-0.1.0.tgz
     version: 0.1.0
   limo:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
+          description: Fix postgresql subchart default values
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-22T21:52:51.509676628Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.20
+    description: A file upload server.
+    digest: cbd337fefdbe01ed5e890078c7d61bef9658479ff4f88c1d371c5b265e71525d
+    kubeVersion: '>=1.16.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.1.15/limo-0.1.15.tgz
+    version: 0.1.15
   - annotations:
       artifacthub.io/changes: |
         - kind: fixed
@@ -1667,6 +1724,37 @@ entries:
   miniflux:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: fixed
+          description: Fix postgresql subchart default values
+    apiVersion: v2
+    appVersion: 2.0.38
+    created: "2022-09-22T21:52:51.680056737Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.1
+    description: Miniflux is a minimalist and opinionated feed reader.
+    digest: cae1175df83ca978e6ce8cb2177989510a423b47ff1ca7e4fdff82d5526e5e00
+    icon: https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg
+    keywords:
+    - miniflux
+    - rss
+    - news
+    - feed
+    kubeVersion: '>=1.16.0-0'
+    name: miniflux
+    sources:
+    - https://github.com/miniflux/v2
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/miniflux-0.1.1/miniflux-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: added
           description: Initial release
     apiVersion: v2
@@ -1839,6 +1927,37 @@ entries:
     - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.1.0/mnemonic-ninja-0.1.0.tgz
     version: 0.1.0
   nightscout:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: fixed
+          description: Fix mongodb subchart default values
+    apiVersion: v2
+    appVersion: 14.2.5
+    created: "2022-09-22T21:52:51.837025035Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.1.5
+    description: Web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers
+      to remotely view a patient's glucose data in real time.
+    digest: 8f2a940712f32c508e58668a5c461baad70e3111599a798be4bb178218e6e9d1
+    icon: https://raw.githubusercontent.com/nightscout/cgm-remote-monitor/71c2363b7be387cda899669be2bfd6ddbfe70198/static/images/large.png
+    keywords:
+    - nightscout
+    - cgm
+    - blood-sugar
+    - diabetes
+    kubeVersion: '>=1.16.0-0'
+    name: nightscout
+    sources:
+    - https://github.com/nightscout/cgm-remote-monitor
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/nightscout-0.1.3/nightscout-0.1.3.tgz
+    version: 0.1.3
   - annotations:
       artifacthub.io/changes: |-
         - kind: added
@@ -2197,6 +2316,32 @@ entries:
     - https://github.com/gabe565/charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
     version: 0.1.0
   portfolio:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
+          description: Fix postgresql subchart default values
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-22T21:52:52.0019776Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.14
+    description: My personal portfolio website
+    digest: 2b4d5034097d20b12ace8d2f519f63e2c54cde9267ad8603eaac6655029a6152
+    icon: https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.1.9/portfolio-0.1.9.tgz
+    version: 0.1.9
   - annotations:
       artifacthub.io/changes: |
         - kind: fixed
@@ -3254,4 +3399,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-22T18:04:18.449802302Z"
+generated: "2022-09-22T21:52:52.002370103Z"
