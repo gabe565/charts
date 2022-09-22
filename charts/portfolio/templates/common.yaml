@@ -13,11 +13,11 @@ env:
   DB_HOST: {{ $.Release.Name }}-postgresql
   DB_PORT: "5432"
   DB_DATABASE: {{ .auth.database }}
-  DB_USERNAME: {{ .auth.username }}
+  DB_USERNAME: {{ default "postgres" .auth.username }}
   DB_PASSWORD:
     secretKeyRef:
       name: {{ $.Release.Name }}-postgresql
-      key: password
+      key: {{ if not .auth.password }}postgres-{{ end }}password
   {{- end }}
   {{- end }}
 {{- end -}}

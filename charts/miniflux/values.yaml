@@ -51,8 +51,10 @@ postgresql:
   enabled: true
   auth:
     database: miniflux
-    username: miniflux
-    password: miniflux-pass
+    postgresPassword: changeme
+    # Uncomment to create a non-root user
+    # username: miniflux
+    # password: changeme
   persistence:
     enabled: true
     # storageClass: ""

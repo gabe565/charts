@@ -62,8 +62,7 @@ postgresql:
   enabled: false
   auth:
     database: headscale
-    username: headscale
-    password: headscale-pass
+    postgresPassword: changeme
   primary:
     persistence:
       enabled: true

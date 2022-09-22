@@ -47,12 +47,13 @@ ingress:
 mongodb:
   enabled: false
   auth:
+    rootPassword: changeme
     databases:
       - nightscout
     usernames:
       - nightscout
     passwords:
-      - nightscout-pass
+      - changeme
   persistence:
     enabled: true
     # storageClass: ""

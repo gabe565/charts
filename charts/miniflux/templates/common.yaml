@@ -14,8 +14,8 @@
     DATABASE_PASSWORD:
       secretKeyRef:
         name: {{ $.Release.Name }}-postgresql
-        key: password
-    DATABASE_URL: postgres://{{ .auth.username }}:$(DATABASE_PASSWORD)@{{ $.Release.Name }}-postgresql/{{ .auth.database }}?sslmode=disable
+        key: {{ if not .auth.password }}postgres-{{ end }}password
+    DATABASE_URL: postgres://{{ default "postgres" .auth.username }}:$(DATABASE_PASSWORD)@{{ $.Release.Name }}-postgresql/{{ .auth.database }}?sslmode=disable
     {{- end }}
     {{- end }}
 

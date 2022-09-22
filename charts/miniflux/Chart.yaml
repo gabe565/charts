@@ -3,7 +3,7 @@ name: miniflux
 description: Miniflux is a minimalist and opinionated feed reader.
 icon: https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg
 type: application
-version: 0.1.0
+version: 0.1.1
 appVersion: 2.0.38
 kubeVersion: ">=1.16.0-0"
 keywords:
@@ -23,5 +23,5 @@ sources:
   - https://github.com/miniflux/v2
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Initial release
+    - kind: fixed
+      description: Fix postgresql subchart default values

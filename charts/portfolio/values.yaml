@@ -58,8 +58,10 @@ postgresql:
   enabled: false
   auth:
     database: portfolio
-    username: portfolio
-    password: portfolio-pass
+    postgresPassword: changeme
+    # Uncomment to create a non-root user
+    # username: portfolio
+    # password: changeme
   primary:
     persistence:
       enabled: true

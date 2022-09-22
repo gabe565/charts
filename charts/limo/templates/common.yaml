@@ -6,11 +6,11 @@ env:
   LIMOD_DB_HOST: {{ $.Release.Name }}-postgresql
   LIMOD_DB_PORT: "5432"
   LIMOD_DB_DATABASE: {{ .auth.database }}
-  LIMOD_DB_USERNAME: {{ .auth.username }}
+  LIMOD_DB_USERNAME: {{ default "postgres" .auth.username }}
   LIMOD_DB_PASSWORD:
     secretKeyRef:
       name: {{ $.Release.Name }}-postgresql
-      key: password
+      key: {{ if not .auth.password }}postgres-{{ end }}password
   {{- end }}
   {{- end }}
 {{- end -}}
