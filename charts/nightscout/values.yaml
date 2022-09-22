@@ -1,0 +1,59 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: nightscout/cgm-remote-monitor
+  # -- image tag
+  # @default -- chart.appVersion
+  tag: ""
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+
+# -- environment variables. [[ref]](https://github.com/nightscout/cgm-remote-monitor#environment)
+# @default -- See values.yaml
+env:
+  # -- MongoDB URI, eg `mongodb://username:password@mongodb/nightscout`.
+  #    Will be generated if mongodb subchart is enabled.
+  MONGODB_URI: ""
+  # -- API secret. Must be at least 12 characters long.
+  API_SECRET: ""
+  # -- MongoDB collection for BG entries
+  MONGODB_COLLECTION: entries
+  # -- Display units for BG. Valid values are mg/dl or mmol
+  DISPLAY_UNITS: mg/dl
+
+service:
+  # -- Configures service settings for the chart.
+  # @default -- See values.yaml
+  main:
+    ports:
+      http:
+        port: 1337
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+# -- Enable and configure mongodb database subchart under this key.
+#    For more options see [mongodb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mongodb)
+# @default -- See values.yaml
+mongodb:
+  enabled: false
+  auth:
+    databases:
+      - nightscout
+    usernames:
+      - nightscout
+    passwords:
+      - nightscout-pass
+  persistence:
+    enabled: true
+    # storageClass: ""
+    # size: 8Gi

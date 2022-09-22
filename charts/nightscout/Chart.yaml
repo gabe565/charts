@@ -1,0 +1,21 @@
+apiVersion: v2
+name: nightscout
+description: Web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers to remotely view a patient's glucose data in real time.
+icon: https://github.com/nightscout/cgm-remote-monitor/blob/71c2363b7be387cda899669be2bfd6ddbfe70198/static/images/large.png
+type: application
+version: 0.1.0
+appVersion: 14.2.5
+kubeVersion: ">=1.16.0-0"
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    version: 0.2.0
+  - name: mongodb
+    version: 13.1.5
+    repository: https://charts.bitnami.com/bitnami
+sources:
+  - https://github.com/nightscout/cgm-remote-monitor
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: Initial release
