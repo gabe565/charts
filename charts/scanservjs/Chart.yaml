@@ -2,9 +2,13 @@ apiVersion: v2
 name: scanservjs
 description: scanservjs is a web UI frontend for your scanner. It allows you to share one or more scanners (using SANE) on a network without the need for drivers or complicated installation.
 type: application
-version: 0.1.3
+version: 0.1.4
 appVersion: release-v2.21.0
 kubeVersion: ">=1.16.0-0"
+keywords:
+  - scanservjs
+  - scanner
+  - sane
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
@@ -13,5 +17,5 @@ sources:
   - https://github.com/sbs20/scanservjs
 annotations:
   artifacthub.io/changes: |
-    - kind: changed
-      description: Infer image tag from appVersion
+    - kind: added
+      description: Add keywords

@@ -3,9 +3,13 @@ name: rss-bridge
 description: The RSS feed for websites missing it.
 icon: https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png
 type: application
-version: 0.1.6
+version: 0.1.7
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
+keywords:
+  - rss-bridge
+  - rss
+  - feed
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
@@ -14,5 +18,5 @@ sources:
   - https://github.com/RSS-Bridge/rss-bridge
 annotations:
   artifacthub.io/changes: |
-    - kind: changed
-      description: Infer image tag from appVersion
+    - kind: added
+      description: Add keywords

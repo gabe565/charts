@@ -2,9 +2,13 @@ apiVersion: v2
 name: transsmute
 description: Transsmute builds RSS feeds for websites that don't provide them.
 type: application
-version: 0.1.6
+version: 0.1.7
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
+keywords:
+  - transsmute
+  - rss
+  - feed
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
@@ -13,5 +17,5 @@ sources:
   - https://github.com/gabe565/transsmute
 annotations:
   artifacthub.io/changes: |
-    - kind: changed
-      description: Infer image tag from appVersion
+    - kind: added
+      description: Add keywords

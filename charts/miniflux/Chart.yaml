@@ -10,6 +10,7 @@ keywords:
   - miniflux
   - rss
   - news
+  - feed
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts

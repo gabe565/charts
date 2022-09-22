@@ -3,9 +3,14 @@ name: nightscout
 description: Web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers to remotely view a patient's glucose data in real time.
 icon: https://raw.githubusercontent.com/nightscout/cgm-remote-monitor/71c2363b7be387cda899669be2bfd6ddbfe70198/static/images/large.png
 type: application
-version: 0.1.1
+version: 0.1.2
 appVersion: 14.2.5
 kubeVersion: ">=1.16.0-0"
+keywords:
+  - nightscout
+  - cgm
+  - blood-sugar
+  - diabetes
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
@@ -17,5 +22,5 @@ sources:
   - https://github.com/nightscout/cgm-remote-monitor
 annotations:
   artifacthub.io/changes: |-
-    - kind: fixed
-      description: Fix Nightscout icon
+    - kind: added
+      description: Add keywords

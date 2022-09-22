@@ -2,9 +2,13 @@ apiVersion: v2
 name: domain-watch
 description: Tool to watch whois reports and notify when statuses change or expiration is incoming.
 type: application
-version: 0.1.7
+version: 0.1.8
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
+keywords:
+  - domain
+  - whois
+  - alert
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
@@ -13,5 +17,5 @@ sources:
   - https://github.com/gabe565/domain-watch
 annotations:
   artifacthub.io/changes: |
-    - kind: changed
-      description: Move some defaults from values.yaml to template
+    - kind: added
+      description: Add keywords

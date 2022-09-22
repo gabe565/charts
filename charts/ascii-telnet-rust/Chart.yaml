@@ -2,9 +2,13 @@ apiVersion: v2
 name: ascii-telnet-rust
 description: Star Wars telnet server written in Rust
 type: application
-version: 0.1.5
+version: 0.1.6
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
+keywords:
+  - ascii-art
+  - star-wars
+  - telnet
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
@@ -13,5 +17,5 @@ sources:
   - https://github.com/gabe565/ascii-telnet-rust
 annotations:
   artifacthub.io/changes: |
-    - kind: changed
-      description: Infer image tag from appVersion
+    - kind: added
+      description: Add keywords
