@@ -1468,6 +1468,37 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/matrimony-0.1.0/matrimony-0.1.0.tgz
     version: 0.1.0
+  miniflux:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial release
+    apiVersion: v2
+    appVersion: 2.0.38
+    created: "2022-09-22T17:19:33.396808313Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.1
+    description: Miniflux is a minimalist and opinionated feed reader.
+    digest: c5cf10a499ee549e8efe5466f3f3b9195bac8e10e9dac4bd792b80354f45831e
+    icon: https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg
+    keywords:
+    - miniflux
+    - rss
+    - news
+    kubeVersion: '>=1.16.0-0'
+    name: miniflux
+    sources:
+    - https://github.com/miniflux/v2
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/miniflux-0.1.0/miniflux-0.1.0.tgz
+    version: 0.1.0
   mnemonic-ninja:
   - annotations:
       artifacthub.io/changes: |
@@ -2834,4 +2865,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-22T15:21:09.21281181Z"
+generated: "2022-09-22T17:19:33.397186836Z"
