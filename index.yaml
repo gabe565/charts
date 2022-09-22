@@ -1611,6 +1611,33 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.1.0/mnemonic-ninja-0.1.0.tgz
     version: 0.1.0
+  nightscout:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial release
+    apiVersion: v2
+    appVersion: 14.2.5
+    created: "2022-09-22T14:55:06.561954959Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.1.5
+    description: Web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers
+      to remotely view a patient's glucose data in real time.
+    digest: 4c01ada0fe22e4ff72812b9e617026bd36b1eaafe72f91b35164a8fb92259b49
+    icon: https://github.com/nightscout/cgm-remote-monitor/blob/71c2363b7be387cda899669be2bfd6ddbfe70198/static/images/large.png
+    kubeVersion: '>=1.16.0-0'
+    name: nightscout
+    sources:
+    - https://github.com/nightscout/cgm-remote-monitor
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/nightscout-0.1.0/nightscout-0.1.0.tgz
+    version: 0.1.0
   pictshare:
   - annotations:
       artifacthub.io/changes: |
@@ -2781,4 +2808,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-22T07:10:28.242072709Z"
+generated: "2022-09-22T14:55:06.562383466Z"
