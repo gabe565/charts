@@ -1,0 +1,59 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: miniflux/miniflux
+  # -- image tag
+  # @default -- chart.appVersion
+  tag: ""
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+
+controller:
+  # -- Set the controller upgrade strategy
+  strategy: RollingUpdate
+
+# -- environment variables. [[ref]](https://miniflux.app/docs/configuration.html)
+# @default -- See values.yaml
+env:
+  # -- Postgresql connection parameters. Will be generated if Postgresql subchart is enabled. [[ref]](https://miniflux.app/docs/configuration.html#database-url)
+  DATABASE_URL: ""
+  # -- Set to `1` to create an admin user from environment variables.
+  CREATE_ADMIN: "1"
+  # -- Admin user login, it's used only if `CREATE_ADMIN` is enabled.
+  ADMIN_USERNAME: admin
+  # -- Admin user password, it's used only if `CREATE_ADMIN` is enabled.
+  ADMIN_PASSWORD: changeme
+
+service:
+  # -- Configures service settings for the chart.
+  # @default -- See values.yaml
+  main:
+    ports:
+      http:
+        port: 8080
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+# -- Enable and configure postgresql database subchart under this key.
+#    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql)
+# @default -- Enabled (see values.yaml for more details)
+postgresql:
+  enabled: true
+  auth:
+    database: miniflux
+    username: miniflux
+    password: miniflux-pass
+  persistence:
+    enabled: true
+    # storageClass: ""
+    # size: 8Gi

@@ -43,6 +43,7 @@ helm delete my-<chart-name>
 | [homer](charts/homer) | A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file. |
 | [limo](charts/limo) | A file upload server. |
 | [matrimony](charts/matrimony) | Self-hosted wedding site configured via YAML |
+| [miniflux](charts/miniflux) | Miniflux is a minimalist and opinionated feed reader. |
 | [mnemonic-ninja](charts/mnemonic-ninja) | Mnemonic Ninja is a website to convert between a number and its corresponding word to aid in memorization. |
 | [nightscout](charts/nightscout) | Web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers to remotely view a patient's glucose data in real time. |
 | [pictshare](charts/pictshare) | PictShare is an open source image, mp4, pastebin hosting service with a simple resizing and upload API that you can host yourself. |

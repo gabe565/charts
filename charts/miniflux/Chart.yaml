@@ -1,0 +1,26 @@
+apiVersion: v2
+name: miniflux
+description: Miniflux is a minimalist and opinionated feed reader.
+icon: https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg
+type: application
+version: 0.1.0
+appVersion: 2.0.38
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - miniflux
+  - rss
+  - news
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    version: 0.2.0
+  - name: postgresql
+    version: 11.9.1
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
+sources:
+  - https://github.com/miniflux/v2
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: Initial release
