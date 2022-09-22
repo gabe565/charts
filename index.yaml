@@ -1614,6 +1614,32 @@ entries:
   nightscout:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: fixed
+          description: Fix Nightscout icon
+    apiVersion: v2
+    appVersion: 14.2.5
+    created: "2022-09-22T15:21:09.212504004Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.1.5
+    description: Web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers
+      to remotely view a patient's glucose data in real time.
+    digest: 5a718db11b08afd939c41bb1f14f8f5030c305c4df65d460d339ceda85e5445f
+    icon: https://raw.githubusercontent.com/nightscout/cgm-remote-monitor/71c2363b7be387cda899669be2bfd6ddbfe70198/static/images/large.png
+    kubeVersion: '>=1.16.0-0'
+    name: nightscout
+    sources:
+    - https://github.com/nightscout/cgm-remote-monitor
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/nightscout-0.1.1/nightscout-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: added
           description: Initial release
     apiVersion: v2
@@ -2808,4 +2834,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-22T14:55:06.562383466Z"
+generated: "2022-09-22T15:21:09.21281181Z"
