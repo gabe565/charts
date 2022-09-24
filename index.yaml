@@ -871,6 +871,38 @@ entries:
   headscale:
   - annotations:
       artifacthub.io/changes: |
+        - kind: fixed
+          description: Fix error when tls is not set
+    apiVersion: v2
+    appVersion: 0.16.4-alpine
+    created: "2022-09-24T06:20:06.069948699Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.1
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: 0704dc7981305d2c0197bb99aad67ff8fb0abd62fe6b90de80411dd8a46de62e
+    icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
+    keywords:
+    - headscale
+    - tailscale
+    - wireguard
+    - vpn
+    kubeVersion: '>=1.16.0-0'
+    name: headscale
+    sources:
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.1.13/headscale-0.1.13.tgz
+    version: 0.1.13
+  - annotations:
+      artifacthub.io/changes: |
         - kind: changed
           description: Disable persistence by default
     apiVersion: v2
@@ -1781,6 +1813,37 @@ entries:
   miniflux:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: fixed
+          description: Fix error when tls is not set
+    apiVersion: v2
+    appVersion: 2.0.38
+    created: "2022-09-24T06:20:06.204152113Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.1
+    description: Miniflux is a minimalist and opinionated feed reader.
+    digest: 456c96ec9983f81e1475d509a805e6c966129da65f01b3637c1618eebe4541dd
+    icon: https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg
+    keywords:
+    - miniflux
+    - rss
+    - news
+    - feed
+    kubeVersion: '>=1.16.0-0'
+    name: miniflux
+    sources:
+    - https://github.com/miniflux/v2
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/miniflux-0.1.3/miniflux-0.1.3.tgz
+    version: 0.1.3
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Disable persistence by default
     apiVersion: v2
@@ -2163,6 +2226,34 @@ entries:
   pictshare:
   - annotations:
       artifacthub.io/changes: |
+        - kind: fixed
+          description: Fix error when tls is not set
+    apiVersion: v2
+    appVersion: 72394f17
+    created: "2022-09-24T06:20:06.315508144Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: PictShare is an open source image, mp4, pastebin hosting service
+      with a simple resizing and upload API that you can host yourself.
+    digest: 326ba685181046ae2bc81072ca11079743cb52ead05a64f7f383bedd86ce0343
+    icon: https://camo.githubusercontent.com/6efdab1c63d518fafc5e735001c5ed45e7cbd4958952cdd972e2630eee881d97/68747470733a2f2f7069637473686172652e6e65742f706868796e6a2e706e67
+    keywords:
+    - pictshare
+    - image
+    - picture
+    - image-uploader
+    kubeVersion: '>=1.16.0-0'
+    name: pictshare
+    sources:
+    - https://github.com/HaschekSolutions/pictshare
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/pictshare-0.1.8/pictshare-0.1.8.tgz
+    version: 0.1.8
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: Add keywords
     apiVersion: v2
@@ -2435,6 +2526,32 @@ entries:
     - https://github.com/gabe565/charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
     version: 0.1.0
   portfolio:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: fixed
+          description: Fix error when tls is not set
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-24T06:20:06.470182253Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.14
+    description: My personal portfolio website
+    digest: 8c51de55f3d38e69946ad3bcf077eceae5a729938c400dedbf87a69e193b01cc
+    icon: https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.1.11/portfolio-0.1.11.tgz
+    version: 0.1.11
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -3544,4 +3661,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-24T05:23:36.615991913Z"
+generated: "2022-09-24T06:20:06.47068375Z"
