@@ -3,7 +3,7 @@ name: pictshare
 description: PictShare is an open source image, mp4, pastebin hosting service with a simple resizing and upload API that you can host yourself.
 icon: https://camo.githubusercontent.com/6efdab1c63d518fafc5e735001c5ed45e7cbd4958952cdd972e2630eee881d97/68747470733a2f2f7069637473686172652e6e65742f706868796e6a2e706e67
 type: application
-version: 0.1.7
+version: 0.1.8
 appVersion: 72394f17
 kubeVersion: ">=1.16.0-0"
 keywords:
@@ -19,5 +19,5 @@ sources:
   - https://github.com/HaschekSolutions/pictshare
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Add keywords
+    - kind: fixed
+      description: Fix error when tls is not set

@@ -21,7 +21,7 @@ initContainers:
 env:
   {{- with .Values.ingress.main }}
   {{- if .enabled }}
-  HEADSCALE_SERVER_URL: http{{ if ne ( len .tls ) 0 }}s{{ end }}://{{ (first .hosts).host }}
+  HEADSCALE_SERVER_URL: http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}
   {{- end -}}
   {{- end }}
   HEADSCALE_METRICS_LISTEN_ADDR: "0.0.0.0:9090"

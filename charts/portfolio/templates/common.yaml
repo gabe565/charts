@@ -3,7 +3,7 @@
 env:
   {{- with .Values.ingress.main }}
   {{- if .enabled }}
-  APP_URL: http{{ if ne ( len .tls ) 0 }}s{{ end }}://{{ (first .hosts).host }}
+  APP_URL: http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}
   {{- end }}
   {{- end }}
 

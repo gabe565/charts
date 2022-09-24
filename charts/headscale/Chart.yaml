@@ -3,7 +3,7 @@ name: headscale
 description: An open source, self-hosted implementation of the Tailscale control server.
 icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
 type: application
-version: 0.1.12
+version: 0.1.13
 appVersion: 0.16.4-alpine
 kubeVersion: ">=1.16.0-0"
 keywords:
@@ -23,5 +23,5 @@ sources:
   - https://github.com/juanfont/headscale
 annotations:
   artifacthub.io/changes: |
-    - kind: changed
-      description: Disable persistence by default
+    - kind: fixed
+      description: Fix error when tls is not set

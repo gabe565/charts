@@ -5,7 +5,7 @@
 
     {{- with .Values.ingress.main }}
     {{- if .enabled }}
-    BASE_URL: http{{ if ne ( len .tls ) 0 }}s{{ end }}://{{ (first .hosts).host }}/
+    BASE_URL: http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}/
     {{- end -}}
     {{- end }}
 
