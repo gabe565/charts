@@ -1495,6 +1495,32 @@ entries:
   limo:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Bump postgresql subchart to v11.9.1
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-24T20:45:06.188524071Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.1
+    description: A file upload server.
+    digest: 1c6735198e0fdb28ad44615e6a64023c3d53854744c2ff4478a6b78b06119f79
+    home: https://github.com/gabe565/charts/tree/main/charts/limo
+    kubeVersion: '>=1.16.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.1.18/limo-0.1.18.tgz
+    version: 0.1.18
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: Add home URL
     apiVersion: v2
@@ -2922,6 +2948,33 @@ entries:
   portfolio:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Bump postgresql subchart to v11.9.1
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-24T20:45:06.337910973Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.1
+    description: My personal portfolio website
+    digest: 43d7a3ddc04703488438f9e267bd85647cbe40a1715d58c78aa2df606a3f50bb
+    home: https://github.com/gabe565/charts/tree/main/charts/portfolio
+    icon: https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.1.13/portfolio-0.1.13.tgz
+    version: 0.1.13
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: Add home URL
     apiVersion: v2
@@ -4289,4 +4342,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-24T20:42:50.94568258Z"
+generated: "2022-09-24T20:45:06.338401274Z"
