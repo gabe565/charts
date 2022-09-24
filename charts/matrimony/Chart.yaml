@@ -1,8 +1,9 @@
 apiVersion: v2
 name: matrimony
 description: Self-hosted wedding site configured via YAML
+home: https://github.com/gabe565/charts/tree/main/charts/matrimony
 type: application
-version: 0.1.6
+version: 0.1.7
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
@@ -13,5 +14,5 @@ sources:
   - https://github.com/gabe565/matrimony
 annotations:
   artifacthub.io/changes: |
-    - kind: changed
-      description: Infer image tag from appVersion
+    - kind: added
+      description: Add home URL

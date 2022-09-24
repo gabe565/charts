@@ -1,8 +1,9 @@
 apiVersion: v2
 name: podgrab
 description: A self-hosted podcast manager to download episodes as soon as they become live.
+home: https://github.com/gabe565/charts/tree/main/charts/podgrab
 type: application
-version: 0.1.4
+version: 0.1.5
 appVersion: 1.0.0
 kubeVersion: ">=1.16.0-0"
 keywords:
@@ -17,4 +18,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: added
-      description: Add keywords
+      description: Add home URL

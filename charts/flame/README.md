@@ -1,6 +1,6 @@
 # flame
 
-![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: multiarch2.3.0](https://img.shields.io/badge/AppVersion-multiarch2.3.0-informational?style=flat-square)
+![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: multiarch2.3.0](https://img.shields.io/badge/AppVersion-multiarch2.3.0-informational?style=flat-square)
 
 Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors.
 

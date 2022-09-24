@@ -1,9 +1,10 @@
 apiVersion: v2
 name: flame
 description: Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors.
+home: https://github.com/gabe565/charts/tree/main/charts/flame
 icon: https://raw.githubusercontent.com/pawelmalak/flame/4ed29fe276b4282c67415f9788660df2a3a69b5c/client/public/icons/apple-touch-icon-180x180.png
 type: application
-version: 0.1.4
+version: 0.1.5
 appVersion: multiarch2.3.0
 kubeVersion: ">=1.16.0-0"
 keywords:
@@ -20,4 +21,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: added
-      description: Add keywords
+      description: Add home URL

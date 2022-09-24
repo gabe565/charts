@@ -1,9 +1,10 @@
 apiVersion: v2
 name: mnemonic-ninja
 description: Mnemonic Ninja is a website to convert between a number and its corresponding word to aid in memorization.
+home: https://github.com/gabe565/charts/tree/main/charts/mnemonic-ninja
 icon: https://raw.githubusercontent.com/gabe565/mnemonic-ninja/20b5c559fb0147c5f3c0c1cc5a3841d371259b78/frontend/src/assets/logo.svg
 type: application
-version: 0.1.6
+version: 0.1.7
 appVersion: latest
 kubeVersion: ">=1.16.0-0"
 dependencies:
@@ -14,5 +15,5 @@ sources:
   - https://github.com/gabe565/mnemonic-ninja
 annotations:
   artifacthub.io/changes: |
-    - kind: changed
-      description: Infer image tag from appVersion
+    - kind: added
+      description: Add home URL
