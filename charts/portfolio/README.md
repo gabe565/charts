@@ -1,6 +1,6 @@
 # portfolio
 
-![Version: 0.1.12](https://img.shields.io/badge/Version-0.1.12-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.13](https://img.shields.io/badge/Version-0.1.13-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
 My personal portfolio website
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.16.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | https://bjw-s.github.io/helm-charts | common | 0.2.0 |
-| https://charts.bitnami.com/bitnami | postgresql | 11.6.14 |
+| https://charts.bitnami.com/bitnami | postgresql | 11.9.1 |
 
 ## TL;DR
 
