@@ -1,0 +1,18 @@
+{{- define "custom.custom.configuration.header" -}}
+## Custom configuration
+{{- end -}}
+
+{{- define "custom.custom.configuration" -}}
+{{ template "custom.custom.configuration.header" . }}
+
+The Vaultwarden chart requires the `/data` folder to exist. In order to
+provide this, some type of storage needs to be implemented.
+For testing purposes, the following config snippet will work:
+
+````yaml
+persistence:
+  data:
+    enabled: true
+    type: emptyDir
+````
+{{- end -}}

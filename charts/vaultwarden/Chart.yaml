@@ -1,0 +1,30 @@
+apiVersion: v2
+name: vaultwarden
+description: Unofficial Bitwarden compatible server written in Rust.
+icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/7cb19ef767142b773ab44a457940844589432a74/src/static/images/vaultwarden-icon.png
+type: application
+version: 0.1.0
+appVersion: 1.25.2-alpine
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - vaultwarden
+  - bitwarden
+  - bitwarden_rs
+sources:
+  - https://github.com/dani-garcia/vaultwarden
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    version: 0.2.0
+  - name: mariadb
+    version: 11.3.1
+    repository: https://charts.bitnami.com/bitnami
+    condition: mariadb.enabled
+  - name: postgresql
+    version: 11.9.1
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: Initial release

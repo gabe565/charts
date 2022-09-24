@@ -1,0 +1,95 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: vaultwarden/server
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+  # -- image tag
+  # @default -- chart.appVersion
+  tag: ""
+
+controller:
+  # -- Set the controller upgrade strategy
+  strategy: RollingUpdate
+
+# -- environment variables. [[ref]](https://github.com/dani-garcia/vaultwarden/blob/main/.env.template)
+# @default -- See values.yaml
+env:
+  # -- Token for the admin interface, preferably use a long random string.
+  #    One option is to use `openssl rand -base64 48`.
+  #    If not set, the admin panel is disabled.
+  ADMIN_TOKEN: ""
+
+service:
+  # -- Configures service settings for the chart. Normally this does not need to be modified.
+  # @default -- See values.yaml
+  main:
+    ports:
+      http:
+        port: 80
+      websocket:
+        enabled: true
+        port: 3012
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+    hosts:
+      - host: chart-example.local
+        paths:
+          - path: /
+            pathType: Prefix
+            service:
+              port: 80
+          - path: /notifications/hub/negotiate
+            pathType: Prefix
+            service:
+              port: 80
+          - path: /notifications/hub
+            pathType: Prefix
+            service:
+              port: 3012
+
+persistence:
+  # -- Configure persistence settings for the chart under this key.
+  # @default -- See values.yaml
+  data:
+    enabled: false
+
+# -- Enable and configure postgresql database subchart under this key.
+#    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb)
+# @default -- See values.yaml
+postgresql:
+  enabled: false
+  auth:
+    database: vaultwarden
+    postgresPassword: changeme
+  primary:
+    persistence:
+      enabled: false
+      # storageClass: ""
+      # size: 8Gi
+
+# -- Enable and configure mariadb database subchart under this key.
+#    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb)
+# @default -- See values.yaml
+mariadb:
+  enabled: false
+  auth:
+    database: vaultwarden
+    username: vaultwarden
+    password: changeme
+    rootPassword: changeme
+  primary:
+    persistence:
+      enabled: false
+      # storageClass: ""
+      # size: 8Gi
