@@ -65,4 +65,4 @@ postgresql:
     postgresPassword: changeme
   primary:
     persistence:
-      enabled: true
+      enabled: false

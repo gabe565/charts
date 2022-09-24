@@ -58,4 +58,4 @@ postgresql:
     # password: changeme
   primary:
     persistence:
-      enabled: true
+      enabled: false

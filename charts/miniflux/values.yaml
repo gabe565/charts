@@ -56,6 +56,6 @@ postgresql:
     # username: miniflux
     # password: changeme
   persistence:
-    enabled: true
+    enabled: false
     # storageClass: ""
     # size: 8Gi
