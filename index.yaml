@@ -3,6 +3,35 @@ entries:
   ascii-telnet:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Rename from ascii-telnet-rust to ascii-telnet
+        - kind: removed
+          description: Remove default resource requests/limits
+    apiVersion: v2
+    appVersion: latest
+    created: "2022-09-27T15:45:28.696565808Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Star Wars telnet server written in Rust
+    digest: 668838d1ad811b95e7219e974721590d096fdb96250d3b89a8a78d77ee895587
+    home: https://github.com/gabe565/charts/tree/main/charts/ascii-telnet-rust
+    keywords:
+    - ascii-art
+    - star-wars
+    - telnet
+    kubeVersion: '>=1.16.0-0'
+    name: ascii-telnet
+    sources:
+    - https://github.com/gabe565/ascii-telnet-go
+    - https://github.com/gabe565/ascii-telnet-rust
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/ascii-telnet-0.1.8/ascii-telnet-0.1.8.tgz
+    version: 0.1.8
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: Add home URL
     apiVersion: v2
@@ -4342,4 +4371,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-24T20:45:06.338401274Z"
+generated: "2022-09-27T15:45:28.697190113Z"
