@@ -6,8 +6,10 @@
 #
 
 image:
-  # -- image repository
-  repository: ghcr.io/gabe565/ascii-telnet-rust
+  # -- image repository.
+  #    Defaults to Go implementation at [`ghcr.io/gabe565/ascii-telnet-go`](https://ghcr.io/gabe565/ascii-telnet-go),
+  #    but can also be set to [`ghcr.io/gabe565/ascii-telnet-rust`](https://ghcr.io/gabe565/ascii-telnet-rust).
+  repository: ghcr.io/gabe565/ascii-telnet-go
   # -- image pull policy
   pullPolicy: Always
   # -- image tag
@@ -32,15 +34,3 @@ service:
         primary: true
         protocol: TCP
         port: 23
-
-resources:
-  requests:
-    # -- CPU requests
-    cpu: 1m
-    # -- Memory requests
-    memory: 1Mi
-  limits:
-    # -- CPU limit
-    cpu: 50m
-    # -- Memory limit
-    memory: 50Mi
