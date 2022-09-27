@@ -1,5 +1,5 @@
 apiVersion: v2
-name: ascii-telnet-rust
+name: ascii-telnet
 description: Star Wars telnet server written in Rust
 home: https://github.com/gabe565/charts/tree/main/charts/ascii-telnet-rust
 type: application
@@ -15,8 +15,11 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 0.2.0
 sources:
+  - https://github.com/gabe565/ascii-telnet-go
   - https://github.com/gabe565/ascii-telnet-rust
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Add home URL
+    - kind: changed
+      description: Rename from ascii-telnet-rust to ascii-telnet
+    - kind: removed
+      description: Remove default resource requests/limits
