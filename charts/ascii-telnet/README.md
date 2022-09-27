@@ -1,13 +1,14 @@
-# ascii-telnet-rust
+# ascii-telnet
 
-![Version: 0.1.7](https://img.shields.io/badge/Version-0.1.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.1.8](https://img.shields.io/badge/Version-0.1.8-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
 
-Star Wars telnet server written in Rust
+Star Wars telnet server
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new)**
 
 ## Source Code
 
+* <https://github.com/gabe565/ascii-telnet-go>
 * <https://github.com/gabe565/ascii-telnet-rust>
 
 ## Requirements
@@ -25,23 +26,23 @@ Kubernetes: `>=1.16.0-0`
 ```console
 helm repo add gabe565 https://charts.gabe565.com
 helm repo update
-helm install ascii-telnet-rust gabe565/ascii-telnet-rust
+helm install ascii-telnet gabe565/ascii-telnet
 ```
 
 ## Installing the Chart
 
-To install the chart with the release name `ascii-telnet-rust`
+To install the chart with the release name `ascii-telnet`
 
 ```console
-helm install ascii-telnet-rust gabe565/ascii-telnet-rust
+helm install ascii-telnet gabe565/ascii-telnet
 ```
 
 ## Uninstalling the Chart
 
-To uninstall the `ascii-telnet-rust` deployment
+To uninstall the `ascii-telnet` deployment
 
 ```console
-helm uninstall ascii-telnet-rust
+helm uninstall ascii-telnet
 ```
 
 The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
@@ -54,15 +55,15 @@ Other values may be used from the [values.yaml](https://github.com/bjw-s/helm-ch
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 ```console
-helm install ascii-telnet-rust \
+helm install ascii-telnet \
   --set env.TZ="America/New York" \
-    gabe565/ascii-telnet-rust
+    gabe565/ascii-telnet
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install ascii-telnet-rust gabe565/ascii-telnet-rust -f values.yaml
+helm install ascii-telnet gabe565/ascii-telnet -f values.yaml
 ```
 
 ## Custom configuration
@@ -77,12 +78,8 @@ N/A
 |-----|------|---------|-------------|
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
 | image.pullPolicy | string | `"Always"` | image pull policy |
-| image.repository | string | `"ghcr.io/gabe565/ascii-telnet-rust"` | image repository |
+| image.repository | string | `"ghcr.io/gabe565/ascii-telnet-go"` | image repository.    Defaults to Go implementation at [`ghcr.io/gabe565/ascii-telnet-go`](https://ghcr.io/gabe565/ascii-telnet-go),    but can also be set to [`ghcr.io/gabe565/ascii-telnet-rust`](https://ghcr.io/gabe565/ascii-telnet-rust). |
 | image.tag | string | `""` | image tag |
-| resources.limits.cpu | string | `"50m"` | CPU limit |
-| resources.limits.memory | string | `"50Mi"` | Memory limit |
-| resources.requests.cpu | string | `"1m"` | CPU requests |
-| resources.requests.memory | string | `"1Mi"` | Memory requests |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ----------------------------------------------
