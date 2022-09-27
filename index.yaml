@@ -14,9 +14,9 @@ entries:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
       version: 0.2.0
-    description: Star Wars telnet server written in Rust
+    description: Star Wars telnet server
     digest: 668838d1ad811b95e7219e974721590d096fdb96250d3b89a8a78d77ee895587
-    home: https://github.com/gabe565/charts/tree/main/charts/ascii-telnet-rust
+    home: https://github.com/gabe565/charts/tree/main/charts/ascii-telnet
     keywords:
     - ascii-art
     - star-wars
@@ -41,9 +41,9 @@ entries:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
       version: 0.2.0
-    description: Star Wars telnet server written in Rust
+    description: Star Wars telnet server
     digest: dcc7f87f23ae5b6029301e575e1716d4169c47390c199a185c442b712db74a80
-    home: https://github.com/gabe565/charts/tree/main/charts/ascii-telnet-rust
+    home: https://github.com/gabe565/charts/tree/main/charts/ascii-telnet
     keywords:
     - ascii-art
     - star-wars
@@ -67,7 +67,7 @@ entries:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
       version: 0.2.0
-    description: Star Wars telnet server written in Rust
+    description: Star Wars telnet server
     digest: 37310308248c091b834b101dfbbbe0d503d74f7d3100033f54d4d20ffa0afdce
     keywords:
     - ascii-art
@@ -92,7 +92,7 @@ entries:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
       version: 0.2.0
-    description: Star Wars telnet server written in Rust
+    description: Star Wars telnet server
     digest: 311751a9e7d181ca7362d43f8ec2bea1fcab5d747ad33e406b4046fecb651430
     kubeVersion: '>=1.16.0-0'
     name: ascii-telnet
@@ -113,7 +113,7 @@ entries:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
       version: 0.2.0
-    description: Star Wars telnet server written in Rust
+    description: Star Wars telnet server
     digest: 33a8b98bc5f745738af32fd12fcd42605463802af4c4f8415c402daef45b5502
     kubeVersion: '>=1.16.0-0'
     name: ascii-telnet
@@ -134,7 +134,7 @@ entries:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
       version: 0.2.0
-    description: Star Wars telnet server written in Rust
+    description: Star Wars telnet server
     digest: d00140de3538a20b56cde770f89cbba815eedb96e941e9d87f1d8f2299decff3
     kubeVersion: '>=1.16.0-0'
     name: ascii-telnet
@@ -155,7 +155,7 @@ entries:
     - name: common
       repository: https://bjw-s.github.io/helm-charts
       version: 0.2.0
-    description: Star Wars telnet server written in Rust
+    description: Star Wars telnet server
     digest: 0bdf3f7cf1aaaac3047cb12f65ab7060d7177ed0a75cb42b5d497e9dbec1093b
     kubeVersion: '>=1.16.0-0'
     name: ascii-telnet
@@ -172,7 +172,7 @@ entries:
     - name: common
       repository: https://library-charts.k8s-at-home.com
       version: 4.4.2
-    description: Star Wars telnet server written in Rust
+    description: Star Wars telnet server
     digest: 122f8c778cb4754279f2d4e73a28c3e3d218ae838d62c3266c822b296456fac4
     kubeVersion: '>=1.16.0-0'
     name: ascii-telnet
@@ -189,7 +189,7 @@ entries:
     - name: common
       repository: https://library-charts.k8s-at-home.com
       version: 4.4.2
-    description: Star Wars telnet server written in Rust
+    description: Star Wars telnet server
     digest: 546ad38aac10d63f99f53450cf7e15e9e52d8465abbde664c98da14fda0e1ab2
     name: ascii-telnet
     sources:
