@@ -1,6 +1,6 @@
 apiVersion: v1
 entries:
-  ascii-telnet-rust:
+  ascii-telnet:
   - annotations:
       artifacthub.io/changes: |
         - kind: added
@@ -20,7 +20,7 @@ entries:
     - star-wars
     - telnet
     kubeVersion: '>=1.16.0-0'
-    name: ascii-telnet-rust
+    name: ascii-telnet
     sources:
     - https://github.com/gabe565/ascii-telnet-rust
     type: application
@@ -45,7 +45,7 @@ entries:
     - star-wars
     - telnet
     kubeVersion: '>=1.16.0-0'
-    name: ascii-telnet-rust
+    name: ascii-telnet
     sources:
     - https://github.com/gabe565/ascii-telnet-rust
     type: application
@@ -66,7 +66,7 @@ entries:
     description: Star Wars telnet server written in Rust
     digest: 311751a9e7d181ca7362d43f8ec2bea1fcab5d747ad33e406b4046fecb651430
     kubeVersion: '>=1.16.0-0'
-    name: ascii-telnet-rust
+    name: ascii-telnet
     sources:
     - https://github.com/gabe565/ascii-telnet-rust
     type: application
@@ -87,7 +87,7 @@ entries:
     description: Star Wars telnet server written in Rust
     digest: 33a8b98bc5f745738af32fd12fcd42605463802af4c4f8415c402daef45b5502
     kubeVersion: '>=1.16.0-0'
-    name: ascii-telnet-rust
+    name: ascii-telnet
     sources:
     - https://github.com/gabe565/ascii-telnet-rust
     type: application
@@ -108,7 +108,7 @@ entries:
     description: Star Wars telnet server written in Rust
     digest: d00140de3538a20b56cde770f89cbba815eedb96e941e9d87f1d8f2299decff3
     kubeVersion: '>=1.16.0-0'
-    name: ascii-telnet-rust
+    name: ascii-telnet
     sources:
     - https://github.com/gabe565/ascii-telnet-rust
     type: application
@@ -129,7 +129,7 @@ entries:
     description: Star Wars telnet server written in Rust
     digest: 0bdf3f7cf1aaaac3047cb12f65ab7060d7177ed0a75cb42b5d497e9dbec1093b
     kubeVersion: '>=1.16.0-0'
-    name: ascii-telnet-rust
+    name: ascii-telnet
     sources:
     - https://github.com/gabe565/ascii-telnet-rust
     type: application
@@ -146,7 +146,7 @@ entries:
     description: Star Wars telnet server written in Rust
     digest: 122f8c778cb4754279f2d4e73a28c3e3d218ae838d62c3266c822b296456fac4
     kubeVersion: '>=1.16.0-0'
-    name: ascii-telnet-rust
+    name: ascii-telnet
     sources:
     - https://github.com/gabe565/ascii-telnet-rust
     type: application
@@ -162,7 +162,7 @@ entries:
       version: 4.4.2
     description: Star Wars telnet server written in Rust
     digest: 546ad38aac10d63f99f53450cf7e15e9e52d8465abbde664c98da14fda0e1ab2
-    name: ascii-telnet-rust
+    name: ascii-telnet
     sources:
     - https://github.com/gabe565/ascii-telnet-rust
     type: application
