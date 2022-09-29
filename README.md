@@ -35,6 +35,7 @@ helm delete my-<chart-name>
 | Chart | Description |
 | ----- | ----------- |
 | [ascii-telnet](charts/ascii-telnet) | Star Wars telnet server |
+| [bookstack](charts/bookstack) | A simple, self-hosted, easy-to-use platform for organising and storing information. |
 | [borgmatic](charts/borgmatic) | borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services. |
 | [domain-watch](charts/domain-watch) | Tool to watch whois reports and notify when statuses change or expiration is incoming. |
 | [flame](charts/flame) | Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors. |

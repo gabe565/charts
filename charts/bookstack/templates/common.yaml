@@ -1,0 +1,25 @@
+{{/* Append the hardcoded settings */}}
+{{- define "bookstack.harcodedValues" -}}
+env:
+  {{- with .Values.ingress.main }}
+  {{- if .enabled }}
+  APP_URL: http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}
+  {{- end }}
+  {{- end }}
+
+  {{- if .Values.mariadb.enabled }}
+  {{- with .Values.mariadb}}
+  DB_HOST: {{ $.Release.Name }}-mariadb
+  DB_DATABASE: {{ .auth.database }}
+  DB_USERNAME: {{ .auth.username }}
+  DB_PASSWORD:
+    secretKeyRef:
+      name: {{ $.Release.Name }}-mariadb
+      key: mariadb-password
+  {{- end }}
+  {{- end }}
+{{- end -}}
+{{- $_ := merge .Values (include "bookstack.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "common.all" . }}
