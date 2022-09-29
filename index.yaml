@@ -198,6 +198,41 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/ascii-telnet-rust-0.1.0/ascii-telnet-rust-0.1.0.tgz
     version: 0.1.0
+  bookstack:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial release
+    apiVersion: v2
+    appVersion: 22.09.1
+    created: "2022-09-29T06:19:27.674878156Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.3.1
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
+    digest: 5089f8650d296c4eda406ba13bf9ab064d58346f802a17407e34bfaefb20b3fa
+    home: https://github.com/gabe565/charts/tree/main/charts/bookstack
+    icon: https://media.githubusercontent.com/media/BookStackApp/website/main/static/images/logo.png
+    keywords:
+    - bookstack
+    - wiki
+    - documentation
+    kubeVersion: '>=1.16.0-0'
+    name: bookstack
+    sources:
+    - https://bookstackapp.com
+    - https://github.com/BookStackApp/BookStack
+    - https://ghcr.io/linuxserver/bookstack
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/bookstack-0.1.0/bookstack-0.1.0.tgz
+    version: 0.1.0
   borgmatic:
   - annotations:
       artifacthub.io/changes: |
@@ -4371,4 +4406,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-27T15:45:28.697190113Z"
+generated: "2022-09-29T06:19:27.675314155Z"
