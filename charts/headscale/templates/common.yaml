@@ -6,8 +6,10 @@ initContainers:
   config:
     image: alpine
     volumeMounts:
+      {{- if .Values.persistence.config.enabled }}
       - name: config
         mountPath: /etc/headscale
+      {{- end }}
     command:
       - sh
       - -c
