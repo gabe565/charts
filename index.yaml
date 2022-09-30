@@ -2510,6 +2510,38 @@ entries:
   nightscout:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Bump appVersion to v14.2.6
+    apiVersion: v2
+    appVersion: 14.2.6
+    created: "2022-09-30T21:58:53.048936164Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.1.5
+    description: Web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers
+      to remotely view a patient's glucose data in real time.
+    digest: 985b70b74537b2a047031527ecbfa7da505780143752be8c711fa764efe88d7d
+    home: https://github.com/gabe565/charts/tree/main/charts/nightscout
+    icon: https://raw.githubusercontent.com/nightscout/cgm-remote-monitor/71c2363b7be387cda899669be2bfd6ddbfe70198/static/images/large.png
+    keywords:
+    - nightscout
+    - cgm
+    - blood-sugar
+    - diabetes
+    kubeVersion: '>=1.16.0-0'
+    name: nightscout
+    sources:
+    - https://github.com/nightscout/cgm-remote-monitor
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/nightscout-0.1.6/nightscout-0.1.6.tgz
+    version: 0.1.6
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: Add home URL
     apiVersion: v2
@@ -4508,4 +4540,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-30T15:43:20.30935131Z"
+generated: "2022-09-30T21:58:53.049400869Z"
