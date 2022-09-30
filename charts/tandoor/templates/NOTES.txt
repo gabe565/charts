@@ -1,0 +1,12 @@
+{{- include "common.notes.defaultNotes" . }}
+
+{{ if and .Values.ingress.main.enabled .Values.service.main.ports.static.enabled -}}
+2. Ensure /static and /media paths are routed correctly.
+   If they are properly configured, you will see an nginx 403 page.
+   If you see a Tandoor 404 page, update your ingress config to match values.yaml.
+
+  {{ with .Values.ingress.main -}}
+  - http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}/static
+  - http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}/media
+  {{- end }}
+{{- end }}

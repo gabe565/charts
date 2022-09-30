@@ -1,0 +1,72 @@
+{{- include "common.values.setup" . }}
+
+{{/* Append the hardcoded settings */}}
+{{- define "tandoor-recipes.dynamicValues" -}}
+env:
+  DEBUG: "0"
+
+  TANDOOR_PORT: {{ quote .Values.service.main.ports.http.port }}
+
+  {{- if .Values.service.main.ports.static.enabled }}
+  GUNICORN_MEDIA: "0"
+  {{- end }}
+
+  {{- with .Values.postgresql }}
+  {{- if .enabled }}
+  DB_ENGINE: django.db.backends.postgresql
+  POSTGRES_HOST: {{ $.Release.Name }}-postgresql
+  POSTGRES_DB: {{ .auth.database }}
+  POSTGRES_USER: {{ default "postgres" .auth.username }}
+  POSTGRES_PASSWORD:
+    secretKeyRef:
+      name: {{ $.Release.Name }}-postgresql
+      key: postgres-password
+  {{- end }}
+  {{- end }}
+
+{{- if .Values.service.main.ports.static.enabled }}
+configmap:
+  nginx-config:
+    enabled: true
+    data:
+      default.conf: |
+        server {
+          listen {{ .Values.service.main.ports.static.port }};
+          server_name _;
+          access_log off;
+          root /var/www/html/public;
+        }
+
+persistence:
+  nginx-config:
+    enabled: true
+    type: configMap
+    name: {{ include "common.names.fullname" . }}-nginx-config
+    mountPath: "-"
+
+additionalContainers:
+  nginx:
+    image: nginx:stable-alpine
+    imagePullPolicy: Always
+    ports:
+      - containerPort: {{ .Values.service.main.ports.static.port }}
+        name: static
+    volumeMounts:
+      - name: nginx-config
+        mountPath: /etc/nginx/conf.d/default.conf
+        subPath: default.conf
+        readOnly: true
+      {{- if .Values.persistence.media.enabled }}
+      - name: media
+        mountPath: /var/www/html/public/media
+      {{- end }}
+      {{- if .Values.persistence.static.enabled }}
+      - name: static
+        mountPath: /var/www/html/public/static
+      {{- end }}
+{{- end }}
+{{- end -}}
+{{- $_ := merge .Values (include "tandoor-recipes.dynamicValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "common.all" . }}
