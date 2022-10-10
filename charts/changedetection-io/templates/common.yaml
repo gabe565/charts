@@ -1,0 +1,30 @@
+{{/* Append the hardcoded settings */}}
+{{- define "changedetection-io.hardcodedValues" -}}
+env:
+  {{- with .Values.ingress.main }}
+  {{- if .enabled }}
+  BASE_URL: http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}
+  {{- end }}
+  {{- end }}
+
+{{- with .Values.browserless }}
+{{- if .enabled }}
+  PLAYWRIGHT_DRIVER_URL: ws://localhost:3000
+
+additionalContainers:
+  browserless:
+    image: {{ .image.repository }}:{{ .image.tag }}
+    env: {{ toYaml .env | nindent 6 }}
+    ports:
+      - name: browserless
+        containerPort: 3000
+{{- end }}
+{{- end }}
+
+termination:
+  gracePeriodSeconds: "0"
+{{- end -}}
+{{- $_ := merge .Values (include "changedetection-io.hardcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "common.all" . }}

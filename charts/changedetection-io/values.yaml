@@ -1,0 +1,59 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: ghcr.io/dgtlmoon/changedetection.io
+  # -- image tag
+  # @default -- chart.appVersion
+  tag: ""
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+
+# -- environment variables. [[ref]](https://github.com/dgtlmoon/changedetection.io/blob/master/docker-compose.yml)
+# @default -- See values.yaml
+env:
+  # -- Set the container timezone
+  TZ: UTC
+
+service:
+  # -- Configures service settings for the chart.
+  # @default -- See values.yaml
+  main:
+    ports:
+      http:
+        port: 5000
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+persistence:
+  # -- Configure persistence settings for the chart under this key.
+  # @default -- See values.yaml
+  data:
+    enabled: false
+    mountPath: /datastore
+
+browserless:
+  # -- Enable Browserless sidecar
+  enabled: true
+  image:
+    # -- Browserless image repository
+    repository: browserless/chrome
+    # -- Browserless image tag
+    tag: latest
+    # -- Browserless image pull policy
+    pullPolicy: Always
+  # -- Browserless environment variables. [[ref]](https://docs.browserless.io/docs/docker.html)
+  # @default -- See values.yaml
+  env:
+    ENABLE_DEBUGGER: "false"
+    DEFAULT_BLOCK_ADS: "true"
+    DEFAULT_STEALTH: "true"
