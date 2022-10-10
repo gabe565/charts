@@ -585,6 +585,35 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/borgmatic-0.1.0/borgmatic-0.1.0.tgz
     version: 0.1.0
+  changedetection-io:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial release
+    apiVersion: v2
+    appVersion: 0.39.20.1
+    created: "2022-10-10T20:55:47.549432701Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Live your data-life pro-actively, track website content changes and
+      receive notifications via Discord, Email, Slack, Telegram and 70+ more.
+    digest: 7ab44ece99159af8f4d3d867e415ee1263427501fccd7641ad2d1d5ad7173480
+    home: https://github.com/gabe565/charts/tree/main/charts/changedetection-io
+    icon: https://raw.githubusercontent.com/dgtlmoon/changedetection.io/master/changedetectionio/static/images/favicon.ico
+    keywords:
+    - changedetection.io
+    - change-detection
+    - website-monitoring
+    - website-change-tracker
+    kubeVersion: '>=1.16.0-0'
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    urls:
+    - https://github.com/gabe565/charts/releases/download/changedetection-io-0.1.0/changedetection-io-0.1.0.tgz
+    version: 0.1.0
   domain-watch:
   - annotations:
       artifacthub.io/changes: |
@@ -4601,4 +4630,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-10T06:37:19.729336268Z"
+generated: "2022-10-10T20:55:47.549736004Z"
