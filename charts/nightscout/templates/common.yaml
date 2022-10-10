@@ -10,6 +10,9 @@
     MONGODB_URI: mongodb://{{ first .auth.usernames }}:$(MONGODB_PASSWORD)@{{ $.Release.Name }}-mongodb/{{ first .auth.databases }}
   {{- end }}
   {{- end }}
+
+termination:
+  gracePeriodSeconds: "0"
 {{- end -}}
 {{- $_ := merge .Values (include "nightscout.harcodedValues" . | fromYaml) -}}
 
