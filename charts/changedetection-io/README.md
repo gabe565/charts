@@ -1,6 +1,6 @@
 # changedetection-io
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![AppVersion: 0.39.20.1](https://img.shields.io/badge/AppVersion-0.39.20.1-informational?style=flat-square)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![AppVersion: 0.39.20.1](https://img.shields.io/badge/AppVersion-0.39.20.1-informational?style=flat-square)
 
 Live your data-life pro-actively, track website content changes and receive notifications via Discord, Email, Slack, Telegram and 70+ more.
 
