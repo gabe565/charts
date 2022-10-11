@@ -3,7 +3,8 @@ name: changedetection-io
 description: Live your data-life pro-actively, track website content changes and receive notifications via Discord, Email, Slack, Telegram and 70+ more.
 home: https://github.com/gabe565/charts/tree/main/charts/changedetection-io
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/changedetection-io/icon.png
-version: 0.1.1
+type: application
+version: 0.1.2
 appVersion: 0.39.20.1
 kubeVersion: ">=1.16.0-0"
 keywords:
@@ -20,4 +21,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Fix icon
+      description: Set chart type to application
