@@ -2622,6 +2622,37 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.1.0/mnemonic-ninja-0.1.0.tgz
     version: 0.1.0
+  monica:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial release
+    apiVersion: v2
+    appVersion: 3.7.0-fpm-alpine
+    created: "2022-10-11T06:52:26.975174079Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.3.1
+    description: Personal CRM. Remember everything about your friends, family and
+      business relationships.
+    digest: 64340bef39d42284e4a47fcd7de7898ae5b65584a0ca018690ed62c15a6cdece
+    home: https://github.com/gabe565/charts/tree/main/charts/monica
+    icon: https://raw.githubusercontent.com/monicahq/monica/main/public/img/monica.svg
+    keywords:
+    - crm
+    kubeVersion: '>=1.16.0-0'
+    name: monica
+    sources:
+    - https://github.com/monicahq/monica
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/monica-0.1.0/monica-0.1.0.tgz
+    version: 0.1.0
   nightscout:
   - annotations:
       artifacthub.io/changes: |
@@ -4687,4 +4718,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-11T06:39:22.500761969Z"
+generated: "2022-10-11T06:52:26.975690984Z"
