@@ -1,0 +1,81 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: monica
+  # -- image tag
+  # @default -- chart.appVersion
+  tag: ""
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+
+controller:
+  # -- Set the controller upgrade strategy
+  strategy: RollingUpdate
+
+# -- environment variables. [[ref]](https://raw.githubusercontent.com/monicahq/monica/master/.env.example)
+# @default -- See values.yaml
+env:
+  # -- Set the container timezone
+  TZ: UTC
+  # -- The encryption key. Must be 32 characters long.
+  #    Use `php artisan key:generate` or `echo -n 'base64:'; openssl rand -base64 32` to generate a random key.
+  APP_KEY: ""
+
+service:
+  # -- Configures service settings for the chart.
+  # @default -- See values.yaml
+  main:
+    ports:
+      http:
+        port: 80
+      fastcgi:
+        enabled: true
+        port: 9000
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+persistence:
+  # -- Configure persistence settings for the chart under this key.
+  # @default -- See values.yaml
+  storage:
+    enabled: false
+    mountPath: /var/www/html/storage
+
+# -- Enable and configure mariadb database subchart under this key.
+#    [[ref]](https://github.com/bitnami/charts/tree/master/bitnami/mariadb)
+# @default -- See values.yaml
+mariadb:
+  enabled: false
+  architecture: standalone
+  auth:
+    database: monica
+    username: monica
+    password: changeme
+    rootPassword: changeme
+  primary:
+    persistence:
+      enabled: false
+      # storageClass: ""
+      # size: 8Gi
+
+nginx:
+  # -- Enable the Nginx sidecar.
+  #    Disable this if you use an apache image.
+  enabled: true
+  image:
+    # -- Nginx image repository
+    repository: nginx
+    # -- Nginx image tag
+    tag: stable-alpine
+    # -- Nginx image pull policy
+    pullPolicy: Always

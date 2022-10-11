@@ -1,0 +1,90 @@
+{{/* Append the hardcoded settings */}}
+{{- define "monica.hardcodedValues" -}}
+env:
+  APP_ENV: production
+  LOG_CHANNEL: stderr
+
+  {{- with .Values.ingress.main }}
+  {{- if .enabled }}
+  APP_URL: http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}
+  {{- end }}
+  {{- end }}
+
+  {{- with .Values.mariadb}}
+  {{- if .enabled }}
+  DB_HOST: {{ $.Release.Name }}-mariadb
+  DB_DATABASE: {{ .auth.database }}
+  DB_USERNAME: {{ .auth.username }}
+  DB_PASSWORD:
+    secretKeyRef:
+      name: {{ $.Release.Name }}-mariadb
+      key: mariadb-password
+  {{- end }}
+  {{- end }}
+
+{{- if .Values.nginx.enabled }}
+initContainers:
+  copy:
+    image: {{ .Values.image.repository }}:{{ default .Chart.AppVersion .Values.image.tag }}
+    command: [sh, -c, cp -a /var/www/html/public/* /public]
+    volumeMounts:
+      - name: public
+        mountPath: /public
+
+additionalContainers:
+  nginx:
+    image: {{ .Values.nginx.image.repository }}:{{ .Values.nginx.image.tag }}
+    ports:
+      - name: http
+        containerPort: {{ .Values.service.main.ports.http.port }}
+    volumeMounts:
+      - name: nginx
+        mountPath: /etc/nginx/conf.d/default.conf
+        subPath: default.conf
+        readOnly: true
+      - name: public
+        mountPath: /var/www/html/public
+      - name: storage
+        mountPath: /var/www/html/storage
+
+configmap:
+  nginx:
+    enabled: true
+    data:
+      default.conf: |
+        server {
+            listen {{ .Values.service.main.ports.http.port }};
+            access_log off;
+            root /var/www/html/public;
+
+            index index.php;
+
+            client_max_body_size 0;
+
+            location / {
+                try_files $uri $uri/ /index.php?$query_string;
+            }
+
+            location ~ \.php$ {
+                fastcgi_pass localhost:{{ .Values.service.main.ports.fastcgi.port }};
+                fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+                include fastcgi_params;
+            }
+        }
+
+persistence:
+  public:
+    enabled: true
+    type: emptyDir
+    mountPath: /var/www/html/public
+  nginx:
+    enabled: true
+    type: configMap
+    mountPath: "-"
+    name: {{ .Release.Name }}-nginx
+{{- end }}
+{{- end -}}
+{{- $_ := merge .Values (include "monica.hardcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "common.all" . }}
