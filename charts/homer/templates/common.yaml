@@ -11,7 +11,7 @@
       subPath: config.yml
   {{- end }}
 {{- end -}}
-{{- $_ := merge .Values (include "homer.harcodedValues" . | fromYaml) -}}
+{{- $_ := mergeOverwrite .Values (include "homer.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
 {{ include "common.all" . }}
