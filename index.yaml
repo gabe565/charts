@@ -4421,6 +4421,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: added
+          description: Add icon
+    apiVersion: v2
+    appVersion: v1.20.11
+    created: "2022-10-14T07:07:46.639498421Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Manage hardware resource allocation without a need for privileged
+      containers.
+    digest: af8966f89a9b4bbc4bde1c7caca0012e44ad2c31c970e8816fafc4939a68570c
+    home: https://github.com/gabe565/charts/tree/main/charts/smarter-device-manager
+    icon: https://gitlab.com/uploads/-/system/group/avatar/6339043/ARM1636_Project_Logo_ST2_RGB_V1.png
+    keywords:
+    - kubernetes
+    - cluster
+    - hardware
+    - device
+    - usb
+    kubeVersion: '>=1.16.0-0'
+    name: smarter-device-manager
+    sources:
+    - https://gitlab.com/arm-research/smarter/smarter-device-manager
+    urls:
+    - https://github.com/gabe565/charts/releases/download/smarter-device-manager-0.1.1/smarter-device-manager-0.1.1.tgz
+    version: 0.1.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
           description: Initial release
     apiVersion: v2
     appVersion: v1.20.11
@@ -4776,4 +4805,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-14T06:57:22.290595128Z"
+generated: "2022-10-14T07:07:46.640368825Z"
