@@ -4388,6 +4388,35 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/scanservjs-0.1.0/scanservjs-0.1.0.tgz
     version: 0.1.0
+  smarter-device-manager:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial release
+    apiVersion: v2
+    appVersion: v1.20.11
+    created: "2022-10-14T06:20:38.416031255Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Manage hardware resource allocation without a need for privileged
+      containers.
+    digest: 3c09a91e6c2a52f6f481c5cc98ccd7e640f3557629a9bb0b8b23ebac48516d9d
+    home: https://github.com/gabe565/charts/tree/main/charts/smarter-device-manager
+    keywords:
+    - kubernetes
+    - cluster
+    - hardware
+    - device
+    - usb
+    kubeVersion: '>=1.16.0-0'
+    name: smarter-device-manager
+    sources:
+    - https://gitlab.com/arm-research/smarter/smarter-device-manager
+    urls:
+    - https://github.com/gabe565/charts/releases/download/smarter-device-manager-0.1.0/smarter-device-manager-0.1.0.tgz
+    version: 0.1.0
   tandoor:
   - annotations:
       artifacthub.io/changes: |-
@@ -4718,4 +4747,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-11T06:52:26.975690984Z"
+generated: "2022-10-14T06:20:38.416477559Z"
