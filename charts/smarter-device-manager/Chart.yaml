@@ -1,0 +1,23 @@
+apiVersion: v2
+name: smarter-device-manager
+description: Manage hardware resource allocation without a need for privileged containers.
+home: https://github.com/gabe565/charts/tree/main/charts/smarter-device-manager
+version: 0.1.0
+appVersion: v1.20.11
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - kubernetes
+  - cluster
+  - hardware
+  - device
+  - usb
+sources:
+  - https://gitlab.com/arm-research/smarter/smarter-device-manager
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    version: 0.2.0
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: Initial release

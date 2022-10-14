@@ -56,6 +56,7 @@ helm delete my-<chart-name>
 | [rss-bridge](charts/rss-bridge) | The RSS feed for websites missing it. |
 | [rsshub](charts/rsshub) | RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything. |
 | [scanservjs](charts/scanservjs) | scanservjs is a web UI frontend for your scanner. It allows you to share one or more scanners (using SANE) on a network without the need for drivers or complicated installation. |
+| [smarter-device-manager](charts/smarter-device-manager) | Manage hardware resource allocation without a need for privileged containers. |
 | [tandoor](charts/tandoor) | Application for managing recipes, planning meals, building shopping lists and much much more! |
 | [transsmute](charts/transsmute) | Transsmute builds RSS feeds for websites that don't provide them. |
 | [vaultwarden](charts/vaultwarden) | Unofficial Bitwarden compatible server written in Rust. |

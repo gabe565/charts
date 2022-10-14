@@ -1,0 +1,72 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: registry.gitlab.com/arm-research/smarter/smarter-device-manager
+  # -- image tag
+  # @default -- chart.appVersion
+  tag: ""
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+
+# -- Override default configuration
+# [[ref]](https://gitlab.com/arm-research/smarter/smarter-device-manager#usage-model)
+# @default -- See values.yaml
+config: |
+  - devicematch: ^ttyUSB.*$
+    nummaxdevices: 1
+
+# -- When using hostNetwork make sure you set dnsPolicy to `ClusterFirstWithHostNet`
+hostNetwork: true
+
+termination:
+  # -- Configure the path at which the file to which the main container's termination message will be written.
+  # Overrides the default of `/dev/termination-log` to allow read-only `persistence.devfs` at `/dev`.
+  # [[ref](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#lifecycle-1)]
+  messagePath: /var/log/termination-log
+
+  # -- Indicate how the main container's termination message should be populated.
+  # Valid options are `File` and `FallbackToLogsOnError`.
+  # smarter-device-manager does not support a termination-log, so use the container's log.
+  # [[ref](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#lifecycle-1)]
+  messagePolicy: FallbackToLogsOnError
+
+# -- Configure persistence settings for the chart under this key.
+# @default -- See values.yaml
+persistence:
+  devfs:
+    enabled: true
+    type: hostPath
+    hostPath: /dev
+    readOnly: true
+  sysfs:
+    enabled: true
+    type: hostPath
+    hostPath: /sys
+    readOnly: true
+  kubeletsockets:
+    enabled: true
+    type: hostPath
+    hostPath: /var/lib/kubelet/device-plugins
+
+# -- Custom priority class for different treatment by the scheduler
+# Setting this is not necessary, but it is recommended.
+# [[ref]](https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/)
+priorityClassName: system-node-critical
+
+# -- Configure the securityContext for this pod
+# [[ref]](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
+# @default -- See values.yaml
+securityContext:
+  capabilities:
+    drop:
+      - ALL
+  allowPrivilegeEscalation: false
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000

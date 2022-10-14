@@ -1,0 +1,35 @@
+{{/* Append the hardcoded settings */}}
+{{- define "sdm.hardcodedValues" -}}
+controller:
+  type: daemonset
+
+configmap:
+  config:
+    enabled: true
+    data:
+      conf.yaml: {{ toYaml .Values.config | nindent 8 }}
+
+persistence:
+  config:
+    enabled: true
+    mountPath: /root/config/conf.yaml
+    subPath: conf.yaml
+    type: configMap
+    name: {{ include "common.names.fullname" . }}-config
+
+probes:
+  liveness:
+    enabled: false
+  readiness:
+    enabled: false
+  startup:
+    enabled: false
+
+service:
+  main:
+    enabled: false
+{{- end -}}
+{{- $_ := merge .Values (include "sdm.hardcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "common.all" . }}
