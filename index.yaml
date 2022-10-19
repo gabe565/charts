@@ -2331,6 +2331,38 @@ entries:
   miniflux:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Bump appVersion to v2.0.39
+    apiVersion: v2
+    appVersion: 2.0.39
+    created: "2022-10-19T06:45:15.920631645Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.1
+    description: Miniflux is a minimalist and opinionated feed reader.
+    digest: ca818454f1ec52853a77742a0e85f56d2c953fab6b00cf3fd2e9ed5c7b2ac0dc
+    home: https://github.com/gabe565/charts/tree/main/charts/miniflux
+    icon: https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg
+    keywords:
+    - miniflux
+    - rss
+    - news
+    - feed
+    kubeVersion: '>=1.16.0-0'
+    name: miniflux
+    sources:
+    - https://github.com/miniflux/v2
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/miniflux-0.1.5/miniflux-0.1.5.tgz
+    version: 0.1.5
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: Add home URL
     apiVersion: v2
@@ -4840,4 +4872,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-19T06:37:45.394051674Z"
+generated: "2022-10-19T06:45:15.921007267Z"
