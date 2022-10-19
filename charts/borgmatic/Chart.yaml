@@ -4,8 +4,8 @@ description: borgmatic is simple, configuration-driven backup software for serve
 home: https://github.com/gabe565/charts/tree/main/charts/borgmatic
 icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
 type: application
-version: 0.4.11
-appVersion: latest
+version: 0.4.12
+appVersion: 1.7.4
 kubeVersion: ">=1.16.0-0"
 keywords:
   - borgmatic
@@ -20,5 +20,5 @@ sources:
   - https://github.com/borgmatic-collective/docker-borgmatic
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Add home URL
+    - kind: changed
+      description: Pin appVersion to v1.7.4

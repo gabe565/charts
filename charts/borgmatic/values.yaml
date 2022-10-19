@@ -9,8 +9,9 @@ image:
   # -- image repository
   repository: b3vis/borgmatic
   # -- image pull policy
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
   # -- image tag
+  # @default -- chart.appVersion
   tag: ""
 
 # -- environment variables. [[ref]](https://borgbackup.readthedocs.io/en/stable/usage/general.html#environment-variables)
