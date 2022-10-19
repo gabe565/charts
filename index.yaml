@@ -4738,6 +4738,41 @@ entries:
   vaultwarden:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Bump appVersion to v1.26.0
+    apiVersion: v2
+    appVersion: 1.26.0-alpine
+    created: "2022-10-19T06:37:45.393742072Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.3.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.1
+    description: Unofficial Bitwarden compatible server written in Rust.
+    digest: 24079b6b9776354346b407ea718512634c0135d81d9aab7181f87bb0879ef538
+    home: https://github.com/gabe565/charts/tree/main/charts/vaultwarden
+    icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/7cb19ef767142b773ab44a457940844589432a74/src/static/images/vaultwarden-icon.png
+    keywords:
+    - vaultwarden
+    - bitwarden
+    - bitwarden_rs
+    kubeVersion: '>=1.16.0-0'
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.2/vaultwarden-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: Add home URL
     apiVersion: v2
@@ -4805,4 +4840,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-14T07:07:46.640368825Z"
+generated: "2022-10-19T06:37:45.394051674Z"
