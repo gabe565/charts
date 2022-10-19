@@ -4,8 +4,8 @@ description: Miniflux is a minimalist and opinionated feed reader.
 home: https://github.com/gabe565/charts/tree/main/charts/miniflux
 icon: https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg
 type: application
-version: 0.1.4
-appVersion: 2.0.38
+version: 0.1.5
+appVersion: 2.0.39
 kubeVersion: ">=1.16.0-0"
 keywords:
   - miniflux
@@ -24,5 +24,5 @@ sources:
   - https://github.com/miniflux/v2
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Add home URL
+    - kind: changed
+      description: Bump appVersion to v2.0.39
