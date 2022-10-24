@@ -4,8 +4,8 @@ description: A simple, self-hosted, easy-to-use platform for organising and stor
 home: https://github.com/gabe565/charts/tree/main/charts/bookstack
 icon: https://media.githubusercontent.com/media/BookStackApp/website/main/static/images/logo.png
 type: application
-version: 0.1.0
-appVersion: 22.09.1
+version: 0.1.1
+appVersion: 22.10.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - bookstack
@@ -25,5 +25,5 @@ sources:
   - https://ghcr.io/linuxserver/bookstack
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Initial release
+    - kind: changed
+      description: Bump appVersion to v22.10.1
