@@ -1,6 +1,7 @@
 # Charts
 
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/gabe565)](https://artifacthub.io/packages/search?repo=gabe565&sort=relevance)
+[![Release Charts](https://github.com/gabe565/charts/actions/workflows/release.yaml/badge.svg)](https://github.com/gabe565/charts/actions/workflows/release.yaml)
 
 A collection of Helm charts, based on the
 [bjw-s common library chart](https://github.com/bjw-s/helm-charts/tree/main/charts/library/common).
