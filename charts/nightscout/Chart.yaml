@@ -25,3 +25,5 @@ annotations:
   artifacthub.io/changes: |
     - kind: added
       description: Default HOSTNAME env to "::"
+    - kind: added
+      description: Default PORT env to value of .service.main.ports.http.port

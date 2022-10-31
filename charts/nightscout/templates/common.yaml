@@ -2,6 +2,7 @@
 {{- define "nightscout.harcodedValues" -}}
 env:
   HOSTNAME: "::"
+  PORT: {{ .Values.service.main.ports.http.port | quote }}
 
   {{- with .Values.mongodb }}
   {{- if .enabled }}
