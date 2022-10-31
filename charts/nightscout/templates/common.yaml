@@ -1,13 +1,15 @@
 {{/* Append the hardcoded settings */}}
 {{- define "nightscout.harcodedValues" -}}
+env:
+  HOSTNAME: "::"
+
   {{- with .Values.mongodb }}
   {{- if .enabled }}
-  env:
-    MONGODB_PASSWORD:
-      secretKeyRef:
-        name: {{ $.Release.Name }}-mongodb
-        key: mongodb-passwords
-    MONGODB_URI: mongodb://{{ first .auth.usernames }}:$(MONGODB_PASSWORD)@{{ $.Release.Name }}-mongodb/{{ first .auth.databases }}
+  MONGODB_PASSWORD:
+    secretKeyRef:
+      name: {{ $.Release.Name }}-mongodb
+      key: mongodb-passwords
+  MONGODB_URI: mongodb://{{ first .auth.usernames }}:$(MONGODB_PASSWORD)@{{ $.Release.Name }}-mongodb/{{ first .auth.databases }}
   {{- end }}
   {{- end }}
 

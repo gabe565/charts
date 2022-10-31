@@ -23,5 +23,5 @@ sources:
   - https://github.com/nightscout/cgm-remote-monitor
 annotations:
   artifacthub.io/changes: |
-    - kind: changed
-      description: Set default terminationGracePeriodSeconds to 0
+    - kind: added
+      description: Default HOSTNAME env to "::"
