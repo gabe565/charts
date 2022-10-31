@@ -16,6 +16,39 @@ env:
 
 termination:
   gracePeriodSeconds: "0"
+
+configmap:
+  health:
+    enabled: true
+    data:
+      ping_liveness.sh: |
+        #!/bin/sh
+
+        response="$(
+          wget -q -O - \
+            --header 'X-Forwarded-Proto: https' \
+            "http://localhost:$PORT/api/v2/status" \
+        )"
+        if ! echo "$response" | grep -Fq 'STATUS OK'; then
+          echo "$response"
+          exit 1
+        fi
+
+persistence:
+  health:
+    enabled: true
+    type: configMap
+    name: "{{ include "common.names.fullname" . }}-health"
+    mountPath: /health
+    defaultMode: 0755
+
+probes:
+  liveness:
+    custom: true
+    spec:
+      exec:
+        command: [/health/ping_liveness.sh]
+      periodSeconds: 30
 {{- end -}}
 {{- $_ := merge .Values (include "nightscout.harcodedValues" . | fromYaml) -}}
 
