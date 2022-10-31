@@ -2810,6 +2810,42 @@ entries:
   nightscout:
   - annotations:
       artifacthub.io/changes: |
+        - kind: added
+          description: Default HOSTNAME env to "::"
+        - kind: added
+          description: Default PORT env to value of .service.main.ports.http.port
+        - kind: added
+          description: Add livenessProbe that checks /api/v2/status response
+    apiVersion: v2
+    appVersion: 14.2.6
+    created: "2022-10-31T05:20:14.891694786Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.1.5
+    description: Web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers
+      to remotely view a patient's glucose data in real time.
+    digest: 30ced2b3a38c32c3f03dd2815f017fdb60c2c4b69a7421287e1ba58e40fcc1dc
+    home: https://github.com/gabe565/charts/tree/main/charts/nightscout
+    icon: https://raw.githubusercontent.com/nightscout/cgm-remote-monitor/71c2363b7be387cda899669be2bfd6ddbfe70198/static/images/large.png
+    keywords:
+    - nightscout
+    - cgm
+    - blood-sugar
+    - diabetes
+    kubeVersion: '>=1.16.0-0'
+    name: nightscout
+    sources:
+    - https://github.com/nightscout/cgm-remote-monitor
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/nightscout-0.2.0/nightscout-0.2.0.tgz
+    version: 0.2.0
+  - annotations:
+      artifacthub.io/changes: |
         - kind: changed
           description: Set default terminationGracePeriodSeconds to 0
     apiVersion: v2
@@ -4965,4 +5001,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-24T23:20:42.535684743Z"
+generated: "2022-10-31T05:20:14.892085299Z"
