@@ -653,6 +653,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Bump appVersion to v0.39.21.1
+    apiVersion: v2
+    appVersion: 0.39.21.1
+    created: "2022-11-03T04:10:53.19033951Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: Live your data-life pro-actively, track website content changes and
+      receive notifications via Discord, Email, Slack, Telegram and 70+ more.
+    digest: 2a3f124b6b043589c16628d7fc8b32c2b59c5eb8265d8b9136395d3477072ddc
+    home: https://github.com/gabe565/charts/tree/main/charts/changedetection-io
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/changedetection-io/icon.png
+    keywords:
+    - changedetection.io
+    - change-detection
+    - website-monitoring
+    - website-change-tracker
+    kubeVersion: '>=1.16.0-0'
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/changedetection-io-0.1.4/changedetection-io-0.1.4.tgz
+    version: 0.1.4
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Bump appVersion to v0.39.20.4
     apiVersion: v2
     appVersion: 0.39.20.4
@@ -5030,4 +5059,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-11-03T04:05:23.880847645Z"
+generated: "2022-11-03T04:10:53.190861523Z"
