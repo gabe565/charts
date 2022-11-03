@@ -1690,6 +1690,35 @@ entries:
   homer:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Bump appVersion to v22.10.2
+    apiVersion: v2
+    appVersion: v22.10.2
+    created: "2022-11-03T04:05:23.880252241Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: 221b3ccf30f034aa8a94e06985146666eb6f8a612050c4c26d629f01186a51f1
+    home: https://github.com/gabe565/charts/tree/main/charts/homer
+    icon: https://raw.githubusercontent.com/bastienwirtz/homer/5418c6291a39d27aeee471673adba742080e1ccb/public/logo.png
+    keywords:
+    - homer
+    - dashboard
+    - startpage
+    - homepage
+    kubeVersion: '>=1.16.0-0'
+    name: homer
+    sources:
+    - https://github.com/bastienwirtz/homer
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/homer-0.1.5/homer-0.1.5.tgz
+    version: 0.1.5
+  - annotations:
+      artifacthub.io/changes: |
         - kind: fixed
           description: Fix configmap not mounting correctly
     apiVersion: v2
@@ -5001,4 +5030,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-31T05:20:14.892085299Z"
+generated: "2022-11-03T04:05:23.880847645Z"
