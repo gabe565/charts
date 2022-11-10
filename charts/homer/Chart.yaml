@@ -4,8 +4,8 @@ description: A dead simple static HOMepage for your servER to keep your services
 home: https://github.com/gabe565/charts/tree/main/charts/homer
 icon: https://raw.githubusercontent.com/bastienwirtz/homer/5418c6291a39d27aeee471673adba742080e1ccb/public/logo.png
 type: application
-version: 0.1.5
-appVersion: v22.10.2
+version: 0.1.6
+appVersion: v22.11.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - homer
@@ -21,4 +21,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump appVersion to v22.10.2
+      description: Bump appVersion to v22.11.1
