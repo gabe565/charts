@@ -24,9 +24,13 @@ env:
   {{- with .Values.ingress.main }}
   {{- if .enabled }}
   HEADSCALE_SERVER_URL: http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}
-  {{- end -}}
   {{- end }}
-  HEADSCALE_METRICS_LISTEN_ADDR: "0.0.0.0:9090"
+  {{- end }}
+
+  {{- with .Values.service.main.ports }}
+  HEADSCALE_METRICS_LISTEN_ADDR: "0.0.0.0:{{ .metrics.port }}"
+  {{- end }}
+
   HEADSCALE_PRIVATE_KEY_PATH: "/etc/headscale/private.key"
   HEADSCALE_NOISE_PRIVATE_KEY_PATH: "/etc/headscale/noise_private.key"
   HEADSCALE_DB_PATH: "/etc/headscale/db.sqlite"
