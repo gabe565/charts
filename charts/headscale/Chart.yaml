@@ -26,3 +26,5 @@ annotations:
   artifacthub.io/changes: |
     - kind: changed
       description: Generate `HEADSCALE_METRICS_LISTEN_ADDR` env from port in values
+    - kind: fixed
+      description: Set `HEADSCALE_LISTEN_ADDR` env and generate from port in values

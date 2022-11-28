@@ -28,6 +28,7 @@ env:
   {{- end }}
 
   {{- with .Values.service.main.ports }}
+  HEADSCALE_LISTEN_ADDR: "0.0.0.0:{{ .http.port }}"
   HEADSCALE_METRICS_LISTEN_ADDR: "0.0.0.0:{{ .metrics.port }}"
   {{- end }}
 
