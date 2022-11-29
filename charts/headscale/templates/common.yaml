@@ -48,6 +48,7 @@ env:
   HEADSCALE_DB_TYPE: postgres
   HEADSCALE_DB_HOST: {{ $.Release.Name }}-postgresql
   HEADSCALE_DB_PORT: "5432"
+  HEADSCALE_DB_SSL: "false"
   HEADSCALE_DB_NAME: {{ .auth.database }}
   HEADSCALE_DB_USER: {{ default "postgres" .auth.username }}
   HEADSCALE_DB_PASS:
