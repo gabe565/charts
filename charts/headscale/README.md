@@ -68,6 +68,32 @@ helm install headscale gabe565/headscale -f values.yaml
 
 ## Custom configuration
 
+Headscale runs in a distroless Docker container, which does not have any of the
+expected command line utilities. This keeps the container small and minimizes the possibility of CVEs,
+but it makes working with a config file in Kubernetes more difficult.
+
+To keep config simple, this Helm chart opts to use environment variables.
+All of the Headscale config variables are supported as envs, but official documentation is lacking.
+
+To configure Headscale:
+1. See the [Headscale example config](https://github.com/juanfont/headscale/blob/main/config-example.yaml) for available variables.
+2. For any that you want to set: flatten object keys using `_`, then prefix with `HEADSCALE_`.
+    - For example, the following config:
+      ```yaml
+      disable_check_updates: true
+      log:
+        level: warn
+      ```
+      would be set with the following Helm values:
+      ```yaml
+      env:
+        HEADSCALE_DISABLE_CHECK_UPDATES: "true"
+        HEADSCALE_LOG_LEVEL: "warn"
+      ```
+
+Also, note that this chart sets some defaults based on your values.
+See [`templates/common.yaml`](./templates/common.yaml) for a list.
+
 ### Headscale UI
 
 You can deploy [gurucomputing/headscale-ui](https://github.com/gurucomputing/headscale-ui)
