@@ -1313,6 +1313,45 @@ entries:
   headscale:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Remove config file and add docs for env config
+        - kind: changed
+          description: Bump appVersion to v0.17.0
+        - kind: changed
+          description: Generate `HEADSCALE_METRICS_LISTEN_ADDR` env from port in values
+        - kind: fixed
+          description: Set `HEADSCALE_LISTEN_ADDR` env and generate from port in values
+    apiVersion: v2
+    appVersion: 0.17.0
+    created: "2022-11-29T00:36:09.842851792Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.1
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: 2d42bcc657f6f891e20c76f989068d394e7dfa363548d879b9254b8bb7f3fb25
+    home: https://github.com/gabe565/charts/tree/main/charts/headscale
+    icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
+    keywords:
+    - headscale
+    - tailscale
+    - wireguard
+    - vpn
+    kubeVersion: '>=1.16.0-0'
+    name: headscale
+    sources:
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.2.0/headscale-0.2.0.tgz
+    version: 0.2.0
+  - annotations:
+      artifacthub.io/changes: |
         - kind: fixed
           description: Fix error when persistence disabled
     apiVersion: v2
@@ -5183,4 +5222,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-11-21T21:39:11.116401864Z"
+generated: "2022-11-29T00:36:09.844200412Z"
