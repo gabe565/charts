@@ -41,7 +41,17 @@ env:
   HEADSCALE_PRIVATE_KEY_PATH: "/etc/headscale/private.key"
   HEADSCALE_NOISE: "{}"
   HEADSCALE_NOISE_PRIVATE_KEY_PATH: "/etc/headscale/noise_private.key"
-  HEADSCALE_DB_PATH: "/etc/headscale/db.sqlite"
+
+  HEADSCALE_IP_PREFIXES: "fd7a:115c:a1e0::/48 100.64.0.0/10"
+
+  HEADSCALE_DERP_URLS: "https://controlplane.tailscale.com/derpmap/default"
+  HEADSCALE_DERP_AUTO_UPDATE_ENABLED: "true"
+  HEADSCALE_DERP_UPDATE_FREQUENCY: "24h"
+
+  HEADSCALE_EPHEMERAL_NODE_INACTIVITY_TIMEOUT: "30m"
+
+  HEADSCALE_DNS_CONFIG_NAMESERVERS: "1.1.1.1 1.0.0.1"
+  HEADSCALE_DNS_CONFIG_MAGIC_DNS: "true"
 
   {{- with .Values.postgresql }}
   {{- if .enabled }}
@@ -55,6 +65,9 @@ env:
     secretKeyRef:
       name: {{ $.Release.Name }}-postgresql
       key: {{ if not .auth.password }}postgres-{{ end }}password
+  {{- else }}
+  HEADSCALE_DB_TYPE: "sqlite3"
+  HEADSCALE_DB_PATH: "/etc/headscale/db.sqlite"
   {{- end }}
   {{- end }}
 {{- end -}}
