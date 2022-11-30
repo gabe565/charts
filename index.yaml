@@ -1373,6 +1373,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Add some missing default envs
+    apiVersion: v2
+    appVersion: 0.17.0
+    created: "2022-11-30T00:18:06.724997297Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.1
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: 00786a1f15f27e53c2aa3926dc60a62da827b0d5634afbb0d675e01129827e6a
+    home: https://github.com/gabe565/charts/tree/main/charts/headscale
+    icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
+    keywords:
+    - headscale
+    - tailscale
+    - wireguard
+    - vpn
+    kubeVersion: '>=1.16.0-0'
+    name: headscale
+    sources:
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.2.1/headscale-0.2.1.tgz
+    version: 0.2.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Remove config file and add docs for env config
         - kind: changed
           description: Bump appVersion to v0.17.0
@@ -5281,4 +5314,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-11-29T00:37:38.57622868Z"
+generated: "2022-11-30T00:18:06.725398408Z"
