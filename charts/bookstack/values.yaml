@@ -11,8 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  # @default -- chart.appVersion
-  tag: ""
+  tag: version-v22.11
 
 # -- environment variables.
 #    For more options see [BookStack .env.example](https://github.com/BookStackApp/BookStack/blob/release/.env.example.complete).
