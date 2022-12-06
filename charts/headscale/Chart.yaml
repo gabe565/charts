@@ -4,8 +4,8 @@ description: An open source, self-hosted implementation of the Tailscale control
 home: https://github.com/gabe565/charts/tree/main/charts/headscale
 icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
 type: application
-version: 0.2.1
-appVersion: 0.17.0
+version: 0.2.2
+appVersion: 0.17.1
 kubeVersion: ">=1.16.0-0"
 keywords:
   - headscale
@@ -25,4 +25,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Add some missing default envs
+      description: Bump appVersion to v0.17.1
