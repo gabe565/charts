@@ -4,8 +4,8 @@ description: Live your data-life pro-actively, track website content changes and
 home: https://github.com/gabe565/charts/tree/main/charts/changedetection-io
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/changedetection-io/icon.png
 type: application
-version: 0.1.6
-appVersion: 0.39.22.1
+version: 0.2.0
+appVersion: 0.40.0
 kubeVersion: ">=1.16.0-0"
 keywords:
   - changedetection.io
@@ -21,4 +21,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Bump appVersion to v0.39.22.1
+      description: Bump appVersion to v0.40.0
