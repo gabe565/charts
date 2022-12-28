@@ -202,6 +202,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Bump appVersion to v22.11.1
+    apiVersion: v2
+    appVersion: 22.11.1
+    created: "2022-12-28T06:35:38.715120827Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.3.1
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
+    digest: 4b4194f1f5eac442a922c9fb6fccfe2ea2c41de7a37d8218906e406cd415c3d6
+    home: https://github.com/gabe565/charts/tree/main/charts/bookstack
+    icon: https://media.githubusercontent.com/media/BookStackApp/website/main/static/images/logo.png
+    keywords:
+    - bookstack
+    - wiki
+    - documentation
+    kubeVersion: '>=1.16.0-0'
+    name: bookstack
+    sources:
+    - https://bookstackapp.com
+    - https://github.com/BookStackApp/BookStack
+    - https://ghcr.io/linuxserver/bookstack
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/bookstack-0.1.3/bookstack-0.1.3.tgz
+    version: 0.1.3
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Bump appVersion to v22.10.1
     apiVersion: v2
     appVersion: "22.11"
@@ -5500,4 +5534,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-12-14T05:04:06.014307548Z"
+generated: "2022-12-28T06:35:38.715466337Z"
