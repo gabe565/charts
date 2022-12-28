@@ -4,8 +4,8 @@ description: Unofficial Bitwarden compatible server written in Rust.
 home: https://github.com/gabe565/charts/tree/main/charts/vaultwarden
 icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/7cb19ef767142b773ab44a457940844589432a74/src/static/images/vaultwarden-icon.png
 type: application
-version: 0.1.2
-appVersion: 1.26.0-alpine
+version: 0.1.3
+appVersion: 1.27.0-alpine
 kubeVersion: ">=1.16.0-0"
 keywords:
   - vaultwarden
@@ -28,4 +28,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump appVersion to v1.26.0
+      description: Bump appVersion to v1.27.0
