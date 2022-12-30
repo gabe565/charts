@@ -6,6 +6,9 @@ env:
   URL: http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}/
   {{- end -}}
   {{- end }}
+
+termination:
+  gracePeriodSeconds: "0"
 {{- end -}}
 {{- $_ := merge .Values (include "pictshare.harcodedValues" . | fromYaml) -}}
 

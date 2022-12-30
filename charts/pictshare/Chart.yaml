@@ -4,7 +4,7 @@ description: PictShare is an open source image, mp4, pastebin hosting service wi
 home: https://github.com/gabe565/charts/tree/main/charts/pictshare
 icon: https://camo.githubusercontent.com/6efdab1c63d518fafc5e735001c5ed45e7cbd4958952cdd972e2630eee881d97/68747470733a2f2f7069637473686172652e6e65742f706868796e6a2e706e67
 type: application
-version: 0.1.9
+version: 0.1.10
 appVersion: 72394f17
 kubeVersion: ">=1.16.0-0"
 keywords:
@@ -20,5 +20,5 @@ sources:
   - https://github.com/HaschekSolutions/pictshare
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Add home URL
+    - kind: changed
+      description: Set termination grace period to 0s
