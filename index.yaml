@@ -4003,6 +4003,33 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Change default port to 8000
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-01-01T21:59:03.520595667Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 0.2.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.1
+    description: My personal portfolio website
+    digest: 74f5c6c6b7060e6e6f20a6e9c146c51a9f617ab681900b4abcd4f8ce8199ad4b
+    home: https://github.com/gabe565/charts/tree/main/charts/portfolio
+    icon: https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png
+    kubeVersion: '>=1.16.0-0'
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.2.0/portfolio-0.2.0.tgz
+    version: 0.2.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bump postgresql subchart to v11.9.1
     apiVersion: v2
     appVersion: latest
@@ -5627,4 +5654,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-12-30T07:02:29.217975219Z"
+generated: "2023-01-01T21:59:03.520951061Z"
