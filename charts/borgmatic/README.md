@@ -1,6 +1,6 @@
 # borgmatic
 
-![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.7.5](https://img.shields.io/badge/AppVersion-1.7.5-informational?style=flat-square)
+![Version: 0.5.1](https://img.shields.io/badge/Version-0.5.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.7.5](https://img.shields.io/badge/AppVersion-1.7.5-informational?style=flat-square)
 
 borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services.
 
@@ -67,6 +67,17 @@ helm install borgmatic gabe565/borgmatic -f values.yaml
 ```
 
 ## Custom configuration
+
+### Deploy as a CronJob
+
+If you prefer to use a CronJob instead of a Deployment, set the following values:
+```yaml
+controller:
+  type: cronjob
+  cronjob:
+    schedule: 0 1 * * *
+command: [borgmatic, --stats, -v0]
+```
 
 ### First Time Setup
 

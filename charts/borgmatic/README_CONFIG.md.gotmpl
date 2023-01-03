@@ -1,5 +1,16 @@
 {{- define "custom.custom.configuration.header" -}}
 ## Custom configuration
+
+### Deploy as a CronJob
+
+If you prefer to use a CronJob instead of a Deployment, set the following values:
+```yaml
+controller:
+  type: cronjob
+  cronjob:
+    schedule: 0 1 * * *
+command: [borgmatic, --stats, -v0]
+```
 {{- end -}}
 
 {{- define "custom.custom.configuration" -}}
