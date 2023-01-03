@@ -401,6 +401,36 @@ entries:
   borgmatic:
   - annotations:
       artifacthub.io/changes: |
+        - kind: changed
+          description: Simplify CronJob deployment instructions
+    apiVersion: v2
+    appVersion: 1.7.5
+    created: "2023-01-03T20:09:28.091049759Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.2.1
+    description: borgmatic is simple, configuration-driven backup software for servers
+      and workstations. Protect your files with client-side encryption. Backup your
+      databases too. Monitor it all with integrated third-party services.
+    digest: 3c1b2e16944187041d2d9a8bf9cc813da4ef400470446730cd7434999908fd71
+    home: https://github.com/gabe565/charts/tree/main/charts/borgmatic
+    icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
+    keywords:
+    - borgmatic
+    - borg
+    - backup
+    kubeVersion: '>=1.21.0-0'
+    name: borgmatic
+    sources:
+    - https://projects.torsion.org/borgmatic-collective/borgmatic
+    - https://github.com/borgmatic-collective/docker-borgmatic
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/borgmatic-0.5.2/borgmatic-0.5.2.tgz
+    version: 0.5.2
+  - annotations:
+      artifacthub.io/changes: |
         - kind: added
           description: Add deploy as a CronJob doc
     apiVersion: v2
@@ -6456,4 +6486,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-03T19:27:24.075293892Z"
+generated: "2023-01-03T20:09:28.091477156Z"
