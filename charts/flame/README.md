@@ -1,6 +1,6 @@
 # flame
 
-![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: multiarch2.3.0](https://img.shields.io/badge/AppVersion-multiarch2.3.0-informational?style=flat-square)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: multiarch2.3.0](https://img.shields.io/badge/AppVersion-multiarch2.3.0-informational?style=flat-square)
 
 Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors.
 
@@ -12,13 +12,13 @@ Flame is self-hosted startpage for your server. Easily manage your apps and book
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.22.0-0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 0.2.0 |
+| https://bjw-s.github.io/helm-charts | common | 1.2.1 |
 
 ## TL;DR
 
@@ -81,7 +81,6 @@ N/A
 | image.tag | string | `""` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
-| secret | string | See values.yaml | secret environment variables. |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ----------------------------------------------

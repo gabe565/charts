@@ -4,9 +4,9 @@ description: A dead simple static HOMepage for your servER to keep your services
 home: https://github.com/gabe565/charts/tree/main/charts/homer
 icon: https://raw.githubusercontent.com/bastienwirtz/homer/5418c6291a39d27aeee471673adba742080e1ccb/public/logo.png
 type: application
-version: 0.1.7
+version: 0.2.0
 appVersion: v22.11.2
-kubeVersion: ">=1.16.0-0"
+kubeVersion: ">=1.22.0-0"
 keywords:
   - homer
   - dashboard
@@ -15,10 +15,10 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 0.2.0
+    version: 1.2.1
 sources:
   - https://github.com/bastienwirtz/homer
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump appVersion to v22.11.1
+      description: Bump common subchart to v1.2.1

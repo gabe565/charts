@@ -1,6 +1,6 @@
 # vaultwarden
 
-![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.27.0-alpine](https://img.shields.io/badge/AppVersion-1.27.0--alpine-informational?style=flat-square)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.27.0-alpine](https://img.shields.io/badge/AppVersion-1.27.0--alpine-informational?style=flat-square)
 
 Unofficial Bitwarden compatible server written in Rust.
 
@@ -12,15 +12,15 @@ Unofficial Bitwarden compatible server written in Rust.
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.22.0-0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 0.2.0 |
-| https://charts.bitnami.com/bitnami | mariadb | 11.3.1 |
-| https://charts.bitnami.com/bitnami | postgresql | 11.9.1 |
+| https://bjw-s.github.io/helm-charts | common | 1.2.1 |
+| https://charts.bitnami.com/bitnami | mariadb | 11.4.2 |
+| https://charts.bitnami.com/bitnami | postgresql | 11.9.13 |
 
 ## TL;DR
 

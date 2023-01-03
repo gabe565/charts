@@ -1,6 +1,6 @@
 # smarter-device-manager
 
-![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![AppVersion: v1.20.11](https://img.shields.io/badge/AppVersion-v1.20.11-informational?style=flat-square)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![AppVersion: v1.20.11](https://img.shields.io/badge/AppVersion-v1.20.11-informational?style=flat-square)
 
 Manage hardware resource allocation without a need for privileged containers.
 
@@ -12,13 +12,13 @@ Manage hardware resource allocation without a need for privileged containers.
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.22.0-0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 0.2.0 |
+| https://bjw-s.github.io/helm-charts | common | 1.2.1 |
 
 ## TL;DR
 

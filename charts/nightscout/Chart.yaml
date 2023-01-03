@@ -4,9 +4,9 @@ description: Web-based CGM (Continuous Glucose Monitor) to allow multiple caregi
 home: https://github.com/gabe565/charts/tree/main/charts/nightscout
 icon: https://raw.githubusercontent.com/nightscout/cgm-remote-monitor/71c2363b7be387cda899669be2bfd6ddbfe70198/static/images/large.png
 type: application
-version: 0.2.0
+version: 0.3.0
 appVersion: 14.2.6
-kubeVersion: ">=1.16.0-0"
+kubeVersion: ">=1.22.0-0"
 keywords:
   - nightscout
   - cgm
@@ -15,17 +15,15 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 0.2.0
+    version: 1.2.1
   - name: mongodb
-    version: 13.1.5
+    version: 13.6.1
     repository: https://charts.bitnami.com/bitnami
 sources:
   - https://github.com/nightscout/cgm-remote-monitor
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Default HOSTNAME env to "::"
-    - kind: added
-      description: Default PORT env to value of .service.main.ports.http.port
-    - kind: added
-      description: Add livenessProbe that checks /api/v2/status response
+    - kind: changed
+      description: Bump common subchart to v1.2.1
+    - kind: changed
+      description: Bump mongodb subchart to v13.6.1

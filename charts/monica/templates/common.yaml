@@ -47,7 +47,7 @@ additionalContainers:
       - name: storage
         mountPath: /var/www/html/storage
 
-configmap:
+configMaps:
   nginx:
     enabled: true
     data:
@@ -87,4 +87,4 @@ persistence:
 {{- $_ := merge .Values (include "monica.hardcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

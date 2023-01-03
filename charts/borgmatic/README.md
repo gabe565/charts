@@ -1,6 +1,6 @@
 # borgmatic
 
-![Version: 0.4.13](https://img.shields.io/badge/Version-0.4.13-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.7.5](https://img.shields.io/badge/AppVersion-1.7.5-informational?style=flat-square)
+![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.7.5](https://img.shields.io/badge/AppVersion-1.7.5-informational?style=flat-square)
 
 borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services.
 
@@ -13,13 +13,13 @@ borgmatic is simple, configuration-driven backup software for servers and workst
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.21.0-0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 0.2.0 |
+| https://bjw-s.github.io/helm-charts | common | 1.2.1 |
 
 ## TL;DR
 
@@ -91,9 +91,9 @@ helm install borgmatic gabe565/borgmatic -f values.yaml
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| configmap.config | object | See values.yaml | Configure Borgmatic container under this key. |
-| configmap.config.data."config.yaml" | string | See values.yaml | Borgmatic config. [[ref]](https://torsion.org/borgmatic/docs/reference/configuration) |
-| configmap.config.data."crontab.txt" | string | `"0 1 * * * PATH=$PATH:/usr/bin /usr/local/bin/borgmatic --stats -v 0 2>&1"` | Crontab |
+| configMaps.config | object | See values.yaml | Configure Borgmatic container under this key. |
+| configMaps.config.data."config.yaml" | string | See values.yaml | Borgmatic config. [[ref]](https://torsion.org/borgmatic/docs/reference/configuration) |
+| configMaps.config.data."crontab.txt" | string | `"0 1 * * * PATH=$PATH:/usr/bin /usr/local/bin/borgmatic --stats -v 0 2>&1"` | Crontab |
 | env | object | See values.yaml | environment variables. [[ref]](https://borgbackup.readthedocs.io/en/stable/usage/general.html#environment-variables) |
 | env.BORG_HOST_ID | string | Deployment namespace | Borg host ID used in archive names |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |

@@ -3,9 +3,9 @@ name: tandoor
 description: Application for managing recipes, planning meals, building shopping lists and much much more!
 home: https://github.com/gabe565/charts/tree/main/charts/tandoor
 icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
-version: 0.1.2
+version: 0.2.0
 appVersion: 1.4.5
-kubeVersion: ">=1.16.0-0"
+kubeVersion: ">=1.22.0-0"
 keywords:
   - recipes
   - cookbook
@@ -14,9 +14,9 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 0.2.0
+    version: 1.2.1
   - name: postgresql
-    version: 11.9.1
+    version: 11.9.13
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 sources:
@@ -24,6 +24,8 @@ sources:
   - https://github.com/TandoorRecipes/recipes
   - https://hub.docker.com/r/vabene1111/recipes
 annotations:
-  artifacthub.io/changes: |-
+  artifacthub.io/changes: |
     - kind: changed
-      description: Bump appVersion to v1.4.5
+      description: Bump common subchart to v1.2.1
+    - kind: changed
+      description: Bump postgresql subchart to v11.9.13

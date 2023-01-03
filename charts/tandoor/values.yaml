@@ -29,7 +29,6 @@ service:
       http:
         port: 8080
       static:
-        enabled: true
         port: 80
 
 ingress:

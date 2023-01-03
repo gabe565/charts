@@ -1,6 +1,6 @@
 # tandoor
 
-![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![AppVersion: 1.4.5](https://img.shields.io/badge/AppVersion-1.4.5-informational?style=flat-square)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![AppVersion: 1.4.5](https://img.shields.io/badge/AppVersion-1.4.5-informational?style=flat-square)
 
 Application for managing recipes, planning meals, building shopping lists and much much more!
 
@@ -14,14 +14,14 @@ Application for managing recipes, planning meals, building shopping lists and mu
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.22.0-0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 0.2.0 |
-| https://charts.bitnami.com/bitnami | postgresql | 11.9.1 |
+| https://bjw-s.github.io/helm-charts | common | 1.2.1 |
+| https://charts.bitnami.com/bitnami | postgresql | 11.9.13 |
 
 ## TL;DR
 

@@ -3,9 +3,9 @@ name: transsmute
 description: Transsmute builds RSS feeds for websites that don't provide them.
 home: https://github.com/gabe565/charts/tree/main/charts/transsmute
 type: application
-version: 0.1.8
+version: 0.2.0
 appVersion: latest
-kubeVersion: ">=1.16.0-0"
+kubeVersion: ">=1.22.0-0"
 keywords:
   - transsmute
   - rss
@@ -13,10 +13,10 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 0.2.0
+    version: 1.2.1
 sources:
   - https://github.com/gabe565/transsmute
 annotations:
   artifacthub.io/changes: |
-    - kind: added
-      description: Add home URL
+    - kind: changed
+      description: Bump common subchart to v1.2.1

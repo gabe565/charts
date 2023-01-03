@@ -21,10 +21,6 @@ env:
   # The FQDN of the hosts will be
   # `hostname.namespace.base_domain` (e.g., _myhost.mynamespace.example.com_).
   HEADSCALE_DNS_CONFIG_BASE_DOMAIN: example.com
-
-# -- Secret environment variables.
-# @default -- See values.yaml
-secret: {}
   # HEADSCALE_OIDC_ISSUER: ""
   # HEADSCALE_OIDC_CLIENT_ID: ""
   # HEADSCALE_OIDC_CLIENT_SECRET: ""
@@ -37,9 +33,9 @@ service:
       http:
         port: 8080
       metrics:
-        enabled: true
         port: 9090
       grpc:
+        enabled: false
         port: 50443
 
 ingress:

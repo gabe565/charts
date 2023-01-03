@@ -22,4 +22,4 @@ env:
 {{- $_ := merge .Values (include "bookstack.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

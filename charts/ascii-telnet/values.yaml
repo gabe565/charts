@@ -30,7 +30,6 @@ service:
         enabled: false
         primary: false
       telnet:
-        enabled: true
         primary: true
         protocol: TCP
         port: 23

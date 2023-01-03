@@ -1,6 +1,6 @@
 # monica
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.7.0-fpm-alpine](https://img.shields.io/badge/AppVersion-3.7.0--fpm--alpine-informational?style=flat-square)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 3.7.0-fpm-alpine](https://img.shields.io/badge/AppVersion-3.7.0--fpm--alpine-informational?style=flat-square)
 
 Personal CRM. Remember everything about your friends, family and business relationships.
 
@@ -12,14 +12,14 @@ Personal CRM. Remember everything about your friends, family and business relati
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.22.0-0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 0.2.0 |
-| https://charts.bitnami.com/bitnami | mariadb | 11.3.1 |
+| https://bjw-s.github.io/helm-charts | common | 1.2.1 |
+| https://charts.bitnami.com/bitnami | mariadb | 11.4.2 |
 
 ## TL;DR
 

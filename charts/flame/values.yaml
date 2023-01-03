@@ -16,10 +16,6 @@ image:
 # -- environment variables.
 # @default -- See values.yaml
 env: {}
-
-# -- secret environment variables.
-# @default -- See values.yaml
-secret:
   # PASSWORD: ""
 
 # -- Configures service settings for the chart.

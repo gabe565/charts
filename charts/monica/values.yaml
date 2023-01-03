@@ -35,7 +35,6 @@ service:
       http:
         port: 80
       fastcgi:
-        enabled: true
         port: 9000
 
 ingress:

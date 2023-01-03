@@ -17,7 +17,7 @@ env:
 termination:
   gracePeriodSeconds: "0"
 
-configmap:
+configMaps:
   health:
     enabled: true
     data:
@@ -38,7 +38,7 @@ persistence:
   health:
     enabled: true
     type: configMap
-    name: "{{ include "common.names.fullname" . }}-health"
+    name: "{{ include "bjw-s.common.lib.chart.names.fullname" . }}-health"
     mountPath: /health
     defaultMode: 0755
 
@@ -53,4 +53,4 @@ probes:
 {{- $_ := merge .Values (include "nightscout.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

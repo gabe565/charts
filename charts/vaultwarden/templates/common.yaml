@@ -10,7 +10,7 @@ env:
   ROCKET_PORT: {{ quote .Values.service.main.ports.http.port }}
 
   {{- with .Values.service.main.ports.websocket }}
-  WEBSOCKET_ENABLED: {{ quote .enabled }}
+  WEBSOCKET_ENABLED: {{ default .enabled "true" | quote }}
   WEBSOCKET_PORT: {{ quote .port }}
   {{- end }}
 
@@ -35,4 +35,4 @@ env:
 {{- $_ := merge .Values (include "vaultwarden.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

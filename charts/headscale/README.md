@@ -1,6 +1,6 @@
 # headscale
 
-![Version: 0.2.2](https://img.shields.io/badge/Version-0.2.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.17.1](https://img.shields.io/badge/AppVersion-0.17.1-informational?style=flat-square)
+![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.17.1](https://img.shields.io/badge/AppVersion-0.17.1-informational?style=flat-square)
 
 An open source, self-hosted implementation of the Tailscale control server.
 
@@ -12,14 +12,14 @@ An open source, self-hosted implementation of the Tailscale control server.
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.22.0-0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 0.2.0 |
-| https://charts.bitnami.com/bitnami | postgresql | 11.9.1 |
+| https://bjw-s.github.io/helm-charts | common | 1.2.1 |
+| https://charts.bitnami.com/bitnami | postgresql | 11.9.13 |
 
 ## TL;DR
 
@@ -111,7 +111,6 @@ service:
   main:
     ports:
       ui:
-        enabled: true
         port: 80
 
 ingress:
@@ -143,7 +142,6 @@ Once deployed, the UI will be available at `/web`.
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence.config | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | postgresql | object | See values.yaml | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
-| secret | object | See values.yaml | Secret environment variables. |
 | service.main | object | See values.yaml | Configures service settings for the chart. |
 
 ----------------------------------------------

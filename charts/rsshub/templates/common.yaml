@@ -21,4 +21,4 @@ additionalContainers:
 {{- $_ := merge .Values (include "rsshub.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

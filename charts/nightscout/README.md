@@ -1,6 +1,6 @@
 # nightscout
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 14.2.6](https://img.shields.io/badge/AppVersion-14.2.6-informational?style=flat-square)
+![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 14.2.6](https://img.shields.io/badge/AppVersion-14.2.6-informational?style=flat-square)
 
 Web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers to remotely view a patient's glucose data in real time.
 
@@ -12,14 +12,14 @@ Web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers to remot
 
 ## Requirements
 
-Kubernetes: `>=1.16.0-0`
+Kubernetes: `>=1.22.0-0`
 
 ## Dependencies
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://bjw-s.github.io/helm-charts | common | 0.2.0 |
-| https://charts.bitnami.com/bitnami | mongodb | 13.1.5 |
+| https://bjw-s.github.io/helm-charts | common | 1.2.1 |
+| https://charts.bitnami.com/bitnami | mongodb | 13.6.1 |
 
 ## TL;DR
 

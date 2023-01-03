@@ -3,9 +3,9 @@ name: ascii-telnet
 description: Star Wars telnet server
 home: https://github.com/gabe565/charts/tree/main/charts/ascii-telnet
 type: application
-version: 0.1.8
+version: 0.2.0
 appVersion: latest
-kubeVersion: ">=1.16.0-0"
+kubeVersion: ">=1.22.0-0"
 keywords:
   - ascii-art
   - star-wars
@@ -13,13 +13,11 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 0.2.0
+    version: 1.2.1
 sources:
   - https://github.com/gabe565/ascii-telnet-go
   - https://github.com/gabe565/ascii-telnet-rust
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Rename from ascii-telnet-rust to ascii-telnet
-    - kind: removed
-      description: Remove default resource requests/limits
+      description: Bump common subchart to v1.2.1

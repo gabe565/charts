@@ -4,9 +4,9 @@ description: Personal CRM. Remember everything about your friends, family and bu
 home: https://github.com/gabe565/charts/tree/main/charts/monica
 icon: https://raw.githubusercontent.com/monicahq/monica/main/public/img/monica.svg
 type: application
-version: 0.1.0
+version: 0.2.0
 appVersion: 3.7.0-fpm-alpine
-kubeVersion: ">=1.16.0-0"
+kubeVersion: ">=1.22.0-0"
 keywords:
   - crm
 sources:
@@ -14,12 +14,14 @@ sources:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 0.2.0
+    version: 1.2.1
   - name: mariadb
-    version: 11.3.1
+    version: 11.4.2
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
 annotations:
-  artifacthub.io/changes: |-
-    - kind: added
-      description: Initial release
+  artifacthub.io/changes: |
+    - kind: changed
+      description: Bump common subchart to v1.2.1
+    - kind: changed
+      description: Bump mariadb subchart to v11.4.2

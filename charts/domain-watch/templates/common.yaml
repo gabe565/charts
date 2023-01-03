@@ -7,4 +7,4 @@ service:
 {{- $_ := merge .Values (include "domain-watch.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

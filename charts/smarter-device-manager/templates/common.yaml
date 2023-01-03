@@ -3,7 +3,7 @@
 controller:
   type: daemonset
 
-configmap:
+configMaps:
   config:
     enabled: true
     data:
@@ -15,7 +15,7 @@ persistence:
     mountPath: /root/config/conf.yaml
     subPath: conf.yaml
     type: configMap
-    name: {{ include "common.names.fullname" . }}-config
+    name: {{ include "bjw-s.common.lib.chart.names.fullname" . }}-config
 
 probes:
   liveness:
@@ -32,4 +32,4 @@ service:
 {{- $_ := merge .Values (include "sdm.hardcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

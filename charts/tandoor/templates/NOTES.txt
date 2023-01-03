@@ -1,4 +1,4 @@
-{{- include "common.notes.defaultNotes" . }}
+{{- include "bjw-s.common.lib.chart.notes" . }}
 
 {{ if and .Values.ingress.main.enabled .Values.service.main.ports.static.enabled -}}
 2. Ensure /static and /media paths are routed correctly.

@@ -1,6 +1,6 @@
-{{- include "common.notes.defaultNotes" . -}}
+{{- include "bjw-s.common.lib.chart.notes" . -}}
 
-{{- $deploymentName := printf "deployments/%s" (include "common.names.fullname" .) }}
+{{- $deploymentName := printf "deployments/%s" (include "bjw-s.common.lib.chart.names.fullname" .) }}
 
 2. Create a Namespace:
 

@@ -45,7 +45,7 @@ persistence:
     mountPath: /root/.ssh
     defaultMode: 0600
 
-configmap:
+configMaps:
   # -- Configure Borgmatic container under this key.
   # @default -- See values.yaml
   config:

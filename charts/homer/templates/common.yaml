@@ -6,7 +6,7 @@
     config:
       enabled: true
       type: configMap
-      name: {{ include "common.names.fullname" . }}-config
+      name: {{ include "bjw-s.common.lib.chart.names.fullname" . }}-config
       mountPath: /www/assets/config.yml
       subPath: config.yml
   {{- end }}
@@ -14,4 +14,4 @@
 {{- $_ := mergeOverwrite .Values (include "homer.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

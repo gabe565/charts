@@ -34,7 +34,6 @@ service:
       http:
         port: 80
       websocket:
-        enabled: true
         port: 3012
 
 ingress:

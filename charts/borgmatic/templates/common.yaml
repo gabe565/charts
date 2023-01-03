@@ -1,15 +1,32 @@
+{{/* Polyfill common chart v0.2.0 values to v1.2.1 */}}
+{{- define "borgmatic.polyfill" }}
+{{- if .Values.configmap }}
+configMaps: {{ toYaml .Values.configmap | nindent 2 }}
+{{- end }}
+{{- if .Values.secret }}
+secrets:
+  "":
+    enabled: true
+    stringData: {{ toYaml .Values.secret | nindent 6 }}
+envFrom:
+  - secretRef:
+      name: {{ include "bjw-s.common.lib.chart.names.fullname" . }}
+{{- end }}
+{{- end }}
+{{- $_ := mergeOverwrite .Values (include "borgmatic.polyfill" . | fromYaml) -}}
+
 {{/* Append the hardcoded settings */}}
 {{- define "borgmatic.harcodedValues" -}}
 env:
   BORG_HOST_ID: "{{ .Release.Namespace }}"
 
-{{- if .Values.configmap.config.enabled }}
+{{- if .Values.configMaps.config.enabled }}
 {{/* Append the configMap volume to the volumes */}}
 persistence:
   config:
     enabled: true
     type: configMap
-    name: "{{ include "common.names.fullname" . }}-config"
+    name: "{{ include "bjw-s.common.lib.chart.names.fullname" . }}-config"
     mountPath: /etc/borgmatic.d
 {{- end }}
 
@@ -31,4 +48,4 @@ termination:
 {{- $_ := merge .Values (include "borgmatic.harcodedValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}

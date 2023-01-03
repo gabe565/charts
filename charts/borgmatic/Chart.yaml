@@ -4,9 +4,9 @@ description: borgmatic is simple, configuration-driven backup software for serve
 home: https://github.com/gabe565/charts/tree/main/charts/borgmatic
 icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
 type: application
-version: 0.4.13
+version: 0.5.0
 appVersion: 1.7.5
-kubeVersion: ">=1.16.0-0"
+kubeVersion: ">=1.21.0-0"
 keywords:
   - borgmatic
   - borg
@@ -14,11 +14,11 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 0.2.0
+    version: 1.2.1
 sources:
   - https://projects.torsion.org/borgmatic-collective/borgmatic
   - https://github.com/borgmatic-collective/docker-borgmatic
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump appVersion to v1.7.5
+      description: Bump common subchart to v1.2.1

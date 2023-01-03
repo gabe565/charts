@@ -1,5 +1,3 @@
-{{- include "common.values.setup" . }}
-
 {{/* Append the hardcoded settings */}}
 {{- define "tandoor-recipes.dynamicValues" -}}
 env:
@@ -7,7 +5,7 @@ env:
 
   TANDOOR_PORT: {{ quote .Values.service.main.ports.http.port }}
 
-  {{- if .Values.service.main.ports.static.enabled }}
+  {{- if (default .Values.service.main.ports.static.enabled true) }}
   GUNICORN_MEDIA: "0"
   {{- end }}
 
@@ -24,8 +22,8 @@ env:
   {{- end }}
   {{- end }}
 
-{{- if .Values.service.main.ports.static.enabled }}
-configmap:
+{{- if (default .Values.service.main.ports.static.enabled true) }}
+configMaps:
   nginx-config:
     enabled: true
     data:
@@ -41,7 +39,7 @@ persistence:
   nginx-config:
     enabled: true
     type: configMap
-    name: {{ include "common.names.fullname" . }}-nginx-config
+    name: {{ include "bjw-s.common.lib.chart.names.fullname" . }}-nginx-config
     mountPath: "-"
 
 additionalContainers:
@@ -69,4 +67,4 @@ additionalContainers:
 {{- $_ := merge .Values (include "tandoor-recipes.dynamicValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
-{{ include "common.all" . }}
+{{ include "bjw-s.common.loader.all" . }}
