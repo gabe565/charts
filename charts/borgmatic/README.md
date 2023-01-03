@@ -1,6 +1,6 @@
 # borgmatic
 
-![Version: 0.5.1](https://img.shields.io/badge/Version-0.5.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.7.5](https://img.shields.io/badge/AppVersion-1.7.5-informational?style=flat-square)
+![Version: 0.5.2](https://img.shields.io/badge/Version-0.5.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.7.5](https://img.shields.io/badge/AppVersion-1.7.5-informational?style=flat-square)
 
 borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services.
 
@@ -76,7 +76,6 @@ controller:
   type: cronjob
   cronjob:
     schedule: 0 1 * * *
-command: [borgmatic, --stats, -v0]
 ```
 
 ### First Time Setup
@@ -105,6 +104,8 @@ command: [borgmatic, --stats, -v0]
 | configMaps.config | object | See values.yaml | Configure Borgmatic container under this key. |
 | configMaps.config.data."config.yaml" | string | See values.yaml | Borgmatic config. [[ref]](https://torsion.org/borgmatic/docs/reference/configuration) |
 | configMaps.config.data."crontab.txt" | string | `"0 1 * * * PATH=$PATH:/usr/bin /usr/local/bin/borgmatic --stats -v 0 2>&1"` | Crontab |
+| controller.cronjob.schedule | string | `"0 * * * *"` | Only used when `controller.type: cronjob`. Sets the backup CronJob time. |
+| controller.type | string | `"deployment"` | Set the controller type. Valid options are `deployment` or `cronjob`. |
 | env | object | See values.yaml | environment variables. [[ref]](https://borgbackup.readthedocs.io/en/stable/usage/general.html#environment-variables) |
 | env.BORG_HOST_ID | string | Deployment namespace | Borg host ID used in archive names |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |

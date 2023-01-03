@@ -20,6 +20,10 @@ envFrom:
 env:
   BORG_HOST_ID: "{{ .Release.Namespace }}"
 
+{{- if eq .Values.controller.type "cronjob" }}
+command: [borgmatic, --stats, -v0]
+{{- end }}
+
 {{- if .Values.configMaps.config.enabled }}
 {{/* Append the configMap volume to the volumes */}}
 persistence:

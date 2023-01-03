@@ -14,6 +14,13 @@ image:
   # @default -- chart.appVersion
   tag: ""
 
+controller:
+  # -- Set the controller type. Valid options are `deployment` or `cronjob`.
+  type: deployment
+  cronjob:
+    # -- Only used when `controller.type: cronjob`. Sets the backup CronJob time.
+    schedule: 0 * * * *
+
 # -- environment variables. [[ref]](https://borgbackup.readthedocs.io/en/stable/usage/general.html#environment-variables)
 # @default -- See values.yaml
 env:
