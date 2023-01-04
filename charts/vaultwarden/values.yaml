@@ -11,8 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  # @default -- chart.appVersion
-  tag: ""
+  tag: 1.27.0-alpine
 
 controller:
   # -- Set the controller upgrade strategy

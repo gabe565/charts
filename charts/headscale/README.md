@@ -138,7 +138,7 @@ Once deployed, the UI will be available at `/web`.
 | env.HEADSCALE_DNS_CONFIG_BASE_DOMAIN | string | `"example.com"` | Defines the base domain to create the hostnames for MagicDNS. `base_domain` must be a FQDNs, without the trailing dot. The FQDN of the hosts will be `hostname.namespace.base_domain` (e.g., _myhost.mynamespace.example.com_). |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"headscale/headscale"` | image repository |
-| image.tag | string | `""` | image tag |
+| image.tag | string | `"0.17.1"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence.config | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | postgresql | object | See values.yaml | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |

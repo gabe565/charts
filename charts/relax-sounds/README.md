@@ -79,7 +79,7 @@ N/A
 | env | object | See below | environment variables. |
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"ghcr.io/gabe565/relax-sounds"` | image repository |
-| image.tag | string | `""` | image tag |
+| image.tag | string | `"latest"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence.data | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |

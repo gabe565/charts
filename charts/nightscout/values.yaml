@@ -9,8 +9,7 @@ image:
   # -- image repository
   repository: nightscout/cgm-remote-monitor
   # -- image tag
-  # @default -- chart.appVersion
-  tag: ""
+  tag: 14.2.6
   # -- image pull policy
   pullPolicy: IfNotPresent
 

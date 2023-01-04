@@ -9,8 +9,7 @@ image:
   # -- image repository
   repository: ghcr.io/dgtlmoon/changedetection.io
   # -- image tag
-  # @default -- chart.appVersion
-  tag: ""
+  tag: 0.40.0.4
   # -- image pull policy
   pullPolicy: IfNotPresent
 

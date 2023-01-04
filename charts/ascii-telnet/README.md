@@ -79,7 +79,7 @@ N/A
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"ghcr.io/gabe565/ascii-telnet-go"` | image repository.    Defaults to Go implementation at [`ghcr.io/gabe565/ascii-telnet-go`](https://ghcr.io/gabe565/ascii-telnet-go),    but can also be set to [`ghcr.io/gabe565/ascii-telnet-rust`](https://ghcr.io/gabe565/ascii-telnet-rust). |
-| image.tag | string | `""` | image tag |
+| image.tag | string | `"latest"` | image tag |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ----------------------------------------------

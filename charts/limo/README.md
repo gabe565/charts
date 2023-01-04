@@ -80,7 +80,7 @@ N/A
 | env | object | See values.yaml | environment variables. |
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"ghcr.io/gabe565/limo"` | image repository |
-| image.tag | string | `""` | image tag |
+| image.tag | string | `"latest"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence.data | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | postgresql | object | See values.yaml | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |

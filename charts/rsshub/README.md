@@ -80,7 +80,7 @@ N/A
 | env | object | See below | environment variables. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"diygod/rsshub"` | image repository |
-| image.tag | string | `""` | image tag |
+| image.tag | string | `"2022-07-29"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | redis | object | See values.yaml | Enable and configure redis subchart under this key.    For more options see [redis chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/redis) |
 | service | object | See values.yaml | Configures service settings for the chart. |

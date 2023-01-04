@@ -9,8 +9,7 @@ image:
   # -- image repository
   repository: registry.gitlab.com/arm-research/smarter/smarter-device-manager
   # -- image tag
-  # @default -- chart.appVersion
-  tag: ""
+  tag: v1.20.11
   # -- image pull policy
   pullPolicy: IfNotPresent
 

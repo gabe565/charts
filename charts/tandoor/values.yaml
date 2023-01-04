@@ -8,8 +8,8 @@
 image:
   # -- image repository
   repository: vabene1111/recipes
-  # @default -- chart.appVersion
-  tag: ""
+  # -- image tag
+  tag: 1.4.5
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag

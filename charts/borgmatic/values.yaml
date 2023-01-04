@@ -11,8 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  # @default -- chart.appVersion
-  tag: ""
+  tag: 1.7.5
 
 controller:
   # -- Set the controller type. Valid options are `deployment` or `cronjob`.

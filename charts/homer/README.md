@@ -81,7 +81,7 @@ N/A
 | env | object | See values.yaml | environment variables. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"b4bz/homer"` | image repository |
-| image.tag | string | chart.appVersion | image tag |
+| image.tag | string | `"v22.11.2"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence.config | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service.main | object | See values.yaml | Configures service settings for the chart. |

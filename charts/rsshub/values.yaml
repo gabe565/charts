@@ -11,7 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  tag: ""
+  tag: 2022-07-29
 
 controller:
   # -- Set the controller upgrade strategy

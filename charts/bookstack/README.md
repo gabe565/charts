@@ -81,7 +81,7 @@ N/A
 | env | object | See values.yaml | environment variables.    For more options see [BookStack .env.example](https://github.com/BookStackApp/BookStack/blob/release/.env.example.complete). |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/linuxserver/bookstack"` | image repository |
-| image.tag | string | `"version-v22.11"` | image tag |
+| image.tag | string | `"version-v22.11.1"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | mariadb | object | See values.yaml | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
 | persistence.config | object | See values.yaml | Configure persistence settings for the chart under this key. |

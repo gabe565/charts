@@ -78,7 +78,7 @@ N/A
 | env | object | See values.yaml | environment variables. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"pawelmalak/flame"` | image repository |
-| image.tag | string | `""` | image tag |
+| image.tag | string | `"multiarch2.3.0"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |

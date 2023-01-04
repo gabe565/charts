@@ -82,7 +82,7 @@ N/A
 | env.TIMEZONE | string | `"UTC"` | default timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"vabene1111/recipes"` | image repository |
-| image.tag | string | `""` |  |
+| image.tag | string | `"1.4.5"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | postgresql | object | See values.yaml | Enable and configure postgresql database subchart under this key. [[ref]](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |

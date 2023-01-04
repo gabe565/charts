@@ -91,7 +91,7 @@ persistence:
 | env.ADMIN_TOKEN | string | `""` | Token for the admin interface, preferably use a long random string.    One option is to use `openssl rand -base64 48`.    If not set, the admin panel is disabled. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"vaultwarden/server"` | image repository |
-| image.tag | string | chart.appVersion | image tag |
+| image.tag | string | `"1.27.0-alpine"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | mariadb | object | See values.yaml | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
 | persistence.data | object | See values.yaml | Configure persistence settings for the chart under this key. |

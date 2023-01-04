@@ -79,7 +79,7 @@ N/A
 | env | object | See below | environment variables. |
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"rssbridge/rss-bridge"` | image repository |
-| image.tag | string | `""` | image tag |
+| image.tag | string | `"latest"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence.cache.enabled | bool | `false` |  |
 | persistence.cache.mountPath | string | `"/app/cache"` |  |

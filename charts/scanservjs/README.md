@@ -79,7 +79,7 @@ N/A
 | env | object | See values.yaml | environment variables. [[ref]](https://github.com/sbs20/scanservjs/blob/master/docs/docker.md#environment-variables) |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"sbs20/scanservjs"` | image repository |
-| image.tag | string | `""` | image tag |
+| image.tag | string | `"release-v2.21.0"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |

@@ -110,7 +110,7 @@ controller:
 | env.BORG_HOST_ID | string | Deployment namespace | Borg host ID used in archive names |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"b3vis/borgmatic"` | image repository |
-| image.tag | string | chart.appVersion | image tag |
+| image.tag | string | `"1.7.5"` | image tag |
 | persistence.data | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | persistence.ssh | object | See values.yaml | Configure SSH credentials for the chart under this key. |
 

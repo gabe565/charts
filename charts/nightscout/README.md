@@ -83,7 +83,7 @@ N/A
 | env.MONGODB_URI | string | `""` | MongoDB URI, eg `mongodb://username:password@mongodb/nightscout`.    Will be generated if mongodb subchart is enabled. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"nightscout/cgm-remote-monitor"` | image repository |
-| image.tag | string | chart.appVersion | image tag |
+| image.tag | string | `"14.2.6"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | mongodb | object | See values.yaml | Enable and configure mongodb database subchart under this key.    For more options see [mongodb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mongodb) |
 | service.main | object | See values.yaml | Configures service settings for the chart. |

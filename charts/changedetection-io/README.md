@@ -84,7 +84,7 @@ N/A
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/dgtlmoon/changedetection.io"` | image repository |
-| image.tag | string | chart.appVersion | image tag |
+| image.tag | string | `"0.40.0.4"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence.data | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service.main | object | See values.yaml | Configures service settings for the chart. |

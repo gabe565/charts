@@ -127,7 +127,7 @@ path, and the pod will only be created when this device is available.
 | hostNetwork | bool | `true` | When using hostNetwork make sure you set dnsPolicy to `ClusterFirstWithHostNet` |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"registry.gitlab.com/arm-research/smarter/smarter-device-manager"` | image repository |
-| image.tag | string | chart.appVersion | image tag |
+| image.tag | string | `"v1.20.11"` | image tag |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | priorityClassName | string | `"system-node-critical"` | Custom priority class for different treatment by the scheduler Setting this is not necessary, but it is recommended. [[ref]](https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/) |
 | securityContext | object | See values.yaml | Configure the securityContext for this pod [[ref]](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/) |

@@ -79,7 +79,7 @@ N/A
 | env | object | See values.yaml. | environment variables. [[ref]](https://github.com/HaschekSolutions/pictshare/blob/master/rtfm/CONFIG.md) |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"hascheksolutions/pictshare"` | image repository |
-| image.tag | string | `""` | image tag |
+| image.tag | string | `"72394f17"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence.data | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |

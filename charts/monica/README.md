@@ -82,7 +82,7 @@ N/A
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"monica"` | image repository |
-| image.tag | string | chart.appVersion | image tag |
+| image.tag | string | `"3.7.0-fpm-alpine"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | mariadb | object | See values.yaml | Enable and configure mariadb database subchart under this key.    [[ref]](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
 | nginx.enabled | bool | `true` | Enable the Nginx sidecar.    Disable this if you use an apache image. |

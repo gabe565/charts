@@ -11,7 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  tag: ""
+  tag: 1.0.0
 
 # -- environment variables. [[ref]](https://github.com/akhilrex/podgrab#environment-variables)
 # @default -- See values.yaml

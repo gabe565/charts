@@ -84,7 +84,7 @@ N/A
 | env.DATABASE_URL | string | `""` | Postgresql connection parameters. Will be generated if Postgresql subchart is enabled. [[ref]](https://miniflux.app/docs/configuration.html#database-url) |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"miniflux/miniflux"` | image repository |
-| image.tag | string | chart.appVersion | image tag |
+| image.tag | string | `"2.0.41"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | postgresql | object | Enabled (see values.yaml for more details) | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
 | service.main | object | See values.yaml | Configures service settings for the chart. |

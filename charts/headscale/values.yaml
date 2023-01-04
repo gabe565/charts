@@ -11,7 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  tag: ""
+  tag: 0.17.1
 
 # -- Environment variables. [[ref]](https://github.com/juanfont/headscale/blob/main/config-example.yaml)
 # @default -- See values.yaml
