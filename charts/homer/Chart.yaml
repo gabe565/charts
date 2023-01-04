@@ -5,6 +5,7 @@ home: https://github.com/gabe565/charts/tree/main/charts/homer
 icon: https://raw.githubusercontent.com/bastienwirtz/homer/5418c6291a39d27aeee471673adba742080e1ccb/public/logo.png
 type: application
 version: 0.2.0
+# renovate: image=b4bz/homer
 appVersion: v22.11.2
 kubeVersion: ">=1.22.0-0"
 keywords:

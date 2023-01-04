@@ -6,6 +6,17 @@
   "ignorePresets": [
     ":prHourlyLimit2"
   ],
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "(^|/)Chart\\.yaml$"
+      ],
+      "matchStrings": [
+        "# ?renovate: image=(?<depName>.+)\\nappVersion: [\"']?(?<currentValue>[^\"']+)\n"
+      ],
+      "datasourceTemplate": "docker"
+    }
+  ],
   "commitMessagePrefix": ":arrow_up:",
   "packageRules": [
     {

@@ -4,6 +4,7 @@ description: Star Wars telnet server
 home: https://github.com/gabe565/charts/tree/main/charts/ascii-telnet
 type: application
 version: 0.2.0
+# renovate: image=ghcr.io/gabe565/ascii-telnet-go
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
 keywords:
