@@ -17,6 +17,9 @@
       "datasourceTemplate": "docker"
     }
   ],
+  "github-actions": {
+      "enabled": false
+  },
   "commitMessagePrefix": ":arrow_up:",
   "packageRules": [
     {
