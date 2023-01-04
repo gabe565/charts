@@ -5,6 +5,7 @@ home: https://github.com/gabe565/charts/tree/main/charts/miniflux
 icon: https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg
 type: application
 version: 0.2.0
+# renovate: image=miniflux/miniflux
 appVersion: 2.0.41
 kubeVersion: ">=1.22.0-0"
 keywords:

@@ -4,6 +4,7 @@ description: Transsmute builds RSS feeds for websites that don't provide them.
 home: https://github.com/gabe565/charts/tree/main/charts/transsmute
 type: application
 version: 0.2.0
+# renovate: image=ghcr.io/gabe565/transsmute
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
 keywords:

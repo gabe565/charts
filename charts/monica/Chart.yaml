@@ -5,6 +5,7 @@ home: https://github.com/gabe565/charts/tree/main/charts/monica
 icon: https://raw.githubusercontent.com/monicahq/monica/main/public/img/monica.svg
 type: application
 version: 0.2.0
+# renovate: image=monica
 appVersion: 3.7.0-fpm-alpine
 kubeVersion: ">=1.22.0-0"
 keywords:

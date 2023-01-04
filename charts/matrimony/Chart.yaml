@@ -4,6 +4,7 @@ description: Self-hosted wedding site configured via YAML
 home: https://github.com/gabe565/charts/tree/main/charts/matrimony
 type: application
 version: 0.2.0
+# renovate: image=ghcr.io/gabe565/matrimony
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
 dependencies:
