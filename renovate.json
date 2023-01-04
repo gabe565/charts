@@ -20,20 +20,20 @@
   "github-actions": {
       "enabled": false
   },
-  "commitMessagePrefix": ":arrow_up: ({{{parentDir}}}): ",
+  "commitMessagePrefix": ":arrow_up:",
   "packageRules": [
     {
       "matchUpdateTypes": [
         "lockFileMaintenance",
         "pin"
       ],
-      "commitMessagePrefix": ":pushpin: ({{{parentDir}}}): "
+      "commitMessagePrefix": ":pushpin:"
     },
     {
       "matchUpdateTypes": [
         "rollback"
       ],
-      "commitMessagePrefix": ":arrow_down: ({{{parentDir}}}): "
+      "commitMessagePrefix": ":arrow_down:"
     },
     {
       "matchPackageNames": [
