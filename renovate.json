@@ -46,6 +46,10 @@
         "sbs20/scanservjs"
       ],
       "versioning": "regex:^(?<compatibility>.*)-v?(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "automerge": true
     }
   ]
 }
