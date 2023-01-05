@@ -6,6 +6,11 @@
   "ignorePresets": [
     ":prHourlyLimit2"
   ],
+  "labels": [
+    "dependencies",
+    "{{datasource}}",
+    "{{updateType}}"
+  ],
   "regexManagers": [
     {
       "fileMatch": [
