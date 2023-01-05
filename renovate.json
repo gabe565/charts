@@ -41,6 +41,10 @@
       "commitMessagePrefix": ":arrow_down:"
     },
     {
+      "matchDatasources": ["helm"],
+      "commitMessageTopic": "{{depName}} Helm release"
+    },
+    {
       "matchPackageNames": [
         "sbs20/scanservjs"
       ],
