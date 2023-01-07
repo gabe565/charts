@@ -1,6 +1,6 @@
 # rsshub
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2022-07-29](https://img.shields.io/badge/AppVersion-2022--07--29-informational?style=flat-square)
+![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 2022-07-29](https://img.shields.io/badge/AppVersion-2022--07--29-informational?style=flat-square)
 
 RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.
 
@@ -19,7 +19,7 @@ Kubernetes: `>=1.22.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | https://bjw-s.github.io/helm-charts | common | 1.2.1 |
-| https://charts.bitnami.com/bitnami | redis | 17.3.18 |
+| https://charts.bitnami.com/bitnami | redis | 17.4.1 |
 
 ## TL;DR
 
