@@ -5701,6 +5701,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Bump appVersion to v2.24.0
+    apiVersion: v2
+    appVersion: release-v2.24.0
+    created: "2023-01-07T06:19:57.098341173Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.2.1
+    description: scanservjs is a web UI frontend for your scanner. It allows you to
+      share one or more scanners (using SANE) on a network without the need for drivers
+      or complicated installation.
+    digest: 81f8682a4f223ed629d42f0520e79ee690aab6e30aa9e745dcc59bdc4977a7d2
+    home: https://github.com/gabe565/charts/tree/main/charts/scanservjs
+    keywords:
+    - scanservjs
+    - scanner
+    - sane
+    kubeVersion: '>=1.22.0-0'
+    name: scanservjs
+    sources:
+    - https://github.com/sbs20/scanservjs
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/scanservjs-0.2.1/scanservjs-0.2.1.tgz
+    version: 0.2.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bump common subchart to v1.2.1
     apiVersion: v2
     appVersion: release-v2.21.0
@@ -6486,4 +6514,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-03T20:09:28.091477156Z"
+generated: "2023-01-07T06:19:57.662726109Z"
