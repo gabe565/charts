@@ -1,6 +1,6 @@
 # scanservjs
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: release-v2.21.0](https://img.shields.io/badge/AppVersion-release--v2.21.0-informational?style=flat-square)
+![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: release-v2.24.0](https://img.shields.io/badge/AppVersion-release--v2.24.0-informational?style=flat-square)
 
 scanservjs is a web UI frontend for your scanner. It allows you to share one or more scanners (using SANE) on a network without the need for drivers or complicated installation.
 
@@ -79,7 +79,7 @@ N/A
 | env | object | See values.yaml | environment variables. [[ref]](https://github.com/sbs20/scanservjs/blob/master/docs/docker.md#environment-variables) |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"sbs20/scanservjs"` | image repository |
-| image.tag | string | `"release-v2.21.0"` | image tag |
+| image.tag | string | `"release-v2.24.0"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See values.yaml | Configures service settings for the chart. |
