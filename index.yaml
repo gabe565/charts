@@ -5247,6 +5247,33 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Use ghcr.io package repo
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-01-10T06:33:42.036556103Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.2.1
+    description: The RSS feed for websites missing it.
+    digest: 48a6ca30b79a00029c44ee53f354ce56fda4bbddfa405d7929c9f33937d63946
+    home: https://github.com/gabe565/charts/tree/main/charts/rss-bridge
+    icon: https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png
+    keywords:
+    - rss-bridge
+    - rss
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: rss-bridge
+    sources:
+    - https://github.com/RSS-Bridge/rss-bridge
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rss-bridge-0.2.1/rss-bridge-0.2.1.tgz
+    version: 0.2.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bump common subchart to v1.2.1
     apiVersion: v2
     appVersion: latest
@@ -6610,4 +6637,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-10T05:55:39.675887586Z"
+generated: "2023-01-10T06:33:42.955777903Z"
