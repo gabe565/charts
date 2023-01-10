@@ -4,8 +4,8 @@ description: The RSS feed for websites missing it.
 home: https://github.com/gabe565/charts/tree/main/charts/rss-bridge
 icon: https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png
 type: application
-version: 0.2.0
-# renovate image=rssbridge/rss-bridge
+version: 0.2.1
+# renovate image=ghcr.io/rss-bridge/rss-bridge
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
 keywords:
@@ -21,4 +21,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump common subchart to v1.2.1
+      description: Use ghcr.io package repo

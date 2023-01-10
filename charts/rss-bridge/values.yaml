@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: rssbridge/rss-bridge
+  repository: ghcr.io/rss-bridge/rss-bridge
   # -- image pull policy
   pullPolicy: Always
   # -- image tag
