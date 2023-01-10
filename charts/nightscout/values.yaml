@@ -45,6 +45,7 @@ ingress:
 # @default -- See values.yaml
 mongodb:
   enabled: false
+  useStatefulSet: true
   auth:
     rootPassword: changeme
     databases:
