@@ -5,9 +5,7 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": [
-        "(^|/)Chart\\.yaml$"
-      ],
+      "fileMatch": ["(^|/)Chart\\.yaml$"],
       "matchStrings": [
         "# ?renovate image=(?<depName>.+)\\nappVersion: [\"']?(?<currentValue>[^\"']+)\n"
       ],
@@ -20,9 +18,7 @@
       "commitMessageTopic": "{{depName}} Helm release"
     },
     {
-      "matchPackageNames": [
-        "sbs20/scanservjs"
-      ],
+      "matchPackageNames": ["sbs20/scanservjs"],
       "versioning": "regex:^(?<compatibility>.*)-v?(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
     },
     {
