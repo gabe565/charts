@@ -5,7 +5,7 @@ home: https://github.com/gabe565/charts/tree/main/charts/changedetection-io
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/changedetection-io/icon.png
 type: application
 version: 0.3.0
-# renovate: image=ghcr.io/dgtlmoon/changedetection.io
+# renovate image=ghcr.io/dgtlmoon/changedetection.io
 appVersion: 0.40.0.4
 kubeVersion: ">=1.22.0-0"
 keywords:

@@ -4,7 +4,7 @@ description: Manage hardware resource allocation without a need for privileged c
 home: https://github.com/gabe565/charts/tree/main/charts/smarter-device-manager
 icon: https://gitlab.com/uploads/-/system/group/avatar/6339043/ARM1636_Project_Logo_ST2_RGB_V1.png
 version: 0.2.0
-# renovate: image=registry.gitlab.com/arm-research/smarter/smarter-device-manager
+# renovate image=registry.gitlab.com/arm-research/smarter/smarter-device-manager
 appVersion: v1.20.11
 kubeVersion: ">=1.22.0-0"
 keywords:

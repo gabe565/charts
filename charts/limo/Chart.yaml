@@ -4,7 +4,7 @@ description: A file upload server.
 home: https://github.com/gabe565/charts/tree/main/charts/limo
 type: application
 version: 0.2.0
-# renovate: image=ghcr.io/gabe565/limo
+# renovate image=ghcr.io/gabe565/limo
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
 dependencies:

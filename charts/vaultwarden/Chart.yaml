@@ -5,7 +5,7 @@ home: https://github.com/gabe565/charts/tree/main/charts/vaultwarden
 icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/7cb19ef767142b773ab44a457940844589432a74/src/static/images/vaultwarden-icon.png
 type: application
 version: 0.2.0
-# renovate: image=vaultwarden/server
+# renovate image=vaultwarden/server
 appVersion: 1.27.0-alpine
 kubeVersion: ">=1.22.0-0"
 keywords:

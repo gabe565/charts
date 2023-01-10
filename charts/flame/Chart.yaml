@@ -5,7 +5,7 @@ home: https://github.com/gabe565/charts/tree/main/charts/flame
 icon: https://raw.githubusercontent.com/pawelmalak/flame/4ed29fe276b4282c67415f9788660df2a3a69b5c/client/public/icons/apple-touch-icon-180x180.png
 type: application
 version: 0.2.0
-# renovate: image=pawelmalak/flame
+# renovate image=pawelmalak/flame
 appVersion: multiarch2.3.0
 kubeVersion: ">=1.22.0-0"
 keywords:

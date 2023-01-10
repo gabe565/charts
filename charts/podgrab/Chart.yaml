@@ -4,7 +4,7 @@ description: A self-hosted podcast manager to download episodes as soon as they 
 home: https://github.com/gabe565/charts/tree/main/charts/podgrab
 type: application
 version: 0.2.0
-# renovate: image=ghcr.io/akhilrex/podgrab
+# renovate image=ghcr.io/akhilrex/podgrab
 appVersion: 1.0.0
 kubeVersion: ">=1.22.0-0"
 keywords:

@@ -4,7 +4,7 @@ description: Application for managing recipes, planning meals, building shopping
 home: https://github.com/gabe565/charts/tree/main/charts/tandoor
 icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
 version: 0.2.0
-# renovate: image=vabene1111/recipes
+# renovate image=vabene1111/recipes
 appVersion: 1.4.5
 kubeVersion: ">=1.22.0-0"
 keywords:
