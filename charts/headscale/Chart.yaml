@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c
 type: application
 version: 0.3.0
 # renovate image=headscale/headscale
-appVersion: 0.17.1
+appVersion: 0.18.0
 kubeVersion: ">=1.22.0-0"
 keywords:
   - headscale
