@@ -4,9 +4,9 @@ description: An open source, self-hosted implementation of the Tailscale control
 home: https://github.com/gabe565/charts/tree/main/charts/headscale
 icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
 type: application
-version: 0.3.0
+version: 0.4.0
 # renovate image=headscale/headscale
-appVersion: 0.17.1
+appVersion: 0.18.0
 kubeVersion: ">=1.22.0-0"
 keywords:
   - headscale
@@ -26,6 +26,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump common subchart to v1.2.1
-    - kind: changed
-      description: Bump postgresql subchart to v11.9.13
+      description: Bump appVersion to v0.18.0
