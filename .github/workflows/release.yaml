@@ -6,7 +6,8 @@ on:
       - main
 
 jobs:
-  release:
+  release-charts:
+    name: Release Charts
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -32,3 +33,29 @@ jobs:
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           CR_SKIP_EXISTING: "true"
+
+  deploy-markdown:
+    name: Deploy Markdown
+    needs: [release-charts]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Publish markdown
+        run: |-
+          rsync -av \
+            --prune-empty-dirs \
+            --include='*/' \
+            --include='*.md' \
+            --include=.gitignore \
+            --exclude='*' \
+            . docs
+
+      - name: Deploy markdown
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: docs
+          clean-exclude: |
+            artifacthub-repo.yml
+            index.yaml
