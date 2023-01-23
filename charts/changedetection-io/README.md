@@ -1,6 +1,6 @@
 # changedetection-io
 
-![Version: 0.3.1](https://img.shields.io/badge/Version-0.3.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.40.1.0](https://img.shields.io/badge/AppVersion-0.40.1.0-informational?style=flat-square)
+![Version: 0.3.2](https://img.shields.io/badge/Version-0.3.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.40.1.1](https://img.shields.io/badge/AppVersion-0.40.1.1-informational?style=flat-square)
 
 Live your data-life pro-actively, track website content changes and receive notifications via Discord, Email, Slack, Telegram and 70+ more.
 
@@ -84,7 +84,7 @@ N/A
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/dgtlmoon/changedetection.io"` | image repository |
-| image.tag | string | `"0.40.1.0"` | image tag |
+| image.tag | string | `"0.40.1.1"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence.data | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service.main | object | See values.yaml | Configures service settings for the chart. |
