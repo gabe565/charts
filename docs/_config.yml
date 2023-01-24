@@ -4,3 +4,5 @@ header_pages:
   - README.md
 titles_from_headings:
   strip_title: true
+minima:
+  skin: auto
