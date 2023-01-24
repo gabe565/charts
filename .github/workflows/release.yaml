@@ -52,6 +52,16 @@ jobs:
             --exclude='*' \
             . docs
 
+      - name: Replace yaml paths
+        run: |
+          set -x
+          shopt -s globstar
+
+          cd docs
+          for f in **/*.md; do
+            sed -i "s|(\./\(.*\.yaml\))|(${{ github.server_url }}/${{ github.repository }}/blob/main/$(dirname "$f")/\1)|g" "$f"
+          done
+
       - name: Deploy markdown
         uses: JamesIves/github-pages-deploy-action@v4
         with:
