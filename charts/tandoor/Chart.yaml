@@ -3,6 +3,7 @@ name: tandoor
 description: Application for managing recipes, planning meals, building shopping lists and much much more!
 home: https://github.com/gabe565/charts/tree/main/charts/tandoor
 icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
+type: application
 version: 0.2.0
 # renovate image=vabene1111/recipes
 appVersion: 1.4.5
