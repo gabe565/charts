@@ -1,6 +1,6 @@
 title: Helm Charts
 
-theme: minima
+remote_theme: jekyll/minima
 
 header_pages:
   - README.md
