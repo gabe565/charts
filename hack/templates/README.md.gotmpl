@@ -99,7 +99,9 @@ helm install {{ template "chart.name" . }} {{ template "custom.helm.path" . }} -
 
 {{ template "chart.header" . }}
 
-{{ template "chart.versionBadge" . }}{{ template "chart.typeBadge" . }}{{ template "chart.appVersionBadge" . }}
+{{ template "chart.versionBadge" . }}
+{{ template "chart.typeBadge" . }}
+{{ template "chart.appVersionBadge" . }}
 
 {{ template "chart.description" . }}
 

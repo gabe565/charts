@@ -1,6 +1,8 @@
 # pictshare
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 72394f17](https://img.shields.io/badge/AppVersion-72394f17-informational?style=flat-square)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square)
+![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![AppVersion: 72394f17](https://img.shields.io/badge/AppVersion-72394f17-informational?style=flat-square)
 
 PictShare is an open source image, mp4, pastebin hosting service with a simple resizing and upload API that you can host yourself.
 

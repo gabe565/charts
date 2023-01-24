@@ -1,6 +1,8 @@
 # smarter-device-manager
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![AppVersion: v1.20.11](https://img.shields.io/badge/AppVersion-v1.20.11-informational?style=flat-square)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square)
+
+![AppVersion: v1.20.11](https://img.shields.io/badge/AppVersion-v1.20.11-informational?style=flat-square)
 
 Manage hardware resource allocation without a need for privileged containers.
 
