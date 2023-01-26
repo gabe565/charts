@@ -98,6 +98,7 @@ helm install {{ template "chart.name" . }} {{ template "custom.helm.path" . }} -
 {{- end -}}
 
 {{ template "chart.header" . }}
+{{ template "custom.chart.icon" . -}}
 
 {{ template "chart.versionBadge" . }}
 {{ template "chart.typeBadge" . }}

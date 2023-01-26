@@ -1,5 +1,7 @@
 # flame
 
+<img src="https://raw.githubusercontent.com/pawelmalak/flame/4ed29fe276b4282c67415f9788660df2a3a69b5c/client/public/icons/apple-touch-icon-180x180.png" align="right" width="92" height="92" alt="flame logo" style="padding-left: 20px">
+
 ![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 ![AppVersion: multiarch2.3.0](https://img.shields.io/badge/AppVersion-multiarch2.3.0-informational?style=flat-square)

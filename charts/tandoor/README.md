@@ -1,5 +1,7 @@
 # tandoor
 
+<img src="https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg" align="right" width="92" height="92" alt="tandoor logo" style="padding-left: 20px">
+
 ![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 ![AppVersion: 1.4.5](https://img.shields.io/badge/AppVersion-1.4.5-informational?style=flat-square)

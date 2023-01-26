@@ -1,5 +1,7 @@
 # bookstack
 
+<img src="https://media.githubusercontent.com/media/BookStackApp/website/main/static/images/logo.png" align="right" width="92" height="92" alt="bookstack logo" style="padding-left: 20px">
+
 ![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 ![AppVersion: version-v22.11.1](https://img.shields.io/badge/AppVersion-version--v22.11.1-informational?style=flat-square)

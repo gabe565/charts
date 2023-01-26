@@ -10,13 +10,20 @@ command -v helm-docs >/dev/null 2>&1 || {
   exit 1
 }
 
+# require yq
+command -v yq >/dev/null 2>&1 || {
+  echo >&2 'yq (https://github.com/mikefarah/yq) is not installed. Aborting.'
+  exit 1
+}
+
 # Absolute path of repository
 repository="$(git rev-parse --show-toplevel)"
 charts_folder="$repository/charts"
 
 # Templates to copy into each chart directory
-readme_template="$repository/hack/templates/README.md.gotmpl"
-readme_config_template="$repository/hack/templates/README_CONFIG.md.gotmpl"
+template_dir="$repository/hack/templates"
+readme_config_template="$template_dir/README_CONFIG.md.gotmpl"
+icon_template=$(<"$template_dir/icon.gotmpl")
 
 # Gather all charts using the common library, excluding common-test
 charts="$(find "$charts_folder" -name Chart.yaml)"
@@ -33,15 +40,19 @@ else
   root="$charts_folder"
 fi
 
-for chart in $charts; do
+for chart in $charts; do (
   chart_directory="$(dirname "$chart")"
-  echo "-] Copying templates to $chart_directory"
+  icon="$(yq eval '.icon // ""' "$chart" 2>/dev/null)"
+
   # Copy CONFIG template to each Chart directory, do not overwrite if exists
   cp -n "$readme_config_template" "$chart_directory" || true
-done
 
-# Run helm-docs for charts using the common library and the common library itself
-helm-docs \
-  --template-files="$readme_template" \
-  --template-files="$(basename "$readme_config_template")" \
-  --chart-search-root="$root"
+  # Run helm-docs for charts
+  helm-docs \
+    --log-level=warning \
+    --template-files="$template_dir/README.md.gotmpl" \
+    --template-files=<(echo "${icon_template/\$ICON/$icon}") \
+    --template-files="$(basename "$readme_config_template")" \
+    --chart-search-root="$root" \
+    --chart-to-generate="$chart_directory"
+) done

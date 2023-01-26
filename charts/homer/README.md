@@ -1,5 +1,7 @@
 # homer
 
+<img src="https://raw.githubusercontent.com/bastienwirtz/homer/5418c6291a39d27aeee471673adba742080e1ccb/public/logo.png" align="right" width="92" height="92" alt="homer logo" style="padding-left: 20px">
+
 ![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 ![AppVersion: v22.11.2](https://img.shields.io/badge/AppVersion-v22.11.2-informational?style=flat-square)

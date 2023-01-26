@@ -1,5 +1,7 @@
 # headscale
 
+<img src="https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png" align="right" width="92" height="92" alt="headscale logo" style="padding-left: 20px">
+
 ![Version: 0.4.1](https://img.shields.io/badge/Version-0.4.1-informational?style=flat-square)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 ![AppVersion: 0.18.0](https://img.shields.io/badge/AppVersion-0.18.0-informational?style=flat-square)
