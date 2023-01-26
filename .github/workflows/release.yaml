@@ -28,6 +28,13 @@ jobs:
         run: |
           helm repo add bjw-s https://bjw-s.github.io/helm-charts
 
+      - name: Remove readme images
+        run: |
+          set -x
+          for f in charts/**/README.md; do
+            sed -i '/^<img .* alt=".* logo"/,+1d' "$f"
+          done
+
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.5.0
         env:
