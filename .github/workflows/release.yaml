@@ -59,6 +59,9 @@ jobs:
 
           cd docs
           for f in **/*.md; do
+            # Remove homepage line
+            sed -i 's/^\*\*Homepage:\*\*/,+1d' "$f"
+            # Fix relative yaml links
             sed -i "s|(\./\(.*\.yaml\))|(${{ github.server_url }}/${{ github.repository }}/blob/main/$(dirname "$f")/\1)|g" "$f"
           done
 
