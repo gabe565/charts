@@ -259,6 +259,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Replace png icon with svg
+    apiVersion: v2
+    appVersion: version-v22.11.1
+    created: "2023-01-26T08:57:48.239960271Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.2.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.4.2
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
+    digest: 98822fe3e048f8be18ac5818dd6f15d5ed89472df026b97bd7f8685642d14c94
+    home: https://charts.gabe565.com/charts/bookstack
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg
+    keywords:
+    - bookstack
+    - wiki
+    - documentation
+    kubeVersion: '>=1.22.0-0'
+    name: bookstack
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/bookstack
+    - https://bookstackapp.com
+    - https://github.com/BookStackApp/BookStack
+    - https://ghcr.io/linuxserver/bookstack
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/bookstack-0.2.2/bookstack-0.2.2.tgz
+    version: 0.2.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update homepage to charts.gabe565.com and add to readme
         - kind: added
           description: Add GitHub repo to sources
@@ -7377,6 +7412,42 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Replace png icon with svg
+    apiVersion: v2
+    appVersion: 1.27.0-alpine
+    created: "2023-01-26T08:57:48.43326449Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.2.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.4.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.9.13
+    description: Unofficial Bitwarden compatible server written in Rust.
+    digest: 0b2306be98f734636f9a122b0a22454a1bf9eff6b1da1eadbde8b9befd7354a5
+    home: https://charts.gabe565.com/charts/vaultwarden
+    icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b69952db6eb12987a9668fea6b72df79cfa41/resources/vaultwarden-icon.svg
+    keywords:
+    - vaultwarden
+    - bitwarden
+    - bitwarden_rs
+    kubeVersion: '>=1.22.0-0'
+    name: vaultwarden
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/vaultwarden
+    - https://github.com/dani-garcia/vaultwarden
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/vaultwarden-0.2.2/vaultwarden-0.2.2.tgz
+    version: 0.2.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update homepage to charts.gabe565.com and add to readme
         - kind: added
           description: Add GitHub repo to sources
@@ -7590,4 +7661,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-26T04:01:59.347576359Z"
+generated: "2023-01-26T08:57:48.433848993Z"
