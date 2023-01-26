@@ -1,8 +1,8 @@
 # vaultwarden
 
-<img src="https://raw.githubusercontent.com/dani-garcia/vaultwarden/7cb19ef767142b773ab44a457940844589432a74/src/static/images/vaultwarden-icon.png" align="right" width="92" height="92" alt="vaultwarden logo" style="padding-left: 20px">
+<img src="https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b69952db6eb12987a9668fea6b72df79cfa41/resources/vaultwarden-icon.svg" align="right" width="92" height="92" alt="vaultwarden logo" style="padding-left: 20px">
 
-![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square)
+![Version: 0.2.2](https://img.shields.io/badge/Version-0.2.2-informational?style=flat-square)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 ![AppVersion: 1.27.0-alpine](https://img.shields.io/badge/AppVersion-1.27.0--alpine-informational?style=flat-square)
 
