@@ -1,7 +1,7 @@
 apiVersion: v2
 name: bookstack
 description: A simple, self-hosted, easy-to-use platform for organising and storing information.
-home: https://github.com/gabe565/charts/tree/main/charts/bookstack
+home: https://charts.gabe565.com/charts/bookstack
 icon: https://media.githubusercontent.com/media/BookStackApp/website/main/static/images/logo.png
 type: application
 version: 0.2.0
@@ -27,6 +27,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump common subchart to v1.2.1
-    - kind: changed
-      description: Bump mariadb subchart to v11.4.2
+      description: Update homepage to charts.gabe565.com and add to readme

@@ -1,7 +1,7 @@
 apiVersion: v2
 name: matrimony
 description: Self-hosted wedding site configured via YAML
-home: https://github.com/gabe565/charts/tree/main/charts/matrimony
+home: https://charts.gabe565.com/charts/matrimony
 type: application
 version: 0.2.0
 # renovate image=ghcr.io/gabe565/matrimony
@@ -16,4 +16,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump common subchart to v1.2.1
+      description: Update homepage to charts.gabe565.com and add to readme

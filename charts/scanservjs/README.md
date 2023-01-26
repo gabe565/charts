@@ -6,6 +6,8 @@
 
 scanservjs is a web UI frontend for your scanner. It allows you to share one or more scanners (using SANE) on a network without the need for drivers or complicated installation.
 
+**Homepage:** <https://charts.gabe565.com/charts/scanservjs>
+
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new)**
 
 ## Source Code

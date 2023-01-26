@@ -6,6 +6,8 @@
 
 The RSS feed for websites missing it.
 
+**Homepage:** <https://charts.gabe565.com/charts/rss-bridge>
+
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new)**
 
 ## Source Code

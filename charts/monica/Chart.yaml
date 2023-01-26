@@ -1,7 +1,7 @@
 apiVersion: v2
 name: monica
 description: Personal CRM. Remember everything about your friends, family and business relationships.
-home: https://github.com/gabe565/charts/tree/main/charts/monica
+home: https://charts.gabe565.com/charts/monica
 icon: https://raw.githubusercontent.com/monicahq/monica/main/public/img/monica.svg
 type: application
 version: 0.2.0
@@ -23,6 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump common subchart to v1.2.1
-    - kind: changed
-      description: Bump mariadb subchart to v11.4.2
+      description: Update homepage to charts.gabe565.com and add to readme

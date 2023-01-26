@@ -6,6 +6,8 @@
 
 Mnemonic Ninja is a website to convert between a number and its corresponding word to aid in memorization.
 
+**Homepage:** <https://charts.gabe565.com/charts/mnemonic-ninja>
+
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new)**
 
 ## Source Code

@@ -6,6 +6,8 @@
 
 Transsmute builds RSS feeds for websites that don't provide them.
 
+**Homepage:** <https://charts.gabe565.com/charts/transsmute>
+
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new)**
 
 ## Source Code

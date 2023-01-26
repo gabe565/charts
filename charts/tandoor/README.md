@@ -6,6 +6,8 @@
 
 Application for managing recipes, planning meals, building shopping lists and much much more!
 
+**Homepage:** <https://charts.gabe565.com/charts/tandoor>
+
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new)**
 
 ## Source Code

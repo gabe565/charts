@@ -1,7 +1,7 @@
 apiVersion: v2
 name: tandoor
 description: Application for managing recipes, planning meals, building shopping lists and much much more!
-home: https://github.com/gabe565/charts/tree/main/charts/tandoor
+home: https://charts.gabe565.com/charts/tandoor
 icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
 type: application
 version: 0.2.0
@@ -28,6 +28,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump common subchart to v1.2.1
-    - kind: changed
-      description: Bump postgresql subchart to v11.9.13
+      description: Update homepage to charts.gabe565.com and add to readme

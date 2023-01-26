@@ -1,7 +1,7 @@
 apiVersion: v2
 name: borgmatic
 description: borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services.
-home: https://github.com/gabe565/charts/tree/main/charts/borgmatic
+home: https://charts.gabe565.com/charts/borgmatic
 icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
 type: application
 version: 0.5.2
@@ -22,4 +22,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Simplify CronJob deployment instructions
+      description: Update homepage to charts.gabe565.com and add to readme

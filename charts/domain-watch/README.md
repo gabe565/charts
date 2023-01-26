@@ -6,6 +6,8 @@
 
 Tool to watch whois reports and notify when statuses change or expiration is incoming.
 
+**Homepage:** <https://charts.gabe565.com/charts/domain-watch>
+
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new)**
 
 ## Source Code

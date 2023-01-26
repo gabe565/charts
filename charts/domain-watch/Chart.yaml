@@ -1,7 +1,7 @@
 apiVersion: v2
 name: domain-watch
 description: Tool to watch whois reports and notify when statuses change or expiration is incoming.
-home: https://github.com/gabe565/charts/tree/main/charts/domain-watch
+home: https://charts.gabe565.com/charts/domain-watch
 type: application
 version: 0.2.0
 # renovate image=ghcr.io/gabe565/domain-watch
@@ -20,4 +20,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump common subchart to v1.2.1
+      description: Update homepage to charts.gabe565.com and add to readme

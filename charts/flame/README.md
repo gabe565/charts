@@ -6,6 +6,8 @@
 
 Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors.
 
+**Homepage:** <https://charts.gabe565.com/charts/flame>
+
 **This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new)**
 
 ## Source Code

@@ -1,7 +1,7 @@
 apiVersion: v2
 name: vaultwarden
 description: Unofficial Bitwarden compatible server written in Rust.
-home: https://github.com/gabe565/charts/tree/main/charts/vaultwarden
+home: https://charts.gabe565.com/charts/vaultwarden
 icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/7cb19ef767142b773ab44a457940844589432a74/src/static/images/vaultwarden-icon.png
 type: application
 version: 0.2.0
@@ -29,8 +29,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump common subchart to v1.2.1
-    - kind: changed
-      description: Bump mariadb subchart to v11.4.2
-    - kind: changed
-      description: Bump postgresql subchart to v11.9.13
+      description: Update homepage to charts.gabe565.com and add to readme
