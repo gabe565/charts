@@ -12,6 +12,7 @@ PictShare is an open source image, mp4, pastebin hosting service with a simple r
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/pictshare>
 * <https://github.com/HaschekSolutions/pictshare>
 
 ## Requirements

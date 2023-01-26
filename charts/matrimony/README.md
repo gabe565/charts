@@ -12,6 +12,7 @@ Self-hosted wedding site configured via YAML
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/matrimony>
 * <https://github.com/gabe565/matrimony>
 
 ## Requirements

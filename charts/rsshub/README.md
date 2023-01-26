@@ -12,6 +12,7 @@ RSSHub is an open source, easy to use, and extensible RSS feed generator. It's c
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/rsshub>
 * <https://github.com/DIYgod/RSSHub>
 
 ## Requirements

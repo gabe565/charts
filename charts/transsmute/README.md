@@ -12,6 +12,7 @@ Transsmute builds RSS feeds for websites that don't provide them.
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/transsmute>
 * <https://github.com/gabe565/transsmute>
 
 ## Requirements

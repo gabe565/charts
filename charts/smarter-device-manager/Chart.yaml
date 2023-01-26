@@ -15,6 +15,7 @@ keywords:
   - device
   - usb
 sources:
+  - https://github.com/gabe565/charts/tree/main/charts/smarter-device-manager
   - https://gitlab.com/arm-research/smarter/smarter-device-manager
 dependencies:
   - name: common
@@ -24,3 +25,5 @@ annotations:
   artifacthub.io/changes: |
     - kind: changed
       description: Update homepage to charts.gabe565.com and add to readme
+    - kind: added
+      description: Add GitHub repo to sources

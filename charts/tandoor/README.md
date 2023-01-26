@@ -12,6 +12,7 @@ Application for managing recipes, planning meals, building shopping lists and mu
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/tandoor>
 * <https://docs.tandoor.dev/>
 * <https://github.com/TandoorRecipes/recipes>
 * <https://hub.docker.com/r/vabene1111/recipes>

@@ -21,8 +21,11 @@ dependencies:
     version: 13.6.2
     repository: https://charts.bitnami.com/bitnami
 sources:
+  - https://github.com/gabe565/charts/tree/main/charts/nightscout
   - https://github.com/nightscout/cgm-remote-monitor
 annotations:
   artifacthub.io/changes: |
     - kind: changed
       description: Update homepage to charts.gabe565.com and add to readme
+    - kind: added
+      description: Add GitHub repo to sources

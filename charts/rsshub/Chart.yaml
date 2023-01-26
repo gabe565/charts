@@ -21,8 +21,11 @@ dependencies:
     version: 17.4.1
     condition: redis.enabled
 sources:
+  - https://github.com/gabe565/charts/tree/main/charts/rsshub
   - https://github.com/DIYgod/RSSHub
 annotations:
   artifacthub.io/changes: |
     - kind: changed
       description: Update homepage to charts.gabe565.com and add to readme
+    - kind: added
+      description: Add GitHub repo to sources

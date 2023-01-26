@@ -12,6 +12,7 @@ Personal CRM. Remember everything about your friends, family and business relati
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/monica>
 * <https://github.com/monicahq/monica>
 
 ## Requirements

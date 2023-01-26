@@ -12,6 +12,7 @@ scanservjs is a web UI frontend for your scanner. It allows you to share one or 
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/scanservjs>
 * <https://github.com/sbs20/scanservjs>
 
 ## Requirements

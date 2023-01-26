@@ -12,6 +12,7 @@ Star Wars telnet server
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/ascii-telnet>
 * <https://github.com/gabe565/ascii-telnet-go>
 * <https://github.com/gabe565/ascii-telnet-rust>
 

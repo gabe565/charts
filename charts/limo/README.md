@@ -12,6 +12,7 @@ A file upload server.
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/limo>
 * <https://github.com/gabe565/limo>
 
 ## Requirements

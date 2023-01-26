@@ -12,6 +12,7 @@ Live your data-life pro-actively, track website content changes and receive noti
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/changedetection-io>
 * <https://github.com/dgtlmoon/changedetection.io>
 
 ## Requirements

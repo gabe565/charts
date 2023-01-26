@@ -12,6 +12,7 @@ Miniflux is a minimalist and opinionated feed reader.
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/miniflux>
 * <https://github.com/miniflux/v2>
 
 ## Requirements

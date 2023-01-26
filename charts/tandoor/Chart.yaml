@@ -22,6 +22,7 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 sources:
+  - https://github.com/gabe565/charts/tree/main/charts/tandoor
   - https://docs.tandoor.dev/
   - https://github.com/TandoorRecipes/recipes
   - https://hub.docker.com/r/vabene1111/recipes
@@ -29,3 +30,5 @@ annotations:
   artifacthub.io/changes: |
     - kind: changed
       description: Update homepage to charts.gabe565.com and add to readme
+    - kind: added
+      description: Add GitHub repo to sources

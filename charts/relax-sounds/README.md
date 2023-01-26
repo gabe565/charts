@@ -12,6 +12,7 @@ Relax Sounds is a website that lets you stream relaxing sounds to your browser o
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/relax-sounds>
 * <https://github.com/gabe565/relax-sounds>
 
 ## Requirements

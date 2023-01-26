@@ -12,6 +12,7 @@ Manage hardware resource allocation without a need for privileged containers.
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/smarter-device-manager>
 * <https://gitlab.com/arm-research/smarter/smarter-device-manager>
 
 ## Requirements

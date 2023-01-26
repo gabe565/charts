@@ -13,6 +13,7 @@ keywords:
   - bitwarden
   - bitwarden_rs
 sources:
+  - https://github.com/gabe565/charts/tree/main/charts/vaultwarden
   - https://github.com/dani-garcia/vaultwarden
 dependencies:
   - name: common
@@ -30,3 +31,5 @@ annotations:
   artifacthub.io/changes: |
     - kind: changed
       description: Update homepage to charts.gabe565.com and add to readme
+    - kind: added
+      description: Add GitHub repo to sources

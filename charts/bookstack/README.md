@@ -12,6 +12,7 @@ A simple, self-hosted, easy-to-use platform for organising and storing informati
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/bookstack>
 * <https://bookstackapp.com>
 * <https://github.com/BookStackApp/BookStack>
 * <https://ghcr.io/linuxserver/bookstack>

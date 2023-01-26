@@ -18,8 +18,11 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 1.2.1
 sources:
+  - https://github.com/gabe565/charts/tree/main/charts/hammond
   - https://github.com/akhilrex/hammond
 annotations:
   artifacthub.io/changes: |
     - kind: changed
       description: Update homepage to charts.gabe565.com and add to readme
+    - kind: added
+      description: Add GitHub repo to sources

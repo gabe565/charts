@@ -17,9 +17,12 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 1.2.1
 sources:
+  - https://github.com/gabe565/charts/tree/main/charts/borgmatic
   - https://projects.torsion.org/borgmatic-collective/borgmatic
   - https://github.com/borgmatic-collective/docker-borgmatic
 annotations:
   artifacthub.io/changes: |
     - kind: changed
       description: Update homepage to charts.gabe565.com and add to readme
+    - kind: added
+      description: Add GitHub repo to sources

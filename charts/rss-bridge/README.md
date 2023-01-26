@@ -12,6 +12,7 @@ The RSS feed for websites missing it.
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/rss-bridge>
 * <https://github.com/RSS-Bridge/rss-bridge>
 
 ## Requirements

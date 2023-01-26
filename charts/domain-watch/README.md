@@ -12,6 +12,7 @@ Tool to watch whois reports and notify when statuses change or expiration is inc
 
 ## Source Code
 
+* <https://github.com/gabe565/charts/tree/main/charts/domain-watch>
 * <https://github.com/gabe565/domain-watch>
 
 ## Requirements
