@@ -1,6 +1,6 @@
 # smarter-device-manager
 
-<img src="https://gitlab.com/uploads/-/system/group/avatar/6339043/ARM1636_Project_Logo_ST2_RGB_V1.png" align="right" width="92" height="92" alt="smarter-device-manager logo" style="padding-left: 20px">
+<img src="https://gitlab.com/uploads/-/system/group/avatar/6339043/ARM1636_Project_Logo_ST2_RGB_V1.png" align="right" width="92" alt="smarter-device-manager logo" style="padding-left: 20px">
 
 ![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)

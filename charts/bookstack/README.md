@@ -1,6 +1,6 @@
 # bookstack
 
-<img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg" align="right" width="92" height="92" alt="bookstack logo" style="padding-left: 20px">
+<img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg" align="right" width="92" alt="bookstack logo" style="padding-left: 20px">
 
 ![Version: 0.2.2](https://img.shields.io/badge/Version-0.2.2-informational?style=flat-square)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
