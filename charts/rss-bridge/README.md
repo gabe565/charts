@@ -2,9 +2,9 @@
 
 <img src="https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png" align="right" width="92" alt="rss-bridge logo" style="padding-left: 20px">
 
-![Version: 0.2.2](https://img.shields.io/badge/Version-0.2.2-informational?style=flat-square)
-![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
-![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat-square)
+![Version: 0.2.2](https://img.shields.io/badge/Version-0.2.2-informational?style=flat)
+![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
+![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
 The RSS feed for websites missing it.
 

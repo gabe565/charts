@@ -53,6 +53,7 @@ for chart in $charts; do (
     --template-files="$template_dir/README.md.gotmpl" \
     --template-files=<(echo "${icon_template/\$ICON/$icon}") \
     --template-files="$(basename "$readme_config_template")" \
+    --badge-style=flat \
     --chart-search-root="$root" \
     --chart-to-generate="$chart_directory"
 ) done

@@ -2,9 +2,9 @@
 
 <img src="https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg" align="right" width="92" alt="borgmatic logo" style="padding-left: 20px">
 
-![Version: 0.5.3](https://img.shields.io/badge/Version-0.5.3-informational?style=flat-square)
-![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
-![AppVersion: 1.7.5](https://img.shields.io/badge/AppVersion-1.7.5-informational?style=flat-square)
+![Version: 0.5.3](https://img.shields.io/badge/Version-0.5.3-informational?style=flat)
+![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
+![AppVersion: 1.7.5](https://img.shields.io/badge/AppVersion-1.7.5-informational?style=flat)
 
 borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services.
 
