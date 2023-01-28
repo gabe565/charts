@@ -1,0 +1,11 @@
+docs:
+  - title: Overview
+    children:
+      - title: Home
+        url: /
+      - title: Source Code
+        url: https://github.com/gabe565/charts
+      - title: ArtifactHub
+        url: https://artifacthub.io/packages/search?repo=gabe565&sort=relevance
+  - title: Charts
+    children: []

@@ -72,6 +72,13 @@ jobs:
             sed -i "s|(\./\(.*\.yaml\))|(${{ github.server_url }}/${{ github.repository }}/blob/main/$(dirname "$f")/\1)|g" "$f"
           done
 
+      - name: Add charts to sidebar
+        run: |
+          export CHARTS="$(find charts -name README.md -exec sh -c 'basename "$(dirname "{}")"' \; | sort -h)"
+          yq -i \
+            '(.docs[] | select(.title == "Charts") | .children) = [(strenv(CHARTS) | split("\n") | .[] | {"title": ., "url": "/charts/" + . + "/"})]' \
+            docs/_data/navigation.yml
+
       - name: Deploy markdown
         uses: JamesIves/github-pages-deploy-action@v4
         with:

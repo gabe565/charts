@@ -1,0 +1,33 @@
+---
+---
+
+@charset "utf-8";
+
+$primary-color: #475f8e;
+$info-color: #0969da;
+$border-color: #d0d7de;
+$color-canvas-subtle: #f6f8fa;
+
+$code-background-color: rgba(175, 184, 193, 0.2);
+
+$base00: #f6f8fa;
+$base01: #e0e0e0;
+$base02: #d0d0d0;
+$base03: #b0b0b0;
+$base04: #000000;
+$base05: #0550ae;
+$base06: #151515;
+$base07: #202020;
+$base08: #0550ae;
+$base09: #0550ae;
+$base0a: #aba800;
+$base0b: #0a3069;
+$base0c: #1faaaa;
+$base0d: #116329;
+$base0e: #ad00a1;
+$base0f: #cc6633;
+
+@import "variables";
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+@import "overrides";

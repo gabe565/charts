@@ -1,15 +1,38 @@
 title: Helm Charts
+name: Gabe Cook
 
-remote_theme: jekyll/minima
+include:
+  - charts
 
-header_pages:
-  - README.md
+plugins:
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+minimal_mistakes_skin: default
+minimal_mistakes_skin_dark: dark
+
+sass:
+  style: compressed
 
 titles_from_headings:
   strip_title: true
 
-minima:
-  skin: auto
-  social_links:
-    - platform: github
-      user_url: https://github.com/gabe565/charts
+atom_feed:
+  hide: true
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      classes: wide
+      sidebar:
+        nav: docs
+
+footer:
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/gabe565/charts
