@@ -27,7 +27,15 @@ https://charts.gabe565.com
 {{- define "custom.dependencies" -}}
 ## Dependencies
 
-{{ template "chart.requirementsTable" . }}
+| Repository | Name | Version |
+|------------|------|---------|
+{{- range .Dependencies }}
+{{- if .Alias }}
+| <{{ .Repository }}> | {{ .Alias }}({{ .Name }}) | {{ .Version }} |
+{{- else }}
+| <{{ .Repository }}> | {{ .Name }} | {{ .Version }} |
+{{- end }}
+{{- end }}
 {{- end -}}
 
 {{- define "custom.install.tldr" -}}
