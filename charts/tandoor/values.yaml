@@ -15,7 +15,7 @@ image:
   # -- image tag
 
 # -- environment variables. [[ref]](https://github.com/TandoorRecipes/recipes/blob/master/.env.template).
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 env:
   # -- default timezone
   TIMEZONE: UTC
@@ -23,7 +23,7 @@ env:
 
 service:
   # -- Configures service settings for the chart.
-  # @default -- See values.yaml
+  # @default -- See [values.yaml](./values.yaml)
   main:
     ports:
       http:
@@ -33,7 +33,7 @@ service:
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
-  # @default -- See values.yaml
+  # @default -- See [values.yaml](./values.yaml)
   main:
     enabled: false
     hosts:
@@ -48,7 +48,7 @@ ingress:
               port: 80
 
 # -- Configure persistence settings for the chart under this key.
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 persistence:
   config:
     enabled: false
@@ -61,7 +61,7 @@ persistence:
     mountPath: /opt/recipes/staticfiles
 
 # -- Enable and configure postgresql database subchart under this key. [[ref]](https://github.com/bitnami/charts/tree/master/bitnami/mariadb)
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 postgresql:
   enabled: false
   auth:

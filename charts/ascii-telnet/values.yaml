@@ -20,7 +20,7 @@ controller:
   strategy: RollingUpdate
 
 # -- Configures service settings for the chart.
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 service:
   main:
     type: LoadBalancer

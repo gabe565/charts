@@ -18,7 +18,7 @@ controller:
   strategy: RollingUpdate
 
 # -- environment variables. [[ref]](https://github.com/gabe565/transsmute#configuration)
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 env: {}
   # TRANSSMUTE_YOUTUBE_KEY: ""
   # TRANSSMUTE_DOCKERHUB_USERNAME: ""
@@ -27,7 +27,7 @@ env: {}
   # TRANSSMUTE_GHCR_PASSWORD: ""
 
 # -- Configures service settings for the chart.
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 service:
   main:
     ports:
@@ -36,6 +36,6 @@ service:
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
-  # @default -- See values.yaml
+  # @default -- See [values.yaml](./values.yaml)
   main:
     enabled: false

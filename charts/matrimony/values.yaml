@@ -22,7 +22,7 @@ controller:
 env: {}
 
 # -- Configures service settings for the chart.
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 service:
   main:
     ports:
@@ -31,12 +31,12 @@ service:
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
-  # @default -- See values.yaml
+  # @default -- See [values.yaml](./values.yaml)
   main:
     enabled: false
 
 persistence:
   # -- Configure persistence settings for the chart under this key.
-  # @default -- See values.yaml
+  # @default -- See [values.yaml](./values.yaml)
   data:
     enabled: false

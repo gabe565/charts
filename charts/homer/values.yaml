@@ -18,13 +18,13 @@ controller:
   strategy: RollingUpdate
 
 # -- environment variables.
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 env: {}
   # INIT_ASSETS: "0"
 
 service:
   # -- Configures service settings for the chart.
-  # @default -- See values.yaml
+  # @default -- See [values.yaml](./values.yaml)
   main:
     ports:
       http:
@@ -32,13 +32,13 @@ service:
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
-  # @default -- See values.yaml
+  # @default -- See [values.yaml](./values.yaml)
   main:
     enabled: false
 
 persistence:
   # -- Configure persistence settings for the chart under this key.
-  # @default -- See values.yaml
+  # @default -- See [values.yaml](./values.yaml)
   config:
     enabled: false
     mountPath: /www/assets
@@ -48,7 +48,7 @@ configmap:
     # -- Store homer configuration as a ConfigMap
     enabled: false
     # -- Homer configuration. [[ref]](https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md)
-    # @default -- See values.yaml
+    # @default -- See [values.yaml](./values.yaml)
     data:
       config.yml: |
         externalConfig: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/assets/config.yml.dist

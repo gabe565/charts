@@ -18,7 +18,7 @@ controller:
   strategy: RollingUpdate
 
 # -- environment variables. [[ref]](https://github.com/sbs20/scanservjs/blob/master/docs/docker.md#environment-variables)
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 env: {}
   # SANED_NET_HOSTS:
   # AIRSCAN_DEVICES:
@@ -27,7 +27,7 @@ env: {}
   # SCANIMAGE_LIST_IGNORE:
 
 # -- Configures service settings for the chart.
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 service:
   main:
     ports:
@@ -36,12 +36,12 @@ service:
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
-  # @default -- See values.yaml
+  # @default -- See [values.yaml](./values.yaml)
   main:
     enabled: false
 
 # -- Configure persistence settings for the chart under this key.
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 persistence:
   config:
     enabled: false

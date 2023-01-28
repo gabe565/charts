@@ -23,7 +23,7 @@ env:
   NODE_ENV: production
 
 # -- Configures service settings for the chart.
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 service:
   main:
     ports:
@@ -32,13 +32,13 @@ service:
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
-  # @default -- See values.yaml
+  # @default -- See [values.yaml](./values.yaml)
   main:
     enabled: false
 
 # -- Enable and configure redis subchart under this key.
 #    For more options see [redis chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/redis)
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 redis:
   enabled: true
   replica:

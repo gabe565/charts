@@ -130,14 +130,14 @@ path, and the pod will only be created when this device is available.
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| config | string | See values.yaml | Override default configuration [[ref]](https://gitlab.com/arm-research/smarter/smarter-device-manager#usage-model) |
+| config | string | See [values.yaml](./values.yaml) | Override default configuration [[ref]](https://gitlab.com/arm-research/smarter/smarter-device-manager#usage-model) |
 | hostNetwork | bool | `true` | When using hostNetwork make sure you set dnsPolicy to `ClusterFirstWithHostNet` |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"registry.gitlab.com/arm-research/smarter/smarter-device-manager"` | image repository |
 | image.tag | string | `"v1.20.11"` | image tag |
-| persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
+| persistence | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | priorityClassName | string | `"system-node-critical"` | Custom priority class for different treatment by the scheduler Setting this is not necessary, but it is recommended. [[ref]](https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/) |
-| securityContext | object | See values.yaml | Configure the securityContext for this pod [[ref]](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/) |
+| securityContext | object | See [values.yaml](./values.yaml) | Configure the securityContext for this pod [[ref]](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/) |
 | termination.messagePath | string | `"/var/log/termination-log"` | Configure the path at which the file to which the main container's termination message will be written. Overrides the default of `/dev/termination-log` to allow read-only `persistence.devfs` at `/dev`. [[ref](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#lifecycle-1)] |
 | termination.messagePolicy | string | `"FallbackToLogsOnError"` | Indicate how the main container's termination message should be populated. Valid options are `File` and `FallbackToLogsOnError`. smarter-device-manager does not support a termination-log, so use the container's log. [[ref](https://kubernetes.io/docs/reference/kubernetes-api/workload-resources/pod-v1/#lifecycle-1)] |
 

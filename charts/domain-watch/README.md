@@ -81,7 +81,7 @@ N/A
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
-| env.WATCH_DOMAINS | string | `"example.com example.org"` | Whitespace-separated list of domains to watch. See values.yaml for example. |
+| env.WATCH_DOMAINS | string | `"example.com example.org"` | Whitespace-separated list of domains to watch. See [values.yaml](./values.yaml) for example. |
 | env.WATCH_EVERY | string | `"6h"` | Domain check interval |
 | env.WATCH_LOG_FORMAT | string | `"text"` | Log format. Valid options are text, json. |
 | env.WATCH_LOG_LEVEL | string | `"info"` | Log level. Valid options are trace, debug, info, warn, error, fatal, panic. |

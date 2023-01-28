@@ -21,7 +21,7 @@ controller:
     schedule: 0 * * * *
 
 # -- environment variables. [[ref]](https://borgbackup.readthedocs.io/en/stable/usage/general.html#environment-variables)
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 env:
   # -- Borg host ID used in archive names
   # @default -- Deployment namespace
@@ -33,7 +33,7 @@ env:
 
 persistence:
   # -- Configure persistence settings for the chart under this key.
-  # @default -- See values.yaml
+  # @default -- See [values.yaml](./values.yaml)
   data:
     enabled: false
     retain: true
@@ -45,7 +45,7 @@ persistence:
       - path: cache
         mountPath: /root/.cache/borg
   # -- Configure SSH credentials for the chart under this key.
-  # @default -- See values.yaml
+  # @default -- See [values.yaml](./values.yaml)
   ssh:
     enabled: false
     mountPath: /root/.ssh
@@ -53,7 +53,7 @@ persistence:
 
 configMaps:
   # -- Configure Borgmatic container under this key.
-  # @default -- See values.yaml
+  # @default -- See [values.yaml](./values.yaml)
   config:
     enabled: true
     data:
@@ -61,7 +61,7 @@ configMaps:
       crontab.txt: |-
         0 1 * * * PATH=$PATH:/usr/bin /usr/local/bin/borgmatic --stats -v 0 2>&1
       # -- Borgmatic config. [[ref]](https://torsion.org/borgmatic/docs/reference/configuration)
-      # @default -- See values.yaml
+      # @default -- See [values.yaml](./values.yaml)
       config.yaml: |
         location:
           # List of source directories to backup.

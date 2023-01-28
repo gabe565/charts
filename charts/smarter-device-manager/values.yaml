@@ -15,7 +15,7 @@ image:
 
 # -- Override default configuration
 # [[ref]](https://gitlab.com/arm-research/smarter/smarter-device-manager#usage-model)
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 config: |
   - devicematch: ^ttyUSB.*$
     nummaxdevices: 1
@@ -36,7 +36,7 @@ termination:
   messagePolicy: FallbackToLogsOnError
 
 # -- Configure persistence settings for the chart under this key.
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 persistence:
   devfs:
     enabled: true
@@ -60,7 +60,7 @@ priorityClassName: system-node-critical
 
 # -- Configure the securityContext for this pod
 # [[ref]](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
-# @default -- See values.yaml
+# @default -- See [values.yaml](./values.yaml)
 securityContext:
   capabilities:
     drop:
