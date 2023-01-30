@@ -2145,6 +2145,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: BREAKING - Bump postgresql subchart to v12.1.11
+    apiVersion: v2
+    appVersion: 0.19.0
+    created: "2023-01-30T07:11:00.53161564Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.2.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.11
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: 628e079bd5748310228b947c87903260ed5105fe61e432ccd87e34d719500591
+    home: https://charts.gabe565.com/charts/headscale
+    icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
+    keywords:
+    - headscale
+    - tailscale
+    - wireguard
+    - vpn
+    kubeVersion: '>=1.22.0-0'
+    name: headscale
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/headscale
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.6.0/headscale-0.6.0.tgz
+    version: 0.6.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bump appVersion to v0.19.0
         - kind: changed
           description: Rename namespace to user
@@ -3114,6 +3148,33 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: BREAKING - Bump postgresql subchart to v12.1.11
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-01-30T07:11:00.934665302Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.2.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.11
+    description: A file upload server.
+    digest: d76e0b4413276cb8151b9a0db0b512108fea47ef33893bea46abaf8d5bc87835
+    home: https://charts.gabe565.com/charts/limo
+    kubeVersion: '>=1.22.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/limo
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.3.0/limo-0.3.0.tgz
+    version: 0.3.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update homepage to charts.gabe565.com and add to readme
         - kind: added
           description: Add GitHub repo to sources
@@ -3810,6 +3871,39 @@ entries:
     - https://github.com/gabe565/charts/releases/download/matrimony-0.1.0/matrimony-0.1.0.tgz
     version: 0.1.0
   miniflux:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: BREAKING - Bump postgresql subchart to v12.1.11
+    apiVersion: v2
+    appVersion: 2.0.42
+    created: "2023-01-30T07:11:01.167485739Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.2.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.11
+    description: Miniflux is a minimalist and opinionated feed reader.
+    digest: 2587fa2e48c4dc9f98b3a7b02a56b8a96040fa96d9ff909fead3dd12465444bd
+    home: https://charts.gabe565.com/charts/miniflux
+    icon: https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg
+    keywords:
+    - miniflux
+    - rss
+    - news
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: miniflux
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/miniflux
+    - https://github.com/miniflux/v2
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/miniflux-0.3.0/miniflux-0.3.0.tgz
+    version: 0.3.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -5391,6 +5485,34 @@ entries:
     - https://github.com/gabe565/charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
     version: 0.1.0
   portfolio:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: BREAKING - Bump postgresql subchart to v12.1.11
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-01-30T07:11:02.297424697Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.2.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.11
+    description: My personal portfolio website
+    digest: 36d62340a9260654112861540ea98da491b3a868a8687ba6886fbfc947f82ed2
+    home: https://charts.gabe565.com/charts/portfolio
+    icon: https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png
+    kubeVersion: '>=1.22.0-0'
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/portfolio
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.4.0/portfolio-0.4.0.tgz
+    version: 0.4.0
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
@@ -7091,6 +7213,42 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: BREAKING - Bump postgresql subchart to v12.1.11
+    apiVersion: v2
+    appVersion: 1.4.5
+    created: "2023-01-30T07:11:03.337048449Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.2.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.11
+    description: Application for managing recipes, planning meals, building shopping
+      lists and much much more!
+    digest: 6b39fd0bfc54fe247829a0e0980eb7321297e98390121c30960d403523c4b0ea
+    home: https://charts.gabe565.com/charts/tandoor
+    icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
+    keywords:
+    - recipes
+    - cookbook
+    - cooking
+    - meal-planner
+    kubeVersion: '>=1.22.0-0'
+    name: tandoor
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/tandoor
+    - https://docs.tandoor.dev/
+    - https://github.com/TandoorRecipes/recipes
+    - https://hub.docker.com/r/vabene1111/recipes
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/tandoor-0.3.0/tandoor-0.3.0.tgz
+    version: 0.3.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update homepage to charts.gabe565.com and add to readme
         - kind: added
           description: Add GitHub repo to sources
@@ -7514,6 +7672,42 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: BREAKING - Bump postgresql subchart to v12.1.11
+    apiVersion: v2
+    appVersion: 1.27.0-alpine
+    created: "2023-01-30T07:11:03.532462498Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.2.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.4.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.11
+    description: Unofficial Bitwarden compatible server written in Rust.
+    digest: 192b1f45149f3b29ccc9147cf8b0a894e3d45c84e8879380bc5464b78529e47c
+    home: https://charts.gabe565.com/charts/vaultwarden
+    icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b69952db6eb12987a9668fea6b72df79cfa41/resources/vaultwarden-icon.svg
+    keywords:
+    - vaultwarden
+    - bitwarden
+    - bitwarden_rs
+    kubeVersion: '>=1.22.0-0'
+    name: vaultwarden
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/vaultwarden
+    - https://github.com/dani-garcia/vaultwarden
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/vaultwarden-0.3.0/vaultwarden-0.3.0.tgz
+    version: 0.3.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Replace png icon with svg
     apiVersion: v2
     appVersion: 1.27.0-alpine
@@ -7763,4 +7957,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-30T06:18:04.496454445Z"
+generated: "2023-01-30T07:11:03.53315969Z"
