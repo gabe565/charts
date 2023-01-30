@@ -7,11 +7,11 @@
 
 image:
   # -- image repository
-  repository: headscale/headscale
+  repository: ghcr.io/juanfont/headscale
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  tag: 0.18.0
+  tag: 0.19.0
 
 # -- Environment variables. [[ref]](https://github.com/juanfont/headscale/blob/main/config-example.yaml)
 # @default -- See [values.yaml](./values.yaml)
@@ -19,7 +19,7 @@ env:
   # -- Defines the base domain to create the hostnames for MagicDNS.
   # `base_domain` must be a FQDNs, without the trailing dot.
   # The FQDN of the hosts will be
-  # `hostname.namespace.base_domain` (e.g., _myhost.mynamespace.example.com_).
+  # `hostname.user.base_domain` (e.g., _myhost.myuser.example.com_).
   HEADSCALE_DNS_CONFIG_BASE_DOMAIN: example.com
   # HEADSCALE_OIDC_ISSUER: ""
   # HEADSCALE_OIDC_CLIENT_ID: ""
