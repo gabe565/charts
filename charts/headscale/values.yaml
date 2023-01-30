@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: headscale/headscale
+  repository: ghcr.io/juanfont/headscale
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
