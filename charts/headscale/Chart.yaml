@@ -4,7 +4,7 @@ description: An open source, self-hosted implementation of the Tailscale control
 home: https://charts.gabe565.com/charts/headscale
 icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
 type: application
-version: 0.5.0
+version: 0.6.0
 # renovate image=ghcr.io/juanfont/headscale
 appVersion: 0.19.0
 kubeVersion: ">=1.22.0-0"
@@ -18,7 +18,7 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 1.2.1
   - name: postgresql
-    version: 11.9.13
+    version: 12.1.11
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 sources:
@@ -27,8 +27,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Bump appVersion to v0.19.0
-    - kind: changed
-      description: Rename namespace to user
-    - kind: changed
-      description: Replace Docker repo headscale/headscale with ghcr.io/juanfont/headscale
+      description: BREAKING: Bump postgresql subchart to v12.1.11

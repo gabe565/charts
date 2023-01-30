@@ -4,7 +4,7 @@ description: Unofficial Bitwarden compatible server written in Rust.
 home: https://charts.gabe565.com/charts/vaultwarden
 icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b69952db6eb12987a9668fea6b72df79cfa41/resources/vaultwarden-icon.svg
 type: application
-version: 0.2.2
+version: 0.3.0
 # renovate image=vaultwarden/server
 appVersion: 1.27.0-alpine
 kubeVersion: ">=1.22.0-0"
@@ -24,10 +24,10 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
   - name: postgresql
-    version: 11.9.13
+    version: 12.1.11
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: Replace png icon with svg
+      description: BREAKING: Bump postgresql subchart to v12.1.11
