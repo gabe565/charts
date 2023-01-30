@@ -504,6 +504,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Bump appVersion to v1.7.6
+    apiVersion: v2
+    appVersion: 1.7.6
+    created: "2023-01-30T06:04:26.242471108Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.2.1
+    description: borgmatic is simple, configuration-driven backup software for servers
+      and workstations. Protect your files with client-side encryption. Backup your
+      databases too. Monitor it all with integrated third-party services.
+    digest: e03d67af23393901540bbb6f1a64fbb025c88ced3f54aa23f3086f399f92e4ba
+    home: https://charts.gabe565.com/charts/borgmatic
+    icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
+    keywords:
+    - borgmatic
+    - borg
+    - backup
+    kubeVersion: '>=1.21.0-0'
+    name: borgmatic
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/borgmatic
+    - https://projects.torsion.org/borgmatic-collective/borgmatic
+    - https://github.com/borgmatic-collective/docker-borgmatic
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/borgmatic-0.5.4/borgmatic-0.5.4.tgz
+    version: 0.5.4
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Update homepage to charts.gabe565.com and add to readme
         - kind: added
           description: Add GitHub repo to sources
@@ -7661,4 +7692,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-26T08:57:48.433848993Z"
+generated: "2023-01-30T06:04:29.952815836Z"
