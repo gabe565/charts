@@ -1,6 +1,6 @@
 # limo
 
-![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat)
+![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -24,7 +24,7 @@ Kubernetes: `>=1.22.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.2.1 |
-| <https://charts.bitnami.com/bitnami> | postgresql | 11.9.13 |
+| <https://charts.bitnami.com/bitnami> | postgresql | 12.1.11 |
 
 ## TL;DR
 
