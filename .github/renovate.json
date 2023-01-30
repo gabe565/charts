@@ -3,6 +3,9 @@
   "extends": [
     "local>gabe565/renovate-config"
   ],
+  "ignorePresets": [
+    "github>gabe565/renovate-config:githubActions"
+  ],
   "regexManagers": [
     {
       "fileMatch": ["(^|/)Chart\\.yaml$"],
