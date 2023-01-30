@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: miniflux/miniflux
   # -- image tag
-  tag: 2.0.41
+  tag: 2.0.42
   # -- image pull policy
   pullPolicy: IfNotPresent
 
