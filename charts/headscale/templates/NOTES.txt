@@ -5,7 +5,7 @@
 2. Create a Namespace:
 
     kubectl rollout status {{ $deploymentName }}
-    kubectl exec -i {{ $deploymentName }} -- headscale namespaces create myfirstnamespace
+    kubectl exec -i {{ $deploymentName }} -- headscale users create myfirstnamespace
 
 3. Connect a Node:
 

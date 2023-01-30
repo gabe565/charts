@@ -142,7 +142,7 @@ Once deployed, the UI will be available at `/web`.
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | env | object | See [values.yaml](./values.yaml) | Environment variables. [[ref]](https://github.com/juanfont/headscale/blob/main/config-example.yaml) |
-| env.HEADSCALE_DNS_CONFIG_BASE_DOMAIN | string | `"example.com"` | Defines the base domain to create the hostnames for MagicDNS. `base_domain` must be a FQDNs, without the trailing dot. The FQDN of the hosts will be `hostname.namespace.base_domain` (e.g., _myhost.mynamespace.example.com_). |
+| env.HEADSCALE_DNS_CONFIG_BASE_DOMAIN | string | `"example.com"` | Defines the base domain to create the hostnames for MagicDNS. `base_domain` must be a FQDNs, without the trailing dot. The FQDN of the hosts will be `hostname.user.base_domain` (e.g., _myhost.myuser.example.com_). |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"headscale/headscale"` | image repository |
 | image.tag | string | `"0.18.0"` | image tag |
