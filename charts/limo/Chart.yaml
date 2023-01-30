@@ -21,4 +21,4 @@ sources:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: BREAKING: Bump postgresql subchart to v12.1.11
+      description: BREAKING - Bump postgresql subchart to v12.1.11
