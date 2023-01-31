@@ -23,6 +23,7 @@ while IFS= read -r -d '' f; do
 done < <(find charts -type f -name '*.md' -not -path './docs/*' -print0)
 
 # Add charts to sidebar
-CHARTS="$(printf '%s\n' "${CHARTS[@]}" | sort -h)" yq -i \
+CHARTS="$(printf '%s\n' "${CHARTS[@]}" | sort -h)" yq \
   '(.docs[] | select(.title == "Charts") | .children) = [(strenv(CHARTS) | split("\n") | .[] | {"title": ., "url": "/charts/" + . + "/"})]' \
-  docs/_data/navigation.yml
+  docs/_data/navigation_src.yml \
+  > docs/_data/navigation.yml

@@ -5,3 +5,9 @@
 
 # Helm resources
 charts/**/charts
+
+# Docs
+docs/**/*.md
+docs/.gitignore
+docs/_data/navigation.yml
+_site

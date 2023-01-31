@@ -5,6 +5,10 @@ name: Gabe Cook
 include:
   - charts
 
+exclude:
+  - docker-compose.yml
+  - Gemfile*
+
 plugins:
   - jekyll-sitemap
   - jekyll-include-cache
