@@ -49,35 +49,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Publish markdown
-        run: |-
-          rsync -av \
-            --prune-empty-dirs \
-            --include='*/' \
-            --include='*.md' \
-            --include=.gitignore \
-            --exclude='*' \
-            . docs
-
-      - name: Replace yaml paths
-        run: |
-          set -x
-          shopt -s globstar
-
-          cd docs
-          for f in **/*.md; do
-            # Remove homepage line
-            sed -i '/^\*\*Homepage:\*\*/,+1d' "$f"
-            # Fix relative yaml links
-            sed -i "s|(\./\(.*\.yaml\))|(${{ github.server_url }}/${{ github.repository }}/blob/main/$(dirname "$f")/\1)|g" "$f"
-          done
-
-      - name: Add charts to sidebar
-        run: |
-          export CHARTS="$(find charts -name README.md -exec sh -c 'basename "$(dirname "{}")"' \; | sort -h)"
-          yq -i \
-            '(.docs[] | select(.title == "Charts") | .children) = [(strenv(CHARTS) | split("\n") | .[] | {"title": ., "url": "/charts/" + . + "/"})]' \
-            docs/_data/navigation.yml
+      - name: Prepare docs
+        run: ./hack/prepare-docs.sh "${{ github.server_url }}/${{ github.repository }}"
 
       - name: Deploy markdown
         uses: JamesIves/github-pages-deploy-action@v4
