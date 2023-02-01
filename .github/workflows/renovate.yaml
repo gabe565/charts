@@ -1,0 +1,94 @@
+name: Renovate
+
+on:
+  push:
+    branches:
+      - renovate/**
+
+env:
+  COMMIT_MESSAGE: ":wrench: Update chart metadata"
+
+jobs:
+  udpate-chart-metadata:
+    name: Update Chart Metadata
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Detect Changes
+        uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          list-files: shell
+          filters: |
+            charts:
+              - charts/**
+
+      - name: Fetch PR
+        id: pr
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const response = await github.rest.repos.listPullRequestsAssociatedWithCommit({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              commit_sha: context.sha,
+            });
+            const pr = response.data.shift();
+            core.setOutput("title", pr.title);
+            core.setOutput("base_ref", pr.base.ref);
+            core.setOutput("labels", pr.labels.map((e) => e.name).filter((e) => e));
+
+      - name: Update changelog
+        env:
+          TITLE: ${{ steps.pr.outputs.title }}
+        run: |
+          set -eux
+          export DESCRIPTION="$(sed 's/^:.*: //' <<<"$TITLE")"
+          CHANGELOG="$(yq -o json '[{"kind": "changed", "description": strenv(DESCRIPTION)}]')"
+          ./hack/update-changelog.sh "$CHANGELOG" ${{ steps.changes.outputs.charts_files }}
+
+      - name: Set type to patch
+        if: contains(steps.pr.outputs.labels, 'patch')
+        run: echo TYPE=patch >>$GITHUB_ENV
+      - name: Set type to minor
+        if: contains(steps.pr.outputs.labels, 'major') || contains(steps.pr.outputs.labels, 'minor')
+        run: echo TYPE=minor >>$GITHUB_ENV
+      - name: Update chart version
+        run: |
+          set -eux
+          ./hack/update-version.sh "$TYPE" ${{ steps.changes.outputs.charts_files }}
+
+      - name: Set up Go
+        uses: actions/setup-go@v3
+      - name: Install helm-docs
+        run: go install github.com/norwoodj/helm-docs/cmd/helm-docs@latest
+      - name: Add Go bin to PATH
+        run: echo "$(go env GOPATH)/bin" >>$GITHUB_PATH
+      - name: Generate Helm docs
+        run: |
+          set -eu
+          ./hack/gen-helm-docs.sh
+
+      - name: Check if commit exists
+        id: commit_exists
+        env:
+          BASE_REF: ${{ steps.pr.outputs.base_ref }}
+        run: |
+          set -eu
+          IFS=$'\n\t'
+          commits="$(git rev-list --pretty=oneline "origin/$BASE_REF..HEAD" | cut -d' ' -f2-)"
+          if grep -F -e "$COMMIT_MESSAGE" <<<"$commits"; then
+            echo 'result=true' >>$GITHUB_OUTPUT
+          else
+            echo 'result=false' >>$GITHUB_OUTPUT
+          fi
+
+      - name: Commit chart version
+        uses: stefanzweifel/git-auto-commit-action@v4
+        if: steps.commit_exists.outputs.result == 'false' || contains(steps.pr.outputs.labels, 'skip-chart-meta')
+        with:
+          commit_message: ${{ env.COMMIT_MESSAGE }}
