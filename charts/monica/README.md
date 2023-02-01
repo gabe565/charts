@@ -2,9 +2,9 @@
 
 <img src="https://raw.githubusercontent.com/monicahq/monica/main/public/img/monica.svg" align="right" width="92" alt="monica logo" style="padding-left: 20px">
 
-![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat)
+![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 3.7.0-fpm-alpine](https://img.shields.io/badge/AppVersion-3.7.0--fpm--alpine-informational?style=flat)
+![AppVersion: 4.0.0-fpm-alpine](https://img.shields.io/badge/AppVersion-4.0.0--fpm--alpine-informational?style=flat)
 
 Personal CRM. Remember everything about your friends, family and business relationships.
 
@@ -89,7 +89,7 @@ N/A
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"monica"` | image repository |
-| image.tag | string | `"3.7.0-fpm-alpine"` | image tag |
+| image.tag | string | `"4.0.0-fpm-alpine"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    [[ref]](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
 | nginx.enabled | bool | `true` | Enable the Nginx sidecar.    Disable this if you use an apache image. |
