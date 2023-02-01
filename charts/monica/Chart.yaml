@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/monicahq/monica/main/public/img/monica.s
 type: application
 version: 0.2.1
 # renovate image=monica
-appVersion: 3.7.0-fpm-alpine
+appVersion: 4.0.0-fpm-alpine
 kubeVersion: ">=1.22.0-0"
 keywords:
   - crm
