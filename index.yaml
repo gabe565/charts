@@ -4477,6 +4477,37 @@ entries:
     version: 0.1.0
   monica:
   - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update monica Docker tag to v4
+    apiVersion: v2
+    appVersion: 4.0.0-fpm-alpine
+    created: "2023-02-01T21:39:49.247841224Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.2.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.4.2
+    description: Personal CRM. Remember everything about your friends, family and
+      business relationships.
+    digest: 07e67be511b09e55c00841849628fbc6dc0985db9a550e40335bd7d8184b0307
+    home: https://charts.gabe565.com/charts/monica
+    icon: https://raw.githubusercontent.com/monicahq/monica/main/public/img/monica.svg
+    keywords:
+    - crm
+    kubeVersion: '>=1.22.0-0'
+    name: monica
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/monica
+    - https://github.com/monicahq/monica
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/monica-0.3.0/monica-0.3.0.tgz
+    version: 0.3.0
+  - annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: Update homepage to charts.gabe565.com and add to readme
@@ -7957,4 +7988,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-30T07:11:03.53315969Z"
+generated: "2023-02-01T21:39:51.127076413Z"
