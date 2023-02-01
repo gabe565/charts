@@ -4,9 +4,9 @@ description: Personal CRM. Remember everything about your friends, family and bu
 home: https://charts.gabe565.com/charts/monica
 icon: https://raw.githubusercontent.com/monicahq/monica/main/public/img/monica.svg
 type: application
-version: 0.2.1
+version: 0.3.0
 # renovate image=monica
-appVersion: 3.7.0-fpm-alpine
+appVersion: 4.0.0-fpm-alpine
 kubeVersion: ">=1.22.0-0"
 keywords:
   - crm
@@ -22,8 +22,6 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Update homepage to charts.gabe565.com and add to readme
-    - kind: added
-      description: Add GitHub repo to sources
+      description: Update monica Docker tag to v4
