@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: monica
   # -- image tag
-  tag: 3.7.0-fpm-alpine
+  tag: 4.0.0-fpm-alpine
   # -- image pull policy
   pullPolicy: IfNotPresent
 
