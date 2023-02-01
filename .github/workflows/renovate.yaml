@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - renovate/**
+      - renovate-test/**
 
 env:
   COMMIT_MESSAGE: ":wrench: Update chart metadata"
