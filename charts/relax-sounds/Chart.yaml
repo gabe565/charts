@@ -4,7 +4,7 @@ description: Relax Sounds is a website that lets you stream relaxing sounds to y
 home: https://charts.gabe565.com/charts/relax-sounds
 icon: https://raw.githubusercontent.com/gabe565/relax-sounds/93681cad1585cd14203a39c6b3c5de525f30619e/frontend/public/img/icons/android-chrome-512x512.png
 type: application
-version: 0.2.1
+version: 0.3.0
 # renovate image=ghcr.io/gabe565/relax-sounds
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
@@ -16,8 +16,6 @@ sources:
   - https://github.com/gabe565/charts/tree/main/charts/relax-sounds
   - https://github.com/gabe565/relax-sounds
 annotations:
-  artifacthub.io/changes: |
+  artifacthub.io/changes: |-
     - kind: changed
-      description: Update homepage to charts.gabe565.com and add to readme
-    - kind: added
-      description: Add GitHub repo to sources
+      description: Update common Helm release to v1.3.0
