@@ -11,7 +11,7 @@ env:
   REDIS_URL: "redis://:$(REDIS_PASSWORD)@{{ .Release.Name }}-redis-master:6379/"
   {{- end }}
 
-additionalContainers:
+sidecars:
   browserless:
     image: browserless/chrome
     ports:

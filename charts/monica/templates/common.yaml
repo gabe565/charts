@@ -31,7 +31,7 @@ initContainers:
       - name: public
         mountPath: /public
 
-additionalContainers:
+sidecars:
   nginx:
     image: {{ .Values.nginx.image.repository }}:{{ .Values.nginx.image.tag }}
     ports:
