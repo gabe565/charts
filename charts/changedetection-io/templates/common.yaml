@@ -11,7 +11,7 @@ env:
 {{- if .enabled }}
   PLAYWRIGHT_DRIVER_URL: ws://localhost:3000
 
-additionalContainers:
+sidecars:
   browserless:
     image: {{ .image.repository }}:{{ .image.tag }}
     env: {{ toYaml .env | nindent 6 }}

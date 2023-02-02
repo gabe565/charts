@@ -42,7 +42,7 @@ persistence:
     name: {{ include "bjw-s.common.lib.chart.names.fullname" . }}-nginx-config
     mountPath: "-"
 
-additionalContainers:
+sidecars:
   nginx:
     image: nginx:stable-alpine
     imagePullPolicy: Always

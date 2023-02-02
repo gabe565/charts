@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/mnemonic-ninja/20b5c559fb0147c5f3c0c1cc5a3841d371259b78/frontend/src/assets/logo.svg" align="right" width="92" alt="mnemonic-ninja logo" style="padding-left: 20px">
 
-![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat)
+![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -25,7 +25,7 @@ Kubernetes: `>=1.22.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 1.2.1 |
+| <https://bjw-s.github.io/helm-charts> | common | 1.3.0 |
 
 ## TL;DR
 
