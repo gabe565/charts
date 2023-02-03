@@ -7952,6 +7952,42 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update vabene1111/recipes Docker tag to v1.4.6
+    apiVersion: v2
+    appVersion: 1.4.6
+    created: "2023-02-03T18:48:59.721785262Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.11
+    description: Application for managing recipes, planning meals, building shopping
+      lists and much much more!
+    digest: b4820f87053ab4563e7d4aa34551fedfcf915c63d59abbf297007480dbe9c1f2
+    home: https://charts.gabe565.com/charts/tandoor
+    icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
+    keywords:
+    - recipes
+    - cookbook
+    - cooking
+    - meal-planner
+    kubeVersion: '>=1.22.0-0'
+    name: tandoor
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/tandoor
+    - https://docs.tandoor.dev/
+    - https://github.com/TandoorRecipes/recipes
+    - https://hub.docker.com/r/vabene1111/recipes
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/tandoor-0.4.1/tandoor-0.4.1.tgz
+    version: 0.4.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.3.0
     apiVersion: v2
     appVersion: 1.4.5
@@ -8795,4 +8831,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-02-02T05:10:42.299727158Z"
+generated: "2023-02-03T18:48:59.864350312Z"
