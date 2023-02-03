@@ -2,9 +2,9 @@
 
 <img src="https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg" align="right" width="92" alt="tandoor logo" style="padding-left: 20px">
 
-![Version: 0.4.0](https://img.shields.io/badge/Version-0.4.0-informational?style=flat)
+![Version: 0.4.1](https://img.shields.io/badge/Version-0.4.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 1.4.5](https://img.shields.io/badge/AppVersion-1.4.5-informational?style=flat)
+![AppVersion: 1.4.6](https://img.shields.io/badge/AppVersion-1.4.6-informational?style=flat)
 
 Application for managing recipes, planning meals, building shopping lists and much much more!
 
@@ -89,7 +89,7 @@ N/A
 | env.TIMEZONE | string | `"UTC"` | default timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"vabene1111/recipes"` | image repository |
-| image.tag | string | `"1.4.5"` | image tag |
+| image.tag | string | `"1.4.6"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | postgresql | object | See [values.yaml](./values.yaml) | Enable and configure postgresql database subchart under this key. [[ref]](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
