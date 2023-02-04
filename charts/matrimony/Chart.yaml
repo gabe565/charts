@@ -3,7 +3,7 @@ name: matrimony
 description: Self-hosted wedding site configured via YAML
 home: https://charts.gabe565.com/charts/matrimony
 type: application
-version: 0.3.0
+version: 0.3.1
 # renovate image=ghcr.io/gabe565/matrimony
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
@@ -17,4 +17,4 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update common Helm release to v1.3.0
+      description: Tweak env default to link to values.yaml

@@ -18,7 +18,7 @@ controller:
   strategy: RollingUpdate
 
 # -- environment variables.
-# @default -- See below
+# @default -- See [values.yaml](./values.yaml)
 env: {}
   # MNEMONIC_NINJA_TELEMETRY_ENABLED: "true"
   # MNEMONIC_NINJA_TELEMETRY_ENDPOINT: ""

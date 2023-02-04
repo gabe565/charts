@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/relax-sounds/93681cad1585cd14203a39c6b3c5de525f30619e/frontend/public/img/icons/android-chrome-512x512.png" align="right" width="92" alt="relax-sounds logo" style="padding-left: 20px">
 
-![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat)
+![Version: 0.3.1](https://img.shields.io/badge/Version-0.3.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -83,7 +83,7 @@ N/A
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
-| env | object | See below | environment variables. |
+| env | object | See [values.yaml](./values.yaml) | environment variables. |
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"ghcr.io/gabe565/relax-sounds"` | image repository |
 | image.tag | string | `"latest"` | image tag |

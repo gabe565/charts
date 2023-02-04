@@ -4,7 +4,7 @@ description: The RSS feed for websites missing it.
 home: https://charts.gabe565.com/charts/rss-bridge
 icon: https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png
 type: application
-version: 0.3.0
+version: 0.3.1
 # renovate image=ghcr.io/rss-bridge/rss-bridge
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
@@ -22,4 +22,4 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update common Helm release to v1.3.0
+      description: Tweak env default to link to values.yaml

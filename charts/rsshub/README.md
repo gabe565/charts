@@ -2,7 +2,7 @@
 
 <img src="https://camo.githubusercontent.com/79f2dcf6fb41b71619186b12eed25495fa55e20d3f21355798a2cb22703c6f8b/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30342f32332f356362656237653431343134632e706e67" align="right" width="92" alt="rsshub logo" style="padding-left: 20px">
 
-![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat)
+![Version: 0.3.1](https://img.shields.io/badge/Version-0.3.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -84,7 +84,7 @@ N/A
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
-| env | object | See below | environment variables. |
+| env | object | See [values.yaml](./values.yaml) | environment variables. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"diygod/rsshub"` | image repository |
 | image.tag | string | `"latest"` | image tag |

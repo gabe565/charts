@@ -18,7 +18,7 @@ controller:
   strategy: RollingUpdate
 
 # -- environment variables.
-# @default -- See below
+# @default -- See [values.yaml](./values.yaml)
 env:
   NODE_ENV: production
 

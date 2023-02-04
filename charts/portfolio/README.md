@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png" align="right" width="92" alt="portfolio logo" style="padding-left: 20px">
 
-![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat)
+![Version: 0.5.1](https://img.shields.io/badge/Version-0.5.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -84,7 +84,7 @@ N/A
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
-| env | object | See below | environment variables. |
+| env | object | See [values.yaml](./values.yaml) | environment variables. |
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"ghcr.io/gabe565/portfolio"` | image repository |
 | image.tag | string | `"latest"` | image tag |
