@@ -41,8 +41,8 @@ jobs:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           CR_SKIP_EXISTING: "true"
 
-  deploy-markdown:
-    name: Deploy Markdown
+  release-docs:
+    name: Release Docs
     needs: [release-charts]
     runs-on: ubuntu-latest
     steps:
