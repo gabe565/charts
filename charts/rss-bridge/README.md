@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png" align="right" width="92" alt="rss-bridge logo" style="padding-left: 20px">
 
-![Version: 0.3.1](https://img.shields.io/badge/Version-0.3.1-informational?style=flat)
+![Version: 0.3.2](https://img.shields.io/badge/Version-0.3.2-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -25,7 +25,7 @@ Kubernetes: `>=1.22.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 1.3.0 |
+| <https://bjw-s.github.io/helm-charts> | common | 1.3.1 |
 
 ## TL;DR
 

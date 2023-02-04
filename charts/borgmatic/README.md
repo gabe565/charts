@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg" align="right" width="92" alt="borgmatic logo" style="padding-left: 20px">
 
-![Version: 0.6.0](https://img.shields.io/badge/Version-0.6.0-informational?style=flat)
+![Version: 0.6.1](https://img.shields.io/badge/Version-0.6.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 1.7.6](https://img.shields.io/badge/AppVersion-1.7.6-informational?style=flat)
 
@@ -26,7 +26,7 @@ Kubernetes: `>=1.21.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 1.3.0 |
+| <https://bjw-s.github.io/helm-charts> | common | 1.3.1 |
 
 ## TL;DR
 
