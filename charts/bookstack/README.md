@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg" align="right" width="92" alt="bookstack logo" style="padding-left: 20px">
 
-![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat)
+![Version: 0.3.1](https://img.shields.io/badge/Version-0.3.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: version-v22.11.1](https://img.shields.io/badge/AppVersion-version--v22.11.1-informational?style=flat)
 
@@ -27,7 +27,7 @@ Kubernetes: `>=1.22.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 1.3.0 |
+| <https://bjw-s.github.io/helm-charts> | common | 1.3.1 |
 | <https://charts.bitnami.com/bitnami> | mariadb | 11.4.2 |
 
 ## TL;DR

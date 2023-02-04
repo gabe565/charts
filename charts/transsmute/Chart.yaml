@@ -3,7 +3,7 @@ name: transsmute
 description: Transsmute builds RSS feeds for websites that don't provide them.
 home: https://charts.gabe565.com/charts/transsmute
 type: application
-version: 0.3.0
+version: 0.3.1
 # renovate image=ghcr.io/gabe565/transsmute
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
@@ -21,4 +21,4 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update common Helm release to v1.3.0
+      description: Update common Helm release to v1.3.1
