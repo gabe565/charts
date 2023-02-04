@@ -5,7 +5,7 @@ home: https://charts.gabe565.com/charts/scanservjs
 type: application
 version: 0.4.0
 # renovate image=sbs20/scanservjs
-appVersion: release-v2.25.0
+appVersion: release-v2.25.1
 kubeVersion: ">=1.22.0-0"
 keywords:
   - scanservjs
