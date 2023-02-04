@@ -24,6 +24,7 @@ sed -i '' '/^'"$charts_header"'$/,$d' "$charts_summary_file"
   echo "| Chart | Description |"
   echo "| ----- | ----------- |"
   for chart_yaml in ${stable_charts[@]}; do
+    if ! git ls-files --error-unmatch "$chart_yaml" &>/dev/null; then continue; fi
     IFS=$'\t' read -r chart_name chart_description < <(yq eval -o=tsv '[.name, .description]' "$chart_yaml")
     echo "| [$chart_name](charts/$chart_name) | $chart_description |"
   done
