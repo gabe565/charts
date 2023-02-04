@@ -36,7 +36,7 @@ if [ "$#" -gt 0 ]; then
   done
 else
   # Get changed dirs from uncommitted changes
-  for file in $(git status --porcelain | grep '^ M' | cut -c4-); do
+  for file in $(git status --porcelain charts | grep '^M ' | cut -c4-); do
     CHARTS+=( "$(dirname "$file")" )
   done
 fi
