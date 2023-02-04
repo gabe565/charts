@@ -4007,6 +4007,29 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Tweak env default to link to values.yaml
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-02-04T21:31:47.667178514Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.0
+    description: Self-hosted wedding site configured via YAML
+    digest: c7c3cf7ba49a255ecba050ba776e0e0f092440973728833dde6a361209d9b114
+    home: https://charts.gabe565.com/charts/matrimony
+    kubeVersion: '>=1.22.0-0'
+    name: matrimony
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/matrimony
+    - https://github.com/gabe565/matrimony
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/matrimony-0.3.1/matrimony-0.3.1.tgz
+    version: 0.3.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.3.0
     apiVersion: v2
     appVersion: latest
@@ -4651,6 +4674,31 @@ entries:
     - https://github.com/gabe565/charts/releases/download/miniflux-0.1.0/miniflux-0.1.0.tgz
     version: 0.1.0
   mnemonic-ninja:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Tweak env default to link to values.yaml
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-02-04T21:31:47.911846195Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.0
+    description: Mnemonic Ninja is a website to convert between a number and its corresponding
+      word to aid in memorization.
+    digest: f7e3a473b07ffee03a15680dad3c8221cc014379bf429430935fdfbb264ef78a
+    home: https://charts.gabe565.com/charts/mnemonic-ninja
+    icon: https://raw.githubusercontent.com/gabe565/mnemonic-ninja/20b5c559fb0147c5f3c0c1cc5a3841d371259b78/frontend/src/assets/logo.svg
+    kubeVersion: '>=1.22.0-0'
+    name: mnemonic-ninja
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/mnemonic-ninja
+    - https://github.com/gabe565/mnemonic-ninja
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.3.1/mnemonic-ninja-0.3.1.tgz
+    version: 0.3.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -6058,6 +6106,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Tweak env default to link to values.yaml
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-02-04T21:31:48.462222801Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.11
+    description: My personal portfolio website
+    digest: c6ccf7637b68aac4de92fea5d9861af5754a525607cbd34cbd6f9c5a57102333
+    home: https://charts.gabe565.com/charts/portfolio
+    icon: https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png
+    kubeVersion: '>=1.22.0-0'
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/portfolio
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.5.1/portfolio-0.5.1.tgz
+    version: 0.5.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.3.0
     apiVersion: v2
     appVersion: latest
@@ -6548,6 +6624,31 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Tweak env default to link to values.yaml
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-02-04T21:31:48.589246672Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.0
+    description: Relax Sounds is a website that lets you stream relaxing sounds to
+      your browser or over Google Cast.
+    digest: c8a1b22080b152725f7f0e90a42eb97f4156b69dbff4673b4acdc20d78cab8b9
+    home: https://charts.gabe565.com/charts/relax-sounds
+    icon: https://raw.githubusercontent.com/gabe565/relax-sounds/93681cad1585cd14203a39c6b3c5de525f30619e/frontend/public/img/icons/android-chrome-512x512.png
+    kubeVersion: '>=1.22.0-0'
+    name: relax-sounds
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/relax-sounds
+    - https://github.com/gabe565/relax-sounds
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/relax-sounds-0.3.1/relax-sounds-0.3.1.tgz
+    version: 0.3.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.3.0
     apiVersion: v2
     appVersion: latest
@@ -6813,6 +6914,34 @@ entries:
     - https://github.com/gabe565/charts/releases/download/relax-sounds-0.1.0/relax-sounds-0.1.0.tgz
     version: 0.1.0
   rss-bridge:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Tweak env default to link to values.yaml
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-02-04T21:31:48.710176439Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.0
+    description: The RSS feed for websites missing it.
+    digest: 2b150d1e0233fee050e55d810f8092ad64511efdf2c1cabf0ad0876abfeb696e
+    home: https://charts.gabe565.com/charts/rss-bridge
+    icon: https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png
+    keywords:
+    - rss-bridge
+    - rss
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: rss-bridge
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/rss-bridge
+    - https://github.com/RSS-Bridge/rss-bridge
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rss-bridge-0.3.1/rss-bridge-0.3.1.tgz
+    version: 0.3.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -7106,6 +7235,39 @@ entries:
     - https://github.com/gabe565/charts/releases/download/rss-bridge-0.1.0/rss-bridge-0.1.0.tgz
     version: 0.1.0
   rsshub:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Tweak env default to link to values.yaml
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-02-04T21:31:48.854163999Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.4.1
+    description: RSSHub is an open source, easy to use, and extensible RSS feed generator.
+      It's capable of generating RSS feeds from pretty much everything.
+    digest: b02cba4774291cac3035956ce2599f8ee0159b801a8a49b83c2f5c5bfc4e8779
+    home: https://charts.gabe565.com/charts/rsshub
+    icon: https://camo.githubusercontent.com/79f2dcf6fb41b71619186b12eed25495fa55e20d3f21355798a2cb22703c6f8b/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30342f32332f356362656237653431343134632e706e67
+    keywords:
+    - rsshub
+    - rss
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: rsshub
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/rsshub
+    - https://github.com/DIYgod/RSSHub
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rsshub-0.3.1/rsshub-0.3.1.tgz
+    version: 0.3.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -8894,4 +9056,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-02-04T19:07:25.71320694Z"
+generated: "2023-02-04T21:31:49.230406129Z"
