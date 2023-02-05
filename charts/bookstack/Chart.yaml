@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/ico
 type: application
 version: 0.3.1
 # renovate image=ghcr.io/linuxserver/bookstack
-appVersion: version-v22.11.1
+appVersion: version-v23.01.1
 kubeVersion: ">=1.22.0-0"
 keywords:
   - bookstack
