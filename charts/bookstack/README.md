@@ -2,9 +2,9 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg" align="right" width="92" alt="bookstack logo" style="padding-left: 20px">
 
-![Version: 0.3.1](https://img.shields.io/badge/Version-0.3.1-informational?style=flat)
+![Version: 0.4.0](https://img.shields.io/badge/Version-0.4.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: version-v22.11.1](https://img.shields.io/badge/AppVersion-version--v22.11.1-informational?style=flat)
+![AppVersion: version-v23.01.1](https://img.shields.io/badge/AppVersion-version--v23.01.1-informational?style=flat)
 
 A simple, self-hosted, easy-to-use platform for organising and storing information.
 
@@ -88,7 +88,7 @@ N/A
 | env | object | See [values.yaml](./values.yaml) | environment variables.    For more options see [BookStack .env.example](https://github.com/BookStackApp/BookStack/blob/release/.env.example.complete). |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/linuxserver/bookstack"` | image repository |
-| image.tag | string | `"version-v22.11.1"` | image tag |
+| image.tag | string | `"version-v23.01.1"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
 | persistence.config | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
