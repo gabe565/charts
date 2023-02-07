@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: b4bz/homer
   # -- image tag
-  tag: v22.11.2
+  tag: v23.02.1
   # -- image pull policy
   pullPolicy: IfNotPresent
 

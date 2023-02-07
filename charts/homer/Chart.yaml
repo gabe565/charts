@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/bastienwirtz/homer/5418c6291a39d27aeee47
 type: application
 version: 0.3.1
 # renovate image=b4bz/homer
-appVersion: v22.11.2
+appVersion: v23.02.1
 kubeVersion: ">=1.22.0-0"
 keywords:
   - homer
