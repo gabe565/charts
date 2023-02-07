@@ -1,0 +1,58 @@
+{{- define "custom.custom.configuration.header" -}}
+## Custom configuration
+{{- end -}}
+
+{{- define "custom.custom.configuration" -}}
+{{ template "custom.custom.configuration.header" . }}
+
+### HTTP 400 bad request while accessing from your browser
+
+When configuring Home Assistant behind a reverse proxy make sure you configure the [http](https://www.home-assistant.io/integrations/http) component and set `trusted_proxies` correctly and `use_x_forwarded_for` to `true`.
+
+For example (edit the configuration.yaml in your pod):
+
+```yaml
+http:
+  server_host: 0.0.0.0
+  ip_ban_enabled: true
+  login_attempts_threshold: 5
+  use_x_forwarded_for: true
+  trusted_proxies:
+    # Pod CIDR
+    - 10.69.0.0/16
+    # Node CIDR
+    - 192.168.42.0/24
+```
+
+### USB Devices
+
+A USB devices can be used with Home Assistant if passed through from the host to the pod.
+
+The USB device could be volume bound directly into the Pod
+([documented in the deprecated k8s-at-home/home-assistant chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant#z-wave--zigbee),
+but this requires granting privileged access to the Home Assistant pod.
+
+Instead, it is recommended to use [Smarter Device Manager](../smarter-device-manager) to manage USB devices for you.
+
+For example, if your Z-Wave device is at `/dev/ttyACM0`, you could deploy Smarter Device Manager with the following configuration:
+
+```yaml
+config: |
+  - devicematch: ^ttyACM[0-9]*$
+    nummaxdevices: 1
+```
+
+Then, add the following resources to your Home Assistant `values.yaml`:
+
+```yaml
+resources:
+  limits:
+    smarter-devices/ttyACM0: 1
+  requests:
+    smarter-devices/ttyACM0: 1
+```
+
+Your Home Assistant Pod would automatically be deployed to the correct server, with the USB device available at `/dev/ttyACM0`.
+No extra privileges required!
+
+{{- end -}}
