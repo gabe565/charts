@@ -2,9 +2,9 @@
 
 <img src="https://raw.githubusercontent.com/bastienwirtz/homer/5418c6291a39d27aeee471673adba742080e1ccb/public/logo.png" align="right" width="92" alt="homer logo" style="padding-left: 20px">
 
-![Version: 0.3.1](https://img.shields.io/badge/Version-0.3.1-informational?style=flat)
+![Version: 0.4.0](https://img.shields.io/badge/Version-0.4.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: v22.11.2](https://img.shields.io/badge/AppVersion-v22.11.2-informational?style=flat)
+![AppVersion: v23.02.1](https://img.shields.io/badge/AppVersion-v23.02.1-informational?style=flat)
 
 A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.
 
@@ -88,7 +88,7 @@ N/A
 | env | object | See [values.yaml](./values.yaml) | environment variables. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"b4bz/homer"` | image repository |
-| image.tag | string | `"v22.11.2"` | image tag |
+| image.tag | string | `"v23.02.1"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.config | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | service.main | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
