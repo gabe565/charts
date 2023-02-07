@@ -89,6 +89,6 @@ jobs:
 
       - name: Commit chart version
         uses: stefanzweifel/git-auto-commit-action@v4
-        if: steps.commit_exists.outputs.result == 'false' || contains(steps.pr.outputs.labels, 'skip-chart-meta')
+        if: steps.commit_exists.outputs.result == 'false' && !contains(steps.pr.outputs.labels, 'skip-chart-meta')
         with:
           commit_message: ${{ env.COMMIT_MESSAGE }}
