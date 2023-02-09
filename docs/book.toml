@@ -1,0 +1,23 @@
+[book]
+authors = ["Gabe Cook"]
+language = "en"
+multilingual = false
+title = "Helm Charts"
+
+[build]
+create-missing = false
+
+[output.html]
+git-repository-url = "https://github.com/gabe565/charts"
+git-repository-icon = "fa-github"
+no-section-label = true
+additional-css = ["./assets/css/main.css"]
+git-branch = "main"
+open-on-text = "[Edit this page on GitHub]"
+
+[output.html.fold]
+enable = true
+level = 1
+
+[output.html.search]
+limit-results = 15
