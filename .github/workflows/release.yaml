@@ -60,6 +60,9 @@ jobs:
       - name: Build docs
         run: mdbook build docs
 
+      - name: Strip index from links
+        run: ./docs/hack/strip-link-index.sh
+
       - name: Deploy markdown
         uses: JamesIves/github-pages-deploy-action@v4
         with:

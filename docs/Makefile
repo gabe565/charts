@@ -6,3 +6,4 @@ watch: prepare
 
 build: prepare
 	mdbook build
+	./hack/strip-link-index.sh
