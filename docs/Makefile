@@ -1,5 +1,5 @@
 prepare:
-	../hack/prepare-docs.sh
+	./hack/prepare-docs.sh
 
 watch: prepare
 	mdbook watch --open
