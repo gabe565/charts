@@ -1,3 +1,5 @@
+.PHONY: prepare watch build
+
 prepare:
 	./hack/prepare-docs.sh
 
@@ -7,3 +9,6 @@ watch: prepare
 build: prepare
 	mdbook build
 	./hack/strip-link-index.sh
+
+clean:
+	rm -rf book
