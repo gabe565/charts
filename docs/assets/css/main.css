@@ -1,3 +1,23 @@
 :root {
     --content-max-width: 900px;
 }
+
+.rust {
+    --sidebar-non-existant: #84878a;
+}
+
+.light {
+    --sidebar-non-existant: #747474;
+}
+
+.coal {
+    --sidebar-non-existant: #707377;
+}
+
+.navy {
+    --sidebar-non-existant: #7e7f98;
+}
+
+.ayu {
+    --sidebar-non-existant: #78808a;
+}
