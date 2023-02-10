@@ -2,6 +2,10 @@
     --content-max-width: 900px;
 }
 
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 .rust {
     --sidebar-non-existant: #84878a;
 }
