@@ -6,22 +6,31 @@ html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+table thead th, table td {
+    padding: 6px 13px;
+}
+
 .rust {
     --sidebar-non-existant: #84878a;
+    --table-border-color: hsl(60, 9%, 72%);
 }
 
 .light {
     --sidebar-non-existant: #747474;
+    --table-border-color: hsl(0, 0%, 85%);
 }
 
 .coal {
     --sidebar-non-existant: #707377;
+    --table-border-color: hsl(200, 7%, 20%);
 }
 
 .navy {
     --sidebar-non-existant: #7e7f98;
+    --table-border-color: hsl(226, 23%, 23%);
 }
 
 .ayu {
     --sidebar-non-existant: #78808a;
+    --table-border-color: hsl(210, 25%, 20%);
 }
