@@ -6,6 +6,7 @@ title = "Helm Charts"
 
 [build]
 create-missing = false
+extra-watch-dirs = ["assets"]
 
 [output.html]
 git-repository-url = "https://github.com/gabe565/charts"
