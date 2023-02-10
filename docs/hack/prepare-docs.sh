@@ -14,8 +14,7 @@ CHARTS=()
 while IFS= read -r -d '' f; do
   mkdir -p "docs/src/$(dirname "$f")"
 
-  sed '/^\*\*Homepage:\*\*/,+1d' "$f" \
-    | sed "s|(\./\(.*\.yaml\))|($repo_path/blob/main/$(dirname "$f")/\1)|g" \
+  sed "s|(\./\(.*\.yaml\))|($repo_path/blob/main/$(dirname "$f")/\1)|g" "$f" \
     > "docs/src/$f"
 
   CHARTS+=("$(basename "$(dirname "$f")")")

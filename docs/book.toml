@@ -22,3 +22,6 @@ level = 1
 
 [output.html.search]
 limit-results = 15
+
+[preprocessor.strip-homepage]
+command = '''./hack/preprocessor/replace-content.sh "\*\*Homepage:\*\*.+\n" ""'''
