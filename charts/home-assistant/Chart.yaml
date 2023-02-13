@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/home-assistant/assets/master/logo/logo-p
 type: application
 version: 0.0.2
 # renovate image=ghcr.io/home-assistant/home-assistant
-appVersion: 2023.2.3
+appVersion: 2023.2.4
 kubeVersion: ">=1.22.0-0"
 keywords:
   - home-automation
