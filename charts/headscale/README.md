@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png" align="right" width="92" alt="headscale logo" style="padding-left: 20px">
 
-![Version: 0.8.2](https://img.shields.io/badge/Version-0.8.2-informational?style=flat)
+![Version: 0.9.0](https://img.shields.io/badge/Version-0.9.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 0.20.0](https://img.shields.io/badge/AppVersion-0.20.0-informational?style=flat)
 
@@ -26,7 +26,7 @@ Kubernetes: `>=1.22.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.3.1 |
-| <https://charts.bitnami.com/bitnami> | postgresql | 12.1.14 |
+| <https://charts.bitnami.com/bitnami> | postgresql | 12.2.0 |
 
 ## TL;DR
 
