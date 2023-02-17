@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/nightscout/cgm-remote-monitor/71c2363b7be387cda899669be2bfd6ddbfe70198/static/images/large.png" align="right" width="92" alt="nightscout logo" style="padding-left: 20px">
 
-![Version: 0.5.2](https://img.shields.io/badge/Version-0.5.2-informational?style=flat)
+![Version: 0.5.3](https://img.shields.io/badge/Version-0.5.3-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 14.2.6](https://img.shields.io/badge/AppVersion-14.2.6-informational?style=flat)
 

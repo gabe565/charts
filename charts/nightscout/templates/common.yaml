@@ -27,6 +27,7 @@ configMaps:
         response="$(
           wget -q -O - \
             --header 'X-Forwarded-Proto: https' \
+            --header "Api-Secret: $(echo -n "$API_SECRET" | sha1sum | cut -d' ' -f1)" \
             "http://localhost:$PORT/api/v2/status" \
         )"
         if ! echo "$response" | grep -Fq 'STATUS OK'; then
