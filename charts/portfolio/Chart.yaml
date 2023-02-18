@@ -5,7 +5,7 @@ home: https://charts.gabe565.com/charts/portfolio
 icon: https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png
 type: application
 version: 0.5.3
-# renovate image=ghcr.io/gabe565/portfolio
+# renovate datasource=docker depName=ghcr.io/gabe565/portfolio
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
 dependencies:

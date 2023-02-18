@@ -5,7 +5,7 @@ home: https://charts.gabe565.com/charts/tandoor
 icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
 type: application
 version: 0.4.4
-# renovate image=vabene1111/recipes
+# renovate datasource=docker depName=vabene1111/recipes
 appVersion: 1.4.7
 kubeVersion: ">=1.22.0-0"
 keywords:
