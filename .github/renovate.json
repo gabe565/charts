@@ -13,6 +13,13 @@
         "# ?renovate image=(?<depName>.+)\\n.+: [\"']?(?<currentValue>.+?)[\"']?\\n"
       ],
       "datasourceTemplate": "docker"
+    },
+    {
+      "fileMatch": ["\\.github/workflows/.*\\.yaml$"],
+      "matchStrings": [
+        "# ?renovate github-repo=(?<depName>.+)\\n.+: [\"']?(?<currentValue>.+?)[\"']?\\n"
+      ],
+      "datasourceTemplate": "github-releases"
     }
   ],
   "packageRules": [
