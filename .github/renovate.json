@@ -8,9 +8,9 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": ["(^|/)Chart\\.yaml$"],
+      "fileMatch": ["\\.yaml$"],
       "matchStrings": [
-        "# ?renovate image=(?<depName>.+)\\nappVersion: [\"']?(?<currentValue>[^\"']+)\n"
+        "# ?renovate image=(?<depName>.+)\\n.+: [\"']?(?<currentValue>.+?)[\"']?\\n"
       ],
       "datasourceTemplate": "docker"
     }
