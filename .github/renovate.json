@@ -38,6 +38,11 @@
     {
       "matchPackagePrefixes": ["ghcr.io/linuxserver/", "lscr.io/linuxserver/", "linuxserver/"],
       "versioning": "regex:^(?<compatibility>.*?)-v?(?<major>\\d+)\\.(?<minor>\\d+)(\\.(?<patch>\\d+)([\\-\\.]r?(?<build>.+))?)?$"
+    },
+    {
+      "matchPackageNames": ["rust-lang/mdBook"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true
     }
   ]
 }
