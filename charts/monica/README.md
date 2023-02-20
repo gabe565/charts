@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/monicahq/monica/main/public/img/monica.svg" align="right" width="92" alt="monica logo" style="padding-left: 20px">
 
-![Version: 0.4.2](https://img.shields.io/badge/Version-0.4.2-informational?style=flat)
+![Version: 0.4.3](https://img.shields.io/badge/Version-0.4.3-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 4.0.0-fpm-alpine](https://img.shields.io/badge/AppVersion-4.0.0--fpm--alpine-informational?style=flat)
 
@@ -25,7 +25,7 @@ Kubernetes: `>=1.22.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 1.3.1 |
+| <https://bjw-s.github.io/helm-charts> | common | 1.3.2 |
 | <https://charts.bitnami.com/bitnami> | mariadb | 11.4.6 |
 
 ## TL;DR

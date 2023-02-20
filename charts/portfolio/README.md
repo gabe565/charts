@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png" align="right" width="92" alt="portfolio logo" style="padding-left: 20px">
 
-![Version: 0.5.3](https://img.shields.io/badge/Version-0.5.3-informational?style=flat)
+![Version: 0.5.4](https://img.shields.io/badge/Version-0.5.4-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -25,7 +25,7 @@ Kubernetes: `>=1.22.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 1.3.1 |
+| <https://bjw-s.github.io/helm-charts> | common | 1.3.2 |
 | <https://charts.bitnami.com/bitnami> | postgresql | 12.1.14 |
 
 ## TL;DR
