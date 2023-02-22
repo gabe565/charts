@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg" align="right" width="92" alt="borgmatic logo" style="padding-left: 20px">
 
-![Version: 0.6.3](https://img.shields.io/badge/Version-0.6.3-informational?style=flat)
+![Version: 0.6.4](https://img.shields.io/badge/Version-0.6.4-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 1.7.7](https://img.shields.io/badge/AppVersion-1.7.7-informational?style=flat)
 
@@ -116,7 +116,7 @@ controller:
 | env | object | See [values.yaml](./values.yaml) | environment variables. [[ref]](https://borgbackup.readthedocs.io/en/stable/usage/general.html#environment-variables) |
 | env.BORG_HOST_ID | string | Deployment namespace | Borg host ID used in archive names |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"b3vis/borgmatic"` | image repository |
+| image.repository | string | `"ghcr.io/borgmatic-collective/borgmatic"` | image repository |
 | image.tag | string | `"1.7.7"` | image tag |
 | persistence.data | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | persistence.ssh | object | See [values.yaml](./values.yaml) | Configure SSH credentials for the chart under this key. |

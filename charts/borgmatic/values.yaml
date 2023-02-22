@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: b3vis/borgmatic
+  repository: ghcr.io/borgmatic-collective/borgmatic
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
