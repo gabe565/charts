@@ -4,8 +4,8 @@ description: Miniflux is a minimalist and opinionated feed reader.
 home: https://charts.gabe565.com/charts/miniflux
 icon: https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg
 type: application
-version: 0.4.3
-# renovate datasource=docker depName=miniflux/miniflux
+version: 0.4.4
+# renovate datasource=docker depName=ghcr.io/miniflux/miniflux
 appVersion: 2.0.42
 kubeVersion: ">=1.22.0-0"
 keywords:
@@ -27,4 +27,4 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update common Helm release to v1.3.2
+      description: Update image from miniflux/miniflux to ghcr.io/miniflux/miniflux
