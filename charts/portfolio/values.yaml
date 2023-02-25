@@ -20,22 +20,6 @@ controller:
 # -- environment variables.
 # @default -- See [values.yaml](./values.yaml)
 env: {}
-  # APP_KEY: ""
-  # DB_HOST: postgresql
-  # DB_PORT: "5432"
-  # DB_DATABASE: portfolio
-  # DB_USERNAME: portfolio
-  # DB_PASSWORD:
-  #   secretKeyRef:
-  #     name: postgresql
-  #     key: postgres-password
-  # MAIL_HOST: ""
-  # MAIL_PORT: ""
-  # MAIL_USERNAME: ""
-  # MAIL_PASSWORD: ""
-  # CONTACTFORM_TO_EMAIL: ""
-  # CONTACTFORM_TO_NAME: ""
-  # CONTACTFORM_FROM_EMAIL: ""
 
 # -- Configures service settings for the chart.
 # @default -- See [values.yaml](./values.yaml)
@@ -43,7 +27,7 @@ service:
   main:
     ports:
       http:
-        port: 8000
+        port: 80
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
@@ -51,17 +35,8 @@ ingress:
   main:
     enabled: false
 
-# -- Enable and configure postgresql database subchart under this key.
-#    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql)
-# @default -- See [values.yaml](./values.yaml)
-postgresql:
-  enabled: false
-  auth:
-    database: portfolio
-    postgresPassword: changeme
-    # Uncomment to create a non-root user
-    # username: portfolio
-    # password: changeme
-  primary:
-    persistence:
-      enabled: false
+persistence:
+  # -- Configure persistence settings for the chart under this key.
+  # @default -- See [values.yaml](./values.yaml)
+  data:
+    enabled: false
