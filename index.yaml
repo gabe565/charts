@@ -2913,6 +2913,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Fix error when ingress does not have a host defined
+    apiVersion: v2
+    appVersion: 0.20.0
+    created: "2023-02-25T22:48:42.475612807Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.14
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: 5df2964811dee01b72761829d1fdacdf5b91ae4f514e46ee262a74482d8c828a
+    home: https://charts.gabe565.com/charts/headscale
+    icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c2e83928e289b7e0c9d2/docs/logo/headscale3-dots.png
+    keywords:
+    - headscale
+    - tailscale
+    - wireguard
+    - vpn
+    kubeVersion: '>=1.22.0-0'
+    name: headscale
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/headscale
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.8.4/headscale-0.8.4.tgz
+    version: 0.8.4
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.3.2
     apiVersion: v2
     appVersion: 0.20.0
@@ -11427,4 +11461,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-02-25T04:52:26.43823575Z"
+generated: "2023-02-25T22:48:44.719046068Z"
