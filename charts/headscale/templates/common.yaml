@@ -28,7 +28,7 @@ initContainers:
 
 env:
   {{- with .Values.ingress.main }}
-  {{- if .enabled }}
+  {{- if and .enabled .hosts }}
   HEADSCALE_SERVER_URL: http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}
   {{- end }}
   {{- end }}
