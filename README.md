@@ -60,6 +60,7 @@ helm delete my-<chart-name>
 | [pictshare](charts/pictshare/) | PictShare is an open source image, mp4, pastebin hosting service with a simple resizing and upload API that you can host yourself. |
 | [podgrab](charts/podgrab/) | A self-hosted podcast manager to download episodes as soon as they become live. |
 | [portfolio](charts/portfolio/) | My personal portfolio website |
+| [qbittorrent](charts/qbittorrent/) | The qBittorrent project aims to provide an open-source software alternative to µTorrent. |
 | [relax-sounds](charts/relax-sounds/) | Relax Sounds is a website that lets you stream relaxing sounds to your browser or over Google Cast. |
 | [rss-bridge](charts/rss-bridge/) | The RSS feed for websites missing it. |
 | [rsshub](charts/rsshub/) | RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything. |
