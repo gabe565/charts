@@ -5,5 +5,31 @@
 {{- define "custom.custom.configuration" -}}
 {{ template "custom.custom.configuration.header" . }}
 
-N/A
+### VueTorrent
+
+[VueTorrent](https://github.com/WDaan/VueTorrent) is an alternative web UI for qBittorrent built with Vue.js.
+This chart uses the LinuxServer.io qBittorrent image, so VueTorrent can be installed as a
+[Docker mod](https://github.com/linuxserver/docker-mods).
+
+1. Add [gabe565/linuxserver-mod-vuetorrent](https://github.com/gabe565/linuxserver-mod-vuetorrent) as a
+Docker mod. In `values.yaml`:
+    ```yaml
+    env:
+      DOCKER_MODS: ghcr.io/gabe565/linuxserver-mod-vuetorrent
+    ```
+
+2. (Optional) Add an `emptyDir` volume at `/vuetorrent`:
+    ```yaml
+    persistence:
+      vuetorrent:
+        enabled: true
+        type: emptyDir
+    ```
+
+3. Upgrade the Helm chart with your changes.
+4. Go to `Options` > `Web UI`
+5. Check `Use alternative Web UI`
+6. Set `Files location` to `/vuetorrent`
+7. Scroll down and click `Save`.
+8. Refresh
 {{- end -}}

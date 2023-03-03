@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/qbittorrent/qBittorrent/master/src/icons/qbittorrent-tray.svg" align="right" width="92" alt="qbittorrent logo" style="padding-left: 20px">
 
-![Version: 0.0.1](https://img.shields.io/badge/Version-0.0.1-informational?style=flat)
+![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: version-4.5.2-r0](https://img.shields.io/badge/AppVersion-version--4.5.2--r0-informational?style=flat)
 
@@ -75,7 +75,33 @@ helm install qbittorrent gabe565/qbittorrent -f values.yaml
 
 ## Custom configuration
 
-N/A
+### VueTorrent
+
+[VueTorrent](https://github.com/WDaan/VueTorrent) is an alternative web UI for qBittorrent built with Vue.js.
+This chart uses the LinuxServer.io qBittorrent image, so VueTorrent can be installed as a
+[Docker mod](https://github.com/linuxserver/docker-mods).
+
+1. Add [gabe565/linuxserver-mod-vuetorrent](https://github.com/gabe565/linuxserver-mod-vuetorrent) as a
+Docker mod. In `values.yaml`:
+    ```yaml
+    env:
+      DOCKER_MODS: ghcr.io/gabe565/linuxserver-mod-vuetorrent
+    ```
+
+2. (Optional) Add an `emptyDir` volume at `/vuetorrent`:
+    ```yaml
+    persistence:
+      vuetorrent:
+        enabled: true
+        type: emptyDir
+    ```
+
+3. Upgrade the Helm chart with your changes.
+4. Go to `Options` > `Web UI`
+5. Check `Use alternative Web UI`
+6. Set `Files location` to `/vuetorrent`
+7. Scroll down and click `Save`.
+8. Refresh
 
 ## Values
 
