@@ -59,7 +59,8 @@ jobs:
           mdbook-version: "0.4.27"
 
       - name: Build docs
-        run: mdbook build docs
+        working-directory: docs
+        run: mdbook build
 
       - name: Strip index from links
         run: ./docs/hack/strip-link-index.sh
