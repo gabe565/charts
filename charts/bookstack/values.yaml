@@ -53,3 +53,24 @@ mariadb:
       enabled: false
       # storageClass: ""
       # size: 8Gi
+
+shelfPermissionsCron:
+  # -- Enables a CronJob that copies shelf permissions to all child books.
+  #    [[ref]](https://bookstackapp.com/docs/admin/commands/#copy-shelf-permission)
+  enabled: false
+  # -- Shelf permissions CronJob name
+  nameOverride: copy-shelf-permissions
+  controller:
+    # @ignored
+    type: cronjob
+    cronjob:
+      # -- Shelf permissions CronJob time
+      schedule: 0 0 * * *
+  # -- Shelf permissions CronJob command
+  # @default -- See [values.yaml](./values.yaml)
+  command:
+    - php
+    - /app/www/artisan
+    - bookstack:copy-shelf-permissions
+    - --no-interaction
+    - --all

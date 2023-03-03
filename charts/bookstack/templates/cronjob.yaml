@@ -1,0 +1,11 @@
+{{- with .Values.shelfPermissionsCron }}
+  {{- if .enabled }}
+    {{- $ctx := deepCopy $ }}
+    {{- include "bjw-s.common.values.init" $ctx -}}
+    {{- $_ := merge $ctx.Values (include "bookstack.harcodedValues" $ | fromYaml) -}}
+    {{- $_ = mergeOverwrite $ctx.Values . }}
+    {{- $_ = set $ctx.Values "service" dict }}
+    {{- $_ = set $ctx.Values "persistence" dict }}
+    {{- include "bjw-s.common.class.cronjob" $ctx }}
+  {{- end }}
+{{- end }}
