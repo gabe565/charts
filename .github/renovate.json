@@ -23,6 +23,11 @@
       "matchPackageNames": ["rust-lang/mdBook"],
       "matchUpdateTypes": ["patch"],
       "automerge": true
+    },
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["ghcr.io/dgtlmoon/changedetection.io"],
+      "versioning": "loose"
     }
   ]
 }
