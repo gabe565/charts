@@ -2,9 +2,9 @@
 
 <img src="https://raw.githubusercontent.com/home-assistant/assets/master/logo/logo-pretty.png" align="right" width="92" alt="home-assistant logo" style="padding-left: 20px">
 
-![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat)
+![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 2023.3.1](https://img.shields.io/badge/AppVersion-2023.3.1-informational?style=flat)
+![AppVersion: 2023.3.2](https://img.shields.io/badge/AppVersion-2023.3.2-informational?style=flat)
 
 Open source home automation that puts local control and privacy first.
 
@@ -139,7 +139,7 @@ No extra privileges required!
 | hostNetwork | bool | `false` | Enable devices to be discoverable |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/home-assistant/home-assistant"` | image repository |
-| image.tag | string | `"2023.3.1"` | image tag |
+| image.tag | string | `"2023.3.2"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.config | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | postgresql | object | See [values.yaml](./values.yaml) | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
