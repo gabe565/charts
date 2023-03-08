@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/home-assistant/assets/master/logo/logo-pretty.png" align="right" width="92" alt="home-assistant logo" style="padding-left: 20px">
 
-![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat)
+![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 2023.3.1](https://img.shields.io/badge/AppVersion-2023.3.1-informational?style=flat)
 
@@ -133,7 +133,7 @@ No extra privileges required!
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | addons.codeserver | object | See [values.yaml](./values.yaml) | Enable VS Code server addon.    This allows for easy access to configuration.yaml |
-| dnsPolicy | string | `"Default"` | When hostNetwork is true set dnsPolicy to `ClusterFirstWithHostNet` |
+| dnsPolicy | string | `"ClusterFirst"` | When hostNetwork is true set dnsPolicy to `ClusterFirstWithHostNet` |
 | env | object | See [values.yaml](./values.yaml) | environment variables. |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | hostNetwork | bool | `false` | Enable devices to be discoverable |

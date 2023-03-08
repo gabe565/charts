@@ -37,7 +37,7 @@ ingress:
 hostNetwork: false
 
 # -- When hostNetwork is true set dnsPolicy to `ClusterFirstWithHostNet`
-dnsPolicy: Default
+dnsPolicy: ClusterFirst
 
 persistence:
   # -- Configure persistence settings for the chart under this key.
