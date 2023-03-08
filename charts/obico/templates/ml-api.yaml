@@ -1,0 +1,12 @@
+{{- define "obico.mlApi.hardcodedValues" -}}
+global:
+  nameOverride: ml-api
+
+env:
+  FLASK_APP: server.py
+{{- end }}
+
+{{- $ctx := deepCopy . -}}
+{{- $_ := get .Values "ml-api" | mergeOverwrite $ctx.Values -}}
+{{- $_ = include "obico.mlApi.hardcodedValues" . | fromYaml | merge $ctx.Values -}}
+{{- include "bjw-s.common.loader.all" $ctx }}

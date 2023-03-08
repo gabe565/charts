@@ -1,0 +1,85 @@
+{{- define "obico.server.redisValues" -}}
+{{- with .Values.redis }}
+{{- if .enabled }}
+  REDIS_PASSWORD:
+    secretKeyRef:
+      name: {{ $.Release.Name }}-redis
+      key: redis-password
+  REDIS_URL: "redis://:$(REDIS_PASSWORD)@{{ include "bjw-s.common.lib.chart.names.fullname" $ }}-redis-master:{{ default .master.service.ports.redis 6379 }}"
+{{- end }}
+{{- end }}
+{{- end -}}
+
+{{- define "obico.server.env" -}}
+DEBUG: "False"
+DATABASE_URL: "sqlite:////data/db.sqlite3"
+WEBPACK_LOADER_ENABLED: "False"
+
+{{- with .Values.server.ingress.main }}
+SITE_USES_HTTPS: "{{ if .tls }}True{{ else }}False{{ end }}"
+{{- end }}
+
+INTERNAL_MEDIA_HOST: "http://{{ include "bjw-s.common.lib.chart.names.fullname" $ }}-server:{{ .Values.server.service.main.ports.http.port }}"
+ML_API_HOST: "http://{{ include "bjw-s.common.lib.chart.names.fullname" $ }}-ml-api:{{ (get .Values "ml-api").service.main.ports.http.port }}"
+{{- end -}}
+
+{{- define "obico.server.hardcodedValues" -}}
+{{- $env := deepCopy .Values.server.env }}
+{{- $_ := include "obico.server.redisValues" . | fromYaml | merge $env }}
+{{- $_ = include "obico.server.env" . | fromYaml | merge $env }}
+
+global:
+  nameOverride: server
+
+env: {{ toYaml $env | nindent 2 }}
+
+initContainers:
+  collectstatic:
+    image: {{ .Values.server.image.repository }}:{{ .Values.server.image.tag }}
+    env: {{ toYaml $env | nindent 6 }}
+    {{- with .Values.server.persistence }}
+    volumeMounts:
+      {{- if .data.enabled }}
+      - name: data
+        mountPath: /data
+      {{- end }}
+      {{- if .static.enabled }}
+      - name: static
+        mountPath: /app/static_build
+      {{- end }}
+    {{- end }}
+    securityContext:
+      runAsUser: 0
+      runAsGroup: 0
+  migrate:
+    image: {{ .Values.server.image.repository }}:{{ .Values.server.image.tag }}
+    env: {{ toYaml $env | nindent 6 }}
+    {{- with .Values.server.persistence }}
+    volumeMounts:
+      {{- if .data.enabled }}
+      - name: data
+        mountPath: /data
+      {{- end }}
+      {{- end }}
+
+additionalContainers:
+  tasks:
+    image: {{ .Values.server.image.repository }}:{{ .Values.server.image.tag }}
+    env: {{ toYaml $env | nindent 6 }}
+    {{- with .Values.server.persistence }}
+    volumeMounts:
+      {{- if .data.enabled }}
+      - name: data
+        mountPath: /data
+      {{- end }}
+      {{- if .media.enabled }}
+      - name: media
+        mountPath: /app/static_build/media
+      {{- end }}
+    {{- end }}
+{{- end -}}
+
+{{- $ctx := deepCopy . -}}
+{{- $_ := mergeOverwrite $ctx.Values .Values.server -}}
+{{- $_ = include "obico.server.hardcodedValues" . | fromYaml | merge $ctx.Values -}}
+{{- include "bjw-s.common.loader.all" $ctx }}
