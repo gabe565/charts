@@ -52,7 +52,7 @@ jobs:
           ./hack/update-changelog.sh "$CHANGELOG" ${{ steps.changes.outputs.charts_files }}
 
       - name: Set type to patch
-        if: contains(steps.pr.outputs.labels, 'patch')
+        if: contains(steps.pr.outputs.labels, 'patch') || contains(steps.pr.outputs.labels, 'digest')
         run: echo TYPE=patch >>$GITHUB_ENV
       - name: Set type to minor
         if: contains(steps.pr.outputs.labels, 'major') || contains(steps.pr.outputs.labels, 'minor')
