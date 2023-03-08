@@ -3999,6 +3999,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Change default DNS policy to ClusterFirst
+    apiVersion: v2
+    appVersion: 2023.3.1
+    created: "2023-03-08T05:06:12.190950161Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.14
+    description: Open source home automation that puts local control and privacy first.
+    digest: 235994ed16cc940b60db0c06f8995ed5a44cefc1e38f85186ef117877a595a79
+    home: https://charts.gabe565.com/charts/home-assistant/
+    icon: https://raw.githubusercontent.com/home-assistant/assets/master/logo/logo-pretty.png
+    keywords:
+    - home-automation
+    - mqtt
+    - iot
+    - internet-of-things
+    kubeVersion: '>=1.22.0-0'
+    name: home-assistant
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/home-assistant
+    - https://home-assistant.io
+    - https://github.com/home-assistant/core
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/home-assistant-0.1.2/home-assistant-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/home-assistant/home-assistant Docker tag to v2023.3.1
     apiVersion: v2
     appVersion: 2023.3.1
@@ -11812,4 +11846,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-07T04:47:55.852276536Z"
+generated: "2023-03-08T05:06:14.454380546Z"
