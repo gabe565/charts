@@ -5,7 +5,6 @@ home: https://charts.gabe565.com/charts/obico
 icon: https://raw.githubusercontent.com/TheSpaghettiDetective/OctoPrint-Obico/master/octoprint_obico/static/img/logo-square.svg
 type: application
 version: 0.0.1
-# renovate datasource=docker depName=ghcr.io/gabe565/obico/web
 appVersion: sha-72b26dfa6f35800388816c621870664e5501dd19
 kubeVersion: ">=1.22.0-0"
 keywords:
