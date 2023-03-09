@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/TheSpaghettiDetective/OctoPrint-Obico/master/octoprint_obico/static/img/logo-square.svg" align="right" width="92" alt="obico logo" style="padding-left: 20px">
 
-![Version: 0.0.1](https://img.shields.io/badge/Version-0.0.1-informational?style=flat)
+![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: sha-72b26dfa6f35800388816c621870664e5501dd19](https://img.shields.io/badge/AppVersion-sha--72b26dfa6f35800388816c621870664e5501dd19-informational?style=flat)
 
