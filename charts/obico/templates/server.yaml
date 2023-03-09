@@ -37,6 +37,7 @@ initContainers:
   collectstatic:
     image: {{ .Values.server.image.repository }}:{{ .Values.server.image.tag }}
     env: {{ toYaml $env | nindent 6 }}
+    envFrom: {{ toYaml .Values.server.envFrom | nindent 6 }}
     {{- with .Values.server.persistence }}
     volumeMounts:
       {{- if .data.enabled }}
@@ -54,6 +55,7 @@ initContainers:
   migrate:
     image: {{ .Values.server.image.repository }}:{{ .Values.server.image.tag }}
     env: {{ toYaml $env | nindent 6 }}
+    envFrom: {{ toYaml .Values.server.envFrom | nindent 6 }}
     {{- with .Values.server.persistence }}
     volumeMounts:
       {{- if .data.enabled }}
@@ -66,6 +68,7 @@ additionalContainers:
   tasks:
     image: {{ .Values.server.image.repository }}:{{ .Values.server.image.tag }}
     env: {{ toYaml $env | nindent 6 }}
+    envFrom: {{ toYaml .Values.server.envFrom | nindent 6 }}
     {{- with .Values.server.persistence }}
     volumeMounts:
       {{- if .data.enabled }}
