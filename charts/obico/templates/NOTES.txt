@@ -1,4 +1,5 @@
 {{- $ctx := deepCopy . -}}
 {{- $_ := mergeOverwrite $ctx.Values .Values.server -}}
 {{- $_ = include "obico.server.hardcodedValues" . | fromYaml | merge $ctx.Values -}}
+{{- include "bjw-s.common.values.init" $ctx -}}
 {{- include "bjw-s.common.lib.chart.notes" $ctx -}}

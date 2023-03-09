@@ -26,3 +26,5 @@ annotations:
   artifacthub.io/changes: |-
     - kind: fixed
       description: Fix error when `server.env` is unset
+    - kind: fixed
+      description: Initialize common chart values before generating notes
