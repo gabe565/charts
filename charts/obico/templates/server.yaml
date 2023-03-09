@@ -24,7 +24,7 @@ ML_API_HOST: "http://{{ include "bjw-s.common.lib.chart.names.fullname" $ }}-ml-
 {{- end -}}
 
 {{- define "obico.server.hardcodedValues" -}}
-{{- $env := deepCopy .Values.server.env }}
+{{- $env := default dict .Values.server.env | deepCopy }}
 {{- $_ := include "obico.server.redisValues" . | fromYaml | merge $env }}
 {{- $_ = include "obico.server.env" . | fromYaml | merge $env }}
 
