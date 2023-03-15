@@ -63,7 +63,7 @@ jobs:
           ./hack/update-version.sh "$TYPE" ${{ steps.changes.outputs.charts_files }}
 
       - name: Set up Go
-        uses: actions/setup-go@v3
+        uses: actions/setup-go@v4
       - name: Install helm-docs
         run: go install github.com/norwoodj/helm-docs/cmd/helm-docs@latest
       - name: Add Go bin to PATH
