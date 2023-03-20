@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/juanfont/headscale/641c6fd439a915150db3c
 type: application
 version: 0.8.4
 # renovate datasource=docker depName=ghcr.io/juanfont/headscale
-appVersion: 0.20.0
+appVersion: 0.21.0
 kubeVersion: ">=1.22.0-0"
 keywords:
   - headscale
