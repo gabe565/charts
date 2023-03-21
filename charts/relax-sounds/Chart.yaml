@@ -2,9 +2,9 @@ apiVersion: v2
 name: relax-sounds
 description: Relax Sounds is a website that lets you stream relaxing sounds to your browser or over Google Cast.
 home: https://charts.gabe565.com/charts/relax-sounds
-icon: https://raw.githubusercontent.com/gabe565/relax-sounds/93681cad1585cd14203a39c6b3c5de525f30619e/frontend/public/img/icons/android-chrome-512x512.png
+icon: https://github.com/gabe565/relax-sounds/raw/3e55b07a957f2e20aceeeba1d36226791f2f1569/frontend/src/assets/icon-purple.svg
 type: application
-version: 0.3.3
+version: 0.3.4
 # renovate datasource=docker depName=ghcr.io/gabe565/relax-sounds
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
@@ -18,4 +18,4 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update common Helm release to v1.3.2
+      description: Update app icon
