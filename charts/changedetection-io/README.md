@@ -2,9 +2,9 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/changedetection-io/icon.png" align="right" width="92" alt="changedetection-io logo" style="padding-left: 20px">
 
-![Version: 0.4.3](https://img.shields.io/badge/Version-0.4.3-informational?style=flat)
+![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 0.40.3](https://img.shields.io/badge/AppVersion-0.40.3-informational?style=flat)
+![AppVersion: 0.41](https://img.shields.io/badge/AppVersion-0.41-informational?style=flat)
 
 Live your data-life pro-actively, track website content changes and receive notifications via Discord, Email, Slack, Telegram and 70+ more.
 
@@ -91,7 +91,7 @@ N/A
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/dgtlmoon/changedetection.io"` | image repository |
-| image.tag | string | `"0.40.3"` | image tag |
+| image.tag | float | `0.41` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.data | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | service.main | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
