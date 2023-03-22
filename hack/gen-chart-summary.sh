@@ -31,7 +31,7 @@ sed -i '' '/^'"$charts_header"'$/,$d' "$charts_summary_file"
       if [[ "$chart_name" == mnemonic-ninja ]]; then
         width=12
       fi
-      chart_icon="<img src='$chart_icon' alt='$chart_name icon' width='${width}px' align='right'>"
+      chart_icon="<img src='$chart_icon' alt='$chart_name icon' width='${width}px' align='right' loading='lazy'>"
     fi
     echo "| [$chart_name $chart_icon](charts/$chart_name/) | $chart_description |"
   done
