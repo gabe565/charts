@@ -1,0 +1,45 @@
+site_name: Helm Charts
+site_url: https://charts.gabe565.com
+
+repo_name: gabe565/charts
+repo_url: https://github.com/gabe565/charts
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/icons/icon.svg
+  favicon: assets/icons/favicon.ico
+  palette:
+    scheme: disabled
+    primary: indigo
+  features:
+    - navigation.instant
+    - navigation.expand
+    - search.suggest
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  analytics:
+    provider: google
+    property: G-3R5THTGGHP
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
+      css_files:
+        - stylesheets/extra.css
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences

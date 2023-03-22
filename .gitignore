@@ -6,7 +6,4 @@
 # Helm resources
 charts/**/charts
 
-# Docs
-docs/src/README.md
-docs/src/SUMMARY.md
-docs/src/charts
+venv/
