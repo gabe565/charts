@@ -1,6 +1,8 @@
 # matrimony
 
-![Version: 0.3.3](https://img.shields.io/badge/Version-0.3.3-informational?style=flat)
+<img src="https://raw.githubusercontent.com/gabe565/matrimony/b13163b384b27273080deb8d57d1222ba11337f9/frontend/public/img/logo.svg" align="right" width="92" alt="matrimony logo" style="padding-left: 20px">
+
+![Version: 0.3.4](https://img.shields.io/badge/Version-0.3.4-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
