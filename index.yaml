@@ -2208,6 +2208,35 @@ entries:
   domain-watch:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add app icon
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-03-22T00:22:24.775637888Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: Tool to watch whois reports and notify when statuses change or expiration
+      is incoming.
+    digest: 1d87e93d57ed1a036b3b495a5a8c0ed18485d01fb9d3e3124dbbfa5006b1b081
+    home: https://charts.gabe565.com/charts/domain-watch
+    icon: https://raw.githubusercontent.com/gabe565/domain-watch/ee028db206ea80c2617dd74a87193191a25a0a8a/assets/icon.svg
+    keywords:
+    - domain
+    - whois
+    - alert
+    kubeVersion: '>=1.22.0-0'
+    name: domain-watch
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/domain-watch
+    - https://github.com/gabe565/domain-watch
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/domain-watch-0.3.3/domain-watch-0.3.3.tgz
+    version: 0.3.3
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Update common Helm release to v1.3.2
     apiVersion: v2
@@ -5567,6 +5596,30 @@ entries:
     - https://github.com/gabe565/charts/releases/download/limo-0.1.0/limo-0.1.0.tgz
     version: 0.1.0
   matrimony:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Add app icon
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-03-22T00:22:25.568120373Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: Self-hosted wedding site configured via YAML
+    digest: d97a6ba9253e3cc9bf9ced1bdaba3d885c45f06d8169eee875c312182714477d
+    home: https://charts.gabe565.com/charts/matrimony
+    icon: https://raw.githubusercontent.com/gabe565/matrimony/b13163b384b27273080deb8d57d1222ba11337f9/frontend/public/img/logo.svg
+    kubeVersion: '>=1.22.0-0'
+    name: matrimony
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/matrimony
+    - https://github.com/gabe565/matrimony
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/matrimony-0.3.4/matrimony-0.3.4.tgz
+    version: 0.3.4
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -11547,6 +11600,34 @@ entries:
   transsmute:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add app icon
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-03-22T00:22:27.563989074Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: Transsmute builds RSS feeds for websites that don't provide them.
+    digest: dcc5f6fab4e1c1404249db97a353ee1dc8fb779be9382986f783c132ec5df162
+    home: https://charts.gabe565.com/charts/transsmute
+    icon: https://raw.githubusercontent.com/gabe565/transsmute/ce624f8c903654ead37489d8d274b97d526d397a/assets/icon.svg
+    keywords:
+    - transsmute
+    - rss
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: transsmute
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/transsmute
+    - https://github.com/gabe565/transsmute
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/transsmute-0.3.3/transsmute-0.3.3.tgz
+    version: 0.3.3
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Update common Helm release to v1.3.2
     apiVersion: v2
@@ -12306,4 +12387,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-21T23:52:00.085941842Z"
+generated: "2023-03-22T00:22:27.689635937Z"
