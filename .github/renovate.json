@@ -31,19 +31,9 @@
       "commitMessageTopic": "{{depName}} Helm release"
     },
     {
-      "matchPackageNames": ["rust-lang/mdBook"],
-      "matchUpdateTypes": ["patch"],
-      "automerge": true
-    },
-    {
       "matchDatasources": ["docker"],
       "matchPackageNames": ["ghcr.io/dgtlmoon/changedetection.io"],
       "versioning": "loose"
-    },
-    {
-      "matchPaths": [".github/workflows/*"],
-      "matchDepNames": ["rust-lang/mdBook"],
-      "extractVersion": "^v(?<version>.+)$"
     }
   ]
 }

@@ -52,23 +52,32 @@ jobs:
       - name: Prepare docs
         run: ./docs/hack/prepare-docs.sh "${{ github.server_url }}/${{ github.repository }}"
 
-      - name: Set up mdBook
-        uses: peaceiris/actions-mdbook@v1
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          # renovate datasource=github-releases depName=rust-lang/mdBook
-          mdbook-version: "0.4.28"
+          python-version: 3.x
+          cache: pip
+          cache-dependency-path: docs/requirements.txt
+
+      - name: MkDocs cache
+        uses: actions/cache@v2
+        with:
+          key: ${{ runner.os }}-mkdocs-${{ github.ref }}
+          path: docs/.cache
+          restore-keys: |
+            ${{ runner.os }}-mkdocs-
+
+      - name: Install dependencies
+        run: pip install -r docs/requirements.txt
 
       - name: Build docs
         working-directory: docs
-        run: mdbook build
+        run: mkdocs build
 
-      - name: Strip index from links
-        run: ./docs/hack/strip-link-index.sh
-
-      - name: Deploy markdown
+      - name: Deploy docs
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: docs/book
+          folder: docs/site
           clean-exclude: |
             artifacthub-repo.yml
             index.yaml

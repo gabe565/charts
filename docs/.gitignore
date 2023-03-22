@@ -1,10 +1,4 @@
-# IDE resources
-.vscode
-.idea
-.devcontainer/
-
-# Helm resources
-charts/**/charts
-
-# mdBook resources
-book/
+# MkDocs resources
+docs/**/*.md
+site/
+.cache/
