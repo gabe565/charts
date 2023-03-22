@@ -25,7 +25,14 @@ sed -i '' '/^'"$charts_header"'$/,$d' "$charts_summary_file"
   echo "| ----- | ----------- |"
   for chart_yaml in ${stable_charts[@]}; do
     if ! git ls-files --error-unmatch "$chart_yaml" &>/dev/null; then continue; fi
-    IFS=$'\t' read -r chart_name chart_description < <(yq eval -o=tsv '[.name, .description]' "$chart_yaml")
-    echo "| [$chart_name](charts/$chart_name/) | $chart_description |"
+    IFS=$'\t' read -r chart_name chart_description chart_icon < <(yq eval -o=tsv '[.name, .description, .icon // ""]' "$chart_yaml")
+    if [[ -n "$chart_icon" ]]; then
+      width=18
+      if [[ "$chart_name" == mnemonic-ninja ]]; then
+        width=12
+      fi
+      chart_icon="<img src='$chart_icon' alt='$chart_name icon' width='${width}px' align='right'>"
+    fi
+    echo "| [$chart_name $chart_icon](charts/$chart_name/) | $chart_description |"
   done
 } >> "$charts_summary_file"
