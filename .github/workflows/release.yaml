@@ -80,6 +80,7 @@ jobs:
       - name: Deploy docs
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          commit-message: Deploy docs from ${{ github.repository }}@${{ github.sha }}
           folder: docs/site
           clean-exclude: |
             artifacthub-repo.yml
