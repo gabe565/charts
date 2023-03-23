@@ -19,6 +19,7 @@ theme:
     - navigation.instant
     - navigation.expand
     - search.suggest
+    - content.code.copy
   icon:
     repo: fontawesome/brands/github
 
