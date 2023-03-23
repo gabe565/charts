@@ -41,6 +41,11 @@ plugins:
       cache_safe: true
       css_files:
         - stylesheets/extra.css
+  - mkdocs-simple-hooks:
+      hooks:
+        on_files: plugins.add_files:main
+        on_page_markdown: plugins.filter_readmes:main
+        on_post_build: plugins.remove_sitemap_gz:main
 
 markdown_extensions:
   - attr_list
