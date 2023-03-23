@@ -1,8 +1,13 @@
+import os
 import re
 
+from ruamel.yaml import YAML
 from mkdocs.config.base import Config
 from mkdocs.structure.files import Files
 from mkdocs.structure.pages import Page
+
+
+yaml = YAML()
 
 
 def main(markdown: str, page: Page, config: Config, files: Files):
@@ -31,5 +36,10 @@ def filter_chart_readme(markdown: str, page: Page, config: Config):
 
     yaml_re = re.compile(r"\(\./(.*\.yaml)\)")
     markdown = yaml_re.sub(f"({config.repo_url}/blob/main/{page.url}\\1)", markdown)
+
+    yaml_file = os.path.join(os.path.dirname(page.file.abs_src_path), "Chart.yaml")
+    with open(yaml_file) as f:
+        contents = yaml.load(f)
+        page.meta["description"] = contents["description"]
 
     return markdown
