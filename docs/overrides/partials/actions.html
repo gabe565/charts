@@ -1,0 +1,19 @@
+{% if page.url.startswith("charts/") %}
+    <a
+        href="{{ config.repo_url }}//blob/main/charts/{{ page.title }}/values.yaml"
+        title="View default values"
+        class="md-content__button md-icon"
+        target="_blank"
+    >
+        {% include ".icons/material/file-cog-outline.svg" %}
+    </a>
+
+    <a
+        href="{{ config.repo_url }}/tree/main/charts/{{ page.title }}"
+        title="View chart on GitHub"
+        class="md-content__button md-icon"
+        target="_blank"
+    >
+        {% include ".icons/material/folder-open-outline.svg" %}
+    </a>
+{% endif %}
