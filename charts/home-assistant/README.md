@@ -1,8 +1,8 @@
 # home-assistant
 
-<img src="https://raw.githubusercontent.com/home-assistant/assets/master/logo/logo-pretty.png" align="right" width="92" alt="home-assistant logo" style="padding-left: 20px">
+<img src="https://raw.githubusercontent.com/home-assistant/assets/master/logo/logo-pretty.svg" align="right" width="92" alt="home-assistant logo" style="padding-left: 20px">
 
-![Version: 0.1.7](https://img.shields.io/badge/Version-0.1.7-informational?style=flat)
+![Version: 0.1.8](https://img.shields.io/badge/Version-0.1.8-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 2023.3.6](https://img.shields.io/badge/AppVersion-2023.3.6-informational?style=flat)
 
