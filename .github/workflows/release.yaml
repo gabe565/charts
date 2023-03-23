@@ -61,8 +61,8 @@ jobs:
       - name: MkDocs cache
         uses: actions/cache@v3
         with:
-          key: ${{ runner.os }}-mkdocs-${{ github.ref }}
           path: docs/.cache
+          key: ${{ runner.os }}-mkdocs-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-mkdocs-
 
