@@ -1,6 +1,6 @@
 /* Custom header color */
-.md-header {
-    --md-primary-fg-color: #0F1689;
+[data-md-color-primary=indigo] {
+    --md-primary-fg-color: #2a309a;
 }
 
 /* Hide git tag */
