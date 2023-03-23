@@ -33,6 +33,11 @@ extra_css:
 
 plugins:
   - search
+  - git-revision-date-localized:
+      type: timeago
+      enable_creation_date: true
+      exclude:
+        - README.md
   - minify:
       minify_html: true
       minify_css: true
