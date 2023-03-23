@@ -83,7 +83,9 @@ To keep config simple, this Helm chart opts to use environment variables.
 All of the Headscale config variables are supported as envs, but official documentation is lacking.
 
 To configure Headscale:
+
 1. See the [Headscale example config](https://github.com/juanfont/headscale/blob/main/config-example.yaml) for available variables.
+
 2. For any that you want to set: flatten object keys using `_`, then prefix with `HEADSCALE_`.
     - For example, the following config:
       ```yaml
