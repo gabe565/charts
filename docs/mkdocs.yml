@@ -1,5 +1,8 @@
 site_name: gabe565 Helm Charts
 site_url: https://charts.gabe565.com
+site_author: Gabe Cook
+site_description: >-
+  A collection of Helm charts, based on the bjw-s common library chart.
 
 repo_name: gabe565/charts
 repo_url: https://github.com/gabe565/charts
