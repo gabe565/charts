@@ -27,6 +27,9 @@ def filter_repo_readme(markdown: str, page: Page, config: Config):
     overview_re = re.compile(r"^(## Chart Overview)", re.MULTILINE)
     markdown = overview_re.sub(r"\1 { data-search-exclude }", markdown)
 
+    # Hide navigation
+    page.meta["hide"] = ["navigation"]
+
     return markdown
 
 

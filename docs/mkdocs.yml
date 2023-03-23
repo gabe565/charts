@@ -16,8 +16,8 @@ theme:
     scheme: disabled
     primary: indigo
   features:
+    - navigation.tabs
     - navigation.instant
-    - navigation.expand
     - search.suggest
     - content.code.copy
   icon:
