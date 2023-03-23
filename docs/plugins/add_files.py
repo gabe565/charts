@@ -5,8 +5,23 @@ from mkdocs.structure.files import File, Files
 
 
 def main(files: Files, config: Config):
-    files.append(readme_file(config))
+    append_readme(files, config)
+    append_charts(files, config)
+    return files
 
+
+def append_readme(files: Files, config: Config):
+    f = File(
+        path="README.md",
+        src_dir="..",
+        dest_dir=config.site_dir,
+        use_directory_urls=config.use_directory_urls
+    )
+    files.append(f)
+    config.watch.append(f.abs_src_path)
+
+
+def append_charts(files: Files, config: Config):
     charts = []
     for root, dirs, dirFiles in os.walk("../charts"):
         for file in dirFiles:
@@ -15,17 +30,7 @@ def main(files: Files, config: Config):
     charts.sort()
     for path in charts:
         files.append(chart_file(path, config))
-
-    return files
-
-
-def readme_file(config: Config):
-    return File(
-        path="README.md",
-        src_dir="..",
-        dest_dir=config.site_dir,
-        use_directory_urls=config.use_directory_urls
-    )
+    config.watch.append("../charts")
 
 
 def chart_file(src_path: str, config: Config):
