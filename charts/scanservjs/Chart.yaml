@@ -2,8 +2,9 @@ apiVersion: v2
 name: scanservjs
 description: scanservjs is a web UI frontend for your scanner. It allows you to share one or more scanners (using SANE) on a network without the need for drivers or complicated installation.
 home: https://charts.gabe565.com/charts/scanservjs
+icon: https://raw.githubusercontent.com/sbs20/scanservjs/d28627ebec5cec6d30475a43bd101cc9c5e0961a/packages/client/src/icons/android-chrome-192x192.png
 type: application
-version: 0.5.1
+version: 0.5.2
 # renovate datasource=docker depName=sbs20/scanservjs
 appVersion: release-v2.26.1
 kubeVersion: ">=1.22.0-0"
@@ -20,5 +21,5 @@ sources:
   - https://github.com/sbs20/scanservjs
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Update sbs20/scanservjs Docker tag to release-v2.26.1
+    - kind: added
+      description: Add chart icon
