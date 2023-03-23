@@ -4123,6 +4123,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Replace png icon with svg
+    apiVersion: v2
+    appVersion: 2023.3.6
+    created: "2023-03-23T23:41:41.445550252Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.14
+    description: Open source home automation that puts local control and privacy first.
+    digest: 5e8e19d81df5fe1a5adcb3514856ed511ae5b2eb10a36e5edbca81c71731b40c
+    home: https://charts.gabe565.com/charts/home-assistant/
+    icon: https://raw.githubusercontent.com/home-assistant/assets/master/logo/logo-pretty.svg
+    keywords:
+    - home-automation
+    - mqtt
+    - iot
+    - internet-of-things
+    kubeVersion: '>=1.22.0-0'
+    name: home-assistant
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/home-assistant
+    - https://home-assistant.io
+    - https://github.com/home-assistant/core
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/home-assistant-0.1.8/home-assistant-0.1.8.tgz
+    version: 0.1.8
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/home-assistant/home-assistant Docker tag to v2023.3.6
     apiVersion: v2
     appVersion: 2023.3.6
@@ -4563,6 +4597,36 @@ entries:
     - https://github.com/gabe565/charts/releases/download/home-assistant-0.0.1/home-assistant-0.0.1.tgz
     version: 0.0.1
   homer:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Replace png icon with svg
+    apiVersion: v2
+    appVersion: v23.02.2
+    created: "2023-03-23T23:41:41.647756591Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: 47737fb0cd559a67b7112ff2ffce3f1d3439c541f4a25795ec71c63f1b0263c7
+    home: https://charts.gabe565.com/charts/homer
+    icon: https://raw.githubusercontent.com/bastienwirtz/homer/5609315fe77da5441a9c3dda8d92c0ffe9f1bf17/public/assets/icons/logo.svg
+    keywords:
+    - homer
+    - dashboard
+    - startpage
+    - homepage
+    kubeVersion: '>=1.22.0-0'
+    name: homer
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/homer
+    - https://github.com/bastienwirtz/homer
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/homer-0.4.3/homer-0.4.3.tgz
+    version: 0.4.3
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -12451,4 +12515,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-23T08:04:06.036120305Z"
+generated: "2023-03-23T23:41:44.996054095Z"
