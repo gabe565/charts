@@ -44,5 +44,7 @@ def filter_chart_readme(markdown: str, page: Page, config: Config):
     with open(yaml_file) as f:
         contents = yaml.load(f)
         page.meta["description"] = contents["description"]
+        if "keywords" in contents:
+            page.meta["tags"] = contents["keywords"]
 
     return markdown
