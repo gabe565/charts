@@ -74,6 +74,9 @@ jobs:
         working-directory: docs
         run: mkdocs build
 
+      - name: Remove sitemap.xml.gz
+        run: rm docs/site/sitemap.xml.gz
+
       - name: Deploy docs
         uses: JamesIves/github-pages-deploy-action@v4
         with:
