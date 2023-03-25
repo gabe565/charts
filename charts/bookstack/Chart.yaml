@@ -4,7 +4,7 @@ description: A simple, self-hosted, easy-to-use platform for organising and stor
 home: https://charts.gabe565.com/charts/bookstack
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg
 type: application
-version: 0.6.0
+version: 0.6.1
 # renovate datasource=docker depName=ghcr.io/linuxserver/bookstack
 appVersion: version-v23.02.2
 kubeVersion: ">=1.22.0-0"
@@ -27,5 +27,5 @@ sources:
   - https://ghcr.io/linuxserver/bookstack
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add optional CronJob that copies shelf permissions to all child books
+    - kind: changed
+      description: Update ghcr.io/linuxserver/bookstack Docker tag to version-v23.02.2
