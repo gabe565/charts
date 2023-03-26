@@ -372,6 +372,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Set default value for `securityContext.fsGroup`
+    apiVersion: v2
+    appVersion: version-v23.02.2
+    created: "2023-03-26T23:11:15.900091483Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.4.6
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
+    digest: 878b10efb4546e2c620ee33e46fb6c1ad03d375ea13635a1eb1ebd72b11d4bf0
+    home: https://charts.gabe565.com/charts/bookstack
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg
+    keywords:
+    - bookstack
+    - wiki
+    - documentation
+    kubeVersion: '>=1.22.0-0'
+    name: bookstack
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/bookstack
+    - https://bookstackapp.com
+    - https://github.com/BookStackApp/BookStack
+    - https://ghcr.io/linuxserver/bookstack
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/bookstack-0.7.0/bookstack-0.7.0.tgz
+    version: 0.7.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/linuxserver/bookstack Docker tag to version-v23.02.2
     apiVersion: v2
     appVersion: version-v23.02.2
@@ -5131,6 +5166,33 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Set default value for `securityContext.fsGroup`
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-03-26T23:11:17.280572852Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.14
+    description: A file upload server.
+    digest: 6d50c0ecf7db8d91c3a923c4edd71b26ef7c14c67e194f2a819ce497df78f4fb
+    home: https://charts.gabe565.com/charts/limo
+    kubeVersion: '>=1.22.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/limo
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.5.0/limo-0.5.0.tgz
+    version: 0.5.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.3.2
     apiVersion: v2
     appVersion: latest
@@ -5758,6 +5820,30 @@ entries:
     - https://github.com/gabe565/charts/releases/download/limo-0.1.0/limo-0.1.0.tgz
     version: 0.1.0
   matrimony:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Set default value for `securityContext.fsGroup`
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-03-26T23:11:17.435002935Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: Self-hosted wedding site configured via YAML
+    digest: ca0a6e97e80491ebdecd9baae6e04c67e7a21f3f8b821308e89eaf490684c604
+    home: https://charts.gabe565.com/charts/matrimony
+    icon: https://raw.githubusercontent.com/gabe565/matrimony/b13163b384b27273080deb8d57d1222ba11337f9/frontend/public/img/logo.svg
+    kubeVersion: '>=1.22.0-0'
+    name: matrimony
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/matrimony
+    - https://github.com/gabe565/matrimony
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/matrimony-0.4.0/matrimony-0.4.0.tgz
+    version: 0.4.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: added
@@ -7009,6 +7095,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Set default value for `securityContext.fsGroup`
+    apiVersion: v2
+    appVersion: 4.0.0-fpm-alpine
+    created: "2023-03-26T23:11:17.944673169Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.4.6
+    description: Personal CRM. Remember everything about your friends, family and
+      business relationships.
+    digest: f4a8f91c184ed84b4c0f2b7e8dff6460de081adba6c61671414e6ac83eea4804
+    home: https://charts.gabe565.com/charts/monica
+    icon: https://raw.githubusercontent.com/monicahq/monica/main/public/img/monica.svg
+    keywords:
+    - crm
+    kubeVersion: '>=1.22.0-0'
+    name: monica
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/monica
+    - https://github.com/monicahq/monica
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/monica-0.5.0/monica-0.5.0.tgz
+    version: 0.5.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.3.2
     apiVersion: v2
     appVersion: 4.0.0-fpm-alpine
@@ -7971,6 +8088,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Set default value for `securityContext.fsGroup`
+    apiVersion: v2
+    appVersion: 72394f17
+    created: "2023-03-26T23:11:18.437756865Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: PictShare is an open source image, mp4, pastebin hosting service
+      with a simple resizing and upload API that you can host yourself.
+    digest: c6abcc967dd17e5933d65c477d38f794a9c486330df3d580cf89e1b8bba0ca34
+    home: https://charts.gabe565.com/charts/pictshare
+    icon: https://camo.githubusercontent.com/6efdab1c63d518fafc5e735001c5ed45e7cbd4958952cdd972e2630eee881d97/68747470733a2f2f7069637473686172652e6e65742f706868796e6a2e706e67
+    keywords:
+    - pictshare
+    - image
+    - picture
+    - image-uploader
+    kubeVersion: '>=1.22.0-0'
+    name: pictshare
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/pictshare
+    - https://github.com/HaschekSolutions/pictshare
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/pictshare-0.4.0/pictshare-0.4.0.tgz
+    version: 0.4.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.3.2
     apiVersion: v2
     appVersion: 72394f17
@@ -8641,6 +8788,30 @@ entries:
     - https://github.com/gabe565/charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
     version: 0.1.0
   portfolio:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Set default value for `securityContext.fsGroup`
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-03-26T23:11:18.600619918Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: My personal portfolio website
+    digest: 1fe3578dbbbd39990492e2b2058e519e6ecf02566cff15cbb521b5c389d55696
+    home: https://charts.gabe565.com/charts/portfolio
+    icon: https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png
+    kubeVersion: '>=1.22.0-0'
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/portfolio
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.7.0/portfolio-0.7.0.tgz
+    version: 0.7.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: added
@@ -9330,6 +9501,31 @@ entries:
     - https://github.com/gabe565/charts/releases/download/qbittorrent-0.0.1/qbittorrent-0.0.1.tgz
     version: 0.0.1
   relax-sounds:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Set default value for `securityContext.fsGroup`
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-03-26T23:11:18.905536851Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: Relax Sounds is a website that lets you stream relaxing sounds to
+      your browser or over Google Cast.
+    digest: b14650f6b86cbb3859dde63c8d990fdd17f91c3fb20566a272f0ef09a51c21a8
+    home: https://charts.gabe565.com/charts/relax-sounds
+    icon: https://github.com/gabe565/relax-sounds/raw/3e55b07a957f2e20aceeeba1d36226791f2f1569/frontend/src/assets/icon-purple.svg
+    kubeVersion: '>=1.22.0-0'
+    name: relax-sounds
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/relax-sounds
+    - https://github.com/gabe565/relax-sounds
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/relax-sounds-0.4.0/relax-sounds-0.4.0.tgz
+    version: 0.4.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -12642,4 +12838,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-26T21:08:16.101046783Z"
+generated: "2023-03-26T23:11:19.914279407Z"
