@@ -41,3 +41,7 @@ persistence:
   data:
     enabled: false
     mountPath: /data
+
+podSecurityContext:
+  # -- Volume group permissions
+  fsGroup: 1000

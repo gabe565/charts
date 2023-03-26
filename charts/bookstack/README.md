@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg" align="right" width="92" alt="bookstack logo">
 
-![Version: 0.6.1](https://img.shields.io/badge/Version-0.6.1-informational?style=flat)
+![Version: 0.7.0](https://img.shields.io/badge/Version-0.7.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: version-v23.02.2](https://img.shields.io/badge/AppVersion-version--v23.02.2-informational?style=flat)
 
@@ -92,6 +92,7 @@ N/A
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
 | persistence.config | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
+| podSecurityContext.fsGroup | int | `911` | Volume group permissions |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 | shelfPermissionsCron.command | list | See [values.yaml](./values.yaml) | Shelf permissions CronJob command |
 | shelfPermissionsCron.controller.cronjob.schedule | string | `"0 0 * * *"` | Shelf permissions CronJob time |

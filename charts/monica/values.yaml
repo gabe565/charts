@@ -77,3 +77,7 @@ nginx:
     tag: stable-alpine
     # -- Nginx image pull policy
     pullPolicy: Always
+
+podSecurityContext:
+  # -- Volume group permissions
+  fsGroup: 82

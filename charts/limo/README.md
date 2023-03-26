@@ -1,6 +1,6 @@
 # limo
 
-![Version: 0.4.3](https://img.shields.io/badge/Version-0.4.3-informational?style=flat)
+![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -88,6 +88,7 @@ N/A
 | image.tag | string | `"latest"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.data | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
+| podSecurityContext.fsGroup | int | `1000` | Volume group permissions |
 | postgresql | object | See [values.yaml](./values.yaml) | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 

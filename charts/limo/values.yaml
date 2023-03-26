@@ -59,3 +59,7 @@ postgresql:
   primary:
     persistence:
       enabled: false
+
+podSecurityContext:
+  # -- Volume group permissions
+  fsGroup: 1000

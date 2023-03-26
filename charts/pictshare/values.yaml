@@ -41,3 +41,7 @@ persistence:
   data:
     enabled: false
     mountPath: /var/www/data
+
+podSecurityContext:
+  # -- Volume group permissions
+  fsGroup: 100

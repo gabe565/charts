@@ -40,3 +40,7 @@ persistence:
   # @default -- See [values.yaml](./values.yaml)
   data:
     enabled: false
+
+podSecurityContext:
+  # -- Volume group permissions
+  fsGroup: 1000
