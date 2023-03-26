@@ -2,9 +2,9 @@
 
 <img src="https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b69952db6eb12987a9668fea6b72df79cfa41/resources/vaultwarden-icon.svg" align="right" width="92" alt="vaultwarden logo">
 
-![Version: 0.4.3](https://img.shields.io/badge/Version-0.4.3-informational?style=flat)
+![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 1.27.0-alpine](https://img.shields.io/badge/AppVersion-1.27.0--alpine-informational?style=flat)
+![AppVersion: 1.28.0-alpine](https://img.shields.io/badge/AppVersion-1.28.0--alpine-informational?style=flat)
 
 Unofficial Bitwarden compatible server written in Rust.
 
@@ -98,7 +98,7 @@ persistence:
 | env.ADMIN_TOKEN | string | `""` | Token for the admin interface, preferably use a long random string.    One option is to use `openssl rand -base64 48`.    If not set, the admin panel is disabled. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"vaultwarden/server"` | image repository |
-| image.tag | string | `"1.27.0-alpine"` | image tag |
+| image.tag | string | `"1.28.0-alpine"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
 | persistence.data | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
