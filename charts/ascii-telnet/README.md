@@ -1,6 +1,8 @@
 # ascii-telnet
 
-![Version: 0.3.2](https://img.shields.io/badge/Version-0.3.2-informational?style=flat)
+<img src="https://raw.githubusercontent.com/gabe565/ascii-telnet-go/a1fd5c9df2fb3a177949c9511b62407c83aedefe/assets/icon.svg" align="right" width="92" alt="ascii-telnet logo" style="padding-left: 20px">
+
+![Version: 0.3.3](https://img.shields.io/badge/Version-0.3.3-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
