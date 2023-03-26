@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b69952db6eb12987a9668fea6b72df79cfa41/resources/vaultwarden-icon.svg" align="right" width="92" alt="vaultwarden logo">
 
-![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat)
+![Version: 0.6.0](https://img.shields.io/badge/Version-0.6.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 1.28.0-alpine](https://img.shields.io/badge/AppVersion-1.28.0--alpine-informational?style=flat)
 
@@ -102,6 +102,9 @@ persistence:
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
 | persistence.data | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
+| podSecurityContext.fsGroup | int | `65534` | Volume binds will be granted to `nobody` group |
+| podSecurityContext.runAsGroup | int | `65534` | Run as `nobody` group |
+| podSecurityContext.runAsUser | int | `65534` | Run as `nobody` user |
 | postgresql | object | See [values.yaml](./values.yaml) | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
 | service.main | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. Normally this does not need to be modified. |
 

@@ -91,3 +91,11 @@ mariadb:
       enabled: false
       # storageClass: ""
       # size: 8Gi
+
+podSecurityContext:
+  # -- Run as `nobody` user
+  runAsUser: 65534
+  # -- Run as `nobody` group
+  runAsGroup: 65534
+  # -- Volume binds will be granted to `nobody` group
+  fsGroup: 65534
