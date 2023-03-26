@@ -13,6 +13,10 @@
     max-width: 70rem;
 }
 
+.md-typeset .md-typeset__table img[align=right]:only-child {
+    margin: 0 0 0 0.5em;
+}
+
 /* Workaround to support auto dark mode */
 :root {
     --md-default-fg-color: #000000de;
