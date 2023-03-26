@@ -2,9 +2,9 @@ apiVersion: v2
 name: mnemonic-ninja
 description: Mnemonic Ninja is a website to convert between a number and its corresponding word to aid in memorization.
 home: https://charts.gabe565.com/charts/mnemonic-ninja
-icon: https://raw.githubusercontent.com/gabe565/mnemonic-ninja/20b5c559fb0147c5f3c0c1cc5a3841d371259b78/frontend/src/assets/logo.svg
+icon: https://raw.githubusercontent.com/gabe565/mnemonic-ninja/465602cd7093f62d611c69d7a91e520e4022fab9/src/assets/logo.svg
 type: application
-version: 0.3.3
+version: 0.3.4
 # renovate datasource=docker depName=ghcr.io/gabe565/mnemonic-ninja
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
@@ -18,4 +18,4 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update common Helm release to v1.3.2
+      description: Update app icon

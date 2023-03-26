@@ -1,8 +1,8 @@
 # mnemonic-ninja
 
-<img src="https://raw.githubusercontent.com/gabe565/mnemonic-ninja/20b5c559fb0147c5f3c0c1cc5a3841d371259b78/frontend/src/assets/logo.svg" align="right" width="92" alt="mnemonic-ninja logo" style="padding-left: 20px">
+<img src="https://raw.githubusercontent.com/gabe565/mnemonic-ninja/465602cd7093f62d611c69d7a91e520e4022fab9/src/assets/logo.svg" align="right" width="92" alt="mnemonic-ninja logo" style="padding-left: 20px">
 
-![Version: 0.3.3](https://img.shields.io/badge/Version-0.3.3-informational?style=flat)
+![Version: 0.3.4](https://img.shields.io/badge/Version-0.3.4-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
