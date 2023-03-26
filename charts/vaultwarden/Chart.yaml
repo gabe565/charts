@@ -4,9 +4,9 @@ description: Unofficial Bitwarden compatible server written in Rust.
 home: https://charts.gabe565.com/charts/vaultwarden
 icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b69952db6eb12987a9668fea6b72df79cfa41/resources/vaultwarden-icon.svg
 type: application
-version: 0.4.3
-# renovate datasource=docker depName=vaultwarden/server
-appVersion: 1.27.0-alpine
+version: 0.5.0
+# renovate datasource=docker depName=ghcr.io/dani-garcia/vaultwarden
+appVersion: 1.28.0-alpine
 kubeVersion: ">=1.22.0-0"
 keywords:
   - vaultwarden
@@ -30,4 +30,6 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update common Helm release to v1.3.2
+      description: Update vaultwarden/server Docker tag to v1.28.0
+    - kind: changed
+      description: Change image from vaultwarden/server to ghcr.io/dani-garcia/vaultwarden
