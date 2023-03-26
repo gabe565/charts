@@ -97,7 +97,7 @@ persistence:
 | env | object | See [values.yaml](./values.yaml) | environment variables. [[ref]](https://github.com/dani-garcia/vaultwarden/blob/main/.env.template) |
 | env.ADMIN_TOKEN | string | `""` | Token for the admin interface, preferably use a long random string.    One option is to use `openssl rand -base64 48`.    If not set, the admin panel is disabled. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"vaultwarden/server"` | image repository |
+| image.repository | string | `"ghcr.io/dani-garcia/vaultwarden"` | image repository |
 | image.tag | string | `"1.28.0-alpine"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |

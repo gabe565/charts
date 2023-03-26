@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: vaultwarden/server
+  repository: ghcr.io/dani-garcia/vaultwarden
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
