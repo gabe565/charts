@@ -4,7 +4,7 @@ description: Application for managing recipes, planning meals, building shopping
 home: https://charts.gabe565.com/charts/tandoor
 icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
 type: application
-version: 0.4.6
+version: 0.5.0
 # renovate datasource=docker depName=vabene1111/recipes
 appVersion: 1.4.8
 kubeVersion: ">=1.22.0-0"
@@ -29,4 +29,6 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update vabene1111/recipes Docker tag to v1.4.8
+      description: Run as non-root container
+    - kind: added
+      description: Add django-js-reverse emptyDir volume

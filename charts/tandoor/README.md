@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg" align="right" width="92" alt="tandoor logo">
 
-![Version: 0.4.6](https://img.shields.io/badge/Version-0.4.6-informational?style=flat)
+![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 1.4.8](https://img.shields.io/badge/AppVersion-1.4.8-informational?style=flat)
 
@@ -92,6 +92,9 @@ N/A
 | image.tag | string | `"1.4.8"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
+| podSecurityContext.fsGroup | int | `65534` | Volume binds will be granted to `nobody` group |
+| podSecurityContext.runAsGroup | int | `65534` | Run as `nobody` group |
+| podSecurityContext.runAsUser | int | `65534` | Run as `nobody` user |
 | postgresql | object | See [values.yaml](./values.yaml) | Enable and configure postgresql database subchart under this key. [[ref]](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
 | service.main | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 
