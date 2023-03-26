@@ -1,6 +1,6 @@
 # miniflux
 
-<img src="https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg" align="right" width="92" alt="miniflux logo" style="padding-left: 20px">
+<img src="https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg" align="right" width="92" alt="miniflux logo">
 
 ![Version: 0.4.5](https://img.shields.io/badge/Version-0.4.5-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)

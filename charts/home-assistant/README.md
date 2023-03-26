@@ -1,6 +1,6 @@
 # home-assistant
 
-<img src="https://raw.githubusercontent.com/home-assistant/assets/master/logo/logo-pretty.svg" align="right" width="92" alt="home-assistant logo" style="padding-left: 20px">
+<img src="https://raw.githubusercontent.com/home-assistant/assets/master/logo/logo-pretty.svg" align="right" width="92" alt="home-assistant logo">
 
 ![Version: 0.1.8](https://img.shields.io/badge/Version-0.1.8-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)

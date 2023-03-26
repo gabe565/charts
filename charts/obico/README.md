@@ -1,6 +1,6 @@
 # obico
 
-<img src="https://raw.githubusercontent.com/TheSpaghettiDetective/OctoPrint-Obico/master/octoprint_obico/static/img/logo-square.svg" align="right" width="92" alt="obico logo" style="padding-left: 20px">
+<img src="https://raw.githubusercontent.com/TheSpaghettiDetective/OctoPrint-Obico/master/octoprint_obico/static/img/logo-square.svg" align="right" width="92" alt="obico logo">
 
 ![Version: 0.0.4](https://img.shields.io/badge/Version-0.0.4-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)

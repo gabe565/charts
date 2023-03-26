@@ -1,6 +1,6 @@
 # matrimony
 
-<img src="https://raw.githubusercontent.com/gabe565/matrimony/b13163b384b27273080deb8d57d1222ba11337f9/frontend/public/img/logo.svg" align="right" width="92" alt="matrimony logo" style="padding-left: 20px">
+<img src="https://raw.githubusercontent.com/gabe565/matrimony/b13163b384b27273080deb8d57d1222ba11337f9/frontend/public/img/logo.svg" align="right" width="92" alt="matrimony logo">
 
 ![Version: 0.3.4](https://img.shields.io/badge/Version-0.3.4-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)

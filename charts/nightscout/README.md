@@ -1,6 +1,6 @@
 # nightscout
 
-<img src="https://raw.githubusercontent.com/nightscout/cgm-remote-monitor/71c2363b7be387cda899669be2bfd6ddbfe70198/static/images/large.png" align="right" width="92" alt="nightscout logo" style="padding-left: 20px">
+<img src="https://raw.githubusercontent.com/nightscout/cgm-remote-monitor/71c2363b7be387cda899669be2bfd6ddbfe70198/static/images/large.png" align="right" width="92" alt="nightscout logo">
 
 ![Version: 0.5.4](https://img.shields.io/badge/Version-0.5.4-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)

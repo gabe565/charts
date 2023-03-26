@@ -1,6 +1,6 @@
 # rss-bridge
 
-<img src="https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png" align="right" width="92" alt="rss-bridge logo" style="padding-left: 20px">
+<img src="https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png" align="right" width="92" alt="rss-bridge logo">
 
 ![Version: 0.3.3](https://img.shields.io/badge/Version-0.3.3-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)

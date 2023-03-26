@@ -1,6 +1,6 @@
 # changedetection-io
 
-<img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/changedetection-io/icon.png" align="right" width="92" alt="changedetection-io logo" style="padding-left: 20px">
+<img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/changedetection-io/icon.png" align="right" width="92" alt="changedetection-io logo">
 
 ![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)

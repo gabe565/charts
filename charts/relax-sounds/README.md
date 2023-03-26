@@ -1,6 +1,6 @@
 # relax-sounds
 
-<img src="https://github.com/gabe565/relax-sounds/raw/3e55b07a957f2e20aceeeba1d36226791f2f1569/frontend/src/assets/icon-purple.svg" align="right" width="92" alt="relax-sounds logo" style="padding-left: 20px">
+<img src="https://github.com/gabe565/relax-sounds/raw/3e55b07a957f2e20aceeeba1d36226791f2f1569/frontend/src/assets/icon-purple.svg" align="right" width="92" alt="relax-sounds logo">
 
 ![Version: 0.3.4](https://img.shields.io/badge/Version-0.3.4-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)

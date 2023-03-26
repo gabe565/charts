@@ -1,6 +1,6 @@
 # hammond
 
-<img src="https://raw.githubusercontent.com/akhilrex/hammond/84cba2c7f26f6d3f81c49b132110b24ac97c7b49/ui/public/touch-icon.png" align="right" width="92" alt="hammond logo" style="padding-left: 20px">
+<img src="https://raw.githubusercontent.com/akhilrex/hammond/84cba2c7f26f6d3f81c49b132110b24ac97c7b49/ui/public/touch-icon.png" align="right" width="92" alt="hammond logo">
 
 ![Version: 0.3.2](https://img.shields.io/badge/Version-0.3.2-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)

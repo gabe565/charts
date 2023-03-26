@@ -1,6 +1,6 @@
 # tandoor
 
-<img src="https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg" align="right" width="92" alt="tandoor logo" style="padding-left: 20px">
+<img src="https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg" align="right" width="92" alt="tandoor logo">
 
 ![Version: 0.4.6](https://img.shields.io/badge/Version-0.4.6-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
