@@ -9,7 +9,7 @@ Headscale runs in a distroless Docker container, which does not have any of the
 expected command line utilities. This keeps the container small and minimizes the possibility of CVEs,
 but it makes working with a config file in Kubernetes more difficult.
 
-To keep config simple, this Helm chart opts to use environment variables.
+To keep config simple, this Helm chart suggests using environment variables.
 All of the Headscale config variables are supported as envs, but official documentation is lacking.
 
 To configure Headscale:

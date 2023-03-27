@@ -27,4 +27,4 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Replace PNG icon with SVG
+      description: Don't overwrite config if already exists. Envs are still suggested, but not required anymore.
