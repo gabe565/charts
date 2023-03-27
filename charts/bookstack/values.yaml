@@ -45,6 +45,7 @@ persistence:
   # @default -- See [values.yaml](./values.yaml)
    config:
      enabled: false
+     retain: true
      # storageClass: ""
      # accessMode: ReadWriteOnce
      # size: 1Gi

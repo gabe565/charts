@@ -54,6 +54,7 @@ persistence:
   config:
     enabled: false
     mountPath: /app/config
+    retain: true
     # storageClass: ""
     # accessMode: ReadWriteOnce
     # size: 1Gi

@@ -49,6 +49,7 @@ persistence:
   data:
     enabled: false
     mountPath: /var/www/data
+    retain: true
     # storageClass: ""
     # accessMode: ReadWriteOnce
     # size: 1Gi

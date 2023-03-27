@@ -56,6 +56,7 @@ persistence:
   storage:
     enabled: false
     mountPath: /var/www/html/storage
+    retain: true
     # storageClass: ""
     # accessMode: ReadWriteOnce
     # size: 1Gi

@@ -21,3 +21,5 @@ annotations:
       description: Add example ingress values
     - kind: added
       description: Add example persistence values
+    - kind: changed
+      description: Retain persistent volumes by default

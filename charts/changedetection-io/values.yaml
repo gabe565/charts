@@ -47,6 +47,7 @@ persistence:
   data:
     enabled: false
     mountPath: /datastore
+    retain: true
     # storageClass: ""
     # accessMode: ReadWriteOnce
     # size: 1Gi

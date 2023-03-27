@@ -86,6 +86,7 @@ server:
     # @default -- See [values.yaml](./values.yaml)
     data:
       enabled: false
+      retain: true
       # storageClass:
       # accessMode: ReadWriteOnce
       # size:
@@ -95,6 +96,7 @@ server:
     media:
       enabled: false
       mountPath: /app/static_build/media
+      retain: true
       # storageClass:
       # accessMode: ReadWriteOnce
       # size:

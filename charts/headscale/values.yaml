@@ -58,6 +58,7 @@ persistence:
   config:
     enabled: false
     mountPath: /etc/headscale
+    retain: true
     # storageClass: ""
     # accessMode: ReadWriteOnce
     # size: 1Gi

@@ -50,6 +50,7 @@ persistence:
   config:
     enabled: false
     mountPath: /www/assets
+    retain: true
     # storageClass: ""
     # accessMode: ReadWriteOnce
     # size: 1Gi

@@ -46,6 +46,7 @@ persistence:
   data:
     enabled: false
     mountPath: /app/data
+    retain: true
     # storageClass: ""
     # accessMode: ReadWriteOnce
     # size: 1Gi

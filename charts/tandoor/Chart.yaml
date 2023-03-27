@@ -32,3 +32,5 @@ annotations:
       description: Add example persistence values
     - kind: changed
       description: Comment out default ingress values
+    - kind: changed
+      description: Retain persistent volumes by default
