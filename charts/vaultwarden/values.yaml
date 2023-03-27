@@ -21,8 +21,8 @@ controller:
 # @default -- See [values.yaml](./values.yaml)
 env:
   # -- Token for the admin interface, preferably use a long random string.
-  #    One option is to use `openssl rand -base64 48`.
   #    If not set, the admin panel is disabled.
+  #    [[ref]](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page#secure-the-admin_token)
   ADMIN_TOKEN: ""
 
 service:

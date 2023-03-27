@@ -35,3 +35,5 @@ annotations:
       description: Comment out default ingress values
     - kind: changed
       description: Retain persistent volumes by default
+    - kind: changed
+      description: Link to Argon2 docs for `ADMIN_TOKEN`

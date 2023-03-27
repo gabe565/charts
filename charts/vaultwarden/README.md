@@ -95,7 +95,7 @@ persistence:
 |-----|------|---------|-------------|
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
 | env | object | See [values.yaml](./values.yaml) | environment variables. [[ref]](https://github.com/dani-garcia/vaultwarden/blob/main/.env.template) |
-| env.ADMIN_TOKEN | string | `""` | Token for the admin interface, preferably use a long random string.    One option is to use `openssl rand -base64 48`.    If not set, the admin panel is disabled. |
+| env.ADMIN_TOKEN | string | `""` | Token for the admin interface, preferably use a long random string.    If not set, the admin panel is disabled.    [[ref]](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page#secure-the-admin_token) |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/dani-garcia/vaultwarden"` | image repository |
 | image.tag | string | `"1.28.0-alpine"` | image tag |
