@@ -29,3 +29,5 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Update default values for codeserver addon
+    - kind: added
+      description: Add example ingress values

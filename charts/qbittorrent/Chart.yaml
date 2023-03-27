@@ -22,4 +22,4 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: added
-      description: Add VueTorrent Docker mod docs
+      description: Add example ingress values

@@ -27,5 +27,5 @@ sources:
   - https://ghcr.io/linuxserver/bookstack
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Set default value for `securityContext.fsGroup`
+    - kind: added
+      description: Add example ingress values

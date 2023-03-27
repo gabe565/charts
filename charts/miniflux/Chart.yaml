@@ -26,5 +26,5 @@ sources:
   - https://github.com/miniflux/v2
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Update ghcr.io/miniflux/miniflux Docker tag to v2.0.43
+    - kind: added
+      description: Add example ingress values

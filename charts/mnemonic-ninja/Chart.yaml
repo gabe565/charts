@@ -17,5 +17,5 @@ sources:
   - https://github.com/gabe565/mnemonic-ninja
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Update app icon
+    - kind: added
+      description: Add example ingress values

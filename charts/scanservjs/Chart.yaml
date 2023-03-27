@@ -22,4 +22,4 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: added
-      description: Add chart icon
+      description: Add example ingress values

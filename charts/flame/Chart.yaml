@@ -22,5 +22,5 @@ sources:
   - https://github.com/pawelmalak/flame
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Update common Helm release to v1.3.2
+    - kind: added
+      description: Add example ingress values

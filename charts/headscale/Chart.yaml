@@ -26,7 +26,5 @@ sources:
   - https://github.com/juanfont/headscale
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Don't overwrite config if already exists. Envs are still suggested, but not required anymore.
-    - kind: changed
-      description: Set path envs to the value of `.persistence.config.mountPath` instead of hardcoding
+    - kind: added
+      description: Add example ingress values

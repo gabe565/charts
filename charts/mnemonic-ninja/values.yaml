@@ -38,3 +38,11 @@ ingress:
   # @default -- See [values.yaml](./values.yaml)
   main:
     enabled: false
+    # hosts:
+    #   - host: chart-example.local
+    #     paths:
+    #       - path: /
+    # tls:
+    #   - secretName: chart-example.local-tls
+    #     hosts:
+    #       - chart-example.local

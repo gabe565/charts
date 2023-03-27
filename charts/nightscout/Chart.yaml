@@ -25,5 +25,5 @@ sources:
   - https://github.com/nightscout/cgm-remote-monitor
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Replace PNG icon with SVG
+    - kind: added
+      description: Add example ingress values

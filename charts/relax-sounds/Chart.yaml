@@ -17,5 +17,5 @@ sources:
   - https://github.com/gabe565/relax-sounds
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Set default value for `securityContext.fsGroup`
+    - kind: added
+      description: Add example ingress values
