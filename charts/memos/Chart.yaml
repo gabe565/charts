@@ -1,0 +1,26 @@
+apiVersion: v2
+name: memos
+description: A lightweight, self-hosted memo hub. Open Source and Free forever.
+home: https://charts.gabe565.com/charts/memos
+icon: https://raw.githubusercontent.com/usememos/memos/2e14561bfce0092851ab612b6d849b9c9815228c/web/public/logo.png
+type: application
+version: 0.1.0
+# renovate datasource=docker depName=neosmemo/memos
+appVersion: 0.11.2
+kubeVersion: ">=1.22.0-0"
+keywords:
+  - memo
+  - markdown
+  - note-taking
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.3.2
+sources:
+  - https://github.com/gabe565/charts/tree/main/charts/memos
+  - https://usememos.com
+  - https://github.com/usememos/memos
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: Initial release
