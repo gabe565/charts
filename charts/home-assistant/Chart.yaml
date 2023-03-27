@@ -28,4 +28,4 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Replace png icon with svg
+      description: Update default values for codeserver addon

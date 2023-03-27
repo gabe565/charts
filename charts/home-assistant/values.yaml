@@ -58,16 +58,27 @@ postgresql:
       enabled: false
 
 addons:
-  # -- Enable VS Code server addon.
-  #    This allows for easy access to configuration.yaml
-  # @default -- See [values.yaml](./values.yaml)
   codeserver:
+    # -- Enable VS Code server addon.
+    #    This allows for easy access to configuration.yaml
     enabled: false
+    # -- Enable and configure ingress settings for the VS Code server under this key.
+    # @default -- See [values.yaml](./values.yaml)
+    ingress:
+      enabled: false
+      # hosts:
+      #   - host: code.example.com
+      #     paths:
+      #       - path: /
+      # tls:
+      #   - secretName: code.example.com-tls
+      #     hosts:
+      #       - code.example.com
+    # @ignored
     args:
       - --auth=none
       - --user-data-dir=/data/config/.vscode
+    # @ignored
     volumeMounts:
       - name: config
         mountPath: /data/config
-    ingress:
-      enabled: false

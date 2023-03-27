@@ -132,7 +132,8 @@ No extra privileges required!
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| addons.codeserver | object | See [values.yaml](./values.yaml) | Enable VS Code server addon.    This allows for easy access to configuration.yaml |
+| addons.codeserver.enabled | bool | `false` | Enable VS Code server addon.    This allows for easy access to configuration.yaml |
+| addons.codeserver.ingress | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the VS Code server under this key. |
 | dnsPolicy | string | `"ClusterFirst"` | When hostNetwork is true set dnsPolicy to `ClusterFirstWithHostNet` |
 | env | object | See [values.yaml](./values.yaml) | environment variables. |
 | env.TZ | string | `"UTC"` | Set the container timezone |
