@@ -122,13 +122,13 @@ server:
       annotations:
         nginx.ingress.kubernetes.io/proxy-body-size: 64m
       # hosts:
-      #   - host: example.com
+      #   - host: chart-example.local
       #     paths:
       #       - path: /
       # tls:
-      #   - secretName: example.com-tls
+      #   - secretName: chart-example.local-tls
       #     hosts:
-      #       - example.com
+      #       - chart-example.local
 
 ml-api:
   image:

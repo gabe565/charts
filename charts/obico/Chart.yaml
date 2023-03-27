@@ -26,3 +26,5 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Update TheSpaghettiDetective/obico-server digest to d5155dd
+    - kind: changed
+      description: Update example domain from example.com to chart-example.local
