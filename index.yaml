@@ -371,6 +371,45 @@ entries:
   bookstack:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: version-v23.02.2
+    created: "2023-03-27T20:31:10.817988855Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.4.6
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
+    digest: 0a7a9ad2f0ffceda5fe88cee0978dc813e6980fd7eb0a26bba86628d0b6baabd
+    home: https://charts.gabe565.com/charts/bookstack
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg
+    keywords:
+    - bookstack
+    - wiki
+    - documentation
+    kubeVersion: '>=1.22.0-0'
+    name: bookstack
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/bookstack
+    - https://bookstackapp.com
+    - https://github.com/BookStackApp/BookStack
+    - https://ghcr.io/linuxserver/bookstack
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/bookstack-0.7.1/bookstack-0.7.1.tgz
+    version: 0.7.1
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Set default value for `securityContext.fsGroup`
     apiVersion: v2
@@ -964,6 +1003,37 @@ entries:
     - https://github.com/gabe565/charts/releases/download/bookstack-0.1.0/bookstack-0.1.0.tgz
     version: 0.1.0
   borgmatic:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Add example persistence values
+    apiVersion: v2
+    appVersion: 1.7.9
+    created: "2023-03-27T20:31:10.976169817Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: borgmatic is simple, configuration-driven backup software for servers
+      and workstations. Protect your files with client-side encryption. Backup your
+      databases too. Monitor it all with integrated third-party services.
+    digest: b2fb7c6efc5cfe3d4f6048ce8fe541d272388669333011e0a08748f05f4d1927
+    home: https://charts.gabe565.com/charts/borgmatic
+    icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
+    keywords:
+    - borgmatic
+    - borg
+    - backup
+    kubeVersion: '>=1.21.0-0'
+    name: borgmatic
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/borgmatic
+    - https://projects.torsion.org/borgmatic-collective/borgmatic
+    - https://github.com/borgmatic-collective/docker-borgmatic
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/borgmatic-0.6.7/borgmatic-0.6.7.tgz
+    version: 0.6.7
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -1747,6 +1817,40 @@ entries:
     - https://github.com/gabe565/charts/releases/download/borgmatic-0.1.0/borgmatic-0.1.0.tgz
     version: 0.1.0
   changedetection-io:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: "0.41"
+    created: "2023-03-27T20:31:11.106663278Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: Live your data-life pro-actively, track website content changes and
+      receive notifications via Discord, Email, Slack, Telegram and 70+ more.
+    digest: 7d864a243a1bd85a70ab47c9376c88d178e0691aa3719844f426ea3f836e2993
+    home: https://charts.gabe565.com/charts/changedetection-io
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/changedetection-io/icon.png
+    keywords:
+    - changedetection.io
+    - change-detection
+    - website-monitoring
+    - website-change-tracker
+    kubeVersion: '>=1.22.0-0'
+    name: changedetection-io
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/changedetection-io
+    - https://github.com/dgtlmoon/changedetection.io
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/changedetection-io-0.5.1/changedetection-io-0.5.1.tgz
+    version: 0.5.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -2693,6 +2797,40 @@ entries:
   flame:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: multiarch2.3.0
+    created: "2023-03-27T20:31:11.415860372Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: Flame is self-hosted startpage for your server. Easily manage your
+      apps and bookmarks with built-in editors.
+    digest: ebc7e4a06436de51d85ff448fdae8544fdd72a5298f1bd806891337bd0675927
+    home: https://charts.gabe565.com/charts/flame
+    icon: https://raw.githubusercontent.com/pawelmalak/flame/4ed29fe276b4282c67415f9788660df2a3a69b5c/client/public/icons/apple-touch-icon-180x180.png
+    keywords:
+    - flame
+    - dashboard
+    - startpage
+    - homepage
+    kubeVersion: '>=1.22.0-0'
+    name: flame
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/flame
+    - https://github.com/pawelmalak/flame
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/flame-0.3.3/flame-0.3.3.tgz
+    version: 0.3.3
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Update common Helm release to v1.3.2
     apiVersion: v2
@@ -2993,6 +3131,40 @@ entries:
   hammond:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-03-27T20:31:11.554875687Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: A self-hosted vehicle expense tracking system with support for multiple
+      users.
+    digest: f14a2c39c9978512a5c55f8aececc1457f15cae18c7446ec890df0b75cec0a46
+    home: https://charts.gabe565.com/charts/hammond
+    icon: https://raw.githubusercontent.com/akhilrex/hammond/84cba2c7f26f6d3f81c49b132110b24ac97c7b49/ui/public/touch-icon.png
+    keywords:
+    - hammond
+    - vehicle
+    - expense-tracker
+    - clarkson
+    kubeVersion: '>=1.22.0-0'
+    name: hammond
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/hammond
+    - https://github.com/akhilrex/hammond
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/hammond-0.3.3/hammond-0.3.3.tgz
+    version: 0.3.3
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Update common Helm release to v1.3.2
     apiVersion: v2
@@ -3265,6 +3437,44 @@ entries:
     - https://github.com/gabe565/charts/releases/download/hammond-0.1.0/hammond-0.1.0.tgz
     version: 0.1.0
   headscale:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: 0.21.0
+    created: "2023-03-27T20:31:11.707835555Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.14
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: ecf7adfa75c3dcdc437ea32070d4ba151777e14f874617893e2057e6ed4fdb61
+    home: https://charts.gabe565.com/charts/headscale
+    icon: https://raw.githubusercontent.com/juanfont/headscale/56a7b1e34952c3e0306a134b2be9b4277f5d8d6e/docs/logo/headscale3-dots.svg
+    keywords:
+    - headscale
+    - tailscale
+    - wireguard
+    - vpn
+    kubeVersion: '>=1.22.0-0'
+    name: headscale
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/headscale
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.9.3/headscale-0.9.3.tgz
+    version: 0.9.3
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -4292,6 +4502,46 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update default values for codeserver addon
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: 2023.3.6
+    created: "2023-03-27T20:31:11.868535262Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.14
+    description: Open source home automation that puts local control and privacy first.
+    digest: c62d5094833d402e35dd49c98c1e0f63c58dfce041388dae21d7cd7d5552b862
+    home: https://charts.gabe565.com/charts/home-assistant/
+    icon: https://raw.githubusercontent.com/home-assistant/assets/master/logo/logo-pretty.svg
+    keywords:
+    - home-automation
+    - mqtt
+    - iot
+    - internet-of-things
+    kubeVersion: '>=1.22.0-0'
+    name: home-assistant
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/home-assistant
+    - https://home-assistant.io
+    - https://github.com/home-assistant/core
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/home-assistant-0.1.9/home-assistant-0.1.9.tgz
+    version: 0.1.9
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Replace png icon with svg
     apiVersion: v2
     appVersion: 2023.3.6
@@ -4768,6 +5018,42 @@ entries:
   homer:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add default values for codeserver addon
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: v23.02.2
+    created: "2023-03-27T20:31:12.017041049Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: 0006caceeddee10bb928e4f96f62e1663d6e8d0009903fc65ab111130742d3c1
+    home: https://charts.gabe565.com/charts/homer
+    icon: https://raw.githubusercontent.com/bastienwirtz/homer/5609315fe77da5441a9c3dda8d92c0ffe9f1bf17/public/assets/icons/logo.svg
+    keywords:
+    - homer
+    - dashboard
+    - startpage
+    - homepage
+    kubeVersion: '>=1.22.0-0'
+    name: homer
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/homer
+    - https://github.com/bastienwirtz/homer
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/homer-0.4.4/homer-0.4.4.tgz
+    version: 0.4.4
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Replace png icon with svg
     apiVersion: v2
@@ -5233,6 +5519,37 @@ entries:
     - https://github.com/gabe565/charts/releases/download/homer-0.1.0/homer-0.1.0.tgz
     version: 0.1.0
   limo:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-03-27T20:31:12.274712211Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.14
+    description: A file upload server.
+    digest: aa4ee081a5c318c8a6b4a386ac66f73557a2d2c56af133998d4e29184d391672
+    home: https://charts.gabe565.com/charts/limo
+    kubeVersion: '>=1.22.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/limo
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.5.1/limo-0.5.1.tgz
+    version: 0.5.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -5892,6 +6209,34 @@ entries:
   matrimony:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-03-27T20:31:12.424321318Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: Self-hosted wedding site configured via YAML
+    digest: 78f671fc5272e3dc70dd3963b4bc2fd0ae65b42cfb3144abead5910df4c3312b
+    home: https://charts.gabe565.com/charts/matrimony
+    icon: https://raw.githubusercontent.com/gabe565/matrimony/b13163b384b27273080deb8d57d1222ba11337f9/frontend/public/img/logo.svg
+    kubeVersion: '>=1.22.0-0'
+    name: matrimony
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/matrimony
+    - https://github.com/gabe565/matrimony
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/matrimony-0.4.1/matrimony-0.4.1.tgz
+    version: 0.4.1
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Set default value for `securityContext.fsGroup`
     apiVersion: v2
@@ -6234,6 +6579,39 @@ entries:
     - https://github.com/gabe565/charts/releases/download/matrimony-0.1.0/matrimony-0.1.0.tgz
     version: 0.1.0
   miniflux:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+    apiVersion: v2
+    appVersion: 2.0.43
+    created: "2023-03-27T20:31:12.594302594Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.14
+    description: Miniflux is a minimalist and opinionated feed reader.
+    digest: 863da3ead9f364623e4f8a19f355f0de6f8c3efe9445719d769a0f631bf2c49c
+    home: https://charts.gabe565.com/charts/miniflux
+    icon: https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg
+    keywords:
+    - miniflux
+    - rss
+    - news
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: miniflux
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/miniflux
+    - https://github.com/miniflux/v2
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/miniflux-0.4.6/miniflux-0.4.6.tgz
+    version: 0.4.6
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -6821,6 +7199,31 @@ entries:
   mnemonic-ninja:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-03-27T20:31:12.771169494Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: Mnemonic Ninja is a website to convert between a number and its corresponding
+      word to aid in memorization.
+    digest: 8aa39aba09d9cd26261db8e4ee9096df98b70fd8bd8a58d50a68cfbdf802ba82
+    home: https://charts.gabe565.com/charts/mnemonic-ninja
+    icon: https://raw.githubusercontent.com/gabe565/mnemonic-ninja/465602cd7093f62d611c69d7a91e520e4022fab9/src/assets/logo.svg
+    kubeVersion: '>=1.22.0-0'
+    name: mnemonic-ninja
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/mnemonic-ninja
+    - https://github.com/gabe565/mnemonic-ninja
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.3.5/mnemonic-ninja-0.3.5.tgz
+    version: 0.3.5
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Update app icon
     apiVersion: v2
@@ -7164,6 +7567,41 @@ entries:
   monica:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: 4.0.0-fpm-alpine
+    created: "2023-03-27T20:31:12.901812657Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.4.6
+    description: Personal CRM. Remember everything about your friends, family and
+      business relationships.
+    digest: f0a66914ab23db0bc44df11c4c3d4d795633d4cf07170bb9bf2e28b7feb0a371
+    home: https://charts.gabe565.com/charts/monica
+    icon: https://raw.githubusercontent.com/monicahq/monica/main/public/img/monica.svg
+    keywords:
+    - crm
+    kubeVersion: '>=1.22.0-0'
+    name: monica
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/monica
+    - https://github.com/monicahq/monica
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/monica-0.5.1/monica-0.5.1.tgz
+    version: 0.5.1
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Set default value for `securityContext.fsGroup`
     apiVersion: v2
@@ -7444,6 +7882,39 @@ entries:
     - https://github.com/gabe565/charts/releases/download/monica-0.1.0/monica-0.1.0.tgz
     version: 0.1.0
   nightscout:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+    apiVersion: v2
+    appVersion: 14.2.6
+    created: "2023-03-27T20:31:13.106832267Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.6.7
+    description: Web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers
+      to remotely view a patient's glucose data in real time.
+    digest: 6160704a08b14e854dc52c69b97ef88915fbbbee04f846824fa903e6b11ca2d6
+    home: https://charts.gabe565.com/charts/nightscout
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/nightscout/icon.svg
+    keywords:
+    - nightscout
+    - cgm
+    - blood-sugar
+    - diabetes
+    kubeVersion: '>=1.22.0-0'
+    name: nightscout
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/nightscout
+    - https://github.com/nightscout/cgm-remote-monitor
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/nightscout-0.5.6/nightscout-0.5.6.tgz
+    version: 0.5.6
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -8057,6 +8528,43 @@ entries:
       artifacthub.io/changes: |-
         - kind: changed
           description: Update TheSpaghettiDetective/obico-server digest to d5155dd
+        - kind: changed
+          description: Update example domain from example.com to chart-example.local
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: sha-d5155dd2c3f97ade383898d0476d97ef7c98eae4
+    created: "2023-03-27T20:31:13.30706509Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.8.0
+    description: Obico is a community-built, open-source smart 3D printing platform
+      used by makers, enthusiasts, and tinkerers around the world.
+    digest: 8aa9d8a9d2f6e417e5cceccb200e2255a963747bd8364817fcd3feb1fe5f35c4
+    home: https://charts.gabe565.com/charts/obico
+    icon: https://raw.githubusercontent.com/TheSpaghettiDetective/OctoPrint-Obico/master/octoprint_obico/static/img/logo-square.svg
+    keywords:
+    - 3d-printing
+    - machine-learning
+    kubeVersion: '>=1.22.0-0'
+    name: obico
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/obico
+    - https://github.com/TheSpaghettiDetective/obico-server
+    - https://github.com/gabe565/docker-obico
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/obico-0.0.5/obico-0.0.5.tgz
+    version: 0.0.5
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Update TheSpaghettiDetective/obico-server digest to d5155dd
     apiVersion: v2
     appVersion: sha-d5155dd2c3f97ade383898d0476d97ef7c98eae4
     created: "2023-03-19T05:59:43.23939877Z"
@@ -8188,6 +8696,40 @@ entries:
     - https://github.com/gabe565/charts/releases/download/obico-0.0.1/obico-0.0.1.tgz
     version: 0.0.1
   pictshare:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: 72394f17
+    created: "2023-03-27T20:31:13.450165779Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: PictShare is an open source image, mp4, pastebin hosting service
+      with a simple resizing and upload API that you can host yourself.
+    digest: 1de7fb6cc1be61a35ec8c55cda34f8f4f74134ad21b06b38bd2d75f37c4e1401
+    home: https://charts.gabe565.com/charts/pictshare
+    icon: https://camo.githubusercontent.com/6efdab1c63d518fafc5e735001c5ed45e7cbd4958952cdd972e2630eee881d97/68747470733a2f2f7069637473686172652e6e65742f706868796e6a2e706e67
+    keywords:
+    - pictshare
+    - image
+    - picture
+    - image-uploader
+    kubeVersion: '>=1.22.0-0'
+    name: pictshare
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/pictshare
+    - https://github.com/HaschekSolutions/pictshare
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/pictshare-0.4.1/pictshare-0.4.1.tgz
+    version: 0.4.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -8626,6 +9168,37 @@ entries:
   podgrab:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-03-27T20:31:13.607078418Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: A self-hosted podcast manager to download episodes as soon as they
+      become live.
+    digest: b2df263d572f6c36e08e6c3bf4d7c28080e125b51bc51e3d92ec677af021191a
+    home: https://charts.gabe565.com/charts/podgrab
+    keywords:
+    - podgrab
+    - podcast
+    kubeVersion: '>=1.22.0-0'
+    name: podgrab
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/podgrab
+    - https://github.com/akhilrex/podgrab
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/podgrab-0.3.3/podgrab-0.3.3.tgz
+    version: 0.3.3
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Update common Helm release to v1.3.2
     apiVersion: v2
@@ -8891,6 +9464,34 @@ entries:
     - https://github.com/gabe565/charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
     version: 0.1.0
   portfolio:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-03-27T20:31:13.755941311Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: My personal portfolio website
+    digest: cca81356c6614372a9e3539b00abd126b6b1b480b68246dc67c17d6f52c6f94a
+    home: https://charts.gabe565.com/charts/portfolio
+    icon: https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png
+    kubeVersion: '>=1.22.0-0'
+    name: portfolio
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/portfolio
+    - https://github.com/gabe565/portfolio
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/portfolio-0.7.1/portfolio-0.7.1.tgz
+    version: 0.7.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -9548,6 +10149,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: version-4.5.2-r0
+    created: "2023-03-27T20:31:13.908241667Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: The qBittorrent project aims to provide an open-source software alternative
+      to µTorrent.
+    digest: dde45882dc66adda8df51bd73081dd74264aa8bfa11195c35399368271b57b60
+    home: https://charts.gabe565.com/charts/qbittorrent
+    icon: https://raw.githubusercontent.com/qbittorrent/qBittorrent/master/src/icons/qbittorrent-tray.svg
+    keywords:
+    - torrent
+    - bittorrent
+    kubeVersion: '>=1.22.0-0'
+    name: qbittorrent
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/qbittorrent
+    - https://github.com/qbittorrent/qBittorrent
+    - https://github.com/linuxserver/docker-qbittorrent
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/qbittorrent-0.0.3/qbittorrent-0.0.3.tgz
+    version: 0.0.3
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
           description: Add VueTorrent Docker mod docs
     apiVersion: v2
     appVersion: version-4.5.2-r0
@@ -9604,6 +10238,35 @@ entries:
     - https://github.com/gabe565/charts/releases/download/qbittorrent-0.0.1/qbittorrent-0.0.1.tgz
     version: 0.0.1
   relax-sounds:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-03-27T20:31:14.023854159Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: Relax Sounds is a website that lets you stream relaxing sounds to
+      your browser or over Google Cast.
+    digest: da14d276ad8a8916d88e30b666d9e1700f07af4c679ae697562d0f9eba71eb88
+    home: https://charts.gabe565.com/charts/relax-sounds
+    icon: https://github.com/gabe565/relax-sounds/raw/3e55b07a957f2e20aceeeba1d36226791f2f1569/frontend/src/assets/icon-purple.svg
+    kubeVersion: '>=1.22.0-0'
+    name: relax-sounds
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/relax-sounds
+    - https://github.com/gabe565/relax-sounds
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/relax-sounds-0.4.1/relax-sounds-0.4.1.tgz
+    version: 0.4.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -9999,6 +10662,38 @@ entries:
   rss-bridge:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-03-27T20:31:14.150747854Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: The RSS feed for websites missing it.
+    digest: 86af83c66dd2729250797371da9afed153eb2665dad461a61949d2d1d0d21829
+    home: https://charts.gabe565.com/charts/rss-bridge
+    icon: https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png
+    keywords:
+    - rss-bridge
+    - rss
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: rss-bridge
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/rss-bridge
+    - https://github.com/RSS-Bridge/rss-bridge
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rss-bridge-0.3.4/rss-bridge-0.3.4.tgz
+    version: 0.3.4
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Update common Helm release to v1.3.2
     apiVersion: v2
@@ -10374,6 +11069,39 @@ entries:
     - https://github.com/gabe565/charts/releases/download/rss-bridge-0.1.0/rss-bridge-0.1.0.tgz
     version: 0.1.0
   rsshub:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-03-27T20:31:14.393164741Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.7.2
+    description: RSSHub is an open source, easy to use, and extensible RSS feed generator.
+      It's capable of generating RSS feeds from pretty much everything.
+    digest: 0ee9a26ad32897b28195f8d6edd3c522e946de7c0d1212725fefbb208057dcf1
+    home: https://charts.gabe565.com/charts/rsshub
+    icon: https://camo.githubusercontent.com/79f2dcf6fb41b71619186b12eed25495fa55e20d3f21355798a2cb22703c6f8b/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30342f32332f356362656237653431343134632e706e67
+    keywords:
+    - rsshub
+    - rss
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: rsshub
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/rsshub
+    - https://github.com/DIYgod/RSSHub
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rsshub-0.3.5/rsshub-0.3.5.tgz
+    version: 0.3.5
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -10948,6 +11676,40 @@ entries:
     - https://github.com/gabe565/charts/releases/download/rsshub-0.1.0/rsshub-0.1.0.tgz
     version: 0.1.0
   scanservjs:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Add example ingress values
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: release-v2.26.1
+    created: "2023-03-27T20:31:14.514333333Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: scanservjs is a web UI frontend for your scanner. It allows you to
+      share one or more scanners (using SANE) on a network without the need for drivers
+      or complicated installation.
+    digest: 90d7db9e65e3705dd1a2f4790e2f88bc8a7269724f3fb0753b68b58c617e1f07
+    home: https://charts.gabe565.com/charts/scanservjs
+    icon: https://raw.githubusercontent.com/sbs20/scanservjs/d28627ebec5cec6d30475a43bd101cc9c5e0961a/packages/client/src/icons/android-chrome-192x192.png
+    keywords:
+    - scanservjs
+    - scanner
+    - sane
+    kubeVersion: '>=1.22.0-0'
+    name: scanservjs
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/scanservjs
+    - https://github.com/sbs20/scanservjs
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/scanservjs-0.5.3/scanservjs-0.5.3.tgz
+    version: 0.5.3
   - annotations:
       artifacthub.io/changes: |-
         - kind: added
@@ -11651,6 +12413,46 @@ entries:
   tandoor:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Comment out default ingress values
+        - kind: changed
+          description: Retain persistent volumes by default
+    apiVersion: v2
+    appVersion: 1.4.8
+    created: "2023-03-27T20:31:14.812709631Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.14
+    description: Application for managing recipes, planning meals, building shopping
+      lists and much much more!
+    digest: 3a88af0dc6da06de630439c442f9d9a850ae4e701396e6631f7f36b3c26e9485
+    home: https://charts.gabe565.com/charts/tandoor
+    icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
+    keywords:
+    - recipes
+    - cookbook
+    - cooking
+    - meal-planner
+    kubeVersion: '>=1.22.0-0'
+    name: tandoor
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/tandoor
+    - https://docs.tandoor.dev/
+    - https://github.com/TandoorRecipes/recipes
+    - https://hub.docker.com/r/vabene1111/recipes
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/tandoor-0.5.1/tandoor-0.5.1.tgz
+    version: 0.5.1
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Run as non-root container
         - kind: added
@@ -12155,6 +12957,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: added
+          description: Add example ingress values
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-03-27T20:31:14.960601007Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: Transsmute builds RSS feeds for websites that don't provide them.
+    digest: 72808906adefe519b19baac0a873899e11493f1b9f7219ec0d28c87b0b03c9b7
+    home: https://charts.gabe565.com/charts/transsmute
+    icon: https://raw.githubusercontent.com/gabe565/transsmute/ce624f8c903654ead37489d8d274b97d526d397a/assets/icon.svg
+    keywords:
+    - transsmute
+    - rss
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: transsmute
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/transsmute
+    - https://github.com/gabe565/transsmute
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/transsmute-0.3.4/transsmute-0.3.4.tgz
+    version: 0.3.4
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
           description: Add app icon
     apiVersion: v2
     appVersion: latest
@@ -12507,6 +13337,48 @@ entries:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
   vaultwarden:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Add example persistence values
+        - kind: changed
+          description: Comment out default ingress values
+        - kind: changed
+          description: Retain persistent volumes by default
+        - kind: changed
+          description: Link to Argon2 docs for `ADMIN_TOKEN`
+    apiVersion: v2
+    appVersion: 1.28.0-alpine
+    created: "2023-03-27T20:31:16.130950782Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.4.6
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.14
+    description: Unofficial Bitwarden compatible server written in Rust.
+    digest: c521a215a4640b7be1f68c7d313e80f0b37113c87f7584dfb76412623b00a7bc
+    home: https://charts.gabe565.com/charts/vaultwarden
+    icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b69952db6eb12987a9668fea6b72df79cfa41/resources/vaultwarden-icon.svg
+    keywords:
+    - vaultwarden
+    - bitwarden
+    - bitwarden_rs
+    kubeVersion: '>=1.22.0-0'
+    name: vaultwarden
+    sources:
+    - https://github.com/gabe565/charts/tree/main/charts/vaultwarden
+    - https://github.com/dani-garcia/vaultwarden
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/vaultwarden-0.6.1/vaultwarden-0.6.1.tgz
+    version: 0.6.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -13015,4 +13887,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-27T18:44:20.173777512Z"
+generated: "2023-03-27T20:31:16.133413527Z"
