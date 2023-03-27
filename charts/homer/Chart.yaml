@@ -22,5 +22,5 @@ sources:
   - https://github.com/bastienwirtz/homer
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Replace png icon with svg
+    - kind: added
+      description: Add default values for codeserver addon

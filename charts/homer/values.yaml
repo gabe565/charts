@@ -52,3 +52,29 @@ configmap:
     data:
       config.yml: |
         externalConfig: https://raw.githubusercontent.com/bastienwirtz/homer/main/public/assets/config.yml.dist
+
+addons:
+  codeserver:
+    # -- Enable VS Code server addon.
+    #    This allows for easy access to assets.
+    enabled: false
+    # -- Enable and configure ingress settings for the VS Code server under this key.
+    # @default -- See [values.yaml](./values.yaml)
+    ingress:
+      enabled: false
+      # hosts:
+      #   - host: code.example.com
+      #     paths:
+      #       - path: /
+      # tls:
+      #   - secretName: code.example.com-tls
+      #     hosts:
+      #       - code.example.com
+    # @ignored
+    args:
+      - --auth=none
+      - --user-data-dir=/assets/.vscode
+    # @ignored
+    volumeMounts:
+      - name: assets
+        mountPath: /assets
