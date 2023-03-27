@@ -5,20 +5,23 @@ args: ["headscale", "serve"]
 initContainers:
   config:
     image: alpine
+    env:
+      - name: CONFIG_DIR
+        value: {{ .Values.persistence.config.mountPath }}
     volumeMounts:
       {{- if .Values.persistence.config.enabled }}
       - name: config
-        mountPath: /etc/headscale
+        mountPath: {{ .Values.persistence.config.mountPath }}
       {{- end }}
     command:
       - sh
       - -c
       - |
-        if [[ -f '/etc/headscale/config.yaml' ]]; then
+        if [[ -f "$CONFIG_DIR/config.yaml" ]]; then
           echo 'Config already exists' >&2
         else
           echo 'Writing empty config' >&2
-          cat <<- 'EOF' >/etc/headscale/config.yaml
+          cat <<- 'EOF' >"$CONFIG_DIR/config.yaml"
             # It's suggested to use environment variables to configure Headscale.
             # For config reference, see https://github.com/juanfont/headscale/blob/main/config-example.yaml
             # To configure any of these as an env:
@@ -43,9 +46,9 @@ env:
   HEADSCALE_METRICS_LISTEN_ADDR: "0.0.0.0:{{ .metrics.port }}"
   {{- end }}
 
-  HEADSCALE_PRIVATE_KEY_PATH: "/etc/headscale/private.key"
+  HEADSCALE_PRIVATE_KEY_PATH: "{{ .Values.persistence.config.mountPath }}/private.key"
   HEADSCALE_NOISE: "{}"
-  HEADSCALE_NOISE_PRIVATE_KEY_PATH: "/etc/headscale/noise_private.key"
+  HEADSCALE_NOISE_PRIVATE_KEY_PATH: "{{ .Values.persistence.config.mountPath }}/noise_private.key"
 
   HEADSCALE_IP_PREFIXES: "fd7a:115c:a1e0::/48 100.64.0.0/10"
 
@@ -72,7 +75,7 @@ env:
       key: {{ if not .auth.password }}postgres-{{ end }}password
   {{- else }}
   HEADSCALE_DB_TYPE: "sqlite3"
-  HEADSCALE_DB_PATH: "/etc/headscale/db.sqlite"
+  HEADSCALE_DB_PATH: "{{ $.Values.persistence.config.mountPath }}/db.sqlite"
   {{- end }}
   {{- end }}
 {{- end -}}
