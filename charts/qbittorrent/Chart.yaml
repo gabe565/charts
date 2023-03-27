@@ -4,7 +4,7 @@ description: The qBittorrent project aims to provide an open-source software alt
 home: https://charts.gabe565.com/charts/qbittorrent
 icon: https://raw.githubusercontent.com/qbittorrent/qBittorrent/master/src/icons/qbittorrent-tray.svg
 type: application
-version: 0.0.2
+version: 0.0.3
 # renovate datasource=docker depName=ghcr.io/linuxserver/qbittorrent
 appVersion: version-4.5.2-r0
 kubeVersion: ">=1.22.0-0"

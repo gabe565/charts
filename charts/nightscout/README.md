@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/nightscout/icon.svg" align="right" width="92" alt="nightscout logo">
 
-![Version: 0.5.5](https://img.shields.io/badge/Version-0.5.5-informational?style=flat)
+![Version: 0.5.6](https://img.shields.io/badge/Version-0.5.6-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 14.2.6](https://img.shields.io/badge/AppVersion-14.2.6-informational?style=flat)
 

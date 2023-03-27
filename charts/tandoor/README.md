@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg" align="right" width="92" alt="tandoor logo">
 
-![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat)
+![Version: 0.5.1](https://img.shields.io/badge/Version-0.5.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 1.4.8](https://img.shields.io/badge/AppVersion-1.4.8-informational?style=flat)
 

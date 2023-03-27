@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/qbittorrent/qBittorrent/master/src/icons/qbittorrent-tray.svg" align="right" width="92" alt="qbittorrent logo">
 
-![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat)
+![Version: 0.0.3](https://img.shields.io/badge/Version-0.0.3-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: version-4.5.2-r0](https://img.shields.io/badge/AppVersion-version--4.5.2--r0-informational?style=flat)
 

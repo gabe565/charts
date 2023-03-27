@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg" align="right" width="92" alt="borgmatic logo">
 
-![Version: 0.6.6](https://img.shields.io/badge/Version-0.6.6-informational?style=flat)
+![Version: 0.6.7](https://img.shields.io/badge/Version-0.6.7-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 1.7.9](https://img.shields.io/badge/AppVersion-1.7.9-informational?style=flat)
 

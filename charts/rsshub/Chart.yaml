@@ -4,7 +4,7 @@ description: RSSHub is an open source, easy to use, and extensible RSS feed gene
 home: https://charts.gabe565.com/charts/rsshub
 icon: https://camo.githubusercontent.com/79f2dcf6fb41b71619186b12eed25495fa55e20d3f21355798a2cb22703c6f8b/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30342f32332f356362656237653431343134632e706e67
 type: application
-version: 0.3.4
+version: 0.3.5
 # renovate datasource=docker depName=diygod/rsshub
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
