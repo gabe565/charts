@@ -52,9 +52,15 @@ ingress:
 persistence:
   config:
     enabled: false
+    # storageClass: ""
+    # accessMode: ReadWriteOnce
+    # size: 1Gi
   media:
     enabled: false
     mountPath: /opt/recipes/mediafiles
+    # storageClass: ""
+    # accessMode: ReadWriteOnce
+    # size: 1Gi
   static:
     enabled: true
     type: emptyDir

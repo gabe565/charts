@@ -22,5 +22,5 @@ sources:
   - https://github.com/borgmatic-collective/docker-borgmatic
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Update ghcr.io/borgmatic-collective/borgmatic Docker tag to v1.7.9
+    - kind: added
+      description: Add example persistence values

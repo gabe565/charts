@@ -49,6 +49,9 @@ persistence:
   data:
     enabled: false
     mountPath: /data
+    # storageClass: ""
+    # accessMode: ReadWriteOnce
+    # size: 1Gi
 
 podSecurityContext:
   # -- Volume group permissions

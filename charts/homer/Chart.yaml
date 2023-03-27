@@ -26,3 +26,5 @@ annotations:
       description: Add default values for codeserver addon
     - kind: added
       description: Add example ingress values
+    - kind: added
+      description: Add example persistence values

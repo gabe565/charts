@@ -37,6 +37,9 @@ persistence:
   data:
     enabled: false
     retain: true
+    # storageClass: ""
+    # accessMode: ReadWriteOnce
+    # size: 1Gi
     subPath:
       - path: borg-repository
         mountPath: /mnt/borg-repository

@@ -47,6 +47,9 @@ persistence:
   data:
     enabled: false
     mountPath: /datastore
+    # storageClass: ""
+    # accessMode: ReadWriteOnce
+    # size: 1Gi
 
 browserless:
   # -- Enable Browserless sidecar

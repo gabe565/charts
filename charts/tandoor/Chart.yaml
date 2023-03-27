@@ -28,7 +28,5 @@ sources:
   - https://hub.docker.com/r/vabene1111/recipes
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Run as non-root container
     - kind: added
-      description: Add django-js-reverse emptyDir volume
+      description: Add example persistence values

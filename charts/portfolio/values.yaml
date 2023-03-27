@@ -48,6 +48,9 @@ persistence:
   # @default -- See [values.yaml](./values.yaml)
   data:
     enabled: false
+    # storageClass: ""
+    # accessMode: ReadWriteOnce
+    # size: 1Gi
 
 podSecurityContext:
   # -- Volume group permissions

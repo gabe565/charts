@@ -53,6 +53,9 @@ ingress:
 persistence:
   config:
     enabled: false
+    # storageClass: ""
+    # accessMode: ReadWriteOnce
+    # size: 1Gi
   media:
     enabled: false
     # mountPath: /media

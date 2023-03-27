@@ -29,5 +29,5 @@ dependencies:
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Run as non-root container
+    - kind: added
+      description: Add example persistence values

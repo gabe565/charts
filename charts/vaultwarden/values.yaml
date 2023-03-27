@@ -61,6 +61,9 @@ persistence:
   # @default -- See [values.yaml](./values.yaml)
   data:
     enabled: false
+    # storageClass: ""
+    # accessMode: ReadWriteOnce
+    # size: 1Gi
 
 # -- Enable and configure postgresql database subchart under this key.
 #    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb)

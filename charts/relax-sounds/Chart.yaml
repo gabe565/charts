@@ -19,3 +19,5 @@ annotations:
   artifacthub.io/changes: |-
     - kind: added
       description: Add example ingress values
+    - kind: added
+      description: Add example persistence values
