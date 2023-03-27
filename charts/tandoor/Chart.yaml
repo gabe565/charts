@@ -30,3 +30,5 @@ annotations:
   artifacthub.io/changes: |-
     - kind: added
       description: Add example persistence values
+    - kind: changed
+      description: Comment out default ingress values

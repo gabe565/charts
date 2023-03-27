@@ -36,16 +36,16 @@ ingress:
   # @default -- See [values.yaml](./values.yaml)
   main:
     enabled: false
-    hosts:
-      - host: chart-example.local
-        paths:
-          - path: /
-          - path: /static
-            service:
-              port: 80
-          - path: /media
-            service:
-              port: 80
+    # hosts:
+    #   - host: chart-example.local
+    #     paths:
+    #       - path: /
+    #       - path: /static
+    #         service:
+    #           port: 80
+    #       - path: /media
+    #         service:
+    #           port: 80
 
 # -- Configure persistence settings for the chart under this key.
 # @default -- See [values.yaml](./values.yaml)
