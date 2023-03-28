@@ -6,7 +6,7 @@ icon: https://camo.githubusercontent.com/6efdab1c63d518fafc5e735001c5ed45e7cbd49
 type: application
 version: 0.4.1
 # renovate datasource=docker depName=hascheksolutions/pictshare
-appVersion: 72394f17
+appVersion: 74ccf9f6
 kubeVersion: ">=1.22.0-0"
 keywords:
   - pictshare
@@ -22,9 +22,5 @@ sources:
   - https://github.com/HaschekSolutions/pictshare
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add example ingress values
-    - kind: added
-      description: Add example persistence values
     - kind: changed
-      description: Retain persistent volumes by default
+      description: Update hascheksolutions/pictshare Docker tag to 74ccf9f6
