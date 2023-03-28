@@ -14,8 +14,6 @@ Open source home automation that puts local control and privacy first.
 
 ## Source Code
 
-* <https://github.com/gabe565/charts/tree/main/charts/home-assistant>
-* <https://home-assistant.io>
 * <https://github.com/home-assistant/core>
 
 ## Requirements

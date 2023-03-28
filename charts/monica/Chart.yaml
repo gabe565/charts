@@ -11,7 +11,6 @@ kubeVersion: ">=1.22.0-0"
 keywords:
   - crm
 sources:
-  - https://github.com/gabe565/charts/tree/main/charts/monica
   - https://github.com/monicahq/monica
 dependencies:
   - name: common
@@ -23,9 +22,5 @@ dependencies:
     condition: mariadb.enabled
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add example ingress values
-    - kind: added
-      description: Add example persistence values
     - kind: changed
-      description: Retain persistent volumes by default
+      description: Clean up chart sources

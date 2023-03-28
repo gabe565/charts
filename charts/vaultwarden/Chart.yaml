@@ -13,7 +13,6 @@ keywords:
   - bitwarden
   - bitwarden_rs
 sources:
-  - https://github.com/gabe565/charts/tree/main/charts/vaultwarden
   - https://github.com/dani-garcia/vaultwarden
 dependencies:
   - name: common
@@ -29,11 +28,5 @@ dependencies:
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add example persistence values
     - kind: changed
-      description: Comment out default ingress values
-    - kind: changed
-      description: Retain persistent volumes by default
-    - kind: changed
-      description: Link to Argon2 docs for `ADMIN_TOKEN`
+      description: Clean up chart sources

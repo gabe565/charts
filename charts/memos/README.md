@@ -14,8 +14,6 @@ A lightweight, self-hosted memo hub. Open Source and Free forever.
 
 ## Source Code
 
-* <https://github.com/gabe565/charts/tree/main/charts/memos>
-* <https://usememos.com>
 * <https://github.com/usememos/memos>
 
 ## Requirements

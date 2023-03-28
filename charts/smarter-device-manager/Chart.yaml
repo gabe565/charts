@@ -15,7 +15,6 @@ keywords:
   - device
   - usb
 sources:
-  - https://github.com/gabe565/charts/tree/main/charts/smarter-device-manager
   - https://gitlab.com/arm-research/smarter/smarter-device-manager
 dependencies:
   - name: common
@@ -24,4 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update common Helm release to v1.3.2
+      description: Clean up chart sources

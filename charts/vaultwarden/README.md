@@ -14,7 +14,6 @@ Unofficial Bitwarden compatible server written in Rust.
 
 ## Source Code
 
-* <https://github.com/gabe565/charts/tree/main/charts/vaultwarden>
 * <https://github.com/dani-garcia/vaultwarden>
 
 ## Requirements

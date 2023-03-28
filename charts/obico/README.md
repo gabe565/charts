@@ -14,7 +14,6 @@ Obico is a community-built, open-source smart 3D printing platform used by maker
 
 ## Source Code
 
-* <https://github.com/gabe565/charts/tree/main/charts/obico>
 * <https://github.com/TheSpaghettiDetective/obico-server>
 * <https://github.com/gabe565/docker-obico>
 

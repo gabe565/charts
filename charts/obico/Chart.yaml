@@ -19,14 +19,9 @@ dependencies:
     version: 17.8.0
     condition: redis.enabled
 sources:
-  - https://github.com/gabe565/charts/tree/main/charts/obico
   - https://github.com/TheSpaghettiDetective/obico-server
   - https://github.com/gabe565/docker-obico
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update TheSpaghettiDetective/obico-server digest to d5155dd
-    - kind: changed
-      description: Update example domain from example.com to chart-example.local
-    - kind: changed
-      description: Retain persistent volumes by default
+      description: Clean up chart sources

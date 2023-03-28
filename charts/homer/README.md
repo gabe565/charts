@@ -14,7 +14,6 @@ A dead simple static HOMepage for your servER to keep your services on hand, fro
 
 ## Source Code
 
-* <https://github.com/gabe565/charts/tree/main/charts/homer>
 * <https://github.com/bastienwirtz/homer>
 
 ## Requirements

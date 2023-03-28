@@ -14,7 +14,6 @@ An open source, self-hosted implementation of the Tailscale control server.
 
 ## Source Code
 
-* <https://github.com/gabe565/charts/tree/main/charts/headscale>
 * <https://github.com/juanfont/headscale>
 
 ## Requirements

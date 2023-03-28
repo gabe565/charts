@@ -14,7 +14,6 @@ Flame is self-hosted startpage for your server. Easily manage your apps and book
 
 ## Source Code
 
-* <https://github.com/gabe565/charts/tree/main/charts/flame>
 * <https://github.com/pawelmalak/flame>
 
 ## Requirements

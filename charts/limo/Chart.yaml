@@ -16,13 +16,8 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 sources:
-  - https://github.com/gabe565/charts/tree/main/charts/limo
   - https://github.com/gabe565/limo
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add example ingress values
-    - kind: added
-      description: Add example persistence values
     - kind: changed
-      description: Retain persistent volumes by default
+      description: Clean up chart sources

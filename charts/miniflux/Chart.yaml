@@ -22,9 +22,8 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 sources:
-  - https://github.com/gabe565/charts/tree/main/charts/miniflux
   - https://github.com/miniflux/v2
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add example ingress values
+    - kind: changed
+      description: Clean up chart sources

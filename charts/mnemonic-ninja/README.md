@@ -14,7 +14,6 @@ Mnemonic Ninja is a website to convert between a number and its corresponding wo
 
 ## Source Code
 
-* <https://github.com/gabe565/charts/tree/main/charts/mnemonic-ninja>
 * <https://github.com/gabe565/mnemonic-ninja>
 
 ## Requirements

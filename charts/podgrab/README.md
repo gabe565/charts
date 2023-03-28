@@ -12,7 +12,6 @@ A self-hosted podcast manager to download episodes as soon as they become live.
 
 ## Source Code
 
-* <https://github.com/gabe565/charts/tree/main/charts/podgrab>
 * <https://github.com/akhilrex/podgrab>
 
 ## Requirements

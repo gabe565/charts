@@ -14,7 +14,6 @@ Web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers to remot
 
 ## Source Code
 
-* <https://github.com/gabe565/charts/tree/main/charts/nightscout>
 * <https://github.com/nightscout/cgm-remote-monitor>
 
 ## Requirements

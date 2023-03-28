@@ -14,7 +14,6 @@ The qBittorrent project aims to provide an open-source software alternative to Â
 
 ## Source Code
 
-* <https://github.com/gabe565/charts/tree/main/charts/qbittorrent>
 * <https://github.com/qbittorrent/qBittorrent>
 * <https://github.com/linuxserver/docker-qbittorrent>
 

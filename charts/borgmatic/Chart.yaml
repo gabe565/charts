@@ -17,10 +17,9 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 1.3.2
 sources:
-  - https://github.com/gabe565/charts/tree/main/charts/borgmatic
   - https://projects.torsion.org/borgmatic-collective/borgmatic
   - https://github.com/borgmatic-collective/docker-borgmatic
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add example persistence values
+    - kind: changed
+      description: Clean up chart sources

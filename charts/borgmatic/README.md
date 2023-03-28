@@ -14,7 +14,6 @@ borgmatic is simple, configuration-driven backup software for servers and workst
 
 ## Source Code
 
-* <https://github.com/gabe565/charts/tree/main/charts/borgmatic>
 * <https://projects.torsion.org/borgmatic-collective/borgmatic>
 * <https://github.com/borgmatic-collective/docker-borgmatic>
 

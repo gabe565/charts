@@ -14,7 +14,6 @@ A self-hosted vehicle expense tracking system with support for multiple users.
 
 ## Source Code
 
-* <https://github.com/gabe565/charts/tree/main/charts/hammond>
 * <https://github.com/akhilrex/hammond>
 
 ## Requirements

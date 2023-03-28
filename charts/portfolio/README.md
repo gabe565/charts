@@ -14,7 +14,6 @@ My personal portfolio website
 
 ## Source Code
 
-* <https://github.com/gabe565/charts/tree/main/charts/portfolio>
 * <https://github.com/gabe565/portfolio>
 
 ## Requirements
