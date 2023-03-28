@@ -85,7 +85,7 @@ N/A
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
 | env | object | See [values.yaml](./values.yaml). | environment variables. [[ref]](https://github.com/HaschekSolutions/pictshare/blob/master/rtfm/CONFIG.md) |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"hascheksolutions/pictshare"` | image repository |
+| image.repository | string | `"ghcr.io/hascheksolutions/pictshare"` | image repository |
 | image.tag | string | `"74ccf9f6"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.data | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
