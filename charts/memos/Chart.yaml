@@ -4,7 +4,7 @@ description: A lightweight, self-hosted memo hub. Open Source and Free forever.
 home: https://charts.gabe565.com/charts/memos
 icon: https://raw.githubusercontent.com/usememos/memos/2e14561bfce0092851ab612b6d849b9c9815228c/web/public/logo.png
 type: application
-version: 0.1.0
+version: 0.1.1
 # renovate datasource=docker depName=neosmemo/memos
 appVersion: 0.11.2
 kubeVersion: ">=1.22.0-0"

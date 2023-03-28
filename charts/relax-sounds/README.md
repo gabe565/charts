@@ -2,7 +2,7 @@
 
 <img src="https://github.com/gabe565/relax-sounds/raw/3e55b07a957f2e20aceeeba1d36226791f2f1569/frontend/src/assets/icon-purple.svg" align="right" width="92" alt="relax-sounds logo">
 
-![Version: 0.4.1](https://img.shields.io/badge/Version-0.4.1-informational?style=flat)
+![Version: 0.4.2](https://img.shields.io/badge/Version-0.4.2-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 

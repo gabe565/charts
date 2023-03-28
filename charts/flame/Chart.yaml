@@ -4,7 +4,7 @@ description: Flame is self-hosted startpage for your server. Easily manage your 
 home: https://charts.gabe565.com/charts/flame
 icon: https://raw.githubusercontent.com/pawelmalak/flame/4ed29fe276b4282c67415f9788660df2a3a69b5c/client/public/icons/apple-touch-icon-180x180.png
 type: application
-version: 0.3.3
+version: 0.3.4
 # renovate datasource=docker depName=pawelmalak/flame
 appVersion: multiarch2.3.0
 kubeVersion: ">=1.22.0-0"

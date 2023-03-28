@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/sbs20/scanservjs/d28627ebec5cec6d30475a43bd101cc9c5e0961a/packages/client/src/icons/android-chrome-192x192.png" align="right" width="92" alt="scanservjs logo">
 
-![Version: 0.5.3](https://img.shields.io/badge/Version-0.5.3-informational?style=flat)
+![Version: 0.5.4](https://img.shields.io/badge/Version-0.5.4-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: release-v2.26.1](https://img.shields.io/badge/AppVersion-release--v2.26.1-informational?style=flat)
 

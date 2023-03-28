@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg" align="right" width="92" alt="bookstack logo">
 
-![Version: 0.7.1](https://img.shields.io/badge/Version-0.7.1-informational?style=flat)
+![Version: 0.7.2](https://img.shields.io/badge/Version-0.7.2-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: version-v23.02.2](https://img.shields.io/badge/AppVersion-version--v23.02.2-informational?style=flat)
 

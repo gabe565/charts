@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b69952db6eb12987a9668fea6b72df79cfa41/resources/vaultwarden-icon.svg" align="right" width="92" alt="vaultwarden logo">
 
-![Version: 0.6.1](https://img.shields.io/badge/Version-0.6.1-informational?style=flat)
+![Version: 0.6.2](https://img.shields.io/badge/Version-0.6.2-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 1.28.0-alpine](https://img.shields.io/badge/AppVersion-1.28.0--alpine-informational?style=flat)
 

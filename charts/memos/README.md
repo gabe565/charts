@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/usememos/memos/2e14561bfce0092851ab612b6d849b9c9815228c/web/public/logo.png" align="right" width="92" alt="memos logo">
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 0.11.2](https://img.shields.io/badge/AppVersion-0.11.2-informational?style=flat)
 

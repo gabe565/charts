@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/mnemonic-ninja/465602cd7093f62d611c69d7a91e520e4022fab9/src/assets/logo.svg" align="right" width="92" alt="mnemonic-ninja logo">
 
-![Version: 0.3.5](https://img.shields.io/badge/Version-0.3.5-informational?style=flat)
+![Version: 0.3.6](https://img.shields.io/badge/Version-0.3.6-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 

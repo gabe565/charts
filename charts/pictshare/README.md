@@ -2,7 +2,7 @@
 
 <img src="https://camo.githubusercontent.com/6efdab1c63d518fafc5e735001c5ed45e7cbd4958952cdd972e2630eee881d97/68747470733a2f2f7069637473686172652e6e65742f706868796e6a2e706e67" align="right" width="92" alt="pictshare logo">
 
-![Version: 0.4.1](https://img.shields.io/badge/Version-0.4.1-informational?style=flat)
+![Version: 0.4.2](https://img.shields.io/badge/Version-0.4.2-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 74ccf9f6](https://img.shields.io/badge/AppVersion-74ccf9f6-informational?style=flat)
 
