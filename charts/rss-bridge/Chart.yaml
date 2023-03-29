@@ -22,6 +22,8 @@ annotations:
   artifacthub.io/changes: |-
     - kind: added
       description: Add Artifact Hub links annotation
+    - kind: changed
+      description: Update issue link
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/RSS-Bridge/rss-bridge

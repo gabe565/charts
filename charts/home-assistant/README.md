@@ -10,7 +10,7 @@ Open source home automation that puts local control and privacy first.
 
 **Homepage:** <https://charts.gabe565.com/charts/home-assistant/>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=home-assistant&version=0.1.10)**
 
 ## Source Code
 

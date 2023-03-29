@@ -1,0 +1,42 @@
+name: Bug Report
+description: File a bug report
+labels: ["bug"]
+assignees: gabe565
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: name
+    attributes:
+      label: Chart Name
+      description: Which chart are you using?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Chart Version
+      description: What version of the chart are you using?
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Please accurately describe the bug you encountered.
+    validations:
+      required: true
+  - type: textarea
+    id: values
+    attributes:
+      label: values.yaml
+      description: |
+        Please copy and paste your `values.yaml` file. **Make sure to remove/replace all secrets!**
+      render: yaml
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: |
+        Please copy and paste and relevant Helm/Pod logs. This will be automatically formatted into code, so no need for backticks.
+      render: shell

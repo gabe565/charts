@@ -1,0 +1,38 @@
+name: Help Request
+description: If a chart is failing to deploy or a Pod is failing to run
+labels: ["help request"]
+assignees: gabe565
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Chart Name
+      description: Which chart are you using?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Chart Version
+      description: What version of the chart are you using?
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Please describe your problem here.
+    validations:
+      required: true
+  - type: textarea
+    id: values
+    attributes:
+      label: values.yaml
+      description: |
+        Please copy and paste your `values.yaml` file. **Make sure to remove/replace all secrets!**
+      render: yaml
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: |
+        Please copy and paste and relevant Helm/Pod logs. This will be automatically formatted into code, so no need for backticks.
+      render: shell

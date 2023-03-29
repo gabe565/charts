@@ -8,7 +8,7 @@ A file upload server.
 
 **Homepage:** <https://charts.gabe565.com/charts/limo>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=limo&version=0.5.2)**
 
 ## Source Code
 

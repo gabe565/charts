@@ -10,7 +10,7 @@ Unofficial Bitwarden compatible server written in Rust.
 
 **Homepage:** <https://charts.gabe565.com/charts/vaultwarden>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=vaultwarden&version=0.6.2)**
 
 ## Source Code
 

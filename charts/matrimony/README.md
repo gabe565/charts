@@ -10,7 +10,7 @@ Self-hosted wedding site configured via YAML
 
 **Homepage:** <https://charts.gabe565.com/charts/matrimony>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=matrimony&version=0.4.2)**
 
 ## Source Code
 
