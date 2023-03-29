@@ -2,9 +2,9 @@
 
 <img src="https://raw.githubusercontent.com/TheSpaghettiDetective/OctoPrint-Obico/master/octoprint_obico/static/img/logo-square.svg" align="right" width="92" alt="obico logo">
 
-![Version: 0.0.6](https://img.shields.io/badge/Version-0.0.6-informational?style=flat)
+![Version: 0.0.7](https://img.shields.io/badge/Version-0.0.7-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: sha-d5155dd2c3f97ade383898d0476d97ef7c98eae4](https://img.shields.io/badge/AppVersion-sha--d5155dd2c3f97ade383898d0476d97ef7c98eae4-informational?style=flat)
+![AppVersion: sha-05d74ae305f9dcb4f18c404ae4b13972cb69f9b7](https://img.shields.io/badge/AppVersion-sha--05d74ae305f9dcb4f18c404ae4b13972cb69f9b7-informational?style=flat)
 
 Obico is a community-built, open-source smart 3D printing platform used by makers, enthusiasts, and tinkerers around the world.
 
