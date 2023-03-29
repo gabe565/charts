@@ -21,9 +21,10 @@ sources:
   - https://github.com/HaschekSolutions/pictshare
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Update hascheksolutions/pictshare Docker tag to 74ccf9f6
-    - kind: changed
-      description: Change image from hascheksolutions/pictshare to ghcr.io/hascheksolutions/pictshare
-    - kind: changed
-      description: Clean up chart sources
+    - kind: added
+      description: Add Artifact Hub links annotation
+  artifacthub.io/links: |-
+    - name: App Source
+      url: https://github.com/HaschekSolutions/pictshare
+    - name: Chart Source
+      url: https://github.com/gabe565/charts/tree/main/charts/pictshare

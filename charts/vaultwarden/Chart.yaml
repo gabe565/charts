@@ -28,5 +28,10 @@ dependencies:
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Clean up chart sources
+    - kind: added
+      description: Add Artifact Hub links annotation
+  artifacthub.io/links: |-
+    - name: App Source
+      url: https://github.com/dani-garcia/vaultwarden
+    - name: Chart Source
+      url: https://github.com/gabe565/charts/tree/main/charts/vaultwarden

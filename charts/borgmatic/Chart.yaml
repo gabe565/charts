@@ -21,5 +21,12 @@ sources:
   - https://github.com/borgmatic-collective/docker-borgmatic
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Clean up chart sources
+    - kind: added
+      description: Add Artifact Hub links annotation
+  artifacthub.io/links: |-
+    - name: App Source
+      url: https://projects.torsion.org/borgmatic-collective/borgmatic
+    - name: Container Source
+      url: https://github.com/borgmatic-collective/docker-borgmatic
+    - name: Chart Source
+      url: https://github.com/gabe565/charts/tree/main/charts/borgmatic

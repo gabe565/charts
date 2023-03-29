@@ -20,5 +20,10 @@ sources:
   - https://github.com/sbs20/scanservjs
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Clean up chart sources
+    - kind: added
+      description: Add Artifact Hub links annotation
+  artifacthub.io/links: |-
+    - name: App Source
+      url: https://github.com/sbs20/scanservjs
+    - name: Chart Source
+      url: https://github.com/gabe565/charts/tree/main/charts/scanservjs
