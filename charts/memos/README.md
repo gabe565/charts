@@ -10,7 +10,8 @@ A lightweight, self-hosted memo hub. Open Source and Free forever.
 
 **Homepage:** <https://charts.gabe565.com/charts/memos>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=memos&version=0.1.2)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=memos&version=0.1.2)**
 
 ## Source Code
 
