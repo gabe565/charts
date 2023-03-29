@@ -32,6 +32,7 @@ annotations:
       description: Update issue link
     - kind: added
       description: Add "tandoor-recipes" alternative name
+    s
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/TandoorRecipes/recipes
