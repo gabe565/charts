@@ -1,6 +1,6 @@
 # limo
 
-![Version: 0.5.2](https://img.shields.io/badge/Version-0.5.2-informational?style=flat)
+![Version: 0.5.3](https://img.shields.io/badge/Version-0.5.3-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -8,7 +8,7 @@ A file upload server.
 
 **Homepage:** <https://charts.gabe565.com/charts/limo>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=limo&version=0.5.2)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=limo&version=0.5.3)**
 
 ## Source Code
 

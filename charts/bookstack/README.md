@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg" align="right" width="92" alt="bookstack logo">
 
-![Version: 0.7.2](https://img.shields.io/badge/Version-0.7.2-informational?style=flat)
+![Version: 0.7.3](https://img.shields.io/badge/Version-0.7.3-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: version-v23.02.2](https://img.shields.io/badge/AppVersion-version--v23.02.2-informational?style=flat)
 
@@ -10,7 +10,7 @@ A simple, self-hosted, easy-to-use platform for organising and storing informati
 
 **Homepage:** <https://charts.gabe565.com/charts/bookstack>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=bookstack&version=0.7.2)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=bookstack&version=0.7.3)**
 
 ## Source Code
 

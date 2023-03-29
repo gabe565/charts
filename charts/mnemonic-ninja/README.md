@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/mnemonic-ninja/465602cd7093f62d611c69d7a91e520e4022fab9/src/assets/logo.svg" align="right" width="92" alt="mnemonic-ninja logo">
 
-![Version: 0.3.6](https://img.shields.io/badge/Version-0.3.6-informational?style=flat)
+![Version: 0.3.7](https://img.shields.io/badge/Version-0.3.7-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -10,7 +10,7 @@ Mnemonic Ninja is a website to convert between a number and its corresponding wo
 
 **Homepage:** <https://charts.gabe565.com/charts/mnemonic-ninja>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=mnemonic-ninja&version=0.3.6)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=mnemonic-ninja&version=0.3.7)**
 
 ## Source Code
 

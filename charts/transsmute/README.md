@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/transsmute/ce624f8c903654ead37489d8d274b97d526d397a/assets/icon.svg" align="right" width="92" alt="transsmute logo">
 
-![Version: 0.3.5](https://img.shields.io/badge/Version-0.3.5-informational?style=flat)
+![Version: 0.3.6](https://img.shields.io/badge/Version-0.3.6-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -10,7 +10,7 @@ Transsmute builds RSS feeds for websites that don't provide them.
 
 **Homepage:** <https://charts.gabe565.com/charts/transsmute>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=transsmute&version=0.3.5)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=transsmute&version=0.3.6)**
 
 ## Source Code
 

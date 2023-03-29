@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/qbittorrent/qBittorrent/master/src/icons/qbittorrent-tray.svg" align="right" width="92" alt="qbittorrent logo">
 
-![Version: 0.0.4](https://img.shields.io/badge/Version-0.0.4-informational?style=flat)
+![Version: 0.0.5](https://img.shields.io/badge/Version-0.0.5-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: version-4.5.2-r0](https://img.shields.io/badge/AppVersion-version--4.5.2--r0-informational?style=flat)
 
@@ -10,7 +10,7 @@ The qBittorrent project aims to provide an open-source software alternative to Â
 
 **Homepage:** <https://charts.gabe565.com/charts/qbittorrent>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=qbittorrent&version=0.0.4)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=qbittorrent&version=0.0.5)**
 
 ## Source Code
 

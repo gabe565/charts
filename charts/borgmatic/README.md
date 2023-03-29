@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg" align="right" width="92" alt="borgmatic logo">
 
-![Version: 0.6.8](https://img.shields.io/badge/Version-0.6.8-informational?style=flat)
+![Version: 0.6.9](https://img.shields.io/badge/Version-0.6.9-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 1.7.9](https://img.shields.io/badge/AppVersion-1.7.9-informational?style=flat)
 
@@ -10,7 +10,7 @@ borgmatic is simple, configuration-driven backup software for servers and workst
 
 **Homepage:** <https://charts.gabe565.com/charts/borgmatic>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=borgmatic&version=0.6.8)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=borgmatic&version=0.6.9)**
 
 ## Source Code
 

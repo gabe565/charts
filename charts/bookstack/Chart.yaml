@@ -4,7 +4,7 @@ description: A simple, self-hosted, easy-to-use platform for organising and stor
 home: https://charts.gabe565.com/charts/bookstack
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg
 type: application
-version: 0.7.2
+version: 0.7.3
 # renovate datasource=docker depName=ghcr.io/linuxserver/bookstack
 appVersion: version-v23.02.2
 kubeVersion: ">=1.22.0-0"

@@ -4,7 +4,7 @@ description: Personal CRM. Remember everything about your friends, family and bu
 home: https://charts.gabe565.com/charts/monica
 icon: https://raw.githubusercontent.com/monicahq/monica/main/public/img/monica.svg
 type: application
-version: 0.5.2
+version: 0.5.3
 # renovate datasource=docker depName=monica
 appVersion: 4.0.0-fpm-alpine
 kubeVersion: ">=1.22.0-0"

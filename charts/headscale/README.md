@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/juanfont/headscale/56a7b1e34952c3e0306a134b2be9b4277f5d8d6e/docs/logo/headscale3-dots.svg" align="right" width="92" alt="headscale logo">
 
-![Version: 0.9.4](https://img.shields.io/badge/Version-0.9.4-informational?style=flat)
+![Version: 0.9.5](https://img.shields.io/badge/Version-0.9.5-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 0.21.0](https://img.shields.io/badge/AppVersion-0.21.0-informational?style=flat)
 
@@ -10,7 +10,7 @@ An open source, self-hosted implementation of the Tailscale control server.
 
 **Homepage:** <https://charts.gabe565.com/charts/headscale>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=headscale&version=0.9.4)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=headscale&version=0.9.5)**
 
 ## Source Code
 

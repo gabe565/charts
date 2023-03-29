@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/akhilrex/hammond/84cba2c7f26f6d3f81c49b132110b24ac97c7b49/ui/public/touch-icon.png" align="right" width="92" alt="hammond logo">
 
-![Version: 0.3.4](https://img.shields.io/badge/Version-0.3.4-informational?style=flat)
+![Version: 0.3.5](https://img.shields.io/badge/Version-0.3.5-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat)
 
@@ -10,7 +10,7 @@ A self-hosted vehicle expense tracking system with support for multiple users.
 
 **Homepage:** <https://charts.gabe565.com/charts/hammond>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=hammond&version=0.3.4)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=hammond&version=0.3.5)**
 
 ## Source Code
 

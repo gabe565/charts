@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/ascii-telnet-go/a1fd5c9df2fb3a177949c9511b62407c83aedefe/assets/icon.svg" align="right" width="92" alt="ascii-telnet logo">
 
-![Version: 0.3.4](https://img.shields.io/badge/Version-0.3.4-informational?style=flat)
+![Version: 0.3.5](https://img.shields.io/badge/Version-0.3.5-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -10,7 +10,7 @@ Star Wars telnet server
 
 **Homepage:** <https://charts.gabe565.com/charts/ascii-telnet>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=ascii-telnet&version=0.3.4)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=ascii-telnet&version=0.3.5)**
 
 ## Source Code
 

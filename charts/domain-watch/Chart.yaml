@@ -4,7 +4,7 @@ description: Tool to watch whois reports and notify when statuses change or expi
 home: https://charts.gabe565.com/charts/domain-watch
 icon: https://raw.githubusercontent.com/gabe565/domain-watch/ee028db206ea80c2617dd74a87193191a25a0a8a/assets/icon.svg
 type: application
-version: 0.3.4
+version: 0.3.5
 # renovate datasource=docker depName=ghcr.io/gabe565/domain-watch
 appVersion: latest
 kubeVersion: ">=1.22.0-0"

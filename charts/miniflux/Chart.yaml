@@ -4,7 +4,7 @@ description: Miniflux is a minimalist and opinionated feed reader.
 home: https://charts.gabe565.com/charts/miniflux
 icon: https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg
 type: application
-version: 0.4.7
+version: 0.4.8
 # renovate datasource=docker depName=ghcr.io/miniflux/miniflux
 appVersion: 2.0.43
 kubeVersion: ">=1.22.0-0"

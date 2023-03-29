@@ -1,6 +1,6 @@
 # podgrab
 
-![Version: 0.3.4](https://img.shields.io/badge/Version-0.3.4-informational?style=flat)
+![Version: 0.3.5](https://img.shields.io/badge/Version-0.3.5-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat)
 
@@ -8,7 +8,7 @@ A self-hosted podcast manager to download episodes as soon as they become live.
 
 **Homepage:** <https://charts.gabe565.com/charts/podgrab>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=podgrab&version=0.3.4)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=podgrab&version=0.3.5)**
 
 ## Source Code
 

@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png" align="right" width="92" alt="rss-bridge logo">
 
-![Version: 0.3.5](https://img.shields.io/badge/Version-0.3.5-informational?style=flat)
+![Version: 0.3.6](https://img.shields.io/badge/Version-0.3.6-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -10,7 +10,7 @@ The RSS feed for websites missing it.
 
 **Homepage:** <https://charts.gabe565.com/charts/rss-bridge>
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=rss-bridge&version=0.3.5)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=rss-bridge&version=0.3.6)**
 
 ## Source Code
 
