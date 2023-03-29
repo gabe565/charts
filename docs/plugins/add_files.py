@@ -15,7 +15,7 @@ def append_readme(files: Files, config: Config):
         path="README.md",
         src_dir="..",
         dest_dir=config.site_dir,
-        use_directory_urls=config.use_directory_urls
+        use_directory_urls=config.use_directory_urls,
     )
     files.append(f)
     config.watch.append(f.abs_src_path)
@@ -40,7 +40,7 @@ def chart_file(src_path: str, config: Config):
         path=os.path.join("charts", chart_name + ".md"),
         src_dir=src_dir,
         dest_dir=config.site_dir,
-        use_directory_urls=config.use_directory_urls
+        use_directory_urls=config.use_directory_urls,
     )
     f.abs_src_path = src_path
     return f

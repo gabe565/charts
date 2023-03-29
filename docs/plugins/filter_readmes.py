@@ -20,7 +20,7 @@ def main(markdown: str, page: Page, config: Config, files: Files):
 def filter_repo_readme(markdown: str, page: Page, config: Config):
     # Update page title
     page.title = "Introduction"
-    markdown = markdown.split('\n', 1)[-1]
+    markdown = markdown.split("\n", 1)[-1]
     markdown = "# Introduction\n" + markdown
 
     # Exclude chart overview from search
