@@ -6,4 +6,5 @@
 # Helm resources
 charts/**/charts
 
+.direnv/
 venv/
