@@ -1,0 +1,24 @@
+{{- define "custom.custom.configuration.header" -}}
+## Custom configuration
+{{- end -}}
+
+{{- define "custom.custom.configuration" -}}
+{{ template "custom.custom.configuration.header" . }}
+
+### Devices Show as `offline`
+
+ESPHome may have trouble finding your local devices due to your Kubernetes DNS configuration.
+If so, set the following values:
+
+```yaml
+env:
+  ESPHOME_DASHBOARD_USE_PING: "true"
+
+dnsConfig:
+  nameservers:
+    # Set to your router IP or local DNS server
+    - 192.168.1.1
+
+dnsPolicy: None
+```
+{{- end -}}

@@ -1,0 +1,9 @@
+{{/* Append the hardcoded settings */}}
+{{- define "esphome.harcodedValues" -}}
+termination:
+  gracePeriodSeconds: "0"
+{{- end -}}
+{{- $_ := merge .Values (include "esphome.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "bjw-s.common.loader.all" . }}
