@@ -1,0 +1,94 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/values.yaml
+#
+
+image:
+  # -- Image repository
+  repository: ghcr.io/linuxserver/healthchecks
+  # -- Image pull policy
+  pullPolicy: IfNotPresent
+  # -- Image tag
+  tag: version-v2.7
+
+# -- Environment variables [[ref]](https://healthchecks.io/docs/self_hosted_configuration/)
+# @default -- See [values.yaml](./values.yaml)
+env:
+  # -- Set the container timezone
+  TZ: UTC
+  # -- The site's name
+  SITE_NAME: Healthchecks
+  # -- (string) A secret key used for cryptographic signing.
+  #    Use `openssl rand -base64 32` to generate a random key.
+  SECRET_KEY:
+  # -- (string) Superuser email
+  SUPERUSER_EMAIL:
+  # -- (string) Superuser password
+  SUPERUSER_PASSWORD:
+
+service:
+  # -- Configures service settings for the chart.
+  # @default -- See [values.yaml](./values.yaml)
+  main:
+    ports:
+      http:
+        port: 8000
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See [values.yaml](./values.yaml)
+  main:
+    enabled: false
+    # hosts:
+    #   - host: chart-example.local
+    #     paths:
+    #       - path: /
+    # tls:
+    #   - secretName: chart-example.local
+    #     hosts:
+    #       - chart-example.local
+
+persistence:
+  # -- Configure persistence settings for the chart under this key.
+  #    Necessary for SQLite.
+  # @default -- See [values.yaml](./values.yaml)
+  config:
+    enabled: false
+    retain: true
+    # storageClass: ""
+    # accessMode: ReadWriteOnce
+    # size: 4Gi
+
+# -- Enable and configure postgresql database subchart under this key.
+#    If enabled, the app's db envs will be set for you.
+#    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql)
+# @default -- See [values.yaml](./values.yaml)
+postgresql:
+  enabled: false
+  auth:
+    database: healthchecks
+    postgresPassword: changeme
+  primary:
+    persistence:
+      enabled: false
+      # storageClass: ""
+      # size: 8Gi
+
+# -- Enable and configure mariadb database subchart under this key.
+#    If enabled, the app's db envs will be set for you.
+#    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb)
+# @default -- See [values.yaml](./values.yaml)
+mariadb:
+  enabled: false
+  auth:
+    database: healthchecks
+    username: healthchecks
+    password: changeme
+    rootPassword: changeme
+  primary:
+    persistence:
+      enabled: false
+      # storageClass: ""
+      # size: 8Gi

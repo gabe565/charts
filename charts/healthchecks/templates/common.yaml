@@ -1,0 +1,40 @@
+{{/* Append the hardcoded settings */}}
+{{- define "healthchecks.harcodedValues" -}}
+env:
+  {{- with .Values.ingress.main }}
+  {{- if and .enabled .hosts }}
+  SITE_ROOT: http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}
+  {{- end }}
+  {{- end }}
+
+  {{- if .Values.postgresql.enabled }}
+  {{- with .Values.postgresql }}
+  DB: postgres
+  DB_HOST: {{ $.Release.Name }}-postgresql
+  DB_NAME: {{ .auth.database }}
+  DB_USER: {{ default "postgres" .auth.username }}
+  DB_PASSWORD:
+    secretKeyRef:
+      name: {{ $.Release.Name }}-postgresql
+      key: {{ if not .auth.password }}postgres-{{ end }}password
+  {{- end }}
+  {{- else if .Values.mariadb.enabled }}
+  {{- with .Values.mariadb}}
+  DB: mysql
+  DB_HOST: {{ $.Release.Name }}-mariadb
+  DB_NAME: {{ .auth.database }}
+  DB_USER: {{ .auth.username }}
+  DB_PASSWORD:
+    secretKeyRef:
+      name: {{ $.Release.Name }}-mariadb
+      key: mariadb-password
+  {{- end }}
+  {{- end }}
+
+termination:
+  gracePeriodSeconds: "0"
+{{- end -}}
+{{- $_ := merge .Values (include "healthchecks.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "bjw-s.common.loader.all" . }}

@@ -1,0 +1,13 @@
+{{- define "custom.custom.configuration.header" -}}
+## Custom configuration
+{{- end -}}
+
+{{- define "custom.custom.configuration" -}}
+{{ template "custom.custom.configuration.header" . }}
+
+### Database Installation
+
+Healthchecks supports PostgreSQL, MariaDB, and SQLite.
+This chart can install PostgreSQL or MariaDB and configure Healthchecks automatically.
+See each database section in [`values.yaml`](./values.yaml) for configuration examples.
+{{- end -}}
