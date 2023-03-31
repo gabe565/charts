@@ -4,7 +4,7 @@ description: A cron monitoring tool written in Python & Django
 home: https://charts.gabe565.com/charts/healthchecks
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/healthchecks/icon.svg
 type: application
-version: 0.1.0
+version: 0.1.1
 # renovate datasource=docker depName=ghcr.io/linuxserver/healthchecks
 appVersion: version-v2.7
 kubeVersion: ">=1.22.0-0"
@@ -28,8 +28,8 @@ sources:
   - https://github.com/healthchecks/healthchecks
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Initial release
+    - kind: changed
+      description: Disable debug mode by default
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/healthchecks/healthchecks

@@ -1,6 +1,8 @@
 {{/* Append the hardcoded settings */}}
 {{- define "healthchecks.harcodedValues" -}}
 env:
+  DEBUG: "False"
+
   {{- with .Values.ingress.main }}
   {{- if and .enabled .hosts }}
   SITE_ROOT: http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}
