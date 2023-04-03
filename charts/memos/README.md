@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/usememos/memos/2e14561bfce0092851ab612b6d849b9c9815228c/web/public/logo.png" align="right" width="92" alt="memos logo">
 
-![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 0.11.2](https://img.shields.io/badge/AppVersion-0.11.2-informational?style=flat)
+![AppVersion: 0.12.0](https://img.shields.io/badge/AppVersion-0.12.0-informational?style=flat)
 
 A lightweight, self-hosted memo hub. Open Source and Free forever.
 
 **Homepage:** <https://charts.gabe565.com/charts/memos>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=memos&version=0.1.2)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=memos&version=0.2.0)**
 
 ## Source Code
 
@@ -84,7 +84,7 @@ N/A
 |-----|------|---------|-------------|
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"neosmemo/memos"` | image repository |
-| image.tag | string | `"0.11.2"` | image tag |
+| image.tag | string | `"0.12.0"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | podSecurityContext.fsGroup | int | `65534` | Volume binds will be granted to `nobody` group |
