@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/usememos/memos/2e14561bfce0092851ab612b6
 type: application
 version: 0.1.2
 # renovate datasource=docker depName=neosmemo/memos
-appVersion: 0.11.2
+appVersion: 0.12.0
 kubeVersion: ">=1.22.0-0"
 keywords:
   - memo
