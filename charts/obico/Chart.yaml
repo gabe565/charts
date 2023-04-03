@@ -2,9 +2,9 @@ apiVersion: v2
 name: obico
 description: Obico is a community-built, open-source smart 3D printing platform used by makers, enthusiasts, and tinkerers around the world.
 home: https://charts.gabe565.com/charts/obico
-icon: https://raw.githubusercontent.com/TheSpaghettiDetective/OctoPrint-Obico/master/octoprint_obico/static/img/logo-square.svg
+icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/obico/icon.svg
 type: application
-version: 0.0.8
+version: 0.0.9
 appVersion: sha-05d74ae305f9dcb4f18c404ae4b13972cb69f9b7
 kubeVersion: ">=1.22.0-0"
 keywords:
@@ -23,10 +23,8 @@ sources:
   - https://github.com/gabe565/docker-obico
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add Artifact Hub links annotation
-    - kind: changed
-      description: Update issue link
+    - kind: fixed
+      description: Fix app icon scaling on Artifact Hub
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/TheSpaghettiDetective/obico-server
