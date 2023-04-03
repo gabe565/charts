@@ -1,6 +1,6 @@
 # memos
 
-<img src="https://raw.githubusercontent.com/usememos/memos/2e14561bfce0092851ab612b6d849b9c9815228c/web/public/logo.png" align="right" width="92" alt="memos logo">
+<img src="https://raw.githubusercontent.com/usememos/memos/1ea65c0b6004942826ef36a19137721d0ec56be4/web/public/logo.webp" align="right" width="92" alt="memos logo">
 
 ![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
