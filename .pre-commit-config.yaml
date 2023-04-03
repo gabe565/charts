@@ -17,6 +17,13 @@ repos:
 
   - repo: local
     hooks:
+      - id: ah-lint
+        name: Artifact Hub Lint
+        entry: ah lint --path=charts
+        language: system
+        files: ^charts/
+        pass_filenames: false
+
       - id: helm-docs
         name: Helm Docs
         entry: hack/gen-helm-docs.sh
