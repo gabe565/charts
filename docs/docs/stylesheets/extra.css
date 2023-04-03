@@ -17,6 +17,14 @@
     margin: 0 0 0 0.5em;
 }
 
+.md-typeset img[alt$=" logo"] {
+    border-radius: 10px;
+}
+
+.md-typeset img[alt$=" icon"] {
+    border-radius: 3px;
+}
+
 /* Workaround to support auto dark mode */
 :root {
     --md-default-fg-color: #000000de;
