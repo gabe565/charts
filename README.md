@@ -41,6 +41,7 @@ helm delete my-<chart-name>
 
 | Chart | Description |
 | ----- | ----------- |
+| [adguard-home <img src='https://raw.githubusercontent.com/gabe565/charts/main/charts/adguard-home/icon.svg' alt='adguard-home icon' width='18px' align='right' loading='lazy'>](charts/adguard-home/) | Free and open source, powerful network-wide ads & trackers blocking DNS server. |
 | [ascii-telnet <img src='https://raw.githubusercontent.com/gabe565/ascii-telnet-go/a1fd5c9df2fb3a177949c9511b62407c83aedefe/assets/icon.svg' alt='ascii-telnet icon' width='18px' align='right' loading='lazy'>](charts/ascii-telnet/) | Star Wars telnet server |
 | [bookstack <img src='https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg' alt='bookstack icon' width='18px' align='right' loading='lazy'>](charts/bookstack/) | A simple, self-hosted, easy-to-use platform for organising and storing information. |
 | [borgmatic <img src='https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg' alt='borgmatic icon' width='18px' align='right' loading='lazy'>](charts/borgmatic/) | borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services. |

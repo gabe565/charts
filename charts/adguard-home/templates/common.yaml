@@ -1,0 +1,42 @@
+{{/* Append the hardcoded settings */}}
+{{- define "adguardHome.harcodedValues" -}}
+{{- if .Values.config }}
+configMaps:
+  default-config:
+    enabled: true
+    data:
+      AdGuardHome.yaml: {{ .Values.config }}
+
+persistence:
+  default-config:
+    enabled: true
+    type: configMap
+    name: {{ include "bjw-s.common.lib.chart.names.fullname" . }}-default-config
+    mountPath: "-"
+
+initContainers:
+  copy-default-config:
+    image: alpine
+    imagePullPolicy: IfNotPresent
+    command:
+      - sh
+      - -c
+      - |
+        if [[ ! -f /opt/adguardhome/conf/AdGuardHome.yaml ]]; then
+          mkdir -p /opt/adguardhome/conf
+          cp /tmp/AdGuardHome.yaml /opt/adguardhome/conf/AdGuardHome.yaml
+        fi
+    volumeMounts:
+      - name: default-config
+        mountPath: /tmp/AdGuardHome.yaml
+        subPath: AdGuardHome.yaml
+      - name: config
+        mountPath: /opt/adguardhome/conf
+    securityContext:
+      runAsUser: 0
+{{- end }}
+{{- end -}}
+{{- $_ := merge .Values (include "adguardHome.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "bjw-s.common.loader.all" . }}
