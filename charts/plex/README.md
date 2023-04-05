@@ -102,6 +102,23 @@ Hardware acceleration using an Intel iGPU with QuickSync requires the GPU plugin
         gpu.intel.com/i915: 1
     ```
 
+### Dedicated Transcode Directory
+
+By default, Plex will use a subdirectory of `/config` for the temporary files during transcoding.
+This can be changed by adding a temporary directory at `/transcode`, for example in `values.yaml`:
+
+```yaml
+persistence:
+  transcode:
+    enabled: true
+    storageClass: cheap-storage
+    accessMode: ReadWriteOnce
+    size: 40Gi
+```
+
+Once Plex is running, navigate to **Settings > Transcoder** and set **Transcoder temporary directory**
+to `/transcode`.
+
 ## Values
 
 **Important**: When deploying an application Helm chart you can add more values from the bjw-s common library chart [here](https://github.com/bjw-s/helm-charts/tree/main/charts/library/common)
