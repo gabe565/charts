@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/adguard-home/icon.svg" align="right" width="92" alt="adguard-home logo">
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: v0.107.26](https://img.shields.io/badge/AppVersion-v0.107.26-informational?style=flat)
+![AppVersion: v0.107.27](https://img.shields.io/badge/AppVersion-v0.107.27-informational?style=flat)
 
 Free and open source, powerful network-wide ads & trackers blocking DNS server.
 
 **Homepage:** <https://charts.gabe565.com/charts/adguard-home/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=adguard-home&version=0.1.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=adguard-home&version=0.1.1)**
 
 ## Source Code
 
@@ -86,7 +86,7 @@ N/A
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | Image pull policy |
 | image.repository | string | `"adguard/adguardhome"` | Image repository |
-| image.tag | string | `"v0.107.26"` | Image tag |
+| image.tag | string | `"v0.107.27"` | Image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.config | object | See [values.yaml](./values.yaml) | Configure config persistence settings for the chart under this key. |
 | persistence.data | object | See [values.yaml](./values.yaml) | Configure data persistence settings for the chart under this key. |
