@@ -1,0 +1,85 @@
+{{/* Append the hardcoded settings */}}
+{{- define "headscale.harcodedValues" -}}
+args: ["headscale", "serve"]
+
+initContainers:
+  config:
+    image: alpine
+    env:
+      - name: CONFIG_DIR
+        value: {{ .Values.persistence.config.mountPath }}
+    volumeMounts:
+      {{- if .Values.persistence.config.enabled }}
+      - name: config
+        mountPath: {{ .Values.persistence.config.mountPath }}
+      {{- end }}
+    command:
+      - sh
+      - -c
+      - |
+        if [[ -f "$CONFIG_DIR/config.yaml" ]]; then
+          echo 'Config already exists' >&2
+        else
+          echo 'Writing empty config' >&2
+          cat <<- 'EOF' >"$CONFIG_DIR/config.yaml"
+            # It's suggested to use environment variables to configure Headscale.
+            # For config reference, see https://github.com/juanfont/headscale/blob/main/config-example.yaml
+            # To configure any of these as an env:
+            #   1. Flatten object keys using "_"
+            #   2. Prefix with "HEADSCALE_"
+            #
+            # For example:
+            #   - "listen_addr" becomes "HEADSCALE_LISTEN_ADDR"
+            #   - "log.level" becomes "HEADSCALE_LOG_LEVEL"
+        EOF
+        fi
+
+env:
+  {{- with .Values.ingress.main }}
+  {{- if and .enabled .hosts }}
+  HEADSCALE_SERVER_URL: http{{ if .tls }}s{{ end }}://{{ (first .hosts).host }}
+  {{- end }}
+  {{- end }}
+
+  {{- with .Values.service.main.ports }}
+  HEADSCALE_LISTEN_ADDR: "0.0.0.0:{{ .http.port }}"
+  HEADSCALE_METRICS_LISTEN_ADDR: "0.0.0.0:{{ .metrics.port }}"
+  {{- end }}
+
+  HEADSCALE_PRIVATE_KEY_PATH: "{{ .Values.persistence.config.mountPath }}/private.key"
+  HEADSCALE_NOISE: "{}"
+  HEADSCALE_NOISE_PRIVATE_KEY_PATH: "{{ .Values.persistence.config.mountPath }}/noise_private.key"
+
+  HEADSCALE_IP_PREFIXES: "fd7a:115c:a1e0::/48 100.64.0.0/10"
+
+  HEADSCALE_DERP_URLS: "https://controlplane.tailscale.com/derpmap/default"
+  HEADSCALE_DERP_AUTO_UPDATE_ENABLED: "true"
+  HEADSCALE_DERP_UPDATE_FREQUENCY: "24h"
+
+  HEADSCALE_EPHEMERAL_NODE_INACTIVITY_TIMEOUT: "30m"
+
+  HEADSCALE_DNS_CONFIG_NAMESERVERS: "1.1.1.1 1.0.0.1"
+  HEADSCALE_DNS_CONFIG_MAGIC_DNS: "true"
+
+  {{- with .Values.postgresql }}
+  {{- if .enabled }}
+  HEADSCALE_DB_TYPE: postgres
+  HEADSCALE_DB_HOST: {{ $.Release.Name }}-postgresql
+  HEADSCALE_DB_PORT: "5432"
+  HEADSCALE_DB_SSL: "false"
+  HEADSCALE_DB_NAME: {{ .auth.database }}
+  HEADSCALE_DB_USER: {{ default "postgres" .auth.username }}
+  HEADSCALE_DB_PASS:
+    secretKeyRef:
+      name: {{ $.Release.Name }}-postgresql
+      key: {{ if not .auth.password }}postgres-{{ end }}password
+  {{- else }}
+  HEADSCALE_DB_TYPE: "sqlite3"
+  HEADSCALE_DB_PATH: "{{ $.Values.persistence.config.mountPath }}/db.sqlite"
+  {{- end }}
+  {{- end }}
+{{- end -}}
+{{- $_ := merge .Values (include "headscale.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "bjw-s.common.loader.all" . }}

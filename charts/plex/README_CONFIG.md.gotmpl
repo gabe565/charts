@@ -1,0 +1,35 @@
+{{- define "custom.custom.configuration.header" -}}
+## Custom configuration
+{{- end -}}
+
+{{- define "custom.custom.configuration" -}}
+{{ template "custom.custom.configuration.header" . }}
+
+### Hardware Acceleration
+
+#### Intel QuickSync
+
+Hardware acceleration using an Intel iGPU with QuickSync requires the GPU plugin in
+[intel-device-plugins-for-kubernetes](https://github.com/intel/intel-device-plugins-for-kubernetes).
+
+1. Install [intel/gpu-device-plugin](https://github.com/intel/helm-charts/tree/main/charts/gpu-device-plugin)
+
+2. Get the group IDs from your host:
+    ```sh
+    $ cat /etc/group | grep 'video\|render'
+    video:x:44:
+    render:x:109:
+    ```
+
+3. Add the following to your `values.yaml`, replacing the `supplementalGroups` with your group IDs:
+    ```yaml
+    podSecurityContext:
+      supplementalGroups: [44, 109]
+
+    resources:
+      requests:
+        gpu.intel.com/i915: 1
+      limits:
+        gpu.intel.com/i915: 1
+    ```
+{{- end -}}
