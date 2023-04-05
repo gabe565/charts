@@ -18,8 +18,8 @@ sources:
   - https://plex.tv
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Initial release
+    - kind: fixed
+      description: Fix copy-paste error
   artifacthub.io/links: |-
     - name: App homepage
       url: https://plex.tv
