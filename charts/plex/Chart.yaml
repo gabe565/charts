@@ -18,6 +18,8 @@ sources:
   - https://plex.tv
 annotations:
   artifacthub.io/changes: |-
+    - kind: added
+      description: Add example media persistence values
     - kind: fixed
       description: Fix copy-paste error
   artifacthub.io/links: |-

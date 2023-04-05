@@ -50,3 +50,10 @@ persistence:
     # storageClass: ""
     # accessMode: ReadWriteOnce
     # size: 1Gi
+  # -- Configure media volume under this key (or under `tv` and `movies`, etc).
+  # @default -- See [values.yaml](./values.yaml)
+  media:
+    enabled: false
+    # type: nfs
+    # server:
+    # path:

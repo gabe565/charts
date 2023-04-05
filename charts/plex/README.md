@@ -115,6 +115,7 @@ Hardware acceleration using an Intel iGPU with QuickSync requires the GPU plugin
 | image.tag | string | `"version-1.31.3.6868-28fc46b27"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.config | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
+| persistence.media | object | See [values.yaml](./values.yaml) | Configure media volume under this key (or under `tv` and `movies`, etc). |
 | service.main | object | See [values.yaml](./values.yaml) | Configures HTTP service settings for the chart. |
 
 ---
