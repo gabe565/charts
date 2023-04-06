@@ -12079,6 +12079,41 @@ entries:
   qbittorrent:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: changed
+          description: Update ghcr.io/linuxserver/qbittorrent Docker tag to version-4.5.2-r1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/qbittorrent/qBittorrent
+        - name: Container Source
+          url: https://github.com/linuxserver/docker-qbittorrent
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/qbittorrent
+    apiVersion: v2
+    appVersion: version-4.5.2-r1
+    created: "2023-04-06T04:33:01.003139681Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.3.2
+    description: The qBittorrent project aims to provide an open-source software alternative
+      to µTorrent.
+    digest: 1a7e891005d73e0e303e1ecf6066becaeabe2ab32e7b113f834db0c2d86b6108
+    home: https://charts.gabe565.com/charts/qbittorrent
+    icon: https://raw.githubusercontent.com/qbittorrent/qBittorrent/master/src/icons/qbittorrent-tray.svg
+    keywords:
+    - torrent
+    - bittorrent
+    kubeVersion: '>=1.22.0-0'
+    name: qbittorrent
+    sources:
+    - https://github.com/qbittorrent/qBittorrent
+    - https://github.com/linuxserver/docker-qbittorrent
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/qbittorrent-0.0.6/qbittorrent-0.0.6.tgz
+    version: 0.0.6
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: added
           description: Add Artifact Hub links annotation
         - kind: changed
@@ -16456,4 +16491,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-05T23:10:35.11439877Z"
+generated: "2023-04-06T04:33:02.816929121Z"
