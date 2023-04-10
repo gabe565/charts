@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: neosmemo/memos
+  repository: ghcr.io/usememos/memos
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag

@@ -4,8 +4,8 @@ description: A lightweight, self-hosted memo hub. Open Source and Free forever.
 home: https://charts.gabe565.com/charts/memos
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/memos/icon.png
 type: application
-version: 0.2.2
-# renovate datasource=docker depName=neosmemo/memos
+version: 0.2.3
+# renovate datasource=docker depName=ghcr.io/usememos/memos
 appVersion: 0.12.1
 kubeVersion: ">=1.22.0-0"
 keywords:
@@ -21,7 +21,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update neosmemo/memos Docker tag to v0.12.1
+      description: Change image from neosmemo/memos to ghcr.io/usememos/memos
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/usememos/memos
