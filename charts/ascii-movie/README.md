@@ -1,22 +1,21 @@
-# ascii-telnet
+# ascii-movie
 
-<img src="https://raw.githubusercontent.com/gabe565/ascii-telnet-go/a1fd5c9df2fb3a177949c9511b62407c83aedefe/assets/icon.svg" align="right" width="92" alt="ascii-telnet logo">
+<img src="https://raw.githubusercontent.com/gabe565/ascii-movie/a1fd5c9df2fb3a177949c9511b62407c83aedefe/assets/icon.svg" align="right" width="92" alt="ascii-movie logo">
 
-![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat)
+![Version: 0.6.0](https://img.shields.io/badge/Version-0.6.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 1.2.0](https://img.shields.io/badge/AppVersion-1.2.0-informational?style=flat)
 
-Star Wars telnet server
+Star Wars movie SSH and Telnet server
 
-**Homepage:** <https://charts.gabe565.com/charts/ascii-telnet>
+**Homepage:** <https://charts.gabe565.com/charts/ascii-movie>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=ascii-telnet&version=0.5.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=ascii-movie&version=0.6.0)**
 
 ## Source Code
 
-* <https://github.com/gabe565/ascii-telnet-go>
-* <https://github.com/gabe565/ascii-telnet-rust>
+* <https://github.com/gabe565/ascii-movie>
 
 ## Requirements
 
@@ -33,23 +32,23 @@ Kubernetes: `>=1.22.0-0`
 ```console
 helm repo add gabe565 https://charts.gabe565.com
 helm repo update
-helm install ascii-telnet gabe565/ascii-telnet
+helm install ascii-movie gabe565/ascii-movie
 ```
 
 ## Installing the Chart
 
-To install the chart with the release name `ascii-telnet`
+To install the chart with the release name `ascii-movie`
 
 ```console
-helm install ascii-telnet gabe565/ascii-telnet
+helm install ascii-movie gabe565/ascii-movie
 ```
 
 ## Uninstalling the Chart
 
-To uninstall the `ascii-telnet` deployment
+To uninstall the `ascii-movie` deployment
 
 ```console
-helm uninstall ascii-telnet
+helm uninstall ascii-movie
 ```
 
 The command removes all the Kubernetes components associated with the chart **including persistent volumes** and deletes the release.
@@ -62,15 +61,15 @@ Other values may be used from the [values.yaml](https://github.com/bjw-s/helm-ch
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
 ```console
-helm install ascii-telnet \
+helm install ascii-movie \
   --set env.TZ="America/New York" \
-    gabe565/ascii-telnet
+    gabe565/ascii-movie
 ```
 
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart.
 
 ```console
-helm install ascii-telnet gabe565/ascii-telnet -f values.yaml
+helm install ascii-movie gabe565/ascii-movie -f values.yaml
 ```
 
 ## Custom configuration
@@ -85,7 +84,7 @@ N/A
 |-----|------|---------|-------------|
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
 | image.pullPolicy | string | `"Always"` | image pull policy |
-| image.repository | string | `"ghcr.io/gabe565/ascii-telnet-go"` | image repository.    Defaults to Go implementation at [`ghcr.io/gabe565/ascii-telnet-go`](https://ghcr.io/gabe565/ascii-telnet-go),    but can also be set to [`ghcr.io/gabe565/ascii-telnet-rust`](https://ghcr.io/gabe565/ascii-telnet-rust). |
+| image.repository | string | `"ghcr.io/gabe565/ascii-movie"` | image repository. |
 | image.tag | string | `"1.2.0"` | image tag |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 

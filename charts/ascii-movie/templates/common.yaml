@@ -1,0 +1,13 @@
+{{/* Append the hardcoded settings */}}
+{{- define "asciiMovie.harcodedValues" -}}
+env:
+  ASCII_MOVIE_SSH_ENABLED: {{ .Values.service.main.ports.ssh.enabled }}
+  ASCII_MOVIE_SSH_ADDRESS: :{{ .Values.service.main.ports.ssh.port }}
+
+  ASCII_MOVIE_TELNET_ENABLED: {{ .Values.service.main.ports.telnet.enabled }}
+  ASCII_MOVIE_TELNET_ADDRESS: :{{ .Values.service.main.ports.telnet.port }}
+{{- end -}}
+{{- $_ := merge .Values (include "asciiMovie.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "bjw-s.common.loader.all" . }}
