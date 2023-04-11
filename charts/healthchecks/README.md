@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/healthchecks/icon.svg" align="right" width="92" alt="healthchecks logo">
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat)
+![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: version-v2.8](https://img.shields.io/badge/AppVersion-version--v2.8-informational?style=flat)
+![AppVersion: version-v2.8.1](https://img.shields.io/badge/AppVersion-version--v2.8.1-informational?style=flat)
 
 A cron monitoring tool written in Python & Django
 
 **Homepage:** <https://charts.gabe565.com/charts/healthchecks>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=healthchecks&version=0.2.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=healthchecks&version=0.2.1)**
 
 ## Source Code
 
@@ -96,7 +96,7 @@ See each database section in [`values.yaml`](./values.yaml) for configuration ex
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | Image pull policy |
 | image.repository | string | `"ghcr.io/linuxserver/healthchecks"` | Image repository |
-| image.tag | string | `"version-v2.8"` | Image tag |
+| image.tag | string | `"version-v2.8.1"` | Image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    If enabled, the app's db envs will be set for you.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
 | persistence.config | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key.    Necessary for SQLite. |
