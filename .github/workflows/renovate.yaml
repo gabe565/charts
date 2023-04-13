@@ -49,7 +49,7 @@ jobs:
           set -eux
           export DESCRIPTION="$(sed 's/^:.*: //' <<<"$TITLE")"
           CHANGELOG="$(yq -o json '[{"kind": "changed", "description": strenv(DESCRIPTION)}]')"
-          ./hack/update-changelog.sh "$CHANGELOG" ${{ steps.changes.outputs.charts_files }}
+          ./hack/update-changelog.sh replace "$CHANGELOG" ${{ steps.changes.outputs.charts_files }}
 
       - name: Set type to patch
         if: contains(steps.pr.outputs.labels, 'patch') || contains(steps.pr.outputs.labels, 'digest')

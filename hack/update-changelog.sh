@@ -8,10 +8,13 @@ command -v yq >/dev/null 2>&1 || {
   exit 1
 }
 
-if [ "$#" -eq 0 ]; then
-    echo 'Usage: changelog [chart...]'
+if [ "$#" -lt 2 ]; then
+    echo 'Usage: {append | replace} changelog [chart...]'
     exit
 fi
+
+update_type="$1"
+shift
 
 changelog="$(yq -P <<<"$1")"
 export changelog
@@ -31,10 +34,23 @@ else
 fi
 CHARTS=( $(sort -u <<<"${CHARTS[*]}") )
 
+case "$update_type" in
+  append)
+    expression='.annotations."artifacthub.io/changes" |= (@yamld + (strenv(changelog) | @yamld) | @yaml | trim)'
+    ;;
+  replace)
+    expression='.annotations."artifacthub.io/changes" = (env(changelog) | @yaml | trim)'
+    ;;
+  *)
+    echo "Invalid update type: $update_type" >&2
+    exit 1
+    ;;
+esac
+
 for chart in "${CHARTS[@]}"; do (
   meta_file="$chart/Chart.yaml"
   if [ ! -f "$meta_file" ]; then echo >&2 "Invalid file: $meta_file"; exit; fi
 
-  yq -i '.annotations."artifacthub.io/changes" = (strenv(changelog) | @yamld style="literal" | @yaml)' "$meta_file"
+  yq --inplace "$expression" "$meta_file"
   echo "Updated $(basename "$chart") changelog"
 ) done
