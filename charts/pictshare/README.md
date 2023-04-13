@@ -2,7 +2,7 @@
 
 <img src="https://camo.githubusercontent.com/6efdab1c63d518fafc5e735001c5ed45e7cbd4958952cdd972e2630eee881d97/68747470733a2f2f7069637473686172652e6e65742f706868796e6a2e706e67" align="right" width="92" alt="pictshare logo">
 
-![Version: 0.4.3](https://img.shields.io/badge/Version-0.4.3-informational?style=flat)
+![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 74ccf9f6](https://img.shields.io/badge/AppVersion-74ccf9f6-informational?style=flat)
 
@@ -11,7 +11,7 @@ PictShare is an open source image, mp4, pastebin hosting service with a simple r
 **Homepage:** <https://charts.gabe565.com/charts/pictshare/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=pictshare&version=0.4.3)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=pictshare&version=0.5.0)**
 
 ## Source Code
 

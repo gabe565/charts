@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/domain-watch/ee028db206ea80c2617dd74a87193191a25a0a8a/assets/icon.svg" align="right" width="92" alt="domain-watch logo">
 
-![Version: 0.3.5](https://img.shields.io/badge/Version-0.3.5-informational?style=flat)
+![Version: 0.4.0](https://img.shields.io/badge/Version-0.4.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -11,7 +11,7 @@ Tool to watch whois reports and notify when statuses change or expiration is inc
 **Homepage:** <https://charts.gabe565.com/charts/domain-watch/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=domain-watch&version=0.3.5)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=domain-watch&version=0.4.0)**
 
 ## Source Code
 

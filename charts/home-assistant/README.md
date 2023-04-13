@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/home-assistant/assets/master/logo/logo-pretty.svg" align="right" width="92" alt="home-assistant logo">
 
-![Version: 0.2.3](https://img.shields.io/badge/Version-0.2.3-informational?style=flat)
+![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 2023.4.3](https://img.shields.io/badge/AppVersion-2023.4.3-informational?style=flat)
 
@@ -11,7 +11,7 @@ Open source home automation that puts local control and privacy first.
 **Homepage:** <https://charts.gabe565.com/charts/home-assistant/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=home-assistant&version=0.2.3)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=home-assistant&version=0.3.0)**
 
 ## Source Code
 

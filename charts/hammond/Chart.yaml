@@ -4,7 +4,7 @@ description: A self-hosted vehicle expense tracking system with support for mult
 home: https://charts.gabe565.com/charts/hammond/
 icon: https://raw.githubusercontent.com/akhilrex/hammond/84cba2c7f26f6d3f81c49b132110b24ac97c7b49/ui/public/touch-icon.png
 type: application
-version: 0.3.5
+version: 0.4.0
 # renovate datasource=docker depName=akhilrex/hammond
 appVersion: 1.0.0
 kubeVersion: ">=1.22.0-0"

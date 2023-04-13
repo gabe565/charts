@@ -4,7 +4,7 @@ description: Star Wars movie SSH and Telnet server
 home: https://charts.gabe565.com/charts/ascii-movie/
 icon: https://raw.githubusercontent.com/gabe565/ascii-movie/a1fd5c9df2fb3a177949c9511b62407c83aedefe/assets/icon.svg
 type: application
-version: 0.6.2
+version: 0.7.0
 # renovate datasource=docker depName=ghcr.io/gabe565/ascii-movie
 appVersion: 1.2.2
 kubeVersion: ">=1.22.0-0"

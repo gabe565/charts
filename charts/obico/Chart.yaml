@@ -4,7 +4,7 @@ description: Obico is a community-built, open-source smart 3D printing platform 
 home: https://charts.gabe565.com/charts/obico/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/obico/icon.svg
 type: application
-version: 0.0.9
+version: 0.1.0
 appVersion: sha-05d74ae305f9dcb4f18c404ae4b13972cb69f9b7
 kubeVersion: ">=1.22.0-0"
 keywords:

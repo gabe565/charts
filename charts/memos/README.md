@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/memos/icon.png" align="right" width="92" alt="memos logo">
 
-![Version: 0.2.3](https://img.shields.io/badge/Version-0.2.3-informational?style=flat)
+![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 0.12.1](https://img.shields.io/badge/AppVersion-0.12.1-informational?style=flat)
 
@@ -11,7 +11,7 @@ A lightweight, self-hosted memo hub. Open Source and Free forever.
 **Homepage:** <https://charts.gabe565.com/charts/memos/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=memos&version=0.2.3)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=memos&version=0.3.0)**
 
 ## Source Code
 
