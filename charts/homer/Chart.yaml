@@ -21,10 +21,8 @@ sources:
   - https://github.com/bastienwirtz/homer
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add Artifact Hub links annotation
     - kind: changed
-      description: Update issue link
+      description: Update common Helm release to v1.4.0
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/bastienwirtz/homer
