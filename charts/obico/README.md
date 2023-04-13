@@ -27,7 +27,7 @@ Kubernetes: `>=1.22.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.3.2 |
-| <https://charts.bitnami.com/bitnami> | redis | 17.8.0 |
+| <https://charts.bitnami.com/bitnami> | redis | 17.9.3 |
 
 ## TL;DR
 
