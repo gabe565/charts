@@ -24,10 +24,8 @@ sources:
   - https://github.com/nightscout/cgm-remote-monitor
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add Artifact Hub links annotation
     - kind: changed
-      description: Update issue link
+      description: Update mongodb Helm release to v13.9.4
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/nightscout/cgm-remote-monitor
