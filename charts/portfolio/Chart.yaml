@@ -11,7 +11,7 @@ kubeVersion: ">=1.22.0-0"
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.3.2
+    version: 1.4.0
 sources:
   - https://github.com/gabe565/portfolio
 annotations:
