@@ -15,13 +15,13 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.3.2
+    version: 1.4.0
 sources:
   - https://github.com/usememos/memos
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Change image from neosmemo/memos to ghcr.io/usememos/memos
+      description: Update common Helm release to v1.4.0
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/usememos/memos

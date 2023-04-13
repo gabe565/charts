@@ -13,13 +13,13 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.3.2
+    version: 1.4.0
 sources:
   - https://plex.tv
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/linuxserver/plex Docker tag to version-1.32.0.6918-6f393eda1
+      description: Update common Helm release to v1.4.0
   artifacthub.io/links: |-
     - name: App homepage
       url: https://plex.tv
