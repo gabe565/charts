@@ -20,6 +20,8 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
+      description: Update postgresql Helm release to v12.2.7
+    - kind: changed
       description: Update common Helm release to v1.4.0
   artifacthub.io/links: |-
     - name: App Source

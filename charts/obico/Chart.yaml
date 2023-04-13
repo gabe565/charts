@@ -24,6 +24,8 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
+      description: Update redis Helm release to v17.9.3
+    - kind: changed
       description: Update common Helm release to v1.4.0
   artifacthub.io/links: |-
     - name: App Source

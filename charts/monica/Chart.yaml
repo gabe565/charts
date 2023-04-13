@@ -23,6 +23,8 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
+      description: Update mariadb Helm release to v11.5.6
+    - kind: changed
       description: Update common Helm release to v1.4.0
   artifacthub.io/links: |-
     - name: App Source
