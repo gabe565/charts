@@ -18,16 +18,14 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 1.3.2
   - name: mongodb
-    version: 13.6.7
+    version: 13.9.4
     repository: https://charts.bitnami.com/bitnami
 sources:
   - https://github.com/nightscout/cgm-remote-monitor
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add Artifact Hub links annotation
     - kind: changed
-      description: Update issue link
+      description: Update mongodb Helm release to v13.9.4
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/nightscout/cgm-remote-monitor
