@@ -35,5 +35,14 @@
       "matchPackageNames": ["ghcr.io/dgtlmoon/changedetection.io"],
       "versioning": "loose"
     }
+  ],
+  "hostRules": [
+      {
+        "matchHost": "docker.io",
+        "username": "gabe565",
+        "encrypted": {
+          "password": "wcFMA/xDdHCJBTolAQ//bvxgC9ebzzwCTimbmmIfJwen3XIHcGq4dKCWTuIXh/O1x6+//Fnwk0v87EEUE2Oqpi1hpyYFt9DkUFQ7mzzkXe5EEdqhjOIQQMJ4avNPO/L7PpcgpoxAQvNep7J7OXUU/1Vdf9ODdkVrOVorzFl6Ff3RvMTGafYk4eDyZIFHB1Z+KS0EQ2TFlf+7yBjtV7kiLy1JpaWRXsX5vpJo3VBUCOTgPB4kQNVznS2qAr7M0sdGnYhvXJKT5fPrsBDS17U6lGqn7085yZD5XeX+iFJulVEGNFETINihyHpDs990qdVYXBZevd6a4vKPpohaNuwNBSRwqVEgkHp8nVZS4SKOVHGOHrmk6ZiIAYsHLrDu5FPiOZLWv+T6MzGYJ8jAbvzPv/o80j+6h8PI2JLGMbE1xMjRZECcVmlr0PDAsXhWVksH6chvpKBymxNdhcaKD16wRqAWF6L0sb5ymcgTGRVyLMzGUhB1ezFAuyWytacFAMvBuvSRHeGFdE3CIRJIURN3xNntKsGymF6iSOYLmUAemcvcl+wSsnGh9sGiLfcsuUuz7ls1g00HAAg8SOjXDd+ZsO/g94vALBzRxXyhnNZqgntZ+sog+bqHsDzcgQ8s8MMvDMZ/+lOLky0Cs6ObmNXJLYSrjD/0lOXeRtN0jYFeTa3OfS+8Rv7DPQlFO+dIT4LSlAE6RhjiwR7eXLhFWWfN7qnlR1FHfdSEfe2Tj9CbfS1vLpqrqE0nEKWykNg+mRCQsbqXDQzjh8fpf3x4HR/WWSLltgiDQUDkdBQgLtngkz5rKBFIKvWiQKA2L5vIfMsHIrZ5iro2swkPVFoKNTsJA/mfL3DN/Car2xKhVSv0A2Q0DCJIqgAQ+EpNKFOqjOMWorlchmU"
+        }
+      }
   ]
 }
