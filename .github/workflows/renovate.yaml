@@ -58,7 +58,7 @@ jobs:
         if: contains(steps.pr.outputs.labels, 'major') || contains(steps.pr.outputs.labels, 'minor')
         run: echo TYPE=minor >>$GITHUB_ENV
       - name: Update chart version
-        if: !contains(steps.pr.outputs.labels, 'skip-version-bump')
+        if: "!contains(steps.pr.outputs.labels, 'skip-version-bump')"
         run: |
           set -eux
           ./hack/update-version.sh "$TYPE" ${{ steps.changes.outputs.charts_files }}
