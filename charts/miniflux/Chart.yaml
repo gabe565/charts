@@ -18,17 +18,15 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 1.3.2
   - name: postgresql
-    version: 12.1.14
+    version: 12.2.7
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 sources:
   - https://github.com/miniflux/v2
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add Artifact Hub links annotation
     - kind: changed
-      description: Update issue link
+      description: Update postgresql Helm release to v12.2.7
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/miniflux/v2
