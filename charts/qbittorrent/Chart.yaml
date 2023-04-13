@@ -1,7 +1,7 @@
 apiVersion: v2
 name: qbittorrent
 description: The qBittorrent project aims to provide an open-source software alternative to µTorrent.
-home: https://charts.gabe565.com/charts/qbittorrent
+home: https://charts.gabe565.com/charts/qbittorrent/
 icon: https://raw.githubusercontent.com/qbittorrent/qBittorrent/master/src/icons/qbittorrent-tray.svg
 type: application
 version: 0.0.6
@@ -22,6 +22,8 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Update common Helm release to v1.4.0
+    - kind: changed
+      description: Update homepage URL
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/qbittorrent/qBittorrent

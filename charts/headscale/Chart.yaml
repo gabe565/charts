@@ -1,7 +1,7 @@
 apiVersion: v2
 name: headscale
 description: An open source, self-hosted implementation of the Tailscale control server.
-home: https://charts.gabe565.com/charts/headscale
+home: https://charts.gabe565.com/charts/headscale/
 icon: https://raw.githubusercontent.com/juanfont/headscale/56a7b1e34952c3e0306a134b2be9b4277f5d8d6e/docs/logo/headscale3-dots.svg
 type: application
 version: 0.9.5
@@ -29,6 +29,8 @@ annotations:
       description: Update postgresql Helm release to v12.2.7
     - kind: changed
       description: Update common Helm release to v1.4.0
+    - kind: changed
+      description: Update homepage URL
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/juanfont/headscale

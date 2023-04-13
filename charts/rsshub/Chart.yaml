@@ -1,7 +1,7 @@
 apiVersion: v2
 name: rsshub
 description: RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.
-home: https://charts.gabe565.com/charts/rsshub
+home: https://charts.gabe565.com/charts/rsshub/
 icon: https://camo.githubusercontent.com/79f2dcf6fb41b71619186b12eed25495fa55e20d3f21355798a2cb22703c6f8b/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30342f32332f356362656237653431343134632e706e67
 type: application
 version: 0.3.7
@@ -28,6 +28,8 @@ annotations:
       description: Update redis Helm release to v17.9.3
     - kind: changed
       description: Update common Helm release to v1.4.0
+    - kind: changed
+      description: Update homepage URL
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/DIYgod/RSSHub

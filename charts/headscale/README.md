@@ -8,7 +8,7 @@
 
 An open source, self-hosted implementation of the Tailscale control server.
 
-**Homepage:** <https://charts.gabe565.com/charts/headscale>
+**Homepage:** <https://charts.gabe565.com/charts/headscale/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
 [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=headscale&version=0.9.5)**

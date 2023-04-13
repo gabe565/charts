@@ -1,7 +1,7 @@
 apiVersion: v2
 name: vaultwarden
 description: Unofficial Bitwarden compatible server written in Rust.
-home: https://charts.gabe565.com/charts/vaultwarden
+home: https://charts.gabe565.com/charts/vaultwarden/
 icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b69952db6eb12987a9668fea6b72df79cfa41/resources/vaultwarden-icon.svg
 type: application
 version: 0.6.4
@@ -34,6 +34,8 @@ annotations:
       description: Update postgresql Helm release to v12.2.7
     - kind: changed
       description: Update common Helm release to v1.4.0
+    - kind: changed
+      description: Update homepage URL
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/dani-garcia/vaultwarden

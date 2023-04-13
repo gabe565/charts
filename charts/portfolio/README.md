@@ -8,7 +8,7 @@
 
 My personal portfolio website
 
-**Homepage:** <https://charts.gabe565.com/charts/portfolio>
+**Homepage:** <https://charts.gabe565.com/charts/portfolio/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
 [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=portfolio&version=0.7.4)**

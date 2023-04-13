@@ -8,7 +8,7 @@
 
 A cron monitoring tool written in Python & Django
 
-**Homepage:** <https://charts.gabe565.com/charts/healthchecks>
+**Homepage:** <https://charts.gabe565.com/charts/healthchecks/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
 [here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=healthchecks&version=0.2.1)**

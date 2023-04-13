@@ -1,7 +1,7 @@
 apiVersion: v2
 name: flame
 description: Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors.
-home: https://charts.gabe565.com/charts/flame
+home: https://charts.gabe565.com/charts/flame/
 icon: https://raw.githubusercontent.com/pawelmalak/flame/4ed29fe276b4282c67415f9788660df2a3a69b5c/client/public/icons/apple-touch-icon-180x180.png
 type: application
 version: 0.3.5
@@ -23,6 +23,8 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Update common Helm release to v1.4.0
+    - kind: changed
+      description: Update homepage URL
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/pawelmalak/flame

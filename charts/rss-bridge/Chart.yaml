@@ -1,7 +1,7 @@
 apiVersion: v2
 name: rss-bridge
 description: The RSS feed for websites missing it.
-home: https://charts.gabe565.com/charts/rss-bridge
+home: https://charts.gabe565.com/charts/rss-bridge/
 icon: https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png
 type: application
 version: 0.3.6
@@ -22,6 +22,8 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Update common Helm release to v1.4.0
+    - kind: changed
+      description: Update homepage URL
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/RSS-Bridge/rss-bridge

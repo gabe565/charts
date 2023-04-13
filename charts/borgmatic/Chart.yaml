@@ -1,7 +1,7 @@
 apiVersion: v2
 name: borgmatic
 description: borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services.
-home: https://charts.gabe565.com/charts/borgmatic
+home: https://charts.gabe565.com/charts/borgmatic/
 icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
 type: application
 version: 0.6.10
@@ -23,6 +23,8 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Update common Helm release to v1.4.0
+    - kind: changed
+      description: Update homepage URL
   artifacthub.io/links: |-
     - name: App Source
       url: https://projects.torsion.org/borgmatic-collective/borgmatic

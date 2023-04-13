@@ -1,7 +1,7 @@
 apiVersion: v2
 name: smarter-device-manager
 description: Manage hardware resource allocation without a need for privileged containers.
-home: https://charts.gabe565.com/charts/smarter-device-manager
+home: https://charts.gabe565.com/charts/smarter-device-manager/
 icon: https://gitlab.com/uploads/-/system/group/avatar/6339043/ARM1636_Project_Logo_ST2_RGB_V1.png
 type: application
 version: 0.3.4
@@ -24,6 +24,8 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Update common Helm release to v1.4.0
+    - kind: changed
+      description: Update homepage URL
   artifacthub.io/links: |-
     - name: App Source
       url: https://gitlab.com/arm-research/smarter/smarter-device-manager

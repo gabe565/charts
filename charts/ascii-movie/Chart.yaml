@@ -1,7 +1,7 @@
 apiVersion: v2
 name: ascii-movie
 description: Star Wars movie SSH and Telnet server
-home: https://charts.gabe565.com/charts/ascii-movie
+home: https://charts.gabe565.com/charts/ascii-movie/
 icon: https://raw.githubusercontent.com/gabe565/ascii-movie/a1fd5c9df2fb3a177949c9511b62407c83aedefe/assets/icon.svg
 type: application
 version: 0.6.2
@@ -23,6 +23,8 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Update common Helm release to v1.4.0
+    - kind: changed
+      description: Update homepage URL
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gabe565/ascii-movie

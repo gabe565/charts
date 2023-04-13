@@ -1,7 +1,7 @@
 apiVersion: v2
 name: homer
 description: A dead simple static HOMepage for your servER to keep your services on hand, from a simple yaml configuration file.
-home: https://charts.gabe565.com/charts/homer
+home: https://charts.gabe565.com/charts/homer/
 icon: https://raw.githubusercontent.com/bastienwirtz/homer/5609315fe77da5441a9c3dda8d92c0ffe9f1bf17/public/assets/icons/logo.svg
 type: application
 version: 0.4.6
@@ -23,6 +23,8 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Update common Helm release to v1.4.0
+    - kind: changed
+      description: Update homepage URL
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/bastienwirtz/homer
