@@ -23,8 +23,8 @@ sources:
   - https://github.com/gabe565/docker-obico
 annotations:
   artifacthub.io/changes: |-
-    - kind: fixed
-      description: Fix app icon scaling on Artifact Hub
+    - kind: changed
+      description: Update redis Helm release to v17.9.3
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/TheSpaghettiDetective/obico-server
