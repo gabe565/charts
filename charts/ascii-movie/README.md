@@ -83,6 +83,7 @@ N/A
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
+| env | string | See [values.yaml](./values.yaml) | Environment variables. [[ref]](https://github.com/gabe565/ascii-movie/blob/main/docs/ascii-movie_serve.md) |
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"ghcr.io/gabe565/ascii-movie"` | image repository. |
 | image.tag | string | `"1.3.0"` | image tag |

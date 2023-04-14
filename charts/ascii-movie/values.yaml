@@ -17,6 +17,15 @@ controller:
   # -- Set the controller upgrade strategy
   strategy: RollingUpdate
 
+# -- Environment variables. [[ref]](https://github.com/gabe565/ascii-movie/blob/main/docs/ascii-movie_serve.md)
+# @default -- See [values.yaml](./values.yaml)
+env:
+  # ASCII_MOVIE_PAD_TOP:
+  # ASCII_MOVIE_PAD_BOTTOM:
+  # ASCII_MOVIE_PAD_LEFT:
+  # ASCII_MOVIE_PROGRESS_PAD_BOTTOM:
+  # ASCII_MOVIE_SPEED:
+
 # -- Configures service settings for the chart.
 # @default -- See [values.yaml](./values.yaml)
 service:
