@@ -43,3 +43,16 @@ service:
         enabled: true
         primary: true
         port: 23
+
+secrets:
+  ssh:
+    # -- Enables SSH host key volume.
+    # @default -- `true` if SSH port is enabled, else `false`
+    enabled:
+    stringData:
+      # -- (string) SSH Ed25519 host key.
+      # @default -- Generated
+      ssh_host_ed25519_key:
+      # -- (string) SSH RSA host key.
+      # @default -- Generated
+      ssh_host_rsa_key:

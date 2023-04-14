@@ -22,6 +22,8 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: added
+      description: Add SSH host key config
+    - kind: added
       description: Add example envs
     - kind: changed
       description: Update ghcr.io/gabe565/ascii-movie Docker tag to v1.3.0

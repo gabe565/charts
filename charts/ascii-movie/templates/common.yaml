@@ -6,6 +6,36 @@ env:
 
   ASCII_MOVIE_TELNET_ENABLED: {{ .Values.service.main.ports.telnet.enabled }}
   ASCII_MOVIE_TELNET_ADDRESS: :{{ .Values.service.main.ports.telnet.port }}
+
+{{- if or .Values.service.main.ports.ssh.enabled .Values.secrets.ssh.enabled }}
+  ASCII_MOVIE_SSH_HOST_KEY: /etc/ssh/ssh_host_rsa_key,/etc/ssh/ssh_host_ed25519_key
+
+persistence:
+  ssh:
+    enabled: true
+    type: secret
+    name: {{ include "bjw-s.common.lib.chart.names.fullname" . }}-ssh
+    mountPath: /etc/ssh
+
+secrets:
+  ssh:
+    enabled: true
+    stringData:
+      {{- $sshSecretName := include "bjw-s.common.lib.chart.names.fullname" . | printf "%s-ssh" }}
+      {{- $sshData :=  lookup "v1" "Secret" .Release.Namespace $sshSecretName | dig "data" dict }}
+      ssh_host_ed25519_key:
+        {{- with get $sshData "ssh_host_ed25519_key" }}
+          {{- b64dec . | toYaml | indent 8 }}
+        {{- else }}
+          {{- genPrivateKey "ed25519" | toYaml | indent 8 }}
+        {{- end }}
+      ssh_host_rsa_key:
+        {{- with get $sshData "ssh_host_rsa_key" }}
+          {{- b64dec . | toYaml | indent 8 }}
+        {{- else }}
+          {{- genPrivateKey "rsa" | toYaml | indent 8 }}
+        {{- end }}
+{{- end }}
 {{- end -}}
 {{- $_ := merge .Values (include "asciiMovie.harcodedValues" . | fromYaml) -}}
 

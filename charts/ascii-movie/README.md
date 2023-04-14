@@ -87,6 +87,9 @@ N/A
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"ghcr.io/gabe565/ascii-movie"` | image repository. |
 | image.tag | string | `"1.3.0"` | image tag |
+| secrets.ssh.enabled | string | `true` if SSH port is enabled, else `false` | Enables SSH host key volume. |
+| secrets.ssh.stringData.ssh_host_ed25519_key | string | Generated | SSH Ed25519 host key. |
+| secrets.ssh.stringData.ssh_host_rsa_key | string | Generated | SSH RSA host key. |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 
 ---
