@@ -7,7 +7,7 @@ env:
   ASCII_MOVIE_TELNET_ENABLED: {{ .Values.service.main.ports.telnet.enabled }}
   ASCII_MOVIE_TELNET_ADDRESS: :{{ .Values.service.main.ports.telnet.port }}
 
-  ASCII_MOVIE_LOG_EXCLUDE_0S: "true"
+  ASCII_MOVIE_LOG_EXCLUDE_FASTER: "100ms"
 
 {{- if or .Values.service.main.ports.ssh.enabled .Values.secrets.ssh.enabled }}
   ASCII_MOVIE_SSH_HOST_KEY: /etc/ssh/ssh_host_rsa_key,/etc/ssh/ssh_host_ed25519_key

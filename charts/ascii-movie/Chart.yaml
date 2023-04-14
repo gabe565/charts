@@ -24,7 +24,7 @@ annotations:
     - kind: changed
       description: Update ghcr.io/gabe565/ascii-movie Docker tag to v1.3.1
     - kind: added
-      description: Exclude probe logs via 0s disconnect flag instead of gateway IP
+      description: Exclude probe logs via duration flag instead of gateway IP
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gabe565/ascii-movie
