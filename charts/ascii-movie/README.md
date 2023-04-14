@@ -4,7 +4,7 @@
 
 ![Version: 0.7.0](https://img.shields.io/badge/Version-0.7.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 1.2.2](https://img.shields.io/badge/AppVersion-1.2.2-informational?style=flat)
+![AppVersion: 1.3.0](https://img.shields.io/badge/AppVersion-1.3.0-informational?style=flat)
 
 Star Wars movie SSH and Telnet server
 
@@ -85,7 +85,7 @@ N/A
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"ghcr.io/gabe565/ascii-movie"` | image repository. |
-| image.tag | string | `"1.2.2"` | image tag |
+| image.tag | string | `"1.3.0"` | image tag |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 
 ---
