@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/ascii-movie/a1fd5c9df2fb3a177949c9511b62407c83aedefe/assets/icon.svg" align="right" width="92" alt="ascii-movie logo">
 
-![Version: 0.7.0](https://img.shields.io/badge/Version-0.7.0-informational?style=flat)
+![Version: 0.8.0](https://img.shields.io/badge/Version-0.8.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 1.3.0](https://img.shields.io/badge/AppVersion-1.3.0-informational?style=flat)
 
@@ -11,7 +11,7 @@ Star Wars movie SSH and Telnet server
 **Homepage:** <https://charts.gabe565.com/charts/ascii-movie/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=ascii-movie&version=0.7.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=ascii-movie&version=0.8.0)**
 
 ## Source Code
 
