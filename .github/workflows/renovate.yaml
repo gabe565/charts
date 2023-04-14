@@ -9,7 +9,7 @@ env:
   COMMIT_MESSAGE: ":wrench: Update chart metadata"
 
 jobs:
-  udpate-chart-metadata:
+  update-chart-metadata:
     name: Update Chart Metadata
     runs-on: ubuntu-latest
     steps:
