@@ -1604,6 +1604,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/borgmatic-collective/borgmatic Docker tag to v1.7.12
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://projects.torsion.org/borgmatic-collective/borgmatic
+        - name: Container Source
+          url: https://github.com/borgmatic-collective/docker-borgmatic
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/borgmatic
+    apiVersion: v2
+    appVersion: 1.7.12
+    created: "2023-04-14T18:02:38.763175871Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.4.0
+    description: borgmatic is simple, configuration-driven backup software for servers
+      and workstations. Protect your files with client-side encryption. Backup your
+      databases too. Monitor it all with integrated third-party services.
+    digest: 53cc310245891bff1e77da0e4bb183a8ff9dc8dc788643d795006c7476df4882
+    home: https://charts.gabe565.com/charts/borgmatic/
+    icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
+    keywords:
+    - borgmatic
+    - borg
+    - backup
+    kubeVersion: '>=1.21.0-0'
+    name: borgmatic
+    sources:
+    - https://projects.torsion.org/borgmatic-collective/borgmatic
+    - https://github.com/borgmatic-collective/docker-borgmatic
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/borgmatic-0.7.1/borgmatic-0.7.1.tgz
+    version: 0.7.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.4.0
         - kind: changed
           description: Update homepage URL
@@ -18412,4 +18449,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-14T05:35:20.853834459Z"
+generated: "2023-04-14T18:02:42.670510157Z"
