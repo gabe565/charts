@@ -1,4 +1,4 @@
-# obico
+# Obico
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/obico/icon.svg" align="right" width="92" alt="obico logo">
 

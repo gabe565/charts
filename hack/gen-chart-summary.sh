@@ -33,6 +33,7 @@ sed -i '' '/^'"$charts_header"'$/,$d' "$charts_summary_file"
       fi
       chart_icon="<img src='$chart_icon' alt='$chart_name icon' width='${width}px' align='right' loading='lazy'>"
     fi
-    echo "| [$chart_name $chart_icon](charts/$chart_name/) | $chart_description |"
+    pretty_name="$(head -n1 "$(dirname "$chart_yaml")/README.md" | sed 's/^# //')"
+    echo "| [$pretty_name $chart_icon](charts/$chart_name/) | $chart_description |"
   done
 } >> "$charts_summary_file"

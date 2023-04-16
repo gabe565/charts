@@ -1,4 +1,4 @@
-# nightscout
+# Nightscout
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/nightscout/icon.svg" align="right" width="92" alt="nightscout logo">
 

@@ -1,4 +1,4 @@
-# headscale
+# Headscale
 
 <img src="https://raw.githubusercontent.com/juanfont/headscale/56a7b1e34952c3e0306a134b2be9b4277f5d8d6e/docs/logo/headscale3-dots.svg" align="right" width="92" alt="headscale logo">
 

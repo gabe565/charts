@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 <img src="https://raw.githubusercontent.com/gabe565/portfolio/0f0e80ce2f29e9382a64e7fc6fe2ed1a9993971b/public/android-chrome-512x512.png" align="right" width="92" alt="portfolio logo">
 

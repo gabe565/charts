@@ -1,4 +1,4 @@
-# flame
+# Flame
 
 <img src="https://raw.githubusercontent.com/pawelmalak/flame/4ed29fe276b4282c67415f9788660df2a3a69b5c/client/public/icons/apple-touch-icon-180x180.png" align="right" width="92" alt="flame logo">
 

@@ -1,4 +1,4 @@
-# memos
+# Memos
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/memos/icon.png" align="right" width="92" alt="memos logo">
 

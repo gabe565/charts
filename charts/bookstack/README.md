@@ -1,4 +1,4 @@
-# bookstack
+# Bookstack
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg" align="right" width="92" alt="bookstack logo">
 

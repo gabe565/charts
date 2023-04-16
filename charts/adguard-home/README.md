@@ -1,4 +1,4 @@
-# adguard-home
+# AdGuard Home
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/adguard-home/icon.svg" align="right" width="92" alt="adguard-home logo">
 

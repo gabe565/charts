@@ -1,4 +1,4 @@
-# vaultwarden
+# Vaultwarden
 
 <img src="https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b69952db6eb12987a9668fea6b72df79cfa41/resources/vaultwarden-icon.svg" align="right" width="92" alt="vaultwarden logo">
 

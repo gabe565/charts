@@ -1,4 +1,4 @@
-# healthchecks
+# Healthchecks
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/healthchecks/icon.svg" align="right" width="92" alt="healthchecks logo">
 

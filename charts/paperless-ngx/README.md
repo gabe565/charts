@@ -1,4 +1,4 @@
-# paperless-ngx
+# Paperless-ngx
 
 <img src="https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750d558b58018d1d3393db145d162d44fceb/src-ui/src/assets/logo-notext.svg" align="right" width="92" alt="paperless-ngx logo">
 

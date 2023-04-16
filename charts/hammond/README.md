@@ -1,4 +1,4 @@
-# hammond
+# Hammond
 
 <img src="https://raw.githubusercontent.com/akhilrex/hammond/84cba2c7f26f6d3f81c49b132110b24ac97c7b49/ui/public/touch-icon.png" align="right" width="92" alt="hammond logo">
 

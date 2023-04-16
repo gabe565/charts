@@ -1,4 +1,4 @@
-# changedetection-io
+# ChangeDetection.io
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/changedetection-io/icon.png" align="right" width="92" alt="changedetection-io logo">
 

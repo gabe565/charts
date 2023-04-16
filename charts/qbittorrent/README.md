@@ -1,4 +1,4 @@
-# qbittorrent
+# qBittorrent
 
 <img src="https://raw.githubusercontent.com/qbittorrent/qBittorrent/master/src/icons/qbittorrent-tray.svg" align="right" width="92" alt="qbittorrent logo">
 

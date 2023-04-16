@@ -1,4 +1,4 @@
-# smarter-device-manager
+# Smarter Device Manager
 
 <img src="https://gitlab.com/uploads/-/system/group/avatar/6339043/ARM1636_Project_Logo_ST2_RGB_V1.png" align="right" width="92" alt="smarter-device-manager logo">
 

@@ -43,11 +43,15 @@ def filter_chart_readme(markdown: str, page: Page, config: Config):
     markdown = yaml_re.sub(f"({config.repo_url}/blob/main/{page.url}\\1)", markdown)
 
     # Set metadata from Chart.yaml
-    yaml_file = os.path.join(os.path.dirname(page.file.abs_src_path), "Chart.yaml")
+    chart_dir = os.path.dirname(page.file.abs_src_path)
+    yaml_file = os.path.join(chart_dir, "Chart.yaml")
+    readme_file = os.path.join(chart_dir, "README.md")
     with open(yaml_file) as f:
         contents = yaml.load(f)
         if "description" in contents:
-            page.meta["description"] = contents["description"]
+            with open(readme_file) as readme:
+                title = re.sub(r"^# ", "", readme.readline().rstrip("\n"))
+            page.meta["description"] = f"Helm Chart for {title}: {contents['description']}"
         if "keywords" in contents:
             page.meta["tags"] = contents["keywords"]
 

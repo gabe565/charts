@@ -1,4 +1,4 @@
-# borgmatic
+# Borgmatic
 
 <img src="https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg" align="right" width="92" alt="borgmatic logo">
 

@@ -1,4 +1,4 @@
-# esphome
+# Home Assistant
 
 <img src="https://raw.githubusercontent.com/esphome/esphome-docs/019178551126f2d6a588a1f9ef50f60453041531/images/logo.svg" align="right" width="92" alt="esphome logo">
 

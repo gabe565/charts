@@ -1,4 +1,4 @@
-# scanservjs
+# Scanservjs
 
 <img src="https://raw.githubusercontent.com/sbs20/scanservjs/d28627ebec5cec6d30475a43bd101cc9c5e0961a/packages/client/src/icons/android-chrome-192x192.png" align="right" width="92" alt="scanservjs logo">
 

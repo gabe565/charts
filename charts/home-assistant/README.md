@@ -1,4 +1,4 @@
-# home-assistant
+# Home Assistant
 
 <img src="https://raw.githubusercontent.com/home-assistant/assets/master/logo/logo-pretty.svg" align="right" width="92" alt="home-assistant logo">
 

@@ -1,4 +1,4 @@
-# monica
+# Monica
 
 <img src="https://raw.githubusercontent.com/monicahq/monica/main/public/img/monica.svg" align="right" width="92" alt="monica logo">
 

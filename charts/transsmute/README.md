@@ -1,4 +1,4 @@
-# transsmute
+# Transsmute
 
 <img src="https://raw.githubusercontent.com/gabe565/transsmute/ce624f8c903654ead37489d8d274b97d526d397a/assets/icon.svg" align="right" width="92" alt="transsmute logo">
 

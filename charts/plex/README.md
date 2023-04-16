@@ -1,4 +1,4 @@
-# plex
+# Plex
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/plex/icon.svg" align="right" width="92" alt="plex logo">
 

@@ -1,4 +1,4 @@
-# tandoor
+# Tandoor
 
 <img src="https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg" align="right" width="92" alt="tandoor logo">
 

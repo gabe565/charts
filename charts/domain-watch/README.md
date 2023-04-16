@@ -1,4 +1,4 @@
-# domain-watch
+# Domain Watch
 
 <img src="https://raw.githubusercontent.com/gabe565/domain-watch/ee028db206ea80c2617dd74a87193191a25a0a8a/assets/icon.svg" align="right" width="92" alt="domain-watch logo">
 

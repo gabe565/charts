@@ -1,4 +1,4 @@
-# relax-sounds
+# Relax Sounds
 
 <img src="https://github.com/gabe565/relax-sounds/raw/3e55b07a957f2e20aceeeba1d36226791f2f1569/frontend/src/assets/icon-purple.svg" align="right" width="92" alt="relax-sounds logo">
 

@@ -1,4 +1,4 @@
-# matrimony
+# Matrimony
 
 <img src="https://raw.githubusercontent.com/gabe565/matrimony/b13163b384b27273080deb8d57d1222ba11337f9/frontend/public/img/logo.svg" align="right" width="92" alt="matrimony logo">
 
