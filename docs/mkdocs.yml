@@ -51,7 +51,6 @@ plugins:
       hooks:
         on_files: plugins.add_files:main
         on_page_markdown: plugins.filter_readmes:main
-        on_post_build: plugins.remove_sitemap_gz:main
   - social
 
 markdown_extensions:
