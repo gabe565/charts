@@ -11,7 +11,7 @@ yaml = YAML()
 
 
 def main(markdown: str, page: Page, config: Config, files: Files):
-    if page.title == "Charts":
+    if page.url == "":
         return filter_repo_readme(markdown, page, config)
     elif page.url.startswith("charts"):
         return filter_chart_readme(markdown, page, config)
