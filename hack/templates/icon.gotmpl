@@ -1,7 +1,5 @@
 {{- define "custom.chart.icon" -}}
-{{- $icon := "$ICON" -}}
-{{- if $icon -}}
-  <img src="{{ $icon }}" align="right" width="92" alt="{{ template "chart.name" . }} logo">
-
-{{ end -}}
+  {{- with "$ICON" -}}
+    <img src="{{ . }}" align="right" width="92" alt="{{ template "chart.name" $ }} logo">
+  {{- end -}}
 {{- end -}}
