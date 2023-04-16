@@ -51,7 +51,7 @@ def filter_chart_readme(markdown: str, page: Page, config: Config):
         if "description" in contents:
             with open(readme_file) as readme:
                 title = re.sub(r"^# ", "", readme.readline().rstrip("\n"))
-            page.meta["description"] = f"Helm Chart for {title}: {contents['description']}"
+            page.meta["description"] = f"{title} Helm Chart: {contents['description']}"
         if "keywords" in contents:
             page.meta["tags"] = contents["keywords"]
 
