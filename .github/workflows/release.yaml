@@ -80,6 +80,9 @@ jobs:
 
       - name: Build docs
         working-directory: docs
+        env:
+          REPO_NAME: ${{ github.repository }}
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
         run: mkdocs build
 
       - name: Upload artifact
