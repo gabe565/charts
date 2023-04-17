@@ -1,4 +1,4 @@
-# Pictshare
+# PictShare
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/pictshare/icon.svg" align="right" width="92" alt="pictshare logo">
 
