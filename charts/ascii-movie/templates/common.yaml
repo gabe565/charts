@@ -7,7 +7,7 @@ env:
   ASCII_MOVIE_TELNET_ENABLED: {{ .Values.service.main.ports.telnet.enabled }}
   ASCII_MOVIE_TELNET_ADDRESS: :{{ .Values.service.main.ports.telnet.port }}
 
-  ASCII_MOVIE_LOG_EXCLUDE_FASTER: "100ms"
+  ASCII_MOVIE_API_ADDRESS: :{{ .Values.service.api.ports.http.port }}
 
 {{- if or .Values.service.main.ports.ssh.enabled .Values.secrets.ssh.enabled }}
   ASCII_MOVIE_SSH_HOST_KEY: /etc/ssh/ssh_host_rsa_key,/etc/ssh/ssh_host_ed25519_key
@@ -38,6 +38,20 @@ secrets:
           {{- genPrivateKey "rsa" | toYaml | indent 8 }}
         {{- end }}
 {{- end }}
+
+probes:
+  liveness:
+    type: HTTP
+    port: http
+    path: /health
+  readiness:
+    type: HTTP
+    port: http
+    path: /health
+  startup:
+    type: HTTP
+    port: http
+    path: /health
 {{- end -}}
 {{- $_ := merge .Values (include "asciiMovie.harcodedValues" . | fromYaml) -}}
 
