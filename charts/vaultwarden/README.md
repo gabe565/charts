@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b69952db6eb12987a9668fea6b72df79cfa41/resources/vaultwarden-icon.svg" align="right" width="92" alt="vaultwarden logo">
 
-![Version: 0.7.0](https://img.shields.io/badge/Version-0.7.0-informational?style=flat)
+![Version: 0.8.0](https://img.shields.io/badge/Version-0.8.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 1.28.1-alpine](https://img.shields.io/badge/AppVersion-1.28.1--alpine-informational?style=flat)
 
@@ -11,7 +11,7 @@ Unofficial Bitwarden compatible server written in Rust.
 **Homepage:** <https://charts.gabe565.com/charts/vaultwarden/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=vaultwarden&version=0.7.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=vaultwarden&version=0.8.0)**
 
 ## Source Code
 
@@ -26,7 +26,7 @@ Kubernetes: `>=1.22.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.4.0 |
-| <https://charts.bitnami.com/bitnami> | mariadb | 11.5.6 |
+| <https://charts.bitnami.com/bitnami> | mariadb | 12.0.0 |
 | <https://charts.bitnami.com/bitnami> | postgresql | 12.2.7 |
 
 ## TL;DR
