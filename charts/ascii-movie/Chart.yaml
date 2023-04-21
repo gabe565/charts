@@ -25,6 +25,8 @@ annotations:
       description: Update ghcr.io/gabe565/ascii-movie Docker tag to v1.4.0
     - kind: added
       description: Add internal API service
+    - kind: changed
+      description: Use API service for health check
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gabe565/ascii-movie
