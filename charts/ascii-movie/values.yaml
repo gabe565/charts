@@ -43,6 +43,12 @@ service:
         enabled: true
         primary: true
         port: 23
+  api:
+    enabled: true
+    ports:
+      http:
+        enabled: true
+        port: 1977
 
 secrets:
   ssh:

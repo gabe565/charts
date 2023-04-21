@@ -7,6 +7,8 @@ env:
   ASCII_MOVIE_TELNET_ENABLED: {{ .Values.service.main.ports.telnet.enabled }}
   ASCII_MOVIE_TELNET_ADDRESS: :{{ .Values.service.main.ports.telnet.port }}
 
+  ASCII_MOVIE_API_ADDRESS: :{{ .Values.service.api.ports.http.port }}
+
   ASCII_MOVIE_LOG_EXCLUDE_FASTER: "100ms"
 
 {{- if or .Values.service.main.ports.ssh.enabled .Values.secrets.ssh.enabled }}
