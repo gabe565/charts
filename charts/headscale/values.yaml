@@ -52,6 +52,14 @@ ingress:
     #     hosts:
     #       - chart-example.local
 
+configMaps:
+  acl:
+    # -- Enables ACL policy
+    enabled: false
+    data:
+      # -- ACL policy JSON [[ref]](https://tailscale.com/kb/1018/acls/)
+      policy:
+
 persistence:
   # -- Configure persistence settings for the chart under this key.
   # @default -- See [values.yaml](./values.yaml)

@@ -78,6 +78,19 @@ env:
   HEADSCALE_DB_PATH: "{{ $.Values.persistence.config.mountPath }}/db.sqlite"
   {{- end }}
   {{- end }}
+
+{{- with .Values.configMaps.acl }}
+{{- if .enabled }}
+  HEADSCALE_ACL_POLICY_PATH: /acl/{{ keys .data | first }}
+
+persistence:
+  acl:
+    enabled: true
+    type: configMap
+    name: {{ include "bjw-s.common.lib.chart.names.fullname" $ }}-acl
+
+{{- end }}
+{{- end }}
 {{- end -}}
 {{- $_ := merge .Values (include "headscale.harcodedValues" . | fromYaml) -}}
 
