@@ -1,0 +1,35 @@
+{{- define "genericDevicePlugin.config" -}}
+{{- with .Values.config }}
+{{- if .enabled }}
+args:
+  - --config=/config/config.yaml
+
+configMaps:
+  config:
+    enabled: true
+    data:
+      config.yaml: {{ toYaml .data | nindent 8 }}
+
+persistence:
+  config:
+    enabled: true
+    type: configMap
+    name: {{ include "bjw-s.common.lib.chart.names.fullname" $ }}-config
+{{- end }}
+{{- end }}
+{{- end -}}
+{{- $_ := merge .Values (include "genericDevicePlugin.config" . | fromYaml) -}}
+
+{{/* Append the hardcoded settings */}}
+{{- define "genericDevicePlugin.defaultValues" -}}
+env:
+  LISTEN: :{{ .Values.service.main.ports.http.port }}
+
+  {{- with get .Values.persistence "device-plugins" }}
+  PLUGIN_DIRECTORY: {{ .mountPath | default .hostPath }}
+  {{- end }}
+{{- end -}}
+{{- $_ = merge .Values (include "genericDevicePlugin.defaultValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "bjw-s.common.loader.all" . }}

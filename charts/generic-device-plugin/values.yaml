@@ -1,0 +1,120 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/values.yaml
+#
+
+image:
+  # -- Image repository
+  repository: ghcr.io/squat/generic-device-plugin
+  # -- Image pull policy
+  pullPolicy: Always
+  # -- Image tag
+  tag: latest
+
+controller:
+  # -- Sets the controller type
+  type: daemonset
+
+securityContext:
+  # -- Privileged mode is required to access devices
+  privileged: true
+
+# -- Environment variables [[ref]](https://github.com/squat/generic-device-plugin#usage)
+# @default -- See [values.yaml](./values.yaml)
+env:
+  # -- The domain to use when declaring devices
+  DOMAIN: squat.ai
+
+persistence:
+  # -- Host path volume bind to the Kubelet plugin directory
+  # @default -- See [values.yaml](./values.yaml)
+  device-plugins:
+    enabled: true
+    type: hostPath
+    hostPath: /var/lib/kubelet/device-plugins
+  # -- Host path volume bind to the dev dir
+  # @default -- See [values.yaml](./values.yaml)
+  dev:
+    enabled: true
+    type: hostPath
+    hostPath: /dev
+
+config:
+  # -- Enables the config file ConfigMap
+  enabled: true
+  # -- generic-device-plugin config file [[ref]](https://github.com/squat/generic-device-plugin#usage)
+  # @default -- See [values.yaml](./values.yaml)
+  data: |
+    devices:
+      - name: serial
+        groups:
+          - paths:
+              - path: /dev/ttyUSB*
+          - paths:
+              - path: /dev/ttyACM*
+          - paths:
+              - path: /dev/tty.usb*
+          - paths:
+              - path: /dev/cu.*
+          - paths:
+              - path: /dev/cuaU*
+          - paths:
+              - path: /dev/rfcomm*
+      - name: video
+        groups:
+          - paths:
+              - path: /dev/video0
+      - name: fuse
+        groups:
+          - count: 10
+            paths:
+              - path: /dev/fuse
+      - name: audio
+        groups:
+          - count: 10
+            paths:
+              - path: /dev/snd
+      - name: capture
+        groups:
+          - paths:
+              - path: /dev/snd/controlC0
+              - path: /dev/snd/pcmC0D0c
+          - paths:
+              - path: /dev/snd/controlC1
+                mountPath: /dev/snd/controlC0
+              - path: /dev/snd/pcmC1D0c
+                mountPath: /dev/snd/pcmC0D0c
+          - paths:
+              - path: /dev/snd/controlC2
+                mountPath: /dev/snd/controlC0
+              - path: /dev/snd/pcmC2D0c
+                mountPath: /dev/snd/pcmC0D0c
+          - paths:
+              - path: /dev/snd/controlC3
+                mountPath: /dev/snd/controlC0
+              - path: /dev/snd/pcmC3D0c
+                mountPath: /dev/snd/pcmC0D0c
+
+service:
+  # -- Configures health/metrics service settings for the chart.
+  # @default -- See [values.yaml](./values.yaml)
+  main:
+    ports:
+      http:
+        port: 8080
+
+probes:
+  # -- Configures liveness probe
+  liveness:
+    type: HTTP
+    path: /health
+  # -- Configures readiness probe
+  readiness:
+    type: HTTP
+    path: /health
+  # -- Configures startup probe
+  startup:
+    type: HTTP
+    path: /health

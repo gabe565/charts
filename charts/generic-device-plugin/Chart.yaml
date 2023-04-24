@@ -1,0 +1,26 @@
+apiVersion: v2
+name: generic-device-plugin
+description: The generic-device-plugin enables allocating generic Linux devices, such as serial devices, the FUSE device, or video cameras, to Kubernetes Pods
+home: https://charts.gabe565.com/charts/generic-device-plugin/
+type: application
+version: 0.0.1
+# renovate datasource=docker depName=ghcr.io/squat/generic-device-plugin
+appVersion: latest
+kubeVersion: ">=1.22.0-0"
+keywords:
+  - device-plugin
+dependencies:
+  - name: common
+    repository: https://bjw-s.github.io/helm-charts
+    version: 1.4.0
+sources:
+  - https://github.com/squat/generic-device-plugin
+annotations:
+  artifacthub.io/changes: |-
+    - kind: added
+      description: Initial release
+  artifacthub.io/links: |-
+    - name: App Source
+      url: https://github.com/squat/generic-device-plugin
+    - name: Chart Source
+      url: https://github.com/gabe565/charts/tree/main/charts/generic-device-plugin
