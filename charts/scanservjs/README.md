@@ -1,8 +1,8 @@
 # Scanservjs
 
-<img src="https://raw.githubusercontent.com/sbs20/scanservjs/d28627ebec5cec6d30475a43bd101cc9c5e0961a/packages/client/src/icons/android-chrome-192x192.png" align="right" width="92" alt="scanservjs logo">
+<img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/scanservjs/icon.svg" align="right" width="92" alt="scanservjs logo">
 
-![Version: 0.6.0](https://img.shields.io/badge/Version-0.6.0-informational?style=flat)
+![Version: 0.6.1](https://img.shields.io/badge/Version-0.6.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: release-v2.26.1](https://img.shields.io/badge/AppVersion-release--v2.26.1-informational?style=flat)
 
@@ -11,7 +11,7 @@ scanservjs is a web UI frontend for your scanner. It allows you to share one or 
 **Homepage:** <https://charts.gabe565.com/charts/scanservjs/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=scanservjs&version=0.6.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=scanservjs&version=0.6.1)**
 
 ## Source Code
 
