@@ -4456,6 +4456,37 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/flame-0.1.0/flame-0.1.0.tgz
     version: 0.1.0
+  generic-device-plugin:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial release
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/squat/generic-device-plugin
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/generic-device-plugin
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-04-24T07:43:38.932703075Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.4.0
+    description: The generic-device-plugin enables allocating generic Linux devices,
+      such as serial devices, the FUSE device, or video cameras, to Kubernetes Pods
+    digest: 087c5631a6bd08421dd703daf7386a698d02b318f678d055934d605dcf6699b1
+    home: https://charts.gabe565.com/charts/generic-device-plugin/
+    keywords:
+    - device-plugin
+    kubeVersion: '>=1.22.0-0'
+    name: generic-device-plugin
+    sources:
+    - https://github.com/squat/generic-device-plugin
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/generic-device-plugin-0.0.1/generic-device-plugin-0.0.1.tgz
+    version: 0.0.1
   hammond:
   - annotations:
       artifacthub.io/changes: |-
@@ -19042,4 +19073,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-24T06:03:02.547496255Z"
+generated: "2023-04-24T07:43:43.06599718Z"
