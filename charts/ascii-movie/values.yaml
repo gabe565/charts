@@ -20,6 +20,8 @@ controller:
 # -- Environment variables. [[ref]](https://github.com/gabe565/ascii-movie/blob/main/docs/ascii-movie_serve.md)
 # @default -- See [values.yaml](./values.yaml)
 env:
+  # -- Number of concurrent streams allowed from an IP address. Set to 0 to disable.
+  ASCII_MOVIE_CONCURRENT_STREAMS: 10
   # ASCII_MOVIE_SPEED:
 
 # -- Configures service settings for the chart.
