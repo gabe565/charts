@@ -11844,6 +11844,45 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update TheSpaghettiDetective/obico-server digest to 50b9a9c
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/TheSpaghettiDetective/obico-server
+        - name: Container Source
+          url: https://github.com/gabe565/docker-obico
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/obico
+    apiVersion: v2
+    appVersion: sha-50b9a9cf770c3dd444bf7488cb9b1ba5c96dc8fd
+    created: "2023-04-26T15:56:16.871125982Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.4.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.9.3
+    description: Obico is a community-built, open-source smart 3D printing platform
+      used by makers, enthusiasts, and tinkerers around the world.
+    digest: 90dc8be4ddb3871406b7ed42a2e67d42a52a712b2410ef3ca2c6471610b75fed
+    home: https://charts.gabe565.com/charts/obico/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/obico/icon.svg
+    keywords:
+    - 3d-printing
+    - machine-learning
+    kubeVersion: '>=1.22.0-0'
+    name: obico
+    sources:
+    - https://github.com/TheSpaghettiDetective/obico-server
+    - https://github.com/gabe565/docker-obico
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/obico-0.1.2/obico-0.1.2.tgz
+    version: 0.1.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update TheSpaghettiDetective/obico-server digest to 5187ece
       artifacthub.io/links: |-
         - name: App Source
@@ -19218,4 +19257,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-25T22:54:21.10217871Z"
+generated: "2023-04-26T15:56:18.990568874Z"
