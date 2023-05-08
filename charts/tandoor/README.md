@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg" align="right" width="92" alt="tandoor logo">
 
-![Version: 0.6.1](https://img.shields.io/badge/Version-0.6.1-informational?style=flat)
+![Version: 0.7.0](https://img.shields.io/badge/Version-0.7.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 1.4.9](https://img.shields.io/badge/AppVersion-1.4.9-informational?style=flat)
 
@@ -11,7 +11,7 @@ Application for managing recipes, planning meals, building shopping lists and mu
 **Homepage:** <https://charts.gabe565.com/charts/tandoor/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=tandoor&version=0.6.1)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=tandoor&version=0.7.0)**
 
 ## Source Code
 
@@ -25,7 +25,7 @@ Kubernetes: `>=1.22.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 1.4.0 |
+| <https://bjw-s.github.io/helm-charts> | common | 1.5.0 |
 | <https://charts.bitnami.com/bitnami> | postgresql | 12.2.7 |
 
 ## TL;DR

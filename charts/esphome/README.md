@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/esphome/esphome-docs/019178551126f2d6a588a1f9ef50f60453041531/images/logo.svg" align="right" width="92" alt="esphome logo">
 
-![Version: 0.3.4](https://img.shields.io/badge/Version-0.3.4-informational?style=flat)
+![Version: 0.4.0](https://img.shields.io/badge/Version-0.4.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 2023.4.4](https://img.shields.io/badge/AppVersion-2023.4.4-informational?style=flat)
 
@@ -11,7 +11,7 @@ ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configu
 **Homepage:** <https://charts.gabe565.com/charts/esphome/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=esphome&version=0.3.4)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=esphome&version=0.4.0)**
 
 ## Source Code
 
@@ -25,7 +25,7 @@ Kubernetes: `>=1.22.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 1.4.0 |
+| <https://bjw-s.github.io/helm-charts> | common | 1.5.0 |
 
 ## TL;DR
 

@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/portfolio/8cf4e32d3486862dcdf03782451c147a358f32a7/frontend/src/assets/logo.svg" align="right" width="92" alt="portfolio logo">
 
-![Version: 0.8.1](https://img.shields.io/badge/Version-0.8.1-informational?style=flat)
+![Version: 0.9.0](https://img.shields.io/badge/Version-0.9.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -11,7 +11,7 @@ My personal portfolio website
 **Homepage:** <https://charts.gabe565.com/charts/portfolio/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=portfolio&version=0.8.1)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=portfolio&version=0.9.0)**
 
 ## Source Code
 
@@ -25,7 +25,7 @@ Kubernetes: `>=1.22.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 1.4.0 |
+| <https://bjw-s.github.io/helm-charts> | common | 1.5.0 |
 
 ## TL;DR
 

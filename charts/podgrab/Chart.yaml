@@ -3,7 +3,7 @@ name: podgrab
 description: A self-hosted podcast manager to download episodes as soon as they become live.
 home: https://charts.gabe565.com/charts/podgrab/
 type: application
-version: 0.4.0
+version: 0.5.0
 # renovate datasource=docker depName=ghcr.io/akhilrex/podgrab
 appVersion: 1.0.0
 kubeVersion: ">=1.22.0-0"
@@ -19,9 +19,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update common Helm release to v1.4.0
-    - kind: changed
-      description: Update homepage URL
+      description: Update common Helm release to v1.5.0
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/akhilrex/podgrab
