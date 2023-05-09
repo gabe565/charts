@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/scanservjs/ic
 type: application
 version: 0.7.0
 # renovate datasource=docker depName=sbs20/scanservjs
-appVersion: release-v2.26.1
+appVersion: release-v2.27.0
 kubeVersion: ">=1.22.0-0"
 keywords:
   - scanservjs
