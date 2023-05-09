@@ -4,9 +4,9 @@ description: Plex organizes all of your personal media so you can enjoy it no ma
 home: https://charts.gabe565.com/charts/plex/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/plex/icon.svg
 type: application
-version: 0.3.0
+version: 0.3.1
 # renovate datasource=docker depName=ghcr.io/linuxserver/plex
-appVersion: version-1.32.0.6973-a787c5a8e
+appVersion: version-1.32.1.6999-91e1e2e2c
 kubeVersion: ">=1.22.0-0"
 keywords:
   - media
@@ -19,7 +19,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update common Helm release to v1.5.0
+      description: Update ghcr.io/linuxserver/plex Docker tag to version-1.32.1.6999-91e1e2e2c
   artifacthub.io/links: |-
     - name: App homepage
       url: https://plex.tv
