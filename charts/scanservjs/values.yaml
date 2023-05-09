@@ -11,7 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  tag: release-v2.26.1
+  tag: release-v2.27.0
 
 controller:
   # -- Set the controller upgrade strategy
