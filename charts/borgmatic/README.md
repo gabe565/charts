@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg" align="right" width="92" alt="borgmatic logo">
 
-![Version: 0.8.0](https://img.shields.io/badge/Version-0.8.0-informational?style=flat)
+![Version: 0.8.1](https://img.shields.io/badge/Version-0.8.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 1.7.12](https://img.shields.io/badge/AppVersion-1.7.12-informational?style=flat)
 
@@ -11,7 +11,7 @@ borgmatic is simple, configuration-driven backup software for servers and workst
 **Homepage:** <https://charts.gabe565.com/charts/borgmatic/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=borgmatic&version=0.8.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=borgmatic&version=0.8.1)**
 
 ## Source Code
 
@@ -111,6 +111,7 @@ controller:
 | configMaps.config | object | See [values.yaml](./values.yaml) | Configure Borgmatic container under this key. |
 | configMaps.config.data."config.yaml" | string | See [values.yaml](./values.yaml) | Borgmatic config. [[ref]](https://torsion.org/borgmatic/docs/reference/configuration) |
 | configMaps.config.data."crontab.txt" | string | `"0 1 * * * PATH=$PATH:/usr/bin /usr/local/bin/borgmatic --stats -v 0 2>&1"` | Crontab |
+| controller.cronjob.backoffLimit | int | `0` | Only used when `controller.type: cronjob`. Sets the CronJob backoffLimit. |
 | controller.cronjob.schedule | string | `"0 * * * *"` | Only used when `controller.type: cronjob`. Sets the backup CronJob time. |
 | controller.type | string | `"deployment"` | Set the controller type. Valid options are `deployment` or `cronjob`. |
 | env | object | See [values.yaml](./values.yaml) | environment variables. [[ref]](https://borgbackup.readthedocs.io/en/stable/usage/general.html#environment-variables) |

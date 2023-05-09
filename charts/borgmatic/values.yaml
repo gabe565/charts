@@ -19,6 +19,8 @@ controller:
   cronjob:
     # -- Only used when `controller.type: cronjob`. Sets the backup CronJob time.
     schedule: 0 * * * *
+    # -- Only used when `controller.type: cronjob`. Sets the CronJob backoffLimit.
+    backoffLimit: 0
 
 # -- environment variables. [[ref]](https://borgbackup.readthedocs.io/en/stable/usage/general.html#environment-variables)
 # @default -- See [values.yaml](./values.yaml)
