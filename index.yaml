@@ -17931,6 +17931,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update sbs20/scanservjs Docker tag to release-v2.27.0
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/sbs20/scanservjs
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/scanservjs
+    apiVersion: v2
+    appVersion: release-v2.27.0
+    created: "2023-05-09T03:48:33.260788943Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.0
+    description: scanservjs is a web UI frontend for your scanner. It allows you to
+      share one or more scanners (using SANE) on a network without the need for drivers
+      or complicated installation.
+    digest: 07fcf5d43a805a43621015e8451e5a9155d096158d7bcbfe09ececbebafb7dcf
+    home: https://charts.gabe565.com/charts/scanservjs/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/scanservjs/icon.svg
+    keywords:
+    - scanservjs
+    - scanner
+    - sane
+    kubeVersion: '>=1.22.0-0'
+    name: scanservjs
+    sources:
+    - https://github.com/sbs20/scanservjs
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/scanservjs-0.8.0/scanservjs-0.8.0.tgz
+    version: 0.8.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.5.0
       artifacthub.io/links: |-
         - name: App Source
@@ -20974,4 +21008,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-05-09T03:46:02.226148099Z"
+generated: "2023-05-09T03:48:33.886485659Z"
