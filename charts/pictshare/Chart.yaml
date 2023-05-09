@@ -4,7 +4,7 @@ description: PictShare is an open source image, mp4, pastebin hosting service wi
 home: https://charts.gabe565.com/charts/pictshare/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/pictshare/icon.svg
 type: application
-version: 0.5.1
+version: 0.6.0
 # renovate datasource=docker depName=ghcr.io/hascheksolutions/pictshare
 appVersion: 74ccf9f6
 kubeVersion: ">=1.22.0-0"
@@ -16,13 +16,13 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.4.0
+    version: 1.5.0
 sources:
   - https://github.com/HaschekSolutions/pictshare
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Replace PNG icon with SVG
+      description: Update common Helm release to v1.5.0
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/HaschekSolutions/pictshare

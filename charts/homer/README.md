@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/bastienwirtz/homer/5609315fe77da5441a9c3dda8d92c0ffe9f1bf17/public/assets/icons/logo.svg" align="right" width="92" alt="homer logo">
 
-![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat)
+![Version: 0.6.0](https://img.shields.io/badge/Version-0.6.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: v23.02.2](https://img.shields.io/badge/AppVersion-v23.02.2-informational?style=flat)
 
@@ -11,7 +11,7 @@ A dead simple static HOMepage for your servER to keep your services on hand, fro
 **Homepage:** <https://charts.gabe565.com/charts/homer/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=homer&version=0.5.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=homer&version=0.6.0)**
 
 ## Source Code
 
@@ -25,7 +25,7 @@ Kubernetes: `>=1.22.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 1.4.0 |
+| <https://bjw-s.github.io/helm-charts> | common | 1.5.0 |
 
 ## TL;DR
 
