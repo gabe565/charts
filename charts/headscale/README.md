@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/juanfont/headscale/56a7b1e34952c3e0306a134b2be9b4277f5d8d6e/docs/logo/headscale3-dots.svg" align="right" width="92" alt="headscale logo">
 
-![Version: 0.12.0](https://img.shields.io/badge/Version-0.12.0-informational?style=flat)
+![Version: 0.12.1](https://img.shields.io/badge/Version-0.12.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 0.22.1](https://img.shields.io/badge/AppVersion-0.22.1-informational?style=flat)
+![AppVersion: 0.22.2](https://img.shields.io/badge/AppVersion-0.22.2-informational?style=flat)
 
 An open source, self-hosted implementation of the Tailscale control server.
 
 **Homepage:** <https://charts.gabe565.com/charts/headscale/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=headscale&version=0.12.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=headscale&version=0.12.1)**
 
 ## Source Code
 
@@ -149,7 +149,7 @@ Once deployed, the UI will be available at `/web`.
 | env.HEADSCALE_DNS_CONFIG_BASE_DOMAIN | string | `"example.com"` | Defines the base domain to create the hostnames for MagicDNS. `base_domain` must be a FQDNs, without the trailing dot. The FQDN of the hosts will be `hostname.user.base_domain` (e.g., _myhost.myuser.example.com_). |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/juanfont/headscale"` | image repository |
-| image.tag | string | `"0.22.1"` | image tag |
+| image.tag | string | `"0.22.2"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.config | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | postgresql | object | See [values.yaml](./values.yaml) | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
