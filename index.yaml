@@ -5564,6 +5564,44 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/juanfont/headscale Docker tag to v0.22.2
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/juanfont/headscale
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/headscale
+    apiVersion: v2
+    appVersion: 0.22.2
+    created: "2023-05-11T21:30:39.636070977Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.2.7
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: e57a0f8ddb786e1ad683e5af563d789d7b416b082006a8f0d71cb626a9cc2c65
+    home: https://charts.gabe565.com/charts/headscale/
+    icon: https://raw.githubusercontent.com/juanfont/headscale/56a7b1e34952c3e0306a134b2be9b4277f5d8d6e/docs/logo/headscale3-dots.svg
+    keywords:
+    - headscale
+    - tailscale
+    - wireguard
+    - vpn
+    kubeVersion: '>=1.22.0-0'
+    name: headscale
+    sources:
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.12.1/headscale-0.12.1.tgz
+    version: 0.12.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.5.0
       artifacthub.io/links: |-
         - name: App Source
@@ -21118,4 +21156,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-05-09T04:07:10.313924459Z"
+generated: "2023-05-11T21:30:42.992269863Z"
