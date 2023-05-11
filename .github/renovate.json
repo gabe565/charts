@@ -34,6 +34,11 @@
       "matchDatasources": ["docker"],
       "matchPackageNames": ["ghcr.io/dgtlmoon/changedetection.io"],
       "versioning": "loose"
+    },
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["ghcr.io/juanfont/headscale"],
+      "allowedVersions": "!/^0.23.0$/"
     }
   ],
   "hostRules": [
