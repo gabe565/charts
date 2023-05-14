@@ -89,7 +89,7 @@ N/A
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
 | env | object | See [values.yaml](./values.yaml) | environment variables. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"b4bz/homer"` | image repository |
+| image.repository | string | `"ghcr.io/bastienwirtz/homer"` | image repository |
 | image.tag | string | `"v23.05.1"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.config | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |

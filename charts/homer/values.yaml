@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: b4bz/homer
+  repository: ghcr.io/bastienwirtz/homer
   # -- image tag
   tag: v23.05.1
   # -- image pull policy
