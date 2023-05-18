@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_colo
 type: application
 version: 0.7.0
 # renovate datasource=docker depName=vabene1111/recipes
-appVersion: 1.4.9
+appVersion: 1.4.10
 kubeVersion: ">=1.22.0-0"
 keywords:
   - recipes
