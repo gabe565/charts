@@ -11,7 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  tag: 0.12.2
+  tag: 0.13.0
 
 # -- Configures service settings for the chart.
 # @default -- See [values.yaml](./values.yaml)
