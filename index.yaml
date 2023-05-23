@@ -1081,6 +1081,46 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/linuxserver/bookstack Docker tag to version-v23.05.2
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/BookStackApp/BookStack
+        - name: Container Source
+          url: https://github.com/linuxserver/docker-bookstack
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/bookstack
+    apiVersion: v2
+    appVersion: version-v23.05.2
+    created: "2023-05-23T18:52:36.136094148Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.6
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
+    digest: d1a2b587623b42549836aacc3b55e19e5baf0fbdc2a2183e8ac5762f3279c548
+    home: https://charts.gabe565.com/charts/bookstack/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg
+    keywords:
+    - bookstack
+    - wiki
+    - documentation
+    kubeVersion: '>=1.22.0-0'
+    name: bookstack
+    sources:
+    - https://github.com/BookStackApp/BookStack
+    - https://github.com/linuxserver/docker-bookstack
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/bookstack-0.10.2/bookstack-0.10.2.tgz
+    version: 0.10.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/linuxserver/bookstack Docker tag to version-v23.05.1
       artifacthub.io/links: |-
         - name: App Source
@@ -21667,4 +21707,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-05-23T18:50:22.41024701Z"
+generated: "2023-05-23T18:52:39.912075248Z"
