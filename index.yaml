@@ -4419,6 +4419,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/esphome/esphome Docker tag to v2023.5.4
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/esphome/esphome
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/esphome
+    apiVersion: v2
+    appVersion: 2023.5.4
+    created: "2023-05-25T04:28:14.569649464Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.0
+    description: ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful
+      configuration files and control them remotely through Home Automation systems.
+    digest: a5db6d698f255d08bddd8e0ec1e0c3dcb368c02c36ad5963f6caceee9117b2c2
+    home: https://charts.gabe565.com/charts/esphome/
+    icon: https://raw.githubusercontent.com/esphome/esphome-docs/019178551126f2d6a588a1f9ef50f60453041531/images/logo.svg
+    keywords:
+    - home-automation
+    - home-assistant
+    - esp8266
+    - esp32
+    - iot
+    kubeVersion: '>=1.22.0-0'
+    name: esphome
+    sources:
+    - https://github.com/esphome/esphome
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/esphome-0.5.4/esphome-0.5.4.tgz
+    version: 0.5.4
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/esphome/esphome Docker tag to v2023.5.3
       artifacthub.io/links: |-
         - name: App Source
@@ -21744,4 +21779,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-05-24T07:15:08.296096462Z"
+generated: "2023-05-25T04:28:17.510409832Z"
