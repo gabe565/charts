@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: ghcr.io/dgtlmoon/changedetection.io
   # -- image tag
-  tag: 0.42
+  tag: 0.42.2
   # -- image pull policy
   pullPolicy: IfNotPresent
 
