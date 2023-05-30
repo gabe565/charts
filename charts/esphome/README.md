@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/esphome/esphome-docs/019178551126f2d6a588a1f9ef50f60453041531/images/logo.svg" align="right" width="92" alt="esphome logo">
 
-![Version: 0.5.4](https://img.shields.io/badge/Version-0.5.4-informational?style=flat)
+![Version: 0.5.5](https://img.shields.io/badge/Version-0.5.5-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 2023.5.4](https://img.shields.io/badge/AppVersion-2023.5.4-informational?style=flat)
+![AppVersion: 2023.5.5](https://img.shields.io/badge/AppVersion-2023.5.5-informational?style=flat)
 
 ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful configuration files and control them remotely through Home Automation systems.
 
 **Homepage:** <https://charts.gabe565.com/charts/esphome/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=esphome&version=0.5.4)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=esphome&version=0.5.5)**
 
 ## Source Code
 
@@ -102,7 +102,7 @@ dnsPolicy: None
 | env | object | See [values.yaml](./values.yaml) | Environment variables. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/esphome/esphome"` | image repository |
-| image.tag | string | `"2023.5.4"` | image tag |
+| image.tag | string | `"2023.5.5"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
