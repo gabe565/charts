@@ -1,0 +1,29 @@
+{{/* Append the hardcoded settings */}}
+{{- define "gotify.harcodedValues" -}}
+env:
+  GOTIFY_SERVER_PORT: {{ .Values.service.main.ports.http.port }}
+
+  {{- with .Values.postgresql }}
+  {{- if .enabled }}
+  GOTIFY_DATABASE_DIALECT: postgres
+  DATABASE_PASSWORD:
+    secretKeyRef:
+      name: {{ $.Release.Name }}-postgresql
+      key: {{ if not .auth.password }}postgres-{{ end }}password
+  GOTIFY_DATABASE_CONNECTION: >-
+    host={{ $.Release.Name }}-postgresql
+    port=5432
+    user={{ default "postgres" .auth.username }}
+    dbname={{ .auth.database }}
+    password=$(DATABASE_PASSWORD)
+    sslmode=disable
+  {{- else }}
+  GOTIFY_DATABASE_DIALECT: sqlite3
+  GOTIFY_DATABASE_CONNECTION: /app/data/gotify.db
+  {{- end }}
+  {{- end }}
+{{- end -}}
+{{- $_ := merge .Values (include "gotify.harcodedValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
+{{ include "bjw-s.common.loader.all" . }}
