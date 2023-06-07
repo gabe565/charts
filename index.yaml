@@ -13839,6 +13839,45 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update TheSpaghettiDetective/obico-server digest to bfdccef
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/TheSpaghettiDetective/obico-server
+        - name: Container Source
+          url: https://github.com/gabe565/docker-obico
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/obico
+    apiVersion: v2
+    appVersion: sha-bfdccef938ff7569aa9d4c227fa02dad1f95cc13
+    created: "2023-06-07T19:01:25.25105852Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.9.3
+    description: Obico is a community-built, open-source smart 3D printing platform
+      used by makers, enthusiasts, and tinkerers around the world.
+    digest: db85e4b485e177b4e26daef20aa4c19e1b856d5be02b7c0965bb70ef8f6a5bfd
+    home: https://charts.gabe565.com/charts/obico/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/obico/icon.svg
+    keywords:
+    - 3d-printing
+    - machine-learning
+    kubeVersion: '>=1.22.0-0'
+    name: obico
+    sources:
+    - https://github.com/TheSpaghettiDetective/obico-server
+    - https://github.com/gabe565/docker-obico
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/obico-0.2.1/obico-0.2.1.tgz
+    version: 0.2.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.5.0
       artifacthub.io/links: |-
         - name: App Source
@@ -22376,4 +22415,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-06-07T18:58:13.431434849Z"
+generated: "2023-06-07T19:01:27.35811771Z"
