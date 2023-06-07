@@ -5,7 +5,7 @@ home: https://charts.gabe565.com/charts/obico/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/obico/icon.svg
 type: application
 version: 0.2.0
-appVersion: sha-50b9a9cf770c3dd444bf7488cb9b1ba5c96dc8fd
+appVersion: sha-bfdccef938ff7569aa9d4c227fa02dad1f95cc13
 kubeVersion: ">=1.22.0-0"
 keywords:
   - 3d-printing
