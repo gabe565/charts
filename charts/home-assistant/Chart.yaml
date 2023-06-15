@@ -4,7 +4,7 @@ description: Open source home automation that puts local control and privacy fir
 home: https://charts.gabe565.com/charts/home-assistant/
 icon: https://raw.githubusercontent.com/home-assistant/assets/master/logo/logo-pretty.svg
 type: application
-version: 0.6.1
+version: 0.6.2
 # renovate datasource=docker depName=ghcr.io/home-assistant/home-assistant
 appVersion: 2023.6.2
 kubeVersion: ">=1.22.0-0"
@@ -26,7 +26,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/home-assistant/home-assistant Docker tag to v2023.6.1
+      description: Update ghcr.io/home-assistant/home-assistant Docker tag to v2023.6.2
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/home-assistant/core
