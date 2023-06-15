@@ -3277,6 +3277,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.42.3
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/dgtlmoon/changedetection.io
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/changedetection-io
+    apiVersion: v2
+    appVersion: 0.42.3
+    created: "2023-06-15T05:51:53.229222596Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.0
+    description: Live your data-life pro-actively, track website content changes and
+      receive notifications via Discord, Email, Slack, Telegram and 70+ more.
+    digest: 38c53ad0688bbb3b57c6eb868e96330eb9e22488a8b13ba136a6e655bc27a67f
+    home: https://charts.gabe565.com/charts/changedetection-io/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/changedetection-io/icon.png
+    keywords:
+    - changedetection.io
+    - change-detection
+    - website-monitoring
+    - website-change-tracker
+    kubeVersion: '>=1.22.0-0'
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/changedetection-io-0.8.2/changedetection-io-0.8.2.tgz
+    version: 0.8.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.42.2
       artifacthub.io/links: |-
         - name: App Source
@@ -22522,4 +22556,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-06-09T05:39:42.605229108Z"
+generated: "2023-06-15T05:51:56.842853171Z"
