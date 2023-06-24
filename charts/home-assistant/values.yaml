@@ -11,7 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  tag: 2023.6.2
+  tag: 2023.6.3
 
 # -- environment variables.
 # @default -- See [values.yaml](./values.yaml)
