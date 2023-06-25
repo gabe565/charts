@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: vabene1111/recipes
   # -- image tag
-  tag: 1.5.1
+  tag: 1.5.2
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
