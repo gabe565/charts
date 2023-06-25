@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/portfolio/8cf4e32d3486862dcdf03782451c147a358f32a7/frontend/src/assets/logo.svg" align="right" width="92" alt="portfolio logo">
 
-![Version: 0.9.0](https://img.shields.io/badge/Version-0.9.0-informational?style=flat)
+![Version: 0.9.1](https://img.shields.io/badge/Version-0.9.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -11,7 +11,7 @@ My personal portfolio website
 **Homepage:** <https://charts.gabe565.com/charts/portfolio/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=portfolio&version=0.9.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=portfolio&version=0.9.1)**
 
 ## Source Code
 

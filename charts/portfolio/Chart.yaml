@@ -4,7 +4,7 @@ description: My personal portfolio website
 home: https://charts.gabe565.com/charts/portfolio/
 icon: https://raw.githubusercontent.com/gabe565/portfolio/8cf4e32d3486862dcdf03782451c147a358f32a7/frontend/src/assets/logo.svg
 type: application
-version: 0.9.0
+version: 0.9.1
 # renovate datasource=docker depName=ghcr.io/gabe565/portfolio
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
@@ -16,10 +16,11 @@ sources:
   - https://github.com/gabe565/portfolio
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Update common Helm release to v1.5.0
+    - kind: deprecated
+      description: Deprecate chart
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gabe565/portfolio
     - name: Chart Source
       url: https://github.com/gabe565/charts/tree/main/charts/portfolio
+deprecated: true
