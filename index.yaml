@@ -5852,6 +5852,41 @@ entries:
   gotify:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: changed
+          description: Update ghcr.io/gotify/server Docker tag to v2.2.5
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gotify/server
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/gotify
+    apiVersion: v2
+    appVersion: 2.2.5
+    created: "2023-06-27T07:54:52.073894881Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.5.6
+    description: A simple server for sending and receiving messages in real-time per
+      WebSocket. (Includes a sleek web-ui)
+    digest: f9c38325b7b78fb49bac094757c876e6cf2ed24a12c2ddeff722dafae0af114c
+    home: https://charts.gabe565.com/charts/gotify/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/gotify/icon.svg
+    keywords:
+    - notifications
+    kubeVersion: '>=1.22.0-0'
+    name: gotify
+    sources:
+    - https://github.com/gotify/server
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/gotify-0.0.2/gotify-0.0.2.tgz
+    version: 0.0.2
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: added
           description: Initial release
       artifacthub.io/links: |-
@@ -23427,4 +23462,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-06-27T07:52:46.810207671Z"
+generated: "2023-06-27T07:54:55.020942697Z"
