@@ -59,7 +59,7 @@ persistence:
     # storageClass: ""
     # accessMode: ReadWriteOnce
     # size: 1Gi
-    
+
   # Optional - Download location - Allows dedicated volume for storage of downloaded files.
   downloads:
     enabled: false

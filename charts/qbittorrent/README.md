@@ -115,7 +115,7 @@ Docker mod. In `values.yaml`:
 | image.repository | string | `"ghcr.io/linuxserver/qbittorrent"` | image repository |
 | image.tag | string | `"version-4.5.4-r0"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
-| persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
+| persistence | object | See values.yaml | Configure persistence settings for the chart under this key. Set `enabled` to `true' to create persistant volumes for each of these. |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 
 ---
