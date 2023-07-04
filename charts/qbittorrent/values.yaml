@@ -52,7 +52,7 @@ ingress:
 # Set `enabled` to `true' to create persistant volumes for each of these.
 # @default -- See values.yaml
 persistence:
-# Configuration files
+  # Configuration files
   config:
     enabled: false
     # retain: true
