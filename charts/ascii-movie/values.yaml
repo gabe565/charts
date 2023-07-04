@@ -11,7 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: Always
   # -- image tag
-  tag: 1.5.3
+  tag: 1.5.4
 
 controller:
   # -- Set the controller upgrade strategy
@@ -60,3 +60,18 @@ secrets:
       # -- (string) SSH RSA host key.
       # @default -- Generated
       ssh_host_rsa_key:
+
+serviceMonitor:
+  main:
+    # -- Enables or disables the serviceMonitor.
+    enabled: false
+    # -- Configures the target Service for the serviceMonitor. Helm templates can be used.
+    serviceName: '{{ include "bjw-s.common.lib.chart.names.fullname" $ }}-api'
+    # -- Configures the endpoints for the serviceMonitor.
+    # @default -- See values.yaml
+    endpoints:
+      - port: http
+        scheme: http
+        path: /metrics
+        interval: 30s
+        scrapeTimeout: 10s
