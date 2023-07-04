@@ -50,7 +50,7 @@ ingress:
 
 # -- Configure persistence settings for the chart under this key.
 # @default -- See values.yaml
-# Set 'enabled' to 'true' to create Persistant volumes for each of these.
+# Set 'enabled' to 'true' to create persistant volumes for each of these.
 persistence:
 # Configuration files
   config:
@@ -60,7 +60,7 @@ persistence:
     # accessMode: ReadWriteOnce
     # size: 1Gi
     
-  # Download location.
+  # Optional - Download location - Allows dedicated volume for storage of downloaded files.
   downloads:
     enabled: false
     # mountPath: /downloads
