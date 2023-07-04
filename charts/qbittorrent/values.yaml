@@ -49,8 +49,8 @@ ingress:
     #       - chart-example.local
 
 # -- Configure persistence settings for the chart under this key.
+# Set `enabled` to `true' to create persistant volumes for each of these.
 # @default -- See values.yaml
-# Set 'enabled' to 'true' to create persistant volumes for each of these.
 persistence:
 # Configuration files
   config:
