@@ -50,16 +50,28 @@ ingress:
 
 # -- Configure persistence settings for the chart under this key.
 # @default -- See values.yaml
+# Set 'enabled' to 'true' to create Persistant volumes for each of these.
 persistence:
+# Configuration files
   config:
     enabled: false
-    retain: true
+    # retain: true
     # storageClass: ""
     # accessMode: ReadWriteOnce
     # size: 1Gi
-  media:
-    enabled: false
-    # mountPath: /media
+    
+  # Download location.
   downloads:
     enabled: false
     # mountPath: /downloads
+    # storageClass: ""
+    # accessMode: ReadWriteOnce
+    # size: 10Gi
+
+  # Optional - Allows linking to an existing media library scraping location.
+  media:
+    enabled: false
+    # mountPath: /media
+    # storageClass: ""
+    # accessMode: ReadWriteOnce
+    # size: 10Gi
