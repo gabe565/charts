@@ -4,9 +4,9 @@ description: ESPHome is a system to control your ESP8266/ESP32 by simple yet pow
 home: https://charts.gabe565.com/charts/esphome/
 icon: https://raw.githubusercontent.com/esphome/esphome-docs/019178551126f2d6a588a1f9ef50f60453041531/images/logo.svg
 type: application
-version: 0.6.4
+version: 0.6.5
 # renovate datasource=docker depName=ghcr.io/esphome/esphome
-appVersion: 2023.6.3
+appVersion: 2023.6.4
 kubeVersion: ">=1.22.0-0"
 keywords:
   - home-automation
@@ -23,7 +23,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/esphome/esphome Docker tag to v2023.6.3
+      description: Update ghcr.io/esphome/esphome Docker tag to v2023.6.4
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/esphome/esphome
