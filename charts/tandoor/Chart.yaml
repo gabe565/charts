@@ -4,9 +4,9 @@ description: Application for managing recipes, planning meals, building shopping
 home: https://charts.gabe565.com/charts/tandoor/
 icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
 type: application
-version: 0.8.3
+version: 0.8.4
 # renovate datasource=docker depName=vabene1111/recipes
-appVersion: 1.5.3
+appVersion: 1.5.4
 kubeVersion: ">=1.22.0-0"
 keywords:
   - recipes
@@ -27,7 +27,7 @@ annotations:
   artifacthub.io/alternativeName: tandoor-recipes
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update vabene1111/recipes Docker tag to v1.5.3
+      description: Update vabene1111/recipes Docker tag to v1.5.4
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/TandoorRecipes/recipes
