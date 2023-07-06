@@ -28,6 +28,11 @@ service:
     ports:
       http:
         port: 80
+  metrics:
+    enabled: false
+    ports:
+      metrics:
+        port: 9090
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
@@ -57,3 +62,18 @@ persistence:
 podSecurityContext:
   # -- Volume group permissions
   fsGroup: 1000
+
+serviceMonitor:
+  main:
+    # -- Enables or disables the serviceMonitor.
+    enabled: false
+    # -- Configures the target Service for the serviceMonitor. Helm templates can be used.
+    serviceName: '{{ include "bjw-s.common.lib.chart.names.fullname" $ }}-metrics'
+    # -- Configures the endpoints for the serviceMonitor.
+    # @default -- See values.yaml
+    endpoints:
+      - port: metrics
+        scheme: http
+        path: /metrics
+        interval: 1m
+        scrapeTimeout: 10s
