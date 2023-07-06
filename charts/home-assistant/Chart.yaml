@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/home-assistant/assets/9b782fe562cbd4e613
 type: application
 version: 0.7.0
 # renovate datasource=docker depName=ghcr.io/home-assistant/home-assistant
-appVersion: 2023.7.0
+appVersion: 2023.7.1
 kubeVersion: ">=1.22.0-0"
 keywords:
   - home-automation
