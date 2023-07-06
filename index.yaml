@@ -18795,6 +18795,35 @@ entries:
   relax-sounds:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add ServiceMonitor values
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/relax-sounds
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/relax-sounds
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-07-06T20:10:49.467706276Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.0
+    description: Relax Sounds is a website that lets you stream relaxing sounds to
+      your browser or over Google Cast.
+    digest: 021ce7695abc128b54adc0493ac1b1c15810fef48b3bc22a94794b3d2cdbd988
+    home: https://charts.gabe565.com/charts/relax-sounds/
+    icon: https://github.com/gabe565/relax-sounds/raw/3e55b07a957f2e20aceeeba1d36226791f2f1569/frontend/src/assets/icon-purple.svg
+    kubeVersion: '>=1.22.0-0'
+    name: relax-sounds
+    sources:
+    - https://github.com/gabe565/relax-sounds
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/relax-sounds-0.6.1/relax-sounds-0.6.1.tgz
+    version: 0.6.1
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Update common Helm release to v1.5.0
       artifacthub.io/links: |-
@@ -24014,4 +24043,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-07-05T20:08:11.40698002Z"
+generated: "2023-07-06T20:10:50.387181381Z"
