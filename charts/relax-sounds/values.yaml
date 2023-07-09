@@ -28,9 +28,6 @@ service:
     ports:
       http:
         port: 80
-  metrics:
-    enabled: false
-    ports:
       metrics:
         port: 9090
 
@@ -67,8 +64,6 @@ serviceMonitor:
   main:
     # -- Enables or disables the serviceMonitor.
     enabled: false
-    # -- Configures the target Service for the serviceMonitor. Helm templates can be used.
-    serviceName: '{{ include "bjw-s.common.lib.chart.names.fullname" $ }}-metrics'
     # -- Configures the endpoints for the serviceMonitor.
     # @default -- See [values.yaml](./values.yaml)
     endpoints:
