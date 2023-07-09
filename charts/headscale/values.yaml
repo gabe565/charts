@@ -84,3 +84,16 @@ postgresql:
       enabled: false
       # storageClass: ""
       # size: 8Gi
+
+serviceMonitor:
+  main:
+    # -- Enables or disables the serviceMonitor.
+    enabled: false
+    # -- Configures the endpoints for the serviceMonitor.
+    # @default -- See [values.yaml](./values.yaml)
+    endpoints:
+      - port: metrics
+        scheme: http
+        path: /metrics
+        interval: 30s
+        scrapeTimeout: 10s
