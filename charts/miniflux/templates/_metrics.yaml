@@ -1,0 +1,9 @@
+{{- define "miniflux.metrics.defaultValues" -}}
+{{- with .Values.serviceMonitor.main }}
+{{- if .enabled }}
+env:
+  METRICS_COLLECTOR: "1"
+  METRICS_ALLOWED_NETWORKS: {{ .allowedNetworks }}
+{{- end }}
+{{- end }}
+{{- end -}}

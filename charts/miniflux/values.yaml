@@ -66,3 +66,19 @@ postgresql:
     enabled: false
     # storageClass: ""
     # size: 8Gi
+
+serviceMonitor:
+  main:
+    # -- Enables or disables the serviceMonitor.
+    enabled: false
+    # -- List of networks allowed to access the `/metrics` endpoint (comma-separated values).
+    #    [[ref]](https://miniflux.app/docs/configuration.html#metrics-allowed-networks)
+    allowedNetworks: 127.0.0.1/8
+    # -- Configures the endpoints for the serviceMonitor.
+    # @default -- See [values.yaml](./values.yaml)
+    endpoints:
+      - port: http
+        scheme: http
+        path: /metrics
+        interval: 1m
+        scrapeTimeout: 10s

@@ -28,6 +28,7 @@
           port: {{ .Values.service.main.ports.http.port }}
 {{- end -}}
 {{- $_ := merge .Values (include "miniflux.harcodedValues" . | fromYaml) -}}
+{{- $_ := merge .Values (include "miniflux.metrics.defaultValues" . | fromYaml) -}}
 
 {{/* Render the templates */}}
 {{ include "bjw-s.common.loader.all" . }}
