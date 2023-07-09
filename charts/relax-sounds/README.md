@@ -92,7 +92,7 @@ N/A
 | podSecurityContext.fsGroup | int | `1000` | Volume group permissions |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 | serviceMonitor.main.enabled | bool | `false` | Enables or disables the serviceMonitor. |
-| serviceMonitor.main.endpoints | list | See values.yaml | Configures the endpoints for the serviceMonitor. |
+| serviceMonitor.main.endpoints | list | See [values.yaml](./values.yaml) | Configures the endpoints for the serviceMonitor. |
 | serviceMonitor.main.serviceName | string | `"{{ include \"bjw-s.common.lib.chart.names.fullname\" $ }}-metrics"` | Configures the target Service for the serviceMonitor. Helm templates can be used. |
 
 ---

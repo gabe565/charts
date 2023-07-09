@@ -124,7 +124,7 @@ serviceMonitor:
     # -- Enables or disables the serviceMonitor.
     enabled: false
     # -- Configures the endpoints for the serviceMonitor.
-    # @default -- See values.yaml
+    # @default -- See [values.yaml](./values.yaml)
     endpoints:
       - port: http
         scheme: http
