@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/gotify/icon.s
 type: application
 version: 0.0.2
 # renovate datasource=docker depName=ghcr.io/gotify/server
-appVersion: 2.2.5
+appVersion: 2.3.0
 kubeVersion: ">=1.22.0-0"
 keywords:
   - notifications
