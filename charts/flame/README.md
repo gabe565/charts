@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/pawelmalak/flame/4ed29fe276b4282c67415f9788660df2a3a69b5c/client/public/icons/apple-touch-icon-180x180.png" align="right" width="92" alt="flame logo">
 
-![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat)
+![Version: 0.5.1](https://img.shields.io/badge/Version-0.5.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: multiarch2.3.0](https://img.shields.io/badge/AppVersion-multiarch2.3.0-informational?style=flat)
+![AppVersion: multiarch2.3.1](https://img.shields.io/badge/AppVersion-multiarch2.3.1-informational?style=flat)
 
 Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors.
 
 **Homepage:** <https://charts.gabe565.com/charts/flame/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=flame&version=0.5.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=flame&version=0.5.1)**
 
 ## Source Code
 
@@ -85,7 +85,7 @@ N/A
 | env | object | See [values.yaml](./values.yaml) | environment variables. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"pawelmalak/flame"` | image repository |
-| image.tag | string | `"multiarch2.3.0"` | image tag |
+| image.tag | string | `"multiarch2.3.1"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
