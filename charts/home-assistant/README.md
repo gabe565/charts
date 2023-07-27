@@ -102,7 +102,7 @@ The USB device could be volume bound directly into the Pod
 ([documented in the deprecated k8s-at-home/home-assistant chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/home-assistant#z-wave--zigbee),
 but this requires granting privileged access to the Home Assistant pod.
 
-Instead, it is recommended to use [Smarter Device Manager](../smarter-device-manager) to manage USB devices for you.
+Instead, it is recommended to use [Generic Device Plugin](../generic-device-plugin/) or [Smarter Device Manager](../smarter-device-manager/) to manage USB devices for you.
 
 For example, if your Z-Wave device is at `/dev/ttyACM0`, you could deploy Smarter Device Manager with the following configuration:
 
