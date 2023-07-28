@@ -28,8 +28,8 @@ dependencies:
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Update ghcr.io/dani-garcia/vaultwarden Docker tag to v1.29.1
+    - kind: removed
+      description: BREAKING - Remove dedicated WebSocket port
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/dani-garcia/vaultwarden

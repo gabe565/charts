@@ -33,6 +33,7 @@ service:
       http:
         port: 80
       websocket:
+        enabled: false
         port: 3012
 
 ingress:
@@ -47,14 +48,6 @@ ingress:
     #         pathType: Prefix
     #         service:
     #           port: 80
-    #       - path: /notifications/hub/negotiate
-    #         pathType: Prefix
-    #         service:
-    #           port: 80
-    #       - path: /notifications/hub
-    #         pathType: Prefix
-    #         service:
-    #           port: 3012
 
 persistence:
   # -- Configure persistence settings for the chart under this key.
