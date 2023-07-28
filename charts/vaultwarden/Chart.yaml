@@ -28,6 +28,8 @@ dependencies:
     condition: postgresql.enabled
 annotations:
   artifacthub.io/changes: |-
+    - kind: changed
+      description: BREAKING - Change default port from 80 to 8080
     - kind: removed
       description: BREAKING - Remove dedicated WebSocket port
   artifacthub.io/links: |-
