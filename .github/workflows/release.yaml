@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  packages: write
   pages: write
   id-token: write
 
@@ -49,6 +50,23 @@ jobs:
           CR_TOKEN: "${{ github.token }}"
           CR_SKIP_EXISTING: "true"
           CR_PAGES_BRANCH: helm-index
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ github.token }}
+
+      - name: Push charts to GHCR
+        run: |
+          for pkg in .cr-release-packages/*; do
+            if [ -z "${pkg:-}" ]; then
+              break
+            fi
+            echo "Pushing $pkg..."
+            helm push "$pkg" "oci://ghcr.io/$GITHUB_REPOSITORY_OWNER/charts"
+          done
 
   build-docs:
     name: Build Docs
