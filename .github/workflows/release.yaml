@@ -44,21 +44,45 @@ jobs:
             sed -i '/^<img .* alt=".* logo"/,+1d' "$f"
           done
 
-      - name: Run chart-releaser
+      - name: Install chart-releaser
         uses: helm/chart-releaser-action@v1.5.0
+        with:
+          install_only: true
+
+      - name: Package charts
+        id: package_charts
+        run: |
+          changed_charts=""
+          for dir in charts/*; do
+            chart_name="$(basename "$dir")"
+            version="$(yq '.version' "$dir/Chart.yaml")"
+            if ! git rev-parse "$chart_name-${version#v}" &>/dev/null; then
+              cr package --package-path=.cr-release-packages "$dir"
+              changed_charts+="$chart_name,"
+            fi
+          done
+          echo "changed_charts=${changed_charts%,}" >> $GITHUB_OUTPUT
+
+      - name: Publish charts
+        uses: helm/chart-releaser-action@v1.5.0
+        if: steps.package_charts.outputs.changed_charts != ''
+        with:
+          skip_packaging: true
         env:
-          CR_TOKEN: "${{ github.token }}"
+          CR_TOKEN: ${{ github.token }}
           CR_SKIP_EXISTING: "true"
           CR_PAGES_BRANCH: helm-index
 
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v2
+        if: steps.package_charts.outputs.changed_charts != ''
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ github.token }}
 
       - name: Push charts to GHCR
+        if: steps.package_charts.outputs.changed_charts != ''
         run: |
           for pkg in .cr-release-packages/*; do
             if [ -z "${pkg:-}" ]; then
