@@ -90,7 +90,6 @@ jobs:
           skip_packaging: true
         env:
           CR_TOKEN: ${{ github.token }}
-          CR_SKIP_EXISTING: "true"
           CR_PAGES_BRANCH: helm-index
 
   build-docs:
