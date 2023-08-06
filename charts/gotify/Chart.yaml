@@ -15,7 +15,7 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 1.5.1
   - name: postgresql
-    version: 12.5.6
+    version: 12.8.0
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 sources:
@@ -23,7 +23,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/gotify/server Docker tag to v2.3.0
+      description: Update postgresql Helm release to v12.8.0
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gotify/server

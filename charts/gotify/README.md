@@ -26,7 +26,7 @@ Kubernetes: `>=1.22.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
-| <https://charts.bitnami.com/bitnami> | postgresql | 12.5.6 |
+| <https://charts.bitnami.com/bitnami> | postgresql | 12.8.0 |
 
 ## TL;DR
 

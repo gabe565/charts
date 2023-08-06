@@ -17,7 +17,7 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 1.5.1
   - name: postgresql
-    version: 12.2.7
+    version: 12.8.0
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
   - name: mariadb
@@ -32,6 +32,8 @@ annotations:
       description: Update common Helm release to v1.5.1
     - kind: changed
       description: Update mariadb Helm release to v11.5.7
+    - kind: changed
+      description: Update postgresql Helm release to v12.8.0
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/healthchecks/healthchecks
