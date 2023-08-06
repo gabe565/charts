@@ -17,8 +17,8 @@ sources:
   - https://github.com/squat/generic-device-plugin
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add ServiceMonitor values
+    - kind: changed
+      description: Update common Helm release to v1.5.1
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/squat/generic-device-plugin

@@ -29,9 +29,7 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: BREAKING - Change default port from 80 to 8080
-    - kind: removed
-      description: BREAKING - Remove dedicated WebSocket port
+      description: Update common Helm release to v1.5.1
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/dani-garcia/vaultwarden

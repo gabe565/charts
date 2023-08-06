@@ -22,7 +22,7 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/dgtlmoon/changedetection.io Docker tag to v0.44
+      description: Update common Helm release to v1.5.1
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/dgtlmoon/changedetection.io

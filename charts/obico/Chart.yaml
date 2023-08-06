@@ -24,7 +24,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update TheSpaghettiDetective/obico-server digest to bfdccef
+      description: Update common Helm release to v1.5.1
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/TheSpaghettiDetective/obico-server

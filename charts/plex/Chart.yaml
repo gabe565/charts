@@ -19,7 +19,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/linuxserver/plex Docker tag to version-1.32.5.7349-8f4248874
+      description: Update common Helm release to v1.5.1
   artifacthub.io/links: |-
     - name: App homepage
       url: https://plex.tv
