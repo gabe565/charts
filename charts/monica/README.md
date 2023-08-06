@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/monicahq/monica/main/public/img/monica.svg" align="right" width="92" alt="monica logo">
 
-![Version: 0.7.0](https://img.shields.io/badge/Version-0.7.0-informational?style=flat)
+![Version: 0.7.1](https://img.shields.io/badge/Version-0.7.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 4.0.0-fpm-alpine](https://img.shields.io/badge/AppVersion-4.0.0--fpm--alpine-informational?style=flat)
 
@@ -11,7 +11,7 @@ Personal CRM. Remember everything about your friends, family and business relati
 **Homepage:** <https://charts.gabe565.com/charts/monica/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=monica&version=0.7.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=monica&version=0.7.1)**
 
 ## Source Code
 

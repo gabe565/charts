@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/plex/icon.svg" align="right" width="92" alt="plex logo">
 
-![Version: 0.3.7](https://img.shields.io/badge/Version-0.3.7-informational?style=flat)
+![Version: 0.3.8](https://img.shields.io/badge/Version-0.3.8-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: version-1.32.5.7349-8f4248874](https://img.shields.io/badge/AppVersion-version--1.32.5.7349--8f4248874-informational?style=flat)
 
@@ -11,7 +11,7 @@ Plex organizes all of your personal media so you can enjoy it no matter where yo
 **Homepage:** <https://charts.gabe565.com/charts/plex/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=plex&version=0.3.7)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=plex&version=0.3.8)**
 
 ## Source Code
 

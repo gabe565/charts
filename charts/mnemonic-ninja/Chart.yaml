@@ -4,7 +4,7 @@ description: Mnemonic Ninja is a website to convert between a number and its cor
 home: https://charts.gabe565.com/charts/mnemonic-ninja/
 icon: https://raw.githubusercontent.com/gabe565/mnemonic-ninja/465602cd7093f62d611c69d7a91e520e4022fab9/src/assets/logo.svg
 type: application
-version: 0.5.0
+version: 0.5.1
 # renovate datasource=docker depName=ghcr.io/gabe565/mnemonic-ninja
 appVersion: latest
 kubeVersion: ">=1.22.0-0"

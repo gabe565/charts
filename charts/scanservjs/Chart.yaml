@@ -4,7 +4,7 @@ description: scanservjs is a web UI frontend for your scanner. It allows you to 
 home: https://charts.gabe565.com/charts/scanservjs/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/scanservjs/icon.svg
 type: application
-version: 0.8.0
+version: 0.8.1
 # renovate datasource=docker depName=sbs20/scanservjs
 appVersion: release-v2.27.0
 kubeVersion: ">=1.22.0-0"

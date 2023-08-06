@@ -4,7 +4,7 @@ description: Self-hosted wedding site configured via YAML
 home: https://charts.gabe565.com/charts/matrimony/
 icon: https://raw.githubusercontent.com/gabe565/matrimony/b13163b384b27273080deb8d57d1222ba11337f9/frontend/public/img/logo.svg
 type: application
-version: 0.6.0
+version: 0.6.1
 # renovate datasource=docker depName=ghcr.io/gabe565/matrimony
 appVersion: latest
 kubeVersion: ">=1.22.0-0"

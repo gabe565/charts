@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/flame/icon.svg" align="right" width="92" alt="flame logo">
 
-![Version: 0.5.2](https://img.shields.io/badge/Version-0.5.2-informational?style=flat)
+![Version: 0.5.3](https://img.shields.io/badge/Version-0.5.3-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: multiarch2.3.1](https://img.shields.io/badge/AppVersion-multiarch2.3.1-informational?style=flat)
 
@@ -11,7 +11,7 @@ Flame is self-hosted startpage for your server. Easily manage your apps and book
 **Homepage:** <https://charts.gabe565.com/charts/flame/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=flame&version=0.5.2)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=flame&version=0.5.3)**
 
 ## Source Code
 

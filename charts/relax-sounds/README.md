@@ -2,7 +2,7 @@
 
 <img src="https://github.com/gabe565/relax-sounds/raw/3e55b07a957f2e20aceeeba1d36226791f2f1569/frontend/src/assets/icon-purple.svg" align="right" width="92" alt="relax-sounds logo">
 
-![Version: 0.6.2](https://img.shields.io/badge/Version-0.6.2-informational?style=flat)
+![Version: 0.6.3](https://img.shields.io/badge/Version-0.6.3-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -11,7 +11,7 @@ Relax Sounds is a website that lets you stream relaxing sounds to your browser o
 **Homepage:** <https://charts.gabe565.com/charts/relax-sounds/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=relax-sounds&version=0.6.2)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=relax-sounds&version=0.6.3)**
 
 ## Source Code
 

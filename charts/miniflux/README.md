@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg" align="right" width="92" alt="miniflux logo">
 
-![Version: 0.6.3](https://img.shields.io/badge/Version-0.6.3-informational?style=flat)
+![Version: 0.6.4](https://img.shields.io/badge/Version-0.6.4-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 2.0.46](https://img.shields.io/badge/AppVersion-2.0.46-informational?style=flat)
 
@@ -11,7 +11,7 @@ Miniflux is a minimalist and opinionated feed reader.
 **Homepage:** <https://charts.gabe565.com/charts/miniflux/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=miniflux&version=0.6.3)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=miniflux&version=0.6.4)**
 
 ## Source Code
 
