@@ -27,6 +27,8 @@ annotations:
       description: Update common Helm release to v1.5.1
     - kind: changed
       description: Update redis Helm release to v17.14.5
+    - kind: added
+      description: Add OCI install docs
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/TheSpaghettiDetective/obico-server

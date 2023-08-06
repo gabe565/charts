@@ -29,19 +29,21 @@ Kubernetes: `>=1.22.0-0`
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
 | <https://charts.bitnami.com/bitnami> | redis | 17.14.5 |
 
-## TL;DR
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install obico gabe565/obico
-```
-
 ## Installing the Chart
 
 To install the chart with the release name `obico`
 
+### OCI (Recommended)
+
 ```console
+helm install obico oci://ghcr.io/gabe565/charts/obico
+```
+
+### Traditional
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
 helm install obico gabe565/obico
 ```
 

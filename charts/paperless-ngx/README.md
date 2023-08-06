@@ -30,19 +30,21 @@ Kubernetes: `>=1.22.0-0`
 | <https://charts.bitnami.com/bitnami> | postgresql | 12.8.0 |
 | <https://charts.bitnami.com/bitnami> | redis | 17.14.5 |
 
-## TL;DR
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install paperless-ngx gabe565/paperless-ngx
-```
-
 ## Installing the Chart
 
 To install the chart with the release name `paperless-ngx`
 
+### OCI (Recommended)
+
 ```console
+helm install paperless-ngx oci://ghcr.io/gabe565/charts/paperless-ngx
+```
+
+### Traditional
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
 helm install paperless-ngx gabe565/paperless-ngx
 ```
 

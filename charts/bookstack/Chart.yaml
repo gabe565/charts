@@ -29,6 +29,8 @@ annotations:
       description: Update common Helm release to v1.5.1
     - kind: changed
       description: Update mariadb Helm release to v11.5.7
+    - kind: added
+      description: Add OCI install docs
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/BookStackApp/BookStack

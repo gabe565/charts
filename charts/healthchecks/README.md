@@ -29,19 +29,21 @@ Kubernetes: `>=1.22.0-0`
 | <https://charts.bitnami.com/bitnami> | mariadb | 11.5.7 |
 | <https://charts.bitnami.com/bitnami> | postgresql | 12.8.0 |
 
-## TL;DR
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install healthchecks gabe565/healthchecks
-```
-
 ## Installing the Chart
 
 To install the chart with the release name `healthchecks`
 
+### OCI (Recommended)
+
 ```console
+helm install healthchecks oci://ghcr.io/gabe565/charts/healthchecks
+```
+
+### Traditional
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
 helm install healthchecks gabe565/healthchecks
 ```
 

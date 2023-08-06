@@ -28,19 +28,21 @@ Kubernetes: `>=1.22.0-0`
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
 
-## TL;DR
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install qbittorrent gabe565/qbittorrent
-```
-
 ## Installing the Chart
 
 To install the chart with the release name `qbittorrent`
 
+### OCI (Recommended)
+
 ```console
+helm install qbittorrent oci://ghcr.io/gabe565/charts/qbittorrent
+```
+
+### Traditional
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
 helm install qbittorrent gabe565/qbittorrent
 ```
 

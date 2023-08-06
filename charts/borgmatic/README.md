@@ -28,19 +28,21 @@ Kubernetes: `>=1.21.0-0`
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
 
-## TL;DR
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install borgmatic gabe565/borgmatic
-```
-
 ## Installing the Chart
 
 To install the chart with the release name `borgmatic`
 
+### OCI (Recommended)
+
 ```console
+helm install borgmatic oci://ghcr.io/gabe565/charts/borgmatic
+```
+
+### Traditional
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
 helm install borgmatic gabe565/borgmatic
 ```
 

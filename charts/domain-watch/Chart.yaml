@@ -22,6 +22,8 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Update common Helm release to v1.5.1
+    - kind: added
+      description: Add OCI install docs
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gabe565/domain-watch

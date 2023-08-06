@@ -27,19 +27,21 @@ Kubernetes: `>=1.22.0-0`
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
 
-## TL;DR
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install memos gabe565/memos
-```
-
 ## Installing the Chart
 
 To install the chart with the release name `memos`
 
+### OCI (Recommended)
+
 ```console
+helm install memos oci://ghcr.io/gabe565/charts/memos
+```
+
+### Traditional
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
 helm install memos gabe565/memos
 ```
 

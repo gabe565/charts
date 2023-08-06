@@ -27,19 +27,21 @@ Kubernetes: `>=1.22.0-0`
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
 
-## TL;DR
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install rss-bridge gabe565/rss-bridge
-```
-
 ## Installing the Chart
 
 To install the chart with the release name `rss-bridge`
 
+### OCI (Recommended)
+
 ```console
+helm install rss-bridge oci://ghcr.io/gabe565/charts/rss-bridge
+```
+
+### Traditional
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
 helm install rss-bridge gabe565/rss-bridge
 ```
 

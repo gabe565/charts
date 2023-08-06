@@ -25,19 +25,21 @@ Kubernetes: `>=1.22.0-0`
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
 
-## TL;DR
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install generic-device-plugin gabe565/generic-device-plugin
-```
-
 ## Installing the Chart
 
 To install the chart with the release name `generic-device-plugin`
 
+### OCI (Recommended)
+
 ```console
+helm install generic-device-plugin oci://ghcr.io/gabe565/charts/generic-device-plugin
+```
+
+### Traditional
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
 helm install generic-device-plugin gabe565/generic-device-plugin
 ```
 

@@ -29,19 +29,21 @@ Kubernetes: `>=1.22.0-0`
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
 | <https://charts.bitnami.com/bitnami> | mariadb | 11.5.7 |
 
-## TL;DR
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install bookstack gabe565/bookstack
-```
-
 ## Installing the Chart
 
 To install the chart with the release name `bookstack`
 
+### OCI (Recommended)
+
 ```console
+helm install bookstack oci://ghcr.io/gabe565/charts/bookstack
+```
+
+### Traditional
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
 helm install bookstack gabe565/bookstack
 ```
 

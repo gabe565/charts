@@ -28,19 +28,21 @@ Kubernetes: `>=1.22.0-0`
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
 | <https://charts.bitnami.com/bitnami> | mongodb | 13.16.2 |
 
-## TL;DR
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install nightscout gabe565/nightscout
-```
-
 ## Installing the Chart
 
 To install the chart with the release name `nightscout`
 
+### OCI (Recommended)
+
 ```console
+helm install nightscout oci://ghcr.io/gabe565/charts/nightscout
+```
+
+### Traditional
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
 helm install nightscout gabe565/nightscout
 ```
 

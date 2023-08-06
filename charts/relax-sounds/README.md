@@ -27,19 +27,21 @@ Kubernetes: `>=1.22.0-0`
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
 
-## TL;DR
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install relax-sounds gabe565/relax-sounds
-```
-
 ## Installing the Chart
 
 To install the chart with the release name `relax-sounds`
 
+### OCI (Recommended)
+
 ```console
+helm install relax-sounds oci://ghcr.io/gabe565/charts/relax-sounds
+```
+
+### Traditional
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
 helm install relax-sounds gabe565/relax-sounds
 ```
 

@@ -28,19 +28,21 @@ Kubernetes: `>=1.22.0-0`
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
 | <https://charts.bitnami.com/bitnami> | postgresql | 12.8.0 |
 
-## TL;DR
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install home-assistant gabe565/home-assistant
-```
-
 ## Installing the Chart
 
 To install the chart with the release name `home-assistant`
 
+### OCI (Recommended)
+
 ```console
+helm install home-assistant oci://ghcr.io/gabe565/charts/home-assistant
+```
+
+### Traditional
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
 helm install home-assistant gabe565/home-assistant
 ```
 

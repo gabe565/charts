@@ -27,19 +27,21 @@ Kubernetes: `>=1.22.0-0`
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
 
-## TL;DR
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install mnemonic-ninja gabe565/mnemonic-ninja
-```
-
 ## Installing the Chart
 
 To install the chart with the release name `mnemonic-ninja`
 
+### OCI (Recommended)
+
 ```console
+helm install mnemonic-ninja oci://ghcr.io/gabe565/charts/mnemonic-ninja
+```
+
+### Traditional
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
 helm install mnemonic-ninja gabe565/mnemonic-ninja
 ```
 

@@ -23,6 +23,8 @@ annotations:
       description: Update common Helm release to v1.5.1
     - kind: changed
       description: Update postgresql Helm release to v12.8.0
+    - kind: added
+      description: Add OCI install docs
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gabe565/limo

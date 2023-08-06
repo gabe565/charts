@@ -27,19 +27,21 @@ Kubernetes: `>=1.22.0-0`
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
 
-## TL;DR
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install domain-watch gabe565/domain-watch
-```
-
 ## Installing the Chart
 
 To install the chart with the release name `domain-watch`
 
+### OCI (Recommended)
+
 ```console
+helm install domain-watch oci://ghcr.io/gabe565/charts/domain-watch
+```
+
+### Traditional
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
 helm install domain-watch gabe565/domain-watch
 ```
 

@@ -27,19 +27,21 @@ Kubernetes: `>=1.22.0-0`
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
 
-## TL;DR
-
-```console
-helm repo add gabe565 https://charts.gabe565.com
-helm repo update
-helm install pictshare gabe565/pictshare
-```
-
 ## Installing the Chart
 
 To install the chart with the release name `pictshare`
 
+### OCI (Recommended)
+
 ```console
+helm install pictshare oci://ghcr.io/gabe565/charts/pictshare
+```
+
+### Traditional
+
+```console
+helm repo add gabe565 https://charts.gabe565.com
+helm repo update
 helm install pictshare gabe565/pictshare
 ```
 
