@@ -65,8 +65,6 @@ jobs:
 
       - name: Install helm-docs
         uses: gabe565/setup-helm-docs-action@v1
-      - name: Add Go bin to PATH
-        run: echo "$(go env GOPATH)/bin" >>$GITHUB_PATH
       - name: Generate Helm docs
         run: |
           set -eu
