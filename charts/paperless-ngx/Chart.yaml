@@ -39,6 +39,8 @@ annotations:
       description: Update mariadb Helm release to v11.5.7
     - kind: changed
       description: Update postgresql Helm release to v12.8.0
+    - kind: changed
+      description: Update redis Helm release to v17.14.5
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/paperless-ngx/paperless-ngx
