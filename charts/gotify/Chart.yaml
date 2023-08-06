@@ -23,7 +23,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/gotify/server Docker tag to v2.3.0
+      description: Update postgresql Helm release to v12.8.0
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gotify/server
