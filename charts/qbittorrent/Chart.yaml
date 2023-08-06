@@ -14,14 +14,14 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
 sources:
   - https://github.com/qbittorrent/qBittorrent
   - https://github.com/linuxserver/docker-qbittorrent
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/linuxserver/qbittorrent Docker tag to version-4.5.4-r2
+      description: Update common Helm release to v1.5.1
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/qbittorrent/qBittorrent

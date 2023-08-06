@@ -15,14 +15,14 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
 sources:
   - https://projects.torsion.org/borgmatic-collective/borgmatic
   - https://github.com/borgmatic-collective/docker-borgmatic
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/borgmatic-collective/borgmatic Docker tag to v1.7.15
+      description: Update common Helm release to v1.5.1
   artifacthub.io/links: |-
     - name: App Source
       url: https://projects.torsion.org/borgmatic-collective/borgmatic

@@ -15,7 +15,7 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
   - name: postgresql
     version: 12.2.7
     repository: https://charts.bitnami.com/bitnami
@@ -34,7 +34,7 @@ annotations:
   artifacthub.io/alternativeName: paperless
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/paperless-ngx/paperless-ngx Docker tag to v1.17.0
+      description: Update common Helm release to v1.5.1
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/paperless-ngx/paperless-ngx
