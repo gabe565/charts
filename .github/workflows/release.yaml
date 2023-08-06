@@ -57,6 +57,7 @@ jobs:
             chart_name="$(basename "$dir")"
             version="$(yq '.version' "$dir/Chart.yaml")"
             if ! git rev-parse "$chart_name-${version#v}" &>/dev/null; then
+              echo "Packaging chart $chart_name..."
               cr package --package-path=.cr-release-packages "$dir"
               changed_charts+="$chart_name,"
             fi
