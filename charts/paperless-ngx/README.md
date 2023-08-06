@@ -28,7 +28,7 @@ Kubernetes: `>=1.22.0-0`
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
 | <https://charts.bitnami.com/bitnami> | mariadb | 11.5.7 |
 | <https://charts.bitnami.com/bitnami> | postgresql | 12.8.0 |
-| <https://charts.bitnami.com/bitnami> | redis | 17.9.3 |
+| <https://charts.bitnami.com/bitnami> | redis | 17.14.5 |
 
 ## TL;DR
 

@@ -18,7 +18,7 @@ dependencies:
     version: 1.5.1
   - name: redis
     repository: https://charts.bitnami.com/bitnami
-    version: 17.9.3
+    version: 17.14.5
     condition: redis.enabled
 sources:
   - https://github.com/DIYgod/RSSHub
@@ -26,6 +26,8 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Update common Helm release to v1.5.1
+    - kind: changed
+      description: Update redis Helm release to v17.14.5
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/DIYgod/RSSHub
