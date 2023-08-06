@@ -45,11 +45,16 @@ jobs:
       - name: Update changelog
         env:
           TITLE: ${{ steps.pr.outputs.title }}
+          CHANGELOG_APPEND: ${{ contains(steps.pr.outputs.labels, 'changelog-append') }}
         run: |
           set -eux
           export DESCRIPTION="$(sed 's/^:.*: //' <<<"$TITLE")"
           CHANGELOG="$(yq -o json '[{"kind": "changed", "description": strenv(DESCRIPTION)}]')"
-          ./hack/update-changelog.sh replace "$CHANGELOG" ${{ steps.changes.outputs.charts_files }}
+          UPDATE_TYPE=replace
+          if [[ "$CHANGELOG_APPEND" == "true" ]]; then
+            UPDATE_TYPE=append
+          fi
+          ./hack/update-changelog.sh "$UPDATE_TYPE" "$CHANGELOG" ${{ steps.changes.outputs.charts_files }}
 
       - name: Set type to patch
         if: contains(steps.pr.outputs.labels, 'patch') || contains(steps.pr.outputs.labels, 'digest')
