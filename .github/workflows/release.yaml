@@ -29,12 +29,9 @@ jobs:
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
-      - name: Add bitnami charts
+      - name: Add Helm repos
         run: |
           helm repo add bitnami https://charts.bitnami.com/bitnami
-
-      - name: Add bjw-s charts
-        run: |
           helm repo add bjw-s https://bjw-s.github.io/helm-charts
 
       - name: Remove readme images
