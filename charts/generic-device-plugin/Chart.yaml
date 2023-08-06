@@ -12,7 +12,7 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.0
+    version: 1.5.1
 sources:
   - https://github.com/squat/generic-device-plugin
 annotations:
