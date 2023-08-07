@@ -1,10 +1,10 @@
 # Hammond
 
-<img src="https://raw.githubusercontent.com/akhilrex/hammond/84cba2c7f26f6d3f81c49b132110b24ac97c7b49/ui/public/touch-icon.png" align="right" width="92" alt="hammond logo">
+<img src="https://raw.githubusercontent.com/AlfHou/hammond/84cba2c7f26f6d3f81c49b132110b24ac97c7b49/ui/public/touch-icon.png" align="right" width="92" alt="hammond logo">
 
 ![Version: 0.5.1](https://img.shields.io/badge/Version-0.5.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat)
+![AppVersion: v0.0.21](https://img.shields.io/badge/AppVersion-v0.0.21-informational?style=flat)
 
 A self-hosted vehicle expense tracking system with support for multiple users.
 
@@ -15,7 +15,7 @@ A self-hosted vehicle expense tracking system with support for multiple users.
 
 ## Source Code
 
-* <https://github.com/akhilrex/hammond>
+* <https://github.com/AlfHou/hammond>
 
 ## Requirements
 
@@ -84,10 +84,10 @@ N/A
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| env | object | See [values.yaml](./values.yaml) | environment variables. [[ref]](https://github.com/akhilrex/hammond#environment-variables) |
+| env | object | See [values.yaml](./values.yaml) | environment variables. [[ref]](https://github.com/AlfHou/hammond#environment-variables) |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
-| image.repository | string | `"akhilrex/hammond"` | image repository |
-| image.tag | string | `"1.0.0"` | image tag |
+| image.repository | string | `"ghcr.io/alfhou/hammond"` | image repository |
+| image.tag | string | `"v0.0.21"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
