@@ -85,6 +85,7 @@ N/A
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | env | object | See [values.yaml](./values.yaml) | environment variables. [[ref]](https://github.com/AlfHou/hammond#environment-variables) |
+| env.JWT_SECRET | string | `nil` | The secret used to sign the JWT token. There is a default value, but it is important that you change it to something else. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/alfhou/hammond"` | image repository |
 | image.tag | string | `"v0.0.21"` | image tag |

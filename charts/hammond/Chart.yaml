@@ -25,6 +25,8 @@ annotations:
       description: Change image from akhilrex/hammond to ghcr.io/alfhou/hammond
     - kind: added
       description: Add dynamic port env
+    - kind: added
+      description: Add JWT_SECRET env to docs
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/AlfHou/hammond

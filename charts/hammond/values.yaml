@@ -15,8 +15,10 @@ image:
 
 # -- environment variables. [[ref]](https://github.com/AlfHou/hammond#environment-variables)
 # @default -- See [values.yaml](./values.yaml)
-env: {}
-  # JWT_SECRET: 20
+env:
+  # -- (string) The secret used to sign the JWT token.
+  # There is a default value, but it is important that you change it to something else.
+  JWT_SECRET:
 
 # -- Configures service settings for the chart.
 # @default -- See [values.yaml](./values.yaml)
