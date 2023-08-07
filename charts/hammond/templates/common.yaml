@@ -1,1 +1,9 @@
+{{/* Append the dynamic settings */}}
+{{- define "hammond.dynamicValues" -}}
+env:
+  PORT: {{ quote .Values.service.main.ports.http.port }}
+{{- end -}}
+{{- $_ := merge .Values (include "hammond.dynamicValues" . | fromYaml) -}}
+
+{{/* Render the templates */}}
 {{ include "bjw-s.common.loader.all" . }}
