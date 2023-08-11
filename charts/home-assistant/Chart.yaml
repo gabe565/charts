@@ -4,7 +4,7 @@ description: Open source home automation that puts local control and privacy fir
 home: https://charts.gabe565.com/charts/home-assistant/
 icon: https://raw.githubusercontent.com/home-assistant/assets/9b782fe562cbd4e6139f9be17d8e7befafa5f945/logo/logo-pretty.svg
 type: application
-version: 0.8.2
+version: 0.8.3
 # renovate datasource=docker depName=ghcr.io/home-assistant/home-assistant
 appVersion: 2023.8.2
 kubeVersion: ">=1.22.0-0"
@@ -26,11 +26,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update common Helm release to v1.5.1
-    - kind: changed
-      description: Update postgresql Helm release to v12.8.0
-    - kind: added
-      description: Add OCI install docs
+      description: Update ghcr.io/home-assistant/home-assistant Docker tag to v2023.8.2
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/home-assistant/core
