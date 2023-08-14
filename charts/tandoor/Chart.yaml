@@ -27,7 +27,7 @@ annotations:
   artifacthub.io/alternativeName: tandoor-recipes
   artifacthub.io/changes: |-
     - kind: changed
-      description: 'chore(deps): update vabene1111/recipes docker tag to v1.5.5'
+      description: Update vabene1111/recipes docker tag to v1.5.5
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/TandoorRecipes/recipes
