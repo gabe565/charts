@@ -24189,6 +24189,45 @@ entries:
       artifacthub.io/alternativeName: tandoor-recipes
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update vabene1111/recipes docker tag to v1.5.5
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/TandoorRecipes/recipes
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/tandoor
+    apiVersion: v2
+    appVersion: 1.5.5
+    created: "2023-08-14T14:28:32.711572422Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.8.0
+    description: Application for managing recipes, planning meals, building shopping
+      lists and much much more!
+    digest: a1b70cd2aebc75a6f37a691cf0b9d9b5a5c2eee41295dad94af889edc80e6af6
+    home: https://charts.gabe565.com/charts/tandoor/
+    icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
+    keywords:
+    - recipes
+    - cookbook
+    - cooking
+    - meal-planner
+    kubeVersion: '>=1.22.0-0'
+    name: tandoor
+    sources:
+    - https://github.com/TandoorRecipes/recipes
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/tandoor-0.8.6/tandoor-0.8.6.tgz
+    version: 0.8.6
+  - annotations:
+      artifacthub.io/alternativeName: tandoor-recipes
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.5.1
         - kind: changed
           description: Update postgresql Helm release to v12.8.0
@@ -26745,4 +26784,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-08-13T23:11:09.738449893Z"
+generated: "2023-08-14T14:28:32.713096839Z"
