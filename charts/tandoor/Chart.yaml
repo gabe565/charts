@@ -4,9 +4,9 @@ description: Application for managing recipes, planning meals, building shopping
 home: https://charts.gabe565.com/charts/tandoor/
 icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
 type: application
-version: 0.8.5
+version: 0.8.6
 # renovate datasource=docker depName=vabene1111/recipes
-appVersion: 1.5.4
+appVersion: 1.5.5
 kubeVersion: ">=1.22.0-0"
 keywords:
   - recipes
@@ -27,11 +27,7 @@ annotations:
   artifacthub.io/alternativeName: tandoor-recipes
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update common Helm release to v1.5.1
-    - kind: changed
-      description: Update postgresql Helm release to v12.8.0
-    - kind: added
-      description: Add OCI install docs
+      description: 'chore(deps): update vabene1111/recipes docker tag to v1.5.5'
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/TandoorRecipes/recipes
