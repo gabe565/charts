@@ -5439,6 +5439,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/esphome/esphome docker tag to v2023.8.0
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/esphome/esphome
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/esphome
+    apiVersion: v2
+    appVersion: 2023.8.0
+    created: "2023-08-18T18:49:01.776587658Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful
+      configuration files and control them remotely through Home Automation systems.
+    digest: 92a30a59afd1ca0c85540b186981b25b53cae29fa3db41545bdf6f1c8e3ae0cb
+    home: https://charts.gabe565.com/charts/esphome/
+    icon: https://raw.githubusercontent.com/esphome/esphome-docs/019178551126f2d6a588a1f9ef50f60453041531/images/logo.svg
+    keywords:
+    - home-automation
+    - home-assistant
+    - esp8266
+    - esp32
+    - iot
+    kubeVersion: '>=1.22.0-0'
+    name: esphome
+    sources:
+    - https://github.com/esphome/esphome
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/esphome-0.8.0/esphome-0.8.0.tgz
+    version: 0.8.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.5.1
         - kind: added
           description: Add OCI install docs
@@ -26830,4 +26865,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-08-16T17:11:12.292101961Z"
+generated: "2023-08-18T18:49:01.778433588Z"
