@@ -84,7 +84,8 @@ N/A
 |-----|------|---------|-------------|
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
 | dnsPolicy | string | `"ClusterFirst"` | When hostNetwork is true set dnsPolicy to `ClusterFirstWithHostNet` |
-| env | string | See [values.yaml](./values.yaml) | environment variables. [[ref]](https://github.com/gabe565/CastSponsorSkip#configuration) |
+| env | object | See [values.yaml](./values.yaml) | environment variables. [[ref]](https://github.com/gabe565/CastSponsorSkip#configuration) |
+| env.TZ | string | `"UTC"` | Set the container timezone |
 | hostNetwork | bool | `true` | Enable devices to be discoverable |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/gabe565/castsponsorskip"` | image repository |

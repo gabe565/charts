@@ -20,6 +20,8 @@ controller:
 # -- environment variables. [[ref]](https://github.com/gabe565/CastSponsorSkip#configuration)
 # @default -- See [values.yaml](./values.yaml)
 env:
+  # -- Set the container timezone
+  TZ: UTC
   # CSS_DISCOVER_INTERVAL: 5m
   # CSS_PAUSED_INTERVAL: 1m
   # CSS_PLAYING_INTERVAL: 1s
