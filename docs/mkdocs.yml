@@ -10,7 +10,7 @@ repo_url: !ENV [REPO_URL, "https://github.com/gabe565/charts"]
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/icons/icon.svg
+  logo: assets/icons/icon.webp
   favicon: assets/icons/favicon.ico
   palette:
     scheme: disabled

@@ -1,6 +1,6 @@
 {
-    "name": "Helm Charts",
-    "short_name": "Helm Charts",
+    "name": "gabe565 Helm Charts",
+    "short_name": "gabe565 Helm Charts",
     "start_url": "/",
     "icons": [
         {
@@ -14,7 +14,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#475f8e",
-    "background_color": "#475f8e",
+    "theme_color": "#2a309a",
+    "background_color": "#2a309a",
     "display": "standalone"
 }
