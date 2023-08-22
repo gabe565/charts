@@ -51,7 +51,9 @@ plugins:
       hooks:
         on_files: plugins.add_files:main
         on_page_markdown: plugins.filter_readmes:main
-  - social
+  - social:
+      cards_layout_options:
+        background_color: "#2a309a"
 
 markdown_extensions:
   - attr_list
