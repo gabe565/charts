@@ -11,13 +11,14 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: release
+  cancel-in-progress: false
+
 jobs:
   release-charts:
     name: Release Charts
     runs-on: ubuntu-latest
-    concurrency:
-      group: release-charts
-      cancel-in-progress: false
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -136,9 +137,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    concurrency:
-      group: deploy
-      cancel-in-progress: false
     steps:
       - name: Checkout Helm index
         uses: actions/checkout@v3
