@@ -11,7 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  tag: 1.7.15
+  tag: 1.8.2
 
 controller:
   # -- Set the controller type. Valid options are `deployment` or `cronjob`.
