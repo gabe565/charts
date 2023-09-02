@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/obico/icon.svg" align="right" width="92" alt="obico logo">
 
-![Version: 0.2.2](https://img.shields.io/badge/Version-0.2.2-informational?style=flat)
+![Version: 0.2.3](https://img.shields.io/badge/Version-0.2.3-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: sha-bfdccef938ff7569aa9d4c227fa02dad1f95cc13](https://img.shields.io/badge/AppVersion-sha--bfdccef938ff7569aa9d4c227fa02dad1f95cc13-informational?style=flat)
+![AppVersion: sha-5225b0ad4ded0db7d36b706106d6c6d1938a8896](https://img.shields.io/badge/AppVersion-sha--5225b0ad4ded0db7d36b706106d6c6d1938a8896-informational?style=flat)
 
 Obico is a community-built, open-source smart 3D printing platform used by makers, enthusiasts, and tinkerers around the world.
 
 **Homepage:** <https://charts.gabe565.com/charts/obico/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=obico&version=0.2.2)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=obico&version=0.2.3)**
 
 ## Source Code
 
