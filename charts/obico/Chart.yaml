@@ -4,8 +4,8 @@ description: Obico is a community-built, open-source smart 3D printing platform 
 home: https://charts.gabe565.com/charts/obico/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/obico/icon.svg
 type: application
-version: 0.2.2
-appVersion: sha-bfdccef938ff7569aa9d4c227fa02dad1f95cc13
+version: 0.2.3
+appVersion: sha-5225b0ad4ded0db7d36b706106d6c6d1938a8896
 kubeVersion: ">=1.22.0-0"
 keywords:
   - 3d-printing
@@ -24,11 +24,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update common Helm release to v1.5.1
-    - kind: changed
-      description: Update redis Helm release to v17.14.5
-    - kind: added
-      description: Add OCI install docs
+      description: Update thespaghettidetective/obico-server digest to 5225b0a
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/TheSpaghettiDetective/obico-server
