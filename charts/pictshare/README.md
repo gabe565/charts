@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/pictshare/icon.svg" align="right" width="92" alt="pictshare logo">
 
-![Version: 0.6.1](https://img.shields.io/badge/Version-0.6.1-informational?style=flat)
+![Version: 0.6.2](https://img.shields.io/badge/Version-0.6.2-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 74ccf9f6](https://img.shields.io/badge/AppVersion-74ccf9f6-informational?style=flat)
+![AppVersion: 19d7cb06](https://img.shields.io/badge/AppVersion-19d7cb06-informational?style=flat)
 
 PictShare is an open source image, mp4, pastebin hosting service with a simple resizing and upload API that you can host yourself.
 
 **Homepage:** <https://charts.gabe565.com/charts/pictshare/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=pictshare&version=0.6.1)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=pictshare&version=0.6.2)**
 
 ## Source Code
 
@@ -88,7 +88,7 @@ N/A
 | env | object | See [values.yaml](./values.yaml). | environment variables. [[ref]](https://github.com/HaschekSolutions/pictshare/blob/master/rtfm/CONFIG.md) |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/hascheksolutions/pictshare"` | image repository |
-| image.tag | string | `"74ccf9f6"` | image tag |
+| image.tag | string | `"19d7cb06"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.data | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | podSecurityContext.fsGroup | int | `100` | Volume group permissions |

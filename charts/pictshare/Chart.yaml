@@ -4,9 +4,9 @@ description: PictShare is an open source image, mp4, pastebin hosting service wi
 home: https://charts.gabe565.com/charts/pictshare/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/pictshare/icon.svg
 type: application
-version: 0.6.1
+version: 0.6.2
 # renovate datasource=docker depName=ghcr.io/hascheksolutions/pictshare
-appVersion: 74ccf9f6
+appVersion: 19d7cb06
 kubeVersion: ">=1.22.0-0"
 keywords:
   - pictshare
@@ -22,9 +22,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update common Helm release to v1.5.1
-    - kind: added
-      description: Add OCI install docs
+      description: Update haschecksolutions/pictshare digest to 19d7cb06
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/HaschekSolutions/pictshare
