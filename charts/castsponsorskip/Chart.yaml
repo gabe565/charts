@@ -3,7 +3,7 @@ name: castsponsorskip
 description: Skip sponsored YouTube content on all local Google Cast devices.
 home: https://charts.gabe565.com/charts/castsponsorskip/
 type: application
-version: 0.2.0
+version: 0.2.1
 # renovate datasource=docker depName=ghcr.io/gabe565/castsponsorskip
 appVersion: 0.4.1
 kubeVersion: ">=1.22.0-0"
@@ -21,7 +21,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/gabe565/castsponsorskip docker tag to v0.4.0
+      description: Update ghcr.io/gabe565/castsponsorskip docker tag to v0.4.1
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gabe565/CastSponsorSkip
