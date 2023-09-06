@@ -4,7 +4,7 @@ description: Obico is a community-built, open-source smart 3D printing platform 
 home: https://charts.gabe565.com/charts/obico/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/obico/icon.svg
 type: application
-version: 0.2.3
+version: 0.2.4
 appVersion: sha-022d84a77527718b11947057b8604ccef03331c7
 kubeVersion: ">=1.22.0-0"
 keywords:
@@ -24,7 +24,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update thespaghettidetective/obico-server digest to 5225b0a
+      description: Update thespaghettidetective/obico-server digest to 022d84a
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/TheSpaghettiDetective/obico-server
