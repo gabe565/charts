@@ -16161,6 +16161,41 @@ entries:
   monica:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: fixed
+          description: Update chart icon URL
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/monicahq/monica
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/monica
+    apiVersion: v2
+    appVersion: 4.0.0-fpm-alpine
+    created: "2023-09-06T21:35:12.441769655Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.7
+    description: Personal CRM. Remember everything about your friends, family and
+      business relationships.
+    digest: 58d82b5975950c50f08a4dfaa897fbdcd7c037db0bbcbd2c67933498cf010ebe
+    home: https://charts.gabe565.com/charts/monica/
+    icon: https://raw.githubusercontent.com/monicahq/monica/aa98c09d9dee3dae91b14fd724cfb73343b41e5e/public/img/favicon.svg
+    keywords:
+    - crm
+    kubeVersion: '>=1.22.0-0'
+    name: monica
+    sources:
+    - https://github.com/monicahq/monica
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/monica-0.7.2/monica-0.7.2.tgz
+    version: 0.7.2
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Update common Helm release to v1.5.1
         - kind: changed
@@ -28019,4 +28054,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-06T21:33:18.488820436Z"
+generated: "2023-09-06T21:35:12.443283176Z"
