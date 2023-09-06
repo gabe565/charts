@@ -2,9 +2,9 @@ apiVersion: v2
 name: monica
 description: Personal CRM. Remember everything about your friends, family and business relationships.
 home: https://charts.gabe565.com/charts/monica/
-icon: https://raw.githubusercontent.com/monicahq/monica/main/public/img/monica.svg
+icon: https://raw.githubusercontent.com/monicahq/monica/aa98c09d9dee3dae91b14fd724cfb73343b41e5e/public/img/favicon.svg
 type: application
-version: 0.7.1
+version: 0.7.2
 # renovate datasource=docker depName=monica
 appVersion: 4.0.0-fpm-alpine
 kubeVersion: ">=1.22.0-0"
@@ -22,12 +22,8 @@ dependencies:
     condition: mariadb.enabled
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Update common Helm release to v1.5.1
-    - kind: changed
-      description: Update mariadb Helm release to v11.5.7
-    - kind: added
-      description: Add OCI install docs
+    - kind: fixed
+      description: Update chart icon URL
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/monicahq/monica
