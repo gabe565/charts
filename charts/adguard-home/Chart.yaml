@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/adguard-home/
 type: application
 version: 0.3.9
 # renovate datasource=docker depName=adguard/adguardhome
-appVersion: v0.107.37
+appVersion: v0.107.38
 kubeVersion: ">=1.22.0-0"
 keywords:
   - adblock
