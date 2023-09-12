@@ -11,7 +11,7 @@ image:
   # -- Image pull policy
   pullPolicy: IfNotPresent
   # -- Image tag
-  tag: v0.107.37
+  tag: v0.107.38
 
 env:
   # -- Set the container timezone
