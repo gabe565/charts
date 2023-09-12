@@ -10343,6 +10343,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/home-assistant/home-assistant docker tag to v2023.9.1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/home-assistant/core
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/home-assistant
+    apiVersion: v2
+    appVersion: 2023.9.1
+    created: "2023-09-12T07:38:26.940401019Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.8.0
+    description: Open source home automation that puts local control and privacy first.
+    digest: 2e2d4ee53e6803cd4d7233559395233469f1f3ecb8fa545384debd5858b638c7
+    home: https://charts.gabe565.com/charts/home-assistant/
+    icon: https://raw.githubusercontent.com/home-assistant/assets/9b782fe562cbd4e6139f9be17d8e7befafa5f945/logo/logo-pretty.svg
+    keywords:
+    - home-automation
+    - mqtt
+    - iot
+    - internet-of-things
+    kubeVersion: '>=1.22.0-0'
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/core
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/home-assistant-0.9.1/home-assistant-0.9.1.tgz
+    version: 0.9.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/home-assistant/home-assistant docker tag to v2023.9.0
       artifacthub.io/links: |-
         - name: App Source
@@ -28158,4 +28195,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-08T00:00:54.747029238Z"
+generated: "2023-09-12T07:38:26.942162754Z"
