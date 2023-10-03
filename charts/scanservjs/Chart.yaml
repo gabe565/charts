@@ -4,7 +4,7 @@ description: scanservjs is a web UI frontend for your scanner. It allows you to 
 home: https://charts.gabe565.com/charts/scanservjs/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/scanservjs/icon.svg
 type: application
-version: 0.8.1
+version: 0.8.2
 # renovate datasource=docker depName=sbs20/scanservjs
 appVersion: release-v2.27.0
 kubeVersion: ">=1.22.0-0"
@@ -21,9 +21,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update common Helm release to v1.5.1
-    - kind: added
-      description: Add OCI install docs
+      description: Pin bjw-s common chart links to v1
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/sbs20/scanservjs

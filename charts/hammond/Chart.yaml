@@ -4,7 +4,7 @@ description: A self-hosted vehicle expense tracking system with support for mult
 home: https://charts.gabe565.com/charts/hammond/
 icon: https://raw.githubusercontent.com/AlfHou/hammond/84cba2c7f26f6d3f81c49b132110b24ac97c7b49/ui/public/touch-icon.png
 type: application
-version: 0.6.0
+version: 0.6.1
 # renovate datasource=docker depName=ghcr.io/alfhou/hammond
 appVersion: v0.0.21
 kubeVersion: ">=1.22.0-0"
@@ -22,11 +22,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Change image from akhilrex/hammond to ghcr.io/alfhou/hammond
-    - kind: added
-      description: Add dynamic port env
-    - kind: added
-      description: Add JWT_SECRET env to docs
+      description: Pin bjw-s common chart links to v1
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/AlfHou/hammond

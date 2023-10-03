@@ -6,7 +6,7 @@
 [![Pre-Commit](https://img.shields.io/badge/Pre--Commit-enabled-brightgreen?logo=pre-commit)](https://pre-commit.com)
 
 A collection of Helm charts, based on the
-[bjw-s common library chart](https://github.com/bjw-s/helm-charts/tree/main/charts/library/common).
+[bjw-s common library chart](https://github.com/bjw-s/helm-charts/tree/a081de5/charts/library/common).
 
 Also available on [ArtifactHub](https://artifacthub.io/packages/search?repo=gabe565&sort=relevance).
 
