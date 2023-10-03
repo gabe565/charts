@@ -4,6 +4,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/AdguardTeam/AdGuardHome
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/adguard-home
+    apiVersion: v2
+    appVersion: v0.107.38
+    created: "2023-10-03T00:11:16.944134088Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Free and open source, powerful network-wide ads & trackers blocking
+      DNS server.
+    digest: 181acc2c5960f1017effbe8bd66367145480a654dd22626fe569035d5e18b360
+    home: https://charts.gabe565.com/charts/adguard-home/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/adguard-home/icon.svg
+    keywords:
+    - adblock
+    - dns
+    - privacy
+    kubeVersion: '>=1.22.0-0'
+    name: adguard-home
+    sources:
+    - https://github.com/AdguardTeam/AdGuardHome
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/adguard-home-0.3.11/adguard-home-0.3.11.tgz
+    version: 0.3.11
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update adguard/adguardhome docker tag to v0.107.38
       artifacthub.io/links: |-
         - name: App Source
@@ -532,6 +565,39 @@ entries:
     - https://github.com/gabe565/charts/releases/download/adguard-home-0.1.0/adguard-home-0.1.0.tgz
     version: 0.1.0
   ascii-movie:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/ascii-movie
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/ascii-movie
+    apiVersion: v2
+    appVersion: 1.6.0
+    created: "2023-10-03T00:11:17.171105121Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Star Wars movie SSH and Telnet server
+    digest: 84eed115d6c83384a90022efaaed410c8280ccc1b5d89332d2548be9e7ea1c5a
+    home: https://charts.gabe565.com/charts/ascii-movie/
+    icon: https://raw.githubusercontent.com/gabe565/ascii-movie/a1fd5c9df2fb3a177949c9511b62407c83aedefe/assets/icon.svg
+    keywords:
+    - ascii-art
+    - star-wars
+    - telnet
+    - ssh
+    kubeVersion: '>=1.22.0-0'
+    name: ascii-movie
+    sources:
+    - https://github.com/gabe565/ascii-movie
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/ascii-movie-0.12.1/ascii-movie-0.12.1.tgz
+    version: 0.12.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -1645,6 +1711,46 @@ entries:
     - https://github.com/gabe565/charts/releases/download/ascii-telnet-rust-0.1.0/ascii-telnet-rust-0.1.0.tgz
     version: 0.1.0
   bookstack:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/BookStackApp/BookStack
+        - name: Container Source
+          url: https://github.com/linuxserver/docker-bookstack
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/bookstack
+    apiVersion: v2
+    appVersion: version-v23.08.3
+    created: "2023-10-03T00:11:17.393293143Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.7
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
+    digest: 593192a557e208bbd9213f9e83532a028a932b3594f09a116adbe365f9c22b7b
+    home: https://charts.gabe565.com/charts/bookstack/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg
+    keywords:
+    - bookstack
+    - wiki
+    - documentation
+    kubeVersion: '>=1.22.0-0'
+    name: bookstack
+    sources:
+    - https://github.com/BookStackApp/BookStack
+    - https://github.com/linuxserver/docker-bookstack
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/bookstack-0.12.4/bookstack-0.12.4.tgz
+    version: 0.12.4
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -2922,6 +3028,43 @@ entries:
     - https://github.com/gabe565/charts/releases/download/bookstack-0.1.0/bookstack-0.1.0.tgz
     version: 0.1.0
   borgmatic:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://projects.torsion.org/borgmatic-collective/borgmatic
+        - name: Container Source
+          url: https://github.com/borgmatic-collective/docker-borgmatic
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/borgmatic
+    apiVersion: v2
+    appVersion: 1.8.3
+    created: "2023-10-03T00:11:17.610865666Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: borgmatic is simple, configuration-driven backup software for servers
+      and workstations. Protect your files with client-side encryption. Backup your
+      databases too. Monitor it all with integrated third-party services.
+    digest: f43963a9926bd3c6b4a5d7f4dea1bf79b055a11c0f10df9eef0f1179cedec7ca
+    home: https://charts.gabe565.com/charts/borgmatic/
+    icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
+    keywords:
+    - borgmatic
+    - borg
+    - backup
+    kubeVersion: '>=1.21.0-0'
+    name: borgmatic
+    sources:
+    - https://projects.torsion.org/borgmatic-collective/borgmatic
+    - https://github.com/borgmatic-collective/docker-borgmatic
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/borgmatic-0.9.2/borgmatic-0.9.2.tgz
+    version: 0.9.2
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -4219,6 +4362,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/CastSponsorSkip
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/castsponsorskip
+    apiVersion: v2
+    appVersion: 0.5.0
+    created: "2023-10-03T00:11:17.815455646Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Skip sponsored YouTube content on all local Google Cast devices.
+    digest: 54d4428f8f05afb30e3c9344517e02521634d9dbcf19f75f0fbee8c578f6f979
+    home: https://charts.gabe565.com/charts/castsponsorskip/
+    keywords:
+    - youtube
+    - chromecast
+    - google-cast
+    - sponsorblock
+    kubeVersion: '>=1.22.0-0'
+    name: castsponsorskip
+    sources:
+    - https://github.com/gabe565/CastSponsorSkip
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/castsponsorskip-0.3.1/castsponsorskip-0.3.1.tgz
+    version: 0.3.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/gabe565/castsponsorskip docker tag to v0.5.0
       artifacthub.io/links: |-
         - name: App Source
@@ -4601,6 +4776,40 @@ entries:
     - https://github.com/gabe565/charts/releases/download/castsponsorskip-0.0.1/castsponsorskip-0.0.1.tgz
     version: 0.0.1
   changedetection-io:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/dgtlmoon/changedetection.io
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/changedetection-io
+    apiVersion: v2
+    appVersion: 0.45.2
+    created: "2023-10-03T00:11:18.05059311Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Live your data-life pro-actively, track website content changes and
+      receive notifications via Discord, Email, Slack, Telegram and 70+ more.
+    digest: ea9311b8981d7685b51b38ab010445732851c9166356cdfd422d49c8a5fd4644
+    home: https://charts.gabe565.com/charts/changedetection-io/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/changedetection-io/icon.png
+    keywords:
+    - changedetection.io
+    - change-detection
+    - website-monitoring
+    - website-change-tracker
+    kubeVersion: '>=1.22.0-0'
+    name: changedetection-io
+    sources:
+    - https://github.com/dgtlmoon/changedetection.io
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/changedetection-io-0.11.3/changedetection-io-0.11.3.tgz
+    version: 0.11.3
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -5741,6 +5950,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/domain-watch
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/domain-watch
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-10-03T00:11:18.266785043Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Tool to watch whois reports and notify when statuses change or expiration
+      is incoming.
+    digest: b987b9cbd92d2319ce3d84136abe28f08324717e38c50e7cc0f6ef0ccad2b9e7
+    home: https://charts.gabe565.com/charts/domain-watch/
+    icon: https://raw.githubusercontent.com/gabe565/domain-watch/ee028db206ea80c2617dd74a87193191a25a0a8a/assets/icon.svg
+    keywords:
+    - domain
+    - whois
+    - alert
+    kubeVersion: '>=1.22.0-0'
+    name: domain-watch
+    sources:
+    - https://github.com/gabe565/domain-watch
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/domain-watch-0.5.2/domain-watch-0.5.2.tgz
+    version: 0.5.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.5.1
         - kind: added
           description: Add OCI install docs
@@ -6290,6 +6532,41 @@ entries:
     - https://github.com/gabe565/charts/releases/download/domain-watch-0.1.0/domain-watch-0.1.0.tgz
     version: 0.1.0
   esphome:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/esphome/esphome
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/esphome
+    apiVersion: v2
+    appVersion: 2023.9.2
+    created: "2023-10-03T00:11:18.479886776Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: ESPHome is a system to control your ESP8266/ESP32 by simple yet powerful
+      configuration files and control them remotely through Home Automation systems.
+    digest: 5100229b55dc714552a39089df8a089aa02b74d13417f1dbaead981f8a71245d
+    home: https://charts.gabe565.com/charts/esphome/
+    icon: https://raw.githubusercontent.com/esphome/esphome-docs/019178551126f2d6a588a1f9ef50f60453041531/images/logo.svg
+    keywords:
+    - home-automation
+    - home-assistant
+    - esp8266
+    - esp32
+    - iot
+    kubeVersion: '>=1.22.0-0'
+    name: esphome
+    sources:
+    - https://github.com/esphome/esphome
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/esphome-0.9.3/esphome-0.9.3.tgz
+    version: 0.9.3
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -7383,6 +7660,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/pawelmalak/flame
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/flame
+    apiVersion: v2
+    appVersion: multiarch2.3.1
+    created: "2023-10-03T00:11:18.687060423Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Flame is self-hosted startpage for your server. Easily manage your
+      apps and bookmarks with built-in editors.
+    digest: ae91247bb1f61b5db4cfa6565b147952083ddc786d5c4322946bc9d93254734a
+    home: https://charts.gabe565.com/charts/flame/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/flame/icon.svg
+    keywords:
+    - flame
+    - dashboard
+    - startpage
+    - homepage
+    kubeVersion: '>=1.22.0-0'
+    name: flame
+    sources:
+    - https://github.com/pawelmalak/flame
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/flame-0.5.4/flame-0.5.4.tgz
+    version: 0.5.4
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.5.1
         - kind: added
           description: Add OCI install docs
@@ -7956,6 +8267,36 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/squat/generic-device-plugin
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/generic-device-plugin
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-10-03T00:11:18.882493309Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: The generic-device-plugin enables allocating generic Linux devices,
+      such as serial devices, the FUSE device, or video cameras, to Kubernetes Pods
+    digest: f6aa51123c1bdaa969cc6adca82937870dd94bb8d627a77f8f61763727cefcee
+    home: https://charts.gabe565.com/charts/generic-device-plugin/
+    keywords:
+    - device-plugin
+    kubeVersion: '>=1.22.0-0'
+    name: generic-device-plugin
+    sources:
+    - https://github.com/squat/generic-device-plugin
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/generic-device-plugin-0.1.3/generic-device-plugin-0.1.3.tgz
+    version: 0.1.3
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.5.1
         - kind: added
           description: Add OCI install docs
@@ -8076,6 +8417,41 @@ entries:
     - https://github.com/gabe565/charts/releases/download/generic-device-plugin-0.0.1/generic-device-plugin-0.0.1.tgz
     version: 0.0.1
   gotify:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gotify/server
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/gotify
+    apiVersion: v2
+    appVersion: 2.4.0
+    created: "2023-10-03T00:11:19.117993896Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.8.0
+    description: A simple server for sending and receiving messages in real-time per
+      WebSocket. (Includes a sleek web-ui)
+    digest: 4694402b612291b2f057706e1efd02d3536d147dd8e814e83b787000c8aac3bb
+    home: https://charts.gabe565.com/charts/gotify/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/gotify/icon.svg
+    keywords:
+    - notifications
+    kubeVersion: '>=1.22.0-0'
+    name: gotify
+    sources:
+    - https://github.com/gotify/server
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/gotify-0.2.1/gotify-0.2.1.tgz
+    version: 0.2.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -8254,6 +8630,40 @@ entries:
     - https://github.com/gabe565/charts/releases/download/gotify-0.0.1/gotify-0.0.1.tgz
     version: 0.0.1
   hammond:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/AlfHou/hammond
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/hammond
+    apiVersion: v2
+    appVersion: v0.0.21
+    created: "2023-10-03T00:11:19.355599719Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: A self-hosted vehicle expense tracking system with support for multiple
+      users.
+    digest: a9eba3e91990bc242e9ce71b2b27a4561e170af573a360428d2f20c15a741a24
+    home: https://charts.gabe565.com/charts/hammond/
+    icon: https://raw.githubusercontent.com/AlfHou/hammond/84cba2c7f26f6d3f81c49b132110b24ac97c7b49/ui/public/touch-icon.png
+    keywords:
+    - hammond
+    - vehicle
+    - expense-tracker
+    - clarkson
+    kubeVersion: '>=1.22.0-0'
+    name: hammond
+    sources:
+    - https://github.com/AlfHou/hammond
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/hammond-0.6.1/hammond-0.6.1.tgz
+    version: 0.6.1
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -8771,6 +9181,44 @@ entries:
     - https://github.com/gabe565/charts/releases/download/hammond-0.1.0/hammond-0.1.0.tgz
     version: 0.1.0
   headscale:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/juanfont/headscale
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/headscale
+    apiVersion: v2
+    appVersion: 0.22.3
+    created: "2023-10-03T00:11:19.609435302Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.8.0
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: e89151c93df33b1af7e2c64046db33eeb4c4574ecccb2e0e240c5e8b90006851
+    home: https://charts.gabe565.com/charts/headscale/
+    icon: https://raw.githubusercontent.com/juanfont/headscale/56a7b1e34952c3e0306a134b2be9b4277f5d8d6e/docs/logo/headscale3-dots.svg
+    keywords:
+    - headscale
+    - tailscale
+    - wireguard
+    - vpn
+    kubeVersion: '>=1.22.0-0'
+    name: headscale
+    sources:
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.12.5/headscale-0.12.5.tgz
+    version: 0.12.5
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -10221,6 +10669,48 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/healthchecks/healthchecks
+        - name: Container Source
+          url: https://github.com/linuxserver/docker-healthchecks
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/healthchecks
+    apiVersion: v2
+    appVersion: version-v2.10
+    created: "2023-10-03T00:11:19.849838749Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.8.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.7
+    description: A cron monitoring tool written in Python & Django
+    digest: ca41d2b406f4f37b73d9be357cdedcee424f6253eb7556d10573407ad33833e2
+    home: https://charts.gabe565.com/charts/healthchecks/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/healthchecks/icon.svg
+    keywords:
+    - cron
+    - monitoring
+    - notifier
+    kubeVersion: '>=1.22.0-0'
+    name: healthchecks
+    sources:
+    - https://github.com/healthchecks/healthchecks
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/healthchecks-0.6.2/healthchecks-0.6.2.tgz
+    version: 0.6.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.5.1
         - kind: changed
           description: Update mariadb Helm release to v11.5.7
@@ -10693,6 +11183,43 @@ entries:
     - https://github.com/gabe565/charts/releases/download/healthchecks-0.1.0/healthchecks-0.1.0.tgz
     version: 0.1.0
   home-assistant:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/home-assistant/core
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/home-assistant
+    apiVersion: v2
+    appVersion: 2023.9.3
+    created: "2023-10-03T00:11:20.119124977Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.8.0
+    description: Open source home automation that puts local control and privacy first.
+    digest: 0446971cf4fb2d11501501901722ff6a816793b7a75923e66fd72bee58f25eb7
+    home: https://charts.gabe565.com/charts/home-assistant/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/home-assistant/icon.svg
+    keywords:
+    - home-automation
+    - mqtt
+    - iot
+    - internet-of-things
+    kubeVersion: '>=1.22.0-0'
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/core
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/home-assistant-0.9.4/home-assistant-0.9.4.tgz
+    version: 0.9.4
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -12511,6 +13038,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/bastienwirtz/homer
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/homer
+    apiVersion: v2
+    appVersion: v23.09.1
+    created: "2023-10-03T00:11:20.331252584Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: 370a053e0eaea73126a285cb06b306528fd3e27cab9cd59325d3b8e5f9b52318
+    home: https://charts.gabe565.com/charts/homer/
+    icon: https://raw.githubusercontent.com/bastienwirtz/homer/5609315fe77da5441a9c3dda8d92c0ffe9f1bf17/public/assets/icons/logo.svg
+    keywords:
+    - homer
+    - dashboard
+    - startpage
+    - homepage
+    kubeVersion: '>=1.22.0-0'
+    name: homer
+    sources:
+    - https://github.com/bastienwirtz/homer
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/homer-0.8.1/homer-0.8.1.tgz
+    version: 0.8.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/bastienwirtz/homer docker tag to v23.09.1
       artifacthub.io/links: |-
         - name: App Source
@@ -13252,6 +13813,37 @@ entries:
     - https://github.com/gabe565/charts/releases/download/homer-0.1.0/homer-0.1.0.tgz
     version: 0.1.0
   limo:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/limo
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/limo
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-10-03T00:11:20.559740555Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.8.0
+    description: A file upload server.
+    digest: ccdeba0ffa98df09ff8892cf066d52fb760141fa946340482bb8d5ad4423fcf2
+    home: https://charts.gabe565.com/charts/limo/
+    kubeVersion: '>=1.22.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.7.2/limo-0.7.2.tgz
+    version: 0.7.2
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -14103,6 +14695,34 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/matrimony
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/matrimony
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-10-03T00:11:20.794021704Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Self-hosted wedding site configured via YAML
+    digest: cd4809baee5c79fc10f79179eb3a2bc44c2d5942ad88a6a0eabee799aebb435b
+    home: https://charts.gabe565.com/charts/matrimony/
+    icon: https://raw.githubusercontent.com/gabe565/matrimony/b13163b384b27273080deb8d57d1222ba11337f9/frontend/public/img/logo.svg
+    kubeVersion: '>=1.22.0-0'
+    name: matrimony
+    sources:
+    - https://github.com/gabe565/matrimony
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/matrimony-0.6.2/matrimony-0.6.2.tgz
+    version: 0.6.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.5.1
         - kind: added
           description: Add OCI install docs
@@ -14613,6 +15233,38 @@ entries:
     - https://github.com/gabe565/charts/releases/download/matrimony-0.1.0/matrimony-0.1.0.tgz
     version: 0.1.0
   memos:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/usememos/memos
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/memos
+    apiVersion: v2
+    appVersion: 0.15.2
+    created: "2023-10-03T00:11:21.055938752Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: A lightweight, self-hosted memo hub. Open Source and Free forever.
+    digest: ff939939b341456700bcf1c949c3d5c2113ed034f8adf8f410908a51af5a9d2d
+    home: https://charts.gabe565.com/charts/memos/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/memos/icon.png
+    keywords:
+    - memo
+    - markdown
+    - note-taking
+    kubeVersion: '>=1.22.0-0'
+    name: memos
+    sources:
+    - https://github.com/usememos/memos
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/memos-0.7.3/memos-0.7.3.tgz
+    version: 0.7.3
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -15350,6 +16002,43 @@ entries:
     - https://github.com/gabe565/charts/releases/download/memos-0.1.0/memos-0.1.0.tgz
     version: 0.1.0
   miniflux:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/miniflux/v2
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/miniflux
+    apiVersion: v2
+    appVersion: 2.0.48
+    created: "2023-10-03T00:11:21.289960284Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.8.0
+    description: Miniflux is a minimalist and opinionated feed reader.
+    digest: 39a9a99e697670a67b8d3b9e0bcb12c3d81cfd3c536ec43726f5a4ea8f8263c9
+    home: https://charts.gabe565.com/charts/miniflux/
+    icon: https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg
+    keywords:
+    - miniflux
+    - rss
+    - news
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: miniflux
+    sources:
+    - https://github.com/miniflux/v2
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/miniflux-0.6.7/miniflux-0.6.7.tgz
+    version: 0.6.7
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -16383,6 +17072,35 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/mnemonic-ninja
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/mnemonic-ninja
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-10-03T00:11:21.519852447Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Mnemonic Ninja is a website to convert between a number and its corresponding
+      word to aid in memorization.
+    digest: d73aaa050053d7e010619df79e6ee13a8bb2f9130e8eb691944aa862f86759e9
+    home: https://charts.gabe565.com/charts/mnemonic-ninja/
+    icon: https://raw.githubusercontent.com/gabe565/mnemonic-ninja/465602cd7093f62d611c69d7a91e520e4022fab9/src/assets/logo.svg
+    kubeVersion: '>=1.22.0-0'
+    name: mnemonic-ninja
+    sources:
+    - https://github.com/gabe565/mnemonic-ninja
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.5.2/mnemonic-ninja-0.5.2.tgz
+    version: 0.5.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.5.1
         - kind: added
           description: Add OCI install docs
@@ -16894,6 +17612,41 @@ entries:
     - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.1.0/mnemonic-ninja-0.1.0.tgz
     version: 0.1.0
   monica:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/monicahq/monica
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/monica
+    apiVersion: v2
+    appVersion: 4.0.0-fpm-alpine
+    created: "2023-10-03T00:11:21.732143065Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.7
+    description: Personal CRM. Remember everything about your friends, family and
+      business relationships.
+    digest: 8e9edcd14a43db96f8b28054b0b0f4b0bec9bba87810e70cf0ca852532ad9b26
+    home: https://charts.gabe565.com/charts/monica/
+    icon: https://raw.githubusercontent.com/monicahq/monica/aa98c09d9dee3dae91b14fd724cfb73343b41e5e/public/img/favicon.svg
+    keywords:
+    - crm
+    kubeVersion: '>=1.22.0-0'
+    name: monica
+    sources:
+    - https://github.com/monicahq/monica
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/monica-0.7.3/monica-0.7.3.tgz
+    version: 0.7.3
   - annotations:
       artifacthub.io/changes: |-
         - kind: fixed
@@ -17426,6 +18179,43 @@ entries:
     - https://github.com/gabe565/charts/releases/download/monica-0.1.0/monica-0.1.0.tgz
     version: 0.1.0
   nightscout:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/nightscout/cgm-remote-monitor
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/nightscout
+    apiVersion: v2
+    appVersion: 14.2.6
+    created: "2023-10-03T00:11:21.968966979Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.16.2
+    description: Web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers
+      to remotely view a patient's glucose data in real time.
+    digest: af272f2eeae0b7059f1bcf2affa668fe80209eb03043478bf6199baf58503a82
+    home: https://charts.gabe565.com/charts/nightscout/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/nightscout/icon.svg
+    keywords:
+    - nightscout
+    - cgm
+    - blood-sugar
+    - diabetes
+    kubeVersion: '>=1.22.0-0'
+    name: nightscout
+    sources:
+    - https://github.com/nightscout/cgm-remote-monitor
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/nightscout-0.7.2/nightscout-0.7.2.tgz
+    version: 0.7.2
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -18261,6 +19051,45 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/TheSpaghettiDetective/obico-server
+        - name: Container Source
+          url: https://github.com/gabe565/docker-obico
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/obico
+    apiVersion: v2
+    appVersion: sha-022d84a77527718b11947057b8604ccef03331c7
+    created: "2023-10-03T00:11:22.203172023Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.14.5
+    description: Obico is a community-built, open-source smart 3D printing platform
+      used by makers, enthusiasts, and tinkerers around the world.
+    digest: 5c8054fc655495baeea513570dab2eb47fd888fdeec704cd20869788cdd961d2
+    home: https://charts.gabe565.com/charts/obico/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/obico/icon.svg
+    keywords:
+    - 3d-printing
+    - machine-learning
+    kubeVersion: '>=1.22.0-0'
+    name: obico
+    sources:
+    - https://github.com/TheSpaghettiDetective/obico-server
+    - https://github.com/gabe565/docker-obico
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/obico-0.2.5/obico-0.2.5.tgz
+    version: 0.2.5
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update thespaghettidetective/obico-server digest to 022d84a
       artifacthub.io/links: |-
         - name: App Source
@@ -18894,6 +19723,52 @@ entries:
     - https://github.com/gabe565/charts/releases/download/obico-0.0.1/obico-0.0.1.tgz
     version: 0.0.1
   paperless-ngx:
+  - annotations:
+      artifacthub.io/alternativeName: paperless
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/paperless-ngx/paperless-ngx
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/paperless-ngx
+    apiVersion: v2
+    appVersion: 1.17.4
+    created: "2023-10-03T00:11:22.459590113Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.8.0
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.7
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.14.5
+    description: 'A community-supported supercharged version of paperless: scan, index
+      and archive all your physical documents'
+    digest: ef86012a067bb6cb9c823520879be5f59375ad8a2c301342ced12123159e0261
+    home: https://charts.gabe565.com/charts/paperless-ngx/
+    icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750d558b58018d1d3393db145d162d44fceb/src-ui/src/assets/logo-notext.svg
+    keywords:
+    - documents
+    - ocr
+    - paper
+    kubeVersion: '>=1.22.0-0'
+    name: paperless-ngx
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/paperless-ngx-0.7.6/paperless-ngx-0.7.6.tgz
+    version: 0.7.6
   - annotations:
       artifacthub.io/alternativeName: paperless
       artifacthub.io/changes: |-
@@ -19918,6 +20793,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/HaschekSolutions/pictshare
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/pictshare
+    apiVersion: v2
+    appVersion: 19d7cb06
+    created: "2023-10-03T00:11:22.680122067Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: PictShare is an open source image, mp4, pastebin hosting service
+      with a simple resizing and upload API that you can host yourself.
+    digest: c0c89a58a3fda9c9f6babe001650bdb706289cba61b5868988d0b7b06ead921d
+    home: https://charts.gabe565.com/charts/pictshare/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/pictshare/icon.svg
+    keywords:
+    - pictshare
+    - image
+    - picture
+    - image-uploader
+    kubeVersion: '>=1.22.0-0'
+    name: pictshare
+    sources:
+    - https://github.com/HaschekSolutions/pictshare
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/pictshare-0.6.3/pictshare-0.6.3.tgz
+    version: 0.6.3
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update haschecksolutions/pictshare digest to 19d7cb06
       artifacthub.io/links: |-
         - name: App Source
@@ -20631,6 +21540,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App homepage
+          url: https://plex.tv
+        - name: Container Source
+          url: https://github.com/linuxserver/docker-plex
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/plex
+    apiVersion: v2
+    appVersion: version-1.32.6.7557-1cf77d501
+    created: "2023-10-03T00:11:22.891308113Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Plex organizes all of your personal media so you can enjoy it no
+      matter where you are.
+    digest: 3fabe13c498206f5d2d2fcd29554d49799d42f0e12cfd0998ed556deb0ad49ab
+    home: https://charts.gabe565.com/charts/plex/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/plex/icon.svg
+    keywords:
+    - media
+    kubeVersion: '>=1.22.0-0'
+    name: plex
+    sources:
+    - https://plex.tv
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/plex-0.3.11/plex-0.3.11.tgz
+    version: 0.3.11
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/linuxserver/plex docker tag to version-1.32.6.7557-1cf77d501
       artifacthub.io/links: |-
         - name: App homepage
@@ -21196,6 +22138,37 @@ entries:
     - https://github.com/gabe565/charts/releases/download/plex-0.0.1/plex-0.0.1.tgz
     version: 0.0.1
   podgrab:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/akhilrex/podgrab
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/podgrab
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-10-03T00:11:23.091292429Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: A self-hosted podcast manager to download episodes as soon as they
+      become live.
+    digest: 6ee07d2eee558ac82eb7e70dac2c2b59c1816c0ff7f41be9e26ec4c21b6994ca
+    home: https://charts.gabe565.com/charts/podgrab/
+    keywords:
+    - podgrab
+    - podcast
+    kubeVersion: '>=1.22.0-0'
+    name: podgrab
+    sources:
+    - https://github.com/akhilrex/podgrab
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/podgrab-0.5.2/podgrab-0.5.2.tgz
+    version: 0.5.2
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -22526,6 +23499,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/qbittorrent/qBittorrent
+        - name: Container Source
+          url: https://github.com/linuxserver/docker-qbittorrent
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/qbittorrent
+    apiVersion: v2
+    appVersion: version-4.5.5-r0
+    created: "2023-10-03T00:11:23.313633701Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: The qBittorrent project aims to provide an open-source software alternative
+      to µTorrent.
+    digest: aa5d39b88660c86f58efdae6d748f044b92c1f9ed91800db53bc99e9bc572774
+    home: https://charts.gabe565.com/charts/qbittorrent/
+    icon: https://raw.githubusercontent.com/qbittorrent/qBittorrent/master/src/icons/qbittorrent-tray.svg
+    keywords:
+    - torrent
+    - bittorrent
+    kubeVersion: '>=1.22.0-0'
+    name: qbittorrent
+    sources:
+    - https://github.com/qbittorrent/qBittorrent
+    - https://github.com/linuxserver/docker-qbittorrent
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/qbittorrent-0.2.7/qbittorrent-0.2.7.tgz
+    version: 0.2.7
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/linuxserver/qbittorrent docker tag to version-4.5.5-r0
       artifacthub.io/links: |-
         - name: App Source
@@ -23034,6 +24042,35 @@ entries:
     - https://github.com/gabe565/charts/releases/download/qbittorrent-0.0.1/qbittorrent-0.0.1.tgz
     version: 0.0.1
   relax-sounds:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/relax-sounds
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/relax-sounds
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-10-03T00:11:23.523235244Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Relax Sounds is a website that lets you stream relaxing sounds to
+      your browser or over Google Cast.
+    digest: d43330e9d082a906aadf972e96776743b6aea705139371e19544b71dca6f3e6d
+    home: https://charts.gabe565.com/charts/relax-sounds/
+    icon: https://github.com/gabe565/relax-sounds/raw/3e55b07a957f2e20aceeeba1d36226791f2f1569/frontend/src/assets/icon-purple.svg
+    kubeVersion: '>=1.22.0-0'
+    name: relax-sounds
+    sources:
+    - https://github.com/gabe565/relax-sounds
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/relax-sounds-0.6.4/relax-sounds-0.6.4.tgz
+    version: 0.6.4
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -23663,6 +24700,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/RSS-Bridge/rss-bridge
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/rss-bridge
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-10-03T00:11:23.741269035Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: The RSS feed for websites missing it.
+    digest: bbe07b7148c06721b6d1924c66da64e2669b8956bdd6074809bc5a96c690442a
+    home: https://charts.gabe565.com/charts/rss-bridge/
+    icon: https://raw.githubusercontent.com/RSS-Bridge/rss-bridge/987f42d6d44cc18e5c33441e742d15ffff6feb72/static/favicon.png
+    keywords:
+    - rss-bridge
+    - rss
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: rss-bridge
+    sources:
+    - https://github.com/RSS-Bridge/rss-bridge
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rss-bridge-0.5.2/rss-bridge-0.5.2.tgz
+    version: 0.5.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.5.1
         - kind: added
           description: Add OCI install docs
@@ -24230,6 +25299,43 @@ entries:
     - https://github.com/gabe565/charts/releases/download/rss-bridge-0.1.0/rss-bridge-0.1.0.tgz
     version: 0.1.0
   rsshub:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/DIYgod/RSSHub
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/rsshub
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-10-03T00:11:23.966963425Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.14.5
+    description: RSSHub is an open source, easy to use, and extensible RSS feed generator.
+      It's capable of generating RSS feeds from pretty much everything.
+    digest: 656d86e7f7aaf5da1dd7fcb4ade409a8d3f80bd58dd48322ba2997dc35221529
+    home: https://charts.gabe565.com/charts/rsshub/
+    icon: https://camo.githubusercontent.com/79f2dcf6fb41b71619186b12eed25495fa55e20d3f21355798a2cb22703c6f8b/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30342f32332f356362656237653431343134632e706e67
+    keywords:
+    - rsshub
+    - rss
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: rsshub
+    sources:
+    - https://github.com/DIYgod/RSSHub
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/rsshub-0.5.2/rsshub-0.5.2.tgz
+    version: 0.5.2
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -25030,6 +26136,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/sbs20/scanservjs
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/scanservjs
+    apiVersion: v2
+    appVersion: release-v2.27.0
+    created: "2023-10-03T00:11:24.169592114Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: scanservjs is a web UI frontend for your scanner. It allows you to
+      share one or more scanners (using SANE) on a network without the need for drivers
+      or complicated installation.
+    digest: a8869cedd63e1d2c151314696b403d665f99d2a2ccc0d8eccfc9e0fb3db89dbd
+    home: https://charts.gabe565.com/charts/scanservjs/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/scanservjs/icon.svg
+    keywords:
+    - scanservjs
+    - scanner
+    - sane
+    kubeVersion: '>=1.22.0-0'
+    name: scanservjs
+    sources:
+    - https://github.com/sbs20/scanservjs
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/scanservjs-0.8.2/scanservjs-0.8.2.tgz
+    version: 0.8.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.5.1
         - kind: added
           description: Add OCI install docs
@@ -25791,6 +26931,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://gitlab.com/arm-research/smarter/smarter-device-manager
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/smarter-device-manager
+    apiVersion: v2
+    appVersion: v1.20.11
+    created: "2023-10-03T00:11:24.390482591Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Manage hardware resource allocation without a need for privileged
+      containers.
+    digest: ca9c8bdd67ec1503ad9f186ebc176259e3a432a667e19dc328ac9105605bdcd7
+    home: https://charts.gabe565.com/charts/smarter-device-manager/
+    icon: https://gitlab.com/uploads/-/system/group/avatar/6339043/ARM1636_Project_Logo_ST2_RGB_V1.png
+    keywords:
+    - kubernetes
+    - cluster
+    - hardware
+    - device
+    - usb
+    kubeVersion: '>=1.22.0-0'
+    name: smarter-device-manager
+    sources:
+    - https://gitlab.com/arm-research/smarter/smarter-device-manager
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/smarter-device-manager-0.5.2/smarter-device-manager-0.5.2.tgz
+    version: 0.5.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.5.1
         - kind: added
           description: Add OCI install docs
@@ -26177,6 +27352,45 @@ entries:
     - https://github.com/gabe565/charts/releases/download/smarter-device-manager-0.1.0/smarter-device-manager-0.1.0.tgz
     version: 0.1.0
   tandoor:
+  - annotations:
+      artifacthub.io/alternativeName: tandoor-recipes
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/TandoorRecipes/recipes
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/tandoor
+    apiVersion: v2
+    appVersion: 1.5.6
+    created: "2023-10-03T00:11:24.612093115Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.8.0
+    description: Application for managing recipes, planning meals, building shopping
+      lists and much much more!
+    digest: b46ce75202fb3c2850c722539021e9d8634dc32db6fb6995daba9e8e12f032ce
+    home: https://charts.gabe565.com/charts/tandoor/
+    icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
+    keywords:
+    - recipes
+    - cookbook
+    - cooking
+    - meal-planner
+    kubeVersion: '>=1.22.0-0'
+    name: tandoor
+    sources:
+    - https://github.com/TandoorRecipes/recipes
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/tandoor-0.8.8/tandoor-0.8.8.tgz
+    version: 0.8.8
   - annotations:
       artifacthub.io/alternativeName: tandoor-recipes
       artifacthub.io/changes: |-
@@ -27353,6 +28567,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/transsmute
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/transsmute
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-10-03T00:11:24.834221073Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Transsmute builds RSS feeds for websites that don't provide them.
+    digest: 312ca4978c8c058b773db7d03fd8a63c508389fa0ef6a7e81af910e972033ba4
+    home: https://charts.gabe565.com/charts/transsmute/
+    icon: https://raw.githubusercontent.com/gabe565/transsmute/ce624f8c903654ead37489d8d274b97d526d397a/assets/icon.svg
+    keywords:
+    - transsmute
+    - rss
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: transsmute
+    sources:
+    - https://github.com/gabe565/transsmute
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/transsmute-0.5.2/transsmute-0.5.2.tgz
+    version: 0.5.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update common Helm release to v1.5.1
         - kind: added
           description: Add OCI install docs
@@ -27894,6 +29140,46 @@ entries:
     - https://github.com/gabe565/charts/releases/download/transsmute-0.1.0/transsmute-0.1.0.tgz
     version: 0.1.0
   vaultwarden:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Pin bjw-s common chart links to v1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/dani-garcia/vaultwarden
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/vaultwarden
+    apiVersion: v2
+    appVersion: 1.29.2-alpine
+    created: "2023-10-03T00:11:25.072863406Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.7
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.8.0
+    description: Unofficial Bitwarden compatible server written in Rust.
+    digest: 8cbb14c9f3e1df6bb8a5873db54f988b1be72e172337ac1e5127fa6b24863b2f
+    home: https://charts.gabe565.com/charts/vaultwarden/
+    icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b69952db6eb12987a9668fea6b72df79cfa41/resources/vaultwarden-icon.svg
+    keywords:
+    - vaultwarden
+    - bitwarden
+    - bitwarden_rs
+    kubeVersion: '>=1.22.0-0'
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/vaultwarden-0.10.3/vaultwarden-0.10.3.tgz
+    version: 0.10.3
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -28855,4 +30141,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-02T21:40:55.523198492Z"
+generated: "2023-10-03T00:11:25.081295855Z"
