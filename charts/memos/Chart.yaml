@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/memos/icon.pn
 type: application
 version: 0.7.3
 # renovate datasource=docker depName=ghcr.io/usememos/memos
-appVersion: 0.15.2
+appVersion: 0.16.0
 kubeVersion: ">=1.22.0-0"
 keywords:
   - memo
