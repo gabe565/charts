@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/nightscout/icon.svg" align="right" width="92" alt="nightscout logo">
 
-![Version: 0.8.0](https://img.shields.io/badge/Version-0.8.0-informational?style=flat)
+![Version: 0.8.1](https://img.shields.io/badge/Version-0.8.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 15.0.0](https://img.shields.io/badge/AppVersion-15.0.0-informational?style=flat)
+![AppVersion: 15.0.1](https://img.shields.io/badge/AppVersion-15.0.1-informational?style=flat)
 
 Web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers to remotely view a patient's glucose data in real time.
 
 **Homepage:** <https://charts.gabe565.com/charts/nightscout/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=nightscout&version=0.8.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=nightscout&version=0.8.1)**
 
 ## Source Code
 
@@ -92,7 +92,7 @@ N/A
 | env.MONGODB_URI | string | `""` | MongoDB URI, eg `mongodb://username:password@mongodb/nightscout`.    Will be generated if mongodb subchart is enabled. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"nightscout/cgm-remote-monitor"` | image repository |
-| image.tag | string | `"15.0.0"` | image tag |
+| image.tag | string | `"15.0.1"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | mongodb | object | See [values.yaml](./values.yaml) | Enable and configure mongodb database subchart under this key.    For more options see [mongodb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mongodb) |
 | service.main | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
