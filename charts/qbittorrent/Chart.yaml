@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/qbittorrent/qBittorrent/master/src/icons
 type: application
 version: 0.2.7
 # renovate datasource=docker depName=ghcr.io/linuxserver/qbittorrent
-appVersion: version-4.5.5-r0
+appVersion: version-4.6.0-r0
 kubeVersion: ">=1.22.0-0"
 keywords:
   - torrent
