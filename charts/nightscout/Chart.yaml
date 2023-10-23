@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/nightscout/ic
 type: application
 version: 0.8.0
 # renovate datasource=docker depName=nightscout/cgm-remote-monitor
-appVersion: 15.0.0
+appVersion: 15.0.1
 kubeVersion: ">=1.22.0-0"
 keywords:
   - nightscout
