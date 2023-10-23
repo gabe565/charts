@@ -13529,6 +13529,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/bastienwirtz/homer docker tag to v23.10.1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/bastienwirtz/homer
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/homer
+    apiVersion: v2
+    appVersion: v23.10.1
+    created: "2023-10-23T06:30:12.538470047Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: 99d1a979bba0b1d1d6d7bb9c673af2a9fdfe804992d65a2edcdb03a15b730a90
+    home: https://charts.gabe565.com/charts/homer/
+    icon: https://raw.githubusercontent.com/bastienwirtz/homer/5609315fe77da5441a9c3dda8d92c0ffe9f1bf17/public/assets/icons/logo.svg
+    keywords:
+    - homer
+    - dashboard
+    - startpage
+    - homepage
+    kubeVersion: '>=1.22.0-0'
+    name: homer
+    sources:
+    - https://github.com/bastienwirtz/homer
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/homer-0.9.0/homer-0.9.0.tgz
+    version: 0.9.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Pin bjw-s common chart links to v1
       artifacthub.io/links: |-
         - name: App Source
@@ -30770,4 +30804,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-23T06:28:44.428826121Z"
+generated: "2023-10-23T06:30:12.540338792Z"
