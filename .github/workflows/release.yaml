@@ -124,11 +124,14 @@ jobs:
           REPO_URL: ${{ github.server_url }}/${{ github.repository }}
         run: mkdocs build
 
+      - name: Compress
+        run: tar -czvf docs.tar.gz -C docs site
+
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
           name: docs
-          path: docs/site
+          path: docs.tar.gz
 
   deploy-site:
     name: Deploy Site
@@ -148,15 +151,17 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: docs
-          path: docs
+
+      - name: Decompress docs
+        run: tar -xzvf docs.tar.gz
 
       - name: Move Helm index to docs
-        run: mv helm-index/* docs
+        run: mv helm-index/* site
 
       - name: Upload release artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: docs
+          path: site
 
       - name: Deploy to GitHub Pages
         id: deployment
