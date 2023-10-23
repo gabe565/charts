@@ -4,9 +4,9 @@ description: A dead simple static HOMepage for your servER to keep your services
 home: https://charts.gabe565.com/charts/homer/
 icon: https://raw.githubusercontent.com/bastienwirtz/homer/5609315fe77da5441a9c3dda8d92c0ffe9f1bf17/public/assets/icons/logo.svg
 type: application
-version: 0.8.1
+version: 0.9.0
 # renovate datasource=docker depName=ghcr.io/bastienwirtz/homer
-appVersion: v23.09.1
+appVersion: v23.10.1
 kubeVersion: ">=1.22.0-0"
 keywords:
   - homer
@@ -22,7 +22,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Pin bjw-s common chart links to v1
+      description: Update ghcr.io/bastienwirtz/homer docker tag to v23.10.1
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/bastienwirtz/homer
