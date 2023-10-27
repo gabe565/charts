@@ -5,7 +5,7 @@ configMaps:
   default-config:
     enabled: true
     data:
-      AdGuardHome.yaml: {{ .Values.config }}
+      AdGuardHome.yaml: {{ toYaml .Values.config | nindent 8 }}
 
 persistence:
   default-config:
