@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg" align="right" width="92" alt="borgmatic logo">
 
-![Version: 0.9.2](https://img.shields.io/badge/Version-0.9.2-informational?style=flat)
+![Version: 0.9.3](https://img.shields.io/badge/Version-0.9.3-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 1.8.3](https://img.shields.io/badge/AppVersion-1.8.3-informational?style=flat)
+![AppVersion: 1.8.4](https://img.shields.io/badge/AppVersion-1.8.4-informational?style=flat)
 
 borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services.
 
 **Homepage:** <https://charts.gabe565.com/charts/borgmatic/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=borgmatic&version=0.9.2)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=borgmatic&version=0.9.3)**
 
 ## Source Code
 
@@ -120,7 +120,7 @@ controller:
 | env.BORG_HOST_ID | string | Deployment namespace | Borg host ID used in archive names |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/borgmatic-collective/borgmatic"` | image repository |
-| image.tag | string | `"1.8.3"` | image tag |
+| image.tag | string | `"1.8.4"` | image tag |
 | persistence.data | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | persistence.ssh | object | See [values.yaml](./values.yaml) | Configure SSH credentials for the chart under this key. |
 
