@@ -3130,6 +3130,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/borgmatic-collective/borgmatic docker tag to v1.8.4
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://projects.torsion.org/borgmatic-collective/borgmatic
+        - name: Container Source
+          url: https://github.com/borgmatic-collective/docker-borgmatic
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/borgmatic
+    apiVersion: v2
+    appVersion: 1.8.4
+    created: "2023-10-29T03:24:47.165876774Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: borgmatic is simple, configuration-driven backup software for servers
+      and workstations. Protect your files with client-side encryption. Backup your
+      databases too. Monitor it all with integrated third-party services.
+    digest: 39820341dcdd45bf4630bbd87f31742173554192a4893564cf5873ca983f1f8c
+    home: https://charts.gabe565.com/charts/borgmatic/
+    icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
+    keywords:
+    - borgmatic
+    - borg
+    - backup
+    kubeVersion: '>=1.21.0-0'
+    name: borgmatic
+    sources:
+    - https://projects.torsion.org/borgmatic-collective/borgmatic
+    - https://github.com/borgmatic-collective/docker-borgmatic
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/borgmatic-0.9.3/borgmatic-0.9.3.tgz
+    version: 0.9.3
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Pin bjw-s common chart links to v1
       artifacthub.io/links: |-
         - name: App Source
@@ -30981,4 +31018,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-29T03:23:40.933443994Z"
+generated: "2023-10-29T03:24:47.167486168Z"
