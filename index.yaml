@@ -15903,6 +15903,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/usememos/memos docker tag to v0.17.0
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/usememos/memos
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/memos
+    apiVersion: v2
+    appVersion: 0.17.0
+    created: "2023-10-29T03:26:55.525034875Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: A lightweight, self-hosted memo hub. Open Source and Free forever.
+    digest: 41d205b1b49e594e406d59782b27f6236e626c823e94aaefadd19c6bb2737795
+    home: https://charts.gabe565.com/charts/memos/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/memos/icon.png
+    keywords:
+    - memo
+    - markdown
+    - note-taking
+    kubeVersion: '>=1.22.0-0'
+    name: memos
+    sources:
+    - https://github.com/usememos/memos
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/memos-0.9.0/memos-0.9.0.tgz
+    version: 0.9.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/usememos/memos docker tag to v0.16.1
       artifacthub.io/links: |-
         - name: App Source
@@ -31057,4 +31089,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-29T03:25:54.397332474Z"
+generated: "2023-10-29T03:26:55.530817496Z"
