@@ -86,9 +86,9 @@ jobs:
         if: steps.package_charts.outputs.changed_charts != ''
         with:
           skip_packaging: true
+          pages_branch: helm-index
         env:
           CR_TOKEN: ${{ github.token }}
-          CR_PAGES_BRANCH: helm-index
 
   build-docs:
     name: Build Docs
