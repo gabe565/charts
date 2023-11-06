@@ -32,6 +32,7 @@ oci://ghcr.io/gabe565/charts
 {{- define "custom.dependencies" -}}
 ## Dependencies
 
+{{ if gt (len .Dependencies) 0 }}
 | Repository | Name | Version |
 |------------|------|---------|
 {{- range .Dependencies }}
@@ -40,6 +41,9 @@ oci://ghcr.io/gabe565/charts
 {{- else }}
 | <{{ .Repository }}> | {{ .Name }} | {{ .Version }} |
 {{- end }}
+{{- end }}
+{{ else }}
+This chart has no dependencies.
 {{- end }}
 {{- end -}}
 
