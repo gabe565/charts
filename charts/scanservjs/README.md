@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/scanservjs/icon.svg" align="right" width="92" alt="scanservjs logo">
 
-![Version: 0.8.2](https://img.shields.io/badge/Version-0.8.2-informational?style=flat)
+![Version: 0.9.0](https://img.shields.io/badge/Version-0.9.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: release-v2.27.0](https://img.shields.io/badge/AppVersion-release--v2.27.0-informational?style=flat)
+![AppVersion: release-v3.0.1](https://img.shields.io/badge/AppVersion-release--v3.0.1-informational?style=flat)
 
 scanservjs is a web UI frontend for your scanner. It allows you to share one or more scanners (using SANE) on a network without the need for drivers or complicated installation.
 
 **Homepage:** <https://charts.gabe565.com/charts/scanservjs/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=scanservjs&version=0.8.2)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=scanservjs&version=0.9.0)**
 
 ## Source Code
 
@@ -88,7 +88,7 @@ N/A
 | env | object | See [values.yaml](./values.yaml) | environment variables. [[ref]](https://github.com/sbs20/scanservjs/blob/master/docs/docker.md#environment-variables) |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"sbs20/scanservjs"` | image repository |
-| image.tag | string | `"release-v2.27.0"` | image tag |
+| image.tag | string | `"release-v3.0.1"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
