@@ -2,7 +2,7 @@
 
 <img src="https://camo.githubusercontent.com/79f2dcf6fb41b71619186b12eed25495fa55e20d3f21355798a2cb22703c6f8b/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30342f32332f356362656237653431343134632e706e67" align="right" width="92" alt="rsshub logo">
 
-![Version: 0.5.2](https://img.shields.io/badge/Version-0.5.2-informational?style=flat)
+![Version: 0.6.0](https://img.shields.io/badge/Version-0.6.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -11,7 +11,7 @@ RSSHub is an open source, easy to use, and extensible RSS feed generator. It's c
 **Homepage:** <https://charts.gabe565.com/charts/rsshub/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=rsshub&version=0.5.2)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=rsshub&version=0.6.0)**
 
 ## Source Code
 
@@ -26,7 +26,7 @@ Kubernetes: `>=1.22.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
-| <https://charts.bitnami.com/bitnami> | redis | 17.14.5 |
+| <https://charts.bitnami.com/bitnami> | redis | 17.17.1 |
 
 ## Installing the Chart
 
