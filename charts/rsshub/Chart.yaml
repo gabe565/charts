@@ -18,7 +18,7 @@ dependencies:
     version: 1.5.1
   - name: redis
     repository: https://charts.bitnami.com/bitnami
-    version: 17.14.5
+    version: 17.17.1
     condition: redis.enabled
 sources:
   - https://github.com/DIYgod/RSSHub
