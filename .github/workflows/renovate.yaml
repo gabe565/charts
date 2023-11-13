@@ -6,7 +6,7 @@ on:
       - renovate/**
 
 env:
-  COMMIT_MESSAGE: ":wrench: Update chart metadata"
+  COMMIT_MESSAGE: "chore: Update chart metadata"
 
 jobs:
   update-chart-metadata:
