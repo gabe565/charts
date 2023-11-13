@@ -6,6 +6,7 @@
   "ignorePresets": [
     "github>gabe565/renovate-config:githubActions"
   ],
+  "gitIgnoredAuthors": ["renovate[bot]@users.noreply.github.com"],
   "regexManagers": [
     {
       "fileMatch": ["\\.yaml$"],
