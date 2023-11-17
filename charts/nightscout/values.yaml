@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: nightscout/cgm-remote-monitor
   # -- image tag
-  tag: 15.0.1
+  tag: 15.0.2
   # -- image pull policy
   pullPolicy: IfNotPresent
 
