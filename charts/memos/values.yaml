@@ -54,3 +54,19 @@ podSecurityContext:
   runAsGroup: 65534
   # -- Volume binds will be granted to `nobody` group
   fsGroup: 65534
+
+# -- Enable and configure mariadb database subchart under this key.
+#    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb)
+# @default -- See [values.yaml](./values.yaml)
+mariadb:
+  enabled: false
+  auth:
+    database: memos
+    username: memos
+    password: changeme
+    rootPassword: changeme
+  primary:
+    persistence:
+      enabled: false
+      # storageClass: ""
+      # size: 8Gi

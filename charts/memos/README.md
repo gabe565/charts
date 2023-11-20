@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/memos/icon.png" align="right" width="92" alt="memos logo">
 
-![Version: 0.9.1](https://img.shields.io/badge/Version-0.9.1-informational?style=flat)
+![Version: 0.9.2](https://img.shields.io/badge/Version-0.9.2-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 0.17.1](https://img.shields.io/badge/AppVersion-0.17.1-informational?style=flat)
 
@@ -11,7 +11,7 @@ A lightweight, self-hosted memo hub. Open Source and Free forever.
 **Homepage:** <https://charts.gabe565.com/charts/memos/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=memos&version=0.9.1)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=memos&version=0.9.2)**
 
 ## Source Code
 
@@ -26,6 +26,7 @@ Kubernetes: `>=1.22.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
+| <https://charts.bitnami.com/bitnami> | mariadb | 14.1.2 |
 
 ## Installing the Chart
 
@@ -88,6 +89,7 @@ N/A
 | image.repository | string | `"ghcr.io/usememos/memos"` | image repository |
 | image.tag | string | `"0.17.1"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
+| mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
 | persistence | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | podSecurityContext.fsGroup | int | `65534` | Volume binds will be granted to `nobody` group |
 | podSecurityContext.runAsGroup | int | `65534` | Run as `nobody` group |
