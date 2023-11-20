@@ -30869,6 +30869,46 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/dani-garcia/vaultwarden docker tag to v1.30.1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/dani-garcia/vaultwarden
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/vaultwarden
+    apiVersion: v2
+    appVersion: 1.30.1-alpine
+    created: "2023-11-20T07:47:18.343586675Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.7
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.8.0
+    description: Unofficial Bitwarden compatible server written in Rust.
+    digest: e28d74faba77c2cda9df076d86901c2d66d2da8804756e4321b53c05c8bf0467
+    home: https://charts.gabe565.com/charts/vaultwarden/
+    icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b69952db6eb12987a9668fea6b72df79cfa41/resources/vaultwarden-icon.svg
+    keywords:
+    - vaultwarden
+    - bitwarden
+    - bitwarden_rs
+    kubeVersion: '>=1.22.0-0'
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/vaultwarden-0.11.1/vaultwarden-0.11.1.tgz
+    version: 0.11.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/dani-garcia/vaultwarden docker tag to v1.30.0
       artifacthub.io/links: |-
         - name: App Source
@@ -31907,4 +31947,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-20T07:45:36.657351271Z"
+generated: "2023-11-20T07:47:18.344905394Z"
