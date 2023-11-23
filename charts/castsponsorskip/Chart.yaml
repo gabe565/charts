@@ -5,7 +5,7 @@ home: https://charts.gabe565.com/charts/castsponsorskip/
 type: application
 version: 0.4.0
 # renovate datasource=docker depName=ghcr.io/gabe565/castsponsorskip
-appVersion: 0.6.0
+appVersion: 0.6.1
 kubeVersion: ">=1.22.0-0"
 keywords:
   - youtube
