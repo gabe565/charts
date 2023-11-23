@@ -4,7 +4,7 @@ description: Web-based CGM (Continuous Glucose Monitor) to allow multiple caregi
 home: https://charts.gabe565.com/charts/nightscout/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/nightscout/icon.svg
 type: application
-version: 0.8.2
+version: 0.9.0
 # renovate datasource=docker depName=nightscout/cgm-remote-monitor
 appVersion: 15.0.2
 kubeVersion: ">=1.22.0-0"
@@ -25,7 +25,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update nightscout/cgm-remote-monitor docker tag to v15.0.2
+      description: Update mongodb helm release to v14
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/nightscout/cgm-remote-monitor
