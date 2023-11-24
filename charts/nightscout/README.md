@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/nightscout/icon.svg" align="right" width="92" alt="nightscout logo">
 
-![Version: 0.8.2](https://img.shields.io/badge/Version-0.8.2-informational?style=flat)
+![Version: 0.9.0](https://img.shields.io/badge/Version-0.9.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 15.0.2](https://img.shields.io/badge/AppVersion-15.0.2-informational?style=flat)
 
@@ -11,7 +11,7 @@ Web-based CGM (Continuous Glucose Monitor) to allow multiple caregivers to remot
 **Homepage:** <https://charts.gabe565.com/charts/nightscout/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=nightscout&version=0.8.2)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=nightscout&version=0.9.0)**
 
 ## Source Code
 
@@ -26,7 +26,7 @@ Kubernetes: `>=1.22.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
-| <https://charts.bitnami.com/bitnami> | mongodb | 13.16.2 |
+| <https://charts.bitnami.com/bitnami> | mongodb | 14.3.1 |
 
 ## Installing the Chart
 
