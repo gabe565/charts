@@ -21932,6 +21932,52 @@ entries:
       artifacthub.io/alternativeName: paperless
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/paperless-ngx/paperless-ngx
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/paperless-ngx
+    apiVersion: v2
+    appVersion: 2.0.0
+    created: "2023-11-29T18:34:53.106482503Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.12.10
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.7
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.4.0
+    description: 'A community-supported supercharged version of paperless: scan, index
+      and archive all your physical documents'
+    digest: 22d98a3ec9cc9aed7fe08f90dbb4c6fde8c414649e7e62e87aa0f9eb34d240e5
+    home: https://charts.gabe565.com/charts/paperless-ngx/
+    icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750d558b58018d1d3393db145d162d44fceb/src-ui/src/assets/logo-notext.svg
+    keywords:
+    - documents
+    - ocr
+    - paper
+    kubeVersion: '>=1.22.0-0'
+    name: paperless-ngx
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/paperless-ngx-0.8.0/paperless-ngx-0.8.0.tgz
+    version: 0.8.0
+  - annotations:
+      artifacthub.io/alternativeName: paperless
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update postgresql helm release to v12.12.10
       artifacthub.io/links: |-
         - name: App Source
@@ -32913,4 +32959,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-29T18:34:00.611647902Z"
+generated: "2023-11-29T18:34:53.108094026Z"
