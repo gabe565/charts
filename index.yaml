@@ -6704,6 +6704,39 @@ entries:
   domain-watch:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add default ServiceMonitor values
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/domain-watch
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/domain-watch
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-11-30T07:57:54.921303069Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Tool to watch whois reports and notify when statuses change or expiration
+      is incoming.
+    digest: 37400cde7eb5d078568ec0591a2821a148ad03976b510cb8616638611a6ef6c1
+    home: https://charts.gabe565.com/charts/domain-watch/
+    icon: https://raw.githubusercontent.com/gabe565/domain-watch/ee028db206ea80c2617dd74a87193191a25a0a8a/assets/icon.svg
+    keywords:
+    - domain
+    - whois
+    - alert
+    kubeVersion: '>=1.22.0-0'
+    name: domain-watch
+    sources:
+    - https://github.com/gabe565/domain-watch
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/domain-watch-0.5.3/domain-watch-0.5.3.tgz
+    version: 0.5.3
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Pin bjw-s common chart links to v1
       artifacthub.io/links: |-
@@ -32959,4 +32992,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-29T18:34:53.108094026Z"
+generated: "2023-11-30T07:57:54.922641796Z"
