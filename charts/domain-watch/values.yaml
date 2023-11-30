@@ -37,3 +37,27 @@ env:
   WATCH_LOG_LEVEL: info
   # -- Log format. Valid options are text, json.
   WATCH_LOG_FORMAT: text
+
+# -- Configures service settings for the chart.
+# @default -- See [values.yaml](./values.yaml)
+service:
+  main:
+    enabled: false
+    ports:
+      http:
+        enabled: false
+      metrics:
+        port: 9090
+
+serviceMonitor:
+  main:
+    # -- Enables or disables the serviceMonitor.
+    enabled: false
+    # -- Configures the endpoints for the serviceMonitor.
+    # @default -- See [values.yaml](./values.yaml)
+    endpoints:
+      - port: metrics
+        scheme: http
+        path: /metrics
+        interval: 1m
+        scrapeTimeout: 10s
