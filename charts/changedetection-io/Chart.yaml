@@ -4,9 +4,9 @@ description: Live your data-life pro-actively, track website content changes and
 home: https://charts.gabe565.com/charts/changedetection-io/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/changedetection-io/icon.png
 type: application
-version: 0.11.9
+version: 0.11.10
 # renovate datasource=docker depName=ghcr.io/dgtlmoon/changedetection.io
-appVersion: 0.45.8
+appVersion: 0.45.8.1
 kubeVersion: ">=1.22.0-0"
 keywords:
   - changedetection.io
@@ -22,7 +22,7 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.45.8
+      description: Update ghcr.io/dgtlmoon/changedetection.io docker tag to v0.45.8.1
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/dgtlmoon/changedetection.io
