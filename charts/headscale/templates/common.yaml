@@ -21,6 +21,7 @@ initContainers:
           echo 'Config already exists' >&2
         else
           echo 'Writing empty config' >&2
+          mkdir -p "$CONFIG_DIR"
           cat <<- 'EOF' >"$CONFIG_DIR/config.yaml"
             # It's suggested to use environment variables to configure Headscale.
             # For config reference, see https://github.com/juanfont/headscale/blob/main/config-example.yaml
