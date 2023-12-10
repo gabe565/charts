@@ -1,6 +1,8 @@
 # CastSponsorSkip
 
-![Version: 0.4.1](https://img.shields.io/badge/Version-0.4.1-informational?style=flat)
+<img src="https://raw.githubusercontent.com/gabe565/CastSponsorSkip/0c8c4d4f/assets/icon.svg" align="right" width="92" alt="castsponsorskip logo">
+
+![Version: 0.4.2](https://img.shields.io/badge/Version-0.4.2-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 0.6.1](https://img.shields.io/badge/AppVersion-0.6.1-informational?style=flat)
 
@@ -9,7 +11,7 @@ Skip sponsored YouTube content on all local Google Cast devices.
 **Homepage:** <https://charts.gabe565.com/charts/castsponsorskip/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=castsponsorskip&version=0.4.1)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=castsponsorskip&version=0.4.2)**
 
 ## Source Code
 
