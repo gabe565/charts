@@ -20,6 +20,7 @@ theme:
     - navigation.instant
     - search.suggest
     - content.code.copy
+    - content.tooltips
   icon:
     repo: fontawesome/brands/github
 
