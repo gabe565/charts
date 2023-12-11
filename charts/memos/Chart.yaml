@@ -16,6 +16,10 @@ dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
     version: 1.5.1
+  - name: postgresql
+    version: 13.2.24
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
   - name: mariadb
     version: 14.1.2
     repository: https://charts.bitnami.com/bitnami
@@ -26,6 +30,8 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: Update ghcr.io/usememos/memos docker tag to v0.18.0
+    - kind: added
+      description: Add Postgres subchart
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/usememos/memos

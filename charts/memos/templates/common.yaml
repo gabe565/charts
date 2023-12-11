@@ -3,8 +3,17 @@
 env:
   MEMOS_PORT: {{ .Values.service.main.ports.http.port }}
 
-  {{- with .Values.mariadb}}
-  {{- if .enabled }}
+  {{- if .Values.postgresql.enabled }}
+  {{- with .Values.postgresql }}
+  MEMOS_DRIVER: postgres
+  DB_PASSWORD:
+    secretKeyRef:
+      name: {{ $.Release.Name }}-postgresql
+      key: {{ if not .auth.password }}postgres-{{ end }}password
+  MEMOS_DSN: postgresql://{{ default "postgres" .auth.username }}:$(DB_PASSWORD)@{{ $.Release.Name }}-postgresql/{{ .auth.database }}?sslmode=disable
+  {{- end }}
+  {{- else if .Values.mariadb.enabled }}
+  {{- with .Values.mariadb }}
   MEMOS_DRIVER: mysql
   DB_PASSWORD:
     secretKeyRef:
