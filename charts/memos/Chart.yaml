@@ -4,9 +4,9 @@ description: A lightweight, self-hosted memo hub. Open Source and Free forever.
 home: https://charts.gabe565.com/charts/memos/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/memos/icon.png
 type: application
-version: 0.9.2
+version: 0.10.0
 # renovate datasource=docker depName=ghcr.io/usememos/memos
-appVersion: 0.17.1
+appVersion: 0.18.0
 kubeVersion: ">=1.22.0-0"
 keywords:
   - memo
@@ -16,6 +16,10 @@ dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
     version: 1.5.1
+  - name: postgresql
+    version: 13.2.24
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
   - name: mariadb
     version: 14.1.2
     repository: https://charts.bitnami.com/bitnami
@@ -24,8 +28,10 @@ sources:
   - https://github.com/usememos/memos
 annotations:
   artifacthub.io/changes: |-
+    - kind: changed
+      description: Update ghcr.io/usememos/memos docker tag to v0.18.0
     - kind: added
-      description: Add mariadb subchart
+      description: Add Postgres subchart
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/usememos/memos
