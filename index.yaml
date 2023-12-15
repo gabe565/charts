@@ -18202,6 +18202,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/miniflux/miniflux docker tag to v2.0.51
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/miniflux/v2
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/miniflux
+    apiVersion: v2
+    appVersion: 2.0.51
+    created: "2023-12-15T07:22:33.666728884Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.12.10
+    description: Miniflux is a minimalist and opinionated feed reader.
+    digest: d7d9a18eb8b2ab3c2cc205cff41479bbbd135744827cf67bd04d5ff681ddc15b
+    home: https://charts.gabe565.com/charts/miniflux/
+    icon: https://raw.githubusercontent.com/miniflux/logo/40cb83cc5b190212ad29fb4d5db6b52b335e4dc2/icon.svg
+    keywords:
+    - miniflux
+    - rss
+    - news
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: miniflux
+    sources:
+    - https://github.com/miniflux/v2
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/miniflux-0.6.11/miniflux-0.6.11.tgz
+    version: 0.6.11
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update postgresql helm release to v12.12.10
       artifacthub.io/links: |-
         - name: App Source
@@ -33498,4 +33535,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2023-12-15T07:21:12.414291985Z"
+generated: "2023-12-15T07:22:33.669489123Z"
