@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/changedetecti
 type: application
 version: 0.11.10
 # renovate datasource=docker depName=ghcr.io/dgtlmoon/changedetection.io
-appVersion: 0.45.8.1
+appVersion: 0.45.9
 kubeVersion: ">=1.22.0-0"
 keywords:
   - changedetection.io
