@@ -13,7 +13,7 @@ server:
     pullPolicy: IfNotPresent
     # -- Server image tag
     # @default -- chart.appVersion
-    tag: sha-00bc2532f5177619a7762b17f4aac350c3871fa6
+    tag: sha-be776229904875c6d657400a26afbfd1140565c2
 
   # -- Command to run Obico server.
   # @default -- See [values.yaml](./values.yaml)
@@ -140,7 +140,7 @@ ml-api:
     pullPolicy: IfNotPresent
     # -- ML API image tag
     # @default -- chart.appVersion
-    tag: sha-00bc2532f5177619a7762b17f4aac350c3871fa6
+    tag: sha-be776229904875c6d657400a26afbfd1140565c2
 
   controller:
     # -- Set the ML API upgrade strategy
