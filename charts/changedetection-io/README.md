@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/changedetection-io/icon.png" align="right" width="92" alt="changedetection-io logo">
 
-![Version: 0.11.11](https://img.shields.io/badge/Version-0.11.11-informational?style=flat)
+![Version: 0.11.12](https://img.shields.io/badge/Version-0.11.12-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 0.45.9](https://img.shields.io/badge/AppVersion-0.45.9-informational?style=flat)
+![AppVersion: 0.45.12](https://img.shields.io/badge/AppVersion-0.45.12-informational?style=flat)
 
 Live your data-life pro-actively, track website content changes and receive notifications via Discord, Email, Slack, Telegram and 70+ more.
 
 **Homepage:** <https://charts.gabe565.com/charts/changedetection-io/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=changedetection-io&version=0.11.11)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=changedetection-io&version=0.11.12)**
 
 ## Source Code
 
@@ -93,7 +93,7 @@ N/A
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/dgtlmoon/changedetection.io"` | image repository |
-| image.tag | string | `"0.45.9"` | image tag |
+| image.tag | string | `"0.45.12"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.data | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | service.main | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
