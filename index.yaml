@@ -32559,6 +32559,38 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: BREAKING - Update common helm release to v2
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/transsmute
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/transsmute
+    apiVersion: v2
+    appVersion: latest
+    created: "2024-01-09T06:22:10.446358967Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 2.4.0
+    description: Transsmute builds RSS feeds for websites that don't provide them.
+    digest: 5b89b46c95aade738ca1fb02b0003dab474d4af4a8eadc6f00d27db5edae3d4f
+    home: https://charts.gabe565.com/charts/transsmute/
+    icon: https://raw.githubusercontent.com/gabe565/transsmute/ce624f8/assets/icon.svg
+    keywords:
+    - transsmute
+    - rss
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: transsmute
+    sources:
+    - https://github.com/gabe565/transsmute
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/transsmute-1.0.0/transsmute-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Pin bjw-s common chart links to v1
       artifacthub.io/links: |-
         - name: App Source
@@ -34253,4 +34285,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-09T06:05:42.314208229Z"
+generated: "2024-01-09T06:22:10.44766019Z"
