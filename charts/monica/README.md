@@ -1,6 +1,6 @@
 # Monica
 
-<img src="https://raw.githubusercontent.com/monicahq/monica/aa98c09d9dee3dae91b14fd724cfb73343b41e5e/public/img/favicon.svg" align="right" width="92" alt="monica logo">
+<img src="https://raw.githubusercontent.com/monicahq/monica/aa98c09/public/img/favicon.svg" align="right" width="92" alt="monica logo">
 
 ![Version: 0.7.3](https://img.shields.io/badge/Version-0.7.3-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)

@@ -1,6 +1,6 @@
 # ASCII Movie
 
-<img src="https://raw.githubusercontent.com/gabe565/ascii-movie/a1fd5c9df2fb3a177949c9511b62407c83aedefe/assets/icon.svg" align="right" width="92" alt="ascii-movie logo">
+<img src="https://raw.githubusercontent.com/gabe565/ascii-movie/a1fd5c9/assets/icon.svg" align="right" width="92" alt="ascii-movie logo">
 
 ![Version: 0.13.0](https://img.shields.io/badge/Version-0.13.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)

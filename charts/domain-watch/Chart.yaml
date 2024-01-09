@@ -2,7 +2,7 @@ apiVersion: v2
 name: domain-watch
 description: Tool to watch whois reports and notify when statuses change or expiration is incoming.
 home: https://charts.gabe565.com/charts/domain-watch/
-icon: https://raw.githubusercontent.com/gabe565/domain-watch/ee028db206ea80c2617dd74a87193191a25a0a8a/assets/icon.svg
+icon: https://raw.githubusercontent.com/gabe565/domain-watch/ee028db/assets/icon.svg
 type: application
 version: 0.5.3
 # renovate datasource=docker depName=ghcr.io/gabe565/domain-watch

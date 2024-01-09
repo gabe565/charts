@@ -2,7 +2,7 @@ apiVersion: v2
 name: relax-sounds
 description: Relax Sounds is a website that lets you stream relaxing sounds to your browser or over Google Cast.
 home: https://charts.gabe565.com/charts/relax-sounds/
-icon: https://github.com/gabe565/relax-sounds/raw/3e55b07a957f2e20aceeeba1d36226791f2f1569/frontend/src/assets/icon-purple.svg
+icon: https://github.com/gabe565/relax-sounds/raw/3e55b07/frontend/src/assets/icon-purple.svg
 type: application
 version: 1.0.0
 # renovate datasource=docker depName=ghcr.io/gabe565/relax-sounds

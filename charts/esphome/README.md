@@ -1,6 +1,6 @@
 # ESPHome
 
-<img src="https://raw.githubusercontent.com/esphome/esphome-docs/019178551126f2d6a588a1f9ef50f60453041531/images/logo.svg" align="right" width="92" alt="esphome logo">
+<img src="https://raw.githubusercontent.com/esphome/esphome-docs/0191785/images/logo.svg" align="right" width="92" alt="esphome logo">
 
 ![Version: 0.12.0](https://img.shields.io/badge/Version-0.12.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)

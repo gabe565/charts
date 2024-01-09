@@ -1,6 +1,6 @@
 # Transsmute
 
-<img src="https://raw.githubusercontent.com/gabe565/transsmute/ce624f8c903654ead37489d8d274b97d526d397a/assets/icon.svg" align="right" width="92" alt="transsmute logo">
+<img src="https://raw.githubusercontent.com/gabe565/transsmute/ce624f8/assets/icon.svg" align="right" width="92" alt="transsmute logo">
 
 ![Version: 0.5.2](https://img.shields.io/badge/Version-0.5.2-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)

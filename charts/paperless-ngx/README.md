@@ -1,6 +1,6 @@
 # Paperless-ngx
 
-<img src="https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750d558b58018d1d3393db145d162d44fceb/src-ui/src/assets/logo-notext.svg" align="right" width="92" alt="paperless-ngx logo">
+<img src="https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-ui/src/assets/logo-notext.svg" align="right" width="92" alt="paperless-ngx logo">
 
 ![Version: 0.11.0](https://img.shields.io/badge/Version-0.11.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)

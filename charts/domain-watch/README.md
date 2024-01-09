@@ -1,6 +1,6 @@
 # Domain Watch
 
-<img src="https://raw.githubusercontent.com/gabe565/domain-watch/ee028db206ea80c2617dd74a87193191a25a0a8a/assets/icon.svg" align="right" width="92" alt="domain-watch logo">
+<img src="https://raw.githubusercontent.com/gabe565/domain-watch/ee028db/assets/icon.svg" align="right" width="92" alt="domain-watch logo">
 
 ![Version: 0.5.3](https://img.shields.io/badge/Version-0.5.3-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)

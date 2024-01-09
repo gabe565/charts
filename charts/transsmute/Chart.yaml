@@ -2,7 +2,7 @@ apiVersion: v2
 name: transsmute
 description: Transsmute builds RSS feeds for websites that don't provide them.
 home: https://charts.gabe565.com/charts/transsmute/
-icon: https://raw.githubusercontent.com/gabe565/transsmute/ce624f8c903654ead37489d8d274b97d526d397a/assets/icon.svg
+icon: https://raw.githubusercontent.com/gabe565/transsmute/ce624f8/assets/icon.svg
 type: application
 version: 0.5.2
 # renovate datasource=docker depName=ghcr.io/gabe565/transsmute

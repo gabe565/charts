@@ -1,6 +1,6 @@
 # Mnemonic Ninja
 
-<img src="https://raw.githubusercontent.com/gabe565/mnemonic-ninja/465602cd7093f62d611c69d7a91e520e4022fab9/src/assets/logo.svg" align="right" width="92" alt="mnemonic-ninja logo">
+<img src="https://raw.githubusercontent.com/gabe565/mnemonic-ninja/465602c/src/assets/logo.svg" align="right" width="92" alt="mnemonic-ninja logo">
 
 ![Version: 0.5.2](https://img.shields.io/badge/Version-0.5.2-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
