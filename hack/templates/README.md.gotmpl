@@ -83,9 +83,20 @@ The command removes all the Kubernetes components associated with the chart **in
 ## Configuration
 {{- end -}}
 
+
+{{- define "custom.bjwsRef" -}}
+{{- $ref := "" -}}
+{{- range .Dependencies -}}
+{{- if and (eq .Repository "https://bjw-s.github.io/helm-charts") (eq .Name "common") (semverCompare "^1.x" .Version) -}}
+{{- $ref = "a081de5" -}}
+{{- end -}}
+{{- end -}}
+{{- default "main" $ref -}}
+{{- end -}}
+
 {{- define "custom.configuration.readValues" -}}
 Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from the [values.yaml](https://github.com/bjw-s/helm-charts/tree/a081de5/charts/library/common/values.yaml) from the [bjw-s common library](https://github.com/bjw-s/helm-charts/tree/a081de5/charts/library/common).
+Other values may be used from the [values.yaml](https://github.com/bjw-s/helm-charts/tree/{{ template "custom.bjwsRef" . }}/charts/library/common/values.yaml) from the [bjw-s common library](https://github.com/bjw-s/helm-charts/tree/{{ template "custom.bjwsRef" . }}/charts/library/common).
 {{- end -}}
 
 {{- define "custom.configuration.example.set" -}}
@@ -109,7 +120,7 @@ helm install {{ template "chart.name" . }} {{ template "custom.helm.path" . }} -
 {{- define "custom.valuesSection" -}}
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from the bjw-s common library chart [here](https://github.com/bjw-s/helm-charts/tree/a081de5/charts/library/common)
+**Important**: When deploying an application Helm chart you can add more values from the bjw-s common library chart [here](https://github.com/bjw-s/helm-charts/tree/{{ template "custom.bjwsRef" . }}/charts/library/common)
 
 {{ template "chart.valuesTable" . }}
 {{- end -}}
