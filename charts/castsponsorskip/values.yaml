@@ -2,40 +2,40 @@
 # IMPORTANT NOTE
 #
 # This chart inherits from our common library chart. You can check the default values/options here:
-# https://github.com/bjw-s/helm-charts/blob/a081de5/charts/library/common/values.yaml
+# https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/values.yaml
 #
 
-image:
-  # -- image repository
-  repository: ghcr.io/gabe565/castsponsorskip
-  # -- image pull policy
-  pullPolicy: IfNotPresent
-  # -- image tag
-  tag: 0.7.0
-
-controller:
-  # -- Set the controller upgrade strategy
-  strategy: RollingUpdate
-
-# -- environment variables. [[ref]](https://github.com/gabe565/CastSponsorSkip#configuration)
-# @default -- See [values.yaml](./values.yaml)
-env:
-  # -- Set the container timezone
-  TZ: UTC
-  # CSS_DISCOVER_INTERVAL: 5m
-  # CSS_PAUSED_INTERVAL: 1m
-  # CSS_PLAYING_INTERVAL: 1s
-  # CSS_CATEGORIES: sponsor
-  # CSS_YOUTUBE_API_KEY: AIzaSyDaGmWKa4JsXZ-HjGw7ISLn_3namBGewQe
-  # CSS_NETWORK_INTERFACE:
+controllers:
+  main:
+    containers:
+      main:
+        image:
+          # -- image repository
+          repository: ghcr.io/gabe565/castsponsorskip
+          # -- image pull policy
+          pullPolicy: IfNotPresent
+          # -- image tag
+          tag: 0.7.0
+        # -- environment variables. [[ref]](https://github.com/gabe565/CastSponsorSkip#configuration)
+        # @default -- See [values.yaml](./values.yaml)
+        env:
+          # -- Set the container timezone
+          TZ: UTC
+          # CSS_DISCOVER_INTERVAL: 5m
+          # CSS_PAUSED_INTERVAL: 1m
+          # CSS_PLAYING_INTERVAL: 1s
+          # CSS_CATEGORIES: sponsor
+          # CSS_YOUTUBE_API_KEY: AIzaSyDaGmWKa4JsXZ-HjGw7ISLn_3namBGewQe
+          # CSS_NETWORK_INTERFACE:
+    # -- Set the controller upgrade strategy
+    strategy: RollingUpdate
+    pod:
+      # -- Enable devices to be discoverable
+      hostNetwork: true
+      # -- When hostNetwork is true set dnsPolicy to `ClusterFirstWithHostNet`
+      dnsPolicy: ClusterFirst
 
 # @ignored
 service:
   main:
     enabled: false
-
-# -- Enable devices to be discoverable
-hostNetwork: true
-
-# -- When hostNetwork is true set dnsPolicy to `ClusterFirstWithHostNet`
-dnsPolicy: ClusterFirst
