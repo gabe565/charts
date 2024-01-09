@@ -21977,6 +21977,45 @@ entries:
   obico:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: fixed
+          description: Remove --nostatic arg
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/TheSpaghettiDetective/obico-server
+        - name: Container Source
+          url: https://github.com/gabe565/docker-obico
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/obico
+    apiVersion: v2
+    appVersion: sha-9d150bef09511f4f48e912be2caae048c6eb0dcf
+    created: "2024-01-09T06:05:42.31281302Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.4.0
+    description: Obico is a community-built, open-source smart 3D printing platform
+      used by makers, enthusiasts, and tinkerers around the world.
+    digest: 8894d1564852815099031d63006a3e828dd27678f068b4853e8b1f2dc92f7537
+    home: https://charts.gabe565.com/charts/obico/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/obico/icon.svg
+    keywords:
+    - 3d-printing
+    - machine-learning
+    kubeVersion: '>=1.22.0-0'
+    name: obico
+    sources:
+    - https://github.com/TheSpaghettiDetective/obico-server
+    - https://github.com/gabe565/docker-obico
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/obico-0.2.10/obico-0.2.10.tgz
+    version: 0.2.10
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Update thespaghettidetective/obico-server digest to 9d150be
       artifacthub.io/links: |-
@@ -34214,4 +34253,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-09T05:55:58.537590086Z"
+generated: "2024-01-09T06:05:42.314208229Z"
