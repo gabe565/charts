@@ -21,7 +21,6 @@ server:
     - python
     - manage.py
     - runserver
-    - --nostatic
     - --noreload
     - 0.0.0.0:3334
 
