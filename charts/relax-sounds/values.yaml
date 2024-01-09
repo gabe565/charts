@@ -2,24 +2,29 @@
 # IMPORTANT NOTE
 #
 # This chart inherits from our common library chart. You can check the default values/options here:
-# https://github.com/bjw-s/helm-charts/blob/a081de5/charts/library/common/values.yaml
+# https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/values.yaml
 #
 
-image:
-  # -- image repository
-  repository: ghcr.io/gabe565/relax-sounds
-  # -- image pull policy
-  pullPolicy: Always
-  # -- image tag
-  tag: latest
+controllers:
+  main:
+    containers:
+      main:
+        image:
+          # -- image repository
+          repository: ghcr.io/gabe565/relax-sounds
+          # -- image pull policy
+          pullPolicy: Always
+          # -- image tag
+          tag: latest
 
-controller:
-  # -- Set the controller upgrade strategy
-  strategy: RollingUpdate
+        # -- environment variables.
+        # @default -- See [values.yaml](./values.yaml)
+        env: {}
 
-# -- environment variables.
-# @default -- See [values.yaml](./values.yaml)
-env: {}
+    pod:
+      securityContext:
+        # -- Volume group permissions
+        fsGroup: 1000
 
 # -- Configures service settings for the chart.
 # @default -- See [values.yaml](./values.yaml)
@@ -40,6 +45,8 @@ ingress:
     #   - host: chart-example.local
     #     paths:
     #       - path: /
+    #         service:
+    #           name: main
     # tls:
     #   - secretName: chart-example.local-tls
     #     hosts:
@@ -55,10 +62,6 @@ persistence:
     # storageClass: ""
     # accessMode: ReadWriteOnce
     # size: 1Gi
-
-podSecurityContext:
-  # -- Volume group permissions
-  fsGroup: 1000
 
 serviceMonitor:
   main:

@@ -2,7 +2,7 @@
 
 <img src="https://github.com/gabe565/relax-sounds/raw/3e55b07a957f2e20aceeeba1d36226791f2f1569/frontend/src/assets/icon-purple.svg" align="right" width="92" alt="relax-sounds logo">
 
-![Version: 0.6.4](https://img.shields.io/badge/Version-0.6.4-informational?style=flat)
+![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -11,7 +11,7 @@ Relax Sounds is a website that lets you stream relaxing sounds to your browser o
 **Homepage:** <https://charts.gabe565.com/charts/relax-sounds/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=relax-sounds&version=0.6.4)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=relax-sounds&version=1.0.0)**
 
 ## Source Code
 
@@ -25,7 +25,7 @@ Kubernetes: `>=1.22.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
+| <https://bjw-s.github.io/helm-charts> | common | 2.4.0 |
 
 ## Installing the Chart
 
@@ -58,7 +58,7 @@ The command removes all the Kubernetes components associated with the chart **in
 ## Configuration
 
 Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from the [values.yaml](https://github.com/bjw-s/helm-charts/tree/a081de5/charts/library/common/values.yaml) from the [bjw-s common library](https://github.com/bjw-s/helm-charts/tree/a081de5/charts/library/common).
+Other values may be used from the [values.yaml](https://github.com/bjw-s/helm-charts/tree/main/charts/library/common/values.yaml) from the [bjw-s common library](https://github.com/bjw-s/helm-charts/tree/main/charts/library/common).
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
@@ -80,18 +80,17 @@ N/A
 
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from the bjw-s common library chart [here](https://github.com/bjw-s/helm-charts/tree/a081de5/charts/library/common)
+**Important**: When deploying an application Helm chart you can add more values from the bjw-s common library chart [here](https://github.com/bjw-s/helm-charts/tree/main/charts/library/common)
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
-| env | object | See [values.yaml](./values.yaml) | environment variables. |
-| image.pullPolicy | string | `"Always"` | image pull policy |
-| image.repository | string | `"ghcr.io/gabe565/relax-sounds"` | image repository |
-| image.tag | string | `"latest"` | image tag |
+| controllers.main.containers.main.env | object | See [values.yaml](./values.yaml) | environment variables. |
+| controllers.main.containers.main.image.pullPolicy | string | `"Always"` | image pull policy |
+| controllers.main.containers.main.image.repository | string | `"ghcr.io/gabe565/relax-sounds"` | image repository |
+| controllers.main.containers.main.image.tag | string | `"latest"` | image tag |
+| controllers.main.pod.securityContext.fsGroup | int | `1000` | Volume group permissions |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.data | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
-| podSecurityContext.fsGroup | int | `1000` | Volume group permissions |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 | serviceMonitor.main.enabled | bool | `false` | Enables or disables the serviceMonitor. |
 | serviceMonitor.main.endpoints | list | See [values.yaml](./values.yaml) | Configures the endpoints for the serviceMonitor. |
