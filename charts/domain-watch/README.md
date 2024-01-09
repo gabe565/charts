@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/domain-watch/ee028db/assets/icon.svg" align="right" width="92" alt="domain-watch logo">
 
-![Version: 0.5.3](https://img.shields.io/badge/Version-0.5.3-informational?style=flat)
+![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -11,7 +11,7 @@ Tool to watch whois reports and notify when statuses change or expiration is inc
 **Homepage:** <https://charts.gabe565.com/charts/domain-watch/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=domain-watch&version=0.5.3)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=domain-watch&version=1.0.0)**
 
 ## Source Code
 
@@ -25,7 +25,7 @@ Kubernetes: `>=1.22.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
+| <https://bjw-s.github.io/helm-charts> | common | 2.4.0 |
 
 ## Installing the Chart
 
@@ -58,7 +58,7 @@ The command removes all the Kubernetes components associated with the chart **in
 ## Configuration
 
 Read through the [values.yaml](./values.yaml) file. It has several commented out suggested values.
-Other values may be used from the [values.yaml](https://github.com/bjw-s/helm-charts/tree/a081de5/charts/library/common/values.yaml) from the [bjw-s common library](https://github.com/bjw-s/helm-charts/tree/a081de5/charts/library/common).
+Other values may be used from the [values.yaml](https://github.com/bjw-s/helm-charts/tree/main/charts/library/common/values.yaml) from the [bjw-s common library](https://github.com/bjw-s/helm-charts/tree/main/charts/library/common).
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
@@ -80,21 +80,21 @@ N/A
 
 ## Values
 
-**Important**: When deploying an application Helm chart you can add more values from the bjw-s common library chart [here](https://github.com/bjw-s/helm-charts/tree/a081de5/charts/library/common)
+**Important**: When deploying an application Helm chart you can add more values from the bjw-s common library chart [here](https://github.com/bjw-s/helm-charts/tree/main/charts/library/common)
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
-| env.WATCH_DOMAINS | string | `"example.com example.org"` | Whitespace-separated list of domains to watch. See [values.yaml](./values.yaml) for example. |
-| env.WATCH_EVERY | string | `"6h"` | Domain check interval |
-| env.WATCH_LOG_FORMAT | string | `"text"` | Log format. Valid options are text, json. |
-| env.WATCH_LOG_LEVEL | string | `"info"` | Log level. Valid options are trace, debug, info, warn, error, fatal, panic. |
-| env.WATCH_SLEEP | string | `"3s"` | Sleep interval between domain checks to avoid rate limits |
-| env.WATCH_TELEGRAM_CHAT | string | `""` | Telegram chat ID |
-| env.WATCH_TELEGRAM_TOKEN | string | `""` | Telegram token [[ref]](https://core.telegram.org/bots#6-botfather) |
-| image.pullPolicy | string | `"Always"` | image pull policy |
-| image.repository | string | `"ghcr.io/gabe565/domain-watch"` | image repository |
-| image.tag | string | `"latest"` | image tag |
+| controllers.main.containers.main.env.WATCH_DOMAINS | string | `"example.com example.org"` | Whitespace-separated list of domains to watch. See [values.yaml](./values.yaml) for example. |
+| controllers.main.containers.main.env.WATCH_EVERY | string | `"6h"` | Domain check interval |
+| controllers.main.containers.main.env.WATCH_LOG_FORMAT | string | `"text"` | Log format. Valid options are text, json. |
+| controllers.main.containers.main.env.WATCH_LOG_LEVEL | string | `"info"` | Log level. Valid options are trace, debug, info, warn, error, fatal, panic. |
+| controllers.main.containers.main.env.WATCH_SLEEP | string | `"3s"` | Sleep interval between domain checks to avoid rate limits |
+| controllers.main.containers.main.env.WATCH_TELEGRAM_CHAT | string | `""` | Telegram chat ID |
+| controllers.main.containers.main.env.WATCH_TELEGRAM_TOKEN | string | `""` | Telegram token [[ref]](https://core.telegram.org/bots#6-botfather) |
+| controllers.main.containers.main.image.pullPolicy | string | `"Always"` | image pull policy |
+| controllers.main.containers.main.image.repository | string | `"ghcr.io/gabe565/domain-watch"` | image repository |
+| controllers.main.containers.main.image.tag | string | `"latest"` | image tag |
+| controllers.main.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 | serviceMonitor.main.enabled | bool | `false` | Enables or disables the serviceMonitor. |
 | serviceMonitor.main.endpoints | list | See [values.yaml](./values.yaml) | Configures the endpoints for the serviceMonitor. |

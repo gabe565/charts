@@ -4,7 +4,7 @@ description: Tool to watch whois reports and notify when statuses change or expi
 home: https://charts.gabe565.com/charts/domain-watch/
 icon: https://raw.githubusercontent.com/gabe565/domain-watch/ee028db/assets/icon.svg
 type: application
-version: 0.5.3
+version: 1.0.0
 # renovate datasource=docker depName=ghcr.io/gabe565/domain-watch
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
@@ -15,13 +15,13 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.1
+    version: 2.4.0
 sources:
   - https://github.com/gabe565/domain-watch
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add default ServiceMonitor values
+    - kind: changed
+      description: BREAKING - Update common helm release to v2
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gabe565/domain-watch
