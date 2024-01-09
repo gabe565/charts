@@ -4,7 +4,7 @@ description: Transsmute builds RSS feeds for websites that don't provide them.
 home: https://charts.gabe565.com/charts/transsmute/
 icon: https://raw.githubusercontent.com/gabe565/transsmute/ce624f8/assets/icon.svg
 type: application
-version: 0.5.2
+version: 1.0.0
 # renovate datasource=docker depName=ghcr.io/gabe565/transsmute
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
@@ -15,13 +15,13 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.1
+    version: 2.4.0
 sources:
   - https://github.com/gabe565/transsmute
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Pin bjw-s common chart links to v1
+      description: BREAKING - Update common helm release to v2
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gabe565/transsmute
