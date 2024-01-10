@@ -733,6 +733,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/gabe565/ascii-movie docker tag to v1.7.1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/ascii-movie
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/ascii-movie
+    apiVersion: v2
+    appVersion: 1.7.1
+    created: "2024-01-10T09:23:31.300388518Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Star Wars movie SSH and Telnet server
+    digest: 6a2d9adff54c38af3628d4964115eb6e9705c8837516ec1892c015b7c582c329
+    home: https://charts.gabe565.com/charts/ascii-movie/
+    icon: https://raw.githubusercontent.com/gabe565/ascii-movie/a1fd5c9/assets/icon.svg
+    keywords:
+    - ascii-art
+    - star-wars
+    - telnet
+    - ssh
+    kubeVersion: '>=1.22.0-0'
+    name: ascii-movie
+    sources:
+    - https://github.com/gabe565/ascii-movie
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/ascii-movie-0.13.1/ascii-movie-0.13.1.tgz
+    version: 0.13.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/gabe565/ascii-movie docker tag to v1.7.0
       artifacthub.io/links: |-
         - name: App Source
@@ -34318,4 +34351,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-09T06:26:38.94535844Z"
+generated: "2024-01-10T09:23:31.301990436Z"
