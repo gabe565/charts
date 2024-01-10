@@ -11,7 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: Always
   # -- image tag
-  tag: 1.7.0
+  tag: 1.7.1
 
 controller:
   # -- Set the controller upgrade strategy
