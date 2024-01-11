@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/AlfHou/hammond/84cba2c/ui/public/touch-i
 type: application
 version: 0.6.2
 # renovate datasource=docker depName=ghcr.io/alfhou/hammond
-appVersion: v0.0.22
+appVersion: v0.0.23
 kubeVersion: ">=1.22.0-0"
 keywords:
   - hammond
