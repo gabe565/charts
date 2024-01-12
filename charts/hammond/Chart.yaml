@@ -4,9 +4,9 @@ description: A self-hosted vehicle expense tracking system with support for mult
 home: https://charts.gabe565.com/charts/hammond/
 icon: https://raw.githubusercontent.com/AlfHou/hammond/84cba2c/ui/public/touch-icon.png
 type: application
-version: 0.6.2
+version: 0.6.3
 # renovate datasource=docker depName=ghcr.io/alfhou/hammond
-appVersion: v0.0.22
+appVersion: v0.0.23
 kubeVersion: ">=1.22.0-0"
 keywords:
   - hammond
@@ -22,7 +22,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/alfhou/hammond docker tag to v0.0.22
+      description: Update ghcr.io/alfhou/hammond docker tag to v0.0.23
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/AlfHou/hammond
