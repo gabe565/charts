@@ -10146,6 +10146,40 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/alfhou/hammond docker tag to v0.0.24
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/AlfHou/hammond
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/hammond
+    apiVersion: v2
+    appVersion: v0.0.24
+    created: "2024-01-12T19:47:56.424924978Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: A self-hosted vehicle expense tracking system with support for multiple
+      users.
+    digest: aa2ab00887e267535a01cb4301c5d2e97531b59453ca8cfd0c6118e1c4c6e474
+    home: https://charts.gabe565.com/charts/hammond/
+    icon: https://raw.githubusercontent.com/AlfHou/hammond/84cba2c/ui/public/touch-icon.png
+    keywords:
+    - hammond
+    - vehicle
+    - expense-tracker
+    - clarkson
+    kubeVersion: '>=1.22.0-0'
+    name: hammond
+    sources:
+    - https://github.com/AlfHou/hammond
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/hammond-0.6.4/hammond-0.6.4.tgz
+    version: 0.6.4
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/alfhou/hammond docker tag to v0.0.23
       artifacthub.io/links: |-
         - name: App Source
@@ -34431,4 +34465,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-12T09:25:37.354450773Z"
+generated: "2024-01-12T19:47:56.426314546Z"
