@@ -43,7 +43,7 @@ jobs:
           done
 
       - name: Install chart-releaser
-        uses: helm/chart-releaser-action@v1.5.0
+        uses: helm/chart-releaser-action@v1.6.0
         with:
           install_only: true
 
@@ -82,7 +82,7 @@ jobs:
           done
 
       - name: Publish charts
-        uses: helm/chart-releaser-action@v1.5.0
+        uses: helm/chart-releaser-action@v1.6.0
         if: steps.package_charts.outputs.changed_charts != ''
         with:
           skip_packaging: true
