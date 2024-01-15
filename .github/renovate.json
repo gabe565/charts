@@ -41,14 +41,5 @@
       "matchPackageNames": ["ghcr.io/juanfont/headscale"],
       "allowedVersions": "!/^0.23.0$/"
     }
-  ],
-  "hostRules": [
-      {
-        "matchHost": "docker.io",
-        "username": "gabe565renovate",
-        "encrypted": {
-          "password": "wcFMA/xDdHCJBTolAQ//cyEr5lJ3pEF8q92FjCoWIqvOYoJvC0MIF+uFzgrVgHbro5KVJk6ziT+kVog1rGx0fT+Dbo6FzboYZgTpPNYjJWad8ZJs04dpW3GQLTPBN3Os4VEPBB93s+Ngr7IPW87UN4AS/UAYpJyLWNFFjgc0u4+QsZBExmTkEpsPRbZZZYiB3EtwlXmlFrBiw0vhMA5qcoAtj6fNN5DgHOfJTlPTjIH5JBUI+wxpDn3peW0O01RtvPdZkR70U03+UrW+YR691uHRTArOf8SU6xlzibKp+qqWD1CCtjeCe2glRAgwHQc4F/AcN+In1PI/36loYxNQs3cw1dxBEBjg/UWnNEFGfAIwgeKzoHVr0ubZlwUdCi2rUxcejKGeg5s4FX0qwGeIiPmWAZ2p7kvum3CGhYNA07jbx94cK2sd5XrH0QO76/cc5QIwxtkwa/B4SBED97eSppnMO7rLdUTxyjG29EP8US6EhQU4EPLttkCTqPAim4IE4t77THJqnYp9ZHcF+MatP10ZarsTFPHHY5t0j87cKUPNWZIxT1KOnoAwjK76FgiWUz6dgwg39PlvOfNufwuWrWrSfHPnPu4ZD+4NsRFoeVeo7hrXbJpzVcrHLj7wxtRpjYfw5ShGytRJO7DMhPMH1IBJKvTwUX7yt33tdPAfygK35hKw9gTs0N3QcjaA1CLSeAHPWFXbgQ9ZT4s3gc+e/fCFgRB67e5IMeodx41anlO/2ziAjj2USA4Ouvcu3Plg1EkspyUWn68SrRv9hvm9lcyTowU9YGH8nOgWSpSHvMZi3pjpiJQI0S0BZFf/zo+yYyoinWSZ5aqlQsP2CY72fEYVx0kcrHYCIA"
-        }
-      }
   ]
 }
