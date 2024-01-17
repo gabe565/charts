@@ -11,7 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  tag: version-4.6.2-r0
+  tag: version-4.6.3-r0
 
 # -- environment variables. [[ref]](https://github.com/linuxserver/docker-qbittorrent#parameters)
 # @default -- See [values.yaml](./values.yaml)
