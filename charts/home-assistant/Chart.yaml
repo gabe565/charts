@@ -16,11 +16,7 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.1
-  - name: postgresql
-    version: 12.12.10
-    repository: https://charts.bitnami.com/bitnami
-    condition: postgresql.enabled
+    version: 2.4.0
 sources:
   - https://github.com/home-assistant/core
 annotations:
