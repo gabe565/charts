@@ -16,44 +16,55 @@ controllers:
           repository: ghcr.io/home-assistant/home-assistant
           pullPolicy: IfNotPresent
           tag: 2024.1.3
-        # codeserver:
-        #   dependsOn: main
-        #   image:
-        #     repository: ghcr.io/coder/code-server
-        #     pullPolicy: IfNotPresent
-        #     tag: 4.20.0
-        #   enabled: false
-        #   ingress:
-        #     enabled: false
-        #     # hosts:
-        #     #   - host: code.example.com
-        #     #     paths:
-        #     #       - path: /
-        #     # tls:
-        #     #   - secretName: code.example.com-tls
-        #     #     hosts:
-        #     #       - code.example.com
-        #   args:
-        #     - --auth
-        #     - "none"
-        #     - --user-data-dir
-        #     - "/config/.vscode"
-        #     - --extensions-dir
-        #     - "/config/.vscode"
-        #     - --port
-        #     - "8081"
-        #     - "/config"
-        #   args:
-        #     - --auth=none
-        #     - --user-data-dir=
-        #   # @ignored
-        #   volumeMounts:
-        #     - name: config
-        #       mountPath: /data/config
 
-# -- environment variables.
+      codeserver:
+        dependsOn: main
+        image:
+          repository: ghcr.io/coder/code-server
+          pullPolicy: IfNotPresent
+          tag: 4.20.0
+        args:
+          - --auth
+          - "none"
+          - --user-data-dir
+          - "/config/.vscode"
+          - --extensions-dir
+          - "/config/.vscode"
+          - --port
+          - "8081"
+          - "/config"
+
+      # matter
+      # - homeassistant/aarch64-addon-matter-server:502
+      # MQTT:
+      #  - homeassistant/aarch64-addon-mosquitto:6.4.0
+      # whisper
+      # - homeassistant/aarch64-addon-whisper:1.0.2
+      # assist_microphone
+      # - homeassistant/aarch64-addon-assist_microphone:1.0.0
+      # piper
+      # - homeassistant/aarch64-addon-piper:1.4.0
+      # zwave_js
+      # - homeassistant/aarch64-addon-zwave_js:0.4.3
+      # openwakeword
+      # - homeassistant/aarch64-addon-openwakeword:1.8.2
+
+    mqtt:
+      enabled: false
+      containers:
+        main:
+          image: homeassistant/aarch64-addon-mosquitto
+          tag: 6.4.0
+          enabled: false
+          volumeMounts:
+            - name: mqtt-config
+              mountPath: /mosquitto/config
+            - name: mqtt-data
+              mountPath: /mosquitto/data
+            - name: mqtt-log
+              mountPath: /mosquitto/log
+
 env:
-  # -- Set the container timezone
   TZ: UTC
 
 # -- Configures service settings for the chart.
@@ -68,9 +79,9 @@ ingress:
   main:
     enabled: true
     # ingressClassName: "external-nginx"
-    # annotations: {}
+    annotations: {}
     hosts:
-      - host: &host "hass.example.local"
+      - host: &host-main "hass.example.local"
         paths:
           - path: /
             pathType: Prefix
@@ -79,12 +90,13 @@ ingress:
               port: http
     tls:
       - hosts:
-          - *host
+          - *host-main
 
   #  Ingress for code-server sidecar
   code:
     enabled: true
     # ingressClassName: "internal-nginx"
+    annotations: {}
     hosts:
       - host: &host-code "hass-code.example.local"
         paths:
@@ -98,15 +110,23 @@ ingress:
           - *host-code
 
 persistence:
-  # -- Configure persistence settings for the chart under this key.
-  # @default -- See [values.yaml](./values.yaml)
   config:
     enabled: true
-    retain: false
-    # storageClass: ""
-    # accessMode: ReadWriteOnce
-    # size: 1Gi
+    # existingClaim: home-assistant-config
+    globalMounts:
+      - path: /config
 
+  mqtt:
+    advancedMounts:
+      mqtt:
+        mqtt:
+          - name: mqtt-config
+            mountPath: /mosquitto/config
+          - name: mqtt-data
+            mountPath: /mosquitto/data
+          - name: mqtt-log
+            mountPath: /mosquitto/log
+            # readOnly: true
   # Configure an NFS mount to store backups on
   # backup:
   #   enabled: true
