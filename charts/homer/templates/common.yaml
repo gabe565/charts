@@ -1,6 +1,6 @@
 {{/* Append the hardcoded settings */}}
 {{- define "homer.harcodedValues" -}}
-  {{- if .Values.configmap.config.enabled }}
+  {{- if .Values.configMaps.config.enabled }}
   {{/* Append the configMap volume to the volumes */}}
   persistence:
     config:

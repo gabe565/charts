@@ -86,7 +86,7 @@ N/A
 |-----|------|---------|-------------|
 | addons.codeserver.enabled | bool | `false` | Enable VS Code server addon.    This allows for easy access to assets. |
 | addons.codeserver.ingress | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the VS Code server under this key. |
-| configmap.config.data | object | See [values.yaml](./values.yaml) | Homer configuration. [[ref]](https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md) |
+| configMaps.config.data | object | See [values.yaml](./values.yaml) | Homer configuration. [[ref]](https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md) |
 | configmap.config.enabled | bool | `false` | Store homer configuration as a ConfigMap |
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
 | env | object | See [values.yaml](./values.yaml) | environment variables. |
