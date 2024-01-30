@@ -5,22 +5,69 @@
 # https://github.com/bjw-s/helm-charts/blob/a081de5/charts/library/common/values.yaml
 #
 
-image:
-  # -- image repository
-  repository: ghcr.io/home-assistant/home-assistant
-  # -- image pull policy
-  pullPolicy: IfNotPresent
-  # -- image tag
-  tag: 2024.1.3
+controllers:
+  main:
+    type: statefulset
+    # -- Enable devices to be discoverable
+    hostNetwork: false
+    containers:
+      main:
+        image:
+          repository: ghcr.io/home-assistant/home-assistant
+          pullPolicy: IfNotPresent
+          tag: 2024.1.3
 
-# -- environment variables.
-# @default -- See [values.yaml](./values.yaml)
+      codeserver:
+        dependsOn: main
+        image:
+          repository: ghcr.io/coder/code-server
+          pullPolicy: IfNotPresent
+          tag: 4.20.0
+        args:
+          - --auth
+          - "none"
+          - --user-data-dir
+          - "/config/.vscode"
+          - --extensions-dir
+          - "/config/.vscode"
+          - --port
+          - "8081"
+          - "/config"
+
+      # matter
+      # - homeassistant/aarch64-addon-matter-server:502
+      # MQTT:
+      #  - homeassistant/aarch64-addon-mosquitto:6.4.0
+      # whisper
+      # - homeassistant/aarch64-addon-whisper:1.0.2
+      # assist_microphone
+      # - homeassistant/aarch64-addon-assist_microphone:1.0.0
+      # piper
+      # - homeassistant/aarch64-addon-piper:1.4.0
+      # zwave_js
+      # - homeassistant/aarch64-addon-zwave_js:0.4.3
+      # openwakeword
+      # - homeassistant/aarch64-addon-openwakeword:1.8.2
+
+    mqtt:
+      enabled: false
+      containers:
+        main:
+          image: homeassistant/aarch64-addon-mosquitto
+          tag: 6.4.0
+          enabled: false
+          volumeMounts:
+            - name: mqtt-config
+              mountPath: /mosquitto/config
+            - name: mqtt-data
+              mountPath: /mosquitto/data
+            - name: mqtt-log
+              mountPath: /mosquitto/log
+
 env:
-  # -- Set the container timezone
   TZ: UTC
 
 # -- Configures service settings for the chart.
-# @default -- See [values.yaml](./values.yaml)
 service:
   main:
     ports:
@@ -28,71 +75,63 @@ service:
         port: 8123
 
 ingress:
-  # -- Enable and configure ingress settings for the chart under this key.
-  # @default -- See [values.yaml](./values.yaml)
+  # Ingress for the main application
   main:
-    enabled: false
-    # hosts:
-    #   - host: chart-example.local
-    #     paths:
-    #       - path: /
-    # tls:
-    #   - secretName: chart-example.local-tls
-    #     hosts:
-    #       - chart-example.local
+    enabled: true
+    # ingressClassName: "external-nginx"
+    annotations: {}
+    hosts:
+      - host: &host-main "hass.example.local"
+        paths:
+          - path: /
+            pathType: Prefix
+            service:
+              name: main
+              port: http
+    tls:
+      - hosts:
+          - *host-main
 
-# -- Enable devices to be discoverable
-hostNetwork: false
-
-# -- When hostNetwork is true set dnsPolicy to `ClusterFirstWithHostNet`
-dnsPolicy: ClusterFirst
+  #  Ingress for code-server sidecar
+  code:
+    enabled: true
+    # ingressClassName: "internal-nginx"
+    annotations: {}
+    hosts:
+      - host: &host-code "hass-code.example.local"
+        paths:
+          - path: /
+            pathType: Prefix
+            service:
+              name: code
+              port: http
+    tls:
+      - hosts:
+          - *host-code
 
 persistence:
-  # -- Configure persistence settings for the chart under this key.
-  # @default -- See [values.yaml](./values.yaml)
   config:
-    enabled: false
-    retain: true
-    # storageClass: ""
-    # accessMode: ReadWriteOnce
-    # size: 1Gi
+    enabled: true
+    # existingClaim: home-assistant-config
+    globalMounts:
+      - path: /config
 
-# -- Enable and configure postgresql database subchart under this key.
-#    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql)
-# @default -- See [values.yaml](./values.yaml)
-postgresql:
-  enabled: false
-  auth:
-    database: home-assistant
-    postgresPassword: changeme
-  primary:
-    persistence:
-      enabled: false
-      # storageClass: ""
-      # size: 8Gi
-
-addons:
-  codeserver:
-    # -- Enable VS Code server addon.
-    #    This allows for easy access to configuration.yaml
-    enabled: false
-    # -- Enable and configure ingress settings for the VS Code server under this key.
-    # @default -- See [values.yaml](./values.yaml)
-    ingress:
-      enabled: false
-      # hosts:
-      #   - host: code.example.com
-      #     paths:
-      #       - path: /
-      # tls:
-      #   - secretName: code.example.com-tls
-      #     hosts:
-      #       - code.example.com
-    # @ignored
-    args:
-      - --auth=none
-      - --user-data-dir=/data/config/.vscode
-    # @ignored
-    volumeMounts:
-      - name: config
-        mountPath: /data/config
+  mqtt:
+    advancedMounts:
+      mqtt:
+        mqtt:
+          - name: mqtt-config
+            mountPath: /mosquitto/config
+          - name: mqtt-data
+            mountPath: /mosquitto/data
+          - name: mqtt-log
+            mountPath: /mosquitto/log
+            # readOnly: true
+  # Configure an NFS mount to store backups on
+  # backup:
+  #   enabled: true
+  #   type: nfs-csi
+  #   server: nas.example.lan
+  #   path: /volume/Backups/k8s/hass
+  #   globalMounts:
+  #     - path: /config/backups
