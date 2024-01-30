@@ -55,7 +55,7 @@ persistence:
     # accessMode: ReadWriteOnce
     # size: 1Gi
 
-configmap:
+configMaps:
   config:
     # -- Store homer configuration as a ConfigMap
     enabled: false
