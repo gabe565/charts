@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/bastienwirtz/homer/5609315/public/assets/icons/logo.svg" align="right" width="92" alt="homer logo">
 
-![Version: 0.9.0](https://img.shields.io/badge/Version-0.9.0-informational?style=flat)
+![Version: 0.9.1](https://img.shields.io/badge/Version-0.9.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: v23.10.1](https://img.shields.io/badge/AppVersion-v23.10.1-informational?style=flat)
 
@@ -11,7 +11,7 @@ A dead simple static HOMepage for your servER to keep your services on hand, fro
 **Homepage:** <https://charts.gabe565.com/charts/homer/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=homer&version=0.9.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=homer&version=0.9.1)**
 
 ## Source Code
 
@@ -87,7 +87,7 @@ N/A
 | addons.codeserver.enabled | bool | `false` | Enable VS Code server addon.    This allows for easy access to assets. |
 | addons.codeserver.ingress | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the VS Code server under this key. |
 | configMaps.config.data | object | See [values.yaml](./values.yaml) | Homer configuration. [[ref]](https://github.com/bastienwirtz/homer/blob/main/docs/configuration.md) |
-| configmap.config.enabled | bool | `false` | Store homer configuration as a ConfigMap |
+| configMaps.config.enabled | bool | `false` | Store homer configuration as a ConfigMap |
 | controller.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
 | env | object | See [values.yaml](./values.yaml) | environment variables. |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
