@@ -15563,6 +15563,40 @@ entries:
   homer:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: fixed
+          description: Fix ConfigMap Key
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/bastienwirtz/homer
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/homer
+    apiVersion: v2
+    appVersion: v23.10.1
+    created: "2024-01-30T04:25:42.132570388Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: A dead simple static HOMepage for your servER to keep your services
+      on hand, from a simple yaml configuration file.
+    digest: 32f26684b46294641cca6115e356a987cfc943192a6a405919bbfb4089b7f4ef
+    home: https://charts.gabe565.com/charts/homer/
+    icon: https://raw.githubusercontent.com/bastienwirtz/homer/5609315/public/assets/icons/logo.svg
+    keywords:
+    - homer
+    - dashboard
+    - startpage
+    - homepage
+    kubeVersion: '>=1.22.0-0'
+    name: homer
+    sources:
+    - https://github.com/bastienwirtz/homer
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/homer-0.9.1/homer-0.9.1.tgz
+    version: 0.9.1
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Update ghcr.io/bastienwirtz/homer docker tag to v23.10.1
       artifacthub.io/links: |-
@@ -34771,4 +34805,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-17T19:43:21.668311069Z"
+generated: "2024-01-30T04:25:42.134085674Z"
