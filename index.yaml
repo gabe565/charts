@@ -22412,6 +22412,45 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update thespaghettidetective/obico-server digest to 496605a
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/TheSpaghettiDetective/obico-server
+        - name: Container Source
+          url: https://github.com/gabe565/docker-obico
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/obico
+    apiVersion: v2
+    appVersion: sha-496605a62fcb790097c510c151994e9b2bf020c1
+    created: "2024-01-31T09:02:45.657898344Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.6.4
+    description: Obico is a community-built, open-source smart 3D printing platform
+      used by makers, enthusiasts, and tinkerers around the world.
+    digest: 11ef096ce698eb0697a1d9c992f444c10bb0cefe7c91626d05b3fcfc71085ed2
+    home: https://charts.gabe565.com/charts/obico/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/obico/icon.svg
+    keywords:
+    - 3d-printing
+    - machine-learning
+    kubeVersion: '>=1.22.0-0'
+    name: obico
+    sources:
+    - https://github.com/TheSpaghettiDetective/obico-server
+    - https://github.com/gabe565/docker-obico
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/obico-0.3.1/obico-0.3.1.tgz
+    version: 0.3.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update redis helm release to v18.6.4
       artifacthub.io/links: |-
         - name: App Source
@@ -35008,4 +35047,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-31T09:01:44.071166199Z"
+generated: "2024-01-31T09:02:45.659361375Z"
