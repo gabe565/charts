@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-ui/src/assets/logo-notext.svg" align="right" width="92" alt="paperless-ngx logo">
 
-![Version: 0.13.0](https://img.shields.io/badge/Version-0.13.0-informational?style=flat)
+![Version: 0.14.0](https://img.shields.io/badge/Version-0.14.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 2.4.3](https://img.shields.io/badge/AppVersion-2.4.3-informational?style=flat)
 
@@ -11,7 +11,7 @@ A community-supported supercharged version of paperless: scan, index and archive
 **Homepage:** <https://charts.gabe565.com/charts/paperless-ngx/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=paperless-ngx&version=0.13.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=paperless-ngx&version=0.14.0)**
 
 ## Source Code
 
@@ -26,7 +26,7 @@ Kubernetes: `>=1.22.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
-| <https://charts.bitnami.com/bitnami> | mariadb | 11.5.7 |
+| <https://charts.bitnami.com/bitnami> | mariadb | 15.2.2 |
 | <https://charts.bitnami.com/bitnami> | postgresql | 12.12.10 |
 | <https://charts.bitnami.com/bitnami> | redis | 18.6.4 |
 
