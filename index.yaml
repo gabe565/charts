@@ -4,6 +4,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update adguard/adguardhome docker tag to v0.107.44
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/AdguardTeam/AdGuardHome
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/adguard-home
+    apiVersion: v2
+    appVersion: v0.107.44
+    created: "2024-02-07T08:05:25.340269907Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Free and open source, powerful network-wide ads & trackers blocking
+      DNS server.
+    digest: 820e78d4c182413262463ce609c9198b80d4c64cb9eb6c4a7c45a1ec0dcfc70c
+    home: https://charts.gabe565.com/charts/adguard-home/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/adguard-home/icon.svg
+    keywords:
+    - adblock
+    - dns
+    - privacy
+    kubeVersion: '>=1.22.0-0'
+    name: adguard-home
+    sources:
+    - https://github.com/AdguardTeam/AdGuardHome
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/adguard-home-0.3.17/adguard-home-0.3.17.tgz
+    version: 0.3.17
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update adguard/adguardhome docker tag to v0.107.43
       artifacthub.io/links: |-
         - name: App Source
@@ -35414,4 +35447,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-07T08:04:14.793542717Z"
+generated: "2024-02-07T08:05:25.342069379Z"
