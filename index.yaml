@@ -7366,6 +7366,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update icon
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/domain-watch
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/domain-watch
+    apiVersion: v2
+    appVersion: latest
+    created: "2024-02-09T06:39:38.842125932Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 2.4.0
+    description: Tool to watch whois reports and notify when statuses change or expiration
+      is incoming.
+    digest: ec74ee826176c5ee1f97dd55fa4e61b75851d16762448d9721109813f2ba8141
+    home: https://charts.gabe565.com/charts/domain-watch/
+    icon: https://raw.githubusercontent.com/gabe565/domain-watch/4bae98d/assets/icon.svg
+    keywords:
+    - domain
+    - whois
+    - alert
+    kubeVersion: '>=1.22.0-0'
+    name: domain-watch
+    sources:
+    - https://github.com/gabe565/domain-watch
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/domain-watch-1.0.1/domain-watch-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: BREAKING - Update common helm release to v2
       artifacthub.io/links: |-
         - name: App Source
@@ -35514,4 +35547,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-08T07:50:32.272048096Z"
+generated: "2024-02-09T06:39:38.844553201Z"
