@@ -19,7 +19,17 @@ jobs:
   release-charts:
     name: Release Charts
     runs-on: ubuntu-latest
+    env:
+      AUTHOR_USER: chart-bot
+      AUTHOR_EMAIL: 160046936+charts-bot[bot]@users.noreply.github.com
     steps:
+      - name: Generate Token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_APP_PRIVATE_KEY }}
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -27,8 +37,8 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.name "$GITHUB_ACTOR"
-          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git config user.name "${{ env.AUTHOR_USER }}"
+          git config user.email "${{ env.AUTHOR_EMAIL }}"
 
       - name: Add Helm repos
         run: |
@@ -87,7 +97,7 @@ jobs:
         with:
           skip_packaging: true
         env:
-          CR_TOKEN: ${{ github.token }}
+          CR_TOKEN: ${{ steps.app-token.outputs.token }}
           CR_PAGES_BRANCH: helm-index
 
   build-docs:

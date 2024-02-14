@@ -12,10 +12,21 @@ jobs:
   update-chart-metadata:
     name: Update Chart Metadata
     runs-on: ubuntu-latest
+    env:
+      AUTHOR_USER: chart-bot
+      AUTHOR_EMAIL: 160046936+charts-bot[bot]@users.noreply.github.com
     steps:
+      - name: Generate Token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_APP_PRIVATE_KEY }}
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          token: ${{ steps.app-token.outputs.token }}
           fetch-depth: 0
 
       - name: Detect Changes
@@ -31,6 +42,7 @@ jobs:
         id: pr
         uses: actions/github-script@v7
         with:
+          github-token: ${{ steps.app-token.outputs.token }}
           script: |
             const response = await github.rest.repos.listPullRequestsAssociatedWithCommit({
               owner: context.repo.owner,
@@ -93,4 +105,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         if: steps.commit_exists.outputs.result == 'false' && !contains(steps.pr.outputs.labels, 'skip-chart-meta')
         with:
+          commit_user_name: ${{ env.AUTHOR_USER }}
+          commit_user_email: ${{ env.AUTHOR_EMAIL }}
+          commit_author: ${{ env.AUTHOR_USER }} <${{ env.AUTHOR_EMAIL }}>
           commit_message: ${{ env.COMMIT_MESSAGE }}
