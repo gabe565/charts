@@ -15,7 +15,7 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 1.5.1
   - name: postgresql
-    version: 12.12.10
+    version: 14.0.5
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 sources:
@@ -23,7 +23,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update postgresql helm release to v12.12.10
+      description: BREAKING - Update postgresql helm release to v14
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gotify/server
