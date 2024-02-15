@@ -21,7 +21,7 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
   - name: mariadb
-    version: 14.1.2
+    version: 14.1.4
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
 sources:
