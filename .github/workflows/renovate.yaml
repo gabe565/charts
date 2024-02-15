@@ -30,7 +30,7 @@ jobs:
           fetch-depth: 0
 
       - name: Detect Changes
-        uses: dorny/paths-filter@v2
+        uses: dorny/paths-filter@v3
         id: changes
         with:
           list-files: shell
