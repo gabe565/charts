@@ -17,7 +17,7 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 1.5.1
   - name: mariadb
-    version: 11.5.7
+    version: 16.0.2
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
 sources:
@@ -26,7 +26,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/linuxserver/bookstack docker tag to version-v23.12.2
+      description: BREAKING - Update mariadb helm release to v16
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/BookStackApp/BookStack

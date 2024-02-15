@@ -21,7 +21,7 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
   - name: mariadb
-    version: 14.1.2
+    version: 16.0.2
     repository: https://charts.bitnami.com/bitnami
     condition: mariadb.enabled
 sources:
@@ -30,6 +30,8 @@ annotations:
   artifacthub.io/changes: |-
     - kind: changed
       description: BREAKING - Update postgresql helm release to v14
+    - kind: changed
+      description: BREAKING - Update mariadb helm release to v16
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/usememos/memos
