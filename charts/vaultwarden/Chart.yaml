@@ -29,7 +29,7 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: BREAKING - Update postgresql helm release to v14
+      description: BREAKING - Update mariadb helm release to v16
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/dani-garcia/vaultwarden
