@@ -2011,6 +2011,46 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: BREAKING - Update mariadb helm release to v16
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/BookStackApp/BookStack
+        - name: Container Source
+          url: https://github.com/linuxserver/docker-bookstack
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/bookstack
+    apiVersion: v2
+    appVersion: version-v23.12.2
+    created: "2024-02-15T08:22:54.620403106Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.0.2
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
+    digest: b613fe290b51cf2ca62d743fe1406ef378d2dbf1fe25c4a6e0d12c1043e82212
+    home: https://charts.gabe565.com/charts/bookstack/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg
+    keywords:
+    - bookstack
+    - wiki
+    - documentation
+    kubeVersion: '>=1.22.0-0'
+    name: bookstack
+    sources:
+    - https://github.com/BookStackApp/BookStack
+    - https://github.com/linuxserver/docker-bookstack
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/bookstack-0.15.0/bookstack-0.15.0.tgz
+    version: 0.15.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/linuxserver/bookstack docker tag to version-v23.12.2
       artifacthub.io/links: |-
         - name: App Source
@@ -10355,6 +10395,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: BREAKING - Update postgresql helm release to v14
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gotify/server
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/gotify
+    apiVersion: v2
+    appVersion: 2.4.0
+    created: "2024-02-15T08:22:54.725545124Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    description: A simple server for sending and receiving messages in real-time per
+      WebSocket. (Includes a sleek web-ui)
+    digest: cc2d2aa7bad363fd1c47cbcc1900966269e58e616c240343a2997960f9db1080
+    home: https://charts.gabe565.com/charts/gotify/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/gotify/icon.svg
+    keywords:
+    - notifications
+    kubeVersion: '>=1.22.0-0'
+    name: gotify
+    sources:
+    - https://github.com/gotify/server
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/gotify-0.3.0/gotify-0.3.0.tgz
+    version: 0.3.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update postgresql helm release to v12.12.10
       artifacthub.io/links: |-
         - name: App Source
@@ -11253,6 +11328,44 @@ entries:
     - https://github.com/gabe565/charts/releases/download/hammond-0.1.0/hammond-0.1.0.tgz
     version: 0.1.0
   headscale:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: BREAKING - Update postgresql helm release to v14
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/juanfont/headscale
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/headscale
+    apiVersion: v2
+    appVersion: 0.22.3
+    created: "2024-02-15T08:22:54.827307996Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: 7946e2e44474ac24a1ef4a6c49630b6adf222475f6af054b97b01eb1c297db41
+    home: https://charts.gabe565.com/charts/headscale/
+    icon: https://raw.githubusercontent.com/juanfont/headscale/56a7b1e/docs/logo/headscale3-dots.svg
+    keywords:
+    - headscale
+    - tailscale
+    - wireguard
+    - vpn
+    kubeVersion: '>=1.22.0-0'
+    name: headscale
+    sources:
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.13.0/headscale-0.13.0.tgz
+    version: 0.13.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: fixed
@@ -12817,6 +12930,50 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: BREAKING - Update postgresql helm release to v14
+        - kind: changed
+          description: BREAKING - Update mariadb helm release to v16
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/healthchecks/healthchecks
+        - name: Container Source
+          url: https://github.com/linuxserver/docker-healthchecks
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/healthchecks
+    apiVersion: v2
+    appVersion: version-v3.2
+    created: "2024-02-15T08:22:54.927987817Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.0.2
+    description: A cron monitoring tool written in Python & Django
+    digest: 52f095603de9b7d5b9f04a38fb0b9a099cabaf9f498deebb9bcea981ae8e8c71
+    home: https://charts.gabe565.com/charts/healthchecks/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/healthchecks/icon.svg
+    keywords:
+    - cron
+    - monitoring
+    - notifier
+    kubeVersion: '>=1.22.0-0'
+    name: healthchecks
+    sources:
+    - https://github.com/healthchecks/healthchecks
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/healthchecks-0.10.0/healthchecks-0.10.0.tgz
+    version: 0.10.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/linuxserver/healthchecks docker tag to version-v3.2
       artifacthub.io/links: |-
         - name: App Source
@@ -13541,6 +13698,43 @@ entries:
     - https://github.com/gabe565/charts/releases/download/healthchecks-0.1.0/healthchecks-0.1.0.tgz
     version: 0.1.0
   home-assistant:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: BREAKING - Update postgresql helm release to v14
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/home-assistant/core
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/home-assistant
+    apiVersion: v2
+    appVersion: 2024.2.1
+    created: "2024-02-15T08:22:55.040569655Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    description: Open source home automation that puts local control and privacy first.
+    digest: 51cb0aa82a9492ee908b20ff23481fbb4eb5e15640a6e6b16b288197894de3b4
+    home: https://charts.gabe565.com/charts/home-assistant/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/home-assistant/icon.svg
+    keywords:
+    - home-automation
+    - mqtt
+    - iot
+    - internet-of-things
+    kubeVersion: '>=1.22.0-0'
+    name: home-assistant
+    sources:
+    - https://github.com/home-assistant/core
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/home-assistant-0.14.0/home-assistant-0.14.0.tgz
+    version: 0.14.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -16908,6 +17102,37 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: BREAKING - Update postgresql helm release to v14
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/limo
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/limo
+    apiVersion: v2
+    appVersion: latest
+    created: "2024-02-15T08:22:55.137857187Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    description: A file upload server.
+    digest: 53c171695c19162c7650bf91e480b7d56e65940b4297f9cdb8a52b37d3b1ecc7
+    home: https://charts.gabe565.com/charts/limo/
+    kubeVersion: '>=1.22.0-0'
+    name: limo
+    sources:
+    - https://github.com/gabe565/limo
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/limo-0.8.0/limo-0.8.0.tgz
+    version: 0.8.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update postgresql helm release to v12.12.10
       artifacthub.io/links: |-
         - name: App Source
@@ -18359,6 +18584,48 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: BREAKING - Update postgresql helm release to v14
+        - kind: changed
+          description: BREAKING - Update mariadb helm release to v16
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/usememos/memos
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/memos
+    apiVersion: v2
+    appVersion: 0.20.0
+    created: "2024-02-15T08:22:55.239948185Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.0.2
+    description: A lightweight, self-hosted memo hub. Open Source and Free forever.
+    digest: d8bf0b8fb59d8728a92d367a58e646d78e3a34109333b7f6a32c504edfb179c4
+    home: https://charts.gabe565.com/charts/memos/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/memos/icon.png
+    keywords:
+    - memo
+    - markdown
+    - note-taking
+    kubeVersion: '>=1.22.0-0'
+    name: memos
+    sources:
+    - https://github.com/usememos/memos
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/memos-0.13.0/memos-0.13.0.tgz
+    version: 0.13.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/usememos/memos docker tag to v0.20.0
       artifacthub.io/links: |-
         - name: App Source
@@ -19531,6 +19798,43 @@ entries:
     - https://github.com/gabe565/charts/releases/download/memos-0.1.0/memos-0.1.0.tgz
     version: 0.1.0
   miniflux:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: BREAKING - Update postgresql helm release to v14
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/miniflux/v2
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/miniflux
+    apiVersion: v2
+    appVersion: 2.0.51
+    created: "2024-02-15T08:22:55.352810875Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    description: Miniflux is a minimalist and opinionated feed reader.
+    digest: b688690b42d69ef34dcd8b16dd4062b9c9d0450153c7310f8586eb1651cb62b2
+    home: https://charts.gabe565.com/charts/miniflux/
+    icon: https://raw.githubusercontent.com/miniflux/logo/40cb83c/icon.svg
+    keywords:
+    - miniflux
+    - rss
+    - news
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: miniflux
+    sources:
+    - https://github.com/miniflux/v2
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/miniflux-0.7.0/miniflux-0.7.0.tgz
+    version: 0.7.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -21289,6 +21593,41 @@ entries:
     - https://github.com/gabe565/charts/releases/download/mnemonic-ninja-0.1.0/mnemonic-ninja-0.1.0.tgz
     version: 0.1.0
   monica:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: BREAKING - Update mariadb helm release to v16
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/monicahq/monica
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/monica
+    apiVersion: v2
+    appVersion: 4.0.0-fpm-alpine
+    created: "2024-02-15T08:22:55.485706852Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.0.2
+    description: Personal CRM. Remember everything about your friends, family and
+      business relationships.
+    digest: 3681c2eb45de8dc0d6874e3011f5d0a4102bb76d4d2c64023fdf072e0256c5e4
+    home: https://charts.gabe565.com/charts/monica/
+    icon: https://raw.githubusercontent.com/monicahq/monica/aa98c09/public/img/favicon.svg
+    keywords:
+    - crm
+    kubeVersion: '>=1.22.0-0'
+    name: monica
+    sources:
+    - https://github.com/monicahq/monica
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/monica-0.8.0/monica-0.8.0.tgz
+    version: 0.8.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -23897,6 +24236,54 @@ entries:
     - https://github.com/gabe565/charts/releases/download/obico-0.0.1/obico-0.0.1.tgz
     version: 0.0.1
   paperless-ngx:
+  - annotations:
+      artifacthub.io/alternativeName: paperless
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: BREAKING - Update postgresql helm release to v14
+        - kind: changed
+          description: BREAKING - Update mariadb helm release to v16
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/paperless-ngx/paperless-ngx
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/paperless-ngx
+    apiVersion: v2
+    appVersion: 2.5.2
+    created: "2024-02-15T08:22:55.592256619Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.0.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.6.4
+    description: 'A community-supported supercharged version of paperless: scan, index
+      and archive all your physical documents'
+    digest: 08a35297979a828f54a0bd5bbe797ca435bfac3797b72e2fd4e643038f045acd
+    home: https://charts.gabe565.com/charts/paperless-ngx/
+    icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-ui/src/assets/logo-notext.svg
+    keywords:
+    - documents
+    - ocr
+    - paper
+    kubeVersion: '>=1.22.0-0'
+    name: paperless-ngx
+    sources:
+    - https://github.com/paperless-ngx/paperless-ngx
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/paperless-ngx-0.15.0/paperless-ngx-0.15.0.tgz
+    version: 0.15.0
   - annotations:
       artifacthub.io/alternativeName: paperless
       artifacthub.io/changes: |-
@@ -32664,6 +33051,45 @@ entries:
       artifacthub.io/alternativeName: tandoor-recipes
       artifacthub.io/changes: |-
         - kind: changed
+          description: BREAKING - Update postgresql helm release to v14
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/TandoorRecipes/recipes
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/tandoor
+    apiVersion: v2
+    appVersion: 1.5.13
+    created: "2024-02-15T08:22:55.689402928Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    description: Application for managing recipes, planning meals, building shopping
+      lists and much much more!
+    digest: da4686c718cf4caa90f35ffdeb28fc0a2cc6378d9033b373531089807dd726a6
+    home: https://charts.gabe565.com/charts/tandoor/
+    icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
+    keywords:
+    - recipes
+    - cookbook
+    - cooking
+    - meal-planner
+    kubeVersion: '>=1.22.0-0'
+    name: tandoor
+    sources:
+    - https://github.com/TandoorRecipes/recipes
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/tandoor-0.9.0/tandoor-0.9.0.tgz
+    version: 0.9.0
+  - annotations:
+      artifacthub.io/alternativeName: tandoor-recipes
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update vabene1111/recipes docker tag to v1.5.13
       artifacthub.io/links: |-
         - name: App Source
@@ -34717,6 +35143,48 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: BREAKING - Update postgresql helm release to v14
+        - kind: changed
+          description: BREAKING - Update mariadb helm release to v16
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/dani-garcia/vaultwarden
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/vaultwarden
+    apiVersion: v2
+    appVersion: 1.30.3-alpine
+    created: "2024-02-15T08:22:55.7956099Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.0.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    description: Unofficial Bitwarden compatible server written in Rust.
+    digest: bf466542e1e80d782290f1463425ba17d6e6cb93ef601806fc2fff5c21917391
+    home: https://charts.gabe565.com/charts/vaultwarden/
+    icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b699/resources/vaultwarden-icon.svg
+    keywords:
+    - vaultwarden
+    - bitwarden
+    - bitwarden_rs
+    kubeVersion: '>=1.22.0-0'
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/vaultwarden-0.12.0/vaultwarden-0.12.0.tgz
+    version: 0.12.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/dani-garcia/vaultwarden docker tag to v1.30.3
       artifacthub.io/links: |-
         - name: App Source
@@ -35915,4 +36383,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-15T04:50:27.61819298Z"
+generated: "2024-02-15T08:22:55.798362584Z"
