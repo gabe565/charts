@@ -29,6 +29,8 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
+      description: BREAKING - Update postgresql helm release to v14
+    - kind: changed
       description: BREAKING - Update mariadb helm release to v16
   artifacthub.io/links: |-
     - name: App Source
