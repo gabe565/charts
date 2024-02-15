@@ -58,9 +58,13 @@ jobs:
         env:
           TITLE: ${{ steps.pr.outputs.title }}
           CHANGELOG_APPEND: ${{ contains(steps.pr.outputs.labels, 'changelog-append') }}
+          BREAKING_CHANGE: ${{ contains(steps.pr.outputs.labels, 'breaking-change') }}
         run: |
           set -eux
           export DESCRIPTION="$(perl -pe 's/^.+?: (.)/\U$1/' <<<"$TITLE")"
+          if [[ "$BREAKING_CHANGE" == "true" ]]; then
+            DESCRIPTION="BREAKING - $DESCRIPTION"
+          fi
           CHANGELOG="$(yq -o json '[{"kind": "changed", "description": strenv(DESCRIPTION)}]')"
           UPDATE_TYPE=replace
           if [[ "$CHANGELOG_APPEND" == "true" ]]; then
