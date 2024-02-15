@@ -4,7 +4,7 @@ description: Open source home automation that puts local control and privacy fir
 home: https://charts.gabe565.com/charts/home-assistant/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/home-assistant/icon.svg
 type: application
-version: 0.13.4
+version: 0.14.0
 # renovate datasource=docker depName=ghcr.io/home-assistant/home-assistant
 appVersion: 2024.2.1
 kubeVersion: ">=1.22.0-0"
