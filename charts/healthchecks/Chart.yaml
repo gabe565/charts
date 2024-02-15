@@ -29,7 +29,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/linuxserver/healthchecks docker tag to version-v3.2
+      description: BREAKING - Update postgresql helm release to v14
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/healthchecks/healthchecks

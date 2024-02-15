@@ -27,7 +27,7 @@ annotations:
   artifacthub.io/alternativeName: tandoor-recipes
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update vabene1111/recipes docker tag to v1.5.13
+      description: BREAKING - Update postgresql helm release to v14
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/TandoorRecipes/recipes

@@ -26,7 +26,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/miniflux/miniflux docker tag to v2.0.51
+      description: BREAKING - Update postgresql helm release to v14
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/miniflux/v2

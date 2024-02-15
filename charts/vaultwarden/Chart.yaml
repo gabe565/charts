@@ -29,7 +29,7 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/dani-garcia/vaultwarden docker tag to v1.30.3
+      description: BREAKING - Update postgresql helm release to v14
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/dani-garcia/vaultwarden

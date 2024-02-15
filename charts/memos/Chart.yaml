@@ -29,7 +29,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/usememos/memos docker tag to v0.20.0
+      description: BREAKING - Update postgresql helm release to v14
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/usememos/memos

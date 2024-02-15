@@ -25,8 +25,8 @@ sources:
   - https://github.com/juanfont/headscale
 annotations:
   artifacthub.io/changes: |-
-    - kind: fixed
-      description: Create Headscale config dir
+    - kind: changed
+      description: BREAKING - Update postgresql helm release to v14
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/juanfont/headscale

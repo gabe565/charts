@@ -34,7 +34,7 @@ annotations:
   artifacthub.io/alternativeName: paperless
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.5.2
+      description: BREAKING - Update postgresql helm release to v14
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/paperless-ngx/paperless-ngx
