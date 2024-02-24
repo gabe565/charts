@@ -11330,6 +11330,44 @@ entries:
   headscale:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: fixed
+          description: Allow args to be overridden
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/juanfont/headscale
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/headscale
+    apiVersion: v2
+    appVersion: 0.22.3
+    created: "2024-02-24T09:27:37.248009947Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: 668f97655ea4b8e46438a7bbe4eed3506795a7c26a21d3804ba38955addfe092
+    home: https://charts.gabe565.com/charts/headscale/
+    icon: https://raw.githubusercontent.com/juanfont/headscale/56a7b1e/docs/logo/headscale3-dots.svg
+    keywords:
+    - headscale
+    - tailscale
+    - wireguard
+    - vpn
+    kubeVersion: '>=1.22.0-0'
+    name: headscale
+    sources:
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.13.1/headscale-0.13.1.tgz
+    version: 0.13.1
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: BREAKING - Update postgresql helm release to v14
       artifacthub.io/links: |-
@@ -36429,4 +36467,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-16T08:44:10.958493825Z"
+generated: "2024-02-24T09:27:37.250853425Z"
