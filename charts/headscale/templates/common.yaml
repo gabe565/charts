@@ -1,7 +1,5 @@
 {{/* Append the hardcoded settings */}}
 {{- define "headscale.harcodedValues" -}}
-args: ["headscale", "serve"]
-
 initContainers:
   config:
     image: alpine

@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/juanfont/headscale/56a7b1e/docs/logo/headscale3-dots.svg" align="right" width="92" alt="headscale logo">
 
-![Version: 0.13.0](https://img.shields.io/badge/Version-0.13.0-informational?style=flat)
+![Version: 0.13.1](https://img.shields.io/badge/Version-0.13.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 0.22.3](https://img.shields.io/badge/AppVersion-0.22.3-informational?style=flat)
 
@@ -11,7 +11,7 @@ An open source, self-hosted implementation of the Tailscale control server.
 **Homepage:** <https://charts.gabe565.com/charts/headscale/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=headscale&version=0.13.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=headscale&version=0.13.1)**
 
 ## Source Code
 
@@ -145,6 +145,7 @@ Once deployed, the UI will be available at `/web`.
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
+| args | list | `["headscale","serve"]` | Container args |
 | configMaps.acl.data.policy | string | `nil` | ACL policy JSON [[ref]](https://tailscale.com/kb/1018/acls/) |
 | configMaps.acl.enabled | bool | `false` | Enables ACL policy |
 | env | object | See [values.yaml](./values.yaml) | Environment variables. [[ref]](https://github.com/juanfont/headscale/blob/main/config-example.yaml) |

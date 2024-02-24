@@ -13,6 +13,9 @@ image:
   # -- image tag
   tag: 0.22.3
 
+# -- Container args
+args: ["headscale", "serve"]
+
 # -- Environment variables. [[ref]](https://github.com/juanfont/headscale/blob/main/config-example.yaml)
 # @default -- See [values.yaml](./values.yaml)
 env:
