@@ -17,7 +17,7 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.1
+    version: 2.6.0
 sources:
   - https://github.com/esphome/esphome
 annotations:
