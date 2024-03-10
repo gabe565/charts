@@ -5200,6 +5200,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/gabe565/castsponsorskip docker tag to v0.7.4
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/CastSponsorSkip
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/castsponsorskip
+    apiVersion: v2
+    appVersion: 0.7.4
+    created: "2024-03-10T23:22:23.198243209Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 2.4.0
+    description: Skip sponsored YouTube content on all local Google Cast devices.
+    digest: 741540d79d1451e9d82aba1b1dd2af737748c34c97c2c35043685832d9049caa
+    home: https://charts.gabe565.com/charts/castsponsorskip/
+    icon: https://raw.githubusercontent.com/gabe565/CastSponsorSkip/0c8c4d4f/assets/icon.svg
+    keywords:
+    - youtube
+    - chromecast
+    - google-cast
+    - sponsorblock
+    kubeVersion: '>=1.22.0-0'
+    name: castsponsorskip
+    sources:
+    - https://github.com/gabe565/CastSponsorSkip
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/castsponsorskip-0.6.4/castsponsorskip-0.6.4.tgz
+    version: 0.6.4
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/gabe565/castsponsorskip docker tag to v0.7.3
       artifacthub.io/links: |-
         - name: App Source
@@ -37122,4 +37155,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-10T22:22:42.492072327Z"
+generated: "2024-03-10T23:22:23.19983485Z"
