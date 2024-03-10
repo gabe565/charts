@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: vabene1111/recipes
+  repository: ghcr.io/tandoorrecipes/recipes
   # -- image tag
   tag: 1.5.14
   # -- image pull policy
