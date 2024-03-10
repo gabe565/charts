@@ -15,7 +15,7 @@ controllers:
           # -- image pull policy
           pullPolicy: IfNotPresent
           # -- image tag
-          tag: 0.7.2
+          tag: 0.7.3
         # -- environment variables. [[ref]](https://github.com/gabe565/CastSponsorSkip#configuration)
         # @default -- See [values.yaml](./values.yaml)
         env:
