@@ -4,7 +4,7 @@ description: Free and open source, powerful network-wide ads & trackers blocking
 home: https://charts.gabe565.com/charts/adguard-home/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/adguard-home/icon.svg
 type: application
-version: 0.3.18
+version: 0.3.19
 # renovate datasource=docker depName=adguard/adguardhome
 appVersion: v0.107.46
 kubeVersion: ">=1.22.0-0"
@@ -21,7 +21,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update adguard/adguardhome docker tag to v0.107.45
+      description: Update adguard/adguardhome docker tag to v0.107.46
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/AdguardTeam/AdGuardHome
