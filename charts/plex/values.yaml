@@ -11,7 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  tag: version-1.40.0.7998-c29d4c0c8
+  tag: version-1.40.1.8227-c0dd5a73e
 
 # -- Environment variables. [[ref]](https://github.com/linuxserver/docker-plex#parameters)
 # @default -- See [values.yaml](./values.yaml)
