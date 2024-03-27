@@ -17493,6 +17493,40 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/homer-0.1.0/homer-0.1.0.tgz
     version: 0.1.0
+  keydb:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial release
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/Snapchat/KeyDB
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/keydb
+    apiVersion: v2
+    appVersion: alpine_x86_64_v6.3.4
+    created: "2024-03-27T07:34:29.635878598Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 3.0.4
+    description: A Multithreaded Fork of Redis
+    digest: 707343dee2c331c6e2c0f91a3031ece2175ce184e540ec1881bd784f000125df
+    home: https://charts.gabe565.com/charts/keydb/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/keydb/icon.svg
+    keywords:
+    - key-value
+    - cache
+    - message-broker
+    - database
+    kubeVersion: '>=1.22.0-0'
+    name: keydb
+    sources:
+    - https://github.com/Snapchat/KeyDB
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/keydb-0.0.1/keydb-0.0.1.tgz
+    version: 0.0.1
   limo:
   - annotations:
       artifacthub.io/changes: |-
@@ -37155,4 +37189,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-10T23:22:23.19983485Z"
+generated: "2024-03-27T07:34:29.637251541Z"
