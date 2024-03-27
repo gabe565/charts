@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/esphome/esphome-docs/0191785/images/logo
 type: application
 version: 0.13.1
 # renovate datasource=docker depName=ghcr.io/esphome/esphome
-appVersion: 2024.2.2
+appVersion: 2024.3.1
 kubeVersion: ">=1.22.0-0"
 keywords:
   - home-automation
