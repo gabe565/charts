@@ -4,9 +4,9 @@ description: Application for managing recipes, planning meals, building shopping
 home: https://charts.gabe565.com/charts/tandoor/
 icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
 type: application
-version: 0.9.2
+version: 0.9.3
 # renovate datasource=docker depName=ghcr.io/tandoorrecipes/recipes
-appVersion: 1.5.14
+appVersion: 1.5.15
 kubeVersion: ">=1.22.0-0"
 keywords:
   - recipes
@@ -27,7 +27,7 @@ annotations:
   artifacthub.io/alternativeName: tandoor-recipes
   artifacthub.io/changes: |-
     - kind: changed
-      description: Change docker tag to ghcr.io/tandoorrecipes/recipes
+      description: Update ghcr.io/tandoorrecipes/recipes docker tag to v1.5.15
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/TandoorRecipes/recipes
