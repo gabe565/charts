@@ -1,0 +1,24 @@
+{{- define "custom.chart.name" -}}
+KeyDB
+{{- end -}}
+
+{{- define "custom.custom.configuration.header" -}}
+## Custom configuration
+{{- end -}}
+
+{{- define "custom.custom.configuration" -}}
+{{ template "custom.custom.configuration.header" . }}
+
+### Authentication
+Authentication can be enabled by settings the `KEYDB_PASSWORD` environment variable.
+
+Example:
+```yaml
+controllers:
+  keydb:
+    containers:
+      app:
+        env:
+          KEYDB_PASSWORD: changeme
+```
+{{- end -}}

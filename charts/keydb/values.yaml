@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s/helm-charts/common-3.0.4/charts/library/common/values.schema.json
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/bjw-s/helm-charts/blob/main/charts/library/common/values.yaml
+#
+
+controllers:
+  keydb:
+    # -- Controller type
+    type: statefulset
+    containers:
+      app:
+        image:
+          # -- Image repository
+          repository: eqalpha/keydb
+          # -- Image pull policy
+          pullPolicy: IfNotPresent
+          # -- Image tag
+          tag: alpine_x86_64_v6.3.4
+
+        # -- Environment variables.
+        # @default -- See [values.yaml](./values.yaml)
+        env:
+          # -- Set the container timezone
+          TZ: UTC
+          # KEYDB_PASSWORD:
+
+        # -- KeyDB container security context
+        securityContext:
+          readOnlyRootFilesystem: true
+
+    # -- Pod security context
+    pod:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 999
+        fsGroup: 999
+
+    statefulset:
+      # -- Used to create individual disks for each instance.
+      volumeClaimTemplates: []
+        # - name: data
+        #   globalMounts:
+        #     - path: /data
+        #   storageClass: ""
+        #   accessMode: ReadWriteOnce
+        #   size: 4Gi
+
+# @ignored
+service:
+  keydb:
+    controller: keydb
+    ports:
+      keydb:
+        port: 6379
+
+# -- Configure persistence for the chart under this key.
+# @default -- See [values.yaml](./values.yaml)
+persistence:
+  data:
+    enabled: false
+    retain: true
+    # storageClass: ""
+    # accessMode: ReadWriteOnce
+    # size: 4Gi

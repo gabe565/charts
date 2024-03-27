@@ -1,0 +1,73 @@
+{{/* Append the hardcoded settings */}}
+{{- define "keydb.harcodedValues" -}}
+controllers:
+  keydb:
+    containers:
+      app:
+        probes:
+          startup:
+            enabled: true
+            custom: true
+            spec:
+              exec:
+                command: [/health/probe_readiness.sh]
+              periodSeconds: 5
+              failureThreshold: 30
+              timeoutSeconds: 2
+          liveness:
+            enabled: true
+            custom: true
+            spec:
+              exec:
+                command: [/health/probe_liveness.sh]
+              periodSeconds: 10
+              failureThreshold: 5
+              timeoutSeconds: 2
+          readiness:
+            enabled: true
+            custom: true
+            spec:
+              exec:
+                command: [/health/probe_readiness.sh]
+              periodSeconds: 10
+              failureThreshold: 5
+              timeoutSeconds: 2
+
+persistence:
+  health:
+    enabled: true
+    type: configMap
+    name: {{ include "bjw-s.common.lib.chart.names.name" . }}-health
+    defaultMode: 0755
+
+configMaps:
+  health:
+    enabled: true
+    data:
+      probe_liveness.sh: |
+        #!/bin/sh
+        [[ -n "$KEYDB_PASSWORD" ]] && export REDISCLI_AUTH="$KEYDB_PASSWORD"
+        response=$(redis-cli -h localhost ping)
+        responseFirstWord="$(echo "$response" | head -n1 | cut -d' ' -f1)"
+        if [[ "$response" != PONG ]] && [[ "$responseFirstWord" != LOADING ]] && [[ "$responseFirstWord" != MASTERDOWN ]]; then
+          echo "$response"
+          exit 1
+        fi
+      probe_readiness.sh: |
+        #!/bin/sh
+        [[ -n "$KEYDB_PASSWORD" ]] && export REDISCLI_AUTH="$KEYDB_PASSWORD"
+        response=$(redis-cli -h localhost ping)
+        if [[ "$response" != PONG ]]; then
+          echo "$response"
+          exit 1
+        fi
+{{- end -}}
+
+{{- $tmplVars := deepCopy . -}}
+{{ include "bjw-s.common.loader.init" $tmplVars }}
+{{- $defaultValues := include "keydb.harcodedValues" $tmplVars | fromYaml -}}
+{{- $_ := mustMerge .Values $defaultValues -}}
+
+{{/* Render the templates */}}
+{{ include "bjw-s.common.loader.init" . }}
+{{ include "bjw-s.common.loader.generate" . }}
