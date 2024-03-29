@@ -43,6 +43,11 @@
       "matchDatasources": ["docker"],
       "matchPackageNames": ["ghcr.io/juanfont/headscale"],
       "allowedVersions": "!/^0.23.0$/"
+    },
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["eqalpha/keydb"],
+      "versioning": "regex:^(?<compatability>.+?)_v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
     }
   ]
 }
