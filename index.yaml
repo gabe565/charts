@@ -13394,6 +13394,48 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/linuxserver/healthchecks docker tag to version-v3.3
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/healthchecks/healthchecks
+        - name: Container Source
+          url: https://github.com/linuxserver/docker-healthchecks
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/healthchecks
+    apiVersion: v2
+    appVersion: version-v3.3
+    created: "2024-04-04T23:04:48.767558921Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.0.2
+    description: A cron monitoring tool written in Python & Django
+    digest: 666890bc32fbed3ac782cb601126c48c21c013742acde80d673d9bf185b8db71
+    home: https://charts.gabe565.com/charts/healthchecks/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/healthchecks/icon.svg
+    keywords:
+    - cron
+    - monitoring
+    - notifier
+    kubeVersion: '>=1.22.0-0'
+    name: healthchecks
+    sources:
+    - https://github.com/healthchecks/healthchecks
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/healthchecks-0.11.0/healthchecks-0.11.0.tgz
+    version: 0.11.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: BREAKING - Update postgresql helm release to v14
         - kind: changed
           description: BREAKING - Update mariadb helm release to v16
@@ -37530,4 +37572,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-04T23:03:38.111239012Z"
+generated: "2024-04-04T23:04:48.768970582Z"
