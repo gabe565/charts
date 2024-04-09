@@ -123,8 +123,8 @@ redis:
   auth:
     enabled: true
     # Use an existing secret for redis auth. Do this if you're using Argo to manage your instance or otherwise converting helm to kustomize under the hood
-    #     Make sure to use the exact names below.
-    # existingSecret: tahiti-redis
+    #     The secret name can vary, but the password key must be redis-password.
+    # existingSecret: paperless-redis
     # existingSecretPasswordKey: redis-password
   master:
     persistence:
