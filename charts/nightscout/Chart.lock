@@ -1,9 +1,9 @@
 dependencies:
 - name: common
   repository: https://bjw-s.github.io/helm-charts
-  version: 1.5.1
+  version: 3.1.0
 - name: mongodb
   repository: https://charts.bitnami.com/bitnami
   version: 14.5.1
-digest: sha256:35cd072d61f46dceeac4267604d96cc3b2e1ccd0ad63afb98abbc9f6004e12ec
-generated: "2024-01-15T14:01:46.132439175Z"
+digest: sha256:b138d13f89bb5f969a8c922b7167010bf6b12a00d31926602f73b6013ed8a4ec
+generated: "2024-04-10T08:09:39.162706838Z"
