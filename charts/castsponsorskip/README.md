@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/CastSponsorSkip/0c8c4d4f/assets/icon.svg" align="right" width="92" alt="castsponsorskip logo">
 
-![Version: 0.7.0](https://img.shields.io/badge/Version-0.7.0-informational?style=flat)
+![Version: 0.8.0](https://img.shields.io/badge/Version-0.8.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 0.7.4](https://img.shields.io/badge/AppVersion-0.7.4-informational?style=flat)
 
@@ -11,7 +11,7 @@ Skip sponsored YouTube content on all local Google Cast devices.
 **Homepage:** <https://charts.gabe565.com/charts/castsponsorskip/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=castsponsorskip&version=0.7.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=castsponsorskip&version=0.8.0)**
 
 ## Source Code
 
@@ -25,7 +25,7 @@ Kubernetes: `>=1.22.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 2.4.0 |
+| <https://bjw-s.github.io/helm-charts> | common | 3.1.0 |
 
 ## Installing the Chart
 

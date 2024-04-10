@@ -4,7 +4,7 @@ description: Tool to watch whois reports and notify when statuses change or expi
 home: https://charts.gabe565.com/charts/domain-watch/
 icon: https://raw.githubusercontent.com/gabe565/domain-watch/4bae98d/assets/icon.svg
 type: application
-version: 1.1.0
+version: 1.2.0
 # renovate datasource=docker depName=ghcr.io/gabe565/domain-watch
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
@@ -20,8 +20,8 @@ sources:
   - https://github.com/gabe565/domain-watch
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add default securityContext
+    - kind: changed
+      description: Update common helm release to v3.1.0
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gabe565/domain-watch
