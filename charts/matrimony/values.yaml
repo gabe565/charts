@@ -53,6 +53,11 @@ persistence:
     # accessMode: ReadWriteOnce
     # size: 1Gi
 
+# -- Container security context.
+securityContext:
+  readOnlyRootFilesystem: true
+
+# -- Pod security context.
 podSecurityContext:
-  # -- Volume group permissions
   fsGroup: 1000
+  runAsNonroot: true

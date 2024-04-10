@@ -75,3 +75,11 @@ serviceMonitor:
         path: /metrics
         interval: 30s
         scrapeTimeout: 10s
+
+# -- Container security context.
+securityContext:
+  readOnlyRootFilesystem: true
+
+# -- Pod security context.
+podSecurityContext:
+  runAsNonRoot: true

@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/transsmute/ce624f8/assets/icon.svg" align="right" width="92" alt="transsmute logo">
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat)
+![Version: 1.1.0](https://img.shields.io/badge/Version-1.1.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -11,7 +11,7 @@ Transsmute builds RSS feeds for websites that don't provide them.
 **Homepage:** <https://charts.gabe565.com/charts/transsmute/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=transsmute&version=1.0.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=transsmute&version=1.1.0)**
 
 ## Source Code
 
@@ -88,6 +88,8 @@ N/A
 | controllers.main.containers.main.image.pullPolicy | string | `"Always"` | image pull policy |
 | controllers.main.containers.main.image.repository | string | `"ghcr.io/gabe565/transsmute"` | image repository |
 | controllers.main.containers.main.image.tag | string | `"latest"` | image tag |
+| controllers.main.containers.main.securityContext | object | `{"readOnlyRootFilesystem":true}` | Container security context. |
+| controllers.main.pod.securityContext | object | `{"runAsNonRoot":true}` | Pod security context. |
 | controllers.main.strategy | string | `"RollingUpdate"` | Set the controller upgrade strategy |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |

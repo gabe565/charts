@@ -2,7 +2,7 @@
 
 <img src="https://github.com/gabe565/relax-sounds/raw/3e55b07/frontend/src/assets/icon-purple.svg" align="right" width="92" alt="relax-sounds logo">
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat)
+![Version: 1.1.0](https://img.shields.io/badge/Version-1.1.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -11,7 +11,7 @@ Relax Sounds is a website that lets you stream relaxing sounds to your browser o
 **Homepage:** <https://charts.gabe565.com/charts/relax-sounds/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=relax-sounds&version=1.0.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=relax-sounds&version=1.1.0)**
 
 ## Source Code
 
@@ -88,7 +88,8 @@ N/A
 | controllers.main.containers.main.image.pullPolicy | string | `"Always"` | image pull policy |
 | controllers.main.containers.main.image.repository | string | `"ghcr.io/gabe565/relax-sounds"` | image repository |
 | controllers.main.containers.main.image.tag | string | `"latest"` | image tag |
-| controllers.main.pod.securityContext.fsGroup | int | `1000` | Volume group permissions |
+| controllers.main.containers.main.securityContext | object | `{"readOnlyRootFilesystem":true}` | Container security context. |
+| controllers.main.pod.securityContext | object | `{"fsGroup":1000,"runAsNonRoot":true}` | Pod security context. |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.data | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |

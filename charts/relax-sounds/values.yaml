@@ -21,10 +21,15 @@ controllers:
         # @default -- See [values.yaml](./values.yaml)
         env: {}
 
+        # -- Container security context.
+        securityContext:
+          readOnlyRootFilesystem: true
+
     pod:
+      # -- Pod security context.
       securityContext:
-        # -- Volume group permissions
         fsGroup: 1000
+        runAsNonRoot: true
 
 # -- Configures service settings for the chart.
 # @default -- See [values.yaml](./values.yaml)

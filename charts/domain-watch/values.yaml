@@ -38,8 +38,17 @@ controllers:
           # -- Log format. Valid options are text, json.
           WATCH_LOG_FORMAT: text
 
+        # -- Container security context.
+        securityContext:
+          readOnlyRootFilesystem: true
+
     # -- Set the controller upgrade strategy
     strategy: RollingUpdate
+
+    pod:
+      # -- Pod security context.
+      securityContext:
+        runAsNonRoot: true
 
 # -- Configures service settings for the chart.
 # @default -- See [values.yaml](./values.yaml)
