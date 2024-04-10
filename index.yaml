@@ -897,6 +897,39 @@ entries:
   ascii-movie:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add default securityContext
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/ascii-movie
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/ascii-movie
+    apiVersion: v2
+    appVersion: 1.7.2
+    created: "2024-04-10T07:47:28.221277962Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Star Wars movie SSH and Telnet server
+    digest: 1a129ae8fcadba2ddea9315aa81e0ffb160c3c04053a8a95b51e395736e63da5
+    home: https://charts.gabe565.com/charts/ascii-movie/
+    icon: https://raw.githubusercontent.com/gabe565/ascii-movie/a1fd5c9/assets/icon.svg
+    keywords:
+    - ascii-art
+    - star-wars
+    - telnet
+    - ssh
+    kubeVersion: '>=1.22.0-0'
+    name: ascii-movie
+    sources:
+    - https://github.com/gabe565/ascii-movie
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/ascii-movie-0.14.0/ascii-movie-0.14.0.tgz
+    version: 0.14.0
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Update ghcr.io/gabe565/ascii-movie docker tag to v1.7.2
       artifacthub.io/links: |-
@@ -5415,6 +5448,39 @@ entries:
   castsponsorskip:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add default securityContext
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/CastSponsorSkip
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/castsponsorskip
+    apiVersion: v2
+    appVersion: 0.7.4
+    created: "2024-04-10T07:47:28.360599893Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 2.4.0
+    description: Skip sponsored YouTube content on all local Google Cast devices.
+    digest: 6610f3d84ec73901232898648e90084d04d9a01b42c6e7b6eeb74ca96c87dd59
+    home: https://charts.gabe565.com/charts/castsponsorskip/
+    icon: https://raw.githubusercontent.com/gabe565/CastSponsorSkip/0c8c4d4f/assets/icon.svg
+    keywords:
+    - youtube
+    - chromecast
+    - google-cast
+    - sponsorblock
+    kubeVersion: '>=1.22.0-0'
+    name: castsponsorskip
+    sources:
+    - https://github.com/gabe565/CastSponsorSkip
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/castsponsorskip-0.7.0/castsponsorskip-0.7.0.tgz
+    version: 0.7.0
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Update ghcr.io/gabe565/castsponsorskip docker tag to v0.7.4
       artifacthub.io/links: |-
@@ -7866,6 +7932,39 @@ entries:
     - https://github.com/gabe565/charts/releases/download/changedetection-io-0.1.0/changedetection-io-0.1.0.tgz
     version: 0.1.0
   domain-watch:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Add default securityContext
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/domain-watch
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/domain-watch
+    apiVersion: v2
+    appVersion: latest
+    created: "2024-04-10T07:47:28.501050839Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 2.4.0
+    description: Tool to watch whois reports and notify when statuses change or expiration
+      is incoming.
+    digest: d21cbf0650e0f57243c57ea96ef7e1a61ca70cff8c6e781f8864079f7415567f
+    home: https://charts.gabe565.com/charts/domain-watch/
+    icon: https://raw.githubusercontent.com/gabe565/domain-watch/4bae98d/assets/icon.svg
+    keywords:
+    - domain
+    - whois
+    - alert
+    kubeVersion: '>=1.22.0-0'
+    name: domain-watch
+    sources:
+    - https://github.com/gabe565/domain-watch
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/domain-watch-1.1.0/domain-watch-1.1.0.tgz
+    version: 1.1.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -18942,6 +19041,34 @@ entries:
     - https://github.com/gabe565/charts/releases/download/limo-0.1.0/limo-0.1.0.tgz
     version: 0.1.0
   matrimony:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Add default securityContext
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/matrimony
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/matrimony
+    apiVersion: v2
+    appVersion: latest
+    created: "2024-04-10T07:47:28.659090499Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Self-hosted wedding site configured via YAML
+    digest: 5e5505d833ceb7dfc3d6e66c3a2e76c0f15ec636b930fb74827c1aead2c96b14
+    home: https://charts.gabe565.com/charts/matrimony/
+    icon: https://raw.githubusercontent.com/gabe565/matrimony/b13163b/frontend/public/img/logo.svg
+    kubeVersion: '>=1.22.0-0'
+    name: matrimony
+    sources:
+    - https://github.com/gabe565/matrimony
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/matrimony-0.7.0/matrimony-0.7.0.tgz
+    version: 0.7.0
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
@@ -30931,6 +31058,35 @@ entries:
   relax-sounds:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add default securityContext
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/relax-sounds
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/relax-sounds
+    apiVersion: v2
+    appVersion: latest
+    created: "2024-04-10T07:47:28.813724332Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 2.4.0
+    description: Relax Sounds is a website that lets you stream relaxing sounds to
+      your browser or over Google Cast.
+    digest: cc684d7308c4bded8a5e3c32cb19a62ec0c3487545f2136e80f3b8f4dbd10fcc
+    home: https://charts.gabe565.com/charts/relax-sounds/
+    icon: https://github.com/gabe565/relax-sounds/raw/3e55b07/frontend/src/assets/icon-purple.svg
+    kubeVersion: '>=1.22.0-0'
+    name: relax-sounds
+    sources:
+    - https://github.com/gabe565/relax-sounds
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/relax-sounds-1.1.0/relax-sounds-1.1.0.tgz
+    version: 1.1.0
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Update common helm release to v2
       artifacthub.io/links: |-
@@ -36087,6 +36243,38 @@ entries:
   transsmute:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add default securityContext
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/gabe565/transsmute
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/transsmute
+    apiVersion: v2
+    appVersion: latest
+    created: "2024-04-10T07:47:28.960171672Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 2.4.0
+    description: Transsmute builds RSS feeds for websites that don't provide them.
+    digest: d52a4be4836116cb2fd7c867f79cbddc7da2120d2f94f19cd9af6b6e83730942
+    home: https://charts.gabe565.com/charts/transsmute/
+    icon: https://raw.githubusercontent.com/gabe565/transsmute/ce624f8/assets/icon.svg
+    keywords:
+    - transsmute
+    - rss
+    - feed
+    kubeVersion: '>=1.22.0-0'
+    name: transsmute
+    sources:
+    - https://github.com/gabe565/transsmute
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/transsmute-1.1.0/transsmute-1.1.0.tgz
+    version: 1.1.0
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: BREAKING - Update common helm release to v2
       artifacthub.io/links: |-
@@ -37976,4 +38164,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-09T06:53:43.449162077Z"
+generated: "2024-04-10T07:47:28.962101778Z"
