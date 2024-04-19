@@ -4,9 +4,9 @@ description: Star Wars movie SSH and Telnet server
 home: https://charts.gabe565.com/charts/ascii-movie/
 icon: https://raw.githubusercontent.com/gabe565/ascii-movie/a1fd5c9/assets/icon.svg
 type: application
-version: 0.14.0
+version: 0.15.0
 # renovate datasource=docker depName=ghcr.io/gabe565/ascii-movie
-appVersion: 1.7.2
+appVersion: 1.8.0
 kubeVersion: ">=1.22.0-0"
 keywords:
   - ascii-art
@@ -21,8 +21,8 @@ sources:
   - https://github.com/gabe565/ascii-movie
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Add default securityContext
+    - kind: changed
+      description: Update ghcr.io/gabe565/ascii-movie docker tag to v1.8.0
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gabe565/ascii-movie
