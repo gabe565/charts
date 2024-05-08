@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/monicahq/monica/aa98c09/public/img/favicon.svg" align="right" width="92" alt="monica logo">
 
-![Version: 0.8.0](https://img.shields.io/badge/Version-0.8.0-informational?style=flat)
+![Version: 0.9.0](https://img.shields.io/badge/Version-0.9.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 4.0.0-fpm-alpine](https://img.shields.io/badge/AppVersion-4.0.0--fpm--alpine-informational?style=flat)
+![AppVersion: 4.1.2-fpm-alpine](https://img.shields.io/badge/AppVersion-4.1.2--fpm--alpine-informational?style=flat)
 
 Personal CRM. Remember everything about your friends, family and business relationships.
 
 **Homepage:** <https://charts.gabe565.com/charts/monica/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=monica&version=0.8.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=monica&version=0.9.0)**
 
 ## Source Code
 
@@ -91,7 +91,7 @@ N/A
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"monica"` | image repository |
-| image.tag | string | `"4.0.0-fpm-alpine"` | image tag |
+| image.tag | string | `"4.1.2-fpm-alpine"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    [[ref]](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
 | nginx.enabled | bool | `true` | Enable the Nginx sidecar.    Disable this if you use an apache image. |
