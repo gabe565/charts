@@ -19994,6 +19994,46 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/usememos/memos docker tag to v0.22.1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/usememos/memos
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/memos
+    apiVersion: v2
+    appVersion: 0.22.1
+    created: "2024-05-24T06:00:31.254272568Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.0.2
+    description: A lightweight, self-hosted memo hub. Open Source and Free forever.
+    digest: 4a7da071dc8cb48d1b16ff0cb160de405de2bf8262f59c0c0edf6deecc0606ad
+    home: https://charts.gabe565.com/charts/memos/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/memos/icon.png
+    keywords:
+    - memo
+    - markdown
+    - note-taking
+    kubeVersion: '>=1.22.0-0'
+    name: memos
+    sources:
+    - https://github.com/usememos/memos
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/memos-0.15.0/memos-0.15.0.tgz
+    version: 0.15.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/usememos/memos docker tag to v0.21.0
       artifacthub.io/links: |-
         - name: App Source
@@ -38661,4 +38701,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-24T05:59:13.029461723Z"
+generated: "2024-05-24T06:00:31.257071276Z"
