@@ -11,7 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  tag: 2.4.0
+  tag: 2.5.0
 
 # -- Environment variables. [[ref]](https://gotify.net/docs/config#environment-variables)
 # @default -- See [values.yaml](./values.yaml)
