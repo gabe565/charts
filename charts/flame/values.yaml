@@ -40,6 +40,10 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
+rbac:
+  # -- Create RBAC resources
+  create: true
+
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
   # @default -- See [values.yaml](./values.yaml)
