@@ -21,7 +21,7 @@ sources:
   - https://github.com/pawelmalak/flame
 annotations:
   artifacthub.io/changes: |-
-    - kind: changed
+    - kind: added
       description: Add RBAC support
   artifacthub.io/links: |-
     - name: App Source
