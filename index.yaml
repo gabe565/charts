@@ -10717,6 +10717,40 @@ entries:
   flame:
   - annotations:
       artifacthub.io/changes: |-
+        - kind: added
+          description: Add RBAC support
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/pawelmalak/flame
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/flame
+    apiVersion: v2
+    appVersion: multiarch2.3.1
+    created: "2024-07-17T05:09:04.929094375Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Flame is self-hosted startpage for your server. Easily manage your
+      apps and bookmarks with built-in editors.
+    digest: b921228c3be5a380380a7e29ddb7481e8e2ad068191286612fc5b9c9975d4197
+    home: https://charts.gabe565.com/charts/flame/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/flame/icon.svg
+    keywords:
+    - flame
+    - dashboard
+    - startpage
+    - homepage
+    kubeVersion: '>=1.22.0-0'
+    name: flame
+    sources:
+    - https://github.com/pawelmalak/flame
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/flame-0.6.0/flame-0.6.0.tgz
+    version: 0.6.0
+  - annotations:
+      artifacthub.io/changes: |-
         - kind: changed
           description: Pin bjw-s common chart links to v1
       artifacthub.io/links: |-
@@ -39004,4 +39038,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-27T15:10:28.483150149Z"
+generated: "2024-07-17T05:09:04.930638863Z"
