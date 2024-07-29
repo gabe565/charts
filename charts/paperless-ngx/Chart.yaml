@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-
 type: application
 version: 0.18.1
 # renovate datasource=docker depName=ghcr.io/paperless-ngx/paperless-ngx
-appVersion: 2.8.6
+appVersion: 2.11.2
 kubeVersion: ">=1.22.0-0"
 keywords:
   - documents
