@@ -100,9 +100,9 @@ See each database section in [`values.yaml`](./values.yaml) for configuration ex
 | image.repository | string | `"ghcr.io/linuxserver/healthchecks"` | Image repository |
 | image.tag | string | `"version-v3.3"` | Image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
-| mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    If enabled, the app's db envs will be set for you.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
+| mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    If enabled, the app's db envs will be set for you.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/main/bitnami/mariadb) |
 | persistence.config | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key.    Necessary for SQLite. |
-| postgresql | object | See [values.yaml](./values.yaml) | Enable and configure postgresql database subchart under this key.    If enabled, the app's db envs will be set for you.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
+| postgresql | object | See [values.yaml](./values.yaml) | Enable and configure postgresql database subchart under this key.    If enabled, the app's db envs will be set for you.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/main/bitnami/postgresql) |
 | service.main | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 
 ---

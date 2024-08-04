@@ -91,7 +91,7 @@ N/A
 | image.repository | string | `"ghcr.io/linuxserver/bookstack"` | image repository |
 | image.tag | string | `"version-v24.05.1"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
-| mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
+| mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/main/bitnami/mariadb) |
 | persistence.config | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | podSecurityContext.fsGroup | int | `911` | Volume group permissions |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |

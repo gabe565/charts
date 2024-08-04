@@ -91,7 +91,7 @@ N/A
 | image.repository | string | `"diygod/rsshub"` | image repository |
 | image.tag | string | `"latest"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
-| redis | object | See [values.yaml](./values.yaml) | Enable and configure redis subchart under this key.    For more options see [redis chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/redis) |
+| redis | object | See [values.yaml](./values.yaml) | Enable and configure redis subchart under this key.    For more options see [redis chart documentation](https://github.com/bitnami/charts/tree/main/bitnami/redis) |
 | service | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 
 ---

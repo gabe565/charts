@@ -96,7 +96,7 @@ N/A
 | podSecurityContext.fsGroup | int | `65534` | Volume binds will be granted to `nobody` group |
 | podSecurityContext.runAsGroup | int | `65534` | Run as `nobody` group |
 | podSecurityContext.runAsUser | int | `65534` | Run as `nobody` user |
-| redis | object | See [values.yaml](./values.yaml) | Enable and configure redis subchart under this key. [[ref]](https://github.com/bitnami/charts/tree/master/bitnami/redis) |
+| redis | object | See [values.yaml](./values.yaml) | Enable and configure redis subchart under this key. [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/redis) |
 | server.additionalContainers.tasks.command | list | See [values.yaml](./values.yaml) | Task command. |
 | server.command | list | See [values.yaml](./values.yaml) | Command to run Obico server. |
 | server.env | string | See [values.yaml](./values.yaml) | Server environment variables. [[ref]](https://github.com/TheSpaghettiDetective/obico-server/blob/master/dotenv.example) |
