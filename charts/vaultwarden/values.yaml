@@ -57,7 +57,7 @@ persistence:
     # size: 1Gi
 
 # -- Enable and configure postgresql database subchart under this key.
-#    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb)
+#    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/main/bitnami/postgresql)
 # @default -- See [values.yaml](./values.yaml)
 postgresql:
   enabled: false
@@ -71,7 +71,7 @@ postgresql:
       # size: 8Gi
 
 # -- Enable and configure mariadb database subchart under this key.
-#    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mariadb)
+#    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/main/bitnami/mariadb)
 # @default -- See [values.yaml](./values.yaml)
 mariadb:
   enabled: false
