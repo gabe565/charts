@@ -29202,6 +29202,39 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/linuxserver/plex docker tag to version-1.40.4.8679-424562606
+      artifacthub.io/links: |-
+        - name: App homepage
+          url: https://plex.tv
+        - name: Container Source
+          url: https://github.com/linuxserver/docker-plex
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/plex
+    apiVersion: v2
+    appVersion: version-1.40.4.8679-424562606
+    created: "2024-08-05T02:23:48.651090788Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: Plex organizes all of your personal media so you can enjoy it no
+      matter where you are.
+    digest: ab32297bef6ef51dfc32d1346f6392f3256f96b1a624c44e37c60de9e996a09c
+    home: https://charts.gabe565.com/charts/plex/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/plex/icon.svg
+    keywords:
+    - media
+    kubeVersion: '>=1.22.0-0'
+    name: plex
+    sources:
+    - https://plex.tv
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/plex-0.4.3/plex-0.4.3.tgz
+    version: 0.4.3
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/linuxserver/plex docker tag to version-1.40.2.8395-c67dce28e
       artifacthub.io/links: |-
         - name: App homepage
@@ -39266,4 +39299,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-05T02:22:37.10385021Z"
+generated: "2024-08-05T02:23:48.652757869Z"
