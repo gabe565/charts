@@ -93,7 +93,7 @@ N/A
 | image.repository | string | `"monica"` | image repository |
 | image.tag | string | `"4.1.2-fpm-alpine"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
-| mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    [[ref]](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
+| mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/mariadb) |
 | nginx.enabled | bool | `true` | Enable the Nginx sidecar.    Disable this if you use an apache image. |
 | nginx.image.pullPolicy | string | `"Always"` | Nginx image pull policy |
 | nginx.image.repository | string | `"nginx"` | Nginx image repository |

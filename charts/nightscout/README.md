@@ -94,7 +94,7 @@ N/A
 | image.repository | string | `"nightscout/cgm-remote-monitor"` | image repository |
 | image.tag | string | `"15.0.2"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
-| mongodb | object | See [values.yaml](./values.yaml) | Enable and configure mongodb database subchart under this key.    For more options see [mongodb chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/mongodb) |
+| mongodb | object | See [values.yaml](./values.yaml) | Enable and configure mongodb database subchart under this key.    For more options see [mongodb chart documentation](https://github.com/bitnami/charts/tree/main/bitnami/mongodb) |
 | service.main | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 
 ---

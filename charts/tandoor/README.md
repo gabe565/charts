@@ -95,7 +95,7 @@ N/A
 | podSecurityContext.fsGroup | int | `65534` | Volume binds will be granted to `nobody` group |
 | podSecurityContext.runAsGroup | int | `65534` | Run as `nobody` group |
 | podSecurityContext.runAsUser | int | `65534` | Run as `nobody` user |
-| postgresql | object | See [values.yaml](./values.yaml) | Enable and configure postgresql database subchart under this key. [[ref]](https://github.com/bitnami/charts/tree/master/bitnami/mariadb) |
+| postgresql | object | See [values.yaml](./values.yaml) | Enable and configure postgresql database subchart under this key. [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/mariadb) |
 | service.main | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 
 ---

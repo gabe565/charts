@@ -62,7 +62,7 @@ persistence:
     # size: 1Gi
 
 # -- Enable and configure mariadb database subchart under this key.
-#    [[ref]](https://github.com/bitnami/charts/tree/master/bitnami/mariadb)
+#    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/mariadb)
 # @default -- See [values.yaml](./values.yaml)
 mariadb:
   enabled: false

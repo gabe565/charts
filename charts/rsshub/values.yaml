@@ -45,7 +45,7 @@ ingress:
     #       - chart-example.local
 
 # -- Enable and configure redis subchart under this key.
-#    For more options see [redis chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/redis)
+#    For more options see [redis chart documentation](https://github.com/bitnami/charts/tree/main/bitnami/redis)
 # @default -- See [values.yaml](./values.yaml)
 redis:
   enabled: true

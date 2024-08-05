@@ -95,7 +95,7 @@ N/A
 | image.repository | string | `"ghcr.io/miniflux/miniflux"` | image repository |
 | image.tag | string | `"2.1.3"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
-| postgresql | object | Enabled (See [values.yaml](./values.yaml) for more details) | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/master/bitnami/postgresql) |
+| postgresql | object | Enabled (See [values.yaml](./values.yaml) for more details) | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/main/bitnami/postgresql) |
 | service.main | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
 | serviceMonitor.main.allowedNetworks | string | `"127.0.0.1/8"` | List of networks allowed to access the `/metrics` endpoint (comma-separated values).    [[ref]](https://miniflux.app/docs/configuration.html#metrics-allowed-networks) |
 | serviceMonitor.main.enabled | bool | `false` | Enables or disables the serviceMonitor. |
