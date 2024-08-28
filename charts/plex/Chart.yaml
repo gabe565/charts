@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/plex/icon.svg
 type: application
 version: 0.4.3
 # renovate datasource=docker depName=ghcr.io/linuxserver/plex
-appVersion: version-1.40.4.8679-424562606
+appVersion: version-1.40.5.8921-836b34c27
 kubeVersion: ">=1.22.0-0"
 keywords:
   - media
