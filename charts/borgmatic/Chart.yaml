@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/doc
 type: application
 version: 0.9.10
 # renovate datasource=docker depName=ghcr.io/borgmatic-collective/borgmatic
-appVersion: 1.8.13
+appVersion: 1.8.14
 kubeVersion: ">=1.21.0-0"
 keywords:
   - borgmatic
