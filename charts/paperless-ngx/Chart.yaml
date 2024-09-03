@@ -4,7 +4,7 @@ description: "A community-supported supercharged version of paperless: scan, ind
 home: https://charts.gabe565.com/charts/paperless-ngx/
 icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-ui/src/assets/logo-notext.svg
 type: application
-version: 0.19.1
+version: 0.20.0
 # renovate datasource=docker depName=ghcr.io/paperless-ngx/paperless-ngx
 appVersion: 2.11.6
 kubeVersion: ">=1.22.0-0"
@@ -34,7 +34,7 @@ annotations:
   artifacthub.io/alternativeName: paperless
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.11.6
+      description: Update mariadb helm release to v16.5.0
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/paperless-ngx/paperless-ngx

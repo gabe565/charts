@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg" align="right" width="92" alt="bookstack logo">
 
-![Version: 0.17.2](https://img.shields.io/badge/Version-0.17.2-informational?style=flat)
+![Version: 0.18.0](https://img.shields.io/badge/Version-0.18.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: version-v24.05.4](https://img.shields.io/badge/AppVersion-version--v24.05.4-informational?style=flat)
 
@@ -11,7 +11,7 @@ A simple, self-hosted, easy-to-use platform for organising and storing informati
 **Homepage:** <https://charts.gabe565.com/charts/bookstack/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=bookstack&version=0.17.2)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=bookstack&version=0.18.0)**
 
 ## Source Code
 
@@ -27,7 +27,7 @@ Kubernetes: `>=1.22.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
-| <https://charts.bitnami.com/bitnami> | mariadb | 16.0.2 |
+| <https://charts.bitnami.com/bitnami> | mariadb | 16.5.0 |
 
 ## Installing the Chart
 
