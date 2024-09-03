@@ -35957,6 +35957,45 @@ entries:
       artifacthub.io/alternativeName: tandoor-recipes
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/tandoorrecipes/recipes docker tag to v1.5.19
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/TandoorRecipes/recipes
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/tandoor
+    apiVersion: v2
+    appVersion: 1.5.19
+    created: "2024-09-03T05:57:41.011198999Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    description: Application for managing recipes, planning meals, building shopping
+      lists and much much more!
+    digest: 7111d5bb15ff56b01297a499ec6d145d79c4e697effc9370104272b4d0400cd0
+    home: https://charts.gabe565.com/charts/tandoor/
+    icon: https://raw.githubusercontent.com/vabene1111/recipes/master/docs/logo_color.svg
+    keywords:
+    - recipes
+    - cookbook
+    - cooking
+    - meal-planner
+    kubeVersion: '>=1.22.0-0'
+    name: tandoor
+    sources:
+    - https://github.com/TandoorRecipes/recipes
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/tandoor-0.9.7/tandoor-0.9.7.tgz
+    version: 0.9.7
+  - annotations:
+      artifacthub.io/alternativeName: tandoor-recipes
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/tandoorrecipes/recipes docker tag to v1.5.18
       artifacthub.io/links: |-
         - name: App Source
@@ -39636,4 +39675,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-03T05:56:43.715831177Z"
+generated: "2024-09-03T05:57:41.012871386Z"
