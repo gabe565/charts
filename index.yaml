@@ -2473,6 +2473,46 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/linuxserver/bookstack docker tag to version-v24.05.4
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/BookStackApp/BookStack
+        - name: Container Source
+          url: https://github.com/linuxserver/docker-bookstack
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/bookstack
+    apiVersion: v2
+    appVersion: version-v24.05.4
+    created: "2024-09-03T05:56:43.713517053Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.0.2
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
+    digest: ab63ac13c12fb0c933ba781d457e40fe127e2157bb7eb896b8c7b27a88fcc0e3
+    home: https://charts.gabe565.com/charts/bookstack/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg
+    keywords:
+    - bookstack
+    - wiki
+    - documentation
+    kubeVersion: '>=1.22.0-0'
+    name: bookstack
+    sources:
+    - https://github.com/BookStackApp/BookStack
+    - https://github.com/linuxserver/docker-bookstack
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/bookstack-0.17.2/bookstack-0.17.2.tgz
+    version: 0.17.2
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/linuxserver/bookstack docker tag to version-v24.05.3
       artifacthub.io/links: |-
         - name: App Source
@@ -39596,4 +39636,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-03T05:55:38.029550663Z"
+generated: "2024-09-03T05:56:43.715831177Z"
