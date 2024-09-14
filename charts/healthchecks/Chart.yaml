@@ -4,7 +4,7 @@ description: A cron monitoring tool written in Python & Django
 home: https://charts.gabe565.com/charts/healthchecks/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/healthchecks/icon.svg
 type: application
-version: 0.13.0
+version: 0.14.0
 # renovate datasource=docker depName=ghcr.io/linuxserver/healthchecks
 appVersion: version-v3.5.2
 kubeVersion: ">=1.22.0-0"
@@ -29,7 +29,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/linuxserver/healthchecks docker tag to version-v3.5.2
+      description: Update postgresql helm release to v14.3.3
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/healthchecks/healthchecks

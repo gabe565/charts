@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/gotify/icon.svg" align="right" width="92" alt="gotify logo">
 
-![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat)
+![Version: 0.4.0](https://img.shields.io/badge/Version-0.4.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: 2.4.0](https://img.shields.io/badge/AppVersion-2.4.0-informational?style=flat)
 
@@ -11,7 +11,7 @@ A simple server for sending and receiving messages in real-time per WebSocket. (
 **Homepage:** <https://charts.gabe565.com/charts/gotify/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=gotify&version=0.3.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=gotify&version=0.4.0)**
 
 ## Source Code
 
@@ -26,7 +26,7 @@ Kubernetes: `>=1.22.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
-| <https://charts.bitnami.com/bitnami> | postgresql | 14.0.5 |
+| <https://charts.bitnami.com/bitnami> | postgresql | 14.3.3 |
 
 ## Installing the Chart
 
