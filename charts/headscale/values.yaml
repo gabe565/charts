@@ -11,7 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  tag: 0.22.3
+  tag: v0.23.0
 
 # -- Container args
 args: ["headscale", "serve"]
