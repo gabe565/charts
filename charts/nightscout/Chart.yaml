@@ -18,7 +18,7 @@ dependencies:
     repository: https://bjw-s.github.io/helm-charts
     version: 1.5.1
   - name: mongodb
-    version: 15.1.4
+    version: 15.6.26
     repository: https://charts.bitnami.com/bitnami
 sources:
   - https://github.com/nightscout/cgm-remote-monitor
