@@ -29,7 +29,7 @@ annotations:
       description: BREAKING - Update ghcr.io/juanfont/headscale docker tag to v0.23.0
       links:
         - name: Headscale v0.23.0 Release Notes
-          url: artifacthub.io/changes
+          url: https://github.com/juanfont/headscale/releases/tag/v0.23.0
     - kind: changed
       description: env.HEADSCALE_DNS_CONFIG_BASE_DOMAIN changed to env.HEADSCALE_DNS_BASE_DOMAIN
     - kind: changed
