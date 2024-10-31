@@ -145,11 +145,15 @@ Once deployed, the UI will be available at `/web`.
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| args | list | `["headscale","serve"]` | Container args |
+| args | list | `["serve"]` | Container args |
 | configMaps.acl.data.policy | string | `nil` | ACL policy JSON [[ref]](https://tailscale.com/kb/1018/acls/) |
 | configMaps.acl.enabled | bool | `false` | Enables ACL policy |
 | env | object | See [values.yaml](./values.yaml) | Environment variables. [[ref]](https://github.com/juanfont/headscale/blob/main/config-example.yaml) |
-| env.HEADSCALE_DNS_CONFIG_BASE_DOMAIN | string | `"example.com"` | Defines the base domain to create the hostnames for MagicDNS. `base_domain` must be a FQDNs, without the trailing dot. The FQDN of the hosts will be `hostname.user.base_domain` (e.g., _myhost.myuser.example.com_). |
+| env.HEADSCALE_DNS_BASE_DOMAIN | string | `"example.com"` | Defines the base domain to create the hostnames for MagicDNS. This domain _must_ be different from the server_url domain. |
+| env.HEADSCALE_DNS_MAGIC_DNS | string | `"true"` | Whether to use [MagicDNS](https://tailscale.com/kb/1081/magicdns/). |
+| env.HEADSCALE_DNS_NAMESERVERS_GLOBAL | string | `"1.1.1.1 1.0.0.1"` | List of DNS servers to expose to clients. |
+| env.HEADSCALE_PREFIXES_V4 | string | `"100.64.0.0/10"` | Node IPv4 prefixes |
+| env.HEADSCALE_PREFIXES_V6 | string | `"fd7a:115c:a1e0::/48"` | Node IPv6 prefixes |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/juanfont/headscale"` | image repository |
 | image.tag | string | `"v0.23.0"` | image tag |

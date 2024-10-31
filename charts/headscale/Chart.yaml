@@ -26,7 +26,22 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/juanfont/headscale docker tag to v0.23.0
+      description: BREAKING - Update ghcr.io/juanfont/headscale docker tag to v0.23.0
+      links:
+        - name: Headscale v0.23.0 Release Notes
+          url: artifacthub.io/changes
+    - kind: changed
+      description: env.HEADSCALE_DNS_CONFIG_BASE_DOMAIN changed to env.HEADSCALE_DNS_BASE_DOMAIN
+    - kind: changed
+      description: env.HEADSCALE_IP_PREFIXES has been split into env.HEADSCALE_PREFIXES_V4 and env.HEADSCALE_PREFIXES_V6
+    - kind: changed
+      description: env.HEADSCALE_DNS_CONFIG_NAMESERVERS changed to env.HEADSCALE_DNS_NAMESERVERS_GLOBAL
+    - kind: changed
+      description: env.HEADSCALE_DNS_CONFIG_MAGIC_DNS changed to env.HEADSCALE_DNS_MAGIC_DNS
+    - kind: changed
+      description: Generated database envs have been updated
+    - kind: changed
+      description: Moved default values to values.yaml so they show in generated documentation
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/juanfont/headscale

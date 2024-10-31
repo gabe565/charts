@@ -14,19 +14,34 @@ image:
   tag: v0.23.0
 
 # -- Container args
-args: ["headscale", "serve"]
+args: ["serve"]
 
 # -- Environment variables. [[ref]](https://github.com/juanfont/headscale/blob/main/config-example.yaml)
 # @default -- See [values.yaml](./values.yaml)
 env:
   # -- Defines the base domain to create the hostnames for MagicDNS.
-  # `base_domain` must be a FQDNs, without the trailing dot.
-  # The FQDN of the hosts will be
-  # `hostname.user.base_domain` (e.g., _myhost.myuser.example.com_).
-  HEADSCALE_DNS_CONFIG_BASE_DOMAIN: example.com
+  # This domain _must_ be different from the server_url domain.
+  HEADSCALE_DNS_BASE_DOMAIN: "example.com"
+
   # HEADSCALE_OIDC_ISSUER: ""
   # HEADSCALE_OIDC_CLIENT_ID: ""
   # HEADSCALE_OIDC_CLIENT_SECRET: ""
+
+  # -- Node IPv4 prefixes
+  HEADSCALE_PREFIXES_V4: "100.64.0.0/10"
+  # -- Node IPv6 prefixes
+  HEADSCALE_PREFIXES_V6: "fd7a:115c:a1e0::/48"
+
+  # -- List of DNS servers to expose to clients.
+  HEADSCALE_DNS_NAMESERVERS_GLOBAL: "1.1.1.1 1.0.0.1"
+  # -- Whether to use [MagicDNS](https://tailscale.com/kb/1081/magicdns/).
+  HEADSCALE_DNS_MAGIC_DNS: "true"
+
+  HEADSCALE_DERP_URLS: "https://controlplane.tailscale.com/derpmap/default"
+  HEADSCALE_DERP_AUTO_UPDATE_ENABLED: "true"
+  HEADSCALE_DERP_UPDATE_FREQUENCY: "24h"
+
+  HEADSCALE_EPHEMERAL_NODE_INACTIVITY_TIMEOUT: "30m"
 
 service:
   # -- Configures service settings for the chart.
