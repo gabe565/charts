@@ -49,38 +49,27 @@ env:
   HEADSCALE_NOISE: "{}"
   HEADSCALE_NOISE_PRIVATE_KEY_PATH: "{{ .Values.persistence.config.mountPath }}/noise_private.key"
 
-  HEADSCALE_IP_PREFIXES: "fd7a:115c:a1e0::/48 100.64.0.0/10"
-
-  HEADSCALE_DERP_URLS: "https://controlplane.tailscale.com/derpmap/default"
-  HEADSCALE_DERP_AUTO_UPDATE_ENABLED: "true"
-  HEADSCALE_DERP_UPDATE_FREQUENCY: "24h"
-
-  HEADSCALE_EPHEMERAL_NODE_INACTIVITY_TIMEOUT: "30m"
-
-  HEADSCALE_DNS_CONFIG_NAMESERVERS: "1.1.1.1 1.0.0.1"
-  HEADSCALE_DNS_CONFIG_MAGIC_DNS: "true"
-
   {{- with .Values.postgresql }}
   {{- if .enabled }}
-  HEADSCALE_DB_TYPE: postgres
-  HEADSCALE_DB_HOST: {{ $.Release.Name }}-postgresql
-  HEADSCALE_DB_PORT: "5432"
-  HEADSCALE_DB_SSL: "false"
-  HEADSCALE_DB_NAME: {{ .auth.database }}
-  HEADSCALE_DB_USER: {{ default "postgres" .auth.username }}
-  HEADSCALE_DB_PASS:
+  HEADSCALE_DATABASE_TYPE: postgres
+  HEADSCALE_DATABASE_POSTGRES_HOST: {{ $.Release.Name }}-postgresql
+  HEADSCALE_DATABASE_POSTGRES_PORT: "5432"
+  HEADSCALE_DATABASE_POSTGRES_SSL: "false"
+  HEADSCALE_DATABASE_POSTGRES_NAME: {{ .auth.database }}
+  HEADSCALE_DATABASE_POSTGRES_USER: {{ default "postgres" .auth.username }}
+  HEADSCALE_DATABASE_POSTGRES_PASS:
     secretKeyRef:
       name: {{ $.Release.Name }}-postgresql
       key: {{ if not .auth.password }}postgres-{{ end }}password
   {{- else }}
-  HEADSCALE_DB_TYPE: "sqlite3"
-  HEADSCALE_DB_PATH: "{{ $.Values.persistence.config.mountPath }}/db.sqlite"
+  HEADSCALE_DATABASE_TYPE: "sqlite3"
+  HEADSCALE_DATABASE_SQLITE_PATH: "{{ $.Values.persistence.config.mountPath }}/db.sqlite"
   {{- end }}
   {{- end }}
 
 {{- with .Values.configMaps.acl }}
 {{- if .enabled }}
-  HEADSCALE_ACL_POLICY_PATH: /acl/{{ keys .data | first }}
+  HEADSCALE_POLICY_PATH: /acl/{{ keys .data | first }}
 
 persistence:
   acl:
