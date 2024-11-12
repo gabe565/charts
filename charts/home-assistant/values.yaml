@@ -18,6 +18,8 @@ image:
 env:
   # -- Set the container timezone
   TZ: UTC
+  # -- Set PYTHONPATH so that HACS finds it's dependencies
+  PYTHONPATH: "/config/deps"
 
 # -- Configures service settings for the chart.
 # @default -- See [values.yaml](./values.yaml)
