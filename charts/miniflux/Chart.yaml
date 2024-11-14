@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/miniflux/logo/40cb83c/icon.svg
 type: application
 version: 0.9.0
 # renovate datasource=docker depName=ghcr.io/miniflux/miniflux
-appVersion: 2.2.0
+appVersion: 2.2.3
 kubeVersion: ">=1.22.0-0"
 keywords:
   - miniflux
