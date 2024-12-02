@@ -2,7 +2,7 @@
 
 <img src="https://github.com/gabe565/relax-sounds/raw/3e55b07/frontend/src/assets/icon-purple.svg" align="right" width="92" alt="relax-sounds logo">
 
-![Version: 1.1.0](https://img.shields.io/badge/Version-1.1.0-informational?style=flat)
+![Version: 1.2.0](https://img.shields.io/badge/Version-1.2.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -11,7 +11,7 @@ Relax Sounds is a website that lets you stream relaxing sounds to your browser o
 **Homepage:** <https://charts.gabe565.com/charts/relax-sounds/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=relax-sounds&version=1.1.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=relax-sounds&version=1.2.0)**
 
 ## Source Code
 
@@ -25,7 +25,7 @@ Kubernetes: `>=1.22.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 2.4.0 |
+| <https://bjw-s.github.io/helm-charts> | common | 2.6.0 |
 
 ## Installing the Chart
 

@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/domain-watch/4bae98d/assets/icon.svg" align="right" width="92" alt="domain-watch logo">
 
-![Version: 1.1.0](https://img.shields.io/badge/Version-1.1.0-informational?style=flat)
+![Version: 1.2.0](https://img.shields.io/badge/Version-1.2.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -11,7 +11,7 @@ Tool to watch whois reports and notify when statuses change or expiration is inc
 **Homepage:** <https://charts.gabe565.com/charts/domain-watch/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=domain-watch&version=1.1.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=domain-watch&version=1.2.0)**
 
 ## Source Code
 
@@ -25,7 +25,7 @@ Kubernetes: `>=1.22.0-0`
 
 | Repository | Name | Version |
 |------------|------|---------|
-| <https://bjw-s.github.io/helm-charts> | common | 2.4.0 |
+| <https://bjw-s.github.io/helm-charts> | common | 2.6.0 |
 
 ## Installing the Chart
 
