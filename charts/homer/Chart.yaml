@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/bastienwirtz/homer/5609315/public/assets
 type: application
 version: 0.11.0
 # renovate datasource=docker depName=ghcr.io/bastienwirtz/homer
-appVersion: v24.11.5
+appVersion: v24.12.1
 kubeVersion: ">=1.22.0-0"
 keywords:
   - homer
