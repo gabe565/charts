@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-ui/src/assets/logo-notext.svg" align="right" width="92" alt="paperless-ngx logo">
 
-![Version: 0.19.1](https://img.shields.io/badge/Version-0.19.1-informational?style=flat)
+![Version: 0.21.0](https://img.shields.io/badge/Version-0.21.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 2.11.6](https://img.shields.io/badge/AppVersion-2.11.6-informational?style=flat)
+![AppVersion: 2.13.5](https://img.shields.io/badge/AppVersion-2.13.5-informational?style=flat)
 
 A community-supported supercharged version of paperless: scan, index and archive all your physical documents
 
 **Homepage:** <https://charts.gabe565.com/charts/paperless-ngx/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=paperless-ngx&version=0.19.1)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=paperless-ngx&version=0.21.0)**
 
 ## Source Code
 
@@ -28,7 +28,7 @@ Kubernetes: `>=1.22.0-0`
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
 | <https://charts.bitnami.com/bitnami> | mariadb | 16.0.2 |
 | <https://charts.bitnami.com/bitnami> | postgresql | 14.0.5 |
-| <https://charts.bitnami.com/bitnami> | redis | 18.6.4 |
+| <https://charts.bitnami.com/bitnami> | redis | 20.3.0 |
 
 ## Installing the Chart
 
@@ -95,7 +95,7 @@ See each database section in [`values.yaml`](./values.yaml) for configuration ex
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | Image pull policy |
 | image.repository | string | `"ghcr.io/paperless-ngx/paperless-ngx"` | Image repository |
-| image.tag | string | `"2.11.6"` | Image tag |
+| image.tag | string | `"2.13.5"` | Image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    If enabled, the app's db envs will be set for you.    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/mariadb) |
 | persistence.consume | object | See [values.yaml](./values.yaml) | Configure consume volume settings for the chart under this key. |

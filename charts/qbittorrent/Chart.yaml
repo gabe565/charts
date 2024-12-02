@@ -4,9 +4,9 @@ description: The qBittorrent project aims to provide an open-source software alt
 home: https://charts.gabe565.com/charts/qbittorrent/
 icon: https://raw.githubusercontent.com/qbittorrent/qBittorrent/master/src/icons/qbittorrent-tray.svg
 type: application
-version: 0.3.7
+version: 0.4.0
 # renovate datasource=docker depName=ghcr.io/linuxserver/qbittorrent
-appVersion: version-4.6.6-r0
+appVersion: version-5.0.2-r0
 kubeVersion: ">=1.22.0-0"
 keywords:
   - torrent
@@ -21,7 +21,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/linuxserver/qbittorrent docker tag to version-4.6.6-r0
+      description: Update ghcr.io/linuxserver/qbittorrent docker tag to v5
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/qbittorrent/qBittorrent
