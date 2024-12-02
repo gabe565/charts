@@ -4350,6 +4350,43 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/borgmatic-collective/borgmatic docker tag to v1.9.3
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://projects.torsion.org/borgmatic-collective/borgmatic
+        - name: Container Source
+          url: https://github.com/borgmatic-collective/docker-borgmatic
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/borgmatic
+    apiVersion: v2
+    appVersion: 1.9.3
+    created: "2024-12-02T01:04:22.584259185Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    description: borgmatic is simple, configuration-driven backup software for servers
+      and workstations. Protect your files with client-side encryption. Backup your
+      databases too. Monitor it all with integrated third-party services.
+    digest: 825c692459b4a701dcb9f8d87e0a9da6d8d561b59491860a430c5c50f2aa7323
+    home: https://charts.gabe565.com/charts/borgmatic/
+    icon: https://raw.githubusercontent.com/borgmatic-collective/borgmatic/1.6.6/docs/static/borgmatic.svg
+    keywords:
+    - borgmatic
+    - borg
+    - backup
+    kubeVersion: '>=1.21.0-0'
+    name: borgmatic
+    sources:
+    - https://projects.torsion.org/borgmatic-collective/borgmatic
+    - https://github.com/borgmatic-collective/docker-borgmatic
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/borgmatic-0.10.0/borgmatic-0.10.0.tgz
+    version: 0.10.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update ghcr.io/borgmatic-collective/borgmatic docker tag to v1.8.14
       artifacthub.io/links: |-
         - name: App Source
@@ -40243,4 +40280,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-12-02T01:02:10.52791542Z"
+generated: "2024-12-02T01:04:22.585763704Z"
