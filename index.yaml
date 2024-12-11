@@ -39451,6 +39451,46 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/dani-garcia/vaultwarden docker tag to v1.32.6
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/dani-garcia/vaultwarden
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/vaultwarden
+    apiVersion: v2
+    appVersion: 1.32.6-alpine
+    created: "2024-12-11T06:23:12.708659814Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.1.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    description: Unofficial Bitwarden compatible server written in Rust.
+    digest: 09e97d204be2871de31d2dea18b5cd49dcf053b81454d8e9778bdd84f54cc97c
+    home: https://charts.gabe565.com/charts/vaultwarden/
+    icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b699/resources/vaultwarden-icon.svg
+    keywords:
+    - vaultwarden
+    - bitwarden
+    - bitwarden_rs
+    kubeVersion: '>=1.22.0-0'
+    name: vaultwarden
+    sources:
+    - https://github.com/dani-garcia/vaultwarden
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/vaultwarden-0.15.1/vaultwarden-0.15.1.tgz
+    version: 0.15.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update mariadb helm release to v20
       artifacthub.io/links: |-
         - name: App Source
@@ -40931,4 +40971,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-12-02T01:56:19.396503391Z"
+generated: "2024-12-11T06:23:12.710221756Z"
