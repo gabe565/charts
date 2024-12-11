@@ -4,7 +4,7 @@ description: An open source, self-hosted implementation of the Tailscale control
 home: https://charts.gabe565.com/charts/headscale/
 icon: https://raw.githubusercontent.com/juanfont/headscale/56a7b1e/docs/logo/headscale3-dots.svg
 type: application
-version: 0.14.0
+version: 0.15.0
 # renovate datasource=docker depName=ghcr.io/juanfont/headscale
 appVersion: v0.23.0
 kubeVersion: ">=1.22.0-0"
@@ -26,22 +26,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: BREAKING - Update ghcr.io/juanfont/headscale docker tag to v0.23.0
-      links:
-        - name: Headscale v0.23.0 Release Notes
-          url: https://github.com/juanfont/headscale/releases/tag/v0.23.0
-    - kind: changed
-      description: env.HEADSCALE_DNS_CONFIG_BASE_DOMAIN changed to env.HEADSCALE_DNS_BASE_DOMAIN
-    - kind: changed
-      description: env.HEADSCALE_IP_PREFIXES has been split into env.HEADSCALE_PREFIXES_V4 and env.HEADSCALE_PREFIXES_V6
-    - kind: changed
-      description: env.HEADSCALE_DNS_CONFIG_NAMESERVERS changed to env.HEADSCALE_DNS_NAMESERVERS_GLOBAL
-    - kind: changed
-      description: env.HEADSCALE_DNS_CONFIG_MAGIC_DNS changed to env.HEADSCALE_DNS_MAGIC_DNS
-    - kind: changed
-      description: Generated database envs have been updated
-    - kind: changed
-      description: Moved default values to values.yaml so they show in generated documentation
+      description: Update postgresql helm release to v14.3.3
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/juanfont/headscale
