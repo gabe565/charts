@@ -14609,6 +14609,48 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/linuxserver/healthchecks docker tag to version-v3.8
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/healthchecks/healthchecks
+        - name: Container Source
+          url: https://github.com/linuxserver/docker-healthchecks
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/healthchecks
+    apiVersion: v2
+    appVersion: version-v3.8
+    created: "2024-12-11T06:24:05.485984037Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.1.1
+    description: A cron monitoring tool written in Python & Django
+    digest: 5e9d2a85a38582673b89b02f4f5d0f03776c56114a67ee8188d15a04795802b1
+    home: https://charts.gabe565.com/charts/healthchecks/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/healthchecks/icon.svg
+    keywords:
+    - cron
+    - monitoring
+    - notifier
+    kubeVersion: '>=1.22.0-0'
+    name: healthchecks
+    sources:
+    - https://github.com/healthchecks/healthchecks
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/healthchecks-0.16.0/healthchecks-0.16.0.tgz
+    version: 0.16.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update mariadb helm release to v20
       artifacthub.io/links: |-
         - name: App Source
@@ -40971,4 +41013,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2024-12-11T06:23:12.710221756Z"
+generated: "2024-12-11T06:24:05.48751166Z"
