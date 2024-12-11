@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b699/resources/vaultwarden-icon.svg" align="right" width="92" alt="vaultwarden logo">
 
-![Version: 0.15.0](https://img.shields.io/badge/Version-0.15.0-informational?style=flat)
+![Version: 0.15.1](https://img.shields.io/badge/Version-0.15.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 1.32.5-alpine](https://img.shields.io/badge/AppVersion-1.32.5--alpine-informational?style=flat)
+![AppVersion: 1.32.6-alpine](https://img.shields.io/badge/AppVersion-1.32.6--alpine-informational?style=flat)
 
 Unofficial Bitwarden compatible server written in Rust.
 
 **Homepage:** <https://charts.gabe565.com/charts/vaultwarden/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=vaultwarden&version=0.15.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=vaultwarden&version=0.15.1)**
 
 ## Source Code
 
@@ -100,7 +100,7 @@ persistence:
 | env.ADMIN_TOKEN | string | `""` | Token for the admin interface, preferably use a long random string.    If not set, the admin panel is disabled.    [[ref]](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page#secure-the-admin_token) |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/dani-garcia/vaultwarden"` | image repository |
-| image.tag | string | `"1.32.5-alpine"` | image tag |
+| image.tag | string | `"1.32.6-alpine"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | mariadb | object | See [values.yaml](./values.yaml) | Enable and configure mariadb database subchart under this key.    For more options see [mariadb chart documentation](https://github.com/bitnami/charts/tree/main/bitnami/mariadb) |
 | persistence.data | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
