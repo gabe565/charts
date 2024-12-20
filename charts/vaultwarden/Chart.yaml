@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b699/resource
 type: application
 version: 0.15.1
 # renovate datasource=docker depName=ghcr.io/dani-garcia/vaultwarden
-appVersion: 1.32.6-alpine
+appVersion: 1.32.7-alpine
 kubeVersion: ">=1.22.0-0"
 keywords:
   - vaultwarden
