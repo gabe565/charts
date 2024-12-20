@@ -11,7 +11,7 @@ image:
   # -- Image pull policy
   pullPolicy: IfNotPresent
   # -- Image tag
-  tag: version-v3.8
+  tag: version-v3.9
 
 # -- Environment variables [[ref]](https://healthchecks.io/docs/self_hosted_configuration/)
 # @default -- See [values.yaml](./values.yaml)
