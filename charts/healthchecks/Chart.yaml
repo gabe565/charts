@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/healthchecks/
 type: application
 version: 0.16.0
 # renovate datasource=docker depName=ghcr.io/linuxserver/healthchecks
-appVersion: version-v3.8
+appVersion: version-v3.9
 kubeVersion: ">=1.22.0-0"
 keywords:
   - cron
