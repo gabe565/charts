@@ -92,7 +92,6 @@ persistence:
     enabled: true
     type: configMap
     name: {{ include "bjw-s.common.lib.chart.names.fullname" $ }}-dns
-    #mountPath: /dns-extra-records
   {{- end }}
   {{- end }}
 {{- end }}
