@@ -26,7 +26,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: BREAKING - Update ghcr.io/juanfont/headscale docker tag to v0.24.1, added dnsExtraRecords configuration possibility
+      description: BREAKING - Update ghcr.io/juanfont/headscale docker tag to v0.24.1, added dns configuration possibility
       links:
         - name: Headscale v0.24.1 Release Notes
           url: https://github.com/juanfont/headscale/releases/tag/v0.24.1
