@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/juanfont/headscale/56a7b1e/docs/logo/hea
 type: application
 version: 0.14.0
 # renovate datasource=docker depName=ghcr.io/juanfont/headscale
-appVersion: v0.23.0
+appVersion: v0.24.1
 kubeVersion: ">=1.22.0-0"
 keywords:
   - headscale
@@ -25,6 +25,11 @@ sources:
   - https://github.com/juanfont/headscale
 annotations:
   artifacthub.io/changes: |-
+    - kind: changed
+      description: BREAKING - Update ghcr.io/juanfont/headscale docker tag to v0.24.1, added dnsExtraRecords configuration possibility
+      links:
+        - name: Headscale v0.24.1 Release Notes
+          url: https://github.com/juanfont/headscale/releases/tag/v0.24.1
     - kind: changed
       description: BREAKING - Update ghcr.io/juanfont/headscale docker tag to v0.23.0
       links:
