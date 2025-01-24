@@ -71,11 +71,11 @@ env:
   HEADSCALE_POLICY_PATH: /acl/{{ keys .Values.configMaps.acl.data | first }}
   {{- end }}
 
-  {{- if .Values.configMaps.dnsExtraRecords.enabled }}
-  HEADSCALE_DNS_EXTRA_RECORDS_PATH: /dns-extra-records/{{ keys .Values.configMaps.dnsExtraRecords.data | first }}
+  {{- if .Values.configMaps.dns.enabled }}
+  HEADSCALE_DNS_EXTRA_RECORDS_PATH: /dns/{{ keys .Values.configMaps.dns.data | first }}
   {{- end }}
 
-{{- if or .Values.configMaps.acl.enabled .Values.configMaps.dnsExtraRecords.enabled }}
+{{- if or .Values.configMaps.acl.enabled .Values.configMaps.dns.enabled }}
 persistence:
   {{- with .Values.configMaps.acl }}
   {{- if .enabled }}
@@ -86,13 +86,13 @@ persistence:
   {{- end }}
   {{- end }}
 
-  {{- with .Values.configMaps.dnsExtraRecords }}
+  {{- with .Values.configMaps.dns }}
   {{- if .enabled }}
-  dnsExtraRecords:
+  dns:
     enabled: true
     type: configMap
-    name: {{ include "bjw-s.common.lib.chart.names.fullname" $ }}-dns-extra-records
-    mountPath: /dns-extra-records
+    name: {{ include "bjw-s.common.lib.chart.names.fullname" $ }}-dns
+    #mountPath: /dns-extra-records
   {{- end }}
   {{- end }}
 {{- end }}

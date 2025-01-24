@@ -77,7 +77,7 @@ configMaps:
     data:
       # -- ACL policy JSON [[ref]](https://tailscale.com/kb/1018/acls/)
       policy:
-  dnsExtraRecords:
+  dns:
     enabled: false
     data:
       # -- DNS extra records JSON [[ref]](https://headscale.net/development/ref/dns/#__tabbed_1_2)
