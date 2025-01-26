@@ -7,9 +7,9 @@ dependencies:
   version: 14.0.5
 - name: mariadb
   repository: https://charts.bitnami.com/bitnami
-  version: 20.1.1
+  version: 20.2.2
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 20.3.0
-digest: sha256:27605df145e700a335246f05b1845e7670006f131326ed76435c82bdd87df93b
-generated: "2024-12-02T01:31:28.18507116Z"
+digest: sha256:b1300e91c63c5d568fc10922c7a1a389d97929cb895d91aa576138e4d012ad7e
+generated: "2025-01-26T06:37:18.543805232Z"
