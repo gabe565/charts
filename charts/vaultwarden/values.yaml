@@ -11,7 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  tag: 1.32.7-alpine
+  tag: 1.33.0-alpine
 
 controller:
   # -- Set the controller upgrade strategy
