@@ -12919,6 +12919,49 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: BREAKING - Update ghcr.io/juanfont/headscale docker tag to v0.24.1, added dns configuration possibility
+          links:
+            - name: Headscale v0.24.1 Release Notes
+              url: https://github.com/juanfont/headscale/releases/tag/v0.24.1
+        - kind: added
+          description: Add DNS record support
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/juanfont/headscale
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/headscale
+    apiVersion: v2
+    appVersion: v0.24.1
+    created: "2025-01-26T06:43:26.814479867Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.5
+    description: An open source, self-hosted implementation of the Tailscale control
+      server.
+    digest: 305f4c8ce7123ee97c08af8949ebac47f4611899800948815663f4fd7636833e
+    home: https://charts.gabe565.com/charts/headscale/
+    icon: https://raw.githubusercontent.com/juanfont/headscale/56a7b1e/docs/logo/headscale3-dots.svg
+    keywords:
+    - headscale
+    - tailscale
+    - wireguard
+    - vpn
+    kubeVersion: '>=1.22.0-0'
+    name: headscale
+    sources:
+    - https://github.com/juanfont/headscale
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/headscale-0.15.0/headscale-0.15.0.tgz
+    version: 0.15.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: BREAKING - Update ghcr.io/juanfont/headscale docker tag to v0.23.0
           links:
             - name: Headscale v0.23.0 Release Notes
@@ -41127,4 +41170,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2025-01-26T06:34:48.33059911Z"
+generated: "2025-01-26T06:43:26.816035245Z"
