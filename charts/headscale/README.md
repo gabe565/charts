@@ -143,28 +143,28 @@ Once deployed, the UI will be available at `/web`.
 
 **Important**: When deploying an application Helm chart you can add more values from the bjw-s common library chart [here](https://github.com/bjw-s/helm-charts/tree/a081de5/charts/library/common)
 
-| Key                                  | Type | Default | Description                                                                                                                                                                                |
-|--------------------------------------|------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| args                                 | list | `["serve"]` | Container args                                                                                                                                                                             |
-| configMaps.acl.data.policy           | string | `nil` | ACL policy JSON [[ref]](https://tailscale.com/kb/1018/acls/)                                                                                                                               |
-| configMaps.acl.enabled               | bool | `false` | Enables ACL policy                                                                                                                                                                         |
-| configMaps.dns.data.records          | string | `nil` | Extra DNS records JSON [[ref]](https://headscale.net/development/ref/dns/#__tabbed_1_2)                                                                                                                        |
-| configMaps.dns.enabled               | bool | `false` | Enables extra DNS records from configMap (json format)                                                                                                                                     |
-| env                                  | object | See [values.yaml](./values.yaml) | Environment variables. [[ref]](https://github.com/juanfont/headscale/blob/main/config-example.yaml)                                                                                        |
-| env.HEADSCALE_DNS_BASE_DOMAIN        | string | `"example.com"` | Defines the base domain to create the hostnames for MagicDNS. This domain _must_ be different from the server_url domain.                                                                  |
-| env.HEADSCALE_DNS_MAGIC_DNS          | string | `"true"` | Whether to use [MagicDNS](https://tailscale.com/kb/1081/magicdns/).                                                                                                                        |
-| env.HEADSCALE_DNS_NAMESERVERS_GLOBAL | string | `"1.1.1.1 1.0.0.1"` | List of DNS servers to expose to clients.                                                                                                                                                  |
-| env.HEADSCALE_PREFIXES_V4            | string | `"100.64.0.0/10"` | Node IPv4 prefixes                                                                                                                                                                         |
-| env.HEADSCALE_PREFIXES_V6            | string | `"fd7a:115c:a1e0::/48"` | Node IPv6 prefixes                                                                                                                                                                         |
-| image.pullPolicy                     | string | `"IfNotPresent"` | image pull policy                                                                                                                                                                          |
-| image.repository                     | string | `"ghcr.io/juanfont/headscale"` | image repository                                                                                                                                                                           |
-| image.tag                            | string | `"v0.23.0"` | image tag                                                                                                                                                                                  |
-| ingress.main                         | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key.                                                                                                                        |
-| persistence.config                   | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key.                                                                                                                               |
-| postgresql                           | object | See [values.yaml](./values.yaml) | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/main/bitnami/postgresql) |
-| service.main                         | object | See [values.yaml](./values.yaml) | Configures service settings for the chart.                                                                                                                                                 |
-| serviceMonitor.main.enabled          | bool | `false` | Enables or disables the serviceMonitor.                                                                                                                                                    |
-| serviceMonitor.main.endpoints        | list | See [values.yaml](./values.yaml) | Configures the endpoints for the serviceMonitor.                                                                                                                                           |
+| Key | Type | Default | Description |
+|-----|------|---------|-------------|
+| args | list | `["serve"]` | Container args |
+| configMaps.acl.data.policy | string | `nil` | ACL policy JSON [[ref]](https://tailscale.com/kb/1018/acls/) |
+| configMaps.acl.enabled | bool | `false` | Enables ACL policy |
+| configMaps.dns.data.records | string | `nil` | DNS extra records JSON [[ref]](https://headscale.net/development/ref/dns/#__tabbed_1_2) |
+| configMaps.dns.enabled | bool | `false` | Enables DNS extra records |
+| env | object | See [values.yaml](./values.yaml) | Environment variables. [[ref]](https://github.com/juanfont/headscale/blob/main/config-example.yaml) |
+| env.HEADSCALE_DNS_BASE_DOMAIN | string | `"example.com"` | Defines the base domain to create the hostnames for MagicDNS. This domain _must_ be different from the server_url domain. |
+| env.HEADSCALE_DNS_MAGIC_DNS | string | `"true"` | Whether to use [MagicDNS](https://tailscale.com/kb/1081/magicdns/). |
+| env.HEADSCALE_DNS_NAMESERVERS_GLOBAL | string | `"1.1.1.1 1.0.0.1"` | List of DNS servers to expose to clients. |
+| env.HEADSCALE_PREFIXES_V4 | string | `"100.64.0.0/10"` | Node IPv4 prefixes |
+| env.HEADSCALE_PREFIXES_V6 | string | `"fd7a:115c:a1e0::/48"` | Node IPv6 prefixes |
+| image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
+| image.repository | string | `"ghcr.io/juanfont/headscale"` | image repository |
+| image.tag | string | `"v0.24.1"` | image tag |
+| ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
+| persistence.config | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
+| postgresql | object | See [values.yaml](./values.yaml) | Enable and configure postgresql database subchart under this key.    For more options see [postgresql chart documentation](https://github.com/bitnami/charts/tree/main/bitnami/postgresql) |
+| service.main | object | See [values.yaml](./values.yaml) | Configures service settings for the chart. |
+| serviceMonitor.main.enabled | bool | `false` | Enables or disables the serviceMonitor. |
+| serviceMonitor.main.endpoints | list | See [values.yaml](./values.yaml) | Configures the endpoints for the serviceMonitor. |
 
 ---
 Autogenerated from chart metadata using [helm-docs](https://github.com/norwoodj/helm-docs)
