@@ -11,7 +11,7 @@ image:
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
-  tag: v0.23.0
+  tag: v0.24.1
 
 # -- Container args
 args: ["serve"]
@@ -77,6 +77,11 @@ configMaps:
     data:
       # -- ACL policy JSON [[ref]](https://tailscale.com/kb/1018/acls/)
       policy:
+  dns:
+    enabled: false
+    data:
+      # -- DNS extra records JSON [[ref]](https://headscale.net/development/ref/dns/#__tabbed_1_2)
+      records:
 
 persistence:
   # -- Configure persistence settings for the chart under this key.

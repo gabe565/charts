@@ -67,18 +67,35 @@ env:
   {{- end }}
   {{- end }}
 
-{{- with .Values.configMaps.acl }}
-{{- if .enabled }}
-  HEADSCALE_POLICY_PATH: /acl/{{ keys .data | first }}
+  {{- if .Values.configMaps.acl.enabled }}
+  HEADSCALE_POLICY_PATH: /acl/{{ keys .Values.configMaps.acl.data | first }}
+  {{- end }}
 
+  {{- if .Values.configMaps.dns.enabled }}
+  HEADSCALE_DNS_EXTRA_RECORDS_PATH: /dns/{{ keys .Values.configMaps.dns.data | first }}
+  {{- end }}
+
+{{- if or .Values.configMaps.acl.enabled .Values.configMaps.dns.enabled }}
 persistence:
+  {{- with .Values.configMaps.acl }}
+  {{- if .enabled }}
   acl:
     enabled: true
     type: configMap
     name: {{ include "bjw-s.common.lib.chart.names.fullname" $ }}-acl
+  {{- end }}
+  {{- end }}
 
+  {{- with .Values.configMaps.dns }}
+  {{- if .enabled }}
+  dns:
+    enabled: true
+    type: configMap
+    name: {{ include "bjw-s.common.lib.chart.names.fullname" $ }}-dns
+  {{- end }}
+  {{- end }}
 {{- end }}
-{{- end }}
+
 {{- end -}}
 {{- $_ := merge .Values (include "headscale.harcodedValues" . | fromYaml) -}}
 
