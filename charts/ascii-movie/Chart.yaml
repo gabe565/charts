@@ -6,7 +6,7 @@ icon: https://raw.githubusercontent.com/gabe565/ascii-movie/a1fd5c9/assets/icon.
 type: application
 version: 0.16.3
 # renovate datasource=docker depName=ghcr.io/gabe565/ascii-movie
-appVersion: 1.9.5
+appVersion: 1.9.6
 kubeVersion: ">=1.22.0-0"
 keywords:
   - ascii-art
