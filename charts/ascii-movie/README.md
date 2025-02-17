@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/ascii-movie/a1fd5c9/assets/icon.svg" align="right" width="92" alt="ascii-movie logo">
 
-![Version: 0.16.3](https://img.shields.io/badge/Version-0.16.3-informational?style=flat)
+![Version: 0.16.4](https://img.shields.io/badge/Version-0.16.4-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 1.9.5](https://img.shields.io/badge/AppVersion-1.9.5-informational?style=flat)
+![AppVersion: 1.9.6](https://img.shields.io/badge/AppVersion-1.9.6-informational?style=flat)
 
 Star Wars movie SSH and Telnet server
 
 **Homepage:** <https://charts.gabe565.com/charts/ascii-movie/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=ascii-movie&version=0.16.3)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=ascii-movie&version=0.16.4)**
 
 ## Source Code
 
@@ -89,7 +89,7 @@ N/A
 | env.ASCII_MOVIE_CONCURRENT_STREAMS | int | `10` | Number of concurrent streams allowed from an IP address. Set to 0 to disable. |
 | image.pullPolicy | string | `"Always"` | image pull policy |
 | image.repository | string | `"ghcr.io/gabe565/ascii-movie"` | image repository. |
-| image.tag | string | `"1.9.5"` | image tag |
+| image.tag | string | `"1.9.6"` | image tag |
 | podSecurityContext | object | `{"runAsNonRoot":true}` | Pod security context. |
 | secrets.ssh.enabled | string | `true` if SSH port is enabled, else `false` | Enables SSH host key volume. |
 | secrets.ssh.stringData.ssh_host_ed25519_key | string | Generated | SSH Ed25519 host key. |
