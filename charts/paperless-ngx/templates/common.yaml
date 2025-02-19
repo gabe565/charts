@@ -18,7 +18,7 @@ env:
   PAPERLESS_DBUSER: {{ default "postgres" .auth.username }}
   PAPERLESS_DBPASS:
     secretKeyRef:
-      name: {{ $.Release.Name }}-postgresql
+      name: {{ .auth.existingSecret | default (printf "%s-postgresql" $.Release.Name) }}
       key: {{ if not .auth.password }}postgres-{{ end }}password
   {{- end }}
   {{- else if .Values.mariadb.enabled }}
@@ -29,7 +29,7 @@ env:
   PAPERLESS_DBUSER: {{ .auth.username }}
   PAPERLESS_DBPASS:
     secretKeyRef:
-      name: {{ $.Release.Name }}-mariadb
+      name: {{ .auth.existingSecret | default (printf "%s-mariadb" $.Release.Name) }}
       key: mariadb-password
   {{- end }}
   {{- end }}
@@ -38,16 +38,8 @@ env:
   {{- with .Values.redis }}
   A_REDIS_PASSWORD:
     secretKeyRef:
-      {{- if .auth.existingSecret }}
-      name: {{ .auth.existingSecret }}
-      {{- else }}
-      name: {{ $.Release.Name }}-redis
-      {{- end }}
-      {{- if .auth.existingSecretPasswordKey }}
-      name: {{ .auth.existingSecretPasswordKey }}
-      {{- else }}
-      key: redis-password
-      {{- end }}
+      name: {{ .auth.existingSecret | default (printf "%s-redis" $.Release.Name) }}
+      key: {{ .auth.existingSecretPasswordKey | default "redis-password" }}
   PAPERLESS_REDIS: redis://{{ .auth.username }}:$(A_REDIS_PASSWORD)@{{ $.Release.Name }}-redis-master
   {{- end }}
   {{- end }}
