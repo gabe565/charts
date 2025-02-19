@@ -38,8 +38,16 @@ env:
   {{- with .Values.redis }}
   A_REDIS_PASSWORD:
     secretKeyRef:
+      {{- if .auth.existingSecret }}
+      name: {{ .auth.existingSecret }}
+      {{- else }}
       name: {{ $.Release.Name }}-redis
+      {{- end }}
+      {{- if .auth.existingSecretPasswordKey }}
+      name: {{ .auth.existingSecretPasswordKey }}
+      {{- else }}
       key: redis-password
+      {{- end }}
   PAPERLESS_REDIS: redis://{{ .auth.username }}:$(A_REDIS_PASSWORD)@{{ $.Release.Name }}-redis-master
   {{- end }}
   {{- end }}
