@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/charts/main/charts/plex/icon.svg" align="right" width="92" alt="plex logo">
 
-![Version: 0.5.0](https://img.shields.io/badge/Version-0.5.0-informational?style=flat)
+![Version: 0.5.1](https://img.shields.io/badge/Version-0.5.1-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: version-1.41.2.9200-c6bbc1b53](https://img.shields.io/badge/AppVersion-version--1.41.2.9200--c6bbc1b53-informational?style=flat)
+![AppVersion: version-1.41.4.9463-630c9f557](https://img.shields.io/badge/AppVersion-version--1.41.4.9463--630c9f557-informational?style=flat)
 
 Plex organizes all of your personal media so you can enjoy it no matter where you are.
 
 **Homepage:** <https://charts.gabe565.com/charts/plex/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=plex&version=0.5.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=plex&version=0.5.1)**
 
 ## Source Code
 
@@ -131,7 +131,7 @@ to `/transcode`.
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/linuxserver/plex"` | image repository |
-| image.tag | string | `"version-1.41.2.9200-c6bbc1b53"` | image tag |
+| image.tag | string | `"version-1.41.4.9463-630c9f557"` | image tag |
 | ingress.main | object | See [values.yaml](./values.yaml) | Enable and configure ingress settings for the chart under this key. |
 | persistence.config | object | See [values.yaml](./values.yaml) | Configure persistence settings for the chart under this key. |
 | persistence.media | object | See [values.yaml](./values.yaml) | Configure media volume under this key (or under `tv` and `movies`, etc). |
