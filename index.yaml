@@ -2572,6 +2572,46 @@ entries:
   - annotations:
       artifacthub.io/changes: |-
         - kind: changed
+          description: Update ghcr.io/linuxserver/bookstack docker tag to version-v24.12.1
+      artifacthub.io/links: |-
+        - name: App Source
+          url: https://github.com/BookStackApp/BookStack
+        - name: Container Source
+          url: https://github.com/linuxserver/docker-bookstack
+        - name: Chart Source
+          url: https://github.com/gabe565/charts/tree/main/charts/bookstack
+    apiVersion: v2
+    appVersion: version-v24.12.1
+    created: "2025-02-19T03:54:51.675158448Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.5.1
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.1.1
+    description: A simple, self-hosted, easy-to-use platform for organising and storing
+      information.
+    digest: 885b168e6e190d3cb430b37a8e7234db6dfd52b85782d8f9fa17fdfde42698ec
+    home: https://charts.gabe565.com/charts/bookstack/
+    icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/bookstack/icon.svg
+    keywords:
+    - bookstack
+    - wiki
+    - documentation
+    kubeVersion: '>=1.22.0-0'
+    name: bookstack
+    sources:
+    - https://github.com/BookStackApp/BookStack
+    - https://github.com/linuxserver/docker-bookstack
+    type: application
+    urls:
+    - https://github.com/gabe565/charts/releases/download/bookstack-0.20.0/bookstack-0.20.0.tgz
+    version: 0.20.0
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
           description: Update mariadb helm release to v20
       artifacthub.io/links: |-
         - name: App Source
@@ -41617,4 +41657,4 @@ entries:
     urls:
     - https://github.com/gabe565/charts/releases/download/vaultwarden-0.1.0/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-19T03:54:04.803520848Z"
+generated: "2025-02-19T03:54:51.677793644Z"
