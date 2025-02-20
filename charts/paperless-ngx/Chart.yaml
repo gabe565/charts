@@ -33,8 +33,8 @@ sources:
 annotations:
   artifacthub.io/alternativeName: paperless
   artifacthub.io/changes: |-
-    - kind: changed
-      description: Update ghcr.io/paperless-ngx/paperless-ngx docker tag to v2.14.7
+    - kind: fixed
+      description: Allow for custom db secrets name
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/paperless-ngx/paperless-ngx
