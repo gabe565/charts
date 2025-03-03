@@ -2,16 +2,16 @@
 
 <img src="https://raw.githubusercontent.com/gabe565/CastSponsorSkip/0c8c4d4f/assets/icon.svg" align="right" width="92" alt="castsponsorskip logo">
 
-![Version: 0.8.1](https://img.shields.io/badge/Version-0.8.1-informational?style=flat)
+![Version: 0.8.2](https://img.shields.io/badge/Version-0.8.2-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
-![AppVersion: 0.8.1](https://img.shields.io/badge/AppVersion-0.8.1-informational?style=flat)
+![AppVersion: 0.8.2](https://img.shields.io/badge/AppVersion-0.8.2-informational?style=flat)
 
 Skip sponsored YouTube content on all local Google Cast devices.
 
 **Homepage:** <https://charts.gabe565.com/charts/castsponsorskip/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=castsponsorskip&version=0.8.1)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=castsponsorskip&version=0.8.2)**
 
 ## Source Code
 
@@ -88,7 +88,7 @@ N/A
 | controllers.main.containers.main.env.TZ | string | `"UTC"` | Set the container timezone |
 | controllers.main.containers.main.image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | controllers.main.containers.main.image.repository | string | `"ghcr.io/gabe565/castsponsorskip"` | image repository |
-| controllers.main.containers.main.image.tag | string | `"0.8.1"` | image tag |
+| controllers.main.containers.main.image.tag | string | `"0.8.2"` | image tag |
 | controllers.main.containers.main.securityContext | object | `{"readOnlyRootFilesystem":true}` | Container security context. |
 | controllers.main.pod.dnsPolicy | string | `"ClusterFirst"` | When hostNetwork is true set dnsPolicy to `ClusterFirstWithHostNet` |
 | controllers.main.pod.hostNetwork | bool | `true` | Enable devices to be discoverable |
