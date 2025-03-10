@@ -4,7 +4,7 @@ description: Miniflux is a minimalist and opinionated feed reader.
 home: https://charts.gabe565.com/charts/miniflux/
 icon: https://raw.githubusercontent.com/miniflux/logo/40cb83c/icon.svg
 type: application
-version: 0.9.2
+version: 0.10.0
 # renovate datasource=docker depName=ghcr.io/miniflux/miniflux
 appVersion: 2.2.5
 kubeVersion: ">=1.22.0-0"
@@ -26,7 +26,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/miniflux/miniflux docker tag to v2.2.5
+      description: Update postgresql helm release to v16
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/miniflux/v2
