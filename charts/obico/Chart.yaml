@@ -13,7 +13,7 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 1.5.1
+    version: 3.7.3
   - name: redis
     repository: https://charts.bitnami.com/bitnami
     version: 20.7.0
