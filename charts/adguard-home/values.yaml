@@ -23,7 +23,7 @@ service:
   main:
     ports:
       http:
-        port: 3000
+        port: 80
   # -- Configures settings for the TCP DNS service.
   # @default -- See [values.yaml](./values.yaml)
   dns-tcp:
