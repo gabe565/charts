@@ -4,7 +4,7 @@ description: Open source home automation that puts local control and privacy fir
 home: https://charts.gabe565.com/charts/home-assistant/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/home-assistant/icon.svg
 type: application
-version: 0.17.0
+version: 0.18.0
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
 keywords:
@@ -25,7 +25,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Unpin image tag
+      description: Update postgresql helm release to v16
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/home-assistant/core
