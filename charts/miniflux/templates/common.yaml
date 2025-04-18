@@ -24,7 +24,7 @@
       custom: true
       spec:
         httpGet:
-          path: /healthcheck
+          path: {{ .Values.service.main.probes.livenessProbe.path }}
           port: {{ .Values.service.main.ports.http.port }}
 {{- end -}}
 {{- $_ := merge .Values (include "miniflux.harcodedValues" . | fromYaml) -}}
