@@ -16,7 +16,7 @@ keywords:
 dependencies:
   - name: common
     repository: https://bjw-s.github.io/helm-charts
-    version: 3.0.4
+    version: 3.7.3
 sources:
   - https://github.com/Snapchat/KeyDB
 annotations:

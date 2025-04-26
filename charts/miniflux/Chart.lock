@@ -1,9 +1,9 @@
 dependencies:
 - name: common
   repository: https://bjw-s.github.io/helm-charts
-  version: 1.5.1
+  version: 3.7.3
 - name: postgresql
   repository: https://charts.bitnami.com/bitnami
   version: 14.0.5
-digest: sha256:bb0734cffb15593ce1d5f43223e3059d1387b57bbe30451440f935dc18bfd046
-generated: "2024-02-15T07:46:51.379377532Z"
+digest: sha256:938e0cd41f842d1fcda342176b4ffa69c0b83ff8426ac591ab580764d21fcab9
+generated: "2025-04-26T00:30:58.227588907Z"

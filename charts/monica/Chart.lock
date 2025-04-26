@@ -1,9 +1,9 @@
 dependencies:
 - name: common
   repository: https://bjw-s.github.io/helm-charts
-  version: 1.5.1
+  version: 3.7.3
 - name: mariadb
   repository: https://charts.bitnami.com/bitnami
   version: 20.1.1
-digest: sha256:f5c26f3f9fb776ba3fdad6629b9fa53dfc8de2c1a2c6ee08abfa7652a789619f
-generated: "2024-12-02T01:31:01.718835361Z"
+digest: sha256:dd7952c1203cf4830285ea7daf0416fb3304144a314a4630fb3e7b2d473697f3
+generated: "2025-04-26T00:32:01.013053466Z"
