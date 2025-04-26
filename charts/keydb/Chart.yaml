@@ -4,7 +4,7 @@ description: A Multithreaded Fork of Redis
 home: https://charts.gabe565.com/charts/keydb/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/keydb/icon.svg
 type: application
-version: 0.0.1
+version: 0.1.0
 # renovate datasource=docker depName=eqalpha/keydb
 appVersion: alpine_x86_64_v6.3.4
 kubeVersion: ">=1.22.0-0"
@@ -21,8 +21,8 @@ sources:
   - https://github.com/Snapchat/KeyDB
 annotations:
   artifacthub.io/changes: |-
-    - kind: added
-      description: Initial release
+    - kind: changed
+      description: Update common helm release to v3.7.3
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/Snapchat/KeyDB

@@ -4,7 +4,7 @@ description: A dead simple static HOMepage for your servER to keep your services
 home: https://charts.gabe565.com/charts/homer/
 icon: https://raw.githubusercontent.com/bastienwirtz/homer/5609315/public/assets/icons/logo.svg
 type: application
-version: 0.13.0
+version: 0.14.0
 # renovate datasource=docker depName=ghcr.io/bastienwirtz/homer
 appVersion: v25.02.1
 kubeVersion: ">=1.22.0-0"
@@ -22,7 +22,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/bastienwirtz/homer docker tag to v25
+      description: Update common helm release to v3.7.3
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/bastienwirtz/homer
