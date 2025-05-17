@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: ghcr.io/bastienwirtz/homer
   # -- image tag
-  tag: v25.02.1
+  tag: v25.05.2
   # -- image pull policy
   pullPolicy: IfNotPresent
 
