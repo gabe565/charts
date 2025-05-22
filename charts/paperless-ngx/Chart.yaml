@@ -4,7 +4,7 @@ description: "A community-supported supercharged version of paperless: scan, ind
 home: https://charts.gabe565.com/charts/paperless-ngx/
 icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/b948750/src-ui/src/assets/logo-notext.svg
 type: application
-version: 0.24.1
+version: 0.25.0
 # renovate datasource=docker depName=ghcr.io/paperless-ngx/paperless-ngx
 appVersion: 2.14.7
 kubeVersion: ">=1.22.0-0"
@@ -33,8 +33,8 @@ sources:
 annotations:
   artifacthub.io/alternativeName: paperless
   artifacthub.io/changes: |-
-    - kind: fixed
-      description: Allow for custom db secrets name
+    - kind: changed
+      description: Update redis helm release to v21
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/paperless-ngx/paperless-ngx
