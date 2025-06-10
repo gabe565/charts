@@ -106,7 +106,7 @@ jobs:
           fi
 
       - name: Commit chart version
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         if: steps.commit_exists.outputs.result == 'false' && !contains(steps.pr.outputs.labels, 'skip-chart-meta')
         with:
           commit_user_name: ${{ env.AUTHOR_USER }}
