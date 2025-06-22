@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: ghcr.io/tandoorrecipes/recipes
   # -- image tag
-  tag: 1.5.31
+  tag: 1.5.35
   # -- image pull policy
   pullPolicy: IfNotPresent
   # -- image tag
