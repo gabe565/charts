@@ -9,7 +9,7 @@ image:
   # -- image repository
   repository: ghcr.io/miniflux/miniflux
   # -- image tag
-  tag: 2.2.5
+  tag: 2.2.10
   # -- image pull policy
   pullPolicy: IfNotPresent
 
