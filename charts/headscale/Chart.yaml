@@ -4,7 +4,7 @@ description: An open source, self-hosted implementation of the Tailscale control
 home: https://charts.gabe565.com/charts/headscale/
 icon: https://raw.githubusercontent.com/juanfont/headscale/56a7b1e/docs/logo/headscale3-dots.svg
 type: application
-version: 0.16.0
+version: 0.17.0
 # renovate datasource=docker depName=ghcr.io/juanfont/headscale
 appVersion: v0.25.0
 kubeVersion: ">=1.22.0-0"
@@ -26,7 +26,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/juanfont/headscale docker tag to v0.25.0
+      description: Update postgresql helm release to v16
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/juanfont/headscale
