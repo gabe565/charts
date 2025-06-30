@@ -4,7 +4,7 @@ description: Personal CRM. Remember everything about your friends, family and bu
 home: https://charts.gabe565.com/charts/monica/
 icon: https://raw.githubusercontent.com/monicahq/monica/aa98c09/public/img/favicon.svg
 type: application
-version: 0.10.0
+version: 0.11.0
 # renovate datasource=docker depName=monica
 appVersion: 4.1.2-fpm-alpine
 kubeVersion: ">=1.22.0-0"
@@ -23,7 +23,7 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update mariadb helm release to v20
+      description: Update mariadb helm release to v21
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/monicahq/monica
