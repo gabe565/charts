@@ -4,7 +4,7 @@ description: RSSHub is an open source, easy to use, and extensible RSS feed gene
 home: https://charts.gabe565.com/charts/rsshub/
 icon: https://raw.githubusercontent.com/DIYgod/RSSHub/377dd9f/website/static/img/logo.png
 type: application
-version: 0.8.0
+version: 0.9.0
 # renovate datasource=docker depName=diygod/rsshub
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
@@ -18,14 +18,14 @@ dependencies:
     version: 1.5.1
   - name: redis
     repository: https://charts.bitnami.com/bitnami
-    version: 20.7.0
+    version: 21.2.10
     condition: redis.enabled
 sources:
   - https://github.com/DIYgod/RSSHub
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update redis helm release to v20.6.3
+      description: Update redis helm release to v21
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/DIYgod/RSSHub
