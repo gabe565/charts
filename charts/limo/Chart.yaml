@@ -3,7 +3,7 @@ name: limo
 description: A file upload server.
 home: https://charts.gabe565.com/charts/limo/
 type: application
-version: 0.8.0
+version: 0.9.0
 # renovate datasource=docker depName=ghcr.io/gabe565/limo
 appVersion: latest
 kubeVersion: ">=1.22.0-0"
@@ -20,7 +20,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: BREAKING - Update postgresql helm release to v14
+      description: Update postgresql helm release to v16
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gabe565/limo

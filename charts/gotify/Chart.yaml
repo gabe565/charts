@@ -4,7 +4,7 @@ description: A simple server for sending and receiving messages in real-time per
 home: https://charts.gabe565.com/charts/gotify/
 icon: https://raw.githubusercontent.com/gabe565/charts/main/charts/gotify/icon.svg
 type: application
-version: 0.4.0
+version: 0.5.0
 # renovate datasource=docker depName=ghcr.io/gotify/server
 appVersion: 2.6.1
 kubeVersion: ">=1.22.0-0"
@@ -23,7 +23,7 @@ sources:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/gotify/server docker tag to v2.6.1
+      description: Update postgresql helm release to v16
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/gotify/server
