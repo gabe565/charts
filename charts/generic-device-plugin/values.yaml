@@ -62,6 +62,18 @@ config:
               - path: /dev/cuaU*
           - paths:
               - path: /dev/rfcomm*
+      - name: kvm
+        groups:
+          - paths:
+              - path: /dev/kvm
+      - name: vhost
+        groups:
+          - paths:
+              - path: /dev/vhost-net
+          - paths:
+              - path: /dev/vhost-vsock
+          - paths:
+              - path: /dev/vsock  
       - name: video
         groups:
           - paths:
