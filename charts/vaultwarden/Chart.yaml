@@ -4,7 +4,7 @@ description: Unofficial Bitwarden compatible server written in Rust.
 home: https://charts.gabe565.com/charts/vaultwarden/
 icon: https://raw.githubusercontent.com/dani-garcia/vaultwarden/d57b699/resources/vaultwarden-icon.svg
 type: application
-version: 0.16.1
+version: 0.17.0
 # renovate datasource=docker depName=ghcr.io/dani-garcia/vaultwarden
 appVersion: 1.33.2-alpine
 kubeVersion: ">=1.22.0-0"
@@ -29,7 +29,7 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update ghcr.io/dani-garcia/vaultwarden docker tag to v1.33.2
+      description: Update postgresql helm release to v16
   artifacthub.io/links: |-
     - name: App Source
       url: https://github.com/dani-garcia/vaultwarden
