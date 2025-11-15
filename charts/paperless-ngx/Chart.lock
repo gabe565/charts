@@ -1,15 +1,15 @@
 dependencies:
 - name: common
-  repository: https://bjw-s.github.io/helm-charts
+  repository: https://bjw-s-labs.github.io/helm-charts
   version: 1.5.1
-- name: postgresql
-  repository: https://charts.bitnami.com/bitnami
-  version: 14.0.5
+- name: postgres
+  repository: oci://registry-1.docker.io/cloudpirates
+  version: 0.12.0
 - name: mariadb
-  repository: https://charts.bitnami.com/bitnami
-  version: 20.1.1
+  repository: oci://registry-1.docker.io/cloudpirates
+  version: 0.6.1
 - name: redis
-  repository: https://charts.bitnami.com/bitnami
-  version: 20.7.0
-digest: sha256:393ade0c071a39f76cc62844ef6d14d85eeb674f099de016e1adac207f04d643
-generated: "2025-02-04T16:09:39.211839317Z"
+  repository: oci://registry-1.docker.io/cloudpirates
+  version: 0.14.1
+digest: sha256:3469991b6bd150085ece625886d62bc40688e40c8557824ce0c1758472df8f95
+generated: "2025-11-15T11:08:44.798343772+01:00"

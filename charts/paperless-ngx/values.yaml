@@ -70,8 +70,8 @@ persistence:
     retain: true
     mountPath: /usr/src/paperless/export
     # storageClass: ""
-    # accessMode: ReadWriteOnce
-    # size: 1Gi
+    accessMode: ReadWriteOnce
+    size: 1Gi
   # -- Configure consume volume settings for the chart under this key.
   # @default -- See [values.yaml](./values.yaml)
   consume:
@@ -79,27 +79,26 @@ persistence:
     retain: true
     mountPath: /usr/src/paperless/consume
     # storageClass: ""
-    # accessMode: ReadWriteOnce
-    # size: 4Gi
+    accessMode: ReadWriteOnce
+    size: 4Gi
 
 # -- Enable and configure postgresql database subchart under this key.
 #    If enabled, the app's db envs will be set for you.
-#    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/postgresql)
+#    [[ref]](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/postgres)
 # @default -- See [values.yaml](./values.yaml)
 postgresql:
   enabled: false
   auth:
-    database: paperless
-    postgresPassword: changeme
-  primary:
-    persistence:
-      enabled: false
-      # storageClass: ""
-      # size: 8Gi
+    username: paperless
+    password: changeme
+  persistence:
+    enabled: false
+    # storageClass: ""
+    # size: 8Gi
 
 # -- Enable and configure mariadb database subchart under this key.
 #    If enabled, the app's db envs will be set for you.
-#    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/mariadb)
+#    [[ref]](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/mariadb)
 # @default -- See [values.yaml](./values.yaml)
 mariadb:
   enabled: false
@@ -108,27 +107,22 @@ mariadb:
     username: paperless
     password: changeme
     rootPassword: changeme
-  primary:
-    persistence:
-      enabled: false
-      # storageClass: ""
-      # size: 8Gi
+  persistence:
+    enabled: false
+    # storageClass: ""
+    # size: 8Gi
 
 # -- Enable and configure redis subchart under this key.
 #    If enabled, the app's Redis env will be set for you.
-#    [[ref]](https://github.com/bitnami/charts/tree/main/bitnami/redis)
+#    [[ref]](https://github.com/CloudPirates-io/helm-charts/tree/main/charts/redis)
 # @default -- See [values.yaml](./values.yaml)
 redis:
   enabled: true
   auth:
     enabled: true
-    username: ""
     # Use an existing secret for redis auth. Do this if you're using Argo to manage your instance or otherwise using helm template under the hood
     #     The secret name can vary, but the password key must be redis-password.
     # existingSecret: paperless-redis
     # existingSecretPasswordKey: redis-password
-  master:
-    persistence:
-      enabled: false
-  replica:
-    replicaCount: 0
+  persistence:
+    enabled: false
