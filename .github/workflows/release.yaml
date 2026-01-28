@@ -73,7 +73,7 @@ jobs:
           echo "changed_charts=${changed_charts%,}" >> $GITHUB_OUTPUT
 
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@v3
+        uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3.7.0
         if: steps.package_charts.outputs.changed_charts != ''
         with:
           registry: ghcr.io
