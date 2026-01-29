@@ -1,6 +1,6 @@
 # Limo
 
-![Version: 0.8.0](https://img.shields.io/badge/Version-0.8.0-informational?style=flat)
+![Version: 0.9.0](https://img.shields.io/badge/Version-0.9.0-informational?style=flat)
 ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat)
 ![AppVersion: latest](https://img.shields.io/badge/AppVersion-latest-informational?style=flat)
 
@@ -9,7 +9,7 @@ A file upload server.
 **Homepage:** <https://charts.gabe565.com/charts/limo/>
 
 **This chart is not maintained by the upstream project and any issues with the chart should be raised
-[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=limo&version=0.8.0)**
+[here](https://github.com/gabe565/charts/issues/new?assignees=gabe565&labels=bug&template=bug_report.yaml&name=limo&version=0.9.0)**
 
 ## Source Code
 
@@ -24,7 +24,7 @@ Kubernetes: `>=1.22.0-0`
 | Repository | Name | Version |
 |------------|------|---------|
 | <https://bjw-s.github.io/helm-charts> | common | 1.5.1 |
-| <https://charts.bitnami.com/bitnami> | postgresql | 14.0.5 |
+| <https://charts.bitnami.com/bitnami> | postgresql | 14.3.3 |
 
 ## Installing the Chart
 
